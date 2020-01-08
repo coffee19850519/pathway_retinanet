@@ -1,7 +1,8 @@
-import os,copy,tqdm,torch
+import os,copy,torch
 import numpy as np
 #from detectron2.structures import BoxMode, RotatedBoxes
 import json
+import pandas as pd
 import cv2
 from shutil import copyfile
 from detectron2.data import detection_utils as utils
@@ -24,19 +25,17 @@ def get_annotation_dicts(json_path, img_path, category_list):
         #load json content
         try:
             imgs_anns = LabelFile(os.path.join(json_path, json_file))
+            #read key and value from current json file
+            filename = os.path.join(img_path, imgs_anns.imagePath)
+            img = cv2.imread(filename)
+            height, width = img.shape[:2]
+            del img
         except Exception as e:
             print(str(e))
             continue
 
         #declare a dict variant to save the content
         record = {}
-
-        #read key and value from current json file
-        filename = os.path.join(img_path, imgs_anns.imagePath)
-
-        img = cv2.imread(filename)
-        height, width = img.shape[:2]
-        del img
 
         record["file_name"] = filename
         record["image_id"] = idx
@@ -47,10 +46,10 @@ def get_annotation_dicts(json_path, img_path, category_list):
         for anno in imgs_anns.shapes:
             #assert not anno["label"]
             #anno = anno["label"]
-            # poly_points = np.array(anno['points'],np.float32).reshape((-1 , 2))
-            # rotated_rect = cv2.minAreaRect(poly_points)
-            # px = poly_points[:, 0]
-            # py = poly_points[:, 1]
+            poly_points = np.array(anno['points'],np.float32).reshape((-1 , 2))
+            #rotated_rect = cv2.minAreaRect(poly_points)
+            px = poly_points[:, 0]
+            py = poly_points[:, 1]
             # poly = [(x + 0.5, y + 0.5) for x, y in zip(px, py)]
             # poly = list(itertools.chain.from_iterable(poly))
             try:
@@ -66,8 +65,8 @@ def get_annotation_dicts(json_path, img_path, category_list):
                 continue
 
             obj = {
-                # "bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
-                # "bbox_mode": BoxMode.XYXY_ABS,
+                #"bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
+                #"bbox_mode": BoxMode.XYXY_ABS,
 
                 "bbox": anno['rotated_box'],
                 "bbox_mode": -1,
@@ -242,17 +241,36 @@ def transform_rotated_boxes_annotations(annotation, transforms):
     #    return True
 
 
-def visualize_rotated_bbox(img, metadata, annotations, shown_categories ,score_cutoff = 0):
+def visualize_rotated_prediction(img, metadata, predictions, shown_categories ,score_cutoff = 0):
     vis = Visualizer(img, metadata)
 
     # get targeted annotations to show
     boxes = []
     labels = []
     # get the specific categories to show
-    for anno in annotations:
-        if  float(anno["score"]) >= score_cutoff and anno["category_id"] in shown_categories:
-            boxes.append(anno["bbox"])
-            labels.append(anno["category_id"])
+    for idx in range(len(predictions)):
+        if  float(predictions.iloc[idx]["score"]) >= score_cutoff and predictions.iloc[idx]["category_id"] in shown_categories:
+            boxes.append(predictions.iloc[idx]["bbox"])
+            labels.append(predictions.iloc[idx]["category_id"])
+    names = metadata.get("thing_classes", None)
+    if names:
+        labels = [names[i] for i in labels]
+    boxes = np.array(boxes, np.float).reshape((-1, 5))
+    vis_gt = vis.overlay_rotated_instances(labels=labels, boxes=boxes).get_image()
+    del boxes, labels
+    return vis_gt[:, :, ::-1]
+
+def visualize_rotated_groundtruth(img, metadata, gts, shown_categories):
+    vis = Visualizer(img, metadata)
+
+    # get targeted annotations to show
+    boxes = []
+    labels = []
+    # get the specific categories to show
+    for gt in gts:
+        if  gt["category_id"] in shown_categories:
+            boxes.append(gt["bbox"])
+            labels.append(gt["category_id"])
     names = metadata.get("thing_classes", None)
     if names:
         labels = [names[i] for i in labels]
@@ -262,14 +280,17 @@ def visualize_rotated_bbox(img, metadata, annotations, shown_categories ,score_c
     return vis_gt[:, :, ::-1]
 
 
-def visualize_coco_instances(coco_format_json_file, dataset_name, save_vis_path, instance_num_per_image):
+def visualize_coco_instances(coco_format_json_file, dataset_name, save_vis_path,shown_categories, cut_off):
     metadata = MetadataCatalog.get(dataset_name)
+    datasetDict =  DatasetCatalog.get(dataset_name)
     coco_instances = json.load(open(coco_format_json_file, 'r'))
-    for instance_idx in range(len(coco_instances) // instance_num_per_image):
-        instances_per_img = coco_instances [instance_idx * instance_num_per_image : (instance_idx + 1) * instance_num_per_image]
-        img = cv2.imread(os.path.join(instances_per_img[0]['file_name']))
-        vis_img = visualize_rotated_bbox(img, metadata, instances_per_img, [3] ,0.75)
-        file_base_name = os.path.basename(instances_per_img[0]['file_name'])
+    #read all predictions regarding one input image
+    predictions = pd.DataFrame(coco_instances)
+    for sample_info in datasetDict:
+        instances_on_sample = predictions.loc[predictions['image_id'] == sample_info['image_id']]
+        img = cv2.imread(os.path.join(sample_info['file_name']))
+        vis_img = visualize_rotated_prediction(img, metadata, instances_on_sample, shown_categories, cut_off)
+        file_base_name = os.path.basename(sample_info['file_name'])
         cv2.imwrite(os.path.join(save_vis_path, file_base_name), vis_img)
         del vis_img,img
     del metadata,coco_instances
@@ -289,8 +310,9 @@ if __name__ == "__main__":
     # should be embedded into configer file
     category_list = ['activate','gene','inhibit','relation']
 
-    img_path = r'/home/fei/Desktop/aug_sim_images/'
-    json_path = r'/home/fei/Desktop/all_training_jsons/'
+    img_path = r'/home/fei/Desktop/data/image_0101/'
+    json_path = r'/home/fei/Desktop/data/json_0101/'
+
     # K = 10
     # for d in ["train", "val"]:
     #     #for idx_fold in range(K):
@@ -300,17 +322,16 @@ if __name__ == "__main__":
     #         MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set(thing_classes=category_list)
     #split_data_into_train_and_validation_Kfold(json_path, validation_ratio=0.1, K=1)
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K =1)
-    dicts = DatasetCatalog.get('pathway_train_0')
-    metadata = MetadataCatalog.get('pathway_train_0')
-
-    # for dic in tqdm.tqdm(dicts):
+    # dicts = DatasetCatalog.get('pathway_val_0')
+    # metadata = MetadataCatalog.get('pathway_val_0')
+    # for dic in dicts:
     #     img = cv2.imread(dic["file_name"], cv2.IMREAD_COLOR)[:, :, ::-1]
     #     basename = os.path.basename(dic["file_name"])
     #     annotations = dic.get("annotations", None)
-    #     vis_img = visualize_rotated_bbox(img, metadata, annotations)
+    #     vis_img = visualize_rotated_groundtruth(img, metadata, annotations,[3])
     #     #vis_gt = vis.draw_dataset_dict(dic).get_image()
-    #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/vis_pathway/', basename), vis_img)
+    #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/results/', basename), vis_img)
     #     del img, vis_img
 
-    # visualize_coco_instances(r'/home/coffee/Desktop/new_model/output/inference/pathway_val/coco_instances_results.json',
-    #                          'pathway_val',r'/home/coffee/Desktop/results_visualization/',100)
+    visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
+                             'pathway_val_0',r'/home/fei/Desktop/results/',[3],0.6)

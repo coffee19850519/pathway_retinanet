@@ -1,4 +1,4 @@
-from label_file import LabelFile
+from tools.label_file import LabelFile
 from shape_tool import generate_rect_points
 import os
 from PIL import Image, ImageDraw

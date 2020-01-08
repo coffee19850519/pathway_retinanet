@@ -45,7 +45,7 @@ from detectron2.utils.events import (
     JSONWriter,
     TensorboardXWriter,
 )
-from tools.relation_data_tool import register_pathway_dataset, PathwayDatasetMapper
+from tools.relation_data_tool import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset
 
 logger = logging.getLogger("pathway_parser")
 
@@ -56,6 +56,7 @@ def do_test(cfg, model):
         data_loader = build_detection_test_loader(cfg= cfg,dataset_name= dataset_name, mapper= PathwayDatasetMapper(cfg, False))
         evaluator = PathwayEvaluator(
              dataset_name=dataset_name, cfg= cfg, distributed= False,
+             allow_cached= False,
              output_dir= os.path.join(cfg.OUTPUT_DIR, "inference", dataset_name)
         )
         results_i = inference_on_dataset(model, data_loader, evaluator)
@@ -70,21 +71,24 @@ def do_test(cfg, model):
 
 def do_train(cfg, model, resume=False):
     model.train()
-    #model.eval()
     optimizer = build_optimizer(cfg, model)
     scheduler = build_lr_scheduler(cfg, optimizer)
 
+    # checkpointer = DetectionCheckpointer(
+    #     model, cfg.OUTPUT_DIR,
+    #     optimizer=optimizer,
+    #     scheduler=scheduler
+    # )
+    #do not load checkpointer's optimizer and scheduler
     checkpointer = DetectionCheckpointer(
-        model, cfg.OUTPUT_DIR, optimizer=optimizer, scheduler=scheduler
-    )
+        model, cfg.OUTPUT_DIR)
     start_iter = (
         checkpointer.resume_or_load(cfg.MODEL.WEIGHTS, resume=resume).get("iteration", -1) + 1
     )
-    max_iter = cfg.SOLVER.MAX_ITER
 
-    periodic_checkpointer = PeriodicCheckpointer(
-        checkpointer, cfg.SOLVER.CHECKPOINT_PERIOD, max_iter=max_iter
-    )
+    #model.load_state_dict(optimizer)
+
+    max_iter = cfg.SOLVER.MAX_ITER
 
     writers = (
         [
@@ -99,8 +103,27 @@ def do_train(cfg, model, resume=False):
     # compared to "train_net.py", we do not support accurate timing and
     # precise BN here, because they are not trivial to implement
     data_loader = build_detection_train_loader(cfg, mapper= PathwayDatasetMapper(cfg, True))
+
+    if cfg.DATALOADER.ASPECT_RATIO_GROUPING:
+        epoch_num = (data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH) + 1
+    else:
+        epoch_num = data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH
+
+    # periodic_checkpointer = PeriodicCheckpointer(
+    #     checkpointer,
+    #     #cfg.SOLVER.CHECKPOINT_PERIOD,
+    #     epoch_num,
+    #     max_iter=max_iter
+    # )
+
     logger.info("Starting training from iteration {}".format(start_iter))
+
     with EventStorage(start_iter) as storage:
+        loss_per_epoch = 0.0
+        best_loss = 99999.0
+        best_val = 0.0
+        better_train = False
+        better_val = False
         for data, iteration in zip(data_loader, range(start_iter, max_iter)):
             iteration = iteration + 1
             storage.step()
@@ -111,6 +134,7 @@ def do_train(cfg, model, resume=False):
 
             loss_dict_reduced = {k: v.item() for k, v in comm.reduce_dict(loss_dict).items()}
             losses_reduced = sum(loss for loss in loss_dict_reduced.values())
+
             if comm.is_main_process():
                 storage.put_scalars(total_loss=losses_reduced, **loss_dict_reduced)
 
@@ -120,19 +144,50 @@ def do_train(cfg, model, resume=False):
             storage.put_scalar("lr", optimizer.param_groups[0]["lr"], smoothing_hint=False)
             scheduler.step()
 
-            if (
-                cfg.TEST.EVAL_PERIOD > 0
-                and iteration % cfg.TEST.EVAL_PERIOD == 0
-                and iteration != max_iter
-            ):
-                do_test(cfg, model)
-                # Compared to "train_net.py", the test results are not dumped to EventStorage
-                comm.synchronize()
+            # if (
+            #     # cfg.TEST.EVAL_PERIOD > 0
+            #     # and
+            #         iteration % epoch_num == 0
+            #         #iteration % cfg.TEST.EVAL_PERIOD == 0
+            #     and iteration != max_iter
+            # ):
+            #     do_test(cfg, model)
+            #     # Compared to "train_net.py", the test results are not dumped to EventStorage
+            #     comm.synchronize()
 
-            if iteration - start_iter > 5 and (iteration % 100 == 0 or iteration == max_iter):
+            loss_per_epoch += losses_reduced
+            if iteration % epoch_num == 0 or iteration == max_iter:
+                #one complete epoch
+                epoch_loss = loss_per_epoch / epoch_num
+                # calculate epoch_loss and push to history cache
+                storage.put_scalar("epoch_loss", epoch_loss, smoothing_hint=False)
                 for writer in writers:
                     writer.write()
-            periodic_checkpointer.step(iteration)
+                #do validation
+                #do_test(cfg, model)
+                # Compared to "train_net.py", the test results are not dumped to EventStorage
+                #comm.synchronize()
+
+                # only save improved checkpoints on epoch_loss
+                if best_loss > losses_reduced:
+                    best_loss = losses_reduced
+                #     better_train = True
+                # if best_val < val_results.values('AP'):
+                #     best_val = val_results.values()[0]
+                #     better_val = True
+                # if better_val and better_train:
+                    checkpointer.save("model_{:07d}".format(iteration),  **{"iteration": iteration})
+
+                #reset loss_per_epoch
+                loss_per_epoch = 0.0
+            else:
+                # calculate epoch_loss and push to history cache
+                storage.put_scalar("epoch_loss", loss_per_epoch / (iteration % epoch_num), smoothing_hint=False)
+                # better_train = False
+                # better_val = False
+
+            #periodic_checkpointer.step(iteration)
+
 
 
 def setup(args):
@@ -142,6 +197,9 @@ def setup(args):
     cfg = get_cfg()
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
+    # customize reszied parameters
+    # cfg['INPUT']['MIN_SIZE_TRAIN'] = (20,)
+    # cfg['INPUT']['MAX_SIZE_TRAIN'] = 50
     cfg.freeze()
     default_setup(
         cfg, args
@@ -152,6 +210,8 @@ def setup(args):
 def main(args):
     cfg = setup(args)
     # import the relation_retinanet as meta_arch, so they will be registered
+    from relation_retinanet import RelationRetinaNet
+
     model = build_model(cfg)
     logger.info("Model:\n{}".format(model))
     if args.eval_only:
@@ -171,18 +231,20 @@ def main(args):
 
 
 if __name__ == "__main__":
-    category_list = ['activate', 'gene', 'inhibit', 'relation']
-    img_path = r'/home/coffee/Desktop/original images/'
-    json_path = r'/home/coffee/Desktop/new_labels_with_components/'
+    os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
+    os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+    category_list = ['relation']
+    img_path = r'/home/coffee/Desktop/data/image_0101/'
+    json_path = r'/home/coffee/Desktop/data/json_0101/'
 
-    # register_Kfold_pathway_dataset(json_path, img_path, category_list)
-    register_pathway_dataset(json_path, img_path, category_list)
+    register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
+    #register_pathway_dataset(json_path, img_path, category_list)
 
     parser = default_argument_parser()
     # parser.add_argument("--task", choices=["train", "eval", "data"], required=True)
     args = parser.parse_args()
     assert not args.eval_only
-    args.eval_only = True
+    #args.eval_only = True
     args.config_file = r'./Base-RelationRetinaNet.yaml'
     print("Command Line Args:", args)
     launch(

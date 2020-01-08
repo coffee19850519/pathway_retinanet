@@ -3,7 +3,7 @@ import logging
 import math
 from typing import List
 import torch
-from fvcore.nn import sigmoid_focal_loss_jit, smooth_l1_loss, sigmoid_focal_loss_star
+from fvcore.nn import sigmoid_focal_loss_jit, smooth_l1_loss
 from torch import nn
 
 from detectron2.layers import ShapeSpec, batched_nms_rotated, cat
@@ -91,11 +91,11 @@ class RelationRetinaNet(nn.Module):
 
 
         # Matching and loss
-        self.box2box_transform = Box2BoxTransformRotated(weights=cfg.MODEL.RPN.BBOX_REG_WEIGHTS)
+        self.box2box_transform = Box2BoxTransformRotated(weights=cfg.MODEL.RETINANET.BBOX_REG_WEIGHTS)
         self.matcher = RelationAwareMatcher(
             cfg.MODEL.RETINANET.IOU_THRESHOLDS,
             cfg.MODEL.RETINANET.IOU_LABELS,
-            allow_low_quality_matches=True,
+            allow_low_quality_matches=False,
         )
 
         pixel_mean = torch.Tensor(cfg.MODEL.PIXEL_MEAN).to(self.device).view(3, 1, 1)
@@ -553,8 +553,18 @@ class RetinaNetHead(nn.Module):
         ), "Using different number of anchors between levels is not currently supported!"
         num_anchors = num_anchors[0]
 
+
         cls_subnet = []
         bbox_subnet = []
+
+        #include self-attention layer into these two sub-nets
+        # cls_subnet.append(
+        #     SelfAttention(in_channels))
+        #
+        # bbox_subnet.append(
+        #     SelfAttention(in_channels))
+        self.attention = SelfAttention(in_channels)
+
         for _ in range(num_convs):
             cls_subnet.append(
                 nn.Conv2d(in_channels, in_channels, kernel_size=3, stride=1, padding=1)
@@ -602,6 +612,59 @@ class RetinaNetHead(nn.Module):
         logits = []
         bbox_reg = []
         for feature in features:
-            logits.append(self.cls_score(self.cls_subnet(feature)))
-            bbox_reg.append(self.bbox_pred(self.bbox_subnet(feature)))
+            logits.append(self.cls_score(self.cls_subnet(self.attention(feature))))
+            bbox_reg.append(self.bbox_pred(self.bbox_subnet(self.attention(feature))))
         return logits, bbox_reg
+
+
+def init_conv(conv):
+    nn.init.xavier_uniform_(conv.weight)
+    if conv.bias is not None:
+        conv.bias.data.zero_()
+
+
+class SelfAttention(nn.Module):
+    r"""
+        Self attention Layer.
+        Source paper: https://arxiv.org/abs/1805.08318
+    """
+
+    def __init__(self, in_dim, activation= nn.ReLU()):
+        super(SelfAttention, self).__init__()
+        self.chanel_in = in_dim
+        self.activation = activation
+
+        self.f = nn.Conv2d(in_channels=in_dim, out_channels=in_dim // 8, kernel_size=1)
+        self.g = nn.Conv2d(in_channels=in_dim, out_channels=in_dim // 8, kernel_size=1)
+        self.h = nn.Conv2d(in_channels=in_dim, out_channels=in_dim, kernel_size=1)
+
+        self.gamma = nn.Parameter(torch.zeros(1))
+
+        self.softmax = nn.Softmax(dim=-1)
+
+        init_conv(self.f)
+        init_conv(self.g)
+        init_conv(self.h)
+
+    def forward(self, x):
+        """
+            inputs :
+                x : input feature maps( B X C X W X H)
+            returns :
+                out : self attention feature maps
+
+        """
+        m_batchsize, C, width, height = x.size()
+
+        f = self.f(x).view(m_batchsize, -1, width * height)  # B * (C//8) * (W * H)
+        g = self.g(x).view(m_batchsize, -1, width * height)  # B * (C//8) * (W * H)
+        h = self.h(x).view(m_batchsize, -1, width * height)  # B * C * (W * H)
+
+        attention = torch.bmm(f.permute(0, 2, 1), g)  # B * (W * H) * (W * H)
+        attention = self.softmax(attention)
+
+        self_attetion = torch.bmm(h, attention)  # B * C * (W * H)
+        self_attetion = self_attetion.view(m_batchsize, C, width, height)  # B * C * W * H
+
+        out = self.gamma * self_attetion + x
+        return out

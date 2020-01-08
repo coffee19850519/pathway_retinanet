@@ -75,7 +75,7 @@ class PathwayEvaluator(COCOEvaluator):
     outputs using COCO's metrics and APIs.
     """
 
-    def __init__(self, dataset_name,  cfg, distributed, output_dir=None):
+    def __init__(self, dataset_name,  cfg, distributed, allow_cached, output_dir=None):
         """
         Args:
             dataset_name (str): name of the dataset to be evaluated.
@@ -101,7 +101,7 @@ class PathwayEvaluator(COCOEvaluator):
             self._logger.warning(f"json_file was not found in MetaDataCatalog for '{dataset_name}'")
             cache_path = os.path.join(output_dir, f"{dataset_name}_coco_format.json")
             self._metadata.json_file = cache_path
-            self.convert_rotated_bbox_prediction_to_coco_json(dataset_name, cache_path)
+            self.convert_rotated_bbox_prediction_to_coco_json(dataset_name, cache_path, allow_cached)
 
         json_file = PathManager.get_local_path(self._metadata.json_file)
         print(json_file)
@@ -113,16 +113,15 @@ class PathwayEvaluator(COCOEvaluator):
         # performed using the COCO evaluation server).
         self._do_evaluation = "annotations" in self._coco_api.dataset
 
-    def convert_rotated_bbox_prediction_to_coco_json(self, dataset_name, output_file):
+    def convert_rotated_bbox_prediction_to_coco_json(self, dataset_name, output_file,allow_cached):
 
         PathManager.mkdirs(os.path.dirname(output_file))
         with file_lock(output_file):
-            if os.path.exists(output_file):
+            if PathManager.exists(output_file) and allow_cached:
                 self._logger.info(f"Cached annotations in COCO format already exist: {output_file}")
             else:
                 self._logger.info(f"Converting dataset annotations in '{dataset_name}' to COCO format ...)")
                 coco_dict = self.convert_to_coco_dict(dataset_name)
-
                 with PathManager.open(output_file, "w") as json_file:
                     self._logger.info(f"Caching annotations in COCO format: {output_file}")
                     json.dump(coco_dict, json_file)
@@ -309,7 +308,7 @@ class PathwayEvaluator(COCOEvaluator):
             # TODO this is ugly
             if "instances" in output:
                 instances = output["instances"].to(self._cpu_device)
-                prediction["instances"] = instances_to_coco_json(instances, input["image_id"], input["file_name"])
+                prediction["instances"] = instances_to_coco_json(instances, input["image_id"])
             if "proposals" in output:
                 prediction["proposals"] = output["proposals"].to(self._cpu_device)
             self._predictions.append(prediction)
@@ -379,7 +378,7 @@ class PathwayEvaluator(COCOEvaluator):
 
 
 
-def instances_to_coco_json(instances, img_id, file_name):
+def instances_to_coco_json(instances, img_id):
     """
     Dump an "Instances" object to a COCO-format json that's used for evaluation.
 
@@ -405,7 +404,7 @@ def instances_to_coco_json(instances, img_id, file_name):
     for k in range(num_instance):
         result = {
             "image_id": img_id,
-            "file_name": file_name,
+            #"file_name": file_name,
             "category_id": classes[k],
             "bbox": boxes[k],
             "score": scores[k],
