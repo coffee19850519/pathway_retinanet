@@ -104,7 +104,7 @@ class PathwayEvaluator(COCOEvaluator):
             self.convert_rotated_bbox_prediction_to_coco_json(dataset_name, cache_path, allow_cached)
 
         json_file = PathManager.get_local_path(self._metadata.json_file)
-        print(json_file)
+        #print(json_file)
         with contextlib.redirect_stdout(io.StringIO()):
             self._coco_api = COCO(json_file)
 

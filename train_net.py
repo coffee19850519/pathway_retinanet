@@ -18,7 +18,7 @@ from detectron2.evaluation import verify_results,DatasetEvaluators
 from detectron2.utils.logger import setup_logger
 from pathway_evaluation import PathwayEvaluator
 from detectron2.solver.build import build_optimizer
-from tools.relation_data_tool import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset
+from tools.relation_data_tool import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset, generate_scaled_boxes_width_height
 
 class Trainer(DefaultTrainer):
     @classmethod
@@ -56,6 +56,9 @@ def main(args):
     # import the relation_retinanet as meta_arch, so they will be registered
     from relation_retinanet import RelationRetinaNet
 
+    #an example to use generate_scaled_boxes_width_height function for tuning hyperparameters
+    #sizes, ratios = generate_scaled_boxes_width_height('pathway_train_0',cfg)
+
     if args.eval_only:
         model = Trainer.build_model(cfg)
         DetectionCheckpointer(model, save_dir=cfg.OUTPUT_DIR).resume_or_load(
@@ -75,9 +78,9 @@ def main(args):
 if __name__ == "__main__":
     os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-    category_list = ['activate','gene','inhibit','relation']
-    img_path = r'/home/fei/Desktop/100image_dataset/image/'
-    json_path = r'/home/fei/Desktop/100image_dataset/json/'
+    category_list = ['gene','activate','inhibit','relation']
+    img_path = r'/home/fei/Desktop/data/image_0101'
+    json_path = r'/home/fei/Desktop/data/json_0101/'
 
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K =1)
     #register_pathway_dataset(json_path, img_path, category_list)
@@ -86,7 +89,7 @@ if __name__ == "__main__":
     # parser.add_argument("--task", choices=["train", "eval", "data"], required=True)
     args = parser.parse_args()
     assert not args.eval_only
-    args.eval_only = True
+    #args.eval_only = True
     args.config_file = r'./Base-RelationRetinaNet.yaml'
     #args.num_gpus = 2
     #print("Command Line Args:", args)

@@ -116,6 +116,8 @@ def do_train(cfg, model, resume=False):
     #     max_iter=max_iter
     # )
 
+
+
     logger.info("Starting training from iteration {}".format(start_iter))
 
     with EventStorage(start_iter) as storage:
@@ -234,8 +236,8 @@ if __name__ == "__main__":
     os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
     category_list = ['relation']
-    img_path = r'/home/coffee/Desktop/data/image_0101/'
-    json_path = r'/home/coffee/Desktop/data/json_0101/'
+    img_path = r'/home/fei/Desktop/data/image_0101/'
+    json_path = r'/home/fei/Desktop/data/json_0101/'
 
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
     #register_pathway_dataset(json_path, img_path, category_list)

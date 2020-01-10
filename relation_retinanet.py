@@ -95,7 +95,7 @@ class RelationRetinaNet(nn.Module):
         self.matcher = RelationAwareMatcher(
             cfg.MODEL.RETINANET.IOU_THRESHOLDS,
             cfg.MODEL.RETINANET.IOU_LABELS,
-            allow_low_quality_matches=False,
+            allow_low_quality_matches=True,
         )
 
         pixel_mean = torch.Tensor(cfg.MODEL.PIXEL_MEAN).to(self.device).view(3, 1, 1)
@@ -131,6 +131,7 @@ class RelationRetinaNet(nn.Module):
             gt_instances = [x["targets"].to(self.device) for x in batched_inputs]
         else:
             gt_instances = None
+
 
         features = self.backbone(images.tensor)
         features = [features[f] for f in self.in_features]

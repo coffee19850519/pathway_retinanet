@@ -31,7 +31,7 @@ def get_annotation_dicts(json_path, img_path, category_list):
             height, width = img.shape[:2]
             del img
         except Exception as e:
-            print(str(e))
+            #print(str(e))
             continue
 
         #declare a dict variant to save the content
@@ -61,7 +61,7 @@ def get_annotation_dicts(json_path, img_path, category_list):
                 #only extract valid annotations
                 category_id = imgs_anns.generate_category_id(anno,category_list)
             except Exception as e:
-                print(str(e))
+                #print(str(e))
                 continue
 
             obj = {
@@ -191,6 +191,8 @@ class PathwayDatasetMapper(DatasetMapper):
 
         dataset_dict["instances"] = utils.filter_empty_instances(instances)
 
+        #print and save the scaled bbox for optimizing hyperparameters
+
         del annos, instances
         return dataset_dict
 
@@ -295,6 +297,20 @@ def visualize_coco_instances(coco_format_json_file, dataset_name, save_vis_path,
         del vis_img,img
     del metadata,coco_instances
 
+def generate_scaled_boxes_width_height(datset_name, cfg):
+    dicts = DatasetCatalog.get(datset_name)
+    mapper = PathwayDatasetMapper(cfg)
+    all_sizes = []
+    all_ratios = []
+    for sample in dicts:
+        scaled_anno_per_sample = mapper(sample)
+        scaled_boxes = scaled_anno_per_sample['instances'].gt_boxes.tensor
+        #in rotated_box, the shape should be cnt_x, cnt_y, width, height and angle
+        #size = w * h and ratio = w / h
+        all_sizes.extend((scaled_boxes[:, 2] * scaled_boxes[:, 3]).tolist())
+        all_ratios.extend((scaled_boxes[:, 2] / scaled_boxes[:, 3]).tolist())
+        del scaled_anno_per_sample, scaled_boxes
+    return all_sizes, all_ratios
 
 if __name__ == "__main__":
 
@@ -308,7 +324,8 @@ if __name__ == "__main__":
     # print(json_train)
 
     # should be embedded into configer file
-    category_list = ['activate','gene','inhibit','relation']
+    #category_list = ['activate','gene','inhibit','relation']
+    category_list = ['relation']
 
     img_path = r'/home/fei/Desktop/data/image_0101/'
     json_path = r'/home/fei/Desktop/data/json_0101/'
@@ -333,5 +350,5 @@ if __name__ == "__main__":
     #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/results/', basename), vis_img)
     #     del img, vis_img
 
-    visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
-                             'pathway_val_0',r'/home/fei/Desktop/results/',[3],0.6)
+    # visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
+    #                          'pathway_val_0',r'/home/fei/Desktop/results/',[0],0.8)
