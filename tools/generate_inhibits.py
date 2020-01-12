@@ -271,6 +271,7 @@ def generate_inhibit(img, file_name, arrow_boxes, head_boxes):
     del rect_pts
   # conduct background imputation on specific area
   simulation_img = cv2.inpaint(img, mask, 3, cv2.INPAINT_TELEA)
+
   inhibit_box_list = []
   for box_idx in range(0, len(arrow_boxes)):
     try:
@@ -317,26 +318,37 @@ def simulate_inhibit_per_img(img_fold, json_fold, json_file, sim_json_fold, ceil
               arrow_shape['shape_type'] = 'polygon'
               break
 
-    # shapes=arrow+inhibit+text
-    shapes = []
+    # all_shapes=arrow+inhibit+text
+    all_shapes = []
     for arrow_shape in arrow_shapes:
-        shapes.append(arrow_shape)
+        all_shapes.append(arrow_shape)
     for inhibit_shape in inhibit_shapes:
-        shapes.append(inhibit_shape)
+        all_shapes.append(inhibit_shape)
     for text_shape in text_shapes:
-        shapes.append(text_shape)
+        all_shapes.append(text_shape)
+
+    # should follow shape orders from original jsons
+    new_shapes = []
+    for sequential_shape in label.shapes:
+        #find out corresponding shape form all_shapes and spend it into new_shapes
+        for current_shape in all_shapes:
+            if current_shape['ID'] == sequential_shape['ID']:
+                #targeted
+                new_shapes.append(current_shape)
+                #remove the targeted shape to speed up in following iterations
+                all_shapes.remove(current_shape)
 
     cv2.imwrite(sim_file, sim)
     # save json
 
-    label.save(os.path.join(os.path.splitext(sim_file)[0] + '.json'), shapes, 'sim_inhibit_' + label.imagePath, None,
+    label.save(os.path.join(os.path.splitext(sim_file)[0] + '.json'), new_shapes, 'sim_inhibit_' + label.imagePath, None,
              None, None, None, {})
-    del sim, shapes
+    del sim, all_shapes, arrow_shapes, inhibit_shape, text_shape, new_shapes
 #
 if __name__ == "__main__":
    img_fold = r'/home/fei/Desktop/original images/'
-   json_fold = r'/home/fei/Desktop/new_labels_with_box/'
-   sim_json_fold = r'/home/fei/Desktop/sim_inhibit/'
+   json_fold = r'/home/fei/Desktop/reset_json/'
+   sim_json_fold = r'/home/fei/Desktop/sim_json/'
    for json_file in os.listdir(json_fold):
         if os.path.splitext(json_file)[-1] != '.json':
             continue
