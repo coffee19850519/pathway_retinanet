@@ -116,8 +116,6 @@ def do_train(cfg, model, resume=False):
     #     max_iter=max_iter
     # )
 
-
-
     logger.info("Starting training from iteration {}".format(start_iter))
 
     with EventStorage(start_iter) as storage:
@@ -135,6 +133,7 @@ def do_train(cfg, model, resume=False):
             assert torch.isfinite(losses).all(), loss_dict
 
             loss_dict_reduced = {k: v.item() for k, v in comm.reduce_dict(loss_dict).items()}
+
             losses_reduced = sum(loss for loss in loss_dict_reduced.values())
 
             if comm.is_main_process():
@@ -142,8 +141,11 @@ def do_train(cfg, model, resume=False):
 
             optimizer.zero_grad()
             losses.backward()
+            #prevent gredient explosion
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1)
             optimizer.step()
-            storage.put_scalar("lr", optimizer.param_groups[0]["lr"], smoothing_hint=False)
+            if comm.is_main_process():
+                storage.put_scalar("lr", optimizer.param_groups[0]["lr"], smoothing_hint=False)
             scheduler.step()
 
             # if (
@@ -162,31 +164,36 @@ def do_train(cfg, model, resume=False):
                 #one complete epoch
                 epoch_loss = loss_per_epoch / epoch_num
                 # calculate epoch_loss and push to history cache
-                storage.put_scalar("epoch_loss", epoch_loss, smoothing_hint=False)
+                if comm.is_main_process():
+                    storage.put_scalar("epoch_loss", epoch_loss, smoothing_hint=False)
+                #do validation
+                val_results = do_test(cfg, model)
+
+                if comm.is_main_process():
+                    storage.put_scalar("val_AP50", val_results['bbox']['AP50'], smoothing_hint=False)
+                comm.synchronize()
+
                 for writer in writers:
                     writer.write()
-                #do validation
-                #do_test(cfg, model)
-                # Compared to "train_net.py", the test results are not dumped to EventStorage
-                #comm.synchronize()
-
                 # only save improved checkpoints on epoch_loss
-                if best_loss > losses_reduced:
-                    best_loss = losses_reduced
-                #     better_train = True
-                # if best_val < val_results.values('AP'):
-                #     best_val = val_results.values()[0]
-                #     better_val = True
-                # if better_val and better_train:
+                if best_loss > epoch_loss:
+                    best_loss = epoch_loss
+                    better_train = True
+                if best_val < val_results['bbox']['AP50']:
+                    best_val = val_results['bbox']['AP50']
+                    better_val = True
+                if better_val and better_train:
                     checkpointer.save("model_{:07d}".format(iteration),  **{"iteration": iteration})
 
                 #reset loss_per_epoch
                 loss_per_epoch = 0.0
+                better_train = False
+                better_val = False
             else:
                 # calculate epoch_loss and push to history cache
                 storage.put_scalar("epoch_loss", loss_per_epoch / (iteration % epoch_num), smoothing_hint=False)
-                # better_train = False
-                # better_val = False
+                better_train = False
+                better_val = False
 
             #periodic_checkpointer.step(iteration)
 
@@ -211,8 +218,14 @@ def setup(args):
 
 def main(args):
     cfg = setup(args)
+
+
     # import the relation_retinanet as meta_arch, so they will be registered
     from relation_retinanet import RelationRetinaNet
+    category_list = ['activate_relation', 'inhibit_relation']
+    img_path = r'/home/coffee/Desktop/data/image_0109'
+    json_path = r'/home/coffee/Desktop/data/json_0109/'
+    register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
 
     model = build_model(cfg)
     logger.info("Model:\n{}".format(model))
@@ -234,12 +247,10 @@ def main(args):
 
 if __name__ == "__main__":
     os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-    os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-    category_list = ['relation']
-    img_path = r'/home/fei/Desktop/data/image_0101/'
-    json_path = r'/home/fei/Desktop/data/json_0101/'
+    os.environ['CUDA_VISIBLE_DEVICES'] = '0, 1'
 
-    register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
+
+
     #register_pathway_dataset(json_path, img_path, category_list)
 
     parser = default_argument_parser()
@@ -247,6 +258,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     assert not args.eval_only
     #args.eval_only = True
+    args.num_gpus = 2
     args.config_file = r'./Base-RelationRetinaNet.yaml'
     print("Command Line Args:", args)
     launch(
