@@ -19,8 +19,6 @@ class LabelFile(object):
         self.arrow_num = 0
         self.inhibit_num = 0
         self.gene_num = 0
-        self.imageHeight = 0
-        self.imageWidth = 0
 
         if filename is not None:
             self.load(filename)
@@ -54,11 +52,12 @@ class LabelFile(object):
                 image_data = None
 
             flags = data.get('flags')
-            imagePath = str.split(data['imagePath'],'\\')[-1]
+            imagePath = data['imagePath']
             lineColor = data['lineColor']
             fillColor = data['fillColor']
-            width = data['imageWidth']
-            height = data['imageHeight']
+            imageHeight = data['imageHeight']
+            imageWidth = data['imageWidth']
+
             shapes = []
             for s in data['shapes']:
                 shapes.append(s)
@@ -82,14 +81,14 @@ class LabelFile(object):
         # Only replace data after everything is loaded.
         self.flags = flags
         self.shapes = shapes
-        self.imageHeight = height
-        self.imageWidth = width
         self.imagePath = imagePath
         self.imageData = image_data
         self.lineColor = lineColor
         self.fillColor = fillColor
         self.filename = filename
         self.otherData = otherData
+        self.imageHeight = imageHeight
+        self.imageWidth = imageWidth
 
     def save(
             self,
@@ -162,28 +161,14 @@ class LabelFile(object):
         category = ''
         # if shape['label'].find('arrow') != -1 or shape['label'].find(
         #     '<activate>') != -1 or shape['label'] == 'action:':
-        try:
-            return shape['label'].split(':')[0]
-        except:
-            return None
-        # if shape['label'].split(':')[0] == 'activate':
-        #     # arrow
-        #     category = 'arrow'
-        # elif shape['label'].split(':')[0] == 'inhibit':
-        #     category = 'nock'
-        # elif shape['label'].split(':')[0] == 'gene':
-        #     category = 'text'
-        # elif shape['label'].split(':')[0] == 'relationship':
-        #     category = 'relationship'
-        # else:
-        #     category = 'compound'
-        # return category
-
-    def generate_category_id(self, shape, category_list):
-        try:
-            return list(category_list).index(shape['label'].split(':')[0])
-        except:
-            raise Exception('the shape '+ shape['label'] + ' in file ' + self.filename + ' has invalid category')
+        if shape['label'].split(':')[0] == 'activate':
+            # arrow
+            category = 'arrow'
+        elif shape['label'].split(':')[0] == 'inhibit':
+            category = 'nock'
+        else:
+            category = 'text'
+        return category
 
     def get_all_boxes_for_category(self, category_name):
         text_boxes = []
@@ -194,40 +179,65 @@ class LabelFile(object):
         # 2019/3/6 WWW get_all_boxes_for_category
 
     def get_all_shapes_for_category(self, category_name):
-        text_boxes = []
+        targets = []
         for shape in self.shapes:
-            if self.generate_category(shape) == category_name:
-                text_boxes.append(shape)
-        return text_boxes
+            if shape['label'].split(':', 1)[0] == category_name:
+                targets.append(shape)
+        return targets
 
     def check_relationship_box(self, covered_shapes):
-        relation_symbol_amount = 0
+        only_one_relation_symbo = False
         for shape in covered_shapes:
-            if self.generate_category(shape) != 'text':
-                relation_symbol_amount = relation_symbol_amount + 1
-        if relation_symbol_amount != 1:
-            return False
-        else:
-            return True
+            if self.generate_category(shape) != 'text' and not only_one_relation_symbo:
+                only_one_relation_symbo = True
+        return False
 
 
-    def get_sub_shape_in_relationship(self, current_shape):
-        #get its involving entity names
-        #content = shape['label'].split(':',1)[1]
-        covered_shapes = []
-        #check all sub objects it covers
-        for shape in self.shapes:
-            #if shape is covered by current_shape
-            if shape != current_shape\
-                and is_smallpolygon_covered_by_largeone(current_shape['points'], shape['points']):
-                covered_shapes.append(shape)
-        if len(covered_shapes) > 2 and self.check_relationship_box(covered_shapes):
-            return covered_shapes
-        else:
-            #found invalid relationship box
-            #give a 'none' as a invalid marker
-            return None
+    # def get_sub_box_in_relationship(self, current_shape):
+    #     #get its involving entity names
+    #     #content = shape['label'].split(':',1)[1]
+    #     covered_shapes = []
+    #     #check all sub objects it covers
+    #     for shape in self.shapes:
+    #         #if shape is covered by current_shape
+    #         if is_smallpolygon_covered_by_largeone(current_shape, shape):
+    #             covered_shapes.append(shape)
+    #     if len(covered_shapes) > 2 and self.check_relationship_box(covered_shapes):
+    #         return covered_shapes
+    #     else:
+    #         return None
 
+
+    def get_duplicated_genes(self):
+        duplicated_genes = {}
+        gene_names = self.get_all_genes()
+        gene_set = set(gene_names)
+        for gene in gene_set:
+           gene_count = gene_names.count(gene)
+           if gene_count > 1:
+                duplicated_genes.update({gene : self.get_duplicated_gene_IDs(gene)})
+        return duplicated_genes
+
+    def get_duplicated_gene_IDs(self, query_gene_name):
+        gene_shapes = self.get_all_shapes_for_category('gene')
+        IDs = []
+        for gene_shape in gene_shapes:
+            try:
+                if query_gene_name == gene_shape['label'].split(':', 1)[1]:
+                    IDs.append(gene_shape['ID'])
+            except:
+                continue
+        del gene_shapes
+        return IDs
+
+    def get_gene_ID_by_name(self, query_gene_name):
+        gene_shapes = self.get_all_shapes_for_category('gene')
+        for gene_shape in gene_shapes:
+            if gene_shape['label'].split(':', 1)[1] == query_gene_name:
+                del gene_shapes
+                return gene_shape['ID']
+        del gene_shapes
+        return None
 
     def export_predict_correct_txt(self):
         predict_results = []
@@ -293,7 +303,6 @@ class LabelFile(object):
             correct_fp.writelines(correct_results)
 
     @staticmethod
-
     def isLabelFile(filename):
         return os.path.splitext(filename)[1].lower() == LabelFile.suffix
 
