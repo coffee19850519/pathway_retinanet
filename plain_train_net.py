@@ -46,6 +46,8 @@ from detectron2.utils.events import (
     TensorboardXWriter,
 )
 from tools.relation_data_tool import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset
+import csv
+
 
 logger = logging.getLogger("pathway_parser")
 
@@ -67,6 +69,19 @@ def do_test(cfg, model):
     if len(results) == 1:
         results = list(results.values())[0]
     return results
+
+def do_validation(data_loader, model):
+    val_loss = 0.0
+    total = len(data_loader)  # validation data loader must have a fixed length
+    #with inference_context(model), torch.no_grad():
+    with torch.no_grad():
+        for inputs in data_loader:
+            loss_dict = model(inputs)
+            losses = sum(loss for loss in loss_dict.values())
+            assert torch.isfinite(losses).all(), loss_dict
+            val_loss += losses
+    val_loss /= total
+    return val_loss
 
 
 def do_train(cfg, model, resume=False):
@@ -102,12 +117,16 @@ def do_train(cfg, model, resume=False):
 
     # compared to "train_net.py", we do not support accurate timing and
     # precise BN here, because they are not trivial to implement
-    data_loader = build_detection_train_loader(cfg, mapper= PathwayDatasetMapper(cfg, True))
+    train_data_loader = build_detection_train_loader(cfg, mapper= PathwayDatasetMapper(cfg, True))
 
-    if cfg.DATALOADER.ASPECT_RATIO_GROUPING:
-        epoch_num = (data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH) + 1
+
+    val_data_loader = build_detection_test_loader(cfg=cfg, dataset_name= cfg.DATASETS.TEST[0],
+                                              mapper=PathwayDatasetMapper(cfg, True))
+
+    if train_data_loader.dataset.sampler._size % cfg.SOLVER.IMS_PER_BATCH != 0:
+        epoch_num = (train_data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH) + 1
     else:
-        epoch_num = data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH
+        epoch_num = train_data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH
 
     # periodic_checkpointer = PeriodicCheckpointer(
     #     checkpointer,
@@ -121,10 +140,10 @@ def do_train(cfg, model, resume=False):
     with EventStorage(start_iter) as storage:
         loss_per_epoch = 0.0
         best_loss = 99999.0
-        best_val = 0.0
+        best_val_loss = 99999.0
         better_train = False
         better_val = False
-        for data, iteration in zip(data_loader, range(start_iter, max_iter)):
+        for data, iteration in zip(train_data_loader, range(start_iter, max_iter)):
             iteration = iteration + 1
             storage.step()
 
@@ -132,20 +151,20 @@ def do_train(cfg, model, resume=False):
             losses = sum(loss for loss in loss_dict.values())
             assert torch.isfinite(losses).all(), loss_dict
 
-            loss_dict_reduced = {k: v.item() for k, v in comm.reduce_dict(loss_dict).items()}
+            loss_weights = {"loss_cls": 0.3, "loss_box_reg": 0.7}
+
+            loss_dict_reduced = {k: v.item() * loss_weights[k] for k, v in comm.reduce_dict(loss_dict).items()}
 
             losses_reduced = sum(loss for loss in loss_dict_reduced.values())
 
             if comm.is_main_process():
                 storage.put_scalars(total_loss=losses_reduced, **loss_dict_reduced)
-
+                storage.put_scalar("lr", optimizer.param_groups[0]["lr"], smoothing_hint=False)
             optimizer.zero_grad()
             losses.backward()
             #prevent gredient explosion
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1)
             optimizer.step()
-            if comm.is_main_process():
-                storage.put_scalar("lr", optimizer.param_groups[0]["lr"], smoothing_hint=False)
             scheduler.step()
 
             # if (
@@ -160,44 +179,70 @@ def do_train(cfg, model, resume=False):
             #     comm.synchronize()
 
             loss_per_epoch += losses_reduced
+
             if iteration % epoch_num == 0 or iteration == max_iter:
                 #one complete epoch
                 epoch_loss = loss_per_epoch / epoch_num
+                #do validation
+                val_loss = do_validation(val_data_loader, model)
                 # calculate epoch_loss and push to history cache
+
                 if comm.is_main_process():
                     storage.put_scalar("epoch_loss", epoch_loss, smoothing_hint=False)
-                #do validation
-                val_results = do_test(cfg, model)
-
-                if comm.is_main_process():
-                    storage.put_scalar("val_AP50", val_results['bbox']['AP50'], smoothing_hint=False)
-                comm.synchronize()
-
+                    storage.put_scalar("val_loss", val_loss, smoothing_hint=False)
                 for writer in writers:
                     writer.write()
+
                 # only save improved checkpoints on epoch_loss
                 if best_loss > epoch_loss:
                     best_loss = epoch_loss
                     better_train = True
-                if best_val < val_results['bbox']['AP50']:
-                    best_val = val_results['bbox']['AP50']
+                if best_val_loss > val_loss:
+                    best_val_loss = val_loss
                     better_val = True
-                if better_val and better_train:
+                if better_val or better_train:
                     checkpointer.save("model_{:07d}".format(iteration),  **{"iteration": iteration})
 
+                comm.synchronize()
                 #reset loss_per_epoch
                 loss_per_epoch = 0.0
                 better_train = False
                 better_val = False
-            else:
+                #comm.synchronize()
+            #else:
                 # calculate epoch_loss and push to history cache
-                storage.put_scalar("epoch_loss", loss_per_epoch / (iteration % epoch_num), smoothing_hint=False)
-                better_train = False
-                better_val = False
+                #storage.put_scalar("epoch_loss", loss_per_epoch / (iteration % epoch_num), smoothing_hint=False)
+                # better_train = False
+                # better_val = False
 
             #periodic_checkpointer.step(iteration)
 
+def evaluate_all_checkpoints(args, checkpoint_folder, output_csv_file):
+    cfg = setup(args)
+    csv_results=[]
+    for file in os.listdir(checkpoint_folder):
 
+        file_name, file_ext = os.path.splitext(file)
+        if file_ext != ".pth" :
+            continue
+
+        model = build_model(cfg)
+        logger.info("Model:\n{}".format(model))
+
+        DetectionCheckpointer(model, save_dir=cfg.OUTPUT_DIR).resume_or_load(
+            os.path.join(checkpoint_folder, file), resume=False)
+        results=do_test(cfg, model)
+        results['bbox'].update(checkpoint=file)
+        csv_results.append(results['bbox'])
+        print('main_results:')
+        print(results)
+        print(csv_results)
+    with open(output_csv_file, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames = results['bbox'].keys())
+        writer.writeheader()
+        writer.writerows(csv_results)
+    csvfile.close()
+    return results
 
 def setup(args):
     """
@@ -218,13 +263,11 @@ def setup(args):
 
 def main(args):
     cfg = setup(args)
-
-
     # import the relation_retinanet as meta_arch, so they will be registered
     from relation_retinanet import RelationRetinaNet
     category_list = ['activate_relation', 'inhibit_relation']
-    img_path = r'/home/coffee/Desktop/data/image_0109'
-    json_path = r'/home/coffee/Desktop/data/json_0109/'
+    img_path = r'/home/fei/Desktop/debug_data/image_0109/'
+    json_path = r'/home/fei/Desktop/debug_data/json_0109/'
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
 
     model = build_model(cfg)
@@ -241,15 +284,19 @@ def main(args):
             model, device_ids=[comm.get_local_rank()], broadcast_buffers=False
         )
 
-    do_train(cfg, model)
-    return do_test(cfg, model)
+    return do_train(cfg, model)
 
 
 if __name__ == "__main__":
-    os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-    os.environ['CUDA_VISIBLE_DEVICES'] = '0, 1'
+    # os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
+    # os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
-
+    category_list = ['activate_relation', 'inhibit_relation']
+    img_path = r'/home/fei/Desktop/train_data/image_0109/'
+    json_path = r'/home/fei/Desktop/train_data/json_0109/'
+    register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
+    # import the relation_retinanet as meta_arch, so they will be registered
+    from relation_retinanet import RelationRetinaNet
 
     #register_pathway_dataset(json_path, img_path, category_list)
 
@@ -258,14 +305,24 @@ if __name__ == "__main__":
     args = parser.parse_args()
     assert not args.eval_only
     #args.eval_only = True
-    args.num_gpus = 2
+    #args.num_gpus = 2
     args.config_file = r'./Base-RelationRetinaNet.yaml'
     print("Command Line Args:", args)
+    # launch(
+    #     main,
+    #     args.num_gpus,
+    #     num_machines=args.num_machines,
+    #     machine_rank=args.machine_rank,
+    #     dist_url=args.dist_url,
+    #     args=(args,),
+    # )
+    checkpoint_folder = r'/home/fei/Desktop/output_files/moreData_relation_output/'
+    output_csv_file = os.path.join(checkpoint_folder, 'all_checkpoint_evaluations.csv')
     launch(
-        main,
+        evaluate_all_checkpoints,
         args.num_gpus,
         num_machines=args.num_machines,
         machine_rank=args.machine_rank,
         dist_url=args.dist_url,
-        args=(args,),
+        args=(args, checkpoint_folder, output_csv_file),
     )
