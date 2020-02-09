@@ -61,22 +61,28 @@ def get_annotation_dicts(json_path, img_path, category_list):
                 #only extract valid annotations
                 category_id = imgs_anns.generate_category_id(anno,category_list)
             except Exception as e:
-                #print(str(e))
+                #print(str.format('file: %s arises error: %s when generating category_id') % str(e))
+                continue
+            try:
+                LabelFile.normalize_shape_points(anno)
+                obj = {
+                    # "bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
+                    # "bbox_mode": BoxMode.XYXY_ABS,
+
+                    "bbox": anno['rotated_box'],
+                    "bbox_mode": -1,
+                    # "segmentation": [poly],
+                    "component": component,
+                    "category_id": category_id,
+                    "iscrowd": 0
+
+                }
+                objs.append(obj)
+            except Exception as e:
+                print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
                 continue
 
-            obj = {
-                #"bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
-                #"bbox_mode": BoxMode.XYXY_ABS,
 
-                "bbox": anno['rotated_box'],
-                "bbox_mode": -1,
-                #"segmentation": [poly],
-                "component": component,
-                "category_id":  category_id,
-                "iscrowd": 0
-
-            }
-            objs.append(obj)
         record["annotations"] = objs
         dataset_dicts.append(record)
 
@@ -191,8 +197,6 @@ class PathwayDatasetMapper(DatasetMapper):
 
         dataset_dict["instances"] = utils.filter_empty_instances(instances)
 
-        #print and save the scaled bbox for optimizing hyperparameters
-
         del annos, instances
         return dataset_dict
 
@@ -208,7 +212,7 @@ def rotated_annotations_to_instances(annos, image_size):
     classes = [obj["category_id"] for obj in annos]
     classes = torch.tensor(classes, dtype=torch.int64)
     target.gt_classes = classes
-
+    #del boxes, classes
     # include component list into target
     # if len(annos) and "component" in annos[0]:
     #     component = []
@@ -223,7 +227,7 @@ def rotated_annotations_to_instances(annos, image_size):
 
 def transform_rotated_boxes_annotations(annotation, transforms):
 
-    bbox = np.array(annotation["bbox"], np.float).reshape(-1, 5)
+    bbox = np.array(annotation["bbox"], np.float32).reshape(-1, 5)
     # Note that bbox is 1d (per-instance bounding box)
     annotation["bbox"] = transforms.apply_rotated_box(bbox)[0]
     annotation["bbox_mode"] = -1
@@ -297,20 +301,6 @@ def visualize_coco_instances(coco_format_json_file, dataset_name, save_vis_path,
         del vis_img,img
     del metadata,coco_instances
 
-def generate_scaled_boxes_width_height(datset_name, cfg):
-    dicts = DatasetCatalog.get(datset_name)
-    mapper = PathwayDatasetMapper(cfg)
-    all_sizes = []
-    all_ratios = []
-    for sample in dicts:
-        scaled_anno_per_sample = mapper(sample)
-        scaled_boxes = scaled_anno_per_sample['instances'].gt_boxes.tensor
-        #in rotated_box, the shape should be cnt_x, cnt_y, width, height and angle
-        #size = w * h and ratio = w / h
-        all_sizes.extend((scaled_boxes[:, 2] * scaled_boxes[:, 3]).tolist())
-        all_ratios.extend((scaled_boxes[:, 2] / scaled_boxes[:, 3]).tolist())
-        del scaled_anno_per_sample, scaled_boxes
-    return all_sizes, all_ratios
 
 if __name__ == "__main__":
 
@@ -324,11 +314,9 @@ if __name__ == "__main__":
     # print(json_train)
 
     # should be embedded into configer file
-    #category_list = ['activate','gene','inhibit','relation']
-    category_list = ['relation']
-
-    img_path = r'/home/fei/Desktop/data/image_0101/'
-    json_path = r'/home/fei/Desktop/data/json_0101/'
+    category_list = ['activate_relation', 'inhibit_relation']
+    img_path = r'/home/fei/Desktop/100image_dataset/image/'
+    json_path = r'/home/fei/Desktop/100image_dataset/json/'
 
     # K = 10
     # for d in ["train", "val"]:
@@ -350,5 +338,5 @@ if __name__ == "__main__":
     #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/results/', basename), vis_img)
     #     del img, vis_img
 
-    # visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
-    #                          'pathway_val_0',r'/home/fei/Desktop/results/',[0],0.8)
+    visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
+                             'pathway_val_0',r'/home/fei/Desktop/results/',[0,1],0.8)

@@ -7,10 +7,9 @@ import imgaug as ia
 from imgaug import augmenters as iaa
 from imgaug import parameters as iap
 import numpy as np
+from tools.label_file import LabelFile
 
-from label_file import LabelFile
-
-ia.seed(1)
+ia.seed(1017)
 
 
 def apply_transform_on_an_image(image, bbox=None):
@@ -99,9 +98,9 @@ def apply_transform_on_an_image(image, bbox=None):
                        # average/uniform blur (kernel size between 2x2 and 7x7)
                        # median blur (kernel size between 3x3 and 11x11).
                        iaa.OneOf([
-                           iaa.GaussianBlur((0, 0.2)),
-                           iaa.AverageBlur(k=(1, 1)),
-                           iaa.MedianBlur(k=(1, 1)),
+                           iaa.GaussianBlur((0, 0.3)),
+                           iaa.AverageBlur(k=(1, 2)),
+                           iaa.MedianBlur(k=(1, 3)),
                        ]),
 
                        # iaa.OneOf([
@@ -134,28 +133,28 @@ def apply_transform_on_an_image(image, bbox=None):
                        # channel and pixel.
                        # In the other 50% of all cases it is sampled once per
                        # pixel (i.e. brightness change).
-                       iaa.AdditiveGaussianNoise(
-                           loc=0, scale=(0.0, 0.001 * 255), per_channel=0.5
-                       ),
+                       # iaa.AdditiveGaussianNoise(
+                       #     loc=0, scale=(0.0, 0.001 * 255), per_channel=0.5
+                       # ),
 
                        # Either drop randomly 1 to 10% of all pixels (i.e. set
                        # them to black) or drop them on an image with 2-5% percent
                        # of the original size, leading to large dropped
                        # rectangles.
-                       iaa.OneOf([
-                           iaa.Dropout((0, 0.05), per_channel=0.5),
-                           iaa.CoarseDropout(
-                               (0, 0.01), size_percent=(0.1, 0.2),
-                               per_channel=0.2
-                           ),
-                       ]),
+                       # iaa.OneOf([
+                       #     iaa.Dropout((0, 0.05), per_channel=0.5),
+                       #     iaa.CoarseDropout(
+                       #         (0, 0.01), size_percent=(0.1, 0.2),
+                       #         per_channel=0.2
+                       #     ),
+                       # ]),
 
                        # Invert each image's channel with 5% probability.
                        # This sets each pixel value v to 255-v.
                        iaa.Invert(0.1, per_channel=True),  # invert color channels
 
                        # Add a value of -10 to 10 to each pixel.
-                       iaa.Add((-40, 40), per_channel=0.5),
+                       #iaa.Add((-40, 40), per_channel=0.5),
 
                        # Change brightness of images (50-150% of original value).
                        # iaa.Multiply((0.5, 1.5), per_channel=0.5),
@@ -191,18 +190,24 @@ def apply_transform_on_an_image(image, bbox=None):
 if __name__ == "__main__":
 
 
-    img_path = r'/home/fei/Desktop/sim_inhibit/'
-    json_path = r'/home/fei/Desktop/sim_inhibit_json/'
-    # aug_img_path = r'/home/fei/Desktop/aug_image/'
-    aug_json_path = r'/home/fei/Desktop/aug_sim_inhibit/'
+    img_path = r'/home/fei/Desktop/train_data/0108/images/'
+    json_path = r'/home/fei/Desktop/train_data/0108/jsons/'
+    aug_img_path = r'/home/fei/Desktop/train_data/0108/aug_images/'
+    aug_json_path = r'/home/fei/Desktop/train_data/0108/aug_jsons/'
 
-    for img in os.listdir(img_path):
-
-        if os.path.splitext(img)[1] != '.jpg':
+    # for img in os.listdir(img_path):
+    for json in os.listdir(json_path):
+        if os.path.splitext(json)[1] != '.json':
             continue
-        img_name=os.path.splitext(img)[0]
-        img=imageio.imread(img_path+img)
-        img_anns = LabelFile(os.path.join(json_path, img_name+'.json'))
+        #img_name=os.path.splitext(json)[0]
+
+        img_anns = LabelFile(os.path.join(json_path, json))
+        if os.path.exists(os.path.join(img_path, img_anns.imagePath)):
+            img=imageio.imread(os.path.join(img_path, img_anns.imagePath))
+
+        # else:
+        #     img = imageio.imread(os.path.join(img_path, img_name + '.png'))
+        #img_anns = LabelFile(os.path.join(json_path+json))
         # bbox=[]
         # for anno in img_anns.shapes:
         #
@@ -215,33 +220,38 @@ if __name__ == "__main__":
         #     # two_points.append(poly_points[2])
         #     # bbox.append(two_points)
         # bbs = BoundingBoxesOnImage(bbox, shape=img.shape)
-        for i in range(10):
-            aug_img = apply_transform_on_an_image(img)
-            imageio.imwrite(aug_json_path+'aug'+str(i)+img_name+'.jpg',aug_img)
-            img_anns.imagePath='aug'+str(i)+img_name+'.jpg'
+            for i in range(10):
+                aug_img = apply_transform_on_an_image(img)
+                try:
+                    imageio.imwrite(os.path.join(aug_img_path,'aug'+str(i)+img_anns.imagePath),aug_img)
+                except Exception as e :
+                    print(img_anns.imagePath+' '+str(i))
+                    print(e)
+                    continue
+                img_anns.imagePath='aug'+str(i)+img_anns.imagePath
 
-            # for i,anno in enumerate(img_anns.shapes):
-            #     # try:
-            #     # point_0_x = aug_bbox.bounding_boxes[i].x1.astype(np.int32)
-            #     point_0_x=aug_bbox.bounding_boxes[i].x1
-            #     point_0_y = aug_bbox.bounding_boxes[i].y1
-            #     point_1_x = aug_bbox.bounding_boxes[i].x2
-            #     point_1_y = aug_bbox.bounding_boxes[i].y1
-            #     point_2_x = aug_bbox.bounding_boxes[i].x2
-            #     point_2_y = aug_bbox.bounding_boxes[i].y2
-            #     point_3_x = aug_bbox.bounding_boxes[i].x1
-            #     point_3_y = aug_bbox.bounding_boxes[i].y2
-            #     anno['points']=[]
-            #     anno['points'].append([float(point_0_x),float(point_0_y)])
-            #     anno['points'].append([float(point_1_x), float(point_1_y)])
-            #     anno['points'].append([float(point_2_x), float(point_2_y)])
-            #     anno['points'].append([float(point_3_x), float(point_3_y)])
-                # except Exception as e:
-                #     print(img_name+'  '+str(i))
-                #     print(str(e))
+                # for i,anno in enumerate(img_anns.shapes):
+                #     # try:
+                #     # point_0_x = aug_bbox.bounding_boxes[i].x1.astype(np.int32)
+                #     point_0_x=aug_bbox.bounding_boxes[i].x1
+                #     point_0_y = aug_bbox.bounding_boxes[i].y1
+                #     point_1_x = aug_bbox.bounding_boxes[i].x2
+                #     point_1_y = aug_bbox.bounding_boxes[i].y1
+                #     point_2_x = aug_bbox.bounding_boxes[i].x2
+                #     point_2_y = aug_bbox.bounding_boxes[i].y2
+                #     point_3_x = aug_bbox.bounding_boxes[i].x1
+                #     point_3_y = aug_bbox.bounding_boxes[i].y2
+                #     anno['points']=[]
+                #     anno['points'].append([float(point_0_x),float(point_0_y)])
+                #     anno['points'].append([float(point_1_x), float(point_1_y)])
+                #     anno['points'].append([float(point_2_x), float(point_2_y)])
+                #     anno['points'].append([float(point_3_x), float(point_3_y)])
+                    # except Exception as e:
+                    #     print(img_name+'  '+str(i))
+                    #     print(str(e))
 
-            img_anns.save(os.path.join(aug_json_path, 'aug'+str(i)+img_name + '.json'),
-                       img_anns.shapes,
-                       img_anns.imagePath,
-                       img_anns.imageHeight, img_anns.imageWidth, img_anns.lineColor, img_anns.fillColor, img_anns.otherData, img_anns.flags)
+                img_anns.save(os.path.join(aug_json_path, 'aug'+str(i)+json),
+                           img_anns.shapes,
+                           img_anns.imagePath,
+                           img_anns.imageHeight, img_anns.imageWidth, img_anns.lineColor, img_anns.fillColor, img_anns.otherData, img_anns.flags)
 
