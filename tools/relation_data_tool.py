@@ -31,7 +31,7 @@ def get_annotation_dicts(json_path, img_path, category_list):
             height, width = img.shape[:2]
             del img
         except Exception as e:
-            #print(str(e))
+            print(str.format('file: %s arises error: %s when loading annotation json files') % str(e))
             continue
 
         #declare a dict variant to save the content
@@ -61,7 +61,7 @@ def get_annotation_dicts(json_path, img_path, category_list):
                 #only extract valid annotations
                 category_id = imgs_anns.generate_category_id(anno,category_list)
             except Exception as e:
-                #print(str.format('file: %s arises error: %s when generating category_id') % str(e))
+                #print(str.format('file: %s arises error: %s when generating category_id') % (filename, str(e)))
                 continue
             try:
                 LabelFile.normalize_shape_points(anno)
@@ -79,7 +79,7 @@ def get_annotation_dicts(json_path, img_path, category_list):
                 }
                 objs.append(obj)
             except Exception as e:
-                print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
+                #print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
                 continue
 
 
@@ -246,6 +246,23 @@ def transform_rotated_boxes_annotations(annotation, transforms):
     # def _validate_components_in_relation(self, annotation):
     #    return True
 
+def generate_scaled_boxes_width_height_angles(datset_name, cfg):
+    dicts = DatasetCatalog.get(datset_name)
+    mapper = PathwayDatasetMapper(cfg)
+    all_sizes = []
+    all_ratios = []
+    all_angles = []
+    for sample in dicts:
+        scaled_anno_per_sample = mapper(sample)
+        scaled_boxes = scaled_anno_per_sample['instances'].gt_boxes.tensor
+        #in rotated_box, the shape should be cnt_x, cnt_y, width, height and angle
+        #size = w * h and ratio = w / h
+        all_sizes.extend((scaled_boxes[:, 2] * scaled_boxes[:, 3]).tolist())
+        all_ratios.extend((scaled_boxes[:, 2] / scaled_boxes[:, 3]).tolist())
+        all_angles.extend(scaled_boxes[:, 4].tolist())
+        del scaled_anno_per_sample, scaled_boxes
+    return all_sizes, all_ratios, scaled_boxes
+
 
 def visualize_rotated_prediction(img, metadata, predictions, shown_categories ,score_cutoff = 0):
     vis = Visualizer(img, metadata)
@@ -286,6 +303,56 @@ def visualize_rotated_groundtruth(img, metadata, gts, shown_categories):
     return vis_gt[:, :, ::-1]
 
 
+def plot_rotated_prediction_using_opencv(img, metadata, predictions, shown_categories ,score_cutoff = 0):
+    #vis = Visualizer(img, metadata)
+    # get targeted annotations to show
+    boxes = []
+    labels = []
+    # get the specific categories to show
+    for idx in range(len(predictions)):
+        if  float(predictions.iloc[idx]["score"]) >= score_cutoff and predictions.iloc[idx]["category_id"] in shown_categories:
+            boxes.append(predictions.iloc[idx]["bbox"])
+            labels.append(predictions.iloc[idx]["category_id"])
+    names = metadata.get("thing_classes", None)
+    if names:
+        labels = [names[i] for i in labels]
+    boxes = np.array(boxes, np.float).reshape((-1, 5))
+    plot_rotated_instances(img, labels=labels, boxes=boxes)
+    del boxes, labels
+    #return vis_gt[:, :, ::-1]
+
+def plot_rotated_instances(img, boxes=None, labels=None, assigned_colors=None):
+
+    num_instances = len(boxes)
+
+    # if num_instances == 0:
+    #     return img
+
+    # Display in largest to smallest order to reduce occlusion.
+    if boxes is not None:
+        areas = boxes[:, 2] * boxes[:, 3]
+
+    sorted_idxs = np.argsort(-areas).tolist()
+    # Re-order overlapped instances in descending order.
+    boxes = boxes[sorted_idxs]
+
+    for i in range(num_instances):
+        plot_rotated_box_with_label(img, boxes[i])
+
+    #return img
+
+def plot_rotated_box_with_label(
+    img, rotated_box, ):
+
+    cnt_x, cnt_y, w, h, angle = rotated_box
+
+    rect_vertexes = np.int0(cv2.boxPoints(((cnt_x, cnt_y),(w, h),angle)))
+
+    cv2.polylines(img, [rect_vertexes], isClosed= True, color= (255, 0, 0),thickness= 2)
+
+    #return self.output
+
+
 def visualize_coco_instances(coco_format_json_file, dataset_name, save_vis_path,shown_categories, cut_off):
     metadata = MetadataCatalog.get(dataset_name)
     datasetDict =  DatasetCatalog.get(dataset_name)
@@ -295,11 +362,53 @@ def visualize_coco_instances(coco_format_json_file, dataset_name, save_vis_path,
     for sample_info in datasetDict:
         instances_on_sample = predictions.loc[predictions['image_id'] == sample_info['image_id']]
         img = cv2.imread(os.path.join(sample_info['file_name']))
-        vis_img = visualize_rotated_prediction(img, metadata, instances_on_sample, shown_categories, cut_off)
+        #vis_img = plot_rotated_prediction_using_opencv(img, metadata, instances_on_sample, shown_categories, cut_off)
+        plot_rotated_prediction_using_opencv(img, metadata, instances_on_sample, shown_categories, cut_off)
         file_base_name = os.path.basename(sample_info['file_name'])
-        cv2.imwrite(os.path.join(save_vis_path, file_base_name), vis_img)
-        del vis_img,img
+        #cv2.imwrite(os.path.join(save_vis_path, file_base_name), vis_img)
+        cv2.imwrite(os.path.join(save_vis_path, file_base_name), img)
+        #del vis_img,img
+        del img
     del metadata,coco_instances
+
+def visualize_element_instances(coco_format_json_file, dataset_name, save_vis_path,shown_categories, cut_off):
+    metadata = MetadataCatalog.get(dataset_name)
+    datasetDict =  DatasetCatalog.get(dataset_name)
+    coco_instances = json.load(open(coco_format_json_file, 'r'))
+    #read all predictions regarding one input image
+    predictions = pd.DataFrame(coco_instances)
+    for sample_info in datasetDict:
+        instances_on_sample = predictions.loc[predictions['image_id'] == sample_info['image_id']]
+        img = cv2.imread(os.path.join(sample_info['file_name']))
+        #vis_img = visualize_element_prediction(img, metadata, instances_on_sample, shown_categories, cut_off)
+        plot_rotated_prediction_using_opencv(img, metadata, instances_on_sample, shown_categories, cut_off)
+
+
+        file_base_name = os.path.basename(sample_info['file_name'])
+        #cv2.imwrite(os.path.join(save_vis_path, file_base_name), vis_img)
+        cv2.imwrite(os.path.join(save_vis_path, file_base_name), img)
+        del img
+    del metadata,coco_instances
+
+
+def visualize_element_prediction(img, metadata, predictions, shown_categories ,score_cutoff = 0):
+    vis = Visualizer(img, metadata)
+
+    # get targeted annotations to show
+    boxes = []
+    labels = []
+    # get the specific categories to show
+    for idx in range(len(predictions)):
+        if  float(predictions.iloc[idx]["score"]) >= score_cutoff and predictions.iloc[idx]["category_id"] in shown_categories:
+            boxes.append(predictions.iloc[idx]["bbox"])
+            labels.append(predictions.iloc[idx]["category_id"])
+    names = metadata.get("thing_classes", None)
+    if names:
+        labels = [names[i] for i in labels]
+    boxes = np.array(boxes, np.float).reshape((-1, 4))
+    vis_gt = vis.overlay_instances(labels=labels, boxes=boxes).get_image()
+    del boxes, labels
+    return vis_gt[:, :, ::-1]
 
 
 if __name__ == "__main__":
@@ -314,9 +423,9 @@ if __name__ == "__main__":
     # print(json_train)
 
     # should be embedded into configer file
-    category_list = ['activate_relation', 'inhibit_relation']
-    img_path = r'/home/fei/Desktop/100image_dataset/image/'
-    json_path = r'/home/fei/Desktop/100image_dataset/json/'
+    category_list = ['gene', 'inhibit','activate']
+    img_path = r'/home/fei/Desktop/test/images/'
+    json_path = r'/home/fei/Desktop/test/jsons/'
 
     # K = 10
     # for d in ["train", "val"]:
@@ -338,5 +447,5 @@ if __name__ == "__main__":
     #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/results/', basename), vis_img)
     #     del img, vis_img
 
-    visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
-                             'pathway_val_0',r'/home/fei/Desktop/results/',[0,1],0.8)
+    visualize_element_instances(r'/home/fei/Desktop/gene_interaction_extraction/output/relations/coco_instances_results.json',
+                             'pathway_val_0',r'/home/fei/Desktop/vis_results/',[0,1],0.8)

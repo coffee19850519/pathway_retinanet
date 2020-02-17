@@ -415,13 +415,16 @@ if __name__ == '__main__':
     #         del json_data
     # with open(os.path.join(ground_truth_folder, 'text_list.txt'), 'w') as gene_fp:
     #     gene_fp.write('\n'.join(all_genes_in_gt))
-    ground_truth_folder = r'C:\Users\coffe\Desktop\test\images'
+    ground_truth_folder = r'/home/fei/Desktop/train_data/normalized_json_0208/'
     for json_file in os.listdir(ground_truth_folder):
         if os.path.splitext(json_file)[-1] != '.json':
             continue
         else:
             json_data = LabelFile(os.path.join(ground_truth_folder, json_file))
-            json_data.export_predict_correct_txt()
+            for shape in json_data.shapes:
+                LabelFile.normalize_shape_points(shape)
+            json_data.save(os.path.join(ground_truth_folder, json_file), json_data.shapes,
+                           json_data.imagePath, json_data.imageHeight, json_data.imageWidth)
 
 
     # with open(os.path.join(ground_truth_folder, 'gene_list.txt'),'w') as
