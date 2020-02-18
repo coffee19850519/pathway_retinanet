@@ -104,7 +104,7 @@ class PathwayEvaluator(COCOEvaluator):
             self.convert_rotated_bbox_prediction_to_coco_json(dataset_name, cache_path, allow_cached)
 
         json_file = PathManager.get_local_path(self._metadata.json_file)
-        #print(json_file)
+        print(json_file)
         with contextlib.redirect_stdout(io.StringIO()):
             self._coco_api = COCO(json_file)
 
@@ -308,7 +308,7 @@ class PathwayEvaluator(COCOEvaluator):
             # TODO this is ugly
             if "instances" in output:
                 instances = output["instances"].to(self._cpu_device)
-                prediction["instances"] = instances_to_coco_json(instances, input["image_id"])
+                prediction["instances"] = instances_to_coco_json(instances, input["image_id"], input['file_name'])
             if "proposals" in output:
                 prediction["proposals"] = output["proposals"].to(self._cpu_device)
             self._predictions.append(prediction)
@@ -378,7 +378,7 @@ class PathwayEvaluator(COCOEvaluator):
 
 
 
-def instances_to_coco_json(instances, img_id):
+def instances_to_coco_json(instances, img_id,file_name):
     """
     Dump an "Instances" object to a COCO-format json that's used for evaluation.
 
@@ -404,7 +404,7 @@ def instances_to_coco_json(instances, img_id):
     for k in range(num_instance):
         result = {
             "image_id": img_id,
-            #"file_name": file_name,
+            "file_name": file_name,
             "category_id": classes[k],
             "bbox": boxes[k],
             "score": scores[k],
