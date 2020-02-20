@@ -2,7 +2,6 @@ import base64
 import json
 import os.path
 import numpy as np
-import cv2
 #from shape_tool import is_smallpolygon_covered_by_largeone
 
 class LabelFileError(Exception):
@@ -310,24 +309,11 @@ class LabelFile(object):
                 current_id = int(LabelFile.get_shape_index(shape))
             except:
                 #if cannot get numeric id, maybe lack of saving index to the 'label' part
-                # then try next shape
+                # then try next shapr
                 continue
             if  current_id > max_id:
                 max_id = current_id
         return max_id
-
-    def get_min_shape_id(self):
-        min_id = 99999
-        for shape in self.shapes:
-            try:
-                current_id = int(LabelFile.get_shape_index(shape))
-            except:
-                #if cannot get numeric id, maybe lack of saving index to the 'label' part
-                # then try next shape
-                continue
-            if  current_id < min_id:
-                min_id = current_id
-        return min_id
 
     def get_index_with_id(self, id):
         for index, shape in enumerate(self.shapes):
@@ -356,8 +342,6 @@ class LabelFile(object):
         except:
             raise Exception('the shape '+ shape['label'] + ' in file ' + self.filename + ' has invalid category')
 
-
-
     @staticmethod
     def isLabelFile(filename):
         return os.path.splitext(filename)[1].lower() == LabelFile.suffix
@@ -374,36 +358,6 @@ class LabelFile(object):
     def get_shape_annotation(shape):
         return shape['label'].split(':', 2)[2]
 
-    @staticmethod
-    def set_shape_category(shape, new_category):
-        old_category = LabelFile.get_shape_category(shape)
-        str(shape['label']).replace(old_category, new_category)
-
-    @staticmethod
-    def normalize_shape_points(shape):
-        if len(shape['points']) == 2:
-            shape['points'] = LabelFile.generate_rect_points(shape)
-        shape['shape_type'] = 'polygon'
-        (cnt_x, cnt_y),(width, height),angle = cv2.minAreaRect(np.array(shape['points'], np.float32))
-
-        shape['rotated_box'] = [cnt_x, cnt_y, width, height, angle]
-
-    @staticmethod
-    def generate_rect_points(shape):
-        # organize its vertex points to quadrangle
-        points = np.array(shape['points']).reshape((2, 2))
-        pt0 = np.min(points[:, 0])
-        pt1 = np.min(points[:, 1])
-        pt4 = np.max(points[:, 0])
-        pt5 = np.max(points[:, 1])
-        pt2 = pt4
-        pt3 = pt1
-        pt6 = pt0
-        pt7 = pt5
-        del points
-        # pts = np.zeros(4, 2)
-        return np.array([[pt0, pt1], [pt2, pt3], [pt4, pt5], [pt6, pt7]]).reshape((4, 2))
-
 
 if __name__ == '__main__':
     # ground_truth_folder = r'C:\Users\LSC-110\Desktop\ground_truth'
@@ -415,16 +369,13 @@ if __name__ == '__main__':
     #         del json_data
     # with open(os.path.join(ground_truth_folder, 'text_list.txt'), 'w') as gene_fp:
     #     gene_fp.write('\n'.join(all_genes_in_gt))
-    ground_truth_folder = r'/home/fei/Desktop/train_data/normalized_json_0208/'
+    ground_truth_folder = r'C:\Users\coffe\Desktop\test\images'
     for json_file in os.listdir(ground_truth_folder):
         if os.path.splitext(json_file)[-1] != '.json':
             continue
         else:
             json_data = LabelFile(os.path.join(ground_truth_folder, json_file))
-            for shape in json_data.shapes:
-                LabelFile.normalize_shape_points(shape)
-            json_data.save(os.path.join(ground_truth_folder, json_file), json_data.shapes,
-                           json_data.imagePath, json_data.imageHeight, json_data.imageWidth)
+            json_data.export_predict_correct_txt()
 
 
     # with open(os.path.join(ground_truth_folder, 'gene_list.txt'),'w') as
