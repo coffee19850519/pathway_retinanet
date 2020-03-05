@@ -1,12 +1,14 @@
 import os,copy,torch
 import numpy as np
 #from detectron2.structures import BoxMode, RotatedBoxes
-import json
+import json, csv
 import pandas as pd
 import cv2
+import logging
 from shutil import copyfile
 from detectron2.data import detection_utils as utils
 from detectron2.data import transforms as T
+from detectron2.data.transforms.transform import Resize_rotated_box
 from detectron2.data import DatasetCatalog, MetadataCatalog
 from detectron2.data.dataset_mapper import DatasetMapper
 from detectron2.structures import Instances, RotatedBoxes,BoxMode
@@ -31,7 +33,7 @@ def get_annotation_dicts(json_path, img_path, category_list):
             height, width = img.shape[:2]
             del img
         except Exception as e:
-            print(str(e))
+            #print(str(e))
             continue
 
         #declare a dict variant to save the content
@@ -61,22 +63,28 @@ def get_annotation_dicts(json_path, img_path, category_list):
                 #only extract valid annotations
                 category_id = imgs_anns.generate_category_id(anno,category_list)
             except Exception as e:
-                print(str(e))
+                #print(str.format('file: %s arises error: %s when generating category_id') % str(e))
+                continue
+            try:
+                #LabelFile.normalize_shape_points(anno)
+                obj = {
+                    # "bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
+                    # "bbox_mode": BoxMode.XYXY_ABS,
+
+                    "bbox": anno['rotated_box'],
+                    "bbox_mode": BoxMode.XYWHA_ABS,
+                    # "segmentation": [poly],
+                    "component": component,
+                    "category_id": category_id,
+                    "iscrowd": 0
+
+                }
+                objs.append(obj)
+            except Exception as e:
+                print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
                 continue
 
-            obj = {
-                #"bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
-                #"bbox_mode": BoxMode.XYXY_ABS,
 
-                "bbox": anno['rotated_box'],
-                "bbox_mode": -1,
-                #"segmentation": [poly],
-                "component": component,
-                "category_id":  category_id,
-                "iscrowd": 0
-
-            }
-            objs.append(obj)
         record["annotations"] = objs
         dataset_dicts.append(record)
 
@@ -129,9 +137,60 @@ def register_Kfold_pathway_dataset(json_path, img_path, category_list, K = 10):
             MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set(thing_classes=category_list)
             #MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set('coco')
 
-class PathwayDatasetMapper(DatasetMapper):
+class PathwayDatasetMapper:
+
     def __init__(self, cfg, is_train=True):
-        super(PathwayDatasetMapper, self).__init__(cfg, is_train)
+
+        if cfg.INPUT.CROP.ENABLED and is_train:
+            self.crop_gen = T.RandomCrop(cfg.INPUT.CROP.TYPE, cfg.INPUT.CROP.SIZE)
+            logging.getLogger(__name__).info("CropGen used in training: " + str(self.crop_gen))
+        else:
+            self.crop_gen = None
+
+        if is_train:
+            min_size = cfg.INPUT.MIN_SIZE_TRAIN
+            max_size = cfg.INPUT.MAX_SIZE_TRAIN
+            sample_style = cfg.INPUT.MIN_SIZE_TRAIN_SAMPLING
+        else:
+            min_size = cfg.INPUT.MIN_SIZE_TEST
+            max_size = cfg.INPUT.MAX_SIZE_TEST
+            sample_style = "choice"
+        if sample_style == "range":
+            assert len(min_size) == 2, "more than 2 ({}) min_size(s) are provided for ranges".format(
+                len(min_size)
+            )
+
+        logger = logging.getLogger(__name__)
+        self.tfm_gens = []
+        self.tfm_gens.append(T.ResizeShortestEdge(min_size, max_size, sample_style))
+        # if self.is_train:
+        #     self.tfm_gens.append(T.RandomBrightness())
+        #     self.tfm_gens.append(T.RandomContrast())
+        #     self.tfm_gens.append(T.RandomLighting())
+        #     self.tfm_gens.append(T.RandomSaturation())
+
+
+        # fmt: off
+        self.img_format = cfg.INPUT.FORMAT
+        self.mask_on = cfg.MODEL.MASK_ON
+        self.mask_format = cfg.INPUT.MASK_FORMAT
+        self.keypoint_on = cfg.MODEL.KEYPOINT_ON
+        self.load_proposals = cfg.MODEL.LOAD_PROPOSALS
+        # fmt: on
+        if self.keypoint_on and is_train:
+            # Flip only makes sense in training
+            self.keypoint_hflip_indices = utils.create_keypoint_hflip_indices(cfg.DATASETS.TRAIN)
+        else:
+            self.keypoint_hflip_indices = None
+
+        if self.load_proposals:
+            self.min_box_side_len = cfg.MODEL.PROPOSAL_GENERATOR.MIN_SIZE
+            self.proposal_topk = (
+                cfg.DATASETS.PRECOMPUTED_PROPOSAL_TOPK_TRAIN
+                if is_train
+                else cfg.DATASETS.PRECOMPUTED_PROPOSAL_TOPK_TEST
+            )
+        self.is_train = is_train
 
     def __call__(self, dataset_dict):
         """
@@ -178,10 +237,10 @@ class PathwayDatasetMapper(DatasetMapper):
                 anno.pop("keypoints", None)
 
         annos = [
-                transform_rotated_boxes_annotations(obj, transforms)
-                for obj in dataset_dict.pop("annotations")
-                if obj.get("iscrowd", 0) == 0
-                ]
+            transform_rotated_boxes_annotations(obj, transforms)
+            for obj in dataset_dict.pop("annotations")
+            if obj.get("iscrowd", 0) == 0
+        ]
 
         instances = rotated_annotations_to_instances(annos, image_shape)
 
@@ -206,7 +265,7 @@ def rotated_annotations_to_instances(annos, image_size):
     classes = [obj["category_id"] for obj in annos]
     classes = torch.tensor(classes, dtype=torch.int64)
     target.gt_classes = classes
-
+    #del boxes, classes
     # include component list into target
     # if len(annos) and "component" in annos[0]:
     #     component = []
@@ -217,15 +276,18 @@ def rotated_annotations_to_instances(annos, image_size):
     #
     #     #component = torch.tensor(component, dtype=torch.int8)
     # target.gt_component = np.array(component)
-    del boxes, classes
     return target
 
 def transform_rotated_boxes_annotations(annotation, transforms):
 
-    bbox = np.array(annotation["bbox"], np.float).reshape(-1, 5)
+    #resized_box = Resize_rotated_box(transforms, annotation["bbox"])
+    bbox = np.array(annotation["bbox"], np.float32).reshape(-1, 5)
+    # angle = bbox[0, 4]
     # Note that bbox is 1d (per-instance bounding box)
+    #annotation["bbox"] = Resize_rotated_box(transforms, bbox)
     annotation["bbox"] = transforms.apply_rotated_box(bbox)[0]
-    annotation["bbox_mode"] = -1
+    # annotation["bbox"][4] = angle
+
     return annotation
 
     # def _include_relation_annotations(self, annotation):
@@ -281,7 +343,7 @@ def visualize_rotated_groundtruth(img, metadata, gts, shown_categories):
     return vis_gt[:, :, ::-1]
 
 
-def visualize_relation_instances(coco_format_json_file, dataset_name, save_vis_path,shown_categories, cut_off):
+def visualize_coco_instances(coco_format_json_file, dataset_name, save_vis_path,shown_categories, cut_off):
     metadata = MetadataCatalog.get(dataset_name)
     datasetDict =  DatasetCatalog.get(dataset_name)
     coco_instances = json.load(open(coco_format_json_file, 'r'))
@@ -296,41 +358,35 @@ def visualize_relation_instances(coco_format_json_file, dataset_name, save_vis_p
         del vis_img,img
     del metadata,coco_instances
 
-def visualize_rectangle_prediction(img, metadata, predictions, shown_categories ,score_cutoff = 0):
-    vis = Visualizer(img, metadata)
+def generate_scaled_boxes_width_height_angles(datset_name, cfg):
+    dicts = DatasetCatalog.get(datset_name)
+    mapper = PathwayDatasetMapper(cfg)
+    all_sizes = []
+    all_ratios = []
+    all_angles = []
+    all_category = []
+    for i,sample in enumerate(dicts):
+        scaled_anno_per_sample = mapper(sample)
+        scaled_boxes = scaled_anno_per_sample['instances'].gt_boxes.tensor
+        #in rotated_box, the shape should be cnt_x, cnt_y, width, height and angle
+        #size = w * h and ratio = w / h
 
-    # get targeted annotations to show
-    boxes = []
-    labels = []
-    # get the specific categories to show
-    for idx in range(len(predictions)):
-        if  float(predictions.iloc[idx]["score"]) >= score_cutoff and predictions.iloc[idx]["category_id"] in shown_categories:
-            boxes.append(predictions.iloc[idx]["bbox"])
-            labels.append(predictions.iloc[idx]["category_id"])
-    names = metadata.get("thing_classes", None)
-    if names:
-        labels = [names[i] for i in labels]
-    boxes = np.array(boxes, np.float).reshape((-1, 4))
-    boxes = BoxMode.convert(boxes, BoxMode.XYWH_ABS, BoxMode.XYXY_ABS)
-    vis_gt = vis.overlay_instances(labels=labels, boxes=boxes).get_image()
-    del boxes, labels
-    return vis_gt[:, :, ::-1]
+        all_sizes.extend((scaled_boxes[:, 2] * scaled_boxes[:, 3]).tolist())
+        all_ratios.extend((scaled_boxes[:, 2] / scaled_boxes[:, 3]).tolist())
+        all_angles.extend(scaled_boxes[:, 4].tolist())
+        all_category.extend(scaled_anno_per_sample['instances'].gt_classes.tolist() )
+        del scaled_anno_per_sample, scaled_boxes
 
-def visualize_element_instances(coco_format_json_file, dataset_name, save_vis_path,shown_categories, cut_off):
-    metadata = MetadataCatalog.get(dataset_name)
-    datasetDict =  DatasetCatalog.get(dataset_name)
-    element_instances = json.load(open(coco_format_json_file, 'r'))
-    #read all predictions regarding one input image
-    predictions = pd.DataFrame(element_instances)
-    for sample_info in datasetDict:
-        instances_on_sample = predictions.loc[predictions['image_id'] == sample_info['image_id']]
-        img = cv2.imread(os.path.join(sample_info['file_name']))
+    f = open('size_ratio_angle.csv', 'w', encoding='utf-8')
+    csv_writer = csv.writer(f)
+    csv_writer.writerow(["Categoty", "Size", "Ratio", "Angle"])
+    for i in range(len(all_category)):
+        csv_writer.writerow([str(all_category[i]), str(all_sizes[i]), str(all_ratios[i]), str(all_angles[i])])
 
-        vis_img = visualize_rectangle_prediction(img, metadata, instances_on_sample, shown_categories, cut_off)
-        file_base_name = os.path.basename(sample_info['file_name'])
-        cv2.imwrite(os.path.join(save_vis_path, file_base_name), vis_img)
-        del vis_img,img
-    del metadata,element_instances
+    f.close()
+
+    return all_sizes, all_ratios, all_angles,all_category
+
 
 if __name__ == "__main__":
 
@@ -344,11 +400,9 @@ if __name__ == "__main__":
     # print(json_train)
 
     # should be embedded into configer file
-    #category_list = ['activate','gene','inihibit']
     category_list = ['activate_relation', 'inhibit_relation']
-    img_path = r'/home/fei/Desktop/test/images/'
-    json_path = r'/home/fei/Desktop/test/jsons/'
-
+    img_path = r'/home/fei/Desktop/100image_dataset/image/'
+    json_path = r'/home/fei/Desktop/100image_dataset/json/'
 
     # K = 10
     # for d in ["train", "val"]:
@@ -370,5 +424,5 @@ if __name__ == "__main__":
     #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/results/', basename), vis_img)
     #     del img, vis_img
 
-    visualize_relation_instances(r'./output/relation/coco_instances_results_new.json',
-                             'pathway_val_0',r'/home/fei/Desktop/vis_results/',[0,1],0.5)
+    visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
+                             'pathway_val_0',r'/home/fei/Desktop/results/',[0,1],0.8)
