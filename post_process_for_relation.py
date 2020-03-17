@@ -29,18 +29,51 @@ def normalize_rect_vertex(points):
         pt6 = pt0
         pt7 = pt5
         del points, boxes
-        return np.array([[pt0, pt1], [pt2, pt3], [pt4, pt5], [pt6, pt7]]).reshape((4, 2))
+        return np.array([[pt0, pt1], [pt2, pt3], [pt4, pt5], [pt6, pt7]], np.int32).reshape((4, 2))
     if len(points) == 5:
         cnt_x, cnt_y, w, h, angle = points
-        return np.array(cv2.boxPoints(((cnt_x, cnt_y),(w, h), angle))).reshape((4, 2))
+        return np.array(cv2.boxPoints(((cnt_x, cnt_y),(w, h), angle)), np.int32).reshape((4, 2))
+
+def normalize_all_boxes(prediction_instances):
+    assert 'normalized_bbox' in  prediction_instances.columns.values
+
+    prediction_instances['normalized_bbox'] = prediction_instances['bbox'].map(normalize_rect_vertex)
+
+
+
+def map_category_id_to_name(category_id, category_list):
+    return category_list[category_id]
 
 def get_element_rowid(element_instances, element_info_series):
     return int(element_instances.loc[(element_instances['image_id'] == element_info_series['image_id'])&
                           (element_instances['category_id'] == element_info_series['category_id'])&
                           (element_instances['score'] == element_info_series['score'])].index.values[0])
 
+def visualize_element_and_relation(datasetDict, element_instances, relation_instances, element_threshold, relation_threshold,
+                                   save_folder):
+
+
+    for sample_info in tqdm(datasetDict):
+        element_instances_on_sample = element_instances.loc[(element_instances['image_id'] == sample_info['image_id']) &
+                                                            (element_instances['score'] >= element_threshold)]
+        relation_instances_on_sample = relation_instances.loc[(relation_instances['image_id'] ==
+                                                              sample_info['image_id']) &
+                                                              ((relation_instances['score'] >= relation_threshold))]
+        img = cv2.imread(sample_info['file_name'])
+        for element_idx in range(0, len(element_instances_on_sample)):
+            cv2.polylines(img, [element_instances_on_sample.iloc[element_idx]['normalized_bbox']], isClosed= True, color= [255,0,0], thickness= 2 )
+        for relation_idx in range(0, len(relation_instances_on_sample)):
+            cv2.polylines(img, [relation_instances_on_sample.iloc[relation_idx]['normalized_bbox']], isClosed=True, color=[0, 255, 0], thickness=2)
+
+        cv2.imwrite(os.path.join(save_folder, os.path.basename(sample_info['file_name'])), img)
+        del  img
+
+
 def filter_invalid_relation_predictions(datasetDict, element_instances, element_list, relation_instances, relation_list,
                                         element_threshold, cover_ratio):
+
+    assert 'normalized_bbox' in element_instances.columns.values
+    assert 'normalized_bbox' in relation_instances.columns.values
 
     valid_relations = []
     for sample_info in tqdm(datasetDict):
@@ -50,33 +83,34 @@ def filter_invalid_relation_predictions(datasetDict, element_instances, element_
                                 sample_info['image_id']]
 
         for relation_idx in range(len(relation_instances_on_sample)):
-            current_relation_vertex = relation_instances_on_sample.iloc[relation_idx]['bbox']
-            current_relation_vertex = normalize_rect_vertex(current_relation_vertex)
-            current_relation_category = relation_list[relation_instances_on_sample.iloc[relation_idx]['category_id']]
+            current_relation_vertex = relation_instances_on_sample.iloc[relation_idx]['normalized_bbox']
+            #current_relation_vertex = normalize_rect_vertex(current_relation_vertex)
+            #current_relation_category = relation_list[relation_instances_on_sample.iloc[relation_idx]['category_id']]
             genes_in_relation_count = 0
             relation_symbol_count = 0
             relation_symbol = False
             gene_counts = False
             covered_elements = []
             for element_idx in range(len(element_instances_on_sample)):
-                current_element_vertex = element_instances_on_sample.iloc[element_idx]['bbox']
-                current_element_vertex = normalize_rect_vertex(current_element_vertex)
+                current_element_vertex = element_instances_on_sample.iloc[element_idx]['normalized_bbox']
+                #current_element_vertex = normalize_rect_vertex(current_element_vertex)
                 current_element_category = element_list[element_instances_on_sample.iloc[element_idx]['category_id']]
-                if  relation_covers_this_element(current_relation_vertex, current_element_vertex):
+                if  relation_covers_this_element(element_box_points= current_element_vertex, relation_box_points= current_relation_vertex, cover_ratio= cover_ratio):
                     if  current_element_category == 'gene':
                         genes_in_relation_count += 1
                         #get the covered element's index
-                        covered_elements.append(get_element_rowid(element_instances,
-                                                                  element_instances_on_sample.iloc[element_idx]))
-
+                        # covered_elements.append(get_element_rowid(element_instances,
+                        #                                           element_instances_on_sample.iloc[element_idx]))
+                        covered_elements.append(element_idx)
                         if genes_in_relation_count >= 2:
                             gene_counts = True
                         else:
                             gene_counts = False
                     else:
                         relation_symbol_count += 1
-                        covered_elements.append(get_element_rowid(element_instances,
-                                                                  element_instances_on_sample.iloc[element_idx]))
+                        # covered_elements.append(get_element_rowid(element_instances,
+                        #                                           element_instances_on_sample.iloc[element_idx]))
+                        covered_elements.append(element_idx)
                         if relation_symbol_count > 0: #and (current_relation_category.find(current_element_category) != -1):
                             relation_symbol = True
             valid_relation_instance = relation_instances_on_sample.iloc[relation_idx].copy()
@@ -90,6 +124,8 @@ def filter_invalid_relation_predictions(datasetDict, element_instances, element_
         valid_relation['image_id'] = int (valid_relation['image_id'])
         valid_relation['category_id'] = int (valid_relation['category_id'])
         valid_relation['score'] = float(valid_relation['score'])
+        # valid_relation['normalized_bbox'] = valid_relation['normalized_bbox'].reshape(-1).tolist()
+        del valid_relation['normalized_bbox']
 
     with open(relation_prediction_file[:-5]+'_new.json', "w") as f:
         f.write(json.dumps(valid_relations))
@@ -109,6 +145,8 @@ if __name__ == "__main__":
     element_list = ['activate', 'gene', 'inhibit']
     relation_list = ['activate_relation', 'inhibit_relation']
     register_Kfold_pathway_dataset(json_path, img_path, relation_list, K=1)
+
+
     #run element prediction
     element_cfg = get_cfg()
     element_cfg.merge_from_file(r'./Base-RetinaNet.yaml')
@@ -139,31 +177,35 @@ if __name__ == "__main__":
 
 
     #post relation process
-    element_prediction_file = os.path.join(element_cfg.OUTPUT_DIR, r'coco_instances_results.json')
-    relation_prediction_file = os.path.join(relation_cfg.OUTPUT_DIR, r'coco_instances_results.json')
     datasetDict = DatasetCatalog.get(relation_cfg.DATASETS.TEST[0])
+    element_prediction_file = os.path.join(element_cfg.OUTPUT_DIR, r'coco_instances_results.json')
     element_predictions = json.load(open(element_prediction_file, 'r'))
-    relation_predictions = json.load(open(relation_prediction_file, 'r'))
     element_instances = pd.DataFrame(element_predictions)
-    relation_instances = pd.DataFrame(relation_predictions)
+    element_instances['normalized_bbox'] = None
+    element_instances['category_name'] = element_instances['category_id'].apply(map_category_id_to_name, args=(element_list,))
+    normalize_all_boxes(element_instances)
+
+    relation_prediction_file = os.path.join(relation_cfg.OUTPUT_DIR, r'coco_instances_results.json')
+    # relation_predictions = json.load(open(relation_prediction_file, 'r'))
+    # relation_instances = pd.DataFrame(relation_predictions)
+    # # entend pairing gene column to relation_instances for saving paired element ids
+    # relation_instances['covered_elements'] = None
+    # relation_instances['normalized_bbox'] = None
+    # #normalize all boxes into rectangle
+    # normalize_all_boxes(relation_instances)
+    # #may delete if found better strategy
+    # filter_invalid_relation_predictions(datasetDict, element_instances, element_list, relation_instances,
+    #                                     relation_list, cfg.element_threshold, cover_ratio=0.3)
+    #
+    # #load new filtered relation_predictions
+    # del relation_instances
 
 
-
-    #entend pairing gene column to relation_instances for saving paired element ids
-    relation_instances['covered_elements'] = None
-
-
-    #may delete if found better strategy
-    filter_invalid_relation_predictions(datasetDict, element_instances, element_list, relation_instances,
-                                        relation_list, 0.6, cover_ratio=0.02)
-
-
-
-
-    #load new filtered relation_predictions
-    del relation_instances
     relation_predictions = json.load(open(relation_prediction_file[:-5] + '_new.json', 'r'))
     relation_instances = pd.DataFrame(relation_predictions)
+    relation_instances['normalized_bbox'] = None
+
+    normalize_all_boxes(relation_instances)
 
     #re-evaluate relation prediction
     # evaluator = PathwayEvaluator(relation_cfg.DATASETS.TEST[0], relation_cfg, True, False, relation_cfg.OUTPUT_DIR)
@@ -172,33 +214,66 @@ if __name__ == "__main__":
     # evaluator.evaluate()
     # del relation_cfg
 
+    # visualize_element_and_relation(datasetDict, element_instances, relation_instances,
+    #                                cfg.element_threshold, cfg.relation_threshold,
+    #                                r'/home/fei/Desktop/vis_results_old/normalized/')
+
 
     # extend ocr result column to element_instances for saving ocr results
     element_instances['ocr'] = None
     from OCR import ocr_text_from_image
-    from predict_relationship import get_relationship_pairs_on_single_image
+    from predict_relationship import get_gene_pairs_on_relation_sub_image, generate_sub_image_bounding_relation
 
     relation_instances['pair_elements'] = None
     for sample in datasetDict:
+        element_instances_on_sample = element_instances.loc[(sample['image_id'] == element_instances['image_id']) &
+                                            (element_instances['score'] >= cfg.element_threshold)]
+                                            #&(element_instances['category_id'] == element_list.index('gene'))]
 
-        #get elements' boxes
-        current_elements = element_instances.loc[(sample['image_id'] == element_instances['image_id']) &
-                                                 (element_instances['image_id'] >= cfg.element_threshold)]
-        # get categories' boxes
-        cerrent_relations = relation_instances.loc[(sample['image_id'] == relation_instances['image_id']) &
-                                                   (relation_instances['image_id'] >= cfg.relation_threshold)]
+        # relation_symbol_instances_on_sample = element_instances.loc[(sample['image_id'] == element_instances['image_id']) &
+        #                                     (element_instances['score'] >= cfg.element_threshold) &
+        #                                     (element_instances['category_id'] != element_list.index('gene'))]
 
+
+        relation_instances_on_sample = relation_instances.loc[(sample['image_id'] == relation_instances['image_id']) &
+                                                              (relation_instances['score'] >= cfg.relation_threshold)]
         # do OCR
-        # results, all_results_dict, corrected_results_dict, fuzz_ratios_dict, coordinates_list  = \
-        #     OCR(sample['file_name'], relation_cfg.DATASETS.TEST[0], cfg.predict_folder,
-        #                  current_elements.loc[current_elements['category_id'] == element_list.index('gene')])
+        # all_results_dict, corrected_results_dict, fuzz_ratios_dict  = \
+        #     OCR(sample['file_name'], cfg.sub_image_folder_for_ocr, element_instances_on_sample,
+        #         element_list, user_words=['SHh', 'PI3K','GSK3P','Wnt','HIF1', 'GFs','APC','SUFU','PKA'])
+
+        #TODO pick best results to 'ocr' column
 
 
-        # do gene pairing
-        predicted_relationship_pairs, pair_descriptions, predicted_relationship_boxes = get_relationship_pairs_on_single_image(
-            sample['file_name'], current_elements, cerrent_relations)
 
-        #print pairing results
+        # pair involving entities relation by relation
+        img = cv2.imread(sample['file_name'])
+        image_name, image_ext = os.path.splitext(os.path.basename(sample['file_name']))
 
+        for relation_index in range(0, len(relation_instances_on_sample)):
+
+            sub_img, covered_element_instances = generate_sub_image_bounding_relation(img,
+                                                 relation_instances_on_sample.iloc[relation_index],
+                                                 element_instances_on_sample,
+                                                 1)
+
+            #plot elements on sub_img using their perspective bbox
+            # for element_idx in range(0, len(covered_element_instances)):
+            #     cv2.polylines(sub_img, [covered_element_instances.iloc[element_idx]['perspective_bbox']], isClosed=True,
+            #                   color=[255, 0, 0], thickness=2)
+            # save sub-image to visualize sub-img
+            # cv2.imwrite(os.path.join(r'/home/fei/Desktop/vis_results_old/normalized/',
+            #                          image_name + str(relation_index) + image_ext), sub_img)
+
+            # do gene pairing
+            detected_relation_info = get_gene_pairs_on_relation_sub_image(
+                sub_img, element_instances_on_relation= covered_element_instances, image_name= image_name,
+                image_ext= image_ext, idx = relation_index, )
+
+            #visualize pairing results
+
+            del sub_img, covered_element_instances
+
+        del img
 
     del element_instances, relation_instances, element_predictions, relation_predictions, datasetDict
