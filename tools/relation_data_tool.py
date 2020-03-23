@@ -215,16 +215,16 @@ class PathwayDatasetMapper:
                 )
                 image = crop_tfm.apply_image(image)
             #randomly add some transform to
-            if self.is_train:
-                rand_num = np.random.randint(1,5)
-                if rand_num == 1:
-                    self.tfm_gens.append(T.RandomBrightness(-0.5, 1.5))
-                if rand_num == 2:
-                    self.tfm_gens.append(T.RandomContrast(-0.5, 1.5))
-                if rand_num == 3:
-                    self.tfm_gens.append(T.RandomLighting(0.1))
-                if rand_num == 4:
-                    self.tfm_gens.append(T.RandomSaturation(-0.5, 1.5))
+            # if self.is_train:
+            #     rand_num = np.random.randint(1,5)
+            #     if rand_num == 1:
+            #         self.tfm_gens.append(T.RandomBrightness(-0.5, 1.5))
+            #     if rand_num == 2:
+            #         self.tfm_gens.append(T.RandomContrast(-0.5, 1.5))
+            #     if rand_num == 3:
+            #         self.tfm_gens.append(T.RandomLighting(0.1))
+            #     if rand_num == 4:
+            #         self.tfm_gens.append(T.RandomSaturation(-0.5, 1.5))
 
             image, transforms = T.apply_transform_gens(self.tfm_gens, image)
             if self.crop_gen:
