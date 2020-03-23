@@ -6,6 +6,7 @@ import pandas as pd
 import cv2
 import logging
 from shutil import copyfile
+from detectron2.config import get_cfg
 from detectron2.data import detection_utils as utils
 from detectron2.data import transforms as T
 from detectron2.data.transforms.transform import Resize_rotated_box
@@ -15,6 +16,7 @@ from detectron2.structures import Instances, RotatedBoxes,BoxMode
 from tools.label_file import LabelFile
 from sklearn.model_selection import train_test_split
 from detectron2.utils.visualizer import Visualizer
+from detectron2.engine import default_argument_parser, default_setup
 
 # write a function that loads the dataset into detectron2's standard format
 def get_annotation_dicts(json_path, img_path, category_list):
@@ -163,12 +165,6 @@ class PathwayDatasetMapper:
         logger = logging.getLogger(__name__)
         self.tfm_gens = []
         self.tfm_gens.append(T.ResizeShortestEdge(min_size, max_size, sample_style))
-        # if self.is_train:
-        #     self.tfm_gens.append(T.RandomBrightness())
-        #     self.tfm_gens.append(T.RandomContrast())
-        #     self.tfm_gens.append(T.RandomLighting())
-        #     self.tfm_gens.append(T.RandomSaturation())
-
 
         # fmt: off
         self.img_format = cfg.INPUT.FORMAT
@@ -218,6 +214,18 @@ class PathwayDatasetMapper:
                     np.random.choice(dataset_dict["annotations"]),
                 )
                 image = crop_tfm.apply_image(image)
+            #randomly add some transform to
+            if self.is_train:
+                rand_num = np.random.randint(1,5)
+                if rand_num == 1:
+                    self.tfm_gens.append(T.RandomBrightness(-0.5, 1.5))
+                if rand_num == 2:
+                    self.tfm_gens.append(T.RandomContrast(-0.5, 1.5))
+                if rand_num == 3:
+                    self.tfm_gens.append(T.RandomLighting(0.1))
+                if rand_num == 4:
+                    self.tfm_gens.append(T.RandomSaturation(-0.5, 1.5))
+
             image, transforms = T.apply_transform_gens(self.tfm_gens, image)
             if self.crop_gen:
                 transforms = crop_tfm + transforms
@@ -409,11 +417,11 @@ if __name__ == "__main__":
     #     #for idx_fold in range(K):
     #         idx_fold = 0
     #         DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold), lambda d=d:get_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path, category_list))
-    #
+    #datset_name
     #         MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set(thing_classes=category_list)
     #split_data_into_train_and_validation_Kfold(json_path, validation_ratio=0.1, K=1)
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K =1)
-    # dicts = DatasetCatalog.get('pathway_val_0')
+    # dicts = DatasetCatalog.get('pathway_train_0')
     # metadata = MetadataCatalog.get('pathway_val_0')
     # for dic in dicts:
     #     img = cv2.imread(dic["file_name"], cv2.IMREAD_COLOR)[:, :, ::-1]
@@ -424,5 +432,17 @@ if __name__ == "__main__":
     #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/results/', basename), vis_img)
     #     del img, vis_img
 
-    visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
-                             'pathway_val_0',r'/home/fei/Desktop/results/',[0,1],0.8)
+    # visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
+    #                          'pathway_val_0',r'/home/fei/Desktop/results/',[0,1],0.8)
+    parser = default_argument_parser()
+    # parser.add_argument("--task", choices=["train", "eval", "data"], required=True)
+    args = parser.parse_args()
+    args.config_file = r'./Base-RelationRetinaNet.yaml'
+
+    cfg = get_cfg()
+    cfg.merge_from_file(args.config_file)
+    cfg.merge_from_list(args.opts)
+    cfg.freeze()
+    default_setup(cfg, args)
+
+    generate_scaled_boxes_width_height_angles('pathway_train_0', cfg)
