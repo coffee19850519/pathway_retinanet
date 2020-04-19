@@ -5,7 +5,7 @@ from typing import List
 import torch
 from fvcore.nn import sigmoid_focal_loss_jit, smooth_l1_loss
 from torch import nn
-
+import numpy as np
 from detectron2.layers import ShapeSpec, batched_nms_rotated, cat
 
 from detectron2.structures import RotatedBoxes, ImageList, Instances, pairwise_iou_rotated
@@ -51,6 +51,7 @@ def permute_all_cls_and_box_to_N_HWA_K_and_concat(box_cls, box_delta, box_dim, n
     # being concatenated as well)
     box_cls = cat(box_cls_flattened, dim=1).view(-1, num_classes)
     box_delta = cat(box_delta_flattened, dim=1).view(-1, box_dim)
+    del box_cls_flattened, box_delta_flattened
     return box_cls, box_delta
 
 
@@ -92,7 +93,7 @@ class RelationRetinaNet(nn.Module):
 
         # Matching and loss
         self.box2box_transform = Box2BoxTransformRotated(weights=cfg.MODEL.RETINANET.BBOX_REG_WEIGHTS)
-        self.matcher = RelationAwareMatcher(
+        self.matcher = Matcher(
             cfg.MODEL.RETINANET.IOU_THRESHOLDS,
             cfg.MODEL.RETINANET.IOU_LABELS,
             allow_low_quality_matches=True,
@@ -138,6 +139,7 @@ class RelationRetinaNet(nn.Module):
         box_cls, box_delta = self.head(features)
         anchors = self.anchor_generator(features)
 
+        del features
         if self.training:
             gt_classes, gt_anchors_reg_deltas = self.get_ground_truth(anchors, gt_instances)
             return self.losses(gt_classes, gt_anchors_reg_deltas, box_cls, box_delta, self.anchor_generator.box_dim)
@@ -180,6 +182,8 @@ class RelationRetinaNet(nn.Module):
         foreground_idxs = (gt_classes >= 0) & (gt_classes != self.num_classes)
         num_foreground = foreground_idxs.sum()
 
+        focal_loss_alpha =  1 - (num_foreground.float() / valid_idxs.sum())
+
         gt_classes_target = torch.zeros_like(pred_class_logits)
         # generate one-hot vector for each
         gt_classes_target[foreground_idxs, gt_classes[foreground_idxs]] = 1
@@ -188,19 +192,27 @@ class RelationRetinaNet(nn.Module):
         loss_cls = sigmoid_focal_loss_jit(
             pred_class_logits[valid_idxs],
             gt_classes_target[valid_idxs],
-            alpha=self.focal_loss_alpha,
+            alpha= focal_loss_alpha,
             gamma=self.focal_loss_gamma,
             reduction="sum",
         ) / max(1, num_foreground)
 
         # regression loss
-        loss_box_reg = smooth_l1_loss(
+        # loss_box_reg = smooth_l1_loss(
+        #     pred_anchor_deltas[foreground_idxs],
+        #     gt_anchors_deltas[foreground_idxs],
+        #     beta=self.smooth_l1_loss_beta,
+        #     reduction="sum",
+        # ) / max(1, num_foreground)
+        loss_box_reg = balanced_l1_loss(
             pred_anchor_deltas[foreground_idxs],
             gt_anchors_deltas[foreground_idxs],
-            beta=self.smooth_l1_loss_beta,
-            reduction="sum",
-        ) / max(1, num_foreground)
+            beta = 1.0,
+            alpha = 0.3,
+            gamma = 1.5,
+            ) / max(1, num_foreground)
 
+        del pred_class_logits, gt_classes_target, pred_anchor_deltas, gt_anchors_deltas
         return {"loss_cls": loss_cls, "loss_box_reg": loss_box_reg}
 
     @torch.no_grad()
@@ -239,10 +251,10 @@ class RelationRetinaNet(nn.Module):
         for anchors_per_image, targets_per_image in zip(anchors, targets):
             match_quality_matrix = pairwise_iou_rotated(targets_per_image.gt_boxes, anchors_per_image)
 
-            #adjust the scores of 'relation' and 'complexes' cases in the matrix
+            # adjust the scores of 'relation' and 'complexes' cases in the matrix
 
-            gt_matched_idxs, anchor_labels = self.matcher(match_quality_matrix, targets_per_image, anchors_per_image)
-
+            # gt_matched_idxs, anchor_labels = self.matcher(match_quality_matrix, targets_per_image, anchors_per_image)
+            gt_matched_idxs, anchor_labels = self.matcher(match_quality_matrix)
             # ground truth box regression
             matched_gt_boxes = targets_per_image[gt_matched_idxs].gt_boxes
 
@@ -263,7 +275,7 @@ class RelationRetinaNet(nn.Module):
 
             gt_classes.append(gt_classes_i)
             gt_anchors_deltas.append(gt_anchors_reg_deltas_i)
-
+        del anchors
         return torch.stack(gt_classes), torch.stack(gt_anchors_deltas)
 
     #def filter_out_invalid_relation_
@@ -368,171 +380,6 @@ class RelationRetinaNet(nn.Module):
         images = ImageList.from_tensors(images, self.backbone.size_divisibility)
         return images
 
-
-
-
-class RelationAwareMatcher(Matcher):
-
-    def __init__(self, thresholds, labels, allow_low_quality_matches=False):
-
-        # Add -inf and +inf to first and last position in thresholds
-        # thresholds = thresholds[:]
-        # assert thresholds[0] > 0
-        # thresholds.insert(0, -float("inf"))
-        # thresholds.append(float("inf"))
-        # assert all(low <= high for (low, high) in zip(thresholds[:-1], thresholds[1:]))
-        # assert all(l in [-1, 0, 1] for l in labels)
-        # assert len(labels) == len(thresholds) - 1
-        # self.thresholds = thresholds
-        # self.labels = labels
-        # self.allow_low_quality_matches = allow_low_quality_matches
-        super(RelationAwareMatcher, self).__init__(thresholds, labels, allow_low_quality_matches)
-
-    def __call__(self, match_quality_matrix, targets_per_image, anchors_per_image):
-        assert match_quality_matrix.dim() == 2
-        if match_quality_matrix.numel() == 0:
-            default_matches = match_quality_matrix.new_full(
-                (match_quality_matrix.size(1),), 0, dtype=torch.int64
-            )
-            # When no gt boxes exist, we define IOU = 0 and therefore set labels
-            # to `self.labels[0]`, which usually defaults to background class 0
-            # To choose to ignore instead, can make labels=[-1,0,-1,1] + set appropriate thresholds
-            default_match_labels = match_quality_matrix.new_full(
-                (match_quality_matrix.size(1),), self.labels[0], dtype=torch.int8
-            )
-            return default_matches, default_match_labels
-
-        assert torch.all(match_quality_matrix >= 0)
-
-        # match_quality_matrix is M (gt) x N (predicted)
-
-        # Max over gt elements (dim 0) to find best gt candidate for each prediction
-        matched_vals, matches = match_quality_matrix.max(dim=0)
-
-        match_labels = matches.new_full(matches.size(), 1, dtype=torch.int8)
-
-        for (l, low, high) in zip(self.labels, self.thresholds[:-1], self.thresholds[1:]):
-            low_high = (matched_vals >= low) & (matched_vals < high)
-            match_labels[low_high] = l
-
-        # For each gt, find the prediction with which it has highest quality
-        highest_quality_foreach_gt, _ = match_quality_matrix.max(dim=1)
-        gt_pred_pairs_of_highest_quality = torch.nonzero(
-            match_quality_matrix == highest_quality_foreach_gt[:, None]
-        )
-
-        if self.allow_low_quality_matches:
-            self.set_low_quality_matches_(match_labels, gt_pred_pairs_of_highest_quality)
-
-        # need to further detect the anchors
-        # self.assign_relation_labels(matches, match_labels, match_quality_matrix,
-        #                        targets_per_image, gt_pred_pairs_of_highest_quality, anchors_per_image)
-
-        return matches, match_labels
-
-
-    def set_low_quality_matches_(self, match_labels, gt_pred_pairs_of_highest_quality):
-        # Find the highest quality match available, even if it is low, including ties.
-        # Note that the matches qualities must be positive due to the use of
-        # `torch.nonzero`.
-        pred_inds_to_update = gt_pred_pairs_of_highest_quality[:, 1]
-        match_labels[pred_inds_to_update] = 1
-
-    def assign_relation_labels(self, matches, match_labels, match_quality_matrix,
-                               targets_per_image, gt_pred_pairs_of_highest_quality, anchors_per_image):
-        #check the best matched anchor for each relation
-        #get the 'relation' and 'complex' objects' indexes
-        #shall keep relation's class_index as 3
-        relation_gt_index = torch.nonzero(targets_per_image.gt_classes == 3)
-        for row in gt_pred_pairs_of_highest_quality:
-            if row[0] not in relation_gt_index:
-                continue
-            #if no matched one, most likely not applying allow_low_quality_matches, find the best matched anchor
-            if row[1] == 0:
-                matches[row[1]], match_labels[row[1]] = \
-                    self.find_best_and_valid_anchor_for_relation(row[0], match_quality_matrix, targets_per_image)
-            else: #if there existed a matched anchor
-                # then check if the matched anchor is assigned to another category
-                # and check whether it covers all components in this relation
-                if not self.check_whether_anchor_is_valid_for_relation(row[0], row[1], match_quality_matrix, targets_per_image, anchors_per_image):
-                #     matches[row[1]] = row[0]
-                #     match_labels[row[1]] = 1
-                #     #check whether original_assigned_gt has its own matched anchor
-                #     #if not, try to find a best matched anchor for it
-                #     #not sure if it is necessary
-                #
-                # else:
-                    potential_matched_relation, potential_matched_value = \
-                     self.find_best_and_valid_anchor_for_relation(row[0], match_quality_matrix, targets_per_image)
-                    if potential_matched_relation != 0:
-                        #there is potential relation
-                        matches[row[1]] = potential_matched_relation
-                        match_labels[row[1]] = potential_matched_value
-                        # check whether original_assigned_gt has its own matched anchor
-                        # if not, try to find a best matched anchor for it
-                        # not sure if it is necessary
-
-
-    def check_whether_anchor_is_valid_for_relation(self, gt_idx, anchor_idx, match_quality_matrix, targets, anchors):
-        #if the anchors cover all components accordingly
-
-        gt_qualities_for_the_anchor = match_quality_matrix[:, anchor_idx]
-        if torch.prod(gt_qualities_for_the_anchor[targets.gt_component[gt_idx]].gt(0.5)) != 1:
-            return False
-        else:
-            return True
-
-
-    def find_best_and_valid_anchor_for_relation(self, gt_index, match_quality_matrix, targets):
-        #for column in match_quality_matrix
-        sorted_anchor_qualities_for_the_gt, sorted_anchor_idx_for_the_gt = match_quality_matrix[gt_index, :].sort()
-        for anchor_idx in sorted_anchor_idx_for_the_gt:
-            if self.check_whether_anchor_is_valid_for_relation(gt_index, anchor_idx, match_quality_matrix, targets):
-                return anchor_idx, 1
-        return 0, self.labels[0]
-
-    # def bbox_overlaps(np.ndarray[DTYPE_t, ndim = 2] boxes,
-    #                   np.ndarray[DTYPE_t, ndim = 2] query_boxes):
-    # """
-    # Parameters
-    # ----------
-    # boxes: (N, 4) ndarray of float
-    # query_boxes: (K, 4) ndarray of float
-    # Returns
-    # -------
-    # overlaps: (N, K) ndarray of overlap between boxes and query_boxes
-    # """
-    # N = boxes.shape[0]
-    # K = query_boxes.shape[0]
-    # np.ndarray[DTYPE_t, ndim = 2]
-    # overlaps = np.zeros((N, K), dtype=DTYPE
-    # with nogil:
-    #     for k in range(K):
-    #         box_area = (
-    #                 (query_boxes[k, 2] - query_boxes[k, 0] + 1) *
-    #                 (query_boxes[k, 3] - query_boxes[k, 1] + 1)
-    #         )
-    #         for n in range(N):
-    #             iw = (
-    #                     min(boxes[n, 2], query_boxes[k, 2]) -
-    #                     max(boxes[n, 0], query_boxes[k, 0]) + 1
-    #             )
-    #             if iw > 0:
-    #                 ih = (
-    #                         min(boxes[n, 3], query_boxes[k, 3]) -
-    #                         max(boxes[n, 1], query_boxes[k, 1]) + 1
-    #                 )
-    #                 if ih > 0:
-    #                     ua = float(
-    #                         (boxes[n, 2] - boxes[n, 0] + 1) *
-    #                         (boxes[n, 3] - boxes[n, 1] + 1) +
-    #                         box_area - iw * ih
-    #                     )
-    #                     overlaps[n, k] = iw * ih / ua
-    # return overlaps
-
-
-
 class RetinaNetHead(nn.Module):
     """
     The head used in RetinaNet for object classification and box regression.
@@ -560,11 +407,11 @@ class RetinaNetHead(nn.Module):
 
         #include self-attention layer into these two sub-nets
         # cls_subnet.append(
-        #     SelfAttention(in_channels))
+        #    SelfAttention(in_channels))
         #
         # bbox_subnet.append(
-        #     SelfAttention(in_channels))
-        self.attention = SelfAttention(in_channels)
+        #    SelfAttention(in_channels))
+        #self.attention = SelfAttention(in_channels)
 
         for _ in range(num_convs):
             cls_subnet.append(
@@ -575,6 +422,13 @@ class RetinaNetHead(nn.Module):
                 nn.Conv2d(in_channels, in_channels, kernel_size=3, stride=1, padding=1)
             )
             bbox_subnet.append(nn.ReLU())
+
+        #add self-attention layer before output layer
+        # cls_subnet.append(
+        #    SelfAttention(in_channels))
+        #
+        # bbox_subnet.append(
+        #    SelfAttention(in_channels))
 
         self.cls_subnet = nn.Sequential(*cls_subnet)
         self.bbox_subnet = nn.Sequential(*bbox_subnet)
@@ -613,8 +467,10 @@ class RetinaNetHead(nn.Module):
         logits = []
         bbox_reg = []
         for feature in features:
-            logits.append(self.cls_score(self.cls_subnet(self.attention(feature))))
-            bbox_reg.append(self.bbox_pred(self.bbox_subnet(self.attention(feature))))
+            # logits.append(self.cls_score(self.cls_subnet(self.attention(feature))))
+            # bbox_reg.append(self.bbox_pred(self.bbox_subnet(self.attention(feature))))
+            logits.append(self.cls_score(self.cls_subnet(feature)))
+            bbox_reg.append(self.bbox_pred(self.bbox_subnet(feature)))
         return logits, bbox_reg
 
 
@@ -623,6 +479,24 @@ def init_conv(conv):
     if conv.bias is not None:
         conv.bias.data.zero_()
 
+
+def balanced_l1_loss(pred,
+                     target,
+                     beta=1.0,
+                     alpha=0.5,
+                     gamma=1.5,
+                     reduction='mean'):
+    assert beta > 0
+    assert pred.size() == target.size() and target.numel() > 0
+
+    diff = torch.abs(pred - target)
+    b = np.e**(gamma / alpha) - 1
+    loss = torch.where(
+        diff < beta, alpha / b *
+        (b * diff + 1) * torch.log(b * diff / beta + 1) - alpha * diff,
+        gamma * diff + gamma / b - alpha * beta)
+    loss = loss.sum()
+    return loss
 
 class SelfAttention(nn.Module):
     r"""
@@ -668,4 +542,6 @@ class SelfAttention(nn.Module):
         self_attetion = self_attetion.view(m_batchsize, C, width, height)  # B * C * W * H
 
         out = self.gamma * self_attetion + x
+        # out = self_attetion * x
+        del self_attetion, attention, f, g, h
         return out

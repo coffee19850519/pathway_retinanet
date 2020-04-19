@@ -6,6 +6,7 @@ import itertools
 import json
 import logging
 import numpy as np
+import pandas as pd
 import os
 from collections import OrderedDict
 import torch
@@ -20,10 +21,10 @@ from detectron2.data import MetadataCatalog, DatasetCatalog
 from detectron2.data.datasets.coco import file_lock
 from detectron2.structures import pairwise_iou_rotated, RotatedBoxes
 
-#from detectron2.structures import Boxes, BoxMode, pairwise_iou
+from detectron2.structures import BoxMode
 
 from detectron2.utils.logger import create_small_table
-
+from detectron2.data.datasets.coco import convert_to_coco_json
 from detectron2.evaluation.coco_evaluation import COCOEvaluator
 
 class PathwayEval(COCOeval):
@@ -68,6 +69,111 @@ class PathwayEval(COCOeval):
         return ious
 
 
+class RegularEvaluator(COCOEvaluator):
+    """
+    Evaluate object proposal, instance detection/segmentation, keypoint detection
+    outputs using COCO's metrics and APIs.
+    """
+
+    def __init__(self, dataset_name, cfg, distributed, allow_cached, output_dir=None):
+        """
+        Args:
+            dataset_name (str): name of the dataset to be evaluated.
+                It must have either the following corresponding metadata:
+
+                    "json_file": the path to the COCO format annotation
+
+                Or it must be in detectron2's standard dataset format
+                so it can be converted to COCO format automatically.
+            cfg (CfgNode): config instance
+            distributed (True): if True, will collect results from all ranks for evaluation.
+                Otherwise, will evaluate the results in the current process.
+            output_dir (str): optional, an output directory to dump all
+                results predicted on the dataset. The dump contains two files:
+
+                1. "instance_predictions.pth" a file in torch serialization
+                   format that contains all the raw original predictions.
+                2. "coco_instances_results.json" a json file in COCO's result
+                   format.
+        """
+        self._tasks = self._tasks_from_config(cfg)
+        self._distributed = distributed
+        self._output_dir = output_dir
+
+        self._cpu_device = torch.device("cpu")
+        self._logger = logging.getLogger(__name__)
+
+        self._metadata = MetadataCatalog.get(dataset_name)
+        if not hasattr(self._metadata, "json_file"):
+            self._logger.warning(f"json_file was not found in MetaDataCatalog for '{dataset_name}'")
+
+            cache_path = os.path.join(output_dir, f"{dataset_name}_coco_format.json")
+            self._metadata.json_file = cache_path
+            # allow_cached
+
+            convert_to_coco_json(dataset_name, cache_path, allow_cached)
+
+        json_file = PathManager.get_local_path(self._metadata.json_file)
+        with contextlib.redirect_stdout(io.StringIO()):
+            self._coco_api = COCO(json_file)
+
+        self._kpt_oks_sigmas = cfg.TEST.KEYPOINT_OKS_SIGMAS
+        # Test set json files do not contain annotations (evaluation must be
+        # performed using the COCO evaluation server).
+        self._do_evaluation = "annotations" in self._coco_api.dataset
+
+    def process(self, inputs, outputs):
+        """
+        Args:
+            inputs: the inputs to a COCO model (e.g., GeneralizedRCNN).
+                It is a list of dict. Each dict corresponds to an image and
+                contains keys like "height", "width", "file_name", "image_id".
+            outputs: the outputs of a COCO model. It is a list of dicts with key
+                "instances" that contains :class:`Instances`.
+        """
+        for input, output in zip(inputs, outputs):
+            prediction = {"image_id": input["image_id"]}
+
+            # TODO this is ugly
+            if "instances" in output:
+                instances = output["instances"].to(self._cpu_device)
+                prediction["instances"] = self.instances_to_coco_json(instances, input["image_id"], input['file_name'])
+                # prediction["instances"] = instances_to_coco_json(instances, input["image_id"])
+            if "proposals" in output:
+                prediction["proposals"] = output["proposals"].to(self._cpu_device)
+            self._predictions.append(prediction)
+
+    def instances_to_coco_json(self, instances, img_id, file_name):
+        """
+        Dump an "Instances" object to a COCO-format json that's used for evaluation.
+
+        Args:
+            instances (Instances):
+            img_id (int): the image id
+
+        Returns:
+            list[dict]: list of json annotations in COCO format.
+        """
+        num_instance = len(instances)
+        if num_instance == 0:
+            return []
+
+        boxes = instances.pred_boxes.tensor.numpy()
+        boxes = BoxMode.convert(boxes, BoxMode.XYXY_ABS, BoxMode.XYWH_ABS)
+        boxes = boxes.tolist()
+        scores = instances.scores.tolist()
+        classes = instances.pred_classes.tolist()
+        results = []
+        for k in range(num_instance):
+            result = {
+                "image_id": img_id,
+                "file_name": file_name,
+                "category_id": classes[k],
+                "bbox": boxes[k],
+                "score": scores[k],
+            }
+            results.append(result)
+        return results
 
 class PathwayEvaluator(COCOEvaluator):
     """
@@ -313,6 +419,27 @@ class PathwayEvaluator(COCOEvaluator):
                 prediction["proposals"] = output["proposals"].to(self._cpu_device)
             self._predictions.append(prediction)
 
+    def read_predictions_with_coco_format_from_json_file(self, file_name):
+        results = json.load(open(file_name, 'r'))
+
+        df_results = pd.DataFrame(results)
+        #get image number
+        for image_idx in df_results['image_id'].drop_duplicates().values:
+            prediction = {"image_id": image_idx}
+            prediction["instances"] = []
+            for result in results:
+                if result["image_id"] == image_idx:
+                    # then start processing a new image's results
+                    prediction["instances"].append({
+                        "image_id" : result["image_id"],
+                        "category_id" : result["category_id"],
+                        "bbox" : result["bbox"],
+                        "score" : result["score"]})
+
+            self._predictions.append(prediction)
+            del prediction
+        del  df_results, results
+
     def _derive_coco_results(self, coco_eval, iou_type, class_names=None):
         """
         Derive the desired score numbers from summarized COCOeval.
@@ -411,6 +538,7 @@ def instances_to_coco_json(instances, img_id,file_name):
         }
         results.append(result)
     return results
+
 
 
 def _evaluate_predictions_on_coco(coco_gt, coco_results, iou_type, kpt_oks_sigmas=None):

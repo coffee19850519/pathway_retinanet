@@ -1,6 +1,7 @@
 import cfg
 import cv2, os
 import numpy as np
+import copy
 
 
 def assign_roles_to_elements(gene_instances_on_sub_image, relation_head_instance_on_sub_image):
@@ -189,8 +190,11 @@ def find_vertex_for_detected_relation_symbol_by_distance(img, candidates, head_b
 def get_gene_pairs_on_relation_sub_image (sub_img, element_instances_on_relation,image_name, image_ext, idx):
 
     #analyze the element distribution first
-    gene_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_name'] == 'gene']
-    relation_symbol_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_name'] != 'gene']
+    # gene_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_name'] == 'gene']
+    # relation_symbol_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_name'] != 'gene']
+
+    gene_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_id'] == 1]
+    relation_symbol_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_id'] != 1]
 
     #pick the mostlikely relation symbols if more than 1 relation symbol
     relation_head_instance, relation_symbol_contour = \
@@ -232,8 +236,14 @@ def get_gene_pairs_on_relation_sub_image (sub_img, element_instances_on_relation
 def perspective_transform_on_element_bbox(element_normalized_bbox, M):
     return cv2.perspectiveTransform(np.array([element_normalized_bbox], np.float32), M).astype(np.int).reshape(-1, 2)
 
+def translation_transform_on_element_bbox(element_normalized_bbox, M):
+    element_normalized_bbox[:,0] = element_normalized_bbox[:,0] - M[0]
+    element_normalized_bbox[:,1] = element_normalized_bbox[:,1] - M[1]
+    return element_normalized_bbox.astype(np.int).reshape(-1, 2)
+
+
 # generate sub_image and fill entity bounding boxes
-def generate_sub_image_bounding_relation(img, relation_instance, element_instances_on_sample, offset):
+def generate_sub_image_bounding_relation_rotated(img, relation_instance, element_instances_on_sample, offset):
 
     # image_name, image_ext = os.path.splitext(os.path.basename(img_file_name))
 
@@ -264,6 +274,67 @@ def generate_sub_image_bounding_relation(img, relation_instance, element_instanc
                                                       int(relation_instance['bbox'][3])))
 
     return warped_img, element_instances_on_relation
+
+# generate sub_image and fill entity bounding boxes for regular bbox
+def generate_sub_image_bounding_relation_regular(img, relation_instance, element_instances_on_sample, offset):
+    # image_name, image_ext = os.path.splitext(os.path.basename(img_file_name))
+
+    # element_boxes= []
+    # for idx in relation_instance['cover_entity']:
+    #     element_boxes.append(entity_instances.iloc[idx]['normalized_bbox'])
+
+    src_pts = relation_instance['normalized_bbox']
+    transform=src_pts[0]
+
+    # get all element instances on relation region
+    try:
+        element_instances_on_relation = element_instances_on_sample.iloc[relation_instance['covered_elements']].copy()
+
+
+        # get bbox after perspective transform
+        element_instances_on_relation['perspective_bbox'] = element_instances_on_relation['normalized_bbox'].apply(translation_transform_on_element_bbox, M =transform)
+
+    except:
+        print('element_instances_on_sample:', element_instances_on_sample)
+
+    # directly warp the rotated rectangle to get the straightened rectangle
+    warped_img = get_subimg(img, src_pts,offset)
+
+    return warped_img, element_instances_on_relation
+
+
+def get_subimg(img,src_pts,offset):
+
+    # initialize starting dimensions of sub-image
+    left_top_x = int(min(src_pts[:, 0]))
+    left_top_y = int(min(src_pts[:, 1]))
+    right_bottom_x = int(max(src_pts[:, 0]))
+    right_bottom_y = int(max(src_pts[:, 1]))
+
+    # add some padding to sub-image dimensions
+    left_top_x = left_top_x - offset
+    left_top_y = left_top_y - offset
+
+    # if dimensions with offset are out of range (negative), then set to zero
+    if (left_top_x < 0):
+        left_top_x = 0
+    if (left_top_y < 0):
+        left_top_y = 0
+
+    # if dimensions with offset are out of range (positive), then set to max edge of original image
+    right_bottom_x = right_bottom_x + offset
+    right_bottom_y = right_bottom_y + offset
+    if right_bottom_x > img.shape[1]:
+        right_bottom_x = img.shape[1]
+    if right_bottom_y > img.shape[0]:
+        right_bottom_y = img.shape[0]
+
+        # exctract sub-image from original
+    sub_img = copy.copy(
+            img[left_top_y:right_bottom_y, left_top_x: right_bottom_x])
+
+
+    return sub_img
 
 
     # entity_boxes = np.array(covered_entity_instances, np.int32).reshape((-1, 2))
@@ -334,6 +405,7 @@ def generate_sub_image_bounding_relation(img, relation_instance, element_instanc
     #     str_coords += '\n'
     #     str_coords += ','.join(map(str, entity2_box))
     #
+
     #     return sub_img, str_coords, left_top_y, left_top_x, right_bottom_y, right_bottom_x
 
 

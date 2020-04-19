@@ -12,13 +12,13 @@ import os, csv
 import detectron2.utils.comm as comm
 from detectron2.checkpoint import DetectionCheckpointer
 from detectron2.config import get_cfg
-from detectron2.data import build_detection_test_loader, build_detection_train_loader
+from detectron2.data import build_detection_test_loader, build_detection_train_loader, DatasetMapper
 from detectron2.engine import DefaultTrainer, default_argument_parser, default_setup, launch
 from detectron2.evaluation import verify_results,DatasetEvaluators
 from detectron2.utils.logger import setup_logger
 from detectron2.solver.build import build_optimizer
-from tools.relation_data_tool import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset, generate_scaled_boxes_width_height_angles
-from pathway_evaluation import PathwayEvaluator
+from tools.relation_data_tool_old import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset, generate_scaled_boxes_width_height_angles
+from pathway_evaluation import PathwayEvaluator, RegularEvaluator
 
 class Trainer(DefaultTrainer):
     @classmethod
@@ -36,6 +36,21 @@ class Trainer(DefaultTrainer):
 
         return build_detection_train_loader(cfg, mapper=PathwayDatasetMapper(cfg, True))
 
+class RegularTrainer(DefaultTrainer):
+    @classmethod
+    def build_evaluator(cls, cfg, dataset_name):
+        output_folder = os.path.join(cfg.OUTPUT_DIR, "inference")
+        # evaluators = [COCOEvaluator(dataset_name, cfg, True, output_folder)]
+        evaluators = [RegularEvaluator(dataset_name, cfg, True,False, output_folder)]
+        return DatasetEvaluators(evaluators)
+
+    @classmethod
+    def build_test_loader(cls, cfg, dataset_name):
+        return build_detection_test_loader(cfg, dataset_name, mapper=DatasetMapper(cfg, False))
+
+    @classmethod
+    def build_train_loader(cls, cfg):
+        return build_detection_train_loader(cfg, mapper=DatasetMapper(cfg, True))
 
 def setup(args):
     cfg = get_cfg()

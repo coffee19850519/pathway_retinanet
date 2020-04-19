@@ -455,10 +455,11 @@ def check_if_best_result(threshold, dst_folder, dst_file, user_words,
         all_results, corrected_results, fuzz_ratios, count
 
 
-def OCR(image_file, sub_image_folder, element_instances_on_sample, element_list, user_words):
+def OCR(image_file, sub_image_folder, element_instances, user_words):
 
     #image_path = os.path.join(cfg.image_folder, image_file)
-    image_name, image_ext = os.path.splitext(os.path.basename(image_file))
+    image_name, image_ext = os.path.splitext(image_file)
+
     to_fix_folder = os.path.join(sub_image_folder, "to_fix")
     hist_folder = os.path.join(sub_image_folder, "hist")
     deskew_folder = os.path.join(sub_image_folder, "deskew")
@@ -474,22 +475,23 @@ def OCR(image_file, sub_image_folder, element_instances_on_sample, element_list,
 
     image_array = cv2.imread(image_file)
 
-    for element_idx in range(0, len(element_instances_on_sample)):
-        if int(element_instances_on_sample.iloc[element_idx]['category_id']) != element_list.index('gene'):
-            continue
+    results = []
+    coordinates_list = []
+
+    for element_idx in range(0, len(element_instances)):
 
         sub_image_name, sub_image_ext = str(element_idx), image_ext
         sub_image_file = sub_image_name + sub_image_ext
         sub_image_path = os.path.join(sub_image_folder, sub_image_file)
 
 
-        coordinates = np.array( BoxMode.convert(element_instances_on_sample.iloc[element_idx]['bbox'],
+        coordinates = np.array( BoxMode.convert(element_instances.iloc[element_idx]['bbox'],
                                                 BoxMode.XYWH_ABS, BoxMode.XYXY_ABS), dtype= float).reshape((-4, 2))
 
-        h = int(element_instances_on_sample.iloc[element_idx]['bbox'][3])
-        w = int(element_instances_on_sample.iloc[element_idx]['bbox'][2])
-        Xs = [int(i[0]) for i in coordinates]
-        Ys = [int(i[1]) for i in coordinates]
+        h = element_instances.iloc[element_idx]['bbox'][3]
+        w = element_instances.iloc[element_idx]['bbox'][2]
+        Xs = [i[0] for i in coordinates]
+        Ys = [i[1] for i in coordinates]
         x1 = min(Xs)
         y1 = min(Ys)
 
@@ -508,10 +510,10 @@ def OCR(image_file, sub_image_folder, element_instances_on_sample, element_list,
             cv2.imwrite(os.path.join(sub_image_folder, sub_image_file), resized_image)
             del resized_image
 
-        # sub_split = sub_image_folder.split('\\')
-        # sub_folder_name = sub_split[len(sub_split) - 1]
+        sub_split = sub_image_folder.split('\\')
+        sub_folder_name = sub_split[len(sub_split) - 1]
 
-        file = image_name + "_" + sub_image_file
+        file = sub_folder_name + "_" + sub_image_file
 
         display(image_file + "\n", file=cfg.log_file)
 
@@ -530,9 +532,9 @@ def OCR(image_file, sub_image_folder, element_instances_on_sample, element_list,
         fuzz_ratios_dict.update({file: fuzz_ratios})
 
         if best_corrected_result and best_corrected_result != "*\t*\t*\t*\t*":
-            #results.append(best_corrected_result)
+            results.append(best_corrected_result)
             #update recognized result to dataframe
-            element_instances_on_sample.at[element_idx, 'ocr'] = best_corrected_result
+            element_instances.iloc[element_idx]['ocr'] = best_corrected_result
 
         else:
 
@@ -541,9 +543,9 @@ def OCR(image_file, sub_image_folder, element_instances_on_sample, element_list,
             if not os.path.isdir(to_fix_folder):
                 os.mkdir(to_fix_folder)
 
-            #results.append('*\t*\t*\t*\t*')
+            results.append('*\t*\t*\t*\t*')
             #update failed mark to dataframe
-            #element_instances.iloc[element_idx]['ocr'] = '*\t*\t*\t*\t*'
+            element_instances.iloc[element_idx]['ocr'] = '*\t*\t*\t*\t*'
 
             display("fail: \t" + str(sub_image_file) + "\n", file=cfg.log_file)
 
@@ -553,10 +555,10 @@ def OCR(image_file, sub_image_folder, element_instances_on_sample, element_list,
             copy(sub_image_path, failed_path)
             copy(sub_image_path, to_fix_path)
 
-        #coordinates = coordinates.tolist()
-        #coordinates_list.append(coordinates)
+        coordinates = coordinates.tolist()
+        coordinates_list.append(coordinates)
     del image_array
-    return all_results_dict, corrected_results_dict, fuzz_ratios_dict
+    return results, all_results_dict, corrected_results_dict, fuzz_ratios_dict, coordinates_list
 
 
 def ocr_text_from_image(src_folder, src_file, dst_folder, delete=True, psm=[3, 8, 9]):
@@ -564,13 +566,10 @@ def ocr_text_from_image(src_folder, src_file, dst_folder, delete=True, psm=[3, 8
     for num in range(0, len(psm)):
 
         text_path = os.path.join(dst_folder, os.path.basename(src_file) + ".txt")
-        comm = "tesseract \"" + src_folder + "/" + src_file + \
-            "\" \"" + dst_folder + "/" + os.path.basename(src_file) + \
-               "\" --oem 3 --psm " \
-               + str(psm[num]) + " -l eng+equ txt"
+        comm = "tesseract \"" + src_folder + "\\" + src_file + \
+            "\" \"" + dst_folder + "\\" + os.path.basename(src_file) + "\" --oem 3 --psm " + str(psm[num]) + " -l eng+equ"
 
         status = subprocess.getoutput(comm)
-        #print('ocr status:' + status)
         result = ''
 
         # if os.path.exists(text_path) and "Can't" not in status[1]:
