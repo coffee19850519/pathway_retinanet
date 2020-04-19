@@ -1,0 +1,24 @@
+MODEL:
+  META_ARCHITECTURE: "RetinaNet"
+  BACKBONE:
+    NAME: "build_retinanet_resnet_fpn_backbone"
+  WEIGHTS: "./output/element_model.pth"
+  RESNETS:
+    OUT_FEATURES: ["res3", "res4", "res5"]
+  ANCHOR_GENERATOR:
+    SIZES: !!python/object/apply:eval ["[[x, x * 2**(1.0/3), x * 2**(2.0/3) ] for x in [32, 64, 128, 256, 512 ]]"]
+  FPN:
+    IN_FEATURES: ["res3", "res4", "res5"]
+  RETINANET:
+    IOU_THRESHOLDS: [0.4, 0.5]
+    IOU_LABELS: [0, -1, 1]
+DATASETS:
+  TRAIN: ("pathway_train_0_regular_element",)
+  TEST: ("pathway_val_0_regular_element",)
+SOLVER:
+  IMS_PER_BATCH: 1
+  BASE_LR: 0.01  # Note that RetinaNet uses a different default learning rate
+  STEPS: (60000, 80000)
+  MAX_ITER: 90000
+INPUT:
+  MIN_SIZE_TRAIN: (640, 672, 704, 736, 768, 800)
