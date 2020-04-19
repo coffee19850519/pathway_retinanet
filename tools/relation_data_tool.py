@@ -6,7 +6,6 @@ import pandas as pd
 import cv2
 import logging
 from shutil import copyfile
-from detectron2.config import get_cfg
 from detectron2.data import detection_utils as utils
 from detectron2.data import transforms as T
 from detectron2.data.transforms.transform import Resize_rotated_box
@@ -16,10 +15,11 @@ from detectron2.structures import Instances, RotatedBoxes,BoxMode
 from tools.label_file import LabelFile
 from sklearn.model_selection import train_test_split
 from detectron2.utils.visualizer import Visualizer
-from detectron2.engine import default_argument_parser, default_setup
+
+
 
 # write a function that loads the dataset into detectron2's standard format
-def get_annotation_dicts(json_path, img_path, category_list):
+def get_rotated_annotation_dicts(json_path, img_path, category_list):
     #go through all label files
     dataset_dicts = []
 
@@ -70,17 +70,79 @@ def get_annotation_dicts(json_path, img_path, category_list):
             try:
                 #LabelFile.normalize_shape_points(anno)
                 obj = {
-                    # "bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
-                    # "bbox_mode": BoxMode.XYXY_ABS,
-
                     "bbox": anno['rotated_box'],
                     "bbox_mode": BoxMode.XYWHA_ABS,
-                    # "segmentation": [poly],
                     "component": component,
                     "category_id": category_id,
-                    "iscrowd": 0
+                    "iscrowd": 0}
+                objs.append(obj)
+            except Exception as e:
+                print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
+                continue
 
-                }
+
+        record["annotations"] = objs
+        dataset_dicts.append(record)
+
+    return dataset_dicts
+
+def get_regular_annotation_dicts(json_path, img_path, category_list):
+    #go through all label files
+    dataset_dicts = []
+
+    for idx, json_file in enumerate(os.listdir(json_path)):
+        if os.path.splitext(json_file)[1] != '.json':
+            continue
+        #load json content
+        try:
+            imgs_anns = LabelFile(os.path.join(json_path, json_file))
+            #read key and value from current json file
+            filename = os.path.join(img_path, imgs_anns.imagePath)
+            img = cv2.imread(filename)
+            height, width = img.shape[:2]
+            del img
+        except Exception as e:
+            #print(str(e))
+            continue
+
+        #declare a dict variant to save the content
+        record = {}
+
+        record["file_name"] = filename
+        record["image_id"] = idx
+        record["height"] = height
+        record["width"] = width
+
+        objs = []
+        for anno in imgs_anns.shapes:
+            #assert not anno["label"]
+            #anno = anno["label"]
+            poly_points = np.array(anno['points'],np.float32).reshape((-1 , 2))
+            #rotated_rect = cv2.minAreaRect(poly_points)
+            px = poly_points[:, 0]
+            py = poly_points[:, 1]
+            # poly = [(x + 0.5, y + 0.5) for x, y in zip(px, py)]
+            # poly = list(itertools.chain.from_iterable(poly))
+            try:
+                component = list(anno['component'])
+            except:
+                component = []
+
+            try:
+                #only extract valid annotations
+                category_id = imgs_anns.generate_category_id(anno,category_list)
+            except Exception as e:
+                #print(str.format('file: %s arises error: %s when generating category_id') % str(e))
+                continue
+            try:
+                #LabelFile.normalize_shape_points(anno)
+                obj = {
+                    "bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
+                    "bbox_mode": BoxMode.XYXY_ABS,
+                    "component": component,
+                    "category_id": category_id,
+                    "iscrowd": 0}
+
                 objs.append(obj)
             except Exception as e:
                 print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
@@ -123,21 +185,35 @@ def split_data_into_train_and_validation_Kfold(json_path, validation_ratio = 0.2
                                  os.path.join(json_path, r'val_' + str(idx), json_file))
             print('copied:' + copy_info + '\n')
 
+
 def register_pathway_dataset(json_path, img_path, category_list):
     for d in ["train", "val"]:
         DatasetCatalog.register("pathway_" + d,
-                                lambda d=d: get_annotation_dicts(json_path + d, img_path,
+                                lambda d=d: get_rotated_annotation_dicts(json_path + d, img_path,
                                                                  category_list))
         MetadataCatalog.get("pathway_" + d).set(thing_classes=category_list)
 
 def register_Kfold_pathway_dataset(json_path, img_path, category_list, K = 10):
     for d in ["train", "val"]:
-        for idx_fold in range(K):
-            DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold),
-                                    lambda d=d: get_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path,
+            for entity_type in ['element', 'relation']:
+                for idx_fold in range(K):
+            # DatasetCatalog.register("pathway_" + d + '_'  +  anno_type ,
+            #                         lambda d=d: get_annotation_dicts(json_path + d + '_' + '0', img_path,
+            #                                                          category_list, anno_type))
+            # MetadataCatalog.get("pathway_" + d  +'_' + anno_type ).set(
+            #     thing_classes=category_list)
+                    DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold)+'_rotated_'+entity_type,
+                                            lambda d=d: get_rotated_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path,
+                                                                             category_list))
+                    MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold) + '_rotated_' + entity_type).set(
+                        thing_classes=category_list)
+                    DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold) + '_regular_' + entity_type,
+                                    lambda d=d: get_regular_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path,
                                                                      category_list))
-            MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set(thing_classes=category_list)
-            #MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set('coco')
+                    MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)+'_regular_'+entity_type).set(thing_classes=category_list)
+
+    # pass
+                    #MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set('coco')
 
 class PathwayDatasetMapper:
 
@@ -165,6 +241,12 @@ class PathwayDatasetMapper:
         logger = logging.getLogger(__name__)
         self.tfm_gens = []
         self.tfm_gens.append(T.ResizeShortestEdge(min_size, max_size, sample_style))
+        # if self.is_train:
+        #     self.tfm_gens.append(T.RandomBrightness())
+        #     self.tfm_gens.append(T.RandomContrast())
+        #     self.tfm_gens.append(T.RandomLighting())
+        #     self.tfm_gens.append(T.RandomSaturation())
+
 
         # fmt: off
         self.img_format = cfg.INPUT.FORMAT
@@ -214,18 +296,6 @@ class PathwayDatasetMapper:
                     np.random.choice(dataset_dict["annotations"]),
                 )
                 image = crop_tfm.apply_image(image)
-            #randomly add some transform to
-            # if self.is_train:
-            #     rand_num = np.random.randint(1,5)
-            #     if rand_num == 1:
-            #         self.tfm_gens.append(T.RandomBrightness(-0.5, 1.5))
-            #     if rand_num == 2:
-            #         self.tfm_gens.append(T.RandomContrast(-0.5, 1.5))
-            #     if rand_num == 3:
-            #         self.tfm_gens.append(T.RandomLighting(0.1))
-            #     if rand_num == 4:
-            #         self.tfm_gens.append(T.RandomSaturation(-0.5, 1.5))
-
             image, transforms = T.apply_transform_gens(self.tfm_gens, image)
             if self.crop_gen:
                 transforms = crop_tfm + transforms
@@ -417,11 +487,11 @@ if __name__ == "__main__":
     #     #for idx_fold in range(K):
     #         idx_fold = 0
     #         DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold), lambda d=d:get_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path, category_list))
-    #datset_name
+    #
     #         MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set(thing_classes=category_list)
     #split_data_into_train_and_validation_Kfold(json_path, validation_ratio=0.1, K=1)
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K =1)
-    # dicts = DatasetCatalog.get('pathway_train_0')
+    # dicts = DatasetCatalog.get('pathway_val_0')
     # metadata = MetadataCatalog.get('pathway_val_0')
     # for dic in dicts:
     #     img = cv2.imread(dic["file_name"], cv2.IMREAD_COLOR)[:, :, ::-1]
@@ -432,17 +502,5 @@ if __name__ == "__main__":
     #     cv2.imwrite(os.path.join(r'/home/fei/Desktop/results/', basename), vis_img)
     #     del img, vis_img
 
-    # visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
-    #                          'pathway_val_0',r'/home/fei/Desktop/results/',[0,1],0.8)
-    parser = default_argument_parser()
-    # parser.add_argument("--task", choices=["train", "eval", "data"], required=True)
-    args = parser.parse_args()
-    args.config_file = r'./Base-RelationRetinaNet.yaml'
-
-    cfg = get_cfg()
-    cfg.merge_from_file(args.config_file)
-    cfg.merge_from_list(args.opts)
-    cfg.freeze()
-    default_setup(cfg, args)
-
-    generate_scaled_boxes_width_height_angles('pathway_train_0', cfg)
+    visualize_coco_instances(r'/home/fei/Desktop/pathway_retinanet/output/coco_instances_results.json',
+                             'pathway_val_0',r'/home/fei/Desktop/results/',[0,1],0.8)
