@@ -32,12 +32,12 @@ from detectron2.data import (
     build_detection_test_loader
 )
 from torch.utils.data.sampler import Sampler
-from detectron2.data.build import DatasetMapper,get_detection_dataset_dicts,DatasetFromList,MapDataset,samplers,trivial_batch_collator
+from detectron2.data.build import DatasetMapper,get_detection_dataset_dicts,DatasetFromList,MapDataset,trivial_batch_collator
 from detectron2.engine import default_argument_parser, default_setup, launch
 from detectron2.evaluation import (
     inference_on_dataset,
     print_csv_format,
-    RotatedCOCOEvaluator,
+    #RotatedCOCOEvaluator,
 )
 from detectron2.modeling import build_model
 from detectron2.solver import build_lr_scheduler, build_optimizer
@@ -48,6 +48,7 @@ from detectron2.utils.events import (
     TensorboardXWriter,
 )
 from tools.relation_data_tool_old import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset
+from  pathway_evaluation import PathwayEvaluator
 
 logger = logging.getLogger("pathway_parser")
 
@@ -56,9 +57,10 @@ def do_test(cfg, model):
     results = OrderedDict()
     for dataset_name in cfg.DATASETS.TEST:
         data_loader = build_detection_test_loader(cfg= cfg,dataset_name= dataset_name, mapper= PathwayDatasetMapper(cfg, False))
-        evaluator = RotatedCOCOEvaluator(
+        evaluator = PathwayEvaluator(
              dataset_name=dataset_name, cfg= cfg, distributed= False, output_dir= os.path.join(cfg.OUTPUT_DIR, "inference", dataset_name)
         )
+
         results_i = inference_on_dataset(model, data_loader, evaluator)
         results[dataset_name] = results_i
         if comm.is_main_process():
@@ -198,13 +200,16 @@ def do_train(cfg, model, resume=False):
 
     # compared to "train_net.py", we do not support accurate timing and
     # precise BN here, because they are not trivial to implement
-    train_data_loader = build_detection_train_loader(cfg, mapper= PathwayDatasetMapper(cfg, True))
+    train_data_loader = build_detection_train_loader(cfg, mapper= DatasetMapper(cfg, True))
 
     # epoch_data_loader = build_detection_test_loader(cfg=cfg, dataset_name= cfg.DATASETS.TRAIN[0],
     #                                           mapper=PathwayDatasetMapper(cfg, True))
 
+
     val_data_loader = build_detection_validation_loader(cfg=cfg, dataset_name= cfg.DATASETS.TEST[0],
-                                              mapper=PathwayDatasetMapper(cfg, False))
+                                              mapper=DatasetMapper(cfg, False))
+
+
 
     if cfg.DATALOADER.ASPECT_RATIO_GROUPING:
         epoch_num = (train_data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH) + 1
@@ -377,9 +382,9 @@ if __name__ == "__main__":
     # register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
     #register_pathway_dataset(json_path, img_path, category_list)
 
-    category_list = ['activate_relation', 'inhibit_relation']
-    img_path = r'/home/fei/Desktop/test/images/'
-    json_path = r'/home/fei/Desktop/test/jsons/'
+    category_list = ['activate', 'gene','inhibit']
+    img_path = r'/home/19ljynenu/labelme/img/'
+    json_path = r'/home/19ljynenu/labelme/json/'
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
 
     parser = default_argument_parser()
@@ -388,7 +393,7 @@ if __name__ == "__main__":
     assert not args.eval_only
     #args.eval_only = True
     #args.num_gpus = 2
-    args.config_file = r'./Base-RelationRetinaNet.yaml'
+    args.config_file = r'./Base-RetinaNet.yaml'
     print("Command Line Args:", args)
     launch(
         main,

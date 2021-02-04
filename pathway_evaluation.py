@@ -123,6 +123,7 @@ class RegularEvaluator(COCOEvaluator):
         self._do_evaluation = "annotations" in self._coco_api.dataset
 
     def process(self, inputs, outputs):
+        print('&&&&&&&&&&&&&')
         """
         Args:
             inputs: the inputs to a COCO model (e.g., GeneralizedRCNN).
@@ -167,7 +168,7 @@ class RegularEvaluator(COCOEvaluator):
         for k in range(num_instance):
             result = {
                 "image_id": img_id,
-                "file_name": file_name,
+                "file_name": os.path.basename(file_name),
                 "category_id": classes[k],
                 "bbox": boxes[k],
                 "score": scores[k],
@@ -266,7 +267,7 @@ class PathwayEvaluator(COCOEvaluator):
                 "id": image_dict.get("image_id", image_id),
                 "width": image_dict["width"],
                 "height": image_dict["height"],
-                "file_name": image_dict["file_name"],
+                "file_name": os.path.basename(image_dict["file_name"]),
             }
             coco_images.append(coco_image)
 

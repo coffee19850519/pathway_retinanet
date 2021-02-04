@@ -7,17 +7,18 @@ import copy
 def assign_roles_to_elements(gene_instances_on_sub_image, relation_head_instance_on_sub_image):
     assert len(gene_instances_on_sub_image) == 2
 
-
     element_distance0 = calculate_distance_between_two_boxes(relation_head_instance_on_sub_image['perspective_bbox'], gene_instances_on_sub_image.iloc[0]['perspective_bbox'])
     element_distance1 = calculate_distance_between_two_boxes(relation_head_instance_on_sub_image['perspective_bbox'], gene_instances_on_sub_image.iloc[1]['perspective_bbox'])
 
     if element_distance0 > element_distance1:
         #return gene_instances_on_sub_image.iloc[0]['ocr'] + '<' + relation_head_instance_on_sub_image['category'] + '>' + gene_instances_on_sub_image.iloc[1]['ocr'], \
-        return gene_instances_on_sub_image.iloc[0]['perspective_bbox'], gene_instances_on_sub_image.iloc[1]['perspective_bbox']
+        #return gene_instances_on_sub_image.iloc[0]['perspective_bbox'], gene_instances_on_sub_image.iloc[1]['perspective_bbox']
+        return gene_instances_on_sub_image.iloc[0]['ocr'], gene_instances_on_sub_image.iloc[1]['ocr']
 
     else:
         #return gene_instances_on_sub_image.iloc[1]['ocr'] + '<' + relation_head_instance_on_sub_image['category'] + '>' + gene_instances_on_sub_image.iloc[0]['ocr'], \
-        return gene_instances_on_sub_image.iloc[1]['perspective_bbox'], gene_instances_on_sub_image.iloc[0]['perspective_bbox']
+        #return gene_instances_on_sub_image.iloc[1]['perspective_bbox'], gene_instances_on_sub_image.iloc[0]['perspective_bbox']
+        return gene_instances_on_sub_image.iloc[1]['ocr'], gene_instances_on_sub_image.iloc[0]['ocr']
 
 def detect_all_contours(img):
 
@@ -75,7 +76,7 @@ def symbol_area_and_contour(img, symbol_bbox, all_contours, contour_hierarchy):
 
 def erase_all_text_on_image(img, element_instances):
     text_instances = element_instances.loc[element_instances['category_id'] == 'gene']
-    for box in text_instances['perspective_bbox']:
+    for box in text_instances['normalized_bbox']:
         #start_x, start_y, end_x, end_y = box
         cv2.polylines(img, box, isClosed = True, color= (255,255,255), thickness = -1)
 
@@ -88,7 +89,7 @@ def find_largest_area_symbols(image, gene_instances, relation_head_instances):
 
     for relation_symbol_idx in range(0, len(relation_head_instances)):
         element_symbol_area, matched_contour, matched_contour_hierarchy = symbol_area_and_contour(img,
-                                relation_head_instances.iloc[relation_symbol_idx]['perspective_bbox'], candidate_contours, hierarchy)
+                                relation_head_instances.iloc[relation_symbol_idx]['normalized_bbox'], candidate_contours, hierarchy)
         element_symbol_areas.append(element_symbol_area)
         element_symbol_contours.append(matched_contour)
     max_index = element_symbol_areas.index(max(element_symbol_areas))
@@ -113,6 +114,7 @@ def find_vertex_for_detected_relation_symbol_by_distance(img, candidates, head_b
 
   for candidate in candidates:
     candidate = candidate[0]
+    #根据多边形边界筛选出位于多边形内的点、求交集、筛选不在多边形内的点
     if cv2.pointPolygonTest(head_box, tuple(candidate),
                             measureDist=False) != -1:
       in_head.append(candidate)
@@ -187,14 +189,11 @@ def find_vertex_for_detected_relation_symbol_by_distance(img, candidates, head_b
 
 # takes sub_image_filenames and predicted classes and extracts the relationship type and pairs
 # returns entity pairs in list of tuples and list of strings (format: "relationship_type:starter|receptor")
-def get_gene_pairs_on_relation_sub_image (sub_img, element_instances_on_relation,image_name, image_ext, idx):
+def get_gene_pairs_on_relation_sub_image (sub_img,subimage_path, element_instances_on_relation,image_name, image_ext, idx):
 
     #analyze the element distribution first
-    # gene_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_name'] == 'gene']
-    # relation_symbol_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_name'] != 'gene']
-
-    gene_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_id'] == 1]
-    relation_symbol_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_id'] != 1]
+    gene_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_id'] == cfg.element_list.index('gene')]
+    relation_symbol_instances_on_relation = element_instances_on_relation.loc[element_instances_on_relation['category_id'] != cfg.element_list.index('gene')]
 
     #pick the mostlikely relation symbols if more than 1 relation symbol
     relation_head_instance, relation_symbol_contour = \
@@ -212,34 +211,37 @@ def get_gene_pairs_on_relation_sub_image (sub_img, element_instances_on_relation
         find_vertex_for_detected_relation_symbol_by_distance(sub_img, vertex_candidates, relation_head_instance['perspective_bbox'])
 
         try:
-            startor, receptor, startor_bbox, receptor_bbox = \
+            startor, receptor = \
                 pair_gene(startor_point, startor_neighbor, receptor_point, receptor_neighbor, gene_instances_on_relation)
 
-            cv2.polylines(sub_img, [startor_bbox], isClosed= True,  color=(0, 255, 0), thickness= 2)
-            cv2.polylines(sub_img, [receptor_bbox], isClosed= True, color=(0, 0, 255), thickness=2)
+            #just for visualization
+            # cv2.polylines(sub_img, [startor_bbox], isClosed= True,  color=(0, 255, 0), thickness= 2)
+            # cv2.polylines(sub_img, [receptor_bbox], isClosed= True, color=(0, 0, 255), thickness=2)
+            # cv2.imwrite(os.path.join(subimage_path,image_name + '_' + str(idx) + image_ext), sub_img)
 
-            cv2.imwrite(r'/home/fei/Desktop/vis_results_old/paired/' + image_name + '_' + str(idx) + image_ext, sub_img)
-
-            #return startor + '<' + relation_head_instance['category'] + '>' + receptor
+            return startor, receptor
         except Exception as e:
             print(str(e))
+            return None, None
 
     # at last leave only 2 genes/groups and 1
     else:
-        startor_bbox,receptor_bbox = \
+        startor,receptor = \
         assign_roles_to_elements(gene_instances_on_sub_image= gene_instances_on_relation, relation_head_instance_on_sub_image= relation_head_instance)
-        cv2.polylines(sub_img, [startor_bbox], isClosed=True, color=(0, 255, 0), thickness=2)
-        cv2.polylines(sub_img, [receptor_bbox], isClosed=True, color=(0, 0, 255), thickness=2)
-        cv2.imwrite(r'/home/fei/Desktop/vis_results_old/paired/' + image_name + '_' + str(idx) + image_ext, sub_img)
-        #return pair_info
+        # cv2.polylines(sub_img, [startor_bbox], isClosed=True, color=(0, 255, 0), thickness=2)
+        # cv2.polylines(sub_img, [receptor_bbox], isClosed=True, color=(0, 0, 255), thickness=2)
+        # cv2.imwrite(os.path.join(subimage_path  , image_name + '_' + str(idx) + image_ext), sub_img)
+        return startor, receptor
 
 def perspective_transform_on_element_bbox(element_normalized_bbox, M):
     return cv2.perspectiveTransform(np.array([element_normalized_bbox], np.float32), M).astype(np.int).reshape(-1, 2)
 
 def translation_transform_on_element_bbox(element_normalized_bbox, M):
-    element_normalized_bbox[:,0] = element_normalized_bbox[:,0] - M[0]
-    element_normalized_bbox[:,1] = element_normalized_bbox[:,1] - M[1]
-    return element_normalized_bbox.astype(np.int).reshape(-1, 2)
+    temp_box = element_normalized_bbox.copy()
+    #todo: exam box.clip
+    temp_box[:,0] = temp_box[:,0] - M[0]
+    temp_box[:,1] = temp_box[:,1] - M[1]
+    return temp_box.astype(np.int).reshape(-1, 2)
 
 
 # generate sub_image and fill entity bounding boxes
@@ -421,8 +423,8 @@ def center_point_in_box(bbox):
     if len(bbox) == 4:
         # here box1 is a polygon
         # center point to entity1
-        center_x = (bbox[0][0] + bbox[1][0] + bbox[2][0] + bbox[3][0]) / 2
-        center_y = (bbox[0][1] + bbox[1][1] + bbox[2][1] + bbox[3][1]) / 2
+        center_x = (bbox[0][0] + bbox[1][0] + bbox[2][0] + bbox[3][0]) / 4
+        center_y = (bbox[0][1] + bbox[1][1] + bbox[2][1] + bbox[3][1]) / 4
     elif len(bbox) == 2:
         # center point to entity1
         center_x = (bbox[0][0] + bbox[1][0]) / 2
@@ -490,8 +492,9 @@ def find_best_text(endpoint, text_bboxes, endpoint_neighbor, #img_diagonal, dist
 
 def pair_gene(startor, startor_neighbor, receptor, receptor_neighbor, text_instances):
 
-    if receptor is None or startor is None:
-        raise Exception('startor or receptor is None')
+    assert receptor is not None
+    assert startor is not None
+    assert 'ocr' in text_instances.columns
 
     dist_ar = dist_center(startor, receptor)
 
@@ -515,10 +518,8 @@ def pair_gene(startor, startor_neighbor, receptor, receptor_neighbor, text_insta
                                 center_point_in_box(text_instances.iloc[best_receptor_index]['perspective_bbox']))
 
         if best_receptor_index != best_startor_index and dist_text > dist_ar * 0.8:
-            return text_instances.iloc[best_startor_index]['ocr'], text_instances.iloc[best_receptor_index]['ocr'],\
-                    text_instances.iloc[best_startor_index]['perspective_bbox'], \
-                    text_instances.iloc[best_receptor_index]['perspective_bbox']
-
+            return  text_instances.iloc[best_startor_index]['ocr'], \
+                    text_instances.iloc[best_receptor_index]['ocr']
         else:
             raise Exception('startor and receptor match to a same gene')
     else:

@@ -4,8 +4,8 @@ import os
 import subprocess
 import numpy as np
 from shutil import copy
-from matplotlib import pyplot as plt
-from scipy.signal import argrelextrema
+# from matplotlib import pyplot as plt
+# from scipy.signal import argrelextrema
 from fuzzywuzzy import fuzz, process
 from fuzzywuzzy.process import default_processor
 from skimage.io import imread
@@ -13,11 +13,11 @@ from skimage.filters import gaussian
 from skimage.feature import canny
 from skimage.transform import probabilistic_hough_line, rotate
 from detectron2.structures import BoxMode
-
+from multiprocessing import Pool, cpu_count
 
 def display(input, file=None, to_print=False):
     if file:
-        with open(file, 'a', encoding="utf-8") as file:
+        with open(file,mode= 'a+', encoding="utf-8") as file:
             file.writelines(str(input) + " \n")
     if to_print:
         print(str(input))
@@ -64,7 +64,7 @@ def calculate_skew(image, file_path=None):
     return rotation_number
 
 
-def deskew(src_folder, src_file, dst_folder, dst_file, take_ocr=True, image=None):
+def deskew(src_folder, src_file, dst_folder, dst_file,log_file, take_ocr=True, image=None):
 
     src_path = os.path.join(src_folder, src_file)
     dst_path = os.path.join(dst_folder, dst_file)
@@ -123,7 +123,7 @@ def deskew(src_folder, src_file, dst_folder, dst_file, take_ocr=True, image=None
             result = result.upper().replace('\n', '')
             result = result.strip()
 
-            display("deskew: " + " \t" + str(src_file) + " \t" + str(result) + "\n", file=cfg.log_file)
+            display("deskew: " + " \t" + str(src_file) + " \t" + str(result) + "\n", file=log_file)
         else:
             # os.remove(dst_path)
             result = "*\t*\t*\t*\t*"
@@ -132,11 +132,11 @@ def deskew(src_folder, src_file, dst_folder, dst_file, take_ocr=True, image=None
     return result
 
 
-def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None, hist_file=None,
+def hist(src_folder, src_file, log_file,user_words, original_image=None, hist_folder=None, hist_file=None,
                            deskew_folder=None, deskew_file=None):
 
     if not ((hist_folder and hist_file) or (deskew_folder and deskew_file)):
-        display("Error: Invalid Parameters", file=cfg.log_file)
+        display("Error: Invalid Parameters", file=log_file)
         return "*\t*\t*\t*\t*"
 
     src_path = os.path.join(src_folder, src_file)
@@ -145,7 +145,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
     bins = np.arange(0, 256, cfg.OCR_hist_step_size)
 
     if image is None:
-        display("Error: Invalid Parameters", file=cfg.log_file)
+        display("Error: Invalid Parameters", file=log_file)
         return "*\t*\t*\t*\t*"
 
     image = cv2.cvtColor(image, cv2.COLOR_RGBA2GRAY)
@@ -206,7 +206,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                         best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
                             all_results, corrected_results, fuzz_ratios, count, proceed_left = \
                             test_side(abs_max_index, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0, len(histogram),
-                                      src_folder, src_file, hist_folder, hist_file, user_words,
+                                      src_folder, src_file, hist_folder, hist_file, log_file,user_words,
                                       best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                       all_results, corrected_results, fuzz_ratios, count,
                                       side='left', image=rotated_90c_image)
@@ -216,7 +216,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                             all_results, corrected_results, fuzz_ratios, count, proceed_right = \
                             test_side(abs_max_index + 1, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0,
                                       len(histogram),
-                                      src_folder, src_file, hist_folder, hist_file, user_words,
+                                      src_folder, src_file, hist_folder, hist_file, log_file,user_words,
                                       best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                       all_results, corrected_results, fuzz_ratios, count,
                                       side='right', image=rotated_90c_image)
@@ -235,7 +235,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                         best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
                             all_results, corrected_results, fuzz_ratios, count, proceed_left = \
                             test_side(abs_max_index, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0, len(histogram),
-                                      src_folder, src_file, hist_folder, hist_file, user_words,
+                                      src_folder, src_file, hist_folder, hist_file,log_file, user_words,
                                       best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                       all_results, corrected_results, fuzz_ratios, count,
                                       side='left', image=rotated_90cc_image)
@@ -245,7 +245,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                             all_results, corrected_results, fuzz_ratios, count, proceed_right = \
                             test_side(abs_max_index + 1, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0,
                                       len(histogram),
-                                      src_folder, src_file, hist_folder, hist_file, user_words,
+                                      src_folder, src_file, hist_folder, hist_file, log_file,user_words,
                                       best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                       all_results, corrected_results, fuzz_ratios, count,
                                       side='right', image=rotated_90cc_image)
@@ -264,7 +264,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                     best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
                         all_results, corrected_results, fuzz_ratios, count, proceed_left = \
                         test_side(abs_max_index, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0, len(histogram),
-                                  src_folder, src_file, hist_folder, hist_file, user_words,
+                                  src_folder, src_file, hist_folder, hist_file, log_file,user_words,
                                   best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                   all_results, corrected_results, fuzz_ratios, count,
                                   side='left', image=image)
@@ -273,7 +273,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                     best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
                         all_results, corrected_results, fuzz_ratios, count, proceed_right = \
                         test_side(abs_max_index + 1, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0, len(histogram),
-                                  src_folder, src_file, hist_folder, hist_file, user_words,
+                                  src_folder, src_file, hist_folder, hist_file, log_file,user_words,
                                   best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                   all_results, corrected_results, fuzz_ratios, count,
                                   side='right', image=image)
@@ -292,7 +292,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                     best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
                         all_results, corrected_results, fuzz_ratios, count, proceed_left = \
                         test_side(abs_max_index, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0, len(histogram),
-                                  hist_folder, hist_file, deskew_folder, deskew_file, user_words,
+                                  hist_folder, hist_file, deskew_folder, deskew_file, log_file,user_words,
                                   best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                   all_results, corrected_results, fuzz_ratios, count,
                                   side='left', to_save=False, to_deskew=True)
@@ -300,7 +300,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
                     best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
                         all_results, corrected_results, fuzz_ratios, count, proceed_right = \
                         test_side(abs_max_index + 1, cfg.OCR_hist_num_steps * num, cfg.OCR_hist_num_steps * (num + 1), 0, len(histogram),
-                                  hist_folder, hist_file, deskew_folder, deskew_file, user_words,
+                                  hist_folder, hist_file, deskew_folder, deskew_file, log_file,user_words,
                                   best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                   all_results, corrected_results, fuzz_ratios, count,
                                   side='right', to_save=False, to_deskew=True)
@@ -310,7 +310,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
 
         display("\n" + "hist: \t" + str(src_file) + " \t" + str(best_result) + " \t" + str(best_fuzz_ratio)
                 # + " (" + str(best_step) + ":" + str(best_sub_step) + ") "
-                + " \t" + str(best_thresh) + " \t" + str(best_corrected_result) + "\n", file=cfg.log_file)
+                + " \t" + str(best_thresh) + " \t" + str(best_corrected_result) + "\n", file=log_file)
 
         return best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
             all_results, corrected_results, fuzz_ratios
@@ -321,7 +321,7 @@ def hist(src_folder, src_file, user_words, original_image=None, hist_folder=None
 
 
 def test_side(index, start, end, left_bound, right_bound,
-              src_folder, src_file, dst_folder, dst_file, user_words,
+              src_folder, src_file, dst_folder, dst_file,log_file, user_words,
               best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
               all_results, corrected_results, fuzz_ratios, count,
               side=None, to_save=True, to_deskew=False, image=None):
@@ -335,7 +335,7 @@ def test_side(index, start, end, left_bound, right_bound,
         f = 1  # factor
         left_bound = left_bound - 1
     else:
-        display("Error: Invalid Parameters", file=cfg.log_file)
+        display("Error: Invalid Parameters", file=log_file)
         return best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
             all_results, corrected_results, fuzz_ratios, count, False
 
@@ -381,11 +381,11 @@ def test_side(index, start, end, left_bound, right_bound,
                     cv2.imwrite(dst_path, th1)
 
                 if to_deskew:
-                    deskew(src_folder, src_file, dst_folder, dst_file, take_ocr=False)
+                    deskew(src_folder, src_file, dst_folder,log_file, dst_file, take_ocr=False)
 
                 best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
                     all_results, corrected_results, fuzz_ratios, count = \
-                    check_if_best_result(thresh, dst_folder, dst_file, user_words,
+                    check_if_best_result(thresh, dst_folder, dst_file, log_file,user_words,
                                          best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                                          all_results, corrected_results, fuzz_ratios, count)
         else:
@@ -396,7 +396,7 @@ def test_side(index, start, end, left_bound, right_bound,
         all_results, corrected_results, fuzz_ratios, count, to_continue
 
 
-def check_if_best_result(threshold, dst_folder, dst_file, user_words,
+def check_if_best_result(threshold, dst_folder, dst_file,log_file, user_words,
                          best_result, best_corrected_result, best_fuzz_ratio, best_thresh,
                          all_results, corrected_results, fuzz_ratios, count):
 
@@ -420,7 +420,7 @@ def check_if_best_result(threshold, dst_folder, dst_file, user_words,
             all_results, corrected_results, fuzz_ratios, count
 
     display(str(threshold) + ": \t" + str(result) + " \t" + str(corrections[0][0]) +
-            " \t" + str(corrections[0][1]), file=cfg.log_file)  # display best
+            " \t" + str(corrections[0][1]), file=log_file)  # display best
 
     if corrections[0][0] == best_corrected_result and corrections[0][1] < cfg.threshold:
         count = count + .01
@@ -464,6 +464,16 @@ def OCR(image_file, sub_image_folder, element_instances, user_words):
     hist_folder = os.path.join(sub_image_folder, "hist")
     deskew_folder = os.path.join(sub_image_folder, "deskew")
 
+    # OCR configurations
+
+    #image_folder = os.path.join(sub_image_folder, "images")
+    predict_folder = os.path.join(sub_image_folder, "predict")
+    failed_folder = os.path.join(sub_image_folder, "failed")
+
+
+    log_file = os.path.join(predict_folder, "log.txt")
+
+
     all_results_dict = {}
     corrected_results_dict = {}
     fuzz_ratios_dict = {}
@@ -472,35 +482,98 @@ def OCR(image_file, sub_image_folder, element_instances, user_words):
         os.mkdir(hist_folder)
     if not os.path.isdir(deskew_folder):
         os.mkdir(deskew_folder)
+    if not os.path.isdir(predict_folder):
+        os.mkdir(predict_folder)
+    if not os.path.isdir(failed_folder):
+        os.mkdir(failed_folder)
+    if not os.path.isdir(to_fix_folder):
+        os.mkdir(to_fix_folder)
 
     image_array = cv2.imread(image_file)
 
     results = []
     coordinates_list = []
+    ocr_results = []
+    gene_idx_list = []
 
+    #start run ocr in parallel
+    pool = Pool(cpu_count())
+
+    #generate all ocr arguments for paralleling
     for element_idx in range(0, len(element_instances)):
 
         sub_image_name, sub_image_ext = str(element_idx), image_ext
         sub_image_file = sub_image_name + sub_image_ext
         sub_image_path = os.path.join(sub_image_folder, sub_image_file)
+        sub_split = sub_image_folder.split('\\')
+        sub_folder_name = sub_split[len(sub_split) - 1]
+        file = sub_folder_name + "_" + sub_image_file
+        results.append(pool.apply_async(crop_sub_image_do_ocr, \
+        (element_instances,element_idx, image_array, sub_image_folder,  sub_image_file,
+                     log_file, file, sub_image_name, sub_image_ext,hist_folder, deskew_folder, user_words)))
+    pool.close()
+    pool.join()
+    #parse the ocr async results
+    for result in results:
+        run_results = result.get()
+        if result.successful() and run_results is not None:
+            best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
+            all_results, corrected_results, fuzz_ratios, result_element_idx, result_file, result_coordinates = run_results
+            all_results_dict.update({result_file: all_results})
+            corrected_results_dict.update({result_file: corrected_results})
+            fuzz_ratios_dict.update({result_file: fuzz_ratios})
+            if best_corrected_result and best_corrected_result != "*\t*\t*\t*\t*":
+                ocr_results.append(best_corrected_result)
+                # update recognized result to dataframe
+                #element_instances.loc[result_element_idx, 'ocr'] = best_corrected_result
+            else:
+
+                if not os.path.isdir(failed_folder):
+                    os.mkdir(failed_folder)
+                if not os.path.isdir(to_fix_folder):
+                    os.mkdir(to_fix_folder)
+                ocr_results.append('*\t*\t*\t*\t*')
+                # update failed mark to dataframe
+                #element_instances.loc[result_element_idx, 'ocr'] = '*\t*\t*\t*\t*'
+
+                display("fail: \t" + str(sub_image_file) + "\n", file=log_file)
+
+                failed_path = os.path.join(failed_folder, result_file)
+                to_fix_path = os.path.join(to_fix_folder, result_file)
+
+                copy(sub_image_path, failed_path)
+                copy(sub_image_path, to_fix_path)
+            result_coordinates = result_coordinates.tolist()
+            coordinates_list.append(result_coordinates)
+            gene_idx_list.append(result_element_idx)
+        del run_results
+
+    del image_array, pool, results
+    return ocr_results, all_results_dict, corrected_results_dict, fuzz_ratios_dict, coordinates_list, gene_idx_list
+
+# def crop_sub_image_do_ocr_bridge(args):
+#     return crop_sub_image_do_ocr(args[0],args[1],args[2],args[3],args[4],args[5],args[6],args[7],args[8],args[9],args[10],args[11])
 
 
-        coordinates = np.array( BoxMode.convert(element_instances.iloc[element_idx]['bbox'],
-                                                BoxMode.XYWH_ABS, BoxMode.XYXY_ABS), dtype= float).reshape((-4, 2))
+def crop_sub_image_do_ocr(element_instances, element_idx, image_array, sub_image_folder,
+                          sub_image_file, log_file, file, sub_image_name, sub_image_ext, hist_folder, deskew_folder, user_words):
+    coordinates = np.array(BoxMode.convert(element_instances.iloc[element_idx]['bbox'],
+                                           BoxMode.XYWH_ABS, BoxMode.XYXY_ABS), dtype=float).reshape((-4, 2))
 
-        h = element_instances.iloc[element_idx]['bbox'][3]
-        w = element_instances.iloc[element_idx]['bbox'][2]
-        Xs = [i[0] for i in coordinates]
-        Ys = [i[1] for i in coordinates]
-        x1 = min(Xs)
-        y1 = min(Ys)
+    h = int(element_instances.iloc[element_idx]['bbox'][3])
+    w = int(element_instances.iloc[element_idx]['bbox'][2])
+    Xs = [i[0] for i in coordinates]
+    Ys = [i[1] for i in coordinates]
+    x1 = int(min(Xs))
+    y1 = int(min(Ys))
 
-        if x1 < 0:
-            x1 = 0
-        if y1 < 0:
-            y1 = 0
+    if x1 < 0:
+        x1 = 0
+    if y1 < 0:
+        y1 = 0
 
-        # scaling ROI for better recognition
+    # scaling ROI for better recognition
+    try:
         resized_image = cv2.resize(image_array[y1 - cfg.OCR_OFFSET:y1 + h + cfg.OCR_OFFSET,
                                    x1 - cfg.OCR_OFFSET:x1 + w + cfg.OCR_OFFSET],
                                    (int(cfg.OCR_SCALE * w),
@@ -510,12 +583,7 @@ def OCR(image_file, sub_image_folder, element_instances, user_words):
             cv2.imwrite(os.path.join(sub_image_folder, sub_image_file), resized_image)
             del resized_image
 
-        sub_split = sub_image_folder.split('\\')
-        sub_folder_name = sub_split[len(sub_split) - 1]
-
-        file = sub_folder_name + "_" + sub_image_file
-
-        display(image_file + "\n", file=cfg.log_file)
+        #display(image_file + "\n", file=log_file)
 
         hist_file = sub_image_name + sub_image_ext
         deskew_file = sub_image_name + sub_image_ext
@@ -523,42 +591,17 @@ def OCR(image_file, sub_image_folder, element_instances, user_words):
         original_image = image_array[y1:y1 + h, x1:x1 + w]
 
         best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
-            all_results, corrected_results, fuzz_ratios = hist(sub_image_folder, sub_image_file, user_words,
-                                                               hist_folder=hist_folder, hist_file=hist_file,
-                                                               deskew_folder=deskew_folder, deskew_file=deskew_file,
-                                                               original_image=original_image)
-        all_results_dict.update({file: all_results})
-        corrected_results_dict.update({file: corrected_results})
-        fuzz_ratios_dict.update({file: fuzz_ratios})
+        all_results, corrected_results, fuzz_ratios = hist(sub_image_folder, sub_image_file, log_file, user_words,
+                                                           hist_folder=hist_folder, hist_file=hist_file,
+                                                           deskew_folder=deskew_folder, deskew_file=deskew_file,
+                                                           original_image=original_image)
 
-        if best_corrected_result and best_corrected_result != "*\t*\t*\t*\t*":
-            results.append(best_corrected_result)
-            #update recognized result to dataframe
-            element_instances.iloc[element_idx]['ocr'] = best_corrected_result
+        return best_result, best_corrected_result, best_fuzz_ratio, best_thresh, \
+        all_results, corrected_results, fuzz_ratios, element_idx, file, coordinates
+    except Exception as e:
+        print(e)
+        return None
 
-        else:
-
-            if not os.path.isdir(cfg.failed_folder):
-                os.mkdir(cfg.failed_folder)
-            if not os.path.isdir(to_fix_folder):
-                os.mkdir(to_fix_folder)
-
-            results.append('*\t*\t*\t*\t*')
-            #update failed mark to dataframe
-            element_instances.iloc[element_idx]['ocr'] = '*\t*\t*\t*\t*'
-
-            display("fail: \t" + str(sub_image_file) + "\n", file=cfg.log_file)
-
-            failed_path = os.path.join(cfg.failed_folder, file)
-            to_fix_path = os.path.join(to_fix_folder, file)
-
-            copy(sub_image_path, failed_path)
-            copy(sub_image_path, to_fix_path)
-
-        coordinates = coordinates.tolist()
-        coordinates_list.append(coordinates)
-    del image_array
-    return results, all_results_dict, corrected_results_dict, fuzz_ratios_dict, coordinates_list
 
 
 def ocr_text_from_image(src_folder, src_file, dst_folder, delete=True, psm=[3, 8, 9]):
@@ -566,8 +609,8 @@ def ocr_text_from_image(src_folder, src_file, dst_folder, delete=True, psm=[3, 8
     for num in range(0, len(psm)):
 
         text_path = os.path.join(dst_folder, os.path.basename(src_file) + ".txt")
-        comm = "tesseract \"" + src_folder + "\\" + src_file + \
-            "\" \"" + dst_folder + "\\" + os.path.basename(src_file) + "\" --oem 3 --psm " + str(psm[num]) + " -l eng+equ"
+        comm = "tesseract \"" + src_folder + "/" + src_file + \
+            "\" \"" + dst_folder + "/" + os.path.basename(src_file) + "\" --oem 3 --psm " + str(psm[num]) + " -l eng+equ"
 
         status = subprocess.getoutput(comm)
         result = ''
@@ -588,6 +631,43 @@ def ocr_text_from_image(src_folder, src_file, dst_folder, delete=True, psm=[3, 8
         os.remove(text_path)
 
     return result
+
+
+
+
+
+def detect_text(path):
+    """Detects text in the file."""
+    from google.cloud import vision
+    import io
+    client = vision.ImageAnnotatorClient()
+
+    # [START vision_python_migration_text_detection]
+    with io.open(path, 'rb') as image_file:
+        content = image_file.read()
+
+    image = vision.types.Image(content=content)
+
+    response = client.text_detection(image=image)
+    texts = response.text_annotations
+    print('Texts:')
+
+    for text in texts:
+        print('\n"{}"'.format(text.description))
+
+        vertices = (['({},{})'.format(vertex.x, vertex.y)
+                    for vertex in text.bounding_poly.vertices])
+
+        print('bounds: {}'.format(','.join(vertices)))
+
+    if response.error.message:
+        raise Exception(
+            '{}\nFor more info on error messages, check: '
+            'https://cloud.google.com/apis/design/errors'.format(
+                response.error.message))
+
+
+
 
 
 if __name__ == '__main__':

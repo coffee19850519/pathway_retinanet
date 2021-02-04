@@ -144,6 +144,17 @@ class LabelFile(object):
                 relations.append(relation)
         return relations
 
+    def get_all_gene_id_and_names(self):
+        gene_id_and_names = {}
+        for shape in self.shapes:
+            if shape['label'].find('gene:') >= 0:
+                try:
+                    id, _, gene_name = str(shape['label']).split(':')
+                    gene_id_and_names.update({id : gene_name})
+                except:
+                    pass
+        return gene_id_and_names
+
     def get_all_text(self):
         text_list = []
         for shape in self.shapes:
@@ -336,11 +347,26 @@ class LabelFile(object):
                 new_shapes.append(shape)
         self.shapes = new_shapes
 
+    # def generate_category_id(self, shape, category_list):
+    #     try:
+    #         return list(category_list).index(LabelFile.get_shape_category(shape))
+    #     except:
+    #         raise Exception('the shape '+ shape['label'] + ' in file ' + self.filename + ' has invalid category')
+
     def generate_category_id(self, shape, category_list):
         try:
-            return list(category_list).index(LabelFile.get_shape_category(shape))
+            if LabelFile.get_shape_category(shape)== 'gene':
+                return 1
+            elif LabelFile.get_shape_category(shape)== 'activate' :
+                return 0
+            elif LabelFile.get_shape_category(shape)== 'inhibit':
+                return 2
+
+            else:
+                raise Exception('the shape ' + shape['label'] + ' in file ' + self.filename + ' has invalid category')
         except:
             raise Exception('the shape '+ shape['label'] + ' in file ' + self.filename + ' has invalid category')
+
 
     @staticmethod
     def isLabelFile(filename):

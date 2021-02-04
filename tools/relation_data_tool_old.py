@@ -16,10 +16,8 @@ from tools.label_file import LabelFile
 from sklearn.model_selection import train_test_split
 from detectron2.utils.visualizer import Visualizer
 
-
-
 # write a function that loads the dataset into detectron2's standard format
-def get_rotated_annotation_dicts(json_path, img_path, category_list):
+def get_annotation_dicts(json_path, img_path, category_list, anno_type = 'regular'):
     #go through all label files
     dataset_dicts = []
 
@@ -41,7 +39,7 @@ def get_rotated_annotation_dicts(json_path, img_path, category_list):
         #declare a dict variant to save the content
         record = {}
 
-        record["file_name"] = os.path.basename(filename)
+        record["file_name"] = filename
         record["image_id"] = idx
         record["height"] = height
         record["width"] = width
@@ -69,12 +67,20 @@ def get_rotated_annotation_dicts(json_path, img_path, category_list):
                 continue
             try:
                 #LabelFile.normalize_shape_points(anno)
-                obj = {
-                    "bbox": anno['rotated_box'],
-                    "bbox_mode": BoxMode.XYWHA_ABS,
-                    "component": component,
-                    "category_id": category_id,
-                    "iscrowd": 0}
+                if anno_type == 'regular':
+                    obj = {
+                        "bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
+                        "bbox_mode": BoxMode.XYXY_ABS,
+                        "component": component,
+                        "category_id": category_id,
+                        "iscrowd": 0}
+                if anno_type == 'rotated':
+                    obj = {
+                        "bbox": anno['rotated_box'],
+                        "bbox_mode": BoxMode.XYWHA_ABS,
+                        "component": component,
+                        "category_id": category_id,
+                        "iscrowd": 0}
                 objs.append(obj)
             except Exception as e:
                 print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
@@ -83,78 +89,6 @@ def get_rotated_annotation_dicts(json_path, img_path, category_list):
 
         record["annotations"] = objs
         dataset_dicts.append(record)
-
-    return dataset_dicts
-
-def get_regular_annotation_dicts(json_path, img_path, category_list):
-    #go through all label files
-    dataset_dicts = []
-
-    for idx, json_file in enumerate(os.listdir(json_path)):
-        if os.path.splitext(json_file)[1] != '.json':
-            continue
-        #load json content
-        try:
-            imgs_anns = LabelFile(os.path.join(json_path, json_file))
-            # print(imgs_anns)
-            #read key and value from current json file
-            filename = os.path.join(img_path, imgs_anns.imagePath)
-            # print(filename)
-            img = cv2.imread(filename)
-            height, width = img.shape[:2]
-            del img
-        except Exception as e:
-            #print(str(e))
-            continue
-
-        #declare a dict variant to save the content
-        record = {}
-
-        record["file_name"] = os.path.basename(filename)
-        record["image_id"] = idx
-        record["height"] = height
-        record["width"] = width
-
-        objs = []
-        for anno in imgs_anns.shapes:
-            #assert not anno["label"]
-            #anno = anno["label"]
-            poly_points = np.array(anno['points'],np.float32).reshape((-1 , 2))
-            #rotated_rect = cv2.minAreaRect(poly_points)
-            px = poly_points[:, 0]
-            py = poly_points[:, 1]
-            # poly = [(x + 0.5, y + 0.5) for x, y in zip(px, py)]
-            # poly = list(itertools.chain.from_iterable(poly))
-            try:
-                component = list(anno['component'])
-            except:
-                component = []
-
-            try:
-                #only extract valid annotations
-                category_id = imgs_anns.generate_category_id(anno,category_list)
-                # print(category_id)
-            except Exception as e:
-                #print(str.format('file: %s arises error: %s when generating category_id') % str(e))
-                continue
-            try:
-                #LabelFile.normalize_shape_points(anno)
-                obj = {
-                    "bbox": [np.min(px), np.min(py), np.max(px), np.max(py)],
-                    "bbox_mode": BoxMode.XYXY_ABS,
-                    "component": component,
-                    "category_id": category_id,
-                    "iscrowd": 0}
-
-                objs.append(obj)
-            except Exception as e:
-                print(str.format('file: %s arises error: %s when parsing box') % (filename, str(e)))
-                continue
-
-
-        record["annotations"] = objs
-        dataset_dicts.append(record)
-        # print(dataset_dicts)
 
     return dataset_dicts
 
@@ -189,36 +123,30 @@ def split_data_into_train_and_validation_Kfold(json_path, validation_ratio = 0.2
                                  os.path.join(json_path, r'val_' + str(idx), json_file))
             print('copied:' + copy_info + '\n')
 
-
 def register_pathway_dataset(json_path, img_path, category_list):
     for d in ["train", "val"]:
         DatasetCatalog.register("pathway_" + d,
-                                lambda d=d: get_rotated_annotation_dicts(json_path + d, img_path,
+                                lambda d=d: get_annotation_dicts(json_path + d, img_path,
                                                                  category_list))
         MetadataCatalog.get("pathway_" + d).set(thing_classes=category_list)
 
 def register_Kfold_pathway_dataset(json_path, img_path, category_list, K = 1):
-    # print(json_path,img_path)
     for d in ["train", "val"]:
-            for entity_type in ['element', 'relation']:
+        for anno_type in ['regular']:
+            for entity_type in ['element']:
                 for idx_fold in range(K):
-                    print(d,entity_type,idx_fold)
             # DatasetCatalog.register("pathway_" + d + '_'  +  anno_type ,
             #                         lambda d=d: get_annotation_dicts(json_path + d + '_' + '0', img_path,
             #                                                          category_list, anno_type))
             # MetadataCatalog.get("pathway_" + d  +'_' + anno_type ).set(
             #     thing_classes=category_list)
-                    # DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold)+'_rotated_'+entity_type,
-                    #                         lambda d=d: get_rotated_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path,
-                    #                                                          category_list))
-                    # MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold) + '_rotated_' + entity_type).set(
-                    #     thing_classes=category_list)
-                    DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold) + '_regular_' + entity_type,
-                                    lambda d=d: get_regular_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path,
-                                                                     category_list))
-                    MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)+'_regular_'+entity_type).set(thing_classes=category_list)
 
+                    DatasetCatalog.register("pathway_" + d + '_' + str(idx_fold)+'_'+anno_type+'_'+entity_type,
+                                            lambda d=d: get_annotation_dicts(json_path + d + '_' + str(idx_fold), img_path,
+                                                                             category_list, anno_type))
+                    MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)+'_'+anno_type+'_'+entity_type).set(thing_classes=category_list)
 
+    # pass
                     #MetadataCatalog.get("pathway_" + d + '_' + str(idx_fold)).set('coco')
 
 class PathwayDatasetMapper:
