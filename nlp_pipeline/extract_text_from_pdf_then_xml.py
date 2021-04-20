@@ -45,6 +45,8 @@ def convert_txt_to_BioC_xml_file(source, destination_folder):
 
     grouped_sents = []
     sep_sents_len = len(sep_sents)
+    
+    # you can make n larger if there is no response from Pubtator
     n = 10
     for i in range(n):
         start = int(i * sep_sents_len / n)
