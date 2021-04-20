@@ -1,7 +1,6 @@
 '''
 This file is to convert pdf file to txt file, then format the converted txt file to BioC xml file. BioC xml file is
 one of the formats which can be submitted to Pubtator tool. Other possible formats can be Json or Pubtator format.
-
 This file can process a bunch of pdf files at the same time, just make sure all the pdf files are under the same folder.
 '''
 
@@ -10,6 +9,7 @@ import glob
 import os
 import sys
 import xml.etree.ElementTree as ET
+import re
 
 
 def convert_pdf_as_text_file(source, destination_folder):
@@ -38,7 +38,9 @@ def convert_txt_as_BioC_xml_file(source, destination_folder):
     sents = lines.split('\n\n')
     sep_sents = []
     for string in sents:
-        sep_sents.append(string.replace('\n', ' '))
+        string = string.replace('\n', ' ')
+        sep_sents.append(re.sub('\W+', ' ', string))
+
 
     collection = ET.Element('collection')
     document = ET.SubElement(collection, 'document')
@@ -73,6 +75,3 @@ if __name__ == "__main__":
         if not os.path.isdir(BioC_xml_destination_folder):
             os.mkdir(BioC_xml_destination_folder)
         convert_txt_as_BioC_xml_file(txt_file, BioC_xml_destination_folder)
-
-
-
