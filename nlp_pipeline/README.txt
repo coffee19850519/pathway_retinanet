@@ -1,6 +1,6 @@
 This folder aims to utilize pdf files to get gene annotations from Pubtator.
 
-Step1: extract_text_from_pdf_then_xml.py
+Step1: extract_text_from_pdf_then_xml_chunks.py or extract_text_from_pdf_then_xml_whole_article.py
        Process pdf files to txt files, then to BioC xml files. -- Ready to submit to Pubtator
        
 Step 2: SubmitText_request.py
