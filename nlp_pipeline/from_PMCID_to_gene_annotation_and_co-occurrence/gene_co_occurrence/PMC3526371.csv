@@ -1,0 +1,58 @@
+gene_name_1,gene_name_2,co_occurrence
+p53,NF-kappa B,1
+p53,NF-kappaB,3
+NF-kappa B,p53,1
+epidermal growth factor receptor,HER2,1
+epidermal growth factor receptor,EGFR,1
+epidermal growth factor receptor,anaplastic lymphoma kinase,1
+IKKbeta,IKKalpha,1
+IKKbeta,CK2,1
+IKKbeta,NF-kappaB,1
+p50,cREL,1
+p50,NF-kappaB1,1
+TNFR,Epidermal Growth Factor Receptor,1
+TNFR,FAK,1
+TNFR,NIK,1
+TNFR,EGFR,1
+TNFR,CK2,1
+TNFR,NF-kappaB,1
+Epidermal Growth Factor Receptor,TNFR,1
+Epidermal Growth Factor Receptor,FAK,1
+Epidermal Growth Factor Receptor,NIK,1
+Epidermal Growth Factor Receptor,EGFR,1
+Epidermal Growth Factor Receptor,CK2,1
+Epidermal Growth Factor Receptor,NF-kappaB,1
+FAK,Epidermal Growth Factor Receptor,1
+FAK,NIK,1
+FAK,EGFR,1
+FAK,CK2,1
+FAK,NF-kappaB,1
+NIK,Epidermal Growth Factor Receptor,1
+NIK,EGFR,1
+NIK,CK2,1
+NIK,NF-kappaB,1
+HER2,epidermal growth factor receptor,1
+HER2,KRAS,1
+HER2,EGFR,2
+HER2,anaplastic lymphoma kinase,1
+IKKalpha,CK2,1
+p65,c-REL,1
+p65,NF-kappaB,1
+KRAS,EGFR,3
+KRAS,Her2,2
+KRAS,NF-kappaB,1
+c-REL,RELB,1
+cREL,NF-kappaB1,1
+EGFR,epidermal growth factor receptor,1
+EGFR,Epidermal Growth Factor Receptor,1
+EGFR,CK2,1
+EGFR,Her2,2
+EGFR,NF-kappaB,3
+EGFR,anaplastic lymphoma kinase,1
+CK2,Epidermal Growth Factor Receptor,1
+CK2,NF-kappaB,1
+Her2,NF-kappaB,1
+NF-kappaB,Epidermal Growth Factor Receptor,1
+anaplastic lymphoma kinase,epidermal growth factor receptor,1
+anaplastic lymphoma kinase,HER2,1
+anaplastic lymphoma kinase,EGFR,1

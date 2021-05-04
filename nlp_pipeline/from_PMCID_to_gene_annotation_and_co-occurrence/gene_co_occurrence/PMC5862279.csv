@@ -1,0 +1,108 @@
+gene_name_1,gene_name_2,co_occurrence
+E-selectin,FUT8,1
+E-selectin,FUT6,1
+Thymidylate synthase,dihydropyrimidine dehydrogenase,1
+GLS1,KGA,1
+phosphoglucomutase 3,glutamine-fructose-6-phosphate transaminase 1,1
+MAT2B,adenosylhomocysteinase-like 1,1
+MAT2B,AHCYL1,2
+MAT2B,methionine adenosyltransferase II beta,1
+proliferating cell nuclear antigen,PCNA,1
+PFK1,G6PD,1
+cystathionine gamma-lyase,CTH,1
+nicotinamide phosphoribosyltransferase,NAMPT,1
+GNPNAT1,OGT,1
+GNPNAT1,GFPT1,1
+GNPNAT1,PGM3,1
+GNPNAT1,glucosamine-phosphate N-acetyltransferase 1,1
+GNPNAT1,UAP1,1
+PHGDH,Nrf2,1
+PHGDH,PSAT1,1
+PHGDH,SHMT2,1
+PHGDH,KEAP1,1
+Nrf2,PSAT1,1
+Nrf2,SHMT2,1
+Nrf2,KEAP1,3
+OGT,GFPT1,1
+OGT,PGM3,1
+OGT,glucosamine-phosphate N-acetyltransferase 1,1
+OGT,UAP1,1
+MTAP,methylthioadenosine phosphorylase,1
+methylthioadenosine phosphorylase,MTAP,1
+GFPT1,PGM3,1
+GFPT1,glucosamine-phosphate N-acetyltransferase 1,1
+GFPT1,UAP1,1
+adenosylhomocysteinase-like 1,MAT2B,1
+adenosylhomocysteinase-like 1,AHCYL1,1
+adenosylhomocysteinase-like 1,methionine adenosyltransferase II beta,1
+ornithine transcarbamylase,ornithine decarboxylase,1
+DPYD,dihydropyrimidine dehydrogenase,1
+DPYD,UPP1,1
+phosphoglucomutase 1,glucose-6-phosphate dehydrogenase,1
+phosphoglucomutase 1,UDP-glucose pyrophosphorylase 2,1
+phosphoglucomutase 1,UDP-glucose-6 dehydrogenase,1
+CTH,cystathionine gamma-lyase,1
+PC3,NAMPT,1
+PSAT1,SHMT2,1
+PSAT1,KEAP1,1
+alpha 1-6,FUT8,1
+alpha 1-6,alpha 1-3,1
+alpha 1-6,FUT6,1
+SLC25A22,SLC25A18,1
+dihydropyrimidine dehydrogenase,Thymidylate synthase,1
+dihydropyrimidine dehydrogenase,DPYD,1
+PGM3,glucosamine-phosphate N-acetyltransferase 1,1
+PGM3,UAP1,1
+glutamine-fructose-6-phosphate transaminase 1,phosphoglucomutase 3,1
+FUT8,alpha 1-6,1
+FUT8,alpha 1-3,1
+FUT8,FUT6,2
+NAMPT,nicotinamide phosphoribosyltransferase,1
+NAMPT,Nicotinamide phosphoribosyltransferase,1
+NAMPT,nicotinamide N-methyltransferase,1
+NAMPT,NAPRT,1
+NAMPT,NNMT,2
+nicotinate phosphoribosyltransferase,NAPRT,1
+PARP10,PARP14,3
+PARP10,PCNA,1
+SHMT2,KEAP1,1
+Nicotinamide phosphoribosyltransferase,NAMPT,1
+Nicotinamide phosphoribosyltransferase,nicotinamide N-methyltransferase,1
+Nicotinamide phosphoribosyltransferase,NNMT,1
+nicotinamide N-methyltransferase,NAMPT,1
+nicotinamide N-methyltransferase,Nicotinamide phosphoribosyltransferase,1
+nicotinamide N-methyltransferase,NNMT,1
+alpha 1-3,alpha 1-6,1
+alpha 1-3,FUT8,1
+alpha 1-3,FUT6,1
+PARP14,PCNA,1
+PARP14,PKM2,1
+glucosamine-phosphate N-acetyltransferase 1,GNPNAT1,1
+glucosamine-phosphate N-acetyltransferase 1,OGT,1
+glucosamine-phosphate N-acetyltransferase 1,GFPT1,1
+glucosamine-phosphate N-acetyltransferase 1,PGM3,1
+glucosamine-phosphate N-acetyltransferase 1,UAP1,1
+PCNA,proliferating cell nuclear antigen,1
+NAPRT,nicotinate phosphoribosyltransferase,1
+AHCYL1,adenosylhomocysteinase-like 1,1
+AHCYL1,methionine adenosyltransferase II beta,1
+glucose-6-phosphate dehydrogenase,phosphoglucomutase 1,1
+glucose-6-phosphate dehydrogenase,UDP-glucose pyrophosphorylase 2,2
+glucose-6-phosphate dehydrogenase,UDP-glucose-6 dehydrogenase,2
+methionine adenosyltransferase II beta,MAT2B,1
+methionine adenosyltransferase II beta,adenosylhomocysteinase-like 1,1
+methionine adenosyltransferase II beta,AHCYL1,1
+UAP1,glucosamine-phosphate N-acetyltransferase 1,1
+UDP-glucose pyrophosphorylase 2,phosphoglucomutase 1,1
+UDP-glucose pyrophosphorylase 2,glucose-6-phosphate dehydrogenase,2
+UDP-glucose pyrophosphorylase 2,UDP-glucose-6 dehydrogenase,2
+FUT6,alpha 1-6,1
+FUT6,alpha 1-3,1
+UDP-glucose-6 dehydrogenase,phosphoglucomutase 1,1
+UDP-glucose-6 dehydrogenase,glucose-6-phosphate dehydrogenase,2
+UDP-glucose-6 dehydrogenase,UDP-glucose pyrophosphorylase 2,2
+ornithine decarboxylase,ornithine transcarbamylase,1
+ornithine decarboxylase,ODC,1
+NNMT,Nicotinamide phosphoribosyltransferase,1
+NNMT,nicotinamide N-methyltransferase,1
+ODC,ornithine decarboxylase,1

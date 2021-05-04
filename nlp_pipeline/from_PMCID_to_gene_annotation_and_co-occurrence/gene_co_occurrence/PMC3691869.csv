@@ -1,0 +1,79 @@
+gene_name_1,gene_name_2,co_occurrence
+RTK,SH3GL2,1
+RTK,receptor tyrosine kinase,1
+RTK,EGFR,1
+AKT,CTNNB1,2
+AKT,USP9X,3
+AKT,SH3GL2,3
+AKT,STAT3,7
+AKT,EGFR,5
+AKT,PIK3,1
+AKT,beta-catenin,1
+epidermal growth factor receptor,SH3GL2,1
+epidermal growth factor receptor,KRAS,1
+epidermal growth factor receptor,EGFR,2
+epidermal growth factor receptor,cbl-b,1
+epidermal growth factor,EGF,1
+epidermal growth factor,wt-SH3GL2,1
+EF1-alpha,beta-actin,1
+TP53,CDKN2A,1
+TP53,BRF2,1
+TP53,STK11,1
+c-cbl,SH3GL2,2
+c-cbl,CIN85,3
+c-cbl,EGFR,2
+cbl,SH3GL2,1
+cbl,CIN85,1
+Cb-l-b,CIN85,1
+CTNNB1,USP9X,3
+CTNNB1,SH3GL2,3
+CTNNB1,STAT3,1
+CTNNB1,EGFR,2
+CTNNB1,beta-catenin,1
+USP9X,SH3GL2,12
+USP9X,FAM,1
+USP9X,STAT3,2
+USP9X,EGFR,3
+USP9X,beta-catenin,8
+beta-1 adrenergic receptor,SH3GL2,1
+CDKN2A,SH3GL2,1
+CDKN2A,BRF2,1
+CDKN2A,STK11,1
+SH3GL2,epidermal growth factor receptor,1
+SH3GL2,beta-1 adrenergic receptor,1
+SH3GL2,CIN85,8
+SH3GL2,KRAS,4
+SH3GL2,EGF,1
+SH3GL2,endophilin A1,1
+SH3GL2,receptor tyrosine kinase,1
+SH3GL2,STAT3,2
+SH3GL2,wt-SH3GL2,1
+SH3GL2,c-Cbl,2
+SH3GL2,EGFR,29
+SH3GL2,beta-catenin,4
+SH3GL2,Cbl,3
+CIN85,c-Cbl,2
+CIN85,EGFR,6
+CIN85,Cbl,2
+KRAS,epidermal growth factor receptor,1
+KRAS,EGFR,9
+BRF2,STK11,1
+EGF,epidermal growth factor,1
+EGF,wt-SH3GL2,1
+EGF,EGFR,6
+EGF,Cbl,1
+endophilin A1,SH3GL2,1
+receptor tyrosine kinase,RTK,1
+receptor tyrosine kinase,SH3GL2,1
+receptor tyrosine kinase,EGFR,1
+STAT3,EGFR,4
+STAT3,PIK3,1
+STAT3,beta-catenin,1
+wt-SH3GL2,epidermal growth factor,1
+wt-SH3GL2,EGFR,5
+c-Cbl,EGFR,2
+EGFR,epidermal growth factor receptor,2
+EGFR,receptor tyrosine kinase,1
+EGFR,beta-catenin,2
+EGFR,Cbl,4
+cbl-b,epidermal growth factor receptor,1

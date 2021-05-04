@@ -1,0 +1,75 @@
+gene_name_1,gene_name_2,co_occurrence
+Copine-III,ErbB2,1
+AKT,PTEN,1
+AKT,p-ERK,1
+AKT,Src,1
+AKT,PHLPP2,1
+AKT,ERK,1
+AKT,FAK,1
+AKT,cyclin D1,1
+AKT,miR-205,1
+AKT,EMT,1
+AKT,EGFR,1
+TNM,CPNE1,2
+PTEN,PHLPP2,1
+PTEN,miR-205,1
+PTEN,miR-21,1
+PTEN,EGFR,1
+epidermal growth factor receptor,CD73,1
+Copine 1,CPNE1,2
+Copine 1,EGFR,2
+p-ERK,Src,1
+p-ERK,ERK,1
+p-ERK,FAK,1
+p-ERK,cyclin D1,1
+p-ERK,EMT,1
+p-ERK,EGFR,1
+Src,ERK,1
+Src,FAK,1
+Src,cyclin D1,1
+Src,EMT,1
+Src,EGFR,1
+PHLPP2,miR-205,1
+miR-203,MiR-145,1
+miR-203,SMAD3,1
+ERK,FAK,1
+ERK,cyclin D1,1
+ERK,EMT,1
+ERK,EGFR,1
+ACTB,CPNE1,1
+MiR-145,SMAD3,1
+FAK,cyclin D1,1
+FAK,EMT,1
+FAK,EGFR,1
+Jab1,ErbB2,1
+Jab1,Copine3,1
+Copine1,CPNE1,1
+ErbB,CPNE1,1
+ErbB,EGFR,1
+ErbB2,Copine3,1
+ErbB2,CPNE3,1
+PC9,SPC-A1,1
+Copine-1,EGFR,1
+cyclin D1,AKT,1
+cyclin D1,p-ERK,1
+cyclin D1,Src,1
+cyclin D1,ERK,1
+cyclin D1,FAK,1
+cyclin D1,EMT,1
+cyclin D1,EGFR,1
+miR-21,EGFR,1
+TNF receptor-associated factor 2,TRAF2,1
+TNF receptor-associated factor 2,CPNE1,1
+TRAF2,TNF receptor-associated factor 2,1
+TRAF2,CPNE1,1
+KRAS,EGFR,1
+EMT,cyclin D1,1
+EMT,EGFR,1
+CPNE3,CPNE1,1
+CD73,epidermal growth factor receptor,1
+CD73,EGFR,1
+CPNE1,Copine 1,2
+CPNE1,TNF receptor-associated factor 2,1
+CPNE1,EGFR,9
+EGFR,Copine 1,2
+EGFR,cyclin D1,1

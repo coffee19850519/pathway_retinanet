@@ -1,0 +1,129 @@
+gene_name_1,gene_name_2,co_occurrence
+Nitric oxide synthase 2,NOS2,1
+p53,NF-kappa B,2
+p53,SBD,1
+p53,VEGF,3
+FoxP3,interferon-gamma,1
+FoxP3,IFN-gamma,1
+FoxP3,granzyme B,1
+AKT,CDK2,1
+AKT,ERK,3
+AKT,P-ERK,1
+AKT,p38,3
+AKT,iNOS,1
+AKT,Bcl-2,1
+AKT,muM,1
+AKT,GAPDH,1
+AKT,COX-2,1
+AKT,NF-kappaB,1
+AKT,Bax,1
+CDK2,ERK,1
+CDK2,P53,2
+CDK2,cdk2-CyclinE,1
+CDK2,P-ERK,1
+CDK2,p38,1
+CDK2,iNOS,1
+CDK2,Bcl-2,2
+CDK2,GAPDH,1
+CDK2,COX-2,1
+CDK2,NF-kappaB,1
+CDK2,Bax,4
+NF-kappa B,p53,2
+NF-kappa B,SBD,1
+NF-kappa B,VEGF,2
+Apoptosis regulator Bcl-2,Bcl-2,1
+P38,iNOS,1
+P38,SBD,1
+P38,Bax,1
+prostaglandin G/H synthase 2,iNOS,1
+prostaglandin G/H synthase 2,p65,1
+prostaglandin G/H synthase 2,COX-2,1
+prostaglandin G/H synthase 2,PTGS2,1
+prostaglandin G/H synthase 2,NF-kappaB,1
+ERK,P-ERK,1
+ERK,p38,4
+ERK,iNOS,1
+ERK,SBD,1
+ERK,Bcl-2,1
+ERK,muM,1
+ERK,GAPDH,1
+ERK,Mitogen-activated protein kinase 14,1
+ERK,VEGF,1
+ERK,COX-2,2
+ERK,CDK1,1
+ERK,NF-kappaB,2
+ERK,Bax,2
+P53,cdk2-CyclinE,1
+P53,VEGF,1
+P53,Bax,1
+interferon-gamma,IFN-gamma,1
+interferon-gamma,granzyme B,1
+NOS2,Nitric oxide synthase 2,1
+P-ERK,p38,1
+P-ERK,iNOS,1
+P-ERK,Bcl-2,1
+P-ERK,GAPDH,1
+P-ERK,COX-2,1
+P-ERK,NF-kappaB,1
+P-ERK,Bax,1
+p38,iNOS,1
+p38,Bcl-2,1
+p38,muM,1
+p38,GAPDH,1
+p38,Mitogen-activated protein kinase 14,1
+p38,ERK1/2,1
+p38,VEGF,2
+p38,COX-2,1
+p38,NF-kappaB,1
+p38,Bax,1
+iNOS,prostaglandin G/H synthase 2,1
+iNOS,SBD,2
+iNOS,Bcl-2,1
+iNOS,p65,1
+iNOS,GAPDH,1
+iNOS,COX-2,8
+iNOS,NF-kappaB,8
+iNOS,Bax,2
+SBD,NF-kappa B,1
+SBD,PIK3CG,1
+SBD,TCM,1
+SBD,VEGF,1
+SBD,COX-2,2
+SBD,CDK1,1
+SBD,NF-kappaB,2
+SBD,Bax,2
+Bcl-2,Apoptosis regulator Bcl-2,1
+Bcl-2,GAPDH,1
+Bcl-2,COX-2,1
+Bcl-2,NF-kappaB,1
+Bcl-2,Bax,2
+IFN-gamma,granzyme B,1
+CD25,CD49b,1
+CD25,CD8a,1
+CD25,CD3E,1
+p65,prostaglandin G/H synthase 2,1
+p65,COX-2,1
+p65,NF-kappaB,1
+GAPDH,COX-2,1
+GAPDH,NF-kappaB,1
+GAPDH,Bax,1
+CD49b,CD8a,1
+CD49b,CD3E,1
+Mitogen-activated protein kinase 14,ERK,1
+Mitogen-activated protein kinase 14,p38,1
+Mitogen-activated protein kinase 14,VEGF,1
+VEGF,NF-kappa B,2
+VEGF,Mitogen-activated protein kinase 14,1
+CD8a,CD3E,1
+COX-2,prostaglandin G/H synthase 2,1
+COX-2,CDK1,1
+COX-2,NF-kappaB,9
+COX-2,Bax,2
+CDK1,NF-kappaB,1
+CDK1,Bax,1
+PTGS2,prostaglandin G/H synthase 2,1
+granzyme B,FoxP3,1
+granzyme B,interferon-gamma,1
+granzyme B,IFN-gamma,1
+NF-kappaB,prostaglandin G/H synthase 2,1
+NF-kappaB,Bax,2

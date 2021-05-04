@@ -1,0 +1,155 @@
+gene_name_1,gene_name_2,co_occurrence
+p53,Cytochrome C,6
+p53,ERK,2
+p53,caspase 3,4
+p53,p38,3
+p53,Apaf-1,6
+p53,JNK,1
+p53,Akt,2
+p53,p47phox,1
+p53,p65,2
+p53,ERK1/2,2
+p53,Noxa,2
+p53,cytochrome c,1
+p53,c-Myc,2
+P65,NF-kappaB,1
+TLR2,Rac1,1
+TLR2,MyD88,1
+P38,ERK,1
+glutathione reductase,thioredoxin reductase,1
+Cytochrome C,p53,6
+Cytochrome C,ERK,2
+Cytochrome C,caspase 3,3
+Cytochrome C,p38,1
+Cytochrome C,Apaf-1,5
+Cytochrome C,caspase-3,2
+Cytochrome C,muM,2
+Cytochrome C,p65,2
+Cytochrome C,ERK1/2,1
+Cytochrome C,Noxa,2
+Cytochrome C,c-Myc,2
+p47Phox,p91Phox,1
+ERK,Cytochrome C,2
+ERK,caspase 3,4
+ERK,p38,4
+ERK,Apaf-1,2
+ERK,Akt,2
+ERK,p47phox,2
+ERK,p65,2
+ERK,Noxa,2
+ERK,c-Myc,2
+caspase 3,p53,4
+caspase 3,Cytochrome C,3
+caspase 3,ERK,4
+caspase 3,p38,4
+caspase 3,Apaf-1,6
+caspase 3,JNK,1
+caspase 3,p65,3
+caspase 3,ERK1/2,2
+caspase 3,Noxa,2
+caspase 3,PARP,1
+caspase 3,cytochrome C,1
+caspase 3,cytochrome c,2
+caspase 3,c-Myc,2
+Nox2,p47phox,5
+Nox2,muM,2
+Nox2,gp91phox,7
+p47,ICAM-1,1
+p38,Cytochrome C,1
+p38,caspase 3,4
+p38,Apaf-1,2
+p38,Erk1/2,1
+p38,JNK,3
+p38,Akt,5
+p38,p47phox,3
+p38,muM,1
+p38,JNK1/2,1
+p38,ERK1/2,15
+p38,BCL2L1,1
+p38,PARP,1
+p38,cytochrome c,1
+p38,BCL2,1
+Apaf-1,Cytochrome C,5
+Apaf-1,caspase 3,6
+Apaf-1,caspase-3,1
+Apaf-1,JNK,1
+Apaf-1,p65,3
+Apaf-1,ERK1/2,2
+Apaf-1,Noxa,3
+Apaf-1,PARP,1
+Apaf-1,cytochrome C,1
+Apaf-1,cytochrome c,3
+Apaf-1,c-Myc,3
+caspase-7,caspase-3,1
+caspase-7,caspase-9,1
+caspase-3,Cytochrome C,2
+caspase-3,muM,2
+caspase-3,Noxa,1
+caspase-3,cytochrome c,1
+caspase-3,caspase-9,1
+caspase-3,c-Myc,1
+JNK,caspase 3,1
+JNK,ERK1/2,1
+JNK,PARP,1
+JNK,cytochrome c,1
+Akt,p47phox,4
+Akt,muM,1
+Akt,ERK1/2,3
+Akt,Noxa,1
+Akt,c-Myc,1
+Akt,NF-kappaB,1
+p47phox,muM,3
+p47phox,ERK1/2,1
+p47phox,gp91phox,5
+filaggrin,COX2,1
+muM,Cytochrome C,2
+muM,ERK1/2,1
+muM,gp91phox,2
+p65,Cytochrome C,2
+p65,caspase 3,3
+p65,Noxa,3
+p65,cytochrome C,1
+p65,nuclear protein,1
+p65,c-Myc,3
+Rac1,MyD88,1
+JNK1/2,ERK1/2,1
+P-glycoprotein,Nox-1,2
+hepatoma-derived growth factor-related protein-3,NF-kappaB,1
+ERK1/2,Cytochrome C,1
+ERK1/2,caspase 3,2
+ERK1/2,PARP,1
+ERK1/2,cytochrome c,1
+Noxa,Cytochrome C,2
+Noxa,caspase 3,2
+Noxa,nuclear protein,1
+Noxa,cytochrome c,1
+Noxa,c-Myc,11
+Noxa,NF-kappaB,1
+SRB,sulforhodamine B,3
+BCL2L1,BCL2,1
+PARP,caspase 3,1
+PARP,cytochrome c,1
+thioredoxin reductase,glutathione reductase,1
+cytochrome C,caspase 3,1
+cytochrome C,Apaf-1,1
+cytochrome C,p65,1
+nuclear protein,p65,1
+nuclear protein,Noxa,1
+nuclear protein,c-Myc,1
+cytochrome c,p53,1
+cytochrome c,caspase 3,2
+cytochrome c,p38,1
+cytochrome c,Apaf-1,3
+cytochrome c,caspase-3,1
+cytochrome c,JNK,1
+cytochrome c,ERK1/2,1
+cytochrome c,Noxa,1
+cytochrome c,PARP,1
+cytochrome c,c-Myc,1
+sulforhodamine B,SRB,3
+c-Myc,Cytochrome C,2
+c-Myc,caspase 3,2
+c-Myc,nuclear protein,1
+c-Myc,cytochrome c,1
+c-Myc,NF-kappaB,1
+NF-kappaB,hepatoma-derived growth factor-related protein-3,1

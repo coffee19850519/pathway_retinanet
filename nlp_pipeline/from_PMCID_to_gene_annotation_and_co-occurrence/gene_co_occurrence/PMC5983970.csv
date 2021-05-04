@@ -1,0 +1,142 @@
+gene_name_1,gene_name_2,co_occurrence
+Vascular endothelial growth factor,VEGFR,1
+Vascular endothelial growth factor,placental growth factor,1
+Vascular endothelial growth factor,VEGFA,1
+Vascular endothelial growth factor,VEGF,4
+IL-6,VEGF,4
+BCR/ABL,vascular endothelial growth factor,1
+BCR/ABL,hypoxia induciblefactor-1alpha,1
+Interleukin 6,vascular endothelial growth factor,1
+HIF-1,VEGFR,1
+HIF-1,vascular endothelial growth factor,1
+HIF-1,VEGF receptor,1
+HIF-1,hypoxia-inducible factor-1,2
+HIF-1,VEGF,4
+HIF-1,PLC,1
+epidermal growth factor receptor,vascular endothelial growth factor,1
+VEGFR,Vascular endothelial growth factor,1
+VEGFR,KRas,1
+VEGFR,vascular endothelial growth factor,1
+VEGFR,KRAS,1
+VEGFR,STAT5,1
+VEGFR,VEGF receptor,3
+VEGFR,hypoxia-inducible factor-1,1
+VEGFR,VEGF,3
+VEGFR,PLC,2
+VEGFR,MMPs,1
+VEGFR,TNF,1
+TTF-1,vascular endothelial growth factor,1
+TTF-1,CEA,1
+TTF-1,carcinoembryonic antigen,1
+TTF-1,cytokeratin 19,1
+TTF-1,VEGF,2
+TTF-1,Nam,1
+TTF-1,endostatin,1
+KRas,KRAS,1
+KRas,VEGF receptor,1
+KRas,MMPs,1
+KRas,TNF,1
+Neuropilin-1,VEGFA,1
+IL-2,TNF,1
+MMP9,MMP2,1
+vascular endothelial growth factor,BCR/ABL,1
+vascular endothelial growth factor,Interleukin 6,1
+vascular endothelial growth factor,HIF-1,1
+vascular endothelial growth factor,epidermal growth factor receptor,1
+vascular endothelial growth factor,VEGFR,1
+vascular endothelial growth factor,TTF-1,1
+vascular endothelial growth factor,CEA,1
+vascular endothelial growth factor,carcinoembryonic antigen,1
+vascular endothelial growth factor,hypoxia induciblefactor-1alpha,1
+vascular endothelial growth factor,cytokeratin 19,1
+vascular endothelial growth factor,Interleukin-6,1
+vascular endothelial growth factor,VEGF receptor,1
+vascular endothelial growth factor,hypoxia-inducible factor-1,1
+vascular endothelial growth factor,VEGF,3
+vascular endothelial growth factor,STAT3,1
+vascular endothelial growth factor,PLC,1
+vascular endothelial growth factor,urokinase-type plasminogen activator,1
+vascular endothelial growth factor,endostatin,3
+vascular endothelial growth factor,osteopontin,1
+CEA,vascular endothelial growth factor,1
+CEA,carcinoembryonic antigen,2
+CEA,CA153,1
+CEA,cytokeratin 19,2
+CEA,VEGF,4
+CEA,Nam,1
+carcinoembryonic antigen,TTF-1,1
+carcinoembryonic antigen,vascular endothelial growth factor,1
+carcinoembryonic antigen,CEA,2
+carcinoembryonic antigen,cytokeratin 19,2
+carcinoembryonic antigen,VEGF,1
+hypoxia induciblefactor-1alpha,BCR/ABL,1
+hypoxia induciblefactor-1alpha,vascular endothelial growth factor,1
+CA153,VEGF,1
+CA153,Nam,1
+cytokeratin 19,TTF-1,1
+cytokeratin 19,vascular endothelial growth factor,1
+cytokeratin 19,CEA,2
+cytokeratin 19,carcinoembryonic antigen,2
+cytokeratin 19,VEGF,1
+placental growth factor,Vascular endothelial growth factor,1
+placental growth factor,VEGFA,2
+placental growth factor,VEGF,2
+placental growth factor,VEGFR1,1
+VEGFR2,VEGFA,2
+VEGFR2,VEGFR1,2
+Interleukin-6,vascular endothelial growth factor,1
+Interleukin-6,VEGF,1
+Interleukin-6,STAT3,1
+KRAS,VEGF receptor,1
+KRAS,MMPs,1
+KRAS,TNF,1
+VEGF receptor,HIF-1,1
+VEGF receptor,VEGFR,3
+VEGF receptor,KRas,1
+VEGF receptor,vascular endothelial growth factor,1
+VEGF receptor,KRAS,1
+VEGF receptor,hypoxia-inducible factor-1,1
+VEGF receptor,VEGF,2
+VEGF receptor,PLC,1
+VEGF receptor,MMPs,1
+VEGF receptor,TNF,1
+VEGFA,Vascular endothelial growth factor,1
+VEGFA,placental growth factor,2
+VEGFA,VEGF,2
+VEGFA,VEGFR1,2
+hypoxia-inducible factor-1,HIF-1,2
+hypoxia-inducible factor-1,VEGFR,1
+hypoxia-inducible factor-1,vascular endothelial growth factor,1
+hypoxia-inducible factor-1,VEGF receptor,1
+hypoxia-inducible factor-1,VEGF,1
+hypoxia-inducible factor-1,PLC,1
+Endostatin,VEGF,1
+VEGF,Vascular endothelial growth factor,4
+VEGF,vascular endothelial growth factor,3
+VEGF,carcinoembryonic antigen,1
+VEGF,cytokeratin 19,1
+VEGF,placental growth factor,2
+VEGF,VEGF receptor,2
+VEGF,hypoxia-inducible factor-1,1
+VEGF,STAT3,1
+VEGF,PLC,1
+VEGF,Nam,2
+VEGF,VEGFR1,2
+VEGF,endostatin,5
+VEGF,MMPs,1
+VEGF,TNF-alpha,1
+VEGFC,endostatin,1
+STAT3,vascular endothelial growth factor,1
+PLC,vascular endothelial growth factor,1
+PLC,VEGF receptor,1
+PLC,hypoxia-inducible factor-1,1
+urokinase-type plasminogen activator,vascular endothelial growth factor,1
+urokinase-type plasminogen activator,osteopontin,1
+Nam,endostatin,1
+VEGFR1,placental growth factor,1
+endostatin,vascular endothelial growth factor,3
+MMPs,VEGF receptor,1
+MMPs,TNF,1
+TNF,VEGF receptor,1
+osteopontin,vascular endothelial growth factor,1
+osteopontin,urokinase-type plasminogen activator,1

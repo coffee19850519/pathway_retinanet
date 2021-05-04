@@ -1,0 +1,275 @@
+gene_name_1,gene_name_2,co_occurrence
+p53,HIF1alpha,1
+p53,AMPK,6
+p53,GLUT1,1
+p53,caspase 6,1
+p53,hexokinase,1
+p53,p21cip1,3
+p53,Akt,1
+p53,Chk2,1
+p53,ATR,1
+p53,FOXO3a,1
+p53,mTOR,1
+p53,K-Ras,3
+p53,LLC1,1
+p53,Bcl-2,1
+p53,ATM,5
+p53,LKB1,7
+p53,Chk1,1
+p53,AMPK beta1,1
+FOXO3,AMP-activated protein kinase,1
+Acc1,Acc2,1
+4EBP1,IGF binding protein 3,1
+4EBP1,p70S6k,1
+4EBP1,IGFBP3,1
+4EBP1,IGF-I,1
+4EBP1,eIF4E binding protein 1,1
+4EBP1,Akt,1
+4EBP1,eukaryotic initiation factor 4E,1
+4EBP1,p70s6k,1
+4EBP1,p70-S6 kinase,1
+4EBP1,p70S6K,1
+4EBP1,mTORC1,2
+4EBP1,p70S6-kinase,1
+IGF-1,Insulin-like growth factor I,1
+IGF-1,IGFBP3,1
+IGF-1,IGF1,1
+IGF-1,LKB1,1
+IGF-1,insulin,2
+IGF-1,IL6,1
+Insulin-Like Growth Factor-1 Receptor,Mammalian Target of Rapamycin,1
+Rheb,TSC2,2
+Rheb,Raptor,2
+Rheb,TSC1,1
+Rheb,PRAS40,1
+Rheb,Akt,1
+Rheb,mTOR,1
+Rheb,mTORC1,2
+HIF1alpha,AMPK,4
+HIF1alpha,GLUT1,1
+HIF1alpha,HIF1a,1
+HIF1alpha,VEGF,1
+HIF1alpha,vascular endothelial growth factor,1
+HIF1alpha,NDI1,1
+HIF1alpha,FOXO3a,1
+HIF1alpha,LKB1,2
+Liver Kinase B 1,AMPK,1
+Liver Kinase B 1,EGFR,1
+Liver Kinase B 1,Epidermal Growth Factor Receptor,1
+Liver Kinase B 1,TP53,1
+Liver Kinase B 1,K-Ras,1
+Liver Kinase B 1,LKB1,2
+AMPK,Liver Kinase B 1,1
+AMPK,GLUT1,1
+AMPK,HIF1a,1
+AMPK,caspase 6,1
+AMPK,Raptor,1
+AMPK,BRAF,2
+AMPK,VEGF,1
+AMPK,SREBP1c,1
+AMPK,p21cip1,2
+AMPK,raptor,1
+AMPK,vascular endothelial growth factor,1
+AMPK,IGF-I,1
+AMPK,HMGR,1
+AMPK,NDI1,1
+AMPK,p27kip1,1
+AMPK,cystathionine beta synthase,1
+AMPK,Caveolin-1,1
+AMPK,Akt,1
+AMPK,Sestrin2,1
+AMPK,sestrin 2,1
+AMPK,FOXO3a,3
+AMPK,FASN,1
+AMPK,mTOR,7
+AMPK,K-Ras,2
+AMPK,LLC1,1
+AMPK,AMP-activated protein kinase,5
+AMPK,Bcl-2,1
+AMPK,ATM,10
+AMPK,LKB1,11
+AMPK,mTORC1,2
+muM,EGFR,2
+muM,mTOR,1
+GLUT1,VEGF,1
+GLUT1,hexokinase,1
+GLUT1,vascular endothelial growth factor,1
+GLUT1,Akt,1
+ACC2,ACC1,2
+ACC2,insulin,1
+HIF1a,NDI1,1
+HIF1a,LKB1,1
+TSC2,Raptor,2
+TSC2,TSC1,1
+TSC2,PRAS40,1
+TSC2,Akt,1
+TSC2,mTOR,1
+TSC2,ATM,1
+TSC2,mTORC1,3
+caspase 6,p53,1
+caspase 6,AMPK,1
+caspase 6,Bcl-2,1
+Raptor,TSC1,1
+Raptor,PRAS40,1
+Raptor,Akt,1
+Raptor,mTOR,2
+Raptor,mTORC1,3
+IGF binding protein 3,4EBP1,1
+IGF binding protein 3,p70S6k,1
+IGF binding protein 3,IGFBP3,1
+IGF binding protein 3,IGF-I,1
+IGF binding protein 3,Akt,1
+Insulin-like growth factor I,IGF-1,1
+Insulin-like growth factor I,insulin,1
+VEGF,vascular endothelial growth factor,1
+TSC1,mTORC1,1
+hexokinase,Akt,1
+p70S6k,IGF binding protein 3,1
+p70S6k,IGFBP3,1
+p70S6k,IGF-I,1
+p70S6k,Akt,1
+SREBP1a and 1c,SREBP2,1
+IGFBP3,IGF binding protein 3,1
+IGFBP3,IGF1,1
+IGFBP3,IGF-I,1
+IGFBP3,Akt,1
+IGFBP3,LKB1,1
+IGFBP3,IL6,1
+p21cip1,Akt,1
+p21cip1,mTOR,1
+p21cip1,ATM,1
+IGF1,Caveolin-1,1
+IGF1,LKB1,1
+IGF1,IL6,1
+Mammalian Target of Rapamycin,Insulin-Like Growth Factor-1 Receptor,1
+MRE11,histone H2Ax,1
+MRE11,ATM,2
+vascular endothelial growth factor,HIF1alpha,1
+vascular endothelial growth factor,AMPK,1
+vascular endothelial growth factor,GLUT1,1
+vascular endothelial growth factor,VEGF,1
+IGF-I,IGF binding protein 3,1
+IGF-I,Akt,1
+alpha1 and alpha2,beta2,1
+histone H2Ax,MRE11,1
+histone H2Ax,ATM,1
+HMGR,ACLY,1
+HMGR,HMG-CoA Reductase,1
+HMGR,FASN,1
+HMGR,Fatty acid synthase,1
+HMGR,HMG-CoA reductase,1
+ACLY,EGFR,1
+ACLY,ACC1,1
+ACLY,ATP Citrate Lyase,2
+ACLY,FASN,1
+ACLY,K-Ras,1
+Lkb1,LKB1,1
+NDI1,LKB1,1
+ataxia telangiectasia mutated,ATM,1
+HIF-1alpha,LKB1,1
+EGFR,Liver Kinase B 1,1
+EGFR,Epidermal Growth Factor Receptor,2
+EGFR,TP53,1
+EGFR,mTOR,2
+EGFR,K-Ras,2
+EGFR,LKB1,2
+eIF4E binding protein 1,4EBP1,1
+eIF4E binding protein 1,p70s6k,1
+eIF4E binding protein 1,mTORC1,1
+eIF4E binding protein 1,p70S6-kinase,1
+beta2,alpha1 and alpha2,1
+ACC1,FASN,1
+ACC1,insulin,1
+kip1,p27,1
+cystathionine beta synthase,AMPK,1
+ATP Citrate Lyase,ACLY,2
+PRAS40,Akt,1
+PRAS40,mTOR,1
+PRAS40,mTORC1,1
+Caveolin-1,K-Ras,1
+Epidermal Growth Factor Receptor,Liver Kinase B 1,1
+Epidermal Growth Factor Receptor,EGFR,2
+Epidermal Growth Factor Receptor,TP53,1
+Epidermal Growth Factor Receptor,K-Ras,1
+Epidermal Growth Factor Receptor,LKB1,1
+TP53,Liver Kinase B 1,1
+TP53,Epidermal Growth Factor Receptor,1
+TP53,K-Ras,1
+TP53,LKB1,1
+CHK2,CHK1,1
+Akt,IGF binding protein 3,1
+Akt,FASN,1
+Akt,mammalian Target of Rapamycin,1
+Akt,mTOR,5
+Akt,K-Ras,1
+Akt,mTORC1,2
+Chk2,ATR,1
+Chk2,ATM,1
+Chk2,Chk1,2
+ATR,ATM,1
+ATR,Chk1,1
+fatty acid synthase,FASN,1
+HMG-CoA Reductase,HMGR,1
+HMG-CoA Reductase,FASN,1
+HMG-CoA Reductase,Fatty acid synthase,1
+sestrin 2,AMPK,1
+LKB-1,K-Ras,1
+SREBP2,SREBP1a and 1c,1
+FASN,fatty acid synthase,1
+FASN,HMG-CoA Reductase,1
+FASN,Fatty acid synthase,1
+mammalian Target of Rapamycin,Akt,1
+mammalian Target of Rapamycin,mTOR,1
+mammalian Target of Rapamycin,K-Ras,1
+mammalian Target of Rapamycin,mTORC1,1
+mTOR,mammalian Target of Rapamycin,1
+mTOR,K-Ras,2
+mTOR,LLC1,1
+mTOR,LKB1,2
+mTOR,mTORC1,4
+Fatty acid synthase,HMGR,1
+Fatty acid synthase,HMG-CoA Reductase,1
+Fatty acid synthase,FASN,1
+K-Ras,Liver Kinase B 1,1
+K-Ras,Epidermal Growth Factor Receptor,1
+K-Ras,mammalian Target of Rapamycin,1
+K-Ras,LLC1,1
+K-Ras,LKB1,6
+K-Ras,mTORC1,1
+eukaryotic initiation factor 4E,4EBP1,1
+eukaryotic initiation factor 4E,p70-S6 kinase,1
+eukaryotic initiation factor 4E,p70S6K,1
+eukaryotic initiation factor 4E,mTORC1,1
+LLC1,LKB1,2
+AMP-activated protein kinase,FOXO3,1
+AMP-activated protein kinase,AMPK,5
+Bcl-2,caspase 6,1
+ATM,histone H2Ax,1
+ATM,ataxia telangiectasia mutated,1
+ATM,Chk1,1
+ATM,mTORC1,1
+p70s6k,eIF4E binding protein 1,1
+p70s6k,mTORC1,1
+p70s6k,p70S6-kinase,1
+p70-S6 kinase,4EBP1,1
+p70-S6 kinase,eukaryotic initiation factor 4E,1
+p70-S6 kinase,p70S6K,1
+p70-S6 kinase,mTORC1,1
+KRAS,LKB1,1
+p70S6K,eukaryotic initiation factor 4E,1
+p70S6K,p70-S6 kinase,1
+p70S6K,mTORC1,1
+LKB1,Liver Kinase B 1,2
+LKB1,Epidermal Growth Factor Receptor,1
+LKB1,AMPK beta1,1
+LKB1,IL6,1
+insulin,Insulin-like growth factor I,1
+AMPK beta1,p53,1
+AMPK beta1,LKB1,1
+HMG-CoA reductase,HMGR,1
+mTORC1,eIF4E binding protein 1,1
+mTORC1,mammalian Target of Rapamycin,1
+mTORC1,eukaryotic initiation factor 4E,1
+mTORC1,p70-S6 kinase,1
+mTORC1,p70S6-kinase,1
+p70S6-kinase,eIF4E binding protein 1,1

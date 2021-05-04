@@ -1,0 +1,440 @@
+gene_name_1,gene_name_2,co_occurrence
+Ras GTPase-activating protein,SHP2,1
+Ras GTPase-activating protein,RasGAP,1
+Src,SHP2,1
+Src,AXL,2
+Src,JAK2,1
+Src,STAT3,8
+Src,CUB-domain-containing protein 1,1
+Src,FAK,7
+Src,PC9,3
+Src,focal adhesion kinase,2
+Src,CDCP1,2
+Src,EGFR,3
+Src,JAK,1
+Src,paxillin,1
+Src,gp130,2
+Src,protein tyrosine kinase 2,1
+Src,PTK2,1
+Src,YAP1,9
+Src,LYN,5
+MEK2,MEK1,1
+MEK2,MAPK/ERK Kinase 1,1
+MEK2,Raf,1
+Epidermal growth factor receptor,EGFR,2
+SHP2,Ras GTPase-activating protein,1
+SHP2,AXL,1
+SHP2,FAK,2
+SHP2,PC9,1
+SHP2,receptor-tyrosine kinase,1
+SHP2,CDCP1,2
+SHP2,RasGAP,1
+SHP2,PTPN11,1
+SHP2,src,1
+SHP2,RTK,2
+SHP2,MAPK,2
+SHP2,YAP1,3
+AXL,muM,1
+AXL,JAK2,2
+AXL,erythropoietin-producing hepatocellular receptor A2,1
+AXL,IRR,1
+AXL,STAT3,2
+AXL,ROS1,1
+AXL,Src-YAP1,1
+AXL,TXK,1
+AXL,PLK4,1
+AXL,HGF,1
+AXL,MARK3,1
+AXL,TNK2,1
+AXL,FAK,2
+AXL,PC9,1
+AXL,CDCP1,36
+AXL,Bmp1,1
+AXL,EGFR,12
+AXL,JAK3,1
+AXL,EPHA1,1
+AXL,JAK1,1
+AXL,SRC,1
+AXL,RTK,1
+AXL,EphA2,2
+AXL,ARK5,1
+AXL,DDR1,1
+AXL,CUB domain-containing protein-1,1
+AXL,TRKB,1
+AXL,YAP1,6
+AXL,EPHA8,1
+AXL,IGFR,1
+AXL,PYK2,1
+AXL,LYN,1
+AXL,DDR2,1
+receptor tyrosine kinase-like orphan receptor 1,ROR1,1
+muM,JAK2,1
+muM,IRR,1
+muM,ROS1,1
+muM,TXK,1
+muM,PLK4,1
+muM,MARK3,1
+muM,TNK2,1
+muM,FAK,1
+muM,PC9,7
+muM,JAK3,1
+muM,EPHA1,1
+muM,JAK1,1
+muM,SRC,1
+muM,ARK5,1
+muM,DDR1,1
+muM,TRKB,1
+muM,EPHA8,1
+muM,IGFR,1
+muM,PYK2,1
+muM,LYN,1
+muM,DDR2,1
+JAK2,IRR,1
+JAK2,STAT3,2
+JAK2,ROS1,1
+JAK2,TXK,1
+JAK2,PLK4,1
+JAK2,MARK3,1
+JAK2,TNK2,1
+JAK2,FAK,2
+JAK2,CDCP1,1
+JAK2,JAK3,1
+JAK2,EPHA1,1
+JAK2,JAK1,1
+JAK2,SRC,1
+JAK2,ARK5,1
+JAK2,DDR1,1
+JAK2,TRKB,1
+JAK2,YAP1,1
+JAK2,EPHA8,1
+JAK2,IGFR,1
+JAK2,PYK2,1
+JAK2,LYN,1
+JAK2,DDR2,1
+erythropoietin-producing hepatocellular receptor A2,AXL,1
+erythropoietin-producing hepatocellular receptor A2,HGF,1
+erythropoietin-producing hepatocellular receptor A2,CDCP1,1
+erythropoietin-producing hepatocellular receptor A2,Bmp1,1
+erythropoietin-producing hepatocellular receptor A2,EphA2,1
+YES-associated protein 1,STAT3,1
+YES-associated protein 1,YAP1,1
+signal transducer and activator of transcription 3,STAT3,3
+signal transducer and activator of transcription 3,EGFR,3
+signal transducer and activator of transcription 3,MAPK,1
+signal transducer and activator of transcription 3,AKT,2
+IRR,ROS1,1
+IRR,TXK,1
+IRR,PLK4,1
+IRR,MARK3,1
+IRR,TNK2,1
+IRR,FAK,1
+IRR,JAK3,1
+IRR,EPHA1,1
+IRR,JAK1,1
+IRR,SRC,1
+IRR,ARK5,1
+IRR,DDR1,1
+IRR,TRKB,1
+IRR,EPHA8,1
+IRR,IGFR,1
+IRR,PYK2,1
+IRR,LYN,1
+IRR,DDR2,1
+Connective tissue growth factor,CTGF,1
+Connective tissue growth factor,YAP1,1
+STAT3,YES-associated protein 1,1
+STAT3,signal transducer and activator of transcription 3,3
+STAT3,Src-YAP1,3
+STAT3,IL-6,2
+STAT3,FAK,2
+STAT3,PC9,6
+STAT3,ERK1/2,1
+STAT3,CDCP1,1
+STAT3,EGFR,13
+STAT3,SRC,1
+STAT3,RTK,1
+STAT3,MAPK,1
+STAT3,paxillin,3
+STAT3,AKT,3
+STAT3,gp130,1
+STAT3,YAP1,18
+STAT3,LYN,5
+ROS1,TXK,1
+ROS1,PLK4,1
+ROS1,MARK3,1
+ROS1,TNK2,1
+ROS1,FAK,1
+ROS1,JAK3,1
+ROS1,EPHA1,1
+ROS1,JAK1,1
+ROS1,SRC,1
+ROS1,ARK5,1
+ROS1,DDR1,1
+ROS1,TRKB,1
+ROS1,EPHA8,1
+ROS1,IGFR,1
+ROS1,PYK2,1
+ROS1,LYN,1
+ROS1,DDR2,1
+IL-6R,IL-6,1
+IL-6R,gp130,1
+CUB-domain-containing protein 1,Src,1
+Src-YAP1,PC9,1
+Src-YAP1,CDCP1,1
+Src-YAP1,EGFR,1
+Src-YAP1,RTK,1
+Src-YAP1,YAP1,1
+TXK,PLK4,1
+TXK,MARK3,1
+TXK,TNK2,1
+TXK,FAK,1
+TXK,JAK3,1
+TXK,EPHA1,1
+TXK,JAK1,1
+TXK,SRC,1
+TXK,ARK5,1
+TXK,DDR1,1
+TXK,TRKB,1
+TXK,EPHA8,1
+TXK,IGFR,1
+TXK,PYK2,1
+TXK,LYN,1
+TXK,DDR2,1
+PLK4,MARK3,1
+PLK4,TNK2,1
+PLK4,FAK,1
+PLK4,JAK3,1
+PLK4,EPHA1,1
+PLK4,JAK1,1
+PLK4,SRC,1
+PLK4,ARK5,1
+PLK4,DDR1,1
+PLK4,TRKB,1
+PLK4,EPHA8,1
+PLK4,IGFR,1
+PLK4,PYK2,1
+PLK4,LYN,1
+PLK4,DDR2,1
+HGF,erythropoietin-producing hepatocellular receptor A2,1
+HGF,CDCP1,1
+HGF,Bmp1,1
+HGF,EGFR,1
+HGF,EphA2,1
+MARK3,TNK2,1
+MARK3,FAK,1
+MARK3,JAK3,1
+MARK3,EPHA1,1
+MARK3,JAK1,1
+MARK3,SRC,1
+MARK3,ARK5,1
+MARK3,DDR1,1
+MARK3,TRKB,1
+MARK3,EPHA8,1
+MARK3,IGFR,1
+MARK3,PYK2,1
+MARK3,LYN,1
+MARK3,DDR2,1
+IL-6,EGFR,2
+IL-6,gp130,1
+TNK2,FAK,1
+TNK2,JAK3,1
+TNK2,EPHA1,1
+TNK2,JAK1,1
+TNK2,SRC,1
+TNK2,ARK5,1
+TNK2,DDR1,1
+TNK2,TRKB,1
+TNK2,EPHA8,1
+TNK2,IGFR,1
+TNK2,PYK2,1
+TNK2,LYN,1
+TNK2,DDR2,1
+ERK,AKT,1
+MEK1/2,ERK2,1
+MEK1/2,ERK1,1
+FAK,PC9,2
+FAK,focal adhesion kinase,2
+FAK,CDCP1,2
+FAK,EGFR,3
+FAK,JAK3,1
+FAK,EPHA1,1
+FAK,JAK1,1
+FAK,SRC,1
+FAK,ARK5,1
+FAK,DDR1,1
+FAK,TRKB,1
+FAK,protein tyrosine kinase 2,1
+FAK,PTK2,1
+FAK,YAP1,2
+FAK,EPHA8,1
+FAK,IGFR,1
+FAK,PYK2,1
+FAK,LYN,1
+FAK,DDR2,1
+PC9,ERK1/2,1
+PC9,CDCP1,1
+PC9,EGFR,6
+PC9,RTK,1
+PC9,paxillin,1
+PC9,AKT,1
+PC9,YAP1,6
+PC9,LYN,2
+ROR1,receptor tyrosine kinase-like orphan receptor 1,1
+ROR1,EGFR,1
+focal adhesion kinase,Src,2
+focal adhesion kinase,FAK,2
+focal adhesion kinase,EGFR,1
+focal adhesion kinase,SRC,1
+focal adhesion kinase,protein tyrosine kinase 2,1
+focal adhesion kinase,PTK2,1
+ERK1/2,EGFR,1
+ERK1/2,paxillin,1
+ERK1/2,AKT,1
+ERK1/2,YAP1,1
+receptor-tyrosine kinase,SHP2,1
+receptor-tyrosine kinase,src,1
+receptor-tyrosine kinase,RTK,1
+CDCP1,erythropoietin-producing hepatocellular receptor A2,1
+CDCP1,Bmp1,1
+CDCP1,EGFR,8
+CDCP1,RTK,1
+CDCP1,EphA2,2
+CDCP1,CUB domain-containing protein-1,2
+CDCP1,YAP1,6
+Bmp1,erythropoietin-producing hepatocellular receptor A2,1
+Bmp1,EphA2,1
+RasGAP,Ras GTPase-activating protein,1
+EGFR,Epidermal growth factor receptor,2
+EGFR,signal transducer and activator of transcription 3,3
+EGFR,focal adhesion kinase,1
+EGFR,MAP2K1,1
+EGFR,SRC,1
+EGFR,RTK,1
+EGFR,mitogen-activated protein kinase kinase 1,1
+EGFR,MAPK,1
+EGFR,Akt,1
+EGFR,paxillin,1
+EGFR,AKT,5
+EGFR,MEK,1
+EGFR,YAP1,5
+EGFR,LYN,1
+JAK3,EPHA1,1
+JAK3,JAK1,1
+JAK3,SRC,1
+JAK3,ARK5,1
+JAK3,DDR1,1
+JAK3,TRKB,1
+JAK3,EPHA8,1
+JAK3,IGFR,1
+JAK3,PYK2,1
+JAK3,LYN,1
+JAK3,DDR2,1
+EPHA1,JAK1,1
+EPHA1,SRC,1
+EPHA1,ARK5,1
+EPHA1,DDR1,1
+EPHA1,TRKB,1
+EPHA1,EPHA8,1
+EPHA1,IGFR,1
+EPHA1,PYK2,1
+EPHA1,LYN,1
+EPHA1,DDR2,1
+JAK1,SRC,1
+JAK1,ARK5,1
+JAK1,DDR1,1
+JAK1,TRKB,1
+JAK1,EPHA8,1
+JAK1,IGFR,1
+JAK1,PYK2,1
+JAK1,LYN,1
+JAK1,DDR2,1
+src,receptor-tyrosine kinase,1
+src,RTK,1
+MAP2K1,mitogen-activated protein kinase kinase 1,1
+MAP2K1,AKT,1
+MAP2K1,MEK,1
+SRC,focal adhesion kinase,1
+SRC,ARK5,1
+SRC,DDR1,1
+SRC,TRKB,1
+SRC,YAP1,1
+SRC,EPHA8,1
+SRC,IGFR,1
+SRC,PYK2,1
+SRC,LYN,2
+SRC,DDR2,1
+RTK,receptor-tyrosine kinase,1
+RTK,MAPK,1
+mitogen-activated protein kinase kinase 1,EGFR,1
+mitogen-activated protein kinase kinase 1,MAP2K1,1
+mitogen-activated protein kinase kinase 1,AKT,1
+mitogen-activated protein kinase kinase 1,MEK,1
+EphA2,erythropoietin-producing hepatocellular receptor A2,1
+EphA2,CUB domain-containing protein-1,1
+ARK5,DDR1,1
+ARK5,TRKB,1
+ARK5,EPHA8,1
+ARK5,IGFR,1
+ARK5,PYK2,1
+ARK5,LYN,1
+ARK5,DDR2,1
+JAK,gp130,1
+mammalian target of rapamycin,AKT,1
+mammalian target of rapamycin,mTOR,1
+MAPK,signal transducer and activator of transcription 3,1
+MAPK,AKT,2
+MEK1,MAPK/ERK Kinase 1,1
+MEK1,Raf,1
+paxillin,AKT,1
+paxillin,YAP1,3
+DDR1,TRKB,1
+DDR1,EPHA8,1
+DDR1,IGFR,1
+DDR1,PYK2,1
+DDR1,LYN,1
+DDR1,DDR2,1
+CUB domain-containing protein-1,AXL,1
+CUB domain-containing protein-1,CDCP1,2
+CUB domain-containing protein-1,EphA2,1
+ERK2,ERK1,1
+MAPK/ERK Kinase 1,MEK2,1
+MAPK/ERK Kinase 1,MEK1,1
+MAPK/ERK Kinase 1,Raf,1
+AKT,signal transducer and activator of transcription 3,2
+AKT,mitogen-activated protein kinase kinase 1,1
+AKT,mammalian target of rapamycin,1
+AKT,mTOR,1
+AKT,MEK,1
+AKT,YAP1,1
+TRKB,EPHA8,1
+TRKB,IGFR,1
+TRKB,PYK2,1
+TRKB,LYN,1
+TRKB,DDR2,1
+CTGF,Connective tissue growth factor,1
+CTGF,YAP1,1
+mTOR,mammalian target of rapamycin,1
+mTOR,p70S6K,1
+gp130,YAP1,1
+protein tyrosine kinase 2,Src,1
+protein tyrosine kinase 2,FAK,1
+protein tyrosine kinase 2,focal adhesion kinase,1
+protein tyrosine kinase 2,PTK2,1
+PTK2,focal adhesion kinase,1
+PTK2,protein tyrosine kinase 2,1
+MEK,mitogen-activated protein kinase kinase 1,1
+YAP1,YES-associated protein 1,1
+YAP1,Connective tissue growth factor,1
+YAP1,LYN,6
+YAP1,Yes1,1
+EPHA8,IGFR,1
+EPHA8,PYK2,1
+EPHA8,LYN,1
+EPHA8,DDR2,1
+IGFR,PYK2,1
+IGFR,LYN,1
+IGFR,DDR2,1
+Raf,MAPK/ERK Kinase 1,1
+PYK2,LYN,1
+PYK2,DDR2,1
+LYN,DDR2,1

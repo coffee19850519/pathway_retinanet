@@ -1,0 +1,71 @@
+gene_name_1,gene_name_2,co_occurrence
+Bak,Bcl-2,1
+p53,NF-kappaB,1
+BAK,BAX,1
+SK-1,beta-actin,2
+SK-1,muM,4
+SK-1,ERK1/2,2
+SK-1,Caspase 3,1
+SK-1,Bim,6
+SK-1,Bax,2
+ERK,Bcl-2,1
+ERK,cytochrome C,1
+ERK,Bim,1
+Bcl-xL,Mcl-1,1
+Bcl-xL,cytochrome c,1
+Bcl-xL,Bim,1
+AIF,apoptosis inducing factor,1
+AIF,cytochrome c,1
+CaMKII,ASK-1,1
+CaMKII,DYRK2,1
+CaMKII,CKII,1
+Bcl-2,BH3-only protein,1
+Bcl-2,cytochrome c,1
+Bcl-2,Bim,3
+Bcl-2,Bax,2
+beta-actin,muM,2
+beta-actin,ERK1/2,1
+beta-actin,Bim,2
+beta-actin,Bax,1
+muM,ERK1/2,1
+muM,Bim,3
+muM,Bax,1
+ASK-1,DYRK2,1
+ASK-1,CKII,1
+DYRK2,CKII,1
+ERK1/2,extracellular regulated protein kinases 1/2,1
+ERK1/2,Caspase 3,11
+ERK1/2,cytochrome c,1
+ERK1/2,E-cadherin,1
+ERK1/2,Bim,21
+ERK1/2,Bax,18
+extracellular regulated protein kinases 1/2,ERK1/2,1
+apoptosis inducing factor,AIF,1
+apoptosis inducing factor,cytochrome c,1
+Mcl-1,cytochrome c,1
+Mcl-1,Bim,1
+BH3-only protein,Bcl-2,1
+BH3-only protein,Bim,2
+BH3-only protein,Bax,1
+Caspase 3,SK-1,1
+Caspase 3,ERK1/2,11
+Caspase 3,cytochrome c,1
+Caspase 3,Bim,7
+Caspase 3,Bax,12
+cytochrome C,ERK,1
+cytochrome c,Bcl-xL,1
+cytochrome c,AIF,1
+cytochrome c,Bcl-2,1
+cytochrome c,ERK1/2,1
+cytochrome c,apoptosis inducing factor,1
+cytochrome c,Mcl-1,1
+cytochrome c,Caspase 3,1
+cytochrome c,Bim,1
+cytochrome c,Bax,2
+Bim,BH3-only protein,2
+Bim,Caspase 3,7
+Bim,cytochrome c,1
+Bim,Bax,16
+Bax,BH3-only protein,1
+Bax,Caspase 3,12
+Bax,cytochrome c,2

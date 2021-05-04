@@ -1,0 +1,54 @@
+gene_name_1,gene_name_2,co_occurrence
+c-jun,IGF-1,1
+c-jun,c-fos,1
+c-Met,hepatocyte growth factor,1
+c-Met,HGF,1
+c-Met,urokinase plasminogen activator receptor,1
+Growth hormone,IGF-1,1
+Growth hormone,Prolactin,1
+prolactin,IGF-1,1
+prolactin,GH,1
+IGF-1,Growth hormone,1
+IGF-1,PRL-R,1
+IGF-1,Prolactin,1
+IGF-1,insulin-like growth factor-1,3
+IGF-1,c-fos,1
+IGF-1,GH,4
+IGF-1,growth hormone,3
+IGF-1,prolactin receptor,1
+IGF-1,HGF,3
+Hepatocyte growth factor,HGF,1
+IGF-I,insulin-like growth factor I,1
+PRL-R,insulin-like growth factor-1,1
+PRL-R,GH,1
+PRL-R,growth hormone,1
+PRL-R,prolactin receptor,1
+Prolactin,Growth hormone,1
+insulin-like growth factor-1,IGF-1,3
+insulin-like growth factor-1,PRL-R,1
+insulin-like growth factor-1,GH,2
+insulin-like growth factor-1,growth hormone,2
+insulin-like growth factor-1,prolactin receptor,1
+GH,insulin-like growth factor-1,2
+GH,growth hormone,3
+GH,prolactin receptor,1
+growth hormone,IGF-1,3
+growth hormone,PRL-R,1
+growth hormone,insulin-like growth factor-1,2
+growth hormone,GH,3
+growth hormone,prolactin receptor,1
+insulin-like growth factor I,IGF-I,1
+Insulin-like growth factor I,hepatocyte growth factor,1
+ALK,anaplastic lymphoma kinase,1
+hepatocyte growth factor,c-Met,1
+hepatocyte growth factor,Insulin-like growth factor I,1
+hepatocyte growth factor,HGF,1
+prolactin receptor,IGF-1,1
+prolactin receptor,PRL-R,1
+prolactin receptor,insulin-like growth factor-1,1
+prolactin receptor,GH,1
+prolactin receptor,growth hormone,1
+HGF,Hepatocyte growth factor,1
+HGF,hepatocyte growth factor,1
+urokinase plasminogen activator receptor,c-Met,1
+anaplastic lymphoma kinase,ALK,1

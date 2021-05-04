@@ -1,0 +1,93 @@
+gene_name_1,gene_name_2,co_occurrence
+p53,AKT,2
+p53,Cdk1,1
+p53,histone deacetylase 4,1
+p53,ErbB2,1
+p53,ATR,1
+p53,Raf,1
+p53,EGFR,1
+p53,p21,2
+AKT,Cdk1,1
+AKT,HER2,1
+AKT,ErbB2,1
+AKT,ATR,2
+AKT,Raf,2
+AKT,p21,1
+Ef2,MCM2,1
+Ef2,S27,1
+Ef2,ERK2,1
+Cdk1,ATR,1
+Cdk1,Cdc25,1
+Cdk1,Raf,1
+Cdk1,p21,1
+epidermal growth factor receptor,ALK,1
+epidermal growth factor receptor,EGFR,1
+c-Met,HER2,1
+c-Met,ErbB2,1
+c-Met,KRAS,1
+c-Met,c-Raf,1
+c-Met,ALK,1
+c-Met,EGFR,1
+PLK1,ERK,2
+PLK1,Polo-like kinase 1,1
+PLK1,KIF23,1
+PLK1,Cdc25C,1
+PLK1,APC1,1
+PLK1,Cdc23,1
+PLK1,NudC,1
+PLK1,Plk1,1
+Fak,Fyn,1
+Polo-like kinase 1,PLK1,1
+Epidermal growth factor receptor,cyclin D1,1
+ATF7,TP53,1
+ATF7,Mef2D,1
+ATF7,ELK3,1
+Rb1,Cdc25,1
+Rb1,p21,1
+Rb1,CDK1,1
+MCM2,ERK1/2,1
+MCM2,S27,2
+MCM2,eEF2,1
+MCM2,EF2,1
+MCM2,ERK2,2
+histone deacetylase 4,p53,1
+TP53,Mef2D,1
+TP53,ELK3,1
+polo-like kinase,PLK,1
+HER2,KRAS,1
+HER2,c-Raf,1
+HER2,ALK,1
+HER2,EGFR,1
+H2AX,HDAC4,1
+Mef2D,ELK3,1
+cyclin D1,Epidermal growth factor receptor,1
+ATR,Raf,2
+ATR,p21,1
+Cdc25,p21,1
+Cdc25,CDK1,1
+KRAS,c-Raf,1
+KRAS,ALK,1
+KRAS,EGFR,1
+KIF23,Cdc25C,1
+KIF23,APC1,1
+KIF23,Cdc23,1
+KIF23,NudC,1
+ERK1/2,S27,1
+ERK1/2,eEF2,1
+S27,eEF2,1
+S27,ERK2,1
+Cdc25C,APC1,1
+Cdc25C,Cdc23,1
+Cdc25C,NudC,1
+APC1,Cdc23,1
+APC1,NudC,1
+Cdc23,NudC,1
+PLK,polo-like kinase,1
+Raf,p21,1
+c-Raf,ALK,1
+c-Raf,EGFR,1
+ALK,epidermal growth factor receptor,1
+ALK,EGFR,2
+EF2,ERK2,2
+EGFR,epidermal growth factor receptor,1
+p21,CDK1,1

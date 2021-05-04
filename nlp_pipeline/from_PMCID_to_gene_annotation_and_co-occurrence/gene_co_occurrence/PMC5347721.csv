@@ -1,0 +1,90 @@
+gene_name_1,gene_name_2,co_occurrence
+TNM,k-RAS,1
+TNM,EGFR,1
+TNM,PgR,1
+Estrogen receptor,Progesterone receptor,1
+Estrogen receptor,ER,1
+Estrogen receptor,Androgen receptor,1
+Estrogen receptor,PgR,1
+Estrogen receptor,AR,1
+epidermal growth factor receptor,estrogen receptor-alpha,1
+epidermal growth factor receptor,aromatase,1
+epidermal growth factor receptor,hormone receptor,1
+epidermal growth factor receptor,estrogen receptor-beta,1
+epidermal growth factor receptor,EGFR,1
+epidermal growth factor receptor,ER-beta,1
+epidermal growth factor receptor,PgR,1
+epidermal growth factor receptor,ER-alpha,1
+ERalpha,ERbeta,2
+ERalpha,aromatase,2
+ERalpha,EGFR,1
+ERalpha,PgR,13
+ERalpha,AR,7
+ERalpha,OS,1
+k-RAS,EGFR,1
+Progesterone receptor,Estrogen receptor,1
+Progesterone receptor,ER,1
+Progesterone receptor,Androgen receptor,1
+Progesterone receptor,PgR,1
+Progesterone receptor,AR,1
+mOS,OS,1
+Unk,UNK,1
+Unk,ER,1
+Unk,PgR,1
+estrogen receptor,progesterone receptor,1
+ERbeta,aromatase,1
+ERbeta,EGFR,2
+ERbeta,PgR,1
+ERbeta,OS,2
+estrogen receptor-alpha,epidermal growth factor receptor,1
+estrogen receptor-alpha,progesterone receptor,1
+estrogen receptor-alpha,androgen receptor,1
+aromatase,epidermal growth factor receptor,1
+aromatase,EGFR,2
+aromatase,ER-beta,2
+aromatase,PgR,2
+aromatase,ER-alpha,1
+hormone receptor,epidermal growth factor receptor,1
+UNK,ER,1
+UNK,PgR,1
+estrogen receptor-beta,epidermal growth factor receptor,1
+progesterone receptor,estrogen receptor,1
+progesterone receptor,estrogen receptor-alpha,1
+progesterone receptor,androgen receptor,1
+ER,Estrogen receptor,1
+ER,Progesterone receptor,1
+ER,Androgen receptor,1
+ER,PgR,14
+ER,AR,7
+ER,OS,1
+TTP=1,PgR,1
+TTP=1,OS,1
+Androgen receptor,Estrogen receptor,1
+Androgen receptor,Progesterone receptor,1
+Androgen receptor,ER,1
+Androgen receptor,PgR,1
+Androgen receptor,AR,1
+EGFR,epidermal growth factor receptor,1
+EGFR,ER-beta,1
+EGFR,PgR,2
+EGFR,ER-alpha,1
+EGFR,OS,1
+ER-beta,epidermal growth factor receptor,1
+ER-beta,PgR,2
+ER-beta,ER-alpha,2
+PgR,Estrogen receptor,1
+PgR,epidermal growth factor receptor,1
+PgR,Progesterone receptor,1
+PgR,Androgen receptor,1
+PgR,ER-alpha,3
+PgR,AR,14
+PgR,OS,4
+ER-alpha,epidermal growth factor receptor,1
+ER-alpha,AR,1
+ER-alpha,OS,3
+AR,Estrogen receptor,1
+AR,Progesterone receptor,1
+AR,Androgen receptor,1
+AR,OS,2
+androgen receptor,estrogen receptor-alpha,1
+androgen receptor,progesterone receptor,1

@@ -1,0 +1,51 @@
+gene_name_1,gene_name_2,co_occurrence
+EML4,ALK,2
+AKT,mTOR,1
+AKT,ALK,1
+epidermal growth factor receptor,KRAS,1
+epidermal growth factor receptor,ALK,1
+epidermal growth factor receptor,EGFR,2
+epidermal growth factor receptor,anaplastic lymphoma kinase,1
+c-Met,HGFR,1
+c-Met,ROS1,1
+c-Met,ALK,1
+c-Met,c-ros oncogene 1,1
+mTOR,ALK,3
+HGFR,ROS1,1
+HGFR,ALK,1
+HGFR,c-ros oncogene 1,1
+Hsp90,ALK,1
+heat shock protein 90,EGFR,1
+heat shock protein 90,HSP90,1
+KIF5B,TFG,1
+KIF5B,ALK,1
+KRAS,epidermal growth factor receptor,1
+KRAS,ALK,2
+KRAS,EGFR,2
+KRAS,anaplastic lymphoma kinase,1
+TFG,ALK,1
+c-MET,ROS1,1
+c-MET,EGFR,1
+c-MET,HSP90,1
+ROS1,ALK,3
+ROS1,EGFR,3
+ROS1,HSP90,2
+ROS1,c-ros oncogene 1,1
+ALK,epidermal growth factor receptor,1
+ALK,EGFR,7
+ALK,HSP90,3
+ALK,c-ros oncogene 1,1
+ALK,anaplastic lymphoma kinase,1
+EGFR,epidermal growth factor receptor,2
+EGFR,heat shock protein 90,1
+EGFR,HSP90,3
+EGFR,anaplastic lymphoma kinase,1
+HSP90,heat shock protein 90,1
+c-ros oncogene 1,c-Met,1
+c-ros oncogene 1,HGFR,1
+c-ros oncogene 1,ROS1,1
+c-ros oncogene 1,ALK,1
+anaplastic lymphoma kinase,epidermal growth factor receptor,1
+anaplastic lymphoma kinase,KRAS,1
+anaplastic lymphoma kinase,ALK,1
+anaplastic lymphoma kinase,EGFR,1

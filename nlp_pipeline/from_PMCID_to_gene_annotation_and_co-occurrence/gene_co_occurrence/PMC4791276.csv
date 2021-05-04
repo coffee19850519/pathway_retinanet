@@ -1,0 +1,188 @@
+gene_name_1,gene_name_2,co_occurrence
+c-jun,Beclin1,2
+c-jun,ULK1,1
+c-jun,mTOR,1
+c-jun,JNK1,1
+c-jun,LC3,1
+c-jun,ERK,1
+c-jun,Chop,1
+c-jun,P70 S6K,1
+c-jun,4E-BP1,1
+c-jun,JNK,5
+c-jun,ATG7,2
+c-jun,Akt,1
+c-jun,JNK2,1
+c-jun,muM,2
+c-jun,GAPDH,1
+c-jun,Bip,1
+c-jun,PARP,1
+c-jun,ATG5,2
+c-jun,IRE1alpha,3
+Beclin1,ULK1,1
+Beclin1,mTOR,1
+Beclin1,JNK1,1
+Beclin1,LC3,1
+Beclin1,ERK,1
+Beclin1,Chop,1
+Beclin1,P70 S6K,1
+Beclin1,Bcl-2,1
+Beclin1,4E-BP1,1
+Beclin1,JNK,2
+Beclin1,ATG7,4
+Beclin1,Akt,1
+Beclin1,JNK2,1
+Beclin1,GAPDH,1
+Beclin1,Bip,1
+Beclin1,PARP,1
+Beclin1,ATG5,4
+Beclin1,IRE1alpha,2
+ULK1,mTOR,1
+ULK1,LC3,1
+ULK1,ERK,1
+ULK1,Chop,1
+ULK1,P70 S6K,1
+ULK1,4E-BP1,1
+ULK1,JNK,1
+ULK1,ATG7,1
+ULK1,Akt,1
+ULK1,GAPDH,1
+ULK1,Bip,1
+ULK1,PARP,1
+ULK1,ATG5,1
+ULK1,IRE1alpha,1
+mTOR,LC3,1
+mTOR,ERK,1
+mTOR,Chop,1
+mTOR,P70 S6K,1
+mTOR,4E-BP1,1
+mTOR,JNK,1
+mTOR,ATG7,1
+mTOR,Akt,1
+mTOR,GAPDH,1
+mTOR,Bip,1
+mTOR,PARP,1
+mTOR,ATG5,1
+mTOR,IRE1alpha,1
+JNK1,ATG7,1
+JNK1,JNK2,1
+JNK1,ATG5,1
+JNK1,IRE1alpha,1
+LC3,ERK,1
+LC3,Chop,1
+LC3,P70 S6K,1
+LC3,4E-BP1,1
+LC3,JNK,1
+LC3,ATG7,1
+LC3,Akt,1
+LC3,GAPDH,1
+LC3,Bip,1
+LC3,PARP,1
+LC3,ATG5,1
+LC3,IRE1alpha,1
+ERK,Chop,1
+ERK,P70 S6K,1
+ERK,4E-BP1,1
+ERK,JNK,1
+ERK,ATG7,1
+ERK,Akt,1
+ERK,extracellular signal-regulated kinase,1
+ERK,GAPDH,1
+ERK,Bip,1
+ERK,PARP,1
+ERK,ATG5,1
+ERK,IRE1alpha,1
+PLK1,IRE1a,1
+Chop,P70 S6K,1
+Chop,4E-BP1,1
+Chop,JNK,1
+Chop,ATG7,1
+Chop,Akt,1
+Chop,muM,1
+Chop,GAPDH,1
+Chop,Bip,2
+Chop,PARP,1
+Chop,ATG5,1
+Chop,IRE1alpha,2
+P70 S6K,c-jun,1
+P70 S6K,Beclin1,1
+P70 S6K,ULK1,1
+P70 S6K,mTOR,1
+P70 S6K,LC3,1
+P70 S6K,ERK,1
+P70 S6K,Chop,1
+P70 S6K,4E-BP1,1
+P70 S6K,JNK,1
+P70 S6K,ATG7,1
+P70 S6K,Akt,1
+P70 S6K,GAPDH,1
+P70 S6K,Bip,1
+P70 S6K,PARP,1
+P70 S6K,ATG5,1
+P70 S6K,IRE1alpha,1
+BNIP3L,BNIP3,1
+Bcl-2,JNK,1
+4E-BP1,P70 S6K,1
+4E-BP1,JNK,1
+4E-BP1,ATG7,1
+4E-BP1,Akt,1
+4E-BP1,GAPDH,1
+4E-BP1,Bip,1
+4E-BP1,PARP,1
+4E-BP1,ATG5,1
+4E-BP1,IRE1alpha,1
+JNK,P70 S6K,1
+JNK,ATG7,2
+JNK,Akt,1
+JNK,muM,4
+JNK,GAPDH,1
+JNK,S5B,1
+JNK,caspase-3/7,1
+JNK,Bip,1
+JNK,PARP,1
+JNK,ATG5,1
+JNK,IRE1alpha,5
+JNK,C-Jun N-terminal kinase,1
+ATG7,P70 S6K,1
+ATG7,Akt,1
+ATG7,JNK2,1
+ATG7,muM,3
+ATG7,GAPDH,1
+ATG7,caspase-3/7,1
+ATG7,Bip,1
+ATG7,PARP,1
+ATG7,ATG5,4
+ATG7,IRE1alpha,3
+Akt,P70 S6K,1
+Akt,GAPDH,1
+Akt,Bip,1
+Akt,PARP,1
+Akt,ATG5,1
+Akt,IRE1alpha,1
+JNK2,ATG5,1
+JNK2,IRE1alpha,1
+extracellular signal-regulated kinase,ERK,1
+muM,caspase-3/7,1
+muM,Bip,1
+muM,IRE1alpha,3
+RNase L,c-Jun,1
+GAPDH,P70 S6K,1
+GAPDH,Bip,1
+GAPDH,PARP,1
+GAPDH,ATG5,1
+GAPDH,IRE1alpha,1
+c-Jun,RNase L,1
+c-Jun,Beclin 1,1
+Beclin 1,c-Jun,1
+caspase-3/7,PARP,2
+caspase-3/7,IRE1alpha,1
+Bip,P70 S6K,1
+Bip,PARP,1
+Bip,ATG5,1
+Bip,IRE1alpha,2
+PARP,P70 S6K,1
+PARP,ATG5,1
+PARP,IRE1alpha,1
+ATG5,P70 S6K,1
+ATG5,IRE1alpha,2
+IRE1alpha,P70 S6K,1
+C-Jun N-terminal kinase,JNK,1

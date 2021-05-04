@@ -1,0 +1,49 @@
+gene_name_1,gene_name_2,co_occurrence
+EML4,echinoderm microtubule-associated protein-like 4,1
+EML4,ALK,1
+epidermal growth factor receptor,Mek,1
+epidermal growth factor receptor,C-KIT,1
+epidermal growth factor receptor,Erk,1
+epidermal growth factor receptor,anaplastic lymphoma kinase,1
+epidermal growth factor receptor,ALK,1
+epidermal growth factor receptor,EGFR,1
+NPM,ALK,1
+AXL,ALK,1
+echinoderm microtubule-associated protein-like 4,EML4,1
+echinoderm microtubule-associated protein-like 4,ALK,1
+Mek,epidermal growth factor receptor,1
+Mek,C-KIT,1
+Mek,Erk,1
+Mek,anaplastic lymphoma kinase,1
+Mek,ALK,1
+Mek,EGFR,1
+C-KIT,epidermal growth factor receptor,1
+C-KIT,Erk,1
+C-KIT,anaplastic lymphoma kinase,1
+C-KIT,ALK,1
+C-KIT,EGFR,2
+Erk,epidermal growth factor receptor,1
+Erk,anaplastic lymphoma kinase,1
+Erk,ALK,1
+Erk,EGFR,1
+CYP3A4,cytochrome P450 3A4,2
+CYP3A4,CYP3A,2
+KRAS,ALK,1
+KRAS,EGFR,1
+cytochrome P450 3A4,CYP3A4,2
+cytochrome P450 3A4,CYP3A,1
+anaplastic lymphoma kinase,epidermal growth factor receptor,1
+anaplastic lymphoma kinase,Mek,1
+anaplastic lymphoma kinase,C-KIT,1
+anaplastic lymphoma kinase,Erk,1
+anaplastic lymphoma kinase,ALK,3
+anaplastic lymphoma kinase,EGFR,1
+ROS1,ALK,1
+CYP3A,cytochrome P450 3A4,1
+ALK,epidermal growth factor receptor,1
+ALK,echinoderm microtubule-associated protein-like 4,1
+ALK,anaplastic lymphoma kinase,3
+ALK,EGFR,4
+EGFR,epidermal growth factor receptor,1
+EGFR,anaplastic lymphoma kinase,1
+P-gp,P-glycoprotein,1

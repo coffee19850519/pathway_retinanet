@@ -1,0 +1,90 @@
+gene_name_1,gene_name_2,co_occurrence
+AKT,epidermal growth factor receptor,1
+AKT,ERK,3
+AKT,beta-actin,2
+AKT,EGFR,1
+HLA-A,HLA-B,1
+HLA-A,interferon-gamma,1
+HLA-A,PC9,1
+HLA-A,IFN-gamma,2
+HLA-A,TAP1,1
+HLA-A,MEK,1
+HLA-A,MHC,1
+HLA-A,CIITA,1
+HLA-A,EGFR,2
+HLA-A,tumor necrosis factor-alpha,1
+epidermal growth factor receptor,AKT,1
+epidermal growth factor receptor,tyrosine kinase,3
+epidermal growth factor receptor,ERK,1
+epidermal growth factor receptor,beta-actin,1
+epidermal growth factor receptor,PD-1,1
+epidermal growth factor receptor,EGFR,7
+HLA-B,PC9,3
+HLA-B,IFN-gamma,3
+HLA-B,GAPDH,1
+HLA-B,EGFR,6
+tyrosine kinase,epidermal growth factor receptor,3
+tyrosine kinase,Epidermal growth factor receptor,1
+tyrosine kinase,EGFR,3
+ERK,epidermal growth factor receptor,1
+ERK,CD8,2
+ERK,MEK,3
+ERK,beta-actin,1
+ERK,PD-1,1
+ERK,PD-L1,3
+ERK,EGFR,9
+Epidermal growth factor receptor,tyrosine kinase,1
+Epidermal growth factor receptor,MHC,1
+CD8,PD-L1,3
+CD8,EGFR,3
+PC9,IFN-gamma,3
+IFN-gamma,TAP1,1
+IFN-gamma,MEK,1
+IFN-gamma,MHC,1
+IFN-gamma,CIITA,1
+IFN-gamma,EGFR,3
+IFN-gamma,tumor necrosis factor-alpha,1
+TAP1,MEK,1
+TAP1,MHC,1
+TAP1,CIITA,1
+TAP1,EGFR,1
+TAP1,tumor necrosis factor-alpha,1
+MEK,MHC,1
+MEK,PD-L1,1
+MEK,CIITA,1
+MEK,EGFR,4
+MEK,tumor necrosis factor-alpha,1
+beta-actin,epidermal growth factor receptor,1
+beta-actin,EGFR,1
+IRF,HLA-A and -B,1
+PD-1,epidermal growth factor receptor,1
+PD-1,PD-L1,3
+PD-1,PD-L2,1
+PD-1,ALK,1
+PD-1,EGFR,4
+GAPDH,Mix,1
+GAPDH,glyceraldehyde-3-phosphate dehydrogenase,1
+Mix,glyceraldehyde-3-phosphate dehydrogenase,1
+MHC,Epidermal growth factor receptor,1
+MHC,CIITA,1
+MHC,EGFR,1
+MHC,beta2-microglobulin,1
+MHC,tumor necrosis factor-alpha,1
+PD-L1,PD-L2,1
+PD-L1,EGFR,8
+CIITA,EGFR,1
+CIITA,tumor necrosis factor-alpha,1
+HLA-A and -B,IRF,1
+ALK,EGFR,1
+EGFR,epidermal growth factor receptor,7
+EGFR,tyrosine kinase,3
+EGFR,tumor necrosis factor-alpha,1
+glyceraldehyde-3-phosphate dehydrogenase,GAPDH,1
+glyceraldehyde-3-phosphate dehydrogenase,Mix,1
+tumor necrosis factor-alpha,HLA-A,1
+tumor necrosis factor-alpha,IFN-gamma,1
+tumor necrosis factor-alpha,TAP1,1
+tumor necrosis factor-alpha,MEK,1
+tumor necrosis factor-alpha,MHC,1
+tumor necrosis factor-alpha,CIITA,1
+tumor necrosis factor-alpha,EGFR,1

@@ -1,0 +1,85 @@
+gene_name_1,gene_name_2,co_occurrence
+FOXO3a,EGFR,1
+Caspase-3,NF-kappaB,1
+Caspase-3,Bax,1
+AKT,PTEN,1
+AKT,Bcl-2,1
+AKT,beta-actin,2
+AKT,caspases,2
+AKT,EGFR,2
+AKT,PARP,1
+AKT,NF-kappaB,5
+AKT,Bax,1
+caspase 9,caspase 3,2
+caspase 9,bax,1
+caspase 9,Bcl-2,1
+caspase 9,NF-kappaB,1
+caspase 9,Bax,1
+PTEN,beta-actin,1
+PTEN,caspases,1
+PTEN,EGFR,2
+PTEN,NF-kappaB,2
+epidermal growth factor receptor,EGFR,1
+DNMT1,CagA,1
+Jak2,NF-kappaB,1
+caspase 3,caspase 9,2
+caspase 3,bax,1
+caspase 3,Bcl-2,4
+caspase 3,PARP,2
+caspase 3,caspase-9,1
+caspase 3,NF-kappaB,1
+caspase 3,Bax,4
+IkappaBalpha,nuclear factor-kappaB,1
+bax,caspase 9,1
+bax,caspase 3,1
+bax,caspase-3,1
+bax,PARP,1
+bax,NF-kappaB,1
+caspase-3,PARP,1
+caspase-3,NF-kappaB,2
+Bcl-2,caspase 9,1
+Bcl-2,caspase 3,4
+Bcl-2,beta-actin,1
+Bcl-2,caspases,1
+Bcl-2,EGFR,1
+Bcl-2,PARP,3
+Bcl-2,caspase-9,1
+Bcl-2,NF-kappaB,1
+Bcl-2,Bax,5
+cIAP2,cIAP1,1
+beta-actin,LXRbeta,1
+beta-actin,caspases,2
+beta-actin,EGFR,2
+beta-actin,PARP,1
+beta-actin,LXRalpha,2
+beta-actin,NF-kappaB,2
+beta-actin,Bax,1
+LXRbeta,LXRalpha,5
+LXRbeta,NR1H2,1
+muM,NF-kappaB,3
+p65,NF-kappaB,3
+COMMD1,miR-205,1
+NR1H3,LXRalpha,1
+caspases,EGFR,2
+caspases,PARP,1
+caspases,NF-kappaB,5
+caspases,Bax,1
+Tle1,NF-kappaB,1
+EGFR,epidermal growth factor receptor,1
+EGFR,PARP,1
+EGFR,NF-kappaB,8
+EGFR,Bax,1
+PARP,caspase 3,2
+PARP,NF-kappaB,1
+PARP,Bax,3
+c-Fos,NF-kappaB,1
+nuclear factor-kappaB,IkappaBalpha,1
+nuclear factor-kappaB,NF-kappaB,1
+caspase-9,caspase 3,1
+caspase-9,Bax,1
+NF-kappaB,caspase 9,1
+NF-kappaB,caspase 3,1
+NF-kappaB,nuclear factor-kappaB,1
+NF-kappaB,Bax,2
+Bax,caspase 9,1
+Bax,caspase 3,4

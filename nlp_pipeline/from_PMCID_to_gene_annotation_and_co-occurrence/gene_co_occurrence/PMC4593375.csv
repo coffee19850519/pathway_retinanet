@@ -1,0 +1,314 @@
+gene_name_1,gene_name_2,co_occurrence
+RTK,PTEN,1
+RTK,epidermal growth factor receptor,2
+RTK,HGFR,1
+RTK,HER2,2
+RTK,HER3,1
+RTK,KRAS,1
+RTK,AEG-1,1
+RTK,receptor tyrosine kinase,3
+RTK,NFKBIA,1
+RTK,EGFR,9
+RTK,hepatocyte growth factor,2
+RTK,RELA,1
+RTK,HGF,2
+RTK,PIK3CA,1
+RTK,astrocyte elevated gene-1,1
+RTK,NF-kappaB,1
+SOS,PTEN,1
+SOS,epidermal growth factor receptor,1
+SOS,mammalian target of rapamycin,1
+SOS,mTOR,1
+SOS,HER2,1
+SOS,HER3,1
+SOS,GRB2,1
+SOS,EGFR,1
+SOS,hepatocyte growth factor,1
+SOS,nuclear factor-kappa B,1
+SOS,NF-kappaB,1
+AKT,PTEN,2
+AKT,nuclear factor-kappa B,1
+AKT,NF-kappaB,1
+insulin-like growth factor 1 receptor,VEGFR,1
+insulin-like growth factor 1 receptor,receptor tyrosine kinase,1
+insulin-like growth factor 1 receptor,platelet-derived growth factor receptor,1
+insulin-like growth factor 1 receptor,EGFR,1
+insulin-like growth factor 1 receptor,IGF1R,1
+insulin-like growth factor 1 receptor,PDGFR,1
+insulin-like growth factor 1 receptor,vascular endothelial growth factor receptor,1
+PTEN,epidermal growth factor receptor,2
+PTEN,mammalian target of rapamycin,1
+PTEN,mTOR,1
+PTEN,HER2,2
+PTEN,Akt,1
+PTEN,HER3,2
+PTEN,KRAS,3
+PTEN,GRB2,1
+PTEN,AEG-1,2
+PTEN,receptor tyrosine kinase,1
+PTEN,NFKBIA,2
+PTEN,BRAF,1
+PTEN,EGFR,5
+PTEN,hepatocyte growth factor,2
+PTEN,nuclear factor-kappa B,1
+PTEN,RELA,2
+PTEN,HGF,2
+PTEN,PIK3CA,3
+PTEN,astrocyte elevated gene-1,1
+PTEN,NF-kappaB,3
+epidermal growth factor receptor,RTK,2
+epidermal growth factor receptor,SOS,1
+epidermal growth factor receptor,PTEN,2
+epidermal growth factor receptor,mammalian target of rapamycin,1
+epidermal growth factor receptor,mTOR,1
+epidermal growth factor receptor,HER2,2
+epidermal growth factor receptor,HER3,3
+epidermal growth factor receptor,KRAS,1
+epidermal growth factor receptor,GRB2,1
+epidermal growth factor receptor,AEG-1,1
+epidermal growth factor receptor,receptor tyrosine kinase,1
+epidermal growth factor receptor,NFKBIA,1
+epidermal growth factor receptor,EGFR,7
+epidermal growth factor receptor,hepatocyte growth factor,2
+epidermal growth factor receptor,nuclear factor-kappa B,1
+epidermal growth factor receptor,RELA,1
+epidermal growth factor receptor,HGF,1
+epidermal growth factor receptor,PIK3CA,1
+epidermal growth factor receptor,astrocyte elevated gene-1,1
+epidermal growth factor receptor,NF-kappaB,2
+VEGFR,insulin-like growth factor 1 receptor,1
+VEGFR,receptor tyrosine kinase,1
+VEGFR,platelet-derived growth factor receptor,1
+VEGFR,EGFR,1
+VEGFR,IGF1R,1
+VEGFR,PDGFR,1
+VEGFR,vascular endothelial growth factor receptor,1
+mammalian target of rapamycin,SOS,1
+mammalian target of rapamycin,PTEN,1
+mammalian target of rapamycin,epidermal growth factor receptor,1
+mammalian target of rapamycin,mTOR,2
+mammalian target of rapamycin,HER2,1
+mammalian target of rapamycin,HER3,1
+mammalian target of rapamycin,GRB2,1
+mammalian target of rapamycin,EGFR,2
+mammalian target of rapamycin,hepatocyte growth factor,1
+mammalian target of rapamycin,nuclear factor-kappa B,1
+mammalian target of rapamycin,NF-kappaB,1
+mTOR,epidermal growth factor receptor,1
+mTOR,mammalian target of rapamycin,2
+mTOR,HER2,1
+mTOR,HER3,1
+mTOR,GRB2,1
+mTOR,EGFR,2
+mTOR,hepatocyte growth factor,1
+mTOR,nuclear factor-kappa B,1
+mTOR,NF-kappaB,1
+HGFR,hepatocyte growth factor,1
+HGFR,HGF,1
+NRAS,KRAS,1
+NRAS,BRAF,1
+NRAS,PIK3CA,1
+IkappaBalpha,AEG-1,1
+IkappaBalpha,NFKBIA,1
+IkappaBalpha,astrocyte elevated gene-1,1
+IkappaBalpha,NF-kappaB,2
+Epidermal growth factor receptor,EGFR,3
+HER2,epidermal growth factor receptor,2
+HER2,mammalian target of rapamycin,1
+HER2,HER3,9
+HER2,KRAS,2
+HER2,GRB2,1
+HER2,AEG-1,1
+HER2,NFKBIA,1
+HER2,EGFR,8
+HER2,hepatocyte growth factor,1
+HER2,nuclear factor-kappa B,1
+HER2,RELA,1
+HER2,HGF,1
+HER2,PIK3CA,1
+HER2,NF-kappaB,2
+Akt,EGFR,1
+HER3,epidermal growth factor receptor,3
+HER3,mammalian target of rapamycin,1
+HER3,KRAS,2
+HER3,GRB2,1
+HER3,AEG-1,1
+HER3,NFKBIA,1
+HER3,EGFR,9
+HER3,hepatocyte growth factor,1
+HER3,nuclear factor-kappa B,1
+HER3,RELA,1
+HER3,HGF,1
+HER3,PIK3CA,1
+HER3,NF-kappaB,2
+KRAS,epidermal growth factor receptor,1
+KRAS,AEG-1,2
+KRAS,receptor tyrosine kinase,1
+KRAS,NFKBIA,2
+KRAS,BRAF,2
+KRAS,EGFR,7
+KRAS,hepatocyte growth factor,1
+KRAS,RELA,2
+KRAS,HGF,2
+KRAS,PIK3CA,4
+KRAS,astrocyte elevated gene-1,1
+KRAS,NF-kappaB,2
+GRB2,epidermal growth factor receptor,1
+GRB2,mammalian target of rapamycin,1
+GRB2,EGFR,1
+GRB2,hepatocyte growth factor,1
+GRB2,nuclear factor-kappa B,1
+GRB2,NF-kappaB,1
+EGF,EGFR,1
+AEG-1,epidermal growth factor receptor,1
+AEG-1,receptor tyrosine kinase,1
+AEG-1,NFKBIA,3
+AEG-1,EGFR,2
+AEG-1,hepatocyte growth factor,1
+AEG-1,RELA,2
+AEG-1,HGF,2
+AEG-1,PIK3CA,2
+AEG-1,astrocyte elevated gene-1,2
+AEG-1,NF-kappaB,3
+ERBB2,EGFR,1
+receptor tyrosine kinase,RTK,3
+receptor tyrosine kinase,insulin-like growth factor 1 receptor,1
+receptor tyrosine kinase,PTEN,1
+receptor tyrosine kinase,epidermal growth factor receptor,1
+receptor tyrosine kinase,VEGFR,1
+receptor tyrosine kinase,KRAS,1
+receptor tyrosine kinase,AEG-1,1
+receptor tyrosine kinase,platelet-derived growth factor receptor,1
+receptor tyrosine kinase,NFKBIA,1
+receptor tyrosine kinase,EGFR,4
+receptor tyrosine kinase,hepatocyte growth factor,1
+receptor tyrosine kinase,IGF1R,1
+receptor tyrosine kinase,PDGFR,1
+receptor tyrosine kinase,vascular endothelial growth factor receptor,1
+receptor tyrosine kinase,RELA,1
+receptor tyrosine kinase,HGF,1
+receptor tyrosine kinase,PIK3CA,1
+receptor tyrosine kinase,astrocyte elevated gene-1,1
+receptor tyrosine kinase,NF-kappaB,1
+platelet-derived growth factor receptor,insulin-like growth factor 1 receptor,1
+platelet-derived growth factor receptor,VEGFR,1
+platelet-derived growth factor receptor,receptor tyrosine kinase,1
+platelet-derived growth factor receptor,EGFR,1
+platelet-derived growth factor receptor,IGF1R,1
+platelet-derived growth factor receptor,PDGFR,1
+platelet-derived growth factor receptor,vascular endothelial growth factor receptor,1
+NFKBIA,epidermal growth factor receptor,1
+NFKBIA,receptor tyrosine kinase,1
+NFKBIA,EGFR,3
+NFKBIA,hepatocyte growth factor,1
+NFKBIA,RELA,2
+NFKBIA,HGF,2
+NFKBIA,PIK3CA,2
+NFKBIA,astrocyte elevated gene-1,1
+NFKBIA,NF-kappaB,5
+BRAF,EGFR,1
+BRAF,PIK3CA,1
+EGFR,insulin-like growth factor 1 receptor,1
+EGFR,epidermal growth factor receptor,7
+EGFR,mammalian target of rapamycin,2
+EGFR,Epidermal growth factor receptor,3
+EGFR,receptor tyrosine kinase,4
+EGFR,platelet-derived growth factor receptor,1
+EGFR,hepatocyte growth factor,2
+EGFR,IGF1R,2
+EGFR,PDGFR,1
+EGFR,vascular endothelial growth factor receptor,1
+EGFR,nuclear factor-kappa B,1
+EGFR,RELA,2
+EGFR,HGF,3
+EGFR,PIK3CA,3
+EGFR,astrocyte elevated gene-1,1
+EGFR,NF-kappaB,4
+hepatocyte growth factor,RTK,2
+hepatocyte growth factor,SOS,1
+hepatocyte growth factor,PTEN,2
+hepatocyte growth factor,epidermal growth factor receptor,2
+hepatocyte growth factor,mammalian target of rapamycin,1
+hepatocyte growth factor,mTOR,1
+hepatocyte growth factor,HGFR,1
+hepatocyte growth factor,HER2,1
+hepatocyte growth factor,HER3,1
+hepatocyte growth factor,KRAS,1
+hepatocyte growth factor,GRB2,1
+hepatocyte growth factor,AEG-1,1
+hepatocyte growth factor,receptor tyrosine kinase,1
+hepatocyte growth factor,NFKBIA,1
+hepatocyte growth factor,EGFR,2
+hepatocyte growth factor,nuclear factor-kappa B,1
+hepatocyte growth factor,RELA,1
+hepatocyte growth factor,HGF,2
+hepatocyte growth factor,PIK3CA,1
+hepatocyte growth factor,astrocyte elevated gene-1,1
+hepatocyte growth factor,NF-kappaB,2
+IGF1R,insulin-like growth factor 1 receptor,1
+IGF1R,receptor tyrosine kinase,1
+IGF1R,platelet-derived growth factor receptor,1
+IGF1R,PDGFR,1
+IGF1R,vascular endothelial growth factor receptor,1
+PDGFR,insulin-like growth factor 1 receptor,1
+PDGFR,receptor tyrosine kinase,1
+PDGFR,platelet-derived growth factor receptor,1
+PDGFR,vascular endothelial growth factor receptor,1
+vascular endothelial growth factor receptor,insulin-like growth factor 1 receptor,1
+vascular endothelial growth factor receptor,VEGFR,1
+vascular endothelial growth factor receptor,receptor tyrosine kinase,1
+vascular endothelial growth factor receptor,platelet-derived growth factor receptor,1
+vascular endothelial growth factor receptor,EGFR,1
+vascular endothelial growth factor receptor,IGF1R,1
+vascular endothelial growth factor receptor,PDGFR,1
+nuclear factor-kappa B,SOS,1
+nuclear factor-kappa B,AKT,1
+nuclear factor-kappa B,PTEN,1
+nuclear factor-kappa B,epidermal growth factor receptor,1
+nuclear factor-kappa B,mammalian target of rapamycin,1
+nuclear factor-kappa B,mTOR,1
+nuclear factor-kappa B,HER2,1
+nuclear factor-kappa B,HER3,1
+nuclear factor-kappa B,GRB2,1
+nuclear factor-kappa B,EGFR,1
+nuclear factor-kappa B,hepatocyte growth factor,1
+nuclear factor-kappa B,NF-kappaB,2
+RELA,epidermal growth factor receptor,1
+RELA,receptor tyrosine kinase,1
+RELA,hepatocyte growth factor,1
+RELA,HGF,2
+RELA,PIK3CA,2
+RELA,astrocyte elevated gene-1,1
+RELA,NF-kappaB,2
+HGF,epidermal growth factor receptor,1
+HGF,receptor tyrosine kinase,1
+HGF,hepatocyte growth factor,2
+HGF,PIK3CA,2
+HGF,astrocyte elevated gene-1,1
+HGF,NF-kappaB,2
+PIK3CA,epidermal growth factor receptor,1
+PIK3CA,receptor tyrosine kinase,1
+PIK3CA,hepatocyte growth factor,1
+PIK3CA,astrocyte elevated gene-1,1
+PIK3CA,p110alpha,3
+PIK3CA,NF-kappaB,2
+astrocyte elevated gene-1,RTK,1
+astrocyte elevated gene-1,PTEN,1
+astrocyte elevated gene-1,epidermal growth factor receptor,1
+astrocyte elevated gene-1,IkappaBalpha,1
+astrocyte elevated gene-1,KRAS,1
+astrocyte elevated gene-1,AEG-1,2
+astrocyte elevated gene-1,receptor tyrosine kinase,1
+astrocyte elevated gene-1,NFKBIA,1
+astrocyte elevated gene-1,EGFR,1
+astrocyte elevated gene-1,hepatocyte growth factor,1
+astrocyte elevated gene-1,RELA,1
+astrocyte elevated gene-1,HGF,1
+astrocyte elevated gene-1,PIK3CA,1
+astrocyte elevated gene-1,NF-kappaB,2
+NF-kappaB,epidermal growth factor receptor,2
+NF-kappaB,mammalian target of rapamycin,1
+NF-kappaB,receptor tyrosine kinase,1
+NF-kappaB,hepatocyte growth factor,2
+NF-kappaB,nuclear factor-kappa B,2
+NF-kappaB,astrocyte elevated gene-1,2
