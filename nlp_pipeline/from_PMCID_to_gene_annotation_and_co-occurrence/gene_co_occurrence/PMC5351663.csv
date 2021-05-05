@@ -1,0 +1,73 @@
+gene_name_1,gene_name_2,co_occurrence
+caspase-8,PARP,5
+caspase-8,caspase-9,2
+caspase-8,muM,1
+caspase-8,c-FLIPL,2
+caspase-8,c-FLIP,1
+caspase-8,Atg5,1
+caspase-8,caspase-3,5
+caspase-8,caspase,1
+PARP,caspase-9,2
+PARP,muM,2
+PARP,Caspase-9,1
+PARP,c-FLIPL,1
+PARP,caspase3,1
+PARP,Caspase-8,1
+PARP,Atg5,2
+PARP,caspase-3,5
+PARP,caspase,1
+LC3B,beta-actin,1
+mTOR,Mammalian target of rapamycin,1
+mTOR,Ulk-1,1
+mTOR,p70S6K and 4EBP1,1
+mTOR,mTORC1,1
+mTOR,mTORC2,1
+caspase-9,muM,1
+caspase-9,caspase-3,2
+caspase-9,caspase,1
+p38,JNK,2
+p38,Bax,1
+p38,cytochrome C,1
+p38,Bcl-2,2
+p38,caspases,1
+JNK,Bax,1
+JNK,cytochrome C,1
+JNK,Bcl-2,2
+JNK,caspases,1
+muM,c-FLIPL,1
+muM,caspase3,1
+muM,SRB,2
+muM,Atg5,1
+muM,caspase-3,1
+muM,caspase,1
+Caspase-9,Caspase-8,1
+Caspase-9,Atg5,1
+c-FLIPL,TRAIL,1
+c-FLIPL,Atg5,2
+c-FLIPL,caspase-3,1
+c-FLIP,Cellular-FLICE inhibitory protein,1
+c-FLIP,caspase8,1
+mTORC1,p70 ribosomal protein S6-kinase,1
+mTORC1,EIF4EBP1,1
+mTORC1,eukaryotic initiation factor 4E binding protein 1,1
+mTORC1,p70S6K,1
+mTORC1,mTORC2,1
+p70 ribosomal protein S6-kinase,EIF4EBP1,1
+p70 ribosomal protein S6-kinase,eukaryotic initiation factor 4E binding protein 1,1
+p70 ribosomal protein S6-kinase,p70S6K,1
+EIF4EBP1,eukaryotic initiation factor 4E binding protein 1,1
+EIF4EBP1,p70S6K,1
+eukaryotic initiation factor 4E binding protein 1,p70S6K,1
+Mcl-1,Bcl-2,2
+FADD-like IL-1beta-converting enzyme,FLICE,1
+Bax,cytochrome C,1
+Bax,Bcl-2,1
+Bax,caspases,1
+Cellular-FLICE inhibitory protein,caspase8,1
+SRB,Sulforhodamine B,1
+cytochrome C,Bcl-2,1
+cytochrome C,caspases,1
+Caspase-8,Atg5,1
+Atg5,caspase-3,1
+Bcl-2,caspases,1
+caspase-3,caspase,1

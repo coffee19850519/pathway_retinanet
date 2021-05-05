@@ -1,0 +1,71 @@
+gene_name_1,gene_name_2,co_occurrence
+cIAP1,cIAP2,1
+PARP,caspase 3,2
+PARP,EGFR,1
+PARP,Bax,3
+PARP,beta-actin,1
+PARP,bax,1
+PARP,caspase-3,1
+PARP,NF-kappaB,1
+PARP,Bcl-2,3
+PARP,caspases,1
+PARP,AKT,1
+DNMT1,CagA,1
+FOXO3a,EGFR,1
+caspase-9,caspase 3,1
+caspase-9,Bax,1
+caspase-9,Bcl-2,1
+PTEN,EGFR,2
+PTEN,beta-actin,1
+PTEN,NF-kappaB,2
+PTEN,caspases,1
+PTEN,AKT,1
+Tle1,NF-kappaB,1
+muM,NF-kappaB,3
+caspase 3,caspase 9,2
+caspase 3,Bax,4
+caspase 3,bax,1
+caspase 3,NF-kappaB,1
+caspase 3,Bcl-2,4
+COMMD1,miR-205,1
+EGFR,Bax,1
+EGFR,beta-actin,2
+EGFR,NF-kappaB,8
+EGFR,Bcl-2,1
+EGFR,caspases,2
+EGFR,AKT,2
+EGFR,epidermal growth factor receptor,1
+NR1H2,LXRbeta,1
+caspase 9,Bax,1
+caspase 9,bax,1
+caspase 9,NF-kappaB,1
+caspase 9,Bcl-2,1
+LXRbeta,beta-actin,1
+LXRbeta,LXRalpha,5
+Bax,beta-actin,1
+Bax,NF-kappaB,2
+Bax,Bcl-2,5
+Bax,caspases,1
+Bax,AKT,1
+Bax,Caspase-3,1
+p65,NF-kappaB,3
+Jak2,NF-kappaB,1
+IkappaBalpha,nuclear factor-kappaB,1
+c-Fos,NF-kappaB,1
+beta-actin,LXRalpha,2
+beta-actin,NF-kappaB,2
+beta-actin,Bcl-2,1
+beta-actin,caspases,2
+beta-actin,AKT,2
+LXRalpha,NR1H3,1
+bax,caspase-3,1
+bax,NF-kappaB,1
+caspase-3,NF-kappaB,2
+NF-kappaB,Bcl-2,1
+NF-kappaB,caspases,5
+NF-kappaB,AKT,5
+NF-kappaB,Caspase-3,1
+NF-kappaB,nuclear factor-kappaB,1
+Bcl-2,caspases,1
+Bcl-2,AKT,1
+caspases,AKT,2

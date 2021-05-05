@@ -1,0 +1,126 @@
+gene_name_1,gene_name_2,co_occurrence
+CAP1,ROR1,1
+CAP1,decorin,1
+CAP1,resistin,1
+CAP1,DCN,1
+CAP1,Adenylyl cyclase-associated protein 1,1
+PP1,EGFR,1
+PP1,resistin,2
+PP1,p65,1
+PP1,Src,1
+leptin,resistin,1
+leptin,adiponectin,1
+MMP-9,p38,1
+MMP-9,MAPKAPK2,1
+MMP-9,MMP-2,1
+ROR1,decorin,1
+ROR1,resistin,2
+ROR1,DCN,1
+ROR1,Adenylyl cyclase-associated protein 1,1
+p38,EGFR,1
+p38,MAPKAPK2,1
+p38,resistin,1
+p38,Resistin,1
+p38,NF-kappaB,2
+p38,MMP-2,1
+decorin,resistin,2
+decorin,DCN,1
+decorin,Adenylyl cyclase-associated protein 1,1
+Phosphatidylinositol 3-kinase,NF-kappaB,1
+matrix metalloproteinases 2 and 9,Interleukin 17A,1
+matrix metalloproteinases 2 and 9,NF-kappaB,1
+Osteopontin,TLR4,1
+TLR4,EGFR,10
+TLR4,Epidermal growth factor receptor,1
+TLR4,CD284,1
+TLR4,MMP2,2
+TLR4,resistin,21
+TLR4,Resistin,5
+TLR4,Twist1,2
+TLR4,Src,5
+TLR4,NF-kappaB,5
+TLR4,Toll-like receptor 4,6
+TLR4,p85,1
+TLR4,epidermal growth factor receptor,2
+TLR4,Akt,1
+p65 subunit of NF-kappaB,p65,1
+p65 subunit of NF-kappaB,NF-kappaB,1
+Interleukin 17A,NF-kappaB,1
+twist,NF-kappaB,1
+EGFR,Epidermal growth factor receptor,4
+EGFR,MMP2,3
+EGFR,resistin,6
+EGFR,Resistin,4
+EGFR,Twist1,3
+EGFR,Her-2,1
+EGFR,Src,7
+EGFR,72-kDa type IV collagenase,1
+EGFR,KRAS,2
+EGFR,Matrix metalloproteinase 2,1
+EGFR,NF-kappaB,8
+EGFR,Toll-like receptor 4,4
+EGFR,p85,1
+EGFR,epidermal growth factor receptor,2
+EGFR,Akt,1
+Epidermal growth factor receptor,MMP2,1
+Epidermal growth factor receptor,Twist1,1
+Epidermal growth factor receptor,72-kDa type IV collagenase,1
+Epidermal growth factor receptor,Matrix metalloproteinase 2,1
+Epidermal growth factor receptor,Toll-like receptor 4,1
+MMP2,resistin,10
+MMP2,Resistin,3
+MMP2,Twist1,14
+MMP2,72-kDa type IV collagenase,1
+MMP2,Matrix metalloproteinase 2,1
+MMP2,NF-kappaB,1
+MMP2,Toll-like receptor 4,1
+MAPKAPK2,MMP-2,1
+RhoB,Akt,1
+interleukin-6 or tumor necrosis factor-alpha,interleukin-6 and tumor necrosis factor-alpha,1
+interleukin-6 or tumor necrosis factor-alpha,resistin,1
+interleukin-6 or tumor necrosis factor-alpha,Resistin,1
+interleukin-6 and tumor necrosis factor-alpha,resistin,1
+interleukin-6 and tumor necrosis factor-alpha,Resistin,1
+resistin,p65,1
+resistin,Resistin,3
+resistin,Twist1,7
+resistin,TNF-alpha,1
+resistin,Src,1
+resistin,insulin,1
+resistin,DCN,1
+resistin,NF-kappaB,5
+resistin,adiponectin,1
+resistin,Toll-like receptor 4,7
+resistin,Adenylyl cyclase-associated protein 1,2
+p65,Resistin,1
+p65,NF-kappaB,3
+Resistin,Twist1,2
+Resistin,PPARgamma,1
+Resistin,Src,2
+Resistin,insulin,1
+Resistin,NF-kappaB,2
+Resistin,MMP-2,1
+Resistin,p85,2
+Resistin,Akt,2
+c-Src,Twist1,1
+c-Src,p85,1
+c-Src,Akt,1
+Twist1,72-kDa type IV collagenase,1
+Twist1,Matrix metalloproteinase 2,1
+Twist1,NF-kappaB,1
+Twist1,Toll-like receptor 4,1
+Twist1,p85,1
+Twist1,Akt,1
+Her-2,NF-kappaB,1
+Src,NF-kappaB,2
+Src,p85,1
+Src,Akt,1
+72-kDa type IV collagenase,Matrix metalloproteinase 2,1
+72-kDa type IV collagenase,Toll-like receptor 4,1
+insulin,Toll-like receptor 4,1
+DCN,Adenylyl cyclase-associated protein 1,1
+Matrix metalloproteinase 2,Toll-like receptor 4,1
+NF-kappaB,Toll-like receptor 4,2
+NF-kappaB,epidermal growth factor receptor,1
+Toll-like receptor 4,epidermal growth factor receptor,3
+p85,Akt,5

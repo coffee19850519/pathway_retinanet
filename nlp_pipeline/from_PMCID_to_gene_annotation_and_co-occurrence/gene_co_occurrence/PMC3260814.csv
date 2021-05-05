@@ -1,0 +1,22 @@
+gene_name_1,gene_name_2,co_occurrence
+PIK3CA,Insulin-like Growth Factor 1 Receptor,1
+PIK3CA,hepatocyte growth factor receptor,1
+PS 1,PS 3,1
+anaplastic lymphoma kinase,EML4,1
+anaplastic lymphoma kinase,ALK,1
+anaplastic lymphoma kinase,echinoderm microtubule-associated protein like 4,1
+Epidermal Growth Factor Receptor,EGFR,1
+HER4,EGFR,1
+HER4,HER2,1
+EGFR,ALK,4
+EGFR,HER2,2
+EGFR,KRAS,12
+EGFR,epidermal growth factor receptor,4
+Insulin-like Growth Factor 1 Receptor,hepatocyte growth factor receptor,1
+EML4,ALK,2
+EML4,echinoderm microtubule-associated protein like 4,1
+ALK,KRAS,2
+ALK,echinoderm microtubule-associated protein like 4,1
+ALK,c-MET,1
+KRAS,epidermal growth factor receptor,1
+transforming growth factor alpha,epidermal growth factor receptor,1

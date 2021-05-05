@@ -1,0 +1,129 @@
+gene_name_1,gene_name_2,co_occurrence
+Egr1,RunX1,1
+Egr1,Nerve growth factor,1
+Egr1,runt related transcription factor 1,1
+Egr1,Early growth factor-1,1
+Egr1,NGF,2
+Egr1,tripartite motif protein 30,1
+Egr1,MLX interacting protein-like,1
+Egr1,TRIM30,1
+Egr1,Runx1,7
+Egr1,Trim30,6
+Egr1,Tbx1,4
+Egr1,TBX1,7
+Egr1,MLXIPL,1
+Egr1,T-box 1,1
+Egr1,Nr1d1,12
+Egr1,Mlxipl,7
+RunX1,runt related transcription factor 1,1
+RunX1,Early growth factor-1,1
+RunX1,tripartite motif protein 30,1
+RunX1,MLX interacting protein-like,1
+RunX1,TRIM30,2
+RunX1,Tbx1,1
+RunX1,MLXIPL,2
+RunX1,T-box 1,1
+RunX1,Nr1d1,1
+GAPDH,Runx1,1
+IL-2,interleukin-2,1
+OAZ1,IL1B,1
+OAZ1,M2BP,1
+OAZ1,MRP-14,1
+OAZ1,HA3,1
+OAZ1,DUSP1,1
+OAZ1,CD59,1
+OAZ1,Catalase,1
+OAZ1,IL8,1
+OAZ1,SAT,1
+Nerve growth factor,NGF,1
+runt related transcription factor 1,Early growth factor-1,1
+runt related transcription factor 1,tripartite motif protein 30,1
+runt related transcription factor 1,MLX interacting protein-like,1
+runt related transcription factor 1,TRIM30,1
+runt related transcription factor 1,Tbx1,1
+runt related transcription factor 1,MLXIPL,1
+runt related transcription factor 1,T-box 1,1
+runt related transcription factor 1,Nr1d1,1
+Early growth factor-1,tripartite motif protein 30,1
+Early growth factor-1,MLX interacting protein-like,1
+Early growth factor-1,TRIM30,1
+Early growth factor-1,Tbx1,1
+Early growth factor-1,MLXIPL,1
+Early growth factor-1,T-box 1,1
+Early growth factor-1,Nr1d1,1
+NGF,nerve growth factor,2
+NGF,Egr-1,9
+tripartite motif protein 30,MLX interacting protein-like,1
+tripartite motif protein 30,TRIM30,1
+tripartite motif protein 30,Tbx1,1
+tripartite motif protein 30,MLXIPL,1
+tripartite motif protein 30,T-box 1,1
+tripartite motif protein 30,Nr1d1,1
+MLX interacting protein-like,TRIM30,1
+MLX interacting protein-like,Tbx1,1
+MLX interacting protein-like,MLXIPL,1
+MLX interacting protein-like,T-box 1,1
+MLX interacting protein-like,Nr1d1,1
+IL1B,M2BP,1
+IL1B,MRP-14,1
+IL1B,HA3,1
+IL1B,DUSP1,1
+IL1B,CD59,1
+IL1B,Catalase,1
+IL1B,IL8,1
+IL1B,SAT,1
+interleukin-8,HuR,1
+interleukin-8,AUF1,1
+M2BP,MRP-14,1
+M2BP,HA3,1
+M2BP,DUSP1,1
+M2BP,CD59,1
+M2BP,Catalase,1
+M2BP,IL8,1
+M2BP,SAT,1
+MRP-14,HA3,1
+MRP-14,DUSP1,1
+MRP-14,CD59,1
+MRP-14,Catalase,1
+MRP-14,IL8,1
+MRP-14,SAT,1
+TRIM30,Tbx1,1
+TRIM30,MLXIPL,2
+TRIM30,T-box 1,1
+TRIM30,Nr1d1,1
+nerve growth factor,Egr-1,2
+Runx1,Trim30,8
+Runx1,Tbx1,2
+Runx1,TBX1,5
+Runx1,Nr1d1,7
+Runx1,Mlxipl,9
+Trim30,Tbx1,2
+Trim30,TBX1,4
+Trim30,Nr1d1,6
+Trim30,Mlxipl,8
+HA3,DUSP1,1
+HA3,CD59,1
+HA3,Catalase,1
+HA3,IL8,1
+HA3,SAT,1
+DUSP1,CD59,1
+DUSP1,Catalase,1
+DUSP1,IL8,1
+DUSP1,SAT,1
+Tbx1,MLXIPL,1
+Tbx1,T-box 1,1
+Tbx1,Nr1d1,4
+Tbx1,Mlxipl,2
+CD59,Catalase,1
+CD59,IL8,1
+CD59,SAT,1
+TBX1,Nr1d1,7
+TBX1,Mlxipl,5
+Catalase,IL8,1
+Catalase,SAT,1
+IL8,SAT,1
+MLXIPL,T-box 1,1
+MLXIPL,Nr1d1,1
+HuR,AUF1,1
+T-box 1,Nr1d1,1
+Nr1d1,Mlxipl,7

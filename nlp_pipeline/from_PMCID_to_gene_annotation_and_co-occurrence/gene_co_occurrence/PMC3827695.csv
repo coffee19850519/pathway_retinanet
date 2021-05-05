@@ -1,0 +1,63 @@
+gene_name_1,gene_name_2,co_occurrence
+PCDH7,A2BP1,1
+PCDH7,STK39,1
+ERCC2,MSH2,1
+ERCC2,MLH1,1
+ERCC2,XRCC3,1
+ERCC2,XPA,1
+ERCC2,XRCC1,1
+ERCC2,ERCC1,1
+ERCC2,OGG1,1
+ERbeta,ERalpha,1
+ERbeta,ESR2,1
+phosphatidylinositol 3 kinase,EGFR,1
+phosphatidylinositol 3 kinase,epidermal growth factor receptor,1
+PIK3CA,BRAF,1
+PIK3CA,HER2,1
+PIK3CA,ERBB2,1
+A2BP1,STK39,1
+MSH2,MLH1,1
+MSH2,XRCC3,1
+MSH2,XPA,1
+MSH2,XRCC1,1
+MSH2,ERCC1,1
+MSH2,OGG1,1
+VEGF,EGFR,1
+VEGF,HER2,1
+MLH1,XRCC3,1
+MLH1,XPA,1
+MLH1,XRCC1,1
+MLH1,ERCC1,1
+MLH1,OGG1,1
+XRCC3,XPA,1
+XRCC3,XRCC1,1
+XRCC3,ERCC1,1
+XRCC3,OGG1,1
+Epidermal Growth Factor Receptor,EGFR,1
+HER4,EGFR,1
+HER4,HER2,1
+HER4,HER3,1
+HER4,epidermal growth factor receptor,1
+GSTM1,CYP1A1,1
+BRAF,HER2,1
+BRAF,ERBB2,1
+XPA,XRCC1,1
+XPA,ERCC1,1
+XPA,OGG1,1
+EGFR,Epidermal growth factor receptor,1
+EGFR,transforming growth factor-alpha,1
+EGFR,HER2,2
+EGFR,TGF-alpha,1
+EGFR,HER3,1
+EGFR,KRAS,4
+EGFR,epidermal growth factor receptor,2
+transforming growth factor-alpha,TGF-alpha,1
+transforming growth factor-alpha,KRAS,1
+XRCC1,ERCC1,1
+XRCC1,OGG1,1
+HER2,HER3,1
+HER2,ERBB2,1
+HER2,epidermal growth factor receptor,2
+TGF-alpha,KRAS,1
+ERCC1,OGG1,1
+HER3,epidermal growth factor receptor,1

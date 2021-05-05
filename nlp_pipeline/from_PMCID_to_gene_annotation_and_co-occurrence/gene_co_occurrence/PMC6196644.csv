@@ -1,0 +1,40 @@
+gene_name_1,gene_name_2,co_occurrence
+vimentin,GAPDH,2
+vimentin,E-cadherin,8
+STAT3,BCL-xL,1
+STAT3,MCL-1,1
+STAT3,Myeloid cell leukemia 1,1
+STAT3,BCL-2,1
+STAT3,signal transducer and activator of transcription 3,1
+caspase-9,caspase-3,1
+PTEN,murine double minute 2,1
+PTEN,Elk1,1
+PTEN,cellular tumor antigen p53,1
+PTEN,TP53,1
+PTEN,PRL-3,1
+PTEN,p53,10
+PTEN,SIX1,1
+PTEN,MDM2,1
+PTEN,PDK1,1
+PTEN,AKT,5
+GAPDH,E-cadherin,2
+GAPDH,Lamin B1,1
+murine double minute 2,p53,1
+murine double minute 2,MDM2,1
+BCL-xL,MCL-1,1
+BCL-xL,Myeloid cell leukemia 1,1
+BCL-xL,BCL-2,1
+BCL-xL,Bax,3
+BCL-xL,signal transducer and activator of transcription 3,1
+BCL-xL,apoptosis regulator BAX,1
+MCL-1,Myeloid cell leukemia 1,1
+MCL-1,BCL-2,1
+MCL-1,signal transducer and activator of transcription 3,1
+cellular tumor antigen p53,p53,2
+Myeloid cell leukemia 1,BCL-2,1
+Myeloid cell leukemia 1,signal transducer and activator of transcription 3,1
+BCL-2,signal transducer and activator of transcription 3,1
+Bax,apoptosis regulator BAX,1
+p53,MDM2,1
+p53,AKT,3
+PDK1,AKT,1

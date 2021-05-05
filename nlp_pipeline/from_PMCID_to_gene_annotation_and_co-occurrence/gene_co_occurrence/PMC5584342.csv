@@ -1,0 +1,641 @@
+gene_name_1,gene_name_2,co_occurrence
+miR-214,Nanog,1
+miR-214,SOX2,1
+miR-214,beta-catenin,1
+miR-214,OCT4,1
+VEGF-A,miR27b,1
+VEGF-A,E-cadherin,1
+VEGF-A,PPAR-gamma,2
+VEGF-A,WNT5a,1
+FZD2,EpCAM,1
+FZD2,N-cadherin,1
+FZD2,E-cadherin,1
+FZD2,vimentin,1
+FZD2,ROR2,1
+FZD2,WNT5a,2
+FZD2,fibronectin,1
+SUZ12,MYC,1
+SUZ12,BMI1,1
+SUZ12,miR-487b,1
+SUZ12,WNT5a,1
+SUZ12,KRAS,1
+EpCAM,CD24,1
+EpCAM,cyclin D1,1
+EpCAM,E-cadherin,1
+EpCAM,CD44,1
+EpCAM,Leucine-Rich Repeat-containing G-protein coupled receptor 5,1
+EpCAM,beta-catenin,1
+EpCAM,OCT4,1
+EpCAM,WNT5a,1
+EpCAM,octamer-binding transcription factor 4,1
+miR-191,miR-34a,1
+miR-191,miR-374a,1
+miR-191,miR-17-92,1
+miR-191,miR-31,1
+miR-191,GSK3beta,1
+miR-191,miR-544a,1
+miR-191,miR-708,1
+miR-191,miR-27b,1
+miR-191,beta-catenin,1
+miR-191,miR-487b,1
+miR-191,WNT5a,1
+miR-191,miR-21,1
+miR-191,miR-376c,1
+miR-191,miR-410,1
+miR-34a,miR-374a,1
+miR-34a,miR-17-92,1
+miR-34a,miR-31,1
+miR-34a,GSK3beta,1
+miR-34a,miR-544a,1
+miR-34a,miR-708,1
+miR-34a,miR-27b,1
+miR-34a,beta-catenin,1
+miR-34a,miR-487b,1
+miR-34a,WNT5a,1
+miR-34a,miR-21,1
+miR-34a,miR-376c,1
+miR-34a,miR-410,1
+MMP-9,uPAR,1
+MMP-9,WNT3a,2
+MMP-9,VEGF,1
+sFRPs 1-5,NKD1,1
+sFRPs 1-5,WIF-1,1
+sFRPs 1-5,Dapper,1
+sFRPs 1-5,DKK-3,1
+sFRPs 1-5,AXIN,1
+sFRPs 1-5,miR-487b,1
+sFRPs 1-5,APC,1
+sFRPs 1-5,DKK-1,1
+Nanog,SOX2,1
+Nanog,beta-catenin,1
+Nanog,OCT4,1
+RhoA,WNT11,1
+RhoA,RAC1,1
+RhoA,Ras-related C3 botulinum toxin substrate 1,1
+CD24,cyclin D1,1
+CD24,CD44,1
+CD24,Leucine-Rich Repeat-containing G-protein coupled receptor 5,1
+CD24,beta-catenin,1
+CD24,OCT4,1
+CD24,octamer-binding transcription factor 4,1
+hepatocyte nuclear factor 4 alpha,TGF-beta,1
+hepatocyte nuclear factor 4 alpha,RXR,1
+hepatocyte nuclear factor 4 alpha,transforming growth factor beta,1
+hepatocyte nuclear factor 4 alpha,HNF4A,1
+hepatocyte nuclear factor 4 alpha,retinoid X receptor,1
+Ror2,Fzd2,1
+Ror2,WNT5A,1
+WNT11,TCF/LEF,1
+WNT11,WNT4,1
+WNT11,DKK1,1
+WNT11,DVL1,1
+WNT11,SCC,1
+WNT11,WNT1,1
+WNT11,DVL3,1
+WNT11,TCF4,1
+WNT11,RAC1,1
+WNT11,WNT16,1
+WNT11,WNT7B,1
+WNT11,CTNNB1,1
+WNT11,beta-catenin,1
+WNT11,LRP5/6,1
+WNT11,WNT7a,1
+WNT11,DKK3,1
+WNT11,WNT5A,1
+WNT11,SFRP1,1
+WNT11,WNT2,1
+WNT11,WNT5a,1
+WNT11,GSK-3-beta,1
+WNT11,Ras-related C3 botulinum toxin substrate 1,1
+WNT11,WNT3,1
+WNT11,WIF1,1
+WNT11,WNT7A,1
+WNT11,DVL2,1
+cAMP response element-binding protein,p300,1
+cAMP response element-binding protein,CREB,1
+cAMP response element-binding protein,CBP,1
+cAMP response element-binding protein,beta-catenin,1
+cAMP response element-binding protein,T-cell factor,1
+cAMP response element-binding protein,TCF,1
+TGF-beta,RXR,1
+TGF-beta,transforming growth factor beta,1
+TGF-beta,HNF4A,1
+TGF-beta,retinoid X receptor,1
+NLK,Siah2,1
+NLK,PKC-alpha,1
+NLK,Nemo-like Kinase,1
+Siah2,PKC-alpha,1
+Siah2,Nemo-like Kinase,1
+GSK3beta-ser9,EGFR,1
+IGF-I,WNT5a,1
+IGF-I,insulin-like growth factor-I,1
+NKD1,WIF-1,1
+NKD1,Dapper,1
+NKD1,DKK-3,1
+NKD1,AXIN,1
+NKD1,miR-487b,1
+NKD1,APC,1
+NKD1,DKK-1,1
+miR-374a,miR-17-92,1
+miR-374a,miR-31,1
+miR-374a,GSK3beta,1
+miR-374a,miR-544a,1
+miR-374a,miR-708,1
+miR-374a,miR-27b,1
+miR-374a,beta-catenin,1
+miR-374a,miR-487b,1
+miR-374a,WNT5a,1
+miR-374a,miR-21,1
+miR-374a,miR-376c,1
+miR-374a,miR-410,1
+TCF/LEF,ABCB1,1
+TCF/LEF,DKK1,1
+TCF/LEF,DVL1,1
+TCF/LEF,SCC,1
+TCF/LEF,WNT1,1
+TCF/LEF,DVL3,1
+TCF/LEF,TCF4,1
+TCF/LEF,WNT7B,1
+TCF/LEF,CTNNB1,1
+TCF/LEF,beta-catenin,2
+TCF/LEF,LRP5/6,1
+TCF/LEF,DKK3,1
+TCF/LEF,WNT5A,1
+TCF/LEF,SFRP1,1
+TCF/LEF,WNT2,1
+TCF/LEF,GSK-3-beta,1
+TCF/LEF,WNT3,1
+TCF/LEF,WIF1,1
+TCF/LEF,WNT7A,1
+TCF/LEF,DVL2,1
+HLA-B-associated transcript 3,Bat3,1
+HLA-B-associated transcript 3,p53,1
+miR-17-92,miR-31,1
+miR-17-92,GSK3beta,1
+miR-17-92,miR-544a,1
+miR-17-92,miR-708,1
+miR-17-92,miR-27b,1
+miR-17-92,beta-catenin,1
+miR-17-92,miR-487b,1
+miR-17-92,WNT5a,1
+miR-17-92,miR-21,1
+miR-17-92,miR-376c,1
+miR-17-92,miR-410,1
+ABC,ABCB1,1
+ABC,ABCG2,2
+ABC,BCRP1,1
+ABC,Pgp,1
+ABC,MDR1,1
+c-myc,cyclin D1,3
+c-myc,Klotho,1
+c-myc,SOX2,1
+c-myc,beta-catenin,2
+c-myc,Notch1,1
+c-myc,APC,1
+CHI3L3,chitinase-3 like 3,1
+CHI3L3,MMP1,1
+CHI3L3,S100A8,1
+CHI3L3,RAGE,1
+ABCB1,ABCG2,3
+ABCB1,SCLC,1
+ABCB1,CBT-1,1
+ABCB1,Pgp,1
+ABCB1,beta-catenin,1
+ABCB1,MDR1,2
+Axin,beta-Catenin,1
+Dickkopf-3,DKK-3,1
+LEF1,TCF4,1
+LEF1,beta-catenin,1
+miR27b,PPAR-gamma,1
+miR27b,WNT5a,1
+WNT4,WNT16,1
+WNT4,WNT7a,1
+WNT4,WNT5a,1
+glycogen synthase kinase 3-beta,beta-catenin,1
+glycogen synthase kinase 3-beta,AXIN,1
+glycogen synthase kinase 3-beta,APC,1
+glycogen synthase kinase 3-beta,GSK-3-beta,1
+WNT7b,WNT3a,1
+WNT7b,WNT5a,2
+LRP,lipoprotein receptor-related protein,1
+LRP,AXIN,1
+FGF,SHH,1
+FGF,sonic hedgehog,1
+FGF,WNT5a,1
+WIF-1,Dapper,1
+WIF-1,DKK-3,1
+WIF-1,AXIN,1
+WIF-1,miR-487b,1
+WIF-1,APC,1
+WIF-1,DKK-1,1
+DKK1,DVL1,1
+DKK1,SCC,1
+DKK1,WNT1,1
+DKK1,DVL3,1
+DKK1,TCF4,1
+DKK1,miR-31,1
+DKK1,WNT7B,1
+DKK1,CTNNB1,1
+DKK1,beta-catenin,2
+DKK1,LRP5/6,1
+DKK1,DKK3,1
+DKK1,WNT5A,1
+DKK1,SFRP1,1
+DKK1,WNT2,1
+DKK1,GSK-3-beta,1
+DKK1,WNT3,1
+DKK1,WIF1,1
+DKK1,WNT7A,1
+DKK1,DVL2,1
+flotillin-1,flotillin-2,1
+flotillin-1,stomatin,1
+flotillin-1,caveolin-1,1
+DVL1,SCC,1
+DVL1,WNT1,1
+DVL1,DVL3,1
+DVL1,TCF4,1
+DVL1,WNT7B,1
+DVL1,CTNNB1,1
+DVL1,beta-catenin,1
+DVL1,LRP5/6,1
+DVL1,DKK3,1
+DVL1,WNT5A,1
+DVL1,SFRP1,1
+DVL1,WNT2,1
+DVL1,GSK-3-beta,1
+DVL1,WNT3,1
+DVL1,WIF1,1
+DVL1,WNT7A,1
+DVL1,DVL2,1
+Trp53,Rb1,1
+LRP6,G3BP2,2
+LRP6,beta-catenin,1
+LRP6,WNT3a,1
+ABCG2,SCLC,1
+ABCG2,BCRP1,1
+ABCG2,Pgp,1
+ABCG2,MDR1,1
+RXR,transforming growth factor beta,1
+RXR,HNF4A,1
+RXR,retinoid X receptor,1
+DAAM-1,FZD4,1
+SCC,WNT1,1
+SCC,DVL3,1
+SCC,TCF4,1
+SCC,LCC,1
+SCC,WNT7B,1
+SCC,CTNNB1,1
+SCC,beta-catenin,1
+SCC,LRP5/6,1
+SCC,DKK3,1
+SCC,WNT5A,1
+SCC,SFRP1,1
+SCC,WNT2,1
+SCC,GSK-3-beta,1
+SCC,WNT3,1
+SCC,WIF1,1
+SCC,WNT7A,1
+SCC,DVL2,1
+WNT1,DVL3,1
+WNT1,TCF4,1
+WNT1,WNT7B,1
+WNT1,CTNNB1,1
+WNT1,beta-catenin,1
+WNT1,LRP5/6,1
+WNT1,DKK3,1
+WNT1,WNT5A,1
+WNT1,SFRP1,1
+WNT1,WNT2,2
+WNT1,GSK-3-beta,1
+WNT1,WNT3,1
+WNT1,WIF1,1
+WNT1,WNT7A,1
+WNT1,DVL2,1
+G3BP2,beta-catenin,1
+G3BP2,WNT3a,1
+N-cadherin,vimentin,1
+N-cadherin,beta-catenin,1
+N-cadherin,WNT5a,1
+N-cadherin,fibronectin,1
+DVL3,TCF4,1
+DVL3,WNT7B,1
+DVL3,CTNNB1,1
+DVL3,beta-catenin,1
+DVL3,LRP5/6,1
+DVL3,DKK3,1
+DVL3,WNT5A,1
+DVL3,SFRP1,1
+DVL3,WNT2,1
+DVL3,GSK-3-beta,1
+DVL3,WNT3,1
+DVL3,WIF1,1
+DVL3,WNT7A,1
+DVL3,DVL2,1
+Egr-1,RAGE,1
+TCF4,WNT7B,1
+TCF4,CTNNB1,1
+TCF4,beta-catenin,2
+TCF4,LRP5/6,1
+TCF4,DKK3,1
+TCF4,WNT5A,1
+TCF4,SFRP1,1
+TCF4,WNT2,1
+TCF4,GSK-3-beta,1
+TCF4,WNT3,1
+TCF4,WIF1,1
+TCF4,WNT7A,1
+TCF4,DVL2,1
+nicotinic acetylcholine receptor,nAChR,1
+miR-31,GSK3beta,1
+miR-31,miR-544a,1
+miR-31,miR-708,1
+miR-31,miR-27b,1
+miR-31,beta-catenin,1
+miR-31,miR-487b,1
+miR-31,WNT5a,1
+miR-31,miR-21,1
+miR-31,miR-376c,1
+miR-31,miR-410,1
+calmodulin,protein kinase C,1
+calmodulin,PKC,1
+calmodulin,CaMKII,1
+MYC,BMI1,1
+MYC,miR-487b,1
+MYC,WNT5a,1
+MYC,KRAS,1
+ROR1,RYK,1
+ROR1,beta-catenin,1
+ROR1,LRP5/6,1
+ROR1,ROR2,1
+miR-499,miR-148b,1
+SOX9,SOX2,1
+SOX9,GATA6,1
+SOX9,KRAS,1
+JNK,ROCK,1
+JNK,Rho-associated coiled-coil-containing protein kinase 1,1
+JNK,Jun N-terminal kinase,1
+cyclin D1,CD44,1
+cyclin D1,Klotho,1
+cyclin D1,Leucine-Rich Repeat-containing G-protein coupled receptor 5,1
+cyclin D1,beta-catenin,3
+cyclin D1,OCT4,1
+cyclin D1,APC,1
+cyclin D1,octamer-binding transcription factor 4,1
+Dapper,DKK-3,1
+Dapper,AXIN,1
+Dapper,miR-487b,1
+Dapper,APC,1
+Dapper,DKK-1,1
+Shh,Fgf10,1
+Shh,WNT5a,1
+lipoprotein receptor-related protein,AXIN,1
+SCLC,p53,1
+SCLC,Rb1,1
+RAC1,Ras-related C3 botulinum toxin substrate 1,1
+E-cadherin,WNT5a,1
+CD44,Leucine-Rich Repeat-containing G-protein coupled receptor 5,1
+CD44,beta-catenin,1
+CD44,OCT4,1
+CD44,octamer-binding transcription factor 4,1
+p300,CREB,1
+p300,CBP,1
+p300,beta-catenin,1
+p300,T-cell factor,1
+p300,TCF,1
+Vascular Endothelial Growth Factor,VEGF,1
+EGFR,beta-catenin,1
+NaPi-IIb,SLC34A2,1
+NaPi-IIb,miR-410,1
+CREB,CBP,1
+CREB,beta-catenin,1
+CREB,T-cell factor,1
+CREB,TCF,1
+Klotho,beta-catenin,1
+liver receptor homolog-1,LRH-1,1
+liver receptor homolog-1,miR-376c,1
+transforming growth factor beta,HNF4A,1
+transforming growth factor beta,retinoid X receptor,1
+WNT16,WNT7a,1
+WNT16,WNT5a,1
+GSK3beta,miR-544a,2
+GSK3beta,miR-708,1
+GSK3beta,miR-27b,1
+GSK3beta,beta-catenin,1
+GSK3beta,miR-487b,1
+GSK3beta,WNT5a,1
+GSK3beta,miR-21,1
+GSK3beta,miR-376c,1
+GSK3beta,miR-410,1
+flotillin-2,stomatin,1
+flotillin-2,caveolin-1,1
+miR-544a,miR-708,1
+miR-544a,miR-27b,1
+miR-544a,beta-catenin,1
+miR-544a,miR-487b,1
+miR-544a,WNT5a,1
+miR-544a,miR-21,1
+miR-544a,miR-376c,1
+miR-544a,miR-410,1
+BMI1,miR-487b,1
+BMI1,WNT5a,1
+BMI1,KRAS,1
+Nemo-like kinase,vascular endothelial growth factor,1
+Nemo-like kinase,VEGF,1
+PKC-alpha,Nemo-like Kinase,1
+DKK-3,AXIN,1
+DKK-3,miR-487b,1
+DKK-3,APC,1
+DKK-3,DKK-1,1
+LRH-1,miR-376c,1
+BCRP,ERCC1,1
+vimentin,WNT5a,1
+vimentin,fibronectin,1
+protein kinase C,PKC,1
+protein kinase C,CaMKII,1
+ROCK,Rho-associated coiled-coil-containing protein kinase 1,1
+ROCK,Jun N-terminal kinase,1
+Porcupine,PORC,1
+chitinase-3 like 3,MMP1,1
+chitinase-3 like 3,S100A8,1
+chitinase-3 like 3,RAGE,1
+CBT-1,P-glycoprotein,1
+CBT-1,MDR1,1
+miR-708,miR-27b,1
+miR-708,beta-catenin,1
+miR-708,miR-487b,1
+miR-708,WNT5a,1
+miR-708,miR-21,1
+miR-708,miR-376c,1
+miR-708,miR-410,1
+vascular endothelial growth factor,VEGF,1
+RYK,beta-catenin,2
+RYK,LRP5/6,1
+RYK,ROR2,2
+Bat3,p53,1
+miR-27b,beta-catenin,1
+miR-27b,miR-487b,1
+miR-27b,WNT5a,1
+miR-27b,miR-21,1
+miR-27b,miR-376c,1
+miR-27b,miR-410,1
+Tcf/Lef,beta-catenin,1
+SOX2,GATA6,1
+SOX2,OCT4,1
+SOX2,Notch1,1
+SOX2,Sox2,1
+SOX2,KRAS,1
+WNT-5a,beta-catenin,1
+WNT-5a,WNT-4,1
+PPAR-gamma,WNT5a,1
+Pgp,MDR1,1
+WNT7B,CTNNB1,1
+WNT7B,beta-catenin,1
+WNT7B,LRP5/6,1
+WNT7B,DKK3,1
+WNT7B,WNT5A,1
+WNT7B,SFRP1,1
+WNT7B,WNT2,1
+WNT7B,GSK-3-beta,1
+WNT7B,WNT3,1
+WNT7B,WIF1,1
+WNT7B,WNT7A,1
+WNT7B,DVL2,1
+secreted frizzled related protein 1,SFRP1,1
+Leucine-Rich Repeat-containing G-protein coupled receptor 5,beta-catenin,1
+Leucine-Rich Repeat-containing G-protein coupled receptor 5,OCT4,1
+Leucine-Rich Repeat-containing G-protein coupled receptor 5,octamer-binding transcription factor 4,1
+CBP,beta-catenin,1
+CBP,T-cell factor,1
+CBP,TCF,1
+Fgf10,WNT5a,1
+CTNNB1,beta-catenin,2
+CTNNB1,LRP5/6,1
+CTNNB1,DKK3,1
+CTNNB1,WNT5A,1
+CTNNB1,SFRP1,1
+CTNNB1,WNT2,1
+CTNNB1,GSK-3-beta,1
+CTNNB1,WNT3,1
+CTNNB1,WIF1,1
+CTNNB1,WNT7A,1
+CTNNB1,DVL2,1
+SLC34A2,miR-410,1
+beta-catenin,LRP5/6,2
+beta-catenin,GPC5,1
+beta-catenin,DKK3,1
+beta-catenin,OCT4,1
+beta-catenin,WNT3a,1
+beta-catenin,WNT5A,1
+beta-catenin,AXIN,2
+beta-catenin,T-cell factor,1
+beta-catenin,ROR2,2
+beta-catenin,DACT2,1
+beta-catenin,SFRP1,1
+beta-catenin,WNT2,1
+beta-catenin,TCF,1
+beta-catenin,miR-487b,1
+beta-catenin,APC,7
+beta-catenin,WNT5a,1
+beta-catenin,GSK-3-beta,3
+beta-catenin,octamer-binding transcription factor 4,1
+beta-catenin,miR-21,1
+beta-catenin,WNT3,1
+beta-catenin,miR-376c,1
+beta-catenin,miR-410,1
+beta-catenin,WIF1,1
+beta-catenin,WNT7A,1
+beta-catenin,DVL2,1
+LRP5/6,DKK3,1
+LRP5/6,WNT5A,1
+LRP5/6,ROR2,1
+LRP5/6,SFRP1,1
+LRP5/6,WNT2,1
+LRP5/6,GSK-3-beta,1
+LRP5/6,WNT3,1
+LRP5/6,WIF1,1
+LRP5/6,WNT7A,1
+LRP5/6,DVL2,1
+WNT7a,WNT5a,1
+GPC5,glypican,1
+GPC5,DACT2,1
+GPC5,hedgehog,1
+GPC5,glypican-5,1
+BAT3,p53,1
+DKK3,WNT5A,1
+DKK3,SFRP1,1
+DKK3,WNT2,1
+DKK3,GSK-3-beta,1
+DKK3,WNT3,1
+DKK3,WIF1,1
+DKK3,WNT7A,1
+DKK3,DVL2,1
+GATA6,KRAS,1
+glypican,hedgehog,1
+OCT4,octamer-binding transcription factor 4,1
+p53,Rb1,1
+HNF4A,retinoid X receptor,1
+Receptor for Advanced Glycation Endproducts,RAGE,1
+WNT3a,WNT5a,1
+WNT5A,SFRP1,1
+WNT5A,WNT2,1
+WNT5A,GSK-3-beta,1
+WNT5A,WNT3,1
+WNT5A,WIF1,1
+WNT5A,WNT7A,1
+WNT5A,DVL2,1
+SHH,sonic hedgehog,1
+SHH,WNT5a,1
+AXIN,miR-487b,1
+AXIN,APC,3
+AXIN,GSK-3-beta,1
+AXIN,DKK-1,1
+Rho-associated coiled-coil-containing protein kinase 1,Jun N-terminal kinase,1
+MMP1,S100A8,1
+MMP1,WNT5a,1
+MMP1,RAGE,1
+T-cell factor,TCF,1
+S100A8,RAGE,1
+sonic hedgehog,WNT5a,1
+SFRP1,WNT2,1
+SFRP1,GSK-3-beta,1
+SFRP1,WNT3,1
+SFRP1,WIF1,1
+SFRP1,WNT7A,1
+SFRP1,DVL2,1
+WNT2,GSK-3-beta,1
+WNT2,WNT3,1
+WNT2,WIF1,1
+WNT2,WNT7A,1
+WNT2,DVL2,1
+telomerase reverse transcriptase,TERT,1
+Insulin-like growth factor-I,WNT5a,1
+miR-487b,APC,1
+miR-487b,WNT5a,2
+miR-487b,miR-21,1
+miR-487b,miR-376c,1
+miR-487b,miR-410,1
+miR-487b,KRAS,1
+miR-487b,DKK-1,1
+APC,GSK-3-beta,1
+APC,DKK-1,1
+WNT5a,miR-21,1
+WNT5a,miR-376c,1
+WNT5a,miR-410,1
+WNT5a,KRAS,1
+WNT5a,insulin-like growth factor-I,1
+WNT5a,fibronectin,1
+GSK-3-beta,WNT3,1
+GSK-3-beta,WIF1,1
+GSK-3-beta,WNT7A,1
+GSK-3-beta,DVL2,1
+PKC,CaMKII,1
+miR-21,miR-376c,1
+miR-21,miR-410,1
+stomatin,caveolin-1,1
+WNT3,WIF1,1
+WNT3,WNT7A,1
+WNT3,DVL2,1
+miR-376c,miR-410,1
+WIF1,WNT7A,1
+WIF1,DVL2,1
+WNT7A,DVL2,1

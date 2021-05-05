@@ -1,0 +1,370 @@
+gene_name_1,gene_name_2,co_occurrence
+4E-binding protein 1,4E-BP1,1
+4E-binding protein 1,mTOR,1
+Cyclin,MEK,1
+Cyclin,CDK4,1
+Cyclin,mTOR,1
+Cyclin,cyclin,1
+Cyclin,CDK2,1
+CDK activating kinase,MEK,1
+CDK activating kinase,CAK,1
+CDK activating kinase,CDK2,1
+MEK,NRAS,2
+MEK,S6K1,1
+MEK,S6 and 4E-BP1,1
+MEK,Annexin V,1
+MEK,CDK4/6,11
+MEK,cyclin D1,1
+MEK,cyclin D3,1
+MEK,CDK4,4
+MEK,MAPK,1
+MEK,bFGF,1
+MEK,ERK,5
+MEK,p27Kip1,10
+MEK,CDK6,7
+MEK,CDK7,4
+MEK,CAK,3
+MEK,FGFR1,2
+MEK,PIK3CA,1
+MEK,mTOR,5
+MEK,ERK1/2,7
+MEK,MEK1/2,1
+MEK,KRAS,2
+MEK,CDKs,1
+MEK,cyclin,6
+MEK,AKT,1
+MEK,CDK2,8
+KGF,FGF-7,1
+KGF,PDGFR,1
+KGF,bFGF,1
+KGF,FGF6,1
+VEGFA,PDGFR,1
+TSC2,CDK1,1
+TSC2,N-cadherin,1
+TSC2,CDK4/6,1
+TSC2,E-cadherin,1
+TSC2,CDK4,1
+TSC2,ERK,1
+TSC2,p27Kip1,1
+TSC2,vimentin,1
+TSC2,CDK6,3
+TSC2,Cyclin D3,1
+TSC2,CDK7,1
+TSC2,tuberous sclerosis 2,1
+TSC2,4E-BP1,2
+TSC2,mTOR,6
+TSC2,C-Raf,1
+TSC2,Cyclin D1,1
+TSC2,ERK1/2,4
+TSC2,MEK1/2,1
+TSC2,cyclin,1
+TSC2,AKT,2
+TSC2,RSK1/2,1
+TSC2,CDK2,1
+NRAS,S6K1,1
+NRAS,CDK4/6,1
+NRAS,CDK4,1
+NRAS,PIK3CA,1
+S6K1,CDK4/6,1
+S6K1,PIK3CA,1
+RSK1,c-RAF,1
+RSK1,ERK1/2,2
+RSK1,MEK1/2,1
+S6 and 4E-BP1,cyclin D1,1
+S6 and 4E-BP1,cyclin D3,1
+S6 and 4E-BP1,CDK6,1
+S6 and 4E-BP1,ERK1/2,1
+PDGFR,bFGF,1
+PDGFR,FGF6,1
+cyclins D1 and D3,bFGF,1
+cyclins D1 and D3,CDK6,1
+cyclins D1 and D3,FGFR1,1
+cyclins D1 and D3,cyclin,1
+pERK,cyclins D3 and E,1
+pERK,CDK6,1
+pERK,FGFR1,1
+pERK,mTOR,1
+CDK1,N-cadherin,1
+CDK1,cyclin D1,1
+CDK1,cyclin D3,1
+CDK1,E-cadherin,1
+CDK1,CDK4,2
+CDK1,p27Kip1,1
+CDK1,vimentin,1
+CDK1,CDK6,2
+CDK1,Cyclin D3,1
+CDK1,CDK7,1
+CDK1,4E-BP1,1
+CDK1,C-Raf,1
+CDK1,Cyclin D1,1
+CDK1,ERK1/2,1
+CDK1,MEK1/2,1
+CDK1,cyclin,2
+CDK1,AKT,1
+CDK1,RSK1/2,1
+CDK1,CDK2,2
+Annexin V,EGFR,1
+cyclins D3 and E,CDK6,1
+cyclins D3 and E,FGFR1,1
+cyclins D3 and E,mTOR,1
+p107/E2F,fibroblast growth factor 2,1
+caspase-3,CDK4/6,1
+caspase-3,SMAC,1
+caspase-3,FOXM1,1
+N-cadherin,E-cadherin,1
+N-cadherin,CDK4,1
+N-cadherin,p27Kip1,1
+N-cadherin,vimentin,1
+N-cadherin,CDK6,1
+N-cadherin,Cyclin D3,1
+N-cadherin,CDK7,1
+N-cadherin,4E-BP1,1
+N-cadherin,C-Raf,1
+N-cadherin,Cyclin D1,1
+N-cadherin,ERK1/2,1
+N-cadherin,MEK1/2,1
+N-cadherin,cyclin,1
+N-cadherin,AKT,1
+N-cadherin,RSK1/2,1
+N-cadherin,CDK2,1
+CDK4/6,cyclin-dependent kinases 4 and 6,1
+CDK4/6,ERK,3
+CDK4/6,p27Kip1,2
+CDK4/6,SMAC,1
+CDK4/6,CDK6,3
+CDK4/6,CDK7,1
+CDK4/6,pS6,1
+CDK4/6,MDM2,2
+CDK4/6,retinoblastoma,1
+CDK4/6,FGFR1,1
+CDK4/6,PIK3CA,1
+CDK4/6,mTOR,2
+CDK4/6,ATRX,1
+CDK4/6,FOXM1,1
+CDK4/6,ERK1/2,1
+CDK4/6,MEK1/2,1
+CDK4/6,KRAS,2
+CDK4/6,cyclin,2
+CDK4/6,CDK2,1
+Mix,bFGF,1
+Mix,p27Kip1,1
+cyclin D1,cyclin D3,10
+cyclin D1,CDK4,2
+cyclin D1,bFGF,4
+cyclin D1,ERK,1
+cyclin D1,p27Kip1,4
+cyclin D1,CDK6,12
+cyclin D1,FGFR1,2
+cyclin D1,mTOR,2
+cyclin D1,fibroblast growth factor receptor 1,1
+cyclin D1,ERK1/2,3
+cyclin D1,cyclin,6
+cyclin D1,AKT,3
+cyclin D1,CDK2,2
+cyclin D3,CDK4,2
+cyclin D3,bFGF,2
+cyclin D3,ERK,1
+cyclin D3,p27Kip1,2
+cyclin D3,CDK6,9
+cyclin D3,FGFR1,1
+cyclin D3,mTOR,1
+cyclin D3,ERK1/2,2
+cyclin D3,cyclin,6
+cyclin D3,AKT,1
+cyclin D3,CDK2,2
+E-cadherin,CDK4,1
+E-cadherin,p27Kip1,1
+E-cadherin,vimentin,1
+E-cadherin,CDK6,1
+E-cadherin,Cyclin D3,1
+E-cadherin,CDK7,1
+E-cadherin,4E-BP1,1
+E-cadherin,C-Raf,1
+E-cadherin,Cyclin D1,1
+E-cadherin,ERK1/2,1
+E-cadherin,MEK1/2,1
+E-cadherin,cyclin,1
+E-cadherin,AKT,1
+E-cadherin,RSK1/2,1
+E-cadherin,CDK2,1
+CDK4,p27Kip1,4
+CDK4,vimentin,1
+CDK4,CDK6,12
+CDK4,Cyclin D3,2
+CDK4,CDK7,1
+CDK4,MDM2,1
+CDK4,4E-BP1,1
+CDK4,mTOR,1
+CDK4,ATRX,1
+CDK4,IGF1R,1
+CDK4,C-Raf,1
+CDK4,Cyclin D1,2
+CDK4,ERK1/2,1
+CDK4,MEK1/2,1
+CDK4,CDKs,1
+CDK4,cyclin,3
+CDK4,AKT,1
+CDK4,RSK1/2,1
+CDK4,CDK2,11
+bFGF,ERK,1
+bFGF,FGF6,1
+bFGF,p27Kip1,4
+bFGF,CDK6,6
+bFGF,FGF-2,1
+bFGF,FGFR1,7
+bFGF,mTOR,3
+bFGF,ERK1/2,5
+bFGF,cyclin,2
+bFGF,FGF-4,1
+bFGF,AKT,1
+Cdk4,K-Ras,1
+CDK 4/6,RB1,1
+EGFR,CIP2A,1
+EGFR,EphA1/2,1
+EGFR,FGFR1,1
+EGFR,fibroblast growth factor receptor 1,1
+EGFR,ERK1/2,1
+EGFR,epidermal growth factor receptor,1
+cyclin-dependent kinases 4 and 6,retinoblastoma,1
+ERK,CDK6,5
+ERK,FGFR1,3
+ERK,mTOR,6
+ERK,ERK1/2,2
+ERK,cyclin,3
+ERK,AKT,1
+c-RAF,ERK1/2,1
+c-RAF,MEK1/2,1
+p27Kip1,vimentin,1
+p27Kip1,CDK6,9
+p27Kip1,Cyclin D3,1
+p27Kip1,CDK7,6
+p27Kip1,CAK,2
+p27Kip1,4E-BP1,1
+p27Kip1,mTOR,2
+p27Kip1,C-Raf,1
+p27Kip1,Cyclin D1,1
+p27Kip1,ERK1/2,2
+p27Kip1,MEK1/2,1
+p27Kip1,CDKs,1
+p27Kip1,cyclin,8
+p27Kip1,AKT,1
+p27Kip1,RSK1/2,1
+p27Kip1,CDK2,10
+TNK1,tyrosine kinase non-receptor 1,1
+TNK1,Src,1
+SMAC,FOXM1,1
+Cdk2,Cdk7,1
+vimentin,CDK6,1
+vimentin,Cyclin D3,1
+vimentin,CDK7,1
+vimentin,4E-BP1,1
+vimentin,C-Raf,1
+vimentin,Cyclin D1,1
+vimentin,ERK1/2,1
+vimentin,MEK1/2,1
+vimentin,cyclin,1
+vimentin,AKT,1
+vimentin,RSK1/2,1
+vimentin,CDK2,1
+CDK6,Cyclin D3,2
+CDK6,CDK7,1
+CDK6,4E-BP1,1
+CDK6,FGFR1,5
+CDK6,mTOR,6
+CDK6,CCNE1,1
+CDK6,C-Raf,1
+CDK6,Cyclin D1,2
+CDK6,ERK1/2,6
+CDK6,MEK1/2,1
+CDK6,CDKs,1
+CDK6,cyclin,12
+CDK6,AKT,2
+CDK6,RSK1/2,1
+CDK6,CDK2,8
+c-Raf,B-Raf,1
+c-Raf,K-Ras,1
+Cyclin D3,CDK7,1
+Cyclin D3,4E-BP1,1
+Cyclin D3,C-Raf,1
+Cyclin D3,Cyclin D1,2
+Cyclin D3,ERK1/2,1
+Cyclin D3,MEK1/2,1
+Cyclin D3,cyclin,1
+Cyclin D3,AKT,1
+Cyclin D3,RSK1/2,1
+Cyclin D3,CDK2,2
+CDK7,CAK,2
+CDK7,4E-BP1,1
+CDK7,C-Raf,1
+CDK7,Cyclin D1,1
+CDK7,ERK1/2,1
+CDK7,MEK1/2,1
+CDK7,cyclin,3
+CDK7,AKT,1
+CDK7,RSK1/2,1
+CDK7,CDK2,5
+EphA1/2,FGFR1,1
+EphA1/2,fibroblast growth factor receptor 1,1
+EphA1/2,epidermal growth factor receptor,1
+CAK,cyclin,2
+CAK,CDK2,4
+FGF-2,FGFR1,1
+FGF-2,FGF-4,1
+tyrosine kinase non-receptor 1,Src,1
+pS6,mTOR,1
+B-Raf,K-Ras,1
+MDM2,ATRX,2
+tuberous sclerosis 2,ERK1/2,1
+4E-BP1,mTOR,2
+4E-BP1,C-Raf,1
+4E-BP1,Cyclin D1,1
+4E-BP1,ERK1/2,1
+4E-BP1,MEK1/2,1
+4E-BP1,cyclin,1
+4E-BP1,AKT,1
+4E-BP1,RSK1/2,1
+4E-BP1,CDK2,1
+FGFR1,mTOR,6
+FGFR1,fibroblast growth factor receptor 1,1
+FGFR1,ERK1/2,3
+FGFR1,cyclin,2
+FGFR1,FGF-4,1
+FGFR1,AKT,1
+FGFR1,epidermal growth factor receptor,1
+mTOR,ERK1/2,9
+mTOR,cyclin,2
+mTOR,AKT,2
+mTOR,CDK2,1
+C-Raf,Cyclin D1,1
+C-Raf,ERK1/2,1
+C-Raf,MEK1/2,1
+C-Raf,cyclin,1
+C-Raf,AKT,1
+C-Raf,RSK1/2,1
+C-Raf,CDK2,1
+Cyclin D1,ERK1/2,1
+Cyclin D1,MEK1/2,1
+Cyclin D1,cyclin,1
+Cyclin D1,AKT,1
+Cyclin D1,RSK1/2,1
+Cyclin D1,CDK2,2
+fibroblast growth factor receptor 1,epidermal growth factor receptor,1
+ERK1/2,MEK1/2,3
+ERK1/2,KRAS,1
+ERK1/2,CDKs,1
+ERK1/2,cyclin,4
+ERK1/2,AKT,3
+ERK1/2,RSK1/2,1
+ERK1/2,CDK2,1
+MEK1/2,cyclin,1
+MEK1/2,AKT,1
+MEK1/2,RSK1/2,1
+MEK1/2,CDK2,1
+CDKs,AKT,1
+CDKs,CDK2,1
+cyclin,AKT,3
+cyclin,RSK1/2,1
+cyclin,CDK2,6
+AKT,RSK1/2,1
+AKT,CDK2,1
+RSK1/2,CDK2,1

@@ -1,0 +1,77 @@
+gene_name_1,gene_name_2,co_occurrence
+EGF,FGF2,1
+EGF,fibroblast growth factor 2,1
+EGF,CAF,1
+EGF,epidermal growth factor,1
+EGF,transforming growth factor-beta,1
+EGF,CXCL12,1
+EGF,TGFbeta,1
+STAT3,GAPDH,1
+STAT3,E-cadherin,1
+STAT3,BCL-2,1
+STAT3,IL-11Ralpha,6
+STAT3,IL-11,11
+STAT3,Bcl-2,7
+STAT3,IL11Ralpha,1
+STAT3,IL-6,1
+ING4,inhibitor of growth 4,1
+FGF2,fibroblast growth factor 2,1
+FGF2,CAF,1
+FGF2,epidermal growth factor,1
+FGF2,transforming growth factor-beta,1
+FGF2,CXCL12,1
+FGF2,TGFbeta,1
+cancer-associated fibroblasts,CAF,2
+cancer-associated fibroblasts,STC1,1
+cancer-associated fibroblasts,IL-11,1
+fibroblast growth factor 2,CAF,1
+fibroblast growth factor 2,epidermal growth factor,1
+fibroblast growth factor 2,transforming growth factor-beta,1
+fibroblast growth factor 2,CXCL12,1
+fibroblast growth factor 2,TGFbeta,1
+ZEB1,EMT,1
+GAPDH,E-cadherin,1
+GAPDH,glyceraldehyde-3-phosphate dehydrogenase,1
+GAPDH,BCL-2,1
+GAPDH,Glyceraldehyde 3-phosphate dehydrogenase,1
+GRP78,hepatocyte growth factor,1
+TGF-beta,Cancer-associated fibroblasts,1
+PCNA,IL-11Ralpha,1
+PCNA,IL-11,1
+PCNA,a-SMA,1
+c-fos,c-jun,1
+c-fos,AP-1,1
+fibroblast activation protein,CAF,1
+fibroblast activation protein,FAP,1
+E-cadherin,CAF,1
+E-cadherin,BCL-2,1
+c-jun,AP-1,1
+CAF,Cancer-associated fibroblasts,2
+CAF,AP-1,1
+CAF,epidermal growth factor,1
+CAF,IL-11Ralpha,2
+CAF,transforming growth factor-beta,1
+CAF,CXCL12,1
+CAF,FAP,1
+CAF,IL-11,26
+CAF,Interleukin-11,1
+CAF,TGFbeta,1
+TWF1,IL-11,1
+Cancer-associated fibroblasts,IL-11,1
+AP-1,IL-11,2
+epidermal growth factor,transforming growth factor-beta,1
+epidermal growth factor,CXCL12,1
+epidermal growth factor,TGFbeta,1
+interleukin-11,IL-11,3
+IL-11Ralpha,IL-11,10
+IL-11Ralpha,a-SMA,1
+IL-11Ralpha,IL-6,2
+transforming growth factor-beta,CXCL12,1
+transforming growth factor-beta,TGFbeta,1
+CXCL12,TGFbeta,1
+IL-11,Bcl-2,4
+IL-11,CD45,1
+IL-11,Interleukin-11,1
+IL-11,IL-6,2
+Bcl-2,IL11Ralpha,1
+Interleukin-11,IL-6,1

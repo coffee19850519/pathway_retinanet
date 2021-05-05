@@ -1,0 +1,72 @@
+gene_name_1,gene_name_2,co_occurrence
+PP2A,PP2A-C,6
+PP2A,p38,16
+PP2A,MKK1/2,1
+PP2A,MKK3/6,1
+PP2A,ERK,10
+PP2A,HSP27,1
+PP2A,ERK1/2,7
+PP2A,PP2Ac,1
+PP2A,phosphatase 2A,4
+PP2A,Akt,17
+PP2A-C,p38,1
+PP2A-C,JNK,1
+PP2A-C,cytochrome c,1
+PP2A-C,Bax,1
+PP2A-C,ERK1/2,1
+PP2A-C,Bcl-2,1
+PP2A-C,caspase-3,1
+PP2A-C,Akt,1
+p38,JNK,4
+p38,muM,1
+p38,cytochrome c,1
+p38,MKK1/2,1
+p38,MKK3/6,1
+p38,ERK,20
+p38,HSP27,1
+p38,Bax,1
+p38,ERK1/2,13
+p38,pp2A,1
+p38,Bcl-2,1
+p38,caspase-3,1
+p38,Akt,21
+JNK,cytochrome c,1
+JNK,ERK,1
+JNK,Bax,1
+JNK,ERK1/2,3
+JNK,Bcl-2,1
+JNK,caspase-3,1
+JNK,Akt,2
+GRP78,CHOP,6
+GRP78,glucose-regulated protein 78,1
+muM,ERK,1
+muM,Akt,1
+Caspase-9,caspase-3,1
+cytochrome c,Bax,5
+cytochrome c,ERK1/2,1
+cytochrome c,caspase-3 and -9,1
+cytochrome c,Bcl-2,4
+cytochrome c,caspase-3,3
+cytochrome c,Akt,1
+CHOP,glucose-regulated protein 78,1
+MEK1,ERK1/2,1
+MKK1/2,MKK3/6,1
+MKK1/2,ERK,1
+MKK3/6,ERK,1
+ERK,ERK1/2,2
+ERK,pp2A,1
+ERK,Akt,12
+Bax,ERK1/2,1
+Bax,Bcl-2,5
+Bax,caspase-3,2
+Bax,Akt,1
+ERK1/2,Bcl-2,1
+ERK1/2,caspase-3,1
+ERK1/2,Akt,8
+pp2A,Akt,1
+Bcl-2,caspase-3,2
+Bcl-2,Akt,1
+caspase-3,Akt,1
+phosphatase 2A,B55alpha,1
+phosphatase 2A,Akt,4
+B55alpha,Akt,1

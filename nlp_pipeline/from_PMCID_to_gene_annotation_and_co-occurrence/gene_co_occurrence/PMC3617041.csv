@@ -1,0 +1,111 @@
+gene_name_1,gene_name_2,co_occurrence
+PARP,JNK,2
+PARP,TGF-beta,1
+PARP,SMAD2,1
+PARP,procaspase-3,1
+PARP,beta-actin,1
+PARP,SMAD6,1
+PARP,caspase-3,3
+PARP,SMAD2/3,1
+SMAD7,TGF-beta,3
+SMAD7,BMP,2
+SMAD7,SMAD,1
+SMAD7,SMAD6,6
+plasminogen activator inhibitor-1,PAI-1,1
+plasminogen activator inhibitor-1,TGF-beta,2
+plasminogen activator inhibitor-1,SMAD6,2
+plasminogen activator inhibitor-1,SMAD2/3,2
+PAI-1,JNK,1
+PAI-1,TGF-beta,5
+PAI-1,c-Jun,1
+PAI-1,SMAD2,1
+PAI-1,Smad6,1
+PAI-1,SMAD6,6
+PAI-1,SMAD2/3,5
+JNK,TGF-beta,1
+JNK,Jun NH2-terminal kinase,1
+JNK,c-Jun,4
+JNK,SMAD2,1
+JNK,Smad6,1
+JNK,beta-actin,1
+JNK,SMAD6,3
+JNK,caspase-3,2
+JNK,SMAD2/3,3
+Rb-1,SMAD6,1
+TGF-beta,BMP,4
+TGF-beta,SMAD,1
+TGF-beta,Transforming growth factor-beta,1
+TGF-beta,Smad3,1
+TGF-beta,transforming growth factor-beta,2
+TGF-beta,Smad6,4
+TGF-beta,TGF-beta1,1
+TGF-beta,SMAD6,17
+TGF-beta,caspase-3,1
+TGF-beta,Smad6/7,1
+TGF-beta,Smad7,4
+TGF-beta,IL-6,1
+TGF-beta,SMAD2/3,5
+MMP7,E-cadherin,1
+MMP7,interleukin-8,1
+MMP7,THROMBOSPONDIN1,1
+MMP7,IL-8,1
+MMP7,DHFR,1
+MMP7,SMAD6,1
+MMP7,ERBB3,1
+MMP7,TIMP-2,1
+E-cadherin,interleukin-8,1
+E-cadherin,THROMBOSPONDIN1,1
+E-cadherin,IL-8,1
+E-cadherin,DHFR,1
+E-cadherin,SMAD6,1
+E-cadherin,ERBB3,1
+E-cadherin,TIMP-2,1
+Dlx3,Smad6,1
+SMAD3,SMAD4,1
+SMAD3,SMAD2,1
+interleukin-8,THROMBOSPONDIN1,1
+interleukin-8,IL-8,1
+interleukin-8,DHFR,1
+interleukin-8,SMAD6,1
+interleukin-8,ERBB3,1
+interleukin-8,TIMP-2,1
+THROMBOSPONDIN1,IL-8,1
+THROMBOSPONDIN1,DHFR,1
+THROMBOSPONDIN1,SMAD6,1
+THROMBOSPONDIN1,ERBB3,1
+THROMBOSPONDIN1,TIMP-2,1
+BMP,SMAD6,4
+BMP,Smad7,3
+SMAD4,SMAD2,2
+IL-8,DHFR,1
+IL-8,SMAD6,1
+IL-8,ERBB3,1
+IL-8,TIMP-2,1
+c-Jun,Smad6,1
+c-Jun,SMAD6,2
+c-Jun,SMAD2/3,2
+SMAD,SMAD6,1
+Smad3,Smad4,1
+Smad4,transforming growth factor beta,1
+Smad4,Smad6,1
+Smad4,Smad2,1
+transforming growth factor-beta,Smad7,1
+SMAD2,beta-actin,1
+SMAD2,SMAD6,2
+SMAD2,caspase-3,1
+transforming growth factor beta,Smad2,1
+Smad6,SMAD6,2
+Smad6,Smad7,2
+beta-actin,SMAD6,1
+beta-actin,caspase-3,1
+DHFR,SMAD6,1
+DHFR,ERBB3,1
+DHFR,TIMP-2,1
+SMAD6,ERBB3,1
+SMAD6,caspase-3,1
+SMAD6,TIMP-2,1
+SMAD6,Smad7,2
+SMAD6,SMAD2/3,5
+ERBB3,TIMP-2,1
+caspase-3,SMAD2/3,1
+Smad7,TGFbeta,1

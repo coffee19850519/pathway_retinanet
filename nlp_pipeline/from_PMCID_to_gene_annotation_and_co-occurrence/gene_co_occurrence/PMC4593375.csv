@@ -1,0 +1,238 @@
+gene_name_1,gene_name_2,co_occurrence
+EGF,EGFR,1
+PIK3CA,PTEN,3
+PIK3CA,hepatocyte growth factor,1
+PIK3CA,astrocyte elevated gene-1,1
+PIK3CA,BRAF,1
+PIK3CA,NRAS,1
+PIK3CA,AEG-1,2
+PIK3CA,HGF,2
+PIK3CA,EGFR,3
+PIK3CA,NFKBIA,2
+PIK3CA,RELA,2
+PIK3CA,p110alpha,3
+PIK3CA,HER2,1
+PIK3CA,HER3,1
+PIK3CA,RTK,1
+PIK3CA,KRAS,4
+PIK3CA,NF-kappaB,2
+PIK3CA,receptor tyrosine kinase,1
+PIK3CA,epidermal growth factor receptor,1
+mTOR,PTEN,1
+mTOR,hepatocyte growth factor,1
+mTOR,EGFR,2
+mTOR,epidermal growth factor receptor 3,1
+mTOR,GRB2,1
+mTOR,human epidermal growth factor receptor 2,1
+mTOR,SOS,1
+mTOR,mammalian target of rapamycin,2
+mTOR,HER2,1
+mTOR,nuclear factor-kappa B,1
+mTOR,HER3,1
+mTOR,NF-kappaB,1
+mTOR,epidermal growth factor receptor,1
+PTEN,hepatocyte growth factor,2
+PTEN,astrocyte elevated gene-1,1
+PTEN,BRAF,1
+PTEN,AEG-1,2
+PTEN,HGF,2
+PTEN,EGFR,5
+PTEN,NFKBIA,2
+PTEN,epidermal growth factor receptor 3,1
+PTEN,GRB2,1
+PTEN,human epidermal growth factor receptor 2,1
+PTEN,RELA,2
+PTEN,Akt,1
+PTEN,SOS,1
+PTEN,mammalian target of rapamycin,1
+PTEN,HER2,2
+PTEN,nuclear factor-kappa B,1
+PTEN,HER3,2
+PTEN,RTK,1
+PTEN,KRAS,3
+PTEN,NF-kappaB,3
+PTEN,receptor tyrosine kinase,1
+PTEN,AKT,2
+PTEN,epidermal growth factor receptor,2
+IGF1R,vascular endothelial growth factor receptor,1
+IGF1R,insulin-like growth factor 1 receptor,1
+IGF1R,EGFR,2
+IGF1R,PDGFR,1
+IGF1R,VEGFR,1
+IGF1R,platelet-derived growth factor receptor,1
+IGF1R,receptor tyrosine kinase,1
+hepatocyte growth factor,astrocyte elevated gene-1,1
+hepatocyte growth factor,AEG-1,1
+hepatocyte growth factor,HGF,2
+hepatocyte growth factor,HGFR,1
+hepatocyte growth factor,EGFR,2
+hepatocyte growth factor,NFKBIA,1
+hepatocyte growth factor,epidermal growth factor receptor 3,1
+hepatocyte growth factor,GRB2,1
+hepatocyte growth factor,human epidermal growth factor receptor 2,1
+hepatocyte growth factor,RELA,1
+hepatocyte growth factor,SOS,1
+hepatocyte growth factor,mammalian target of rapamycin,1
+hepatocyte growth factor,HER2,1
+hepatocyte growth factor,nuclear factor-kappa B,1
+hepatocyte growth factor,HER3,1
+hepatocyte growth factor,RTK,2
+hepatocyte growth factor,KRAS,1
+hepatocyte growth factor,NF-kappaB,2
+hepatocyte growth factor,receptor tyrosine kinase,1
+hepatocyte growth factor,epidermal growth factor receptor,2
+astrocyte elevated gene-1,AEG-1,2
+astrocyte elevated gene-1,HGF,1
+astrocyte elevated gene-1,EGFR,1
+astrocyte elevated gene-1,NFKBIA,1
+astrocyte elevated gene-1,RELA,1
+astrocyte elevated gene-1,IkappaBalpha,1
+astrocyte elevated gene-1,RTK,1
+astrocyte elevated gene-1,KRAS,1
+astrocyte elevated gene-1,NF-kappaB,2
+astrocyte elevated gene-1,receptor tyrosine kinase,1
+astrocyte elevated gene-1,epidermal growth factor receptor,1
+vascular endothelial growth factor receptor,insulin-like growth factor 1 receptor,1
+vascular endothelial growth factor receptor,EGFR,1
+vascular endothelial growth factor receptor,PDGFR,1
+vascular endothelial growth factor receptor,VEGFR,1
+vascular endothelial growth factor receptor,platelet-derived growth factor receptor,1
+vascular endothelial growth factor receptor,receptor tyrosine kinase,1
+insulin-like growth factor 1 receptor,EGFR,1
+insulin-like growth factor 1 receptor,PDGFR,1
+insulin-like growth factor 1 receptor,VEGFR,1
+insulin-like growth factor 1 receptor,platelet-derived growth factor receptor,1
+insulin-like growth factor 1 receptor,receptor tyrosine kinase,1
+BRAF,NRAS,1
+BRAF,EGFR,1
+BRAF,KRAS,2
+NRAS,KRAS,1
+AEG-1,HGF,2
+AEG-1,EGFR,2
+AEG-1,NFKBIA,3
+AEG-1,RELA,2
+AEG-1,IkappaBalpha,1
+AEG-1,HER2,1
+AEG-1,HER3,1
+AEG-1,RTK,1
+AEG-1,KRAS,2
+AEG-1,NF-kappaB,3
+AEG-1,receptor tyrosine kinase,1
+AEG-1,epidermal growth factor receptor,1
+HGF,HGFR,1
+HGF,EGFR,3
+HGF,NFKBIA,2
+HGF,RELA,2
+HGF,HER2,1
+HGF,HER3,1
+HGF,RTK,2
+HGF,KRAS,2
+HGF,NF-kappaB,2
+HGF,receptor tyrosine kinase,1
+HGF,epidermal growth factor receptor,1
+HGFR,RTK,1
+EGFR,NFKBIA,3
+EGFR,PDGFR,1
+EGFR,Epidermal growth factor receptor,3
+EGFR,epidermal growth factor receptor 3,2
+EGFR,GRB2,1
+EGFR,human epidermal growth factor receptor 2,2
+EGFR,RELA,2
+EGFR,VEGFR,1
+EGFR,Akt,1
+EGFR,SOS,1
+EGFR,mammalian target of rapamycin,2
+EGFR,HER2,8
+EGFR,nuclear factor-kappa B,1
+EGFR,platelet-derived growth factor receptor,1
+EGFR,HER3,9
+EGFR,RTK,9
+EGFR,KRAS,7
+EGFR,ERBB2,1
+EGFR,NF-kappaB,4
+EGFR,receptor tyrosine kinase,4
+EGFR,epidermal growth factor receptor,5
+NFKBIA,RELA,2
+NFKBIA,IkappaBalpha,1
+NFKBIA,HER2,1
+NFKBIA,HER3,1
+NFKBIA,RTK,1
+NFKBIA,KRAS,2
+NFKBIA,NF-kappaB,5
+NFKBIA,receptor tyrosine kinase,1
+NFKBIA,epidermal growth factor receptor,1
+PDGFR,VEGFR,1
+PDGFR,platelet-derived growth factor receptor,1
+PDGFR,receptor tyrosine kinase,1
+epidermal growth factor receptor 3,GRB2,1
+epidermal growth factor receptor 3,human epidermal growth factor receptor 2,1
+epidermal growth factor receptor 3,SOS,1
+epidermal growth factor receptor 3,mammalian target of rapamycin,1
+epidermal growth factor receptor 3,HER2,1
+epidermal growth factor receptor 3,nuclear factor-kappa B,1
+epidermal growth factor receptor 3,HER3,2
+epidermal growth factor receptor 3,NF-kappaB,1
+epidermal growth factor receptor 3,epidermal growth factor receptor,1
+GRB2,human epidermal growth factor receptor 2,1
+GRB2,SOS,1
+GRB2,mammalian target of rapamycin,1
+GRB2,HER2,1
+GRB2,nuclear factor-kappa B,1
+GRB2,HER3,1
+GRB2,NF-kappaB,1
+GRB2,epidermal growth factor receptor,1
+human epidermal growth factor receptor 2,SOS,1
+human epidermal growth factor receptor 2,mammalian target of rapamycin,1
+human epidermal growth factor receptor 2,HER2,2
+human epidermal growth factor receptor 2,nuclear factor-kappa B,1
+human epidermal growth factor receptor 2,HER3,2
+human epidermal growth factor receptor 2,RTK,1
+human epidermal growth factor receptor 2,NF-kappaB,1
+human epidermal growth factor receptor 2,epidermal growth factor receptor,1
+RELA,HER2,1
+RELA,HER3,1
+RELA,RTK,1
+RELA,KRAS,2
+RELA,NF-kappaB,2
+RELA,receptor tyrosine kinase,1
+RELA,epidermal growth factor receptor,1
+VEGFR,platelet-derived growth factor receptor,1
+VEGFR,receptor tyrosine kinase,1
+IkappaBalpha,NF-kappaB,2
+SOS,mammalian target of rapamycin,1
+SOS,HER2,1
+SOS,nuclear factor-kappa B,1
+SOS,HER3,1
+SOS,NF-kappaB,1
+SOS,epidermal growth factor receptor,1
+mammalian target of rapamycin,HER2,1
+mammalian target of rapamycin,nuclear factor-kappa B,1
+mammalian target of rapamycin,HER3,1
+mammalian target of rapamycin,NF-kappaB,1
+mammalian target of rapamycin,epidermal growth factor receptor,1
+HER2,nuclear factor-kappa B,1
+HER2,HER3,9
+HER2,RTK,2
+HER2,KRAS,2
+HER2,NF-kappaB,2
+HER2,epidermal growth factor receptor,1
+nuclear factor-kappa B,HER3,1
+nuclear factor-kappa B,NF-kappaB,2
+nuclear factor-kappa B,AKT,1
+nuclear factor-kappa B,epidermal growth factor receptor,1
+platelet-derived growth factor receptor,receptor tyrosine kinase,1
+HER3,RTK,1
+HER3,KRAS,2
+HER3,NF-kappaB,2
+HER3,epidermal growth factor receptor,1
+RTK,KRAS,1
+RTK,NF-kappaB,1
+RTK,receptor tyrosine kinase,3
+RTK,epidermal growth factor receptor,1
+KRAS,NF-kappaB,2
+KRAS,receptor tyrosine kinase,1
+KRAS,epidermal growth factor receptor,1
+NF-kappaB,receptor tyrosine kinase,1
+NF-kappaB,AKT,1
+NF-kappaB,epidermal growth factor receptor,2
+receptor tyrosine kinase,epidermal growth factor receptor,1

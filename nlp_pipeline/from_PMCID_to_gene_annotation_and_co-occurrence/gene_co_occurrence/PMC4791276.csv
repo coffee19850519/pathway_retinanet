@@ -1,0 +1,168 @@
+gene_name_1,gene_name_2,co_occurrence
+4E-BP1,PARP,1
+4E-BP1,mTOR,1
+4E-BP1,P70 S6K,1
+4E-BP1,ATG5,1
+4E-BP1,JNK,1
+4E-BP1,GAPDH,1
+4E-BP1,Bip,1
+4E-BP1,c-jun,1
+4E-BP1,ATG7,1
+4E-BP1,ERK,1
+4E-BP1,ULK1,1
+4E-BP1,Beclin1,1
+4E-BP1,LC3,1
+4E-BP1,IRE1alpha,1
+4E-BP1,Chop,1
+4E-BP1,Akt,1
+PARP,caspase-3/7,2
+PARP,mTOR,1
+PARP,P70 S6K,1
+PARP,ATG5,1
+PARP,JNK,1
+PARP,GAPDH,1
+PARP,Bip,1
+PARP,c-jun,1
+PARP,ATG7,1
+PARP,ERK,1
+PARP,ULK1,1
+PARP,Beclin1,1
+PARP,LC3,1
+PARP,IRE1alpha,1
+PARP,Chop,1
+PARP,Akt,1
+caspase-3/7,JNK,1
+caspase-3/7,muM,1
+caspase-3/7,ATG7,1
+caspase-3/7,IRE1alpha,1
+IRE1a,PLK1,1
+RNase L,c-Jun,1
+mTOR,P70 S6K,1
+mTOR,ATG5,1
+mTOR,JNK,1
+mTOR,GAPDH,1
+mTOR,Bip,1
+mTOR,c-jun,1
+mTOR,ATG7,1
+mTOR,ERK,1
+mTOR,ULK1,1
+mTOR,Beclin1,1
+mTOR,LC3,1
+mTOR,IRE1alpha,1
+mTOR,Chop,1
+mTOR,Akt,1
+P70 S6K,ATG5,1
+P70 S6K,JNK,1
+P70 S6K,GAPDH,1
+P70 S6K,Bip,1
+P70 S6K,c-jun,1
+P70 S6K,ATG7,1
+P70 S6K,ERK,1
+P70 S6K,ULK1,1
+P70 S6K,Beclin1,1
+P70 S6K,LC3,1
+P70 S6K,IRE1alpha,1
+P70 S6K,Chop,1
+P70 S6K,Akt,1
+JNK2,JNK1,1
+JNK2,ATG5,1
+JNK2,c-jun,1
+JNK2,ATG7,1
+JNK2,Beclin1,1
+JNK2,IRE1alpha,1
+JNK1,ATG5,1
+JNK1,c-jun,1
+JNK1,ATG7,1
+JNK1,Beclin1,1
+JNK1,IRE1alpha,1
+ATG5,JNK,1
+ATG5,GAPDH,1
+ATG5,Bip,1
+ATG5,c-jun,2
+ATG5,ATG7,4
+ATG5,ERK,1
+ATG5,ULK1,1
+ATG5,Beclin1,4
+ATG5,LC3,1
+ATG5,IRE1alpha,2
+ATG5,Chop,1
+ATG5,Akt,1
+JNK,GAPDH,1
+JNK,Bip,1
+JNK,C-Jun N-terminal kinase,1
+JNK,muM,4
+JNK,c-jun,5
+JNK,ATG7,2
+JNK,ERK,1
+JNK,ULK1,1
+JNK,Beclin1,2
+JNK,LC3,1
+JNK,IRE1alpha,5
+JNK,Bcl-2,1
+JNK,S5B,1
+JNK,Chop,1
+JNK,Akt,1
+extracellular signal-regulated kinase,ERK,1
+GAPDH,Bip,1
+GAPDH,c-jun,1
+GAPDH,ATG7,1
+GAPDH,ERK,1
+GAPDH,ULK1,1
+GAPDH,Beclin1,1
+GAPDH,LC3,1
+GAPDH,IRE1alpha,1
+GAPDH,Chop,1
+GAPDH,Akt,1
+Bip,muM,1
+Bip,c-jun,1
+Bip,ATG7,1
+Bip,ERK,1
+Bip,ULK1,1
+Bip,Beclin1,1
+Bip,LC3,1
+Bip,IRE1alpha,2
+Bip,Chop,2
+Bip,Akt,1
+muM,c-jun,2
+muM,ATG7,3
+muM,IRE1alpha,3
+muM,Chop,1
+c-jun,ATG7,2
+c-jun,ERK,1
+c-jun,ULK1,1
+c-jun,Beclin1,2
+c-jun,LC3,1
+c-jun,IRE1alpha,3
+c-jun,Chop,1
+c-jun,Akt,1
+BNIP3,BNIP3L,1
+ATG7,ERK,1
+ATG7,ULK1,1
+ATG7,Beclin1,4
+ATG7,LC3,1
+ATG7,IRE1alpha,3
+ATG7,Chop,1
+ATG7,Akt,1
+c-Jun,Beclin 1,1
+ERK,ULK1,1
+ERK,Beclin1,1
+ERK,LC3,1
+ERK,IRE1alpha,1
+ERK,Chop,1
+ERK,Akt,1
+ULK1,Beclin1,1
+ULK1,LC3,1
+ULK1,IRE1alpha,1
+ULK1,Chop,1
+ULK1,Akt,1
+Beclin1,LC3,1
+Beclin1,IRE1alpha,2
+Beclin1,Bcl-2,1
+Beclin1,Chop,1
+Beclin1,Akt,1
+LC3,IRE1alpha,1
+LC3,Chop,1
+LC3,Akt,1
+IRE1alpha,Chop,2
+IRE1alpha,Akt,1
+Chop,Akt,1

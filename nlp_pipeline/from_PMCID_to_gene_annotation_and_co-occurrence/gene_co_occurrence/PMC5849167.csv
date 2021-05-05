@@ -1,0 +1,401 @@
+gene_name_1,gene_name_2,co_occurrence
+enolase 1,pVHL,1
+enolase 1,ENO1,1
+enolase 1,mTOR,1
+enolase 1,HIF-1alpha,1
+enolase 1,angiopoietin-2,1
+enolase 1,PTEN,1
+enolase 1,NOS2,1
+enolase 1,GAPDH,1
+enolase 1,insulin-like growth factor 2,1
+enolase 1,HK1,1
+enolase 1,P53,1
+enolase 1,hypoxia-inducible factor-1alpha,1
+enolase 1,glyceraldehyde-3-phosphate dehydrogenase,1
+enolase 1,nitric oxide synthase 2,1
+enolase 1,transforming growth factor alpha,1
+enolase 1,hexokinase 1,1
+enolase 1,c-myc,1
+enolase 1,ET1,1
+enolase 1,TGFA,1
+enolase 1,erythropoietin,1
+enolase 1,EPO,1
+enolase 1,Ang,1
+enolase 1,IGF2,1
+enolase 1,Ang-2,1
+enolase 1,Glut1,1
+enolase 1,endothelin-1,1
+pVHL,ENO1,1
+pVHL,mTOR,1
+pVHL,HIF-1alpha,1
+pVHL,angiopoietin-2,1
+pVHL,PTEN,1
+pVHL,NOS2,1
+pVHL,GAPDH,1
+pVHL,insulin-like growth factor 2,1
+pVHL,HK1,1
+pVHL,P53,1
+pVHL,hypoxia-inducible factor-1alpha,1
+pVHL,glyceraldehyde-3-phosphate dehydrogenase,1
+pVHL,nitric oxide synthase 2,1
+pVHL,transforming growth factor alpha,1
+pVHL,hexokinase 1,1
+pVHL,c-myc,1
+pVHL,ET1,1
+pVHL,TGFA,1
+pVHL,erythropoietin,1
+pVHL,EPO,1
+pVHL,Ang,1
+pVHL,IGF2,1
+pVHL,Ang-2,1
+pVHL,Glut1,1
+pVHL,endothelin-1,1
+VEGF-A,Ang-2,1
+Angiopoietin2,tie2,1
+ENO1,mTOR,1
+ENO1,HIF-1alpha,1
+ENO1,angiopoietin-2,1
+ENO1,PTEN,1
+ENO1,NOS2,1
+ENO1,GAPDH,1
+ENO1,insulin-like growth factor 2,1
+ENO1,HK1,1
+ENO1,P53,1
+ENO1,hypoxia-inducible factor-1alpha,1
+ENO1,glyceraldehyde-3-phosphate dehydrogenase,1
+ENO1,nitric oxide synthase 2,1
+ENO1,transforming growth factor alpha,1
+ENO1,hexokinase 1,1
+ENO1,c-myc,1
+ENO1,ET1,1
+ENO1,TGFA,1
+ENO1,erythropoietin,1
+ENO1,EPO,1
+ENO1,Ang,1
+ENO1,IGF2,1
+ENO1,Ang-2,1
+ENO1,Glut1,1
+ENO1,endothelin-1,1
+vascular endothelial growth factor,VEGF,1
+vascular endothelial growth factor,Angiopoietin-1,1
+vascular endothelial growth factor,Ang-1,1
+vascular endothelial growth factor,Tie2,1
+vascular endothelial growth factor,Angiopoietin-2,1
+vascular endothelial growth factor,Ang-2,1
+mTOR,HIF-1alpha,1
+mTOR,angiopoietin-2,1
+mTOR,PTEN,1
+mTOR,NOS2,1
+mTOR,GAPDH,1
+mTOR,insulin-like growth factor 2,1
+mTOR,HK1,1
+mTOR,P53,1
+mTOR,hypoxia-inducible factor-1alpha,1
+mTOR,glyceraldehyde-3-phosphate dehydrogenase,1
+mTOR,nitric oxide synthase 2,1
+mTOR,transforming growth factor alpha,1
+mTOR,hexokinase 1,1
+mTOR,c-myc,1
+mTOR,ET1,1
+mTOR,TGFA,1
+mTOR,erythropoietin,1
+mTOR,EPO,1
+mTOR,Ang,1
+mTOR,IGF2,1
+mTOR,Ang-2,1
+mTOR,Glut1,1
+mTOR,endothelin-1,1
+HIF-1alpha,angiopoietin-2,1
+HIF-1alpha,PTEN,1
+HIF-1alpha,NOS2,1
+HIF-1alpha,GAPDH,1
+HIF-1alpha,VEGF,2
+HIF-1alpha,insulin-like growth factor 2,1
+HIF-1alpha,HK1,1
+HIF-1alpha,P53,1
+HIF-1alpha,hypoxia-inducible factor-1alpha,1
+HIF-1alpha,glyceraldehyde-3-phosphate dehydrogenase,1
+HIF-1alpha,nitric oxide synthase 2,1
+HIF-1alpha,transforming growth factor alpha,1
+HIF-1alpha,hexokinase 1,1
+HIF-1alpha,c-myc,1
+HIF-1alpha,ET1,1
+HIF-1alpha,TGFA,1
+HIF-1alpha,erythropoietin,1
+HIF-1alpha,EPO,1
+HIF-1alpha,Ang,1
+HIF-1alpha,IGF2,1
+HIF-1alpha,Ang-2,2
+HIF-1alpha,Glut1,1
+HIF-1alpha,endothelin-1,1
+angiopoietin-2,PTEN,1
+angiopoietin-2,NOS2,1
+angiopoietin-2,GAPDH,1
+angiopoietin-2,insulin-like growth factor 2,1
+angiopoietin-2,HK1,1
+angiopoietin-2,P53,1
+angiopoietin-2,hypoxia-inducible factor-1alpha,1
+angiopoietin-2,glyceraldehyde-3-phosphate dehydrogenase,1
+angiopoietin-2,nitric oxide synthase 2,1
+angiopoietin-2,transforming growth factor alpha,1
+angiopoietin-2,hexokinase 1,1
+angiopoietin-2,c-myc,1
+angiopoietin-2,ET1,1
+angiopoietin-2,TGFA,1
+angiopoietin-2,erythropoietin,1
+angiopoietin-2,EPO,1
+angiopoietin-2,Ang,1
+angiopoietin-2,IGF2,1
+angiopoietin-2,Ang-2,6
+angiopoietin-2,Glut1,1
+angiopoietin-2,endothelin-1,1
+PTEN,NOS2,1
+PTEN,GAPDH,1
+PTEN,insulin-like growth factor 2,1
+PTEN,HK1,1
+PTEN,P53,1
+PTEN,hypoxia-inducible factor-1alpha,1
+PTEN,glyceraldehyde-3-phosphate dehydrogenase,1
+PTEN,nitric oxide synthase 2,1
+PTEN,transforming growth factor alpha,1
+PTEN,hexokinase 1,1
+PTEN,c-myc,1
+PTEN,ET1,1
+PTEN,TGFA,1
+PTEN,erythropoietin,1
+PTEN,EPO,1
+PTEN,Ang,1
+PTEN,IGF2,1
+PTEN,Ang-2,1
+PTEN,Glut1,1
+PTEN,endothelin-1,1
+NOS2,GAPDH,1
+NOS2,insulin-like growth factor 2,1
+NOS2,HK1,1
+NOS2,P53,1
+NOS2,hypoxia-inducible factor-1alpha,1
+NOS2,glyceraldehyde-3-phosphate dehydrogenase,1
+NOS2,nitric oxide synthase 2,1
+NOS2,transforming growth factor alpha,1
+NOS2,hexokinase 1,1
+NOS2,c-myc,1
+NOS2,ET1,1
+NOS2,TGFA,1
+NOS2,erythropoietin,1
+NOS2,EPO,1
+NOS2,Ang,1
+NOS2,IGF2,1
+NOS2,Ang-2,1
+NOS2,Glut1,1
+NOS2,endothelin-1,1
+GAPDH,insulin-like growth factor 2,1
+GAPDH,HK1,1
+GAPDH,P53,1
+GAPDH,hypoxia-inducible factor-1alpha,1
+GAPDH,glyceraldehyde-3-phosphate dehydrogenase,2
+GAPDH,nitric oxide synthase 2,1
+GAPDH,transforming growth factor alpha,1
+GAPDH,hexokinase 1,1
+GAPDH,c-myc,1
+GAPDH,ET1,1
+GAPDH,TGFA,1
+GAPDH,erythropoietin,1
+GAPDH,EPO,1
+GAPDH,Ang,1
+GAPDH,IGF2,1
+GAPDH,Ang-2,3
+GAPDH,beta-actin,1
+GAPDH,Glut1,1
+GAPDH,endothelin-1,1
+VEGF,Angiopoietin-1,1
+VEGF,VIM,1
+VEGF,VHL,1
+VEGF,Ang-1,1
+VEGF,Tie2,1
+VEGF,Angiopoietin-2,1
+VEGF,Ang-2,3
+VEGF,Vimentin,1
+insulin-like growth factor 2,HK1,1
+insulin-like growth factor 2,P53,1
+insulin-like growth factor 2,hypoxia-inducible factor-1alpha,1
+insulin-like growth factor 2,glyceraldehyde-3-phosphate dehydrogenase,1
+insulin-like growth factor 2,nitric oxide synthase 2,1
+insulin-like growth factor 2,transforming growth factor alpha,1
+insulin-like growth factor 2,hexokinase 1,1
+insulin-like growth factor 2,c-myc,1
+insulin-like growth factor 2,ET1,1
+insulin-like growth factor 2,TGFA,1
+insulin-like growth factor 2,erythropoietin,1
+insulin-like growth factor 2,EPO,1
+insulin-like growth factor 2,Ang,1
+insulin-like growth factor 2,IGF2,1
+insulin-like growth factor 2,Ang-2,1
+insulin-like growth factor 2,Glut1,1
+insulin-like growth factor 2,endothelin-1,1
+Angiopoietin-1,Ang-1,1
+Angiopoietin-1,Tie2,1
+Angiopoietin-1,Angiopoietin-2,1
+Angiopoietin-1,Ang-2,1
+HK1,P53,1
+HK1,hypoxia-inducible factor-1alpha,1
+HK1,glyceraldehyde-3-phosphate dehydrogenase,1
+HK1,nitric oxide synthase 2,1
+HK1,transforming growth factor alpha,1
+HK1,hexokinase 1,1
+HK1,c-myc,1
+HK1,ET1,1
+HK1,TGFA,1
+HK1,erythropoietin,1
+HK1,EPO,1
+HK1,Ang,1
+HK1,IGF2,1
+HK1,Ang-2,1
+HK1,Glut1,1
+HK1,endothelin-1,1
+P53,hypoxia-inducible factor-1alpha,1
+P53,glyceraldehyde-3-phosphate dehydrogenase,1
+P53,nitric oxide synthase 2,1
+P53,transforming growth factor alpha,1
+P53,hexokinase 1,1
+P53,c-myc,1
+P53,ET1,1
+P53,TGFA,1
+P53,erythropoietin,1
+P53,EPO,1
+P53,Ang,1
+P53,IGF2,1
+P53,Ang-2,1
+P53,Glut1,1
+P53,endothelin-1,1
+MiR-770,JMJD6,1
+E-cadherin,VIM,7
+E-cadherin,Ang-2,6
+E-cadherin,Snail,7
+E-cadherin,N-cadherin,3
+E-cadherin,Vimentin,2
+VIM,VHL,1
+VIM,Ang-2,6
+VIM,beta-actin,1
+VIM,Snail,6
+VIM,N-cadherin,2
+VIM,Vimentin,2
+VHL,Vimentin,1
+hypoxia-inducible factor-1alpha,glyceraldehyde-3-phosphate dehydrogenase,1
+hypoxia-inducible factor-1alpha,nitric oxide synthase 2,1
+hypoxia-inducible factor-1alpha,transforming growth factor alpha,1
+hypoxia-inducible factor-1alpha,hexokinase 1,1
+hypoxia-inducible factor-1alpha,c-myc,1
+hypoxia-inducible factor-1alpha,ET1,1
+hypoxia-inducible factor-1alpha,TGFA,1
+hypoxia-inducible factor-1alpha,erythropoietin,1
+hypoxia-inducible factor-1alpha,EPO,1
+hypoxia-inducible factor-1alpha,Ang,1
+hypoxia-inducible factor-1alpha,IGF2,1
+hypoxia-inducible factor-1alpha,Ang-2,1
+hypoxia-inducible factor-1alpha,Glut1,1
+hypoxia-inducible factor-1alpha,endothelin-1,1
+glyceraldehyde-3-phosphate dehydrogenase,nitric oxide synthase 2,1
+glyceraldehyde-3-phosphate dehydrogenase,transforming growth factor alpha,1
+glyceraldehyde-3-phosphate dehydrogenase,hexokinase 1,1
+glyceraldehyde-3-phosphate dehydrogenase,c-myc,1
+glyceraldehyde-3-phosphate dehydrogenase,ET1,1
+glyceraldehyde-3-phosphate dehydrogenase,TGFA,1
+glyceraldehyde-3-phosphate dehydrogenase,erythropoietin,1
+glyceraldehyde-3-phosphate dehydrogenase,EPO,1
+glyceraldehyde-3-phosphate dehydrogenase,Ang,1
+glyceraldehyde-3-phosphate dehydrogenase,IGF2,1
+glyceraldehyde-3-phosphate dehydrogenase,Ang-2,2
+glyceraldehyde-3-phosphate dehydrogenase,Glut1,1
+glyceraldehyde-3-phosphate dehydrogenase,endothelin-1,1
+nitric oxide synthase 2,transforming growth factor alpha,1
+nitric oxide synthase 2,hexokinase 1,1
+nitric oxide synthase 2,c-myc,1
+nitric oxide synthase 2,ET1,1
+nitric oxide synthase 2,TGFA,1
+nitric oxide synthase 2,erythropoietin,1
+nitric oxide synthase 2,EPO,1
+nitric oxide synthase 2,Ang,1
+nitric oxide synthase 2,IGF2,1
+nitric oxide synthase 2,Ang-2,1
+nitric oxide synthase 2,Glut1,1
+nitric oxide synthase 2,endothelin-1,1
+Ang-1,Tie2,1
+Ang-1,Angiopoietin-2,1
+Ang-1,Ang-2,2
+B1 and B2,Ang-2,1
+transforming growth factor alpha,hexokinase 1,1
+transforming growth factor alpha,c-myc,1
+transforming growth factor alpha,ET1,1
+transforming growth factor alpha,TGFA,1
+transforming growth factor alpha,erythropoietin,1
+transforming growth factor alpha,EPO,1
+transforming growth factor alpha,Ang,1
+transforming growth factor alpha,IGF2,1
+transforming growth factor alpha,Ang-2,1
+transforming growth factor alpha,Glut1,1
+transforming growth factor alpha,endothelin-1,1
+hexokinase 1,c-myc,1
+hexokinase 1,ET1,1
+hexokinase 1,TGFA,1
+hexokinase 1,erythropoietin,1
+hexokinase 1,EPO,1
+hexokinase 1,Ang,1
+hexokinase 1,IGF2,1
+hexokinase 1,Ang-2,1
+hexokinase 1,Glut1,1
+hexokinase 1,endothelin-1,1
+c-myc,ET1,1
+c-myc,TGFA,1
+c-myc,erythropoietin,1
+c-myc,EPO,1
+c-myc,Ang,1
+c-myc,IGF2,1
+c-myc,Ang-2,1
+c-myc,Glut1,1
+c-myc,endothelin-1,1
+ET1,TGFA,1
+ET1,erythropoietin,1
+ET1,EPO,1
+ET1,Ang,1
+ET1,IGF2,1
+ET1,Ang-2,1
+ET1,Glut1,1
+ET1,endothelin-1,1
+TGFA,erythropoietin,1
+TGFA,EPO,1
+TGFA,Ang,1
+TGFA,IGF2,1
+TGFA,Ang-2,1
+TGFA,Glut1,1
+TGFA,endothelin-1,1
+SPC-A-1,Ang-2,4
+Tie2,Angiopoietin-2,1
+Tie2,Ang2,1
+Tie2,Ang-2,1
+erythropoietin,EPO,1
+erythropoietin,Ang,1
+erythropoietin,IGF2,1
+erythropoietin,Ang-2,1
+erythropoietin,Glut1,1
+erythropoietin,endothelin-1,1
+EPO,Ang,1
+EPO,IGF2,1
+EPO,Ang-2,1
+EPO,Glut1,1
+EPO,endothelin-1,1
+Ang,IGF2,1
+Ang,Ang-2,1
+Ang,Glut1,1
+Ang,endothelin-1,1
+Angiopoietin-2,Ang-2,1
+IGF2,Ang-2,1
+IGF2,Glut1,1
+IGF2,endothelin-1,1
+Ang-2,beta-actin,3
+Ang-2,Glut1,1
+Ang-2,Snail,6
+Ang-2,Vimentin,2
+Ang-2,endothelin-1,1
+Glut1,endothelin-1,1
+Snail,N-cadherin,1
+Snail,Vimentin,2

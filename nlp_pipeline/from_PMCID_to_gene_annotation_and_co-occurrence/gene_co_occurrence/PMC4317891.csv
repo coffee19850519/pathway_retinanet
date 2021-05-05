@@ -1,0 +1,63 @@
+gene_name_1,gene_name_2,co_occurrence
+peroxisome proliferator-activated receptor gamma,PPARgamma,3
+peroxisome proliferator-activated receptor gamma,TGF-beta2,1
+peroxisome proliferator-activated receptor gamma,epidermal growth factor receptor,1
+PTEN,p70 ribosomal S6 kinase-1,1
+PTEN,Zf9,1
+PTEN,p70S6K,1
+PTEN,TGF-beta1,1
+PTEN,PPARgamma,1
+PTEN,zinc finger transcription factor-9,1
+PC-9,EGFR,1
+PC-9,TGF-beta1,1
+PC-9,TGF-beta2,3
+anaplastic lymphoma kinase,EGFR,1
+anaplastic lymphoma kinase,ALK,1
+anaplastic lymphoma kinase,epidermal growth factor receptor,1
+p70 ribosomal S6 kinase-1,Zf9,2
+p70 ribosomal S6 kinase-1,p70S6K,1
+p70 ribosomal S6 kinase-1,TGFbeta1,1
+p70 ribosomal S6 kinase-1,TGF-beta1,1
+p70 ribosomal S6 kinase-1,PPARgamma,1
+p70 ribosomal S6 kinase-1,Peroxisome proliferator-activated receptor-gamma,1
+p70 ribosomal S6 kinase-1,zinc finger transcription factor-9,1
+TGF-beta,EGFR,2
+TGF-beta,transforming growth factor beta,3
+TGF-beta,PPARgamma,7
+TGF-beta,Smad2,2
+TGF-beta,TGF-beta2,3
+TGF-beta,epidermal growth factor receptor,1
+Zf9,p70S6K,1
+Zf9,TGFbeta1,1
+Zf9,TGF-beta1,1
+Zf9,PPARgamma,1
+Zf9,Peroxisome proliferator-activated receptor-gamma,1
+Zf9,zinc finger transcription factor-9,1
+EGFR,Epidermal growth factor receptor,1
+EGFR,ALK,2
+EGFR,transforming growth factor beta,1
+EGFR,PPARgamma,1
+EGFR,AKT,2
+EGFR,epidermal growth factor receptor,2
+p70S6K,TGF-beta1,1
+p70S6K,PPARgamma,1
+p70S6K,zinc finger transcription factor-9,1
+Smad3,Smad2,1
+Smad3,TGF-beta2,1
+TGFbeta1,PPARgamma,1
+TGFbeta1,Peroxisome proliferator-activated receptor-gamma,1
+ALK,epidermal growth factor receptor,1
+transforming growth factor beta,Smad2,1
+transforming growth factor beta,TGF-beta2,1
+transforming growth factor beta,epidermal growth factor receptor,1
+Transforming growth factor beta1,transforming growth factor beta2,1
+TGF-beta1,PPARgamma,1
+TGF-beta1,TGF-beta2,5
+TGF-beta1,zinc finger transcription factor-9,1
+PPARgamma,TGF-beta2,2
+PPARgamma,Peroxisome proliferator-activated receptor gamma,1
+PPARgamma,zinc finger transcription factor-9,1
+transforming growth factor beta2,Smad2,1
+transforming growth factor beta2,TGF-beta2,2
+Smad2,TGF-beta2,2
+Peroxisome proliferator-activated receptor gamma,epidermal growth factor receptor,1

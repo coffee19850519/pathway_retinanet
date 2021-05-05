@@ -1,0 +1,261 @@
+gene_name_1,gene_name_2,co_occurrence
+miR-34a,miR-34,1
+CDH13,MGMT,1
+CDH13,CDH1,1
+CDH13,DAPK,1
+CDH13,RARB,1
+CDH13,TIMP3,1
+CDH13,CDKN2A,1
+CDH13,RASSF1A,1
+P16INK4,p14ARF,1
+anaplastic lymphoma kinase,echinoderm microtubule-associated protein-like 4,1
+anaplastic lymphoma kinase,EML4,1
+anaplastic lymphoma kinase,ALK,1
+CD8,FasL,1
+HMGA2,E2F1,1
+HMGA2,Let-7,1
+HMGA2,CHK1,1
+HMGA2,aurora A and B,1
+HMGA2,SKP2,1
+GSTM1,cytochrome P450 1A1,1
+miR-17-92,E2F1,1
+miR-17-92,Myc,1
+serine/threonine kinase 11,LKB1,1
+serine/threonine kinase 11,STK11,1
+Thyroid transcription factor 1,NKX2-1,1
+Thyroid transcription factor 1,TITF1,2
+echinoderm microtubule-associated protein-like 4,EML4,1
+echinoderm microtubule-associated protein-like 4,ALK,1
+E2F1,Let-7,1
+E2F1,MYC,1
+E2F1,cyclin D1,1
+E2F1,CHK1,1
+E2F1,caspases 8 and 9,1
+E2F1,c-FLIP,1
+E2F1,aurora A and B,1
+E2F1,p53,1
+E2F1,p14ARF,1
+E2F1,BclX,1
+E2F1,CDK4-6,1
+E2F1,Myc,1
+E2F1,SKP2,1
+BAX,Bcl-2,2
+INK4beta,kip1,1
+INK4beta,p21,1
+INK4beta,p53,1
+INK4beta,p27,1
+INK4beta,p16,1
+MGMT,CDH1,1
+MGMT,DAPK,1
+MGMT,RARB,1
+MGMT,TIMP3,1
+MGMT,CDKN2A,1
+MGMT,RASSF1A,1
+EML4,ALK,1
+HER1,ERBB4,1
+HER1,ERBB3,1
+HER1,EGFR,1
+HER1,HER2,1
+HER1,HER3,1
+HER1,ERBB1,1
+HER1,HER4,1
+HER1,ERBB2,1
+HER1,Neu,1
+HER1,Epidermal growth factor receptor,1
+Let-7,CHK1,1
+Let-7,aurora A and B,1
+Let-7,Let-7f-1,1
+Let-7,SKP2,1
+Let-7,Let-7a-1,1
+cytochrome C,Bax,1
+cytochrome C,Bcl-2,1
+Mdm2,p14,1
+Mdm2,p53,4
+Mdm2,p14ARF,4
+Mdm2,G1 and G2,1
+ERBB4,ERBB3,1
+ERBB4,EGFR,1
+ERBB4,HER2,1
+ERBB4,HER3,1
+ERBB4,ERBB1,1
+ERBB4,HER4,1
+ERBB4,ERBB2,1
+ERBB4,Neu,1
+ERBB4,Epidermal growth factor receptor,1
+ERBB3,EGFR,1
+ERBB3,HER2,1
+ERBB3,HER3,1
+ERBB3,ERBB1,1
+ERBB3,HER4,1
+ERBB3,ERBB2,1
+ERBB3,Neu,1
+ERBB3,Epidermal growth factor receptor,1
+SCC,PIK3CA,1
+SCC,STK11,1
+kip1,p21,1
+kip1,p53,1
+kip1,p27,1
+kip1,p16,1
+ERCC1-2 and XPA,XRCC3,1
+ERCC1-2 and XPA,XRCC1,1
+ERCC1-2 and XPA,MSH2,1
+ERCC1-2 and XPA,OGG1,1
+ERCC1-2 and XPA,MLH1,1
+MYC,L-MYC,1
+MYC,p14ARF,1
+MYC,N-MYC,1
+MYC,C-MYC,1
+cyclin D1,INK4A,1
+cyclin D1,p16INK4,2
+cyclin D1,p53,1
+cyclin D1,Cyclin D1,1
+cyclin D1,p16,2
+XRCC3,XRCC1,1
+XRCC3,MSH2,1
+XRCC3,OGG1,1
+XRCC3,MLH1,1
+Grb2,phosphatidylinositol 3-kinase,1
+p21,p53,1
+p21,p27,1
+p21,p16,1
+RET,BRAF,1
+RET,KRAS,1
+myc,p53,1
+EGFR,TP53,1
+EGFR,HER2,5
+EGFR,HER3,2
+EGFR,amphiregulin,2
+EGFR,ERBB1,1
+EGFR,HER4,2
+EGFR,BRAF,5
+EGFR,transforming growth factor-alpha,1
+EGFR,ERBB2,2
+EGFR,PIK3CA,2
+EGFR,TITF1,1
+EGFR,Neu,1
+EGFR,Epidermal growth factor receptor,2
+EGFR,KRAS,10
+LKB1,STK11,1
+p14,G1 and G2,1
+CC10,TTF1,1
+ATM,CHK2,1
+ATM,p53,2
+ATM,p14ARF,1
+ATM,H2AX,1
+ATM,Ataxia telangiectasia mutated,1
+TP53,KRAS,1
+XRCC1,MSH2,1
+XRCC1,OGG1,1
+XRCC1,ERCC2,1
+XRCC1,MLH1,1
+CCNE2,CCND1,1
+CCNE2,Cyclin D1,1
+cyclins D1 and E,p16,1
+HER2,HER3,1
+HER2,ERBB1,1
+HER2,HER4,2
+HER2,BRAF,2
+HER2,ERBB2,2
+HER2,PIK3CA,2
+HER2,Neu,1
+HER2,Epidermal growth factor receptor,1
+HER2,KRAS,2
+CDH1,DAPK,1
+CDH1,RARB,1
+CDH1,TIMP3,1
+CDH1,CDKN2A,1
+CDH1,RASSF1A,1
+CHK2,p53,1
+CHK2,p14ARF,1
+CHK2,H2AX,1
+HER3,ERBB1,1
+HER3,HER4,1
+HER3,ERBB2,1
+HER3,Neu,1
+HER3,Epidermal growth factor receptor,1
+DAPK,RARB,1
+DAPK,TIMP3,1
+DAPK,CDKN2A,1
+DAPK,RASSF1A,1
+amphiregulin,transforming growth factor-alpha,1
+L-MYC,N-MYC,1
+L-MYC,C-MYC,1
+CHK1,aurora A and B,1
+CHK1,SKP2,1
+Bcl2,Waf1,1
+Bcl2,Bax,2
+Bcl2,p53,2
+p19ARF,p16INK4a,1
+caspases 8 and 9,BclX,1
+ERBB1,HER4,1
+ERBB1,ERBB2,1
+ERBB1,Neu,1
+ERBB1,Epidermal growth factor receptor,1
+MSH2,OGG1,1
+MSH2,MLH1,1
+RARB,TIMP3,1
+RARB,CDKN2A,1
+RARB,RASSF1A,1
+CCND1,Cyclin D1,1
+HER4,BRAF,1
+HER4,ERBB2,1
+HER4,PIK3CA,1
+HER4,Neu,1
+HER4,Epidermal growth factor receptor,1
+INK4A,p16,1
+p16INK4,p14ARF,1
+p16INK4,retinoblastoma,1
+p16INK4,p16,1
+DR5,tumour necrosis factor receptor-like apoptosis inducing ligand,2
+DR5,Bax,1
+DR5,p53,1
+DR5,Bcl-2,1
+DR5,TRAIL-death receptor 5,1
+DR5,retinoblastoma,1
+DR5,TRAIL,2
+BRAF,PIK3CA,2
+BRAF,KRAS,5
+hTERT,telomerase reverse transcriptase,1
+NKX2-1,TITF1,1
+Waf1,Bax,1
+Waf1,p53,1
+tumour necrosis factor receptor-like apoptosis inducing ligand,Bax,1
+tumour necrosis factor receptor-like apoptosis inducing ligand,p53,1
+tumour necrosis factor receptor-like apoptosis inducing ligand,Bcl-2,1
+tumour necrosis factor receptor-like apoptosis inducing ligand,TRAIL-death receptor 5,1
+tumour necrosis factor receptor-like apoptosis inducing ligand,retinoblastoma,1
+tumour necrosis factor receptor-like apoptosis inducing ligand,TRAIL,2
+Bax,p53,3
+Bax,Bcl-2,3
+Bax,TRAIL-death receptor 5,1
+Bax,TRAIL,1
+aurora A and B,SKP2,1
+p53,p14ARF,5
+p53,Bcl-2,1
+p53,TRAIL-death receptor 5,1
+p53,p27,1
+p53,H2AX,1
+p53,miR-34,2
+p53,p16,1
+p53,TRAIL,1
+p14ARF,H2AX,1
+ERBB2,Neu,1
+ERBB2,Epidermal growth factor receptor,1
+Bcl-2,TRAIL-death receptor 5,1
+Bcl-2,TRAIL,1
+TRAIL-death receptor 5,TRAIL,1
+TIMP3,CDKN2A,1
+TIMP3,RASSF1A,1
+FasL,caspase-8,1
+FasL,CD95,1
+OGG1,MLH1,1
+retinoblastoma,p16,1
+retinoblastoma,TRAIL,1
+p27,p16,1
+PIK3CA,KRAS,2
+TTF1,TITF1,1
+N-MYC,C-MYC,1
+CDKN2A,RASSF1A,1
+Neu,Epidermal growth factor receptor,1
+Let-7f-1,Let-7a-1,1
+KRAS,epidermal growth factor receptor,1

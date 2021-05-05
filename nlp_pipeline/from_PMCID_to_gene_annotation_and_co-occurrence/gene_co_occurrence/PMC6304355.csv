@@ -1,0 +1,113 @@
+gene_name_1,gene_name_2,co_occurrence
+prostaglandin G/H synthase 2,PTGS2,1
+prostaglandin G/H synthase 2,COX-2,1
+prostaglandin G/H synthase 2,p65,1
+prostaglandin G/H synthase 2,iNOS,1
+prostaglandin G/H synthase 2,NF-kappaB,1
+granzyme B,interferon-gamma,1
+granzyme B,IFN-gamma,1
+granzyme B,FoxP3,1
+Mitogen-activated protein kinase 14,p38,1
+Mitogen-activated protein kinase 14,VEGF,1
+Mitogen-activated protein kinase 14,ERK,1
+Nitric oxide synthase 2,NOS2,1
+p38,GAPDH,1
+p38,VEGF,2
+p38,muM,1
+p38,COX-2,1
+p38,ERK,4
+p38,Bax,1
+p38,iNOS,1
+p38,ERK1/2,1
+p38,P-ERK,1
+p38,Bcl-2,1
+p38,NF-kappaB,1
+p38,AKT,3
+p38,CDK2,1
+GAPDH,COX-2,1
+GAPDH,ERK,1
+GAPDH,Bax,1
+GAPDH,iNOS,1
+GAPDH,P-ERK,1
+GAPDH,Bcl-2,1
+GAPDH,NF-kappaB,1
+GAPDH,AKT,1
+GAPDH,CDK2,1
+VEGF,SBD,1
+VEGF,P53,1
+VEGF,ERK,1
+VEGF,p53,3
+VEGF,NF-kappa B,2
+P38,SBD,1
+P38,Bax,1
+P38,iNOS,1
+TCM,SBD,1
+SBD,COX-2,2
+SBD,PIK3CG,1
+SBD,ERK,1
+SBD,CDK1,1
+SBD,Bax,2
+SBD,iNOS,2
+SBD,p53,1
+SBD,NF-kappaB,2
+SBD,NF-kappa B,1
+muM,ERK,1
+muM,AKT,1
+interferon-gamma,IFN-gamma,1
+interferon-gamma,FoxP3,1
+P53,cdk2-CyclinE,1
+P53,Bax,1
+P53,CDK2,2
+IFN-gamma,FoxP3,1
+CD49b,CD25,1
+CD49b,CD3E,1
+CD49b,CD8a,1
+CD25,CD3E,1
+CD25,CD8a,1
+COX-2,ERK,2
+COX-2,CDK1,1
+COX-2,p65,1
+COX-2,Bax,2
+COX-2,iNOS,8
+COX-2,P-ERK,1
+COX-2,Bcl-2,1
+COX-2,NF-kappaB,9
+COX-2,AKT,1
+COX-2,CDK2,1
+cdk2-CyclinE,CDK2,1
+CD3E,CD8a,1
+ERK,CDK1,1
+ERK,Bax,2
+ERK,iNOS,1
+ERK,P-ERK,1
+ERK,Bcl-2,1
+ERK,NF-kappaB,2
+ERK,AKT,3
+ERK,CDK2,1
+CDK1,Bax,1
+CDK1,NF-kappaB,1
+p65,iNOS,1
+p65,NF-kappaB,1
+Bax,iNOS,2
+Bax,P-ERK,1
+Bax,Bcl-2,2
+Bax,NF-kappaB,2
+Bax,AKT,1
+Bax,CDK2,4
+iNOS,P-ERK,1
+iNOS,Bcl-2,1
+iNOS,NF-kappaB,8
+iNOS,AKT,1
+iNOS,CDK2,1
+p53,NF-kappa B,2
+P-ERK,Bcl-2,1
+P-ERK,NF-kappaB,1
+P-ERK,AKT,1
+P-ERK,CDK2,1
+Bcl-2,NF-kappaB,1
+Bcl-2,AKT,1
+Bcl-2,Apoptosis regulator Bcl-2,1
+Bcl-2,CDK2,2
+NF-kappaB,AKT,1
+NF-kappaB,CDK2,1
+AKT,CDK2,1

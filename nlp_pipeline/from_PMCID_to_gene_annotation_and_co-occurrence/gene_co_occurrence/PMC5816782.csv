@@ -1,0 +1,56 @@
+gene_name_1,gene_name_2,co_occurrence
+PARP,S3B,1
+PARP,LC3,1
+PARP,p53,3
+PARP,ERK1/2,1
+PARP,beta-actin,1
+PARP,p62,1
+PARP,c-met,1
+PARP,caspase-3,7
+PARP,Caspase-3,1
+PARP,AKT,1
+MEK,RAF,1
+MEK,ERK,1
+matrix metallopeptidase-2,Angiogenin,1
+matrix metallopeptidase-2,ERK1/2,1
+RAF,ERK,1
+ERK,Extracellular signal-regulated kinases,1
+ERK,p53,3
+ERK,c-met,1
+ERK,extracellular signal-regulated kinases,1
+S3B,p53,1
+S3B,caspase-3,1
+Angiogenin,ERK1/2,1
+LC3,p53,2
+LC3,ERK1/2,1
+LC3,beta-actin,1
+LC3,p62,4
+LC3,c-met,3
+LC3,caspase-3,1
+LC3,AKT,3
+p53,ERK1/2,2
+p53,beta-actin,1
+p53,p62,2
+p53,c-met,3
+p53,caspase-3,3
+p53,AKT,1
+p53,extracellular signal-regulated kinases,1
+ERK1/2,beta-actin,1
+ERK1/2,p62,1
+ERK1/2,c-met,1
+ERK1/2,caspase-3,1
+ERK1/2,AKT,1
+HER2,c-Met,1
+beta-actin,p62,1
+beta-actin,c-met,1
+beta-actin,caspase-3,1
+beta-actin,AKT,1
+p62,c-met,2
+p62,caspase-3,1
+p62,AKT,2
+p62,S5B,1
+c-met,caspase-3,1
+c-met,AKT,5
+caspase-3,Caspase-3,1
+caspase-3,AKT,1
+AKT,S5B,1

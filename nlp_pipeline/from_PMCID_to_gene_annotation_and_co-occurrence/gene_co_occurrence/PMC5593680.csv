@@ -1,0 +1,216 @@
+gene_name_1,gene_name_2,co_occurrence
+fatty acid synthase,FASN,1
+IGF-1,IGFBP3,1
+IGF-1,LKB1,1
+IGF-1,Insulin-like growth factor I,1
+IGF-1,IL6,1
+IGF-1,IGF1,1
+IGF-1,insulin,2
+p27kip1,AMPK,1
+IGF-I,IGFBP3,1
+IGF-I,Akt,1
+IGF-I,AMPK,1
+IGF-I,IGF binding protein 3,1
+IGF-I,4EBP1,1
+IGF-I,p70S6k,1
+MRE11,histone H2Ax,1
+MRE11,ATM,2
+IGFBP3,Akt,1
+IGFBP3,LKB1,1
+IGFBP3,IGF binding protein 3,1
+IGFBP3,4EBP1,1
+IGFBP3,IL6,1
+IGFBP3,IGF1,1
+IGFBP3,p70S6k,1
+Acc1,Acc2,1
+Epidermal Growth Factor Receptor,EGFR,2
+Epidermal Growth Factor Receptor,LKB1,1
+Epidermal Growth Factor Receptor,TP53,1
+Epidermal Growth Factor Receptor,Liver Kinase B 1,1
+Epidermal Growth Factor Receptor,K-Ras,1
+TSC2,Akt,1
+TSC2,PRAS40,1
+TSC2,mTORC1,3
+TSC2,ATM,1
+TSC2,Raptor,2
+TSC2,mTOR,1
+TSC2,Rheb,2
+TSC2,TSC1,1
+alpha1 and alpha2,beta2,1
+p70S6-kinase,eIF4E binding protein 1,1
+p70S6-kinase,mTORC1,1
+p70S6-kinase,4EBP1,1
+p70S6-kinase,p70s6k,1
+p70S6K,mTORC1,1
+p70S6K,4EBP1,1
+p70S6K,eukaryotic initiation factor 4E,1
+p70S6K,p70-S6 kinase,1
+raptor,AMPK,1
+HIF1a,AMPK,1
+HIF1a,HIF1alpha,1
+HIF1a,LKB1,1
+HIF1a,NDI1,1
+AMPK beta1,LKB1,1
+AMPK beta1,p53,1
+Chk1,Chk2,2
+Chk1,ATR,1
+Chk1,ATM,1
+Chk1,p53,1
+SREBP1a and 1c,SREBP2,1
+kip1,p27,1
+Akt,AMPK,1
+Akt,PRAS40,1
+Akt,mTORC1,2
+Akt,IGF binding protein 3,1
+Akt,mammalian Target of Rapamycin,1
+Akt,4EBP1,1
+Akt,p21cip1,1
+Akt,p53,1
+Akt,FASN,1
+Akt,Raptor,1
+Akt,GLUT1,1
+Akt,mTOR,5
+Akt,hexokinase,1
+Akt,K-Ras,1
+Akt,Rheb,1
+Akt,p70S6k,1
+LLC1,AMPK,1
+LLC1,LKB1,2
+LLC1,p53,1
+LLC1,mTOR,1
+LLC1,K-Ras,1
+AMPK,HIF1alpha,4
+AMPK,mTORC1,2
+AMPK,LKB1,11
+AMPK,ATM,10
+AMPK,Liver Kinase B 1,1
+AMPK,Sestrin2,1
+AMPK,NDI1,1
+AMPK,vascular endothelial growth factor,1
+AMPK,p21cip1,2
+AMPK,BRAF,2
+AMPK,p53,6
+AMPK,HMGR,1
+AMPK,SREBP1c,1
+AMPK,AMP-activated protein kinase,5
+AMPK,sestrin 2,1
+AMPK,FASN,1
+AMPK,Bcl-2,1
+AMPK,Raptor,1
+AMPK,GLUT1,1
+AMPK,mTOR,7
+AMPK,FOXO3a,3
+AMPK,VEGF,1
+AMPK,Caveolin-1,1
+AMPK,K-Ras,2
+AMPK,caspase 6,1
+AMPK,cystathionine beta synthase,1
+PRAS40,mTORC1,1
+PRAS40,Raptor,1
+PRAS40,mTOR,1
+PRAS40,Rheb,1
+ACC2,insulin,1
+ACC2,ACC1,2
+eIF4E binding protein 1,mTORC1,1
+eIF4E binding protein 1,4EBP1,1
+eIF4E binding protein 1,p70s6k,1
+HIF1alpha,LKB1,2
+HIF1alpha,NDI1,1
+HIF1alpha,vascular endothelial growth factor,1
+HIF1alpha,p53,1
+HIF1alpha,GLUT1,1
+HIF1alpha,FOXO3a,1
+HIF1alpha,VEGF,1
+Chk2,ATR,1
+Chk2,ATM,1
+Chk2,p53,1
+HMG-CoA Reductase,HMGR,1
+HMG-CoA Reductase,Fatty acid synthase,1
+HMG-CoA Reductase,FASN,1
+mTORC1,ATM,1
+mTORC1,mammalian Target of Rapamycin,1
+mTORC1,4EBP1,2
+mTORC1,eukaryotic initiation factor 4E,1
+mTORC1,p70s6k,1
+mTORC1,Raptor,3
+mTORC1,mTOR,4
+mTORC1,K-Ras,1
+mTORC1,Rheb,2
+mTORC1,TSC1,1
+mTORC1,p70-S6 kinase,1
+EGFR,LKB1,2
+EGFR,TP53,1
+EGFR,Liver Kinase B 1,1
+EGFR,muM,2
+EGFR,mTOR,2
+EGFR,K-Ras,2
+EGFR,ACLY,1
+LKB1,TP53,1
+LKB1,Liver Kinase B 1,2
+LKB1,NDI1,1
+LKB1,IL6,1
+LKB1,IGF1,1
+LKB1,p53,7
+LKB1,mTOR,2
+LKB1,HIF-1alpha,1
+LKB1,K-Ras,6
+LKB1,Lkb1,1
+LKB1,KRAS,1
+ATR,ATM,1
+ATR,p53,1
+histone H2Ax,ATM,1
+IGF binding protein 3,4EBP1,1
+IGF binding protein 3,p70S6k,1
+FOXO3,AMP-activated protein kinase,1
+ATM,p21cip1,1
+ATM,p53,5
+ATM,ataxia telangiectasia mutated,1
+TP53,Liver Kinase B 1,1
+TP53,K-Ras,1
+Insulin-Like Growth Factor-1 Receptor,Mammalian Target of Rapamycin,1
+Liver Kinase B 1,K-Ras,1
+LKB-1,K-Ras,1
+CHK2,CHK1,1
+mammalian Target of Rapamycin,mTOR,1
+mammalian Target of Rapamycin,K-Ras,1
+vascular endothelial growth factor,GLUT1,1
+vascular endothelial growth factor,VEGF,1
+4EBP1,eukaryotic initiation factor 4E,1
+4EBP1,p70s6k,1
+4EBP1,p70S6k,1
+4EBP1,p70-S6 kinase,1
+eukaryotic initiation factor 4E,p70-S6 kinase,1
+p21cip1,p53,3
+p21cip1,mTOR,1
+muM,mTOR,1
+Insulin-like growth factor I,insulin,1
+IL6,IGF1,1
+IGF1,Caveolin-1,1
+p53,Bcl-2,1
+p53,GLUT1,1
+p53,mTOR,1
+p53,FOXO3a,1
+p53,hexokinase,1
+p53,K-Ras,3
+p53,caspase 6,1
+HMGR,Fatty acid synthase,1
+HMGR,FASN,1
+HMGR,HMG-CoA reductase,1
+HMGR,ACLY,1
+Fatty acid synthase,FASN,1
+insulin,ACC1,1
+FASN,ACC1,1
+FASN,ACLY,1
+Bcl-2,caspase 6,1
+Raptor,mTOR,2
+Raptor,Rheb,2
+Raptor,TSC1,1
+GLUT1,VEGF,1
+GLUT1,hexokinase,1
+mTOR,K-Ras,2
+mTOR,Rheb,1
+Caveolin-1,K-Ras,1
+K-Ras,ACLY,1
+ACC1,ACLY,1
+ATP Citrate Lyase,ACLY,2
+Rheb,TSC1,1

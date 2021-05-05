@@ -1,0 +1,302 @@
+gene_name_1,gene_name_2,co_occurrence
+apo2 ligand,Tumor necrosis factor-related apoptosis-inducing ligand,1
+apo2 ligand,TRAIL,1
+caspase-8,PARP,1
+caspase-8,caspase-9,3
+caspase-8,GAPDH,1
+caspase-8,death receptor 5,1
+caspase-8,P38,1
+caspase-8,c-JUN,1
+caspase-8,Bid,1
+caspase-8,DR4,3
+caspase-8,Bcl-xl,1
+caspase-8,NF-kappaB p65,1
+caspase-8,DR5,3
+caspase-8,c-FLIP,1
+caspase-8,ERK,1
+caspase-8,Bax,1
+caspase-8,p53,1
+caspase-8,TRAIL,3
+caspase-8,death receptor 4,1
+caspase-8,p-ERK,1
+caspase-8,Bcl-2,1
+caspase-8,caspase-3,3
+caspase-8,AKT,1
+caspase-8,IkB-alpha,1
+PARP,caspase-9,2
+PARP,GAPDH,1
+PARP,P38,1
+PARP,c-JUN,1
+PARP,DR4,1
+PARP,Bcl-xl,1
+PARP,NF-kappaB p65,1
+PARP,DR5,1
+PARP,ERK,1
+PARP,Bax,1
+PARP,p53,1
+PARP,TRAIL,2
+PARP,p-ERK,1
+PARP,Bcl-2,2
+PARP,caspase-3,2
+PARP,Caspase-8,1
+PARP,caspases,1
+PARP,AKT,1
+PARP,IkB-alpha,1
+A1/A2,TRAIL,1
+STAT3,NFkappaB,1
+STAT3,p53,1
+STAT3,NF-kappaB,1
+mTOR,Raptor,1
+caspase-9,GAPDH,1
+caspase-9,P38,1
+caspase-9,c-JUN,1
+caspase-9,DR4,1
+caspase-9,cytochrome c,1
+caspase-9,Bcl-xl,1
+caspase-9,NF-kappaB p65,1
+caspase-9,DR5,1
+caspase-9,ERK,1
+caspase-9,Bax,2
+caspase-9,p53,1
+caspase-9,TRAIL,2
+caspase-9,p-ERK,1
+caspase-9,Bcl-2,2
+caspase-9,caspase-3,8
+caspase-9,Caspase-8,1
+caspase-9,AKT,1
+caspase-9,Caspase-3,1
+caspase-9,IkB-alpha,1
+MEK,HSP70,1
+MEK,ERK,1
+MEK,p53,1
+MEK,TRAIL,1
+p38,muM,1
+p38,MAPK,1
+p38,ERK,2
+p38,TRAIL,2
+JNK,c-Jun N-terminal kinase,1
+JNK,c-JUN,2
+JNK,muM,1
+JNK,Bcl-xl,1
+JNK,c-Jun,1
+JNK,p53,3
+JNK,TRAIL,6
+JNK,Bcl-2,1
+JNK,NF-kappaB,6
+JNK,AKT,1
+c-Jun N-terminal kinase,c-Jun,1
+c-Jun N-terminal kinase,p53,1
+GAPDH,P38,1
+GAPDH,c-JUN,1
+GAPDH,DR4,2
+GAPDH,Bcl-xl,1
+GAPDH,NF-kappaB p65,1
+GAPDH,DR5,2
+GAPDH,ERK,1
+GAPDH,Bax,1
+GAPDH,p53,1
+GAPDH,p-ERK,1
+GAPDH,glyceraldehydes 3-phosphatase dehydrogenase,1
+GAPDH,Bcl-2,1
+GAPDH,caspase-3,1
+GAPDH,AKT,1
+GAPDH,IkB-alpha,1
+death receptor 5,DR4,2
+death receptor 5,DR5,2
+death receptor 5,TRAIL,1
+death receptor 5,death receptor 4,2
+HSP70,HSP90,3
+HSP70,muM,3
+HSP70,DR4,2
+HSP70,Bcl-xl,1
+HSP70,DR5,2
+HSP70,ERK,1
+HSP70,HSP27,4
+HSP70,p53,1
+HSP70,TRAIL,6
+HSP70,c-FLIP-L,1
+HSP70,Bcl-2,1
+HSP70,NF-kappaB,1
+HSP70,AKT,1
+HSP90,muM,2
+HSP90,HSP27,4
+HSP90,TRAIL,2
+P38,c-JUN,1
+P38,muM,1
+P38,DR4,1
+P38,Bcl-xl,1
+P38,NF-kappaB p65,1
+P38,DR5,1
+P38,ERK,2
+P38,Bax,1
+P38,p53,1
+P38,TRAIL,1
+P38,p-ERK,2
+P38,Bcl-2,1
+P38,caspase-3,1
+P38,AKT,1
+P38,IkB-alpha,1
+c-JUN,muM,2
+c-JUN,DR4,1
+c-JUN,Bcl-xl,1
+c-JUN,NF-kappaB p65,1
+c-JUN,DR5,1
+c-JUN,ERK,1
+c-JUN,Bax,1
+c-JUN,p53,2
+c-JUN,TRAIL,2
+c-JUN,p-ERK,1
+c-JUN,Bcl-2,1
+c-JUN,caspase-3,1
+c-JUN,AKT,1
+c-JUN,IkB-alpha,1
+muM,DR4,2
+muM,DR5,2
+muM,ERK,2
+muM,HSP27,2
+muM,p65,2
+muM,IkappaBalpha,1
+muM,p53,2
+muM,TRAIL,29
+muM,p-ERK,1
+muM,AKT,1
+Bid,DR4,1
+Bid,DR5,1
+Bid,TRAIL,1
+Bid,Caspase-8,1
+TRAMP,beta-catenin,1
+DR4,Bcl-xl,1
+DR4,NF-kappaB p65,1
+DR4,DR5,26
+DR4,ERK,1
+DR4,HSP27,1
+DR4,Bax,1
+DR4,p53,7
+DR4,TRAIL,12
+DR4,death receptor 4,2
+DR4,p-ERK,1
+DR4,c-FLIP-L,1
+DR4,Bcl-2,1
+DR4,caspase-3,1
+DR4,AKT,1
+DR4,IkB-alpha,1
+cytochrome c,Bax,1
+cytochrome c,Bcl-2,1
+cytochrome c,caspase-3,1
+Bcl-xl,NF-kappaB p65,1
+Bcl-xl,DR5,1
+Bcl-xl,c-FLIP,3
+Bcl-xl,ERK,2
+Bcl-xl,Mcl-1,1
+Bcl-xl,p65,1
+Bcl-xl,Bax,6
+Bcl-xl,IkappaBalpha,1
+Bcl-xl,p53,1
+Bcl-xl,TRAIL,6
+Bcl-xl,p-ERK,1
+Bcl-xl,Bcl-2,16
+Bcl-xl,caspase-3,1
+Bcl-xl,NF-kappaB,6
+Bcl-xl,caspases,1
+Bcl-xl,AKT,5
+Bcl-xl,IkB-alpha,1
+protein kinase B or AKT,phosphoinositide 3-kinase,1
+NF-kappaB p65,DR5,1
+NF-kappaB p65,ERK,1
+NF-kappaB p65,Bax,1
+NF-kappaB p65,IkappaB-alpha,1
+NF-kappaB p65,p53,1
+NF-kappaB p65,TRAIL,1
+NF-kappaB p65,p-ERK,1
+NF-kappaB p65,Bcl-2,1
+NF-kappaB p65,caspase-3,1
+NF-kappaB p65,AKT,1
+NF-kappaB p65,IkB-alpha,1
+MAPK,ERK,1
+MAPK,TRAIL,1
+DR5,ERK,1
+DR5,HSP27,1
+DR5,Bax,1
+DR5,p53,10
+DR5,TRAIL,13
+DR5,death receptor 4,2
+DR5,p-ERK,1
+DR5,c-FLIP-L,1
+DR5,Bcl-2,1
+DR5,caspase-3,1
+DR5,AKT,1
+DR5,IkB-alpha,1
+c-FLIP,Mcl-1,1
+c-FLIP,TRAIL,3
+c-FLIP,Bcl-2,3
+c-FLIP,NF-kappaB,2
+c-Jun,p53,1
+ERK,Bax,1
+ERK,p53,1
+ERK,TRAIL,7
+ERK,p-ERK,2
+ERK,Bcl-2,2
+ERK,caspase-3,1
+ERK,NF-kappaB,3
+ERK,AKT,4
+ERK,IkB-alpha,1
+HSP27,TRAIL,2
+Tumor necrosis factor-related apoptosis-inducing ligand,TRAIL,1
+Mcl-1,Bcl-2,1
+p65,IkappaBalpha,3
+p65,TRAIL,5
+p65,p50,1
+p65,Bcl-2,1
+p65,NF-kappaB,4
+p65,AKT,2
+Bax,p53,2
+Bax,TRAIL,3
+Bax,p-ERK,1
+Bax,Bcl-2,9
+Bax,caspase-3,2
+Bax,caspases,1
+Bax,AKT,1
+Bax,IkB-alpha,1
+NFkappaB,p53,1
+IkappaB-alpha,TRAIL,1
+IkappaBalpha,TRAIL,3
+IkappaBalpha,p50,1
+IkappaBalpha,Bcl-2,1
+IkappaBalpha,NF-kappaB,2
+IkappaBalpha,AKT,1
+procaspase-3,TRAIL,2
+p53,TRAIL,7
+p53,death receptor 4,1
+p53,p-ERK,1
+p53,Bcl-2,2
+p53,caspase-3,1
+p53,NF-kappaB,1
+p53,AKT,1
+p53,IkB-alpha,1
+TRAIL,death receptor 4,1
+TRAIL,p-ERK,1
+TRAIL,trail,1
+TRAIL,Bcl-2,7
+TRAIL,caspase-3,2
+TRAIL,NF-kappaB,6
+TRAIL,caspases,3
+TRAIL,AKT,4
+p-ERK,Bcl-2,1
+p-ERK,caspase-3,1
+p-ERK,AKT,1
+p-ERK,IkB-alpha,1
+p50,NF-kappaB,1
+Bcl-2,caspase-3,2
+Bcl-2,NF-kappaB,6
+Bcl-2,caspases,1
+Bcl-2,AKT,5
+Bcl-2,IkB-alpha,1
+caspase-3,Caspase-8,1
+caspase-3,AKT,1
+caspase-3,IkB-alpha,1
+NF-kappaB,caspases,1
+NF-kappaB,AKT,9
+NF-kappaB,FLICE-like inhibitory protein,1
+NF-kappaB,Akt,1
+AKT,IkB-alpha,1
+AKT,FLICE-like inhibitory protein,1

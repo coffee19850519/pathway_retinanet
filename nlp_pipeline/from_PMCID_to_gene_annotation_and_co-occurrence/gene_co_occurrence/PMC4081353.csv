@@ -1,0 +1,20 @@
+gene_name_1,gene_name_2,co_occurrence
+c-Raf,K-Ras,1
+c-Raf,B-Raf,1
+BRAF,CRAF,7
+BRAF,pERK,1
+BRAF,ERK,8
+BRAF,KRAS,29
+K-Ras,B-Raf,1
+CRAF,ERK,1
+CRAF,KRAS,3
+cytokeratin 5/6,napsin A,1
+cytokeratin 5/6,thyroid transcription factor-1,1
+cytokeratin 5/6,p63,1
+Raf-1,B-Raf,1
+pERK,ERK,1
+pERK,KRAS,1
+ERK,KRAS,6
+napsin A,thyroid transcription factor-1,1
+napsin A,p63,1
+thyroid transcription factor-1,p63,1

@@ -1,0 +1,36 @@
+gene_name_1,gene_name_2,co_occurrence
+MAP2K1,MEK,1
+MAP2K1,MAPK 1,1
+MAP2K1,BRAF,1
+MEK,extracellular signal-regulated kinase,1
+MEK,MAPK 1,1
+MEK,BRAF,24
+MEK,EGFR,1
+MEK,RAF,1
+MEK,ERK,5
+MEK,mitogen-activated protein kinase,3
+MEK,MEK1/2,1
+extracellular signal-regulated kinase,ERK,1
+erbB2,Braf,1
+anaplastic lymphoma kinase,EGFR,1
+anaplastic lymphoma kinase,ALK,1
+anaplastic lymphoma kinase,epidermal growth factor receptor,1
+MAPK 1,BRAF,1
+RET,BRAF,1
+RET,HER2,1
+ARAF,BRAF,1
+ARAF,CRAF,1
+ARAF,RAF,1
+BRAF,CRAF,2
+BRAF,EGFR,2
+BRAF,RAF,2
+BRAF,ERK,5
+BRAF,HER2,1
+BRAF,mitogen-activated protein kinase,2
+BRAF,KRAS,1
+CRAF,RAF,1
+EGFR,ALK,3
+EGFR,KRAS,1
+EGFR,epidermal growth factor receptor,1
+ERK1,ERK2,1
+ALK,epidermal growth factor receptor,1

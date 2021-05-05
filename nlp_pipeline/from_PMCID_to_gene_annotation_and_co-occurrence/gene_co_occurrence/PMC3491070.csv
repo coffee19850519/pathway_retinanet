@@ -1,0 +1,194 @@
+gene_name_1,gene_name_2,co_occurrence
+4E-binding protein 1,S6K1,1
+4E-binding protein 1,mTORC1,1
+4E-binding protein 1,4E-BP1,1
+4E-binding protein 1,S6 kinase 1,1
+fatty acid synthase,SHMT,1
+fatty acid synthase,serine hydroxymethyltransferase,1
+fatty acid synthase,FAS,1
+fatty acid synthase,Myc,1
+synthesis of cytochrome oxidase 2,TP53-induced glycolysis and apoptosis regulator,1
+synthesis of cytochrome oxidase 2,PDK-1,1
+synthesis of cytochrome oxidase 2,TIGAR,1
+synthesis of cytochrome oxidase 2,SCO2,1
+synthesis of cytochrome oxidase 2,p53,1
+IDH,SDH,1
+IDH,FH,1
+HK1,HK2,1
+S6K1,mTORC1,1
+S6K1,4E-BP1,1
+S6K1,S6 kinase 1,1
+hexokinase 2,HK2,1
+lipin 1,mTOR,1
+PHD2,PHD3,1
+PHD2,prolyl hydroxylase 2,1
+PHD2,HIF-1alpha,1
+PHD2,HIF-1,1
+glutamine synthetase,GLUL,1
+MEK5,STAT3,1
+MEK5,PKM2,1
+raptor,AMPK,1
+c-Myc,HIF1alpha,1
+c-Myc,sterol regulatory element-binding protein 1,1
+c-Myc,hypoxia inducible factor 1alpha,1
+c-Myc,SREBP-1,1
+c-Myc,glutaminase,1
+c-Myc,Myc,1
+pyruvate dehydrogenase kinase-1,PDK1,1
+pyruvate dehydrogenase kinase-1,LDHA,1
+pyruvate dehydrogenase kinase-1,lactate dehydrogenase A,1
+pyruvate dehydrogenase kinase-1,HIF-1,1
+ATP-citrate lyase,Akt,1
+ATP-citrate lyase,protein kinase B,1
+GLUT4,p53,1
+GLUT4,GLUT1,1
+RTK,receptor tyrosine kinase,2
+PDK1,LDHA,2
+PDK1,lactate dehydrogenase A,1
+PDK1,HIF-1,1
+liver kinase B1,AMPK,1
+liver kinase B1,LKB1,2
+AMPK beta1,p53,1
+AMPK beta1,PTEN,1
+SHMT,serine hydroxymethyltransferase,1
+SHMT,FAS,1
+SHMT,Myc,1
+GLS1,GLS2,4
+GLS1,p53,1
+GLS1,glutaminase,1
+GLS1,Myc,1
+RagB,Rag D,1
+RagB,mTORC1,1
+RagB,Rag C,1
+Akt,ACL,1
+Akt,protein kinase B,1
+ASNS,p13,1
+ASNS,asparaginase,2
+ASNS,asparagine synthetase,1
+STAT3,PKM2,1
+AMPK,LKB1,2
+AMPK,p53,2
+AMPK,AMP-activated protein kinase,2
+PRAS40,mTORC1,2
+PRAS40,proline-rich Akt substrate 40 kDa,1
+PKL,PKM2,1
+PKL,PKR,2
+PFK1,NADPH,1
+PFK1,TIGAR,1
+PFK1,SCO2,1
+PFK1,PFK2,1
+PFK1,PFKFB3,2
+PFK1,PFKFB4,1
+PKM2,EGFR,1
+PKM2,PKR,1
+PKM2,beta-catenin,2
+PKM2,HIF1,1
+Glutaminase 2,p53,1
+p13,asparaginase,1
+TP53-induced glycolysis and apoptosis regulator,PDK-1,1
+TP53-induced glycolysis and apoptosis regulator,TIGAR,1
+TP53-induced glycolysis and apoptosis regulator,SCO2,1
+TP53-induced glycolysis and apoptosis regulator,p53,1
+HIF1alpha,sterol regulatory element-binding protein 1,1
+HIF1alpha,hypoxia inducible factor 1alpha,1
+HIF1alpha,SREBP-1,1
+G6PDH,TIGAR,1
+G6PDH,p53,2
+G6PDH,glucose-6-phosphate dehydrogenase,1
+IDH1/2,SDH,2
+IDH1/2,FH,2
+IDH1/2,HIF-1alpha,1
+L-asparaginase,Asparagine synthetase,2
+L-asparaginase,asparagine synthetase,1
+Rag D,mTORC1,1
+Rag D,Rag C,1
+mTORC1,mTORC2,1
+mTORC1,succinate dehydrogenase,1
+mTORC1,SDH,1
+mTORC1,FH,1
+mTORC1,fumarate hydratase,1
+mTORC1,Rag C,1
+mTORC1,4E-BP1,1
+mTORC1,mTOR,1
+mTORC1,HIF-1alpha,1
+mTORC1,SREBP-1,1
+mTORC1,Myc,1
+mTORC1,proline-rich Akt substrate 40 kDa,1
+mTORC1,HIF-1,1
+mTORC1,RAPTOR,2
+mTORC1,S6 kinase 1,1
+MAGL,monoacylglycerol lipase,1
+PHD3,prolyl hydroxylase 2,1
+PHD3,HIF-1alpha,1
+PHD3,HIF-1,1
+EGFR,beta-catenin,1
+sterol regulatory element-binding protein 1,hypoxia inducible factor 1alpha,1
+sterol regulatory element-binding protein 1,SREBP-1,1
+PDK-1,TIGAR,1
+PDK-1,SCO2,1
+PDK-1,p53,1
+TP53,p53,1
+isocitrate dehydrogenase 1,IDH1,1
+isocitrate dehydrogenase 1,IDH2,1
+serine hydroxymethyltransferase,FAS,1
+serine hydroxymethyltransferase,Myc,1
+FAS,ACL,1
+FAS,Myc,1
+IDH1,TET2,1
+IDH1,IDH2,3
+IDH1,Glutaminase,1
+NADPH,TIGAR,1
+NADPH,SCO2,1
+NADPH,p53,1
+"inducible 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase",PFKFB3,1
+"inducible 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase",iPFK-2,1
+LDHA,lactate dehydrogenase A,1
+LDHA,Myc,1
+LDHA,HIF-1,2
+asparaginase,asparagine synthetase,1
+TET2,IDH2,1
+TIGAR,SCO2,2
+TIGAR,p53,2
+phosphoglycerate dehydrogenase,PHGDH,1
+GLS2,p53,1
+GLS2,glutaminase,1
+GLS2,Myc,1
+SCO2,p53,1
+ER,PHGDH,1
+ER,estrogen receptor,1
+beta-catenin,HIF1,1
+GLDC,glycine decarboxylase,2
+succinate dehydrogenase,SDH,2
+succinate dehydrogenase,FH,1
+succinate dehydrogenase,fumarate hydratase,1
+succinate dehydrogenase,HIF-1alpha,1
+succinate dehydrogenase,HIF-1,1
+l-asparaginase,asparagine synthetase,1
+SDH,FH,10
+SDH,fumarate hydratase,1
+SDH,HIF-1alpha,2
+SDH,HIF-1,1
+SDH,HIF1,1
+FH,fumarate hydratase,2
+FH,HIF-1alpha,2
+FH,HIF-1,1
+FH,HIF1,1
+fumarate hydratase,HIF-1alpha,1
+fumarate hydratase,HIF-1,1
+p53,glucose-6-phosphate dehydrogenase,2
+p53,GLUT1,1
+p53,PTEN,1
+p53,Myc,1
+ATP citrate lyase,ACL,1
+lactate dehydrogenase A,HIF-1,1
+hypoxia inducible factor 1alpha,SREBP-1,1
+prolyl hydroxylase 2,HIF-1alpha,1
+prolyl hydroxylase 2,HIF-1,1
+4E-BP1,S6 kinase 1,1
+PFKFB3,iPFK-2,1
+PFKFB3,PFKFB4,1
+HIF-1alpha,HIF-1,4
+SREBP-1,Myc,1
+SREBP-1,HIF-1,1
+Myc,HIF-1,2
+PHGDH,estrogen receptor,1

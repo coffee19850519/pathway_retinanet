@@ -1,0 +1,30 @@
+gene_name_1,gene_name_2,co_occurrence
+beta-1-AR,EGFR,1
+beta-1-AR,ERK1/2,1
+vascular endothelial growth factor,ERK,1
+vascular endothelial growth factor,CREB,1
+vascular endothelial growth factor,Src,1
+vascular endothelial growth factor,AKT,1
+beta1-AR,beta2-AR,4
+beta2-AR,p53,1
+p16,K-RAS,1
+p16,p53,1
+cyclooxygenase-2,COX-2,1
+cyclooxygenase-2,EGFR,1
+COX-2,EGFR,1
+EGFR,CREB,1
+EGFR,ERK1/2,1
+EGFR,epidermal growth factor receptor,1
+cAMP,p-ERK,1
+glutamate decarboxylase,GAD,1
+alpha4,GAD,1
+beta-2-AR,beta-1,1
+ERK,CREB,1
+ERK,Src,1
+ERK,AKT,1
+K-ras,p53,3
+CREB,Src,1
+CREB,AKT,1
+CREB,epidermal growth factor receptor,1
+K-RAS,p53,1
+Src,AKT,1

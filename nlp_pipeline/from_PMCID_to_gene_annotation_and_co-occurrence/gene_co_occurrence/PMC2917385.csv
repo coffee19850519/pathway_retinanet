@@ -1,0 +1,81 @@
+gene_name_1,gene_name_2,co_occurrence
+urokinase-type plasminogen activator,PAI-1,1
+urokinase-type plasminogen activator,uPA,1
+Galectin-1,PAI-1,1
+Galectin-1,VEGF,1
+Galectin-1,Lysyl oxidase,1
+Galectin-1,Plasminogen activator inhibitor-1,1
+Galectin-1,BNIP3,1
+Galectin-1,LOX,1
+vascular endothelial growth factor,VEGF,1
+vascular endothelial growth factor,hypoxia-inducible factor-1,1
+vascular endothelial growth factor,HIF-1,1
+vascular endothelial growth factor,Akt,1
+HIF-1alpha,MMP-9,1
+HIF-1alpha,VEGF,5
+HIF-1alpha,CAIX,1
+HIF-1alpha,Glut-1,1
+HIF-1alpha,CA IX,2
+HIF-1alpha,HIF-2alpha,1
+PTEN,phosphatase and tensin homologue gene,1
+PTEN,Akt,1
+PAI-1,VEGF,1
+PAI-1,Lysyl oxidase,1
+PAI-1,Plasminogen activator inhibitor-1,1
+PAI-1,uPA,1
+PAI-1,BNIP3,1
+PAI-1,LOX,1
+hypoxia-inducible factor 1alpha,VEGF,1
+MMP-9,VEGF,1
+MMP-9,CA IX,1
+VEGF,Lysyl oxidase,1
+VEGF,Plasminogen activator inhibitor-1,1
+VEGF,CAIX,1
+VEGF,BNIP3,1
+VEGF,EGFR,4
+VEGF,hypoxia-inducible factor-1,1
+VEGF,Glut-1,2
+VEGF,OPN,1
+VEGF,HIF-1,3
+VEGF,p53,1
+VEGF,CA IX,2
+VEGF,LOX,1
+VEGF,HIF-2alpha,1
+VEGF,epidermal growth factor receptor,1
+VEGF,Akt,1
+hexokinase,glucose transporter 1,1
+hexokinase,HIF-1,1
+Lysyl oxidase,Plasminogen activator inhibitor-1,1
+Lysyl oxidase,BNIP3,1
+Lysyl oxidase,LOX,1
+Plasminogen activator inhibitor-1,BNIP3,1
+Plasminogen activator inhibitor-1,LOX,1
+CD44,OPN,1
+CAIX,Glut-1,2
+CAIX,glucose transporter 1,1
+CAIX,OPN,2
+CAIX,HIF-1,1
+CAIX,carbonic anhydrase-IX,1
+CAIX,CA IX,1
+CAIX,HIF-2alpha,1
+CAIX,osteopontin,1
+BNIP3,LOX,1
+EGFR,Epidermal growth factor receptor,2
+EGFR,epidermal growth factor receptor,1
+EGFR,Akt,1
+hypoxia-inducible factor-1,HIF-1,1
+hypoxia-inducible factor-1,Akt,1
+angiopoietin-1,VEGFR2,1
+Glut-1,glucose transporter 1,1
+Glut-1,HIF-1,2
+Glut-1,p53,1
+Glut-1,CA IX,2
+Glut-1,HIF-2alpha,1
+glucose transporter 1,HIF-1,2
+OPN,carbonic anhydrase-IX,1
+OPN,osteopontin,1
+HIF-1,CA IX,1
+HIF-1,Akt,1
+phosphatase and tensin homologue gene,Akt,1
+carbonic anhydrase-IX,osteopontin,1
+CA IX,HIF-2alpha,1

@@ -1,0 +1,187 @@
+gene_name_1,gene_name_2,co_occurrence
+DUSP2,dual specificity phosphatase 2,1
+DUSP2,STAT3,3
+interferon regulatory factor 1,DNA methyltransferase 1,1
+interferon regulatory factor 1,DNMT1,1
+interferon regulatory factor 1,STAT3,1
+interferon regulatory factor 1,B8 and B9,1
+interferon regulatory factor 1,IRF-1,1
+INFG,Interferon-gamma,1
+MEK,PD-L1,1
+MEK,MAPK,1
+MEK,BRAF,1
+PDGFRa,IL-1ra,1
+PDGFRa,interleukin 1 receptor antagonist,1
+PDGFRa,EGFR,1
+PDGFRa,AXL,1
+c-Rel,nuclear factor kappa B,1
+c-Rel,NF-kappaB,2
+cyclin-dependent kinase 5 activator 1,p35,1
+cyclin-dependent kinase 5 activator 1,IFNGR,1
+cyclin-dependent kinase 5 activator 1,CDK5,1
+cyclin-dependent kinase 5 activator 1,CDK5R1,1
+CMTM6,PD-L1,3
+CMTM6,CKLF-like MARVEL transmembrane domain-containing protein 6,1
+CMTM6,CMTM4,1
+CMTM6,IFNgamma,1
+IFN-gamma,PD-L1,1
+IRF1,PD-L1,1
+IRF1,STAT1,1
+IFNG,PD-L1,1
+IFNG,Interferon gamma,1
+IFNG,IFNgamma,1
+Stat3,PD-1,1
+Stat3,Src,1
+IRF2BP2,PD-L1,2
+IRF2BP2,IRF2,1
+IRF2BP2,IRF-2,1
+IRF2BP2,IRF2 binding protein 2,1
+IRF2BP2,CDK5,2
+PSMB8,STAT3,1
+PSMB8,PSMB9,1
+dual specificity phosphatase 2,STAT3,1
+nuclear factor kappa B,NF-kappaB,1
+echinoderm microtubule-associated protein-like 4,EML4,1
+PD-L1,p35,1
+PD-L1,ALK,6
+PD-L1,Interferon gamma,1
+PD-L1,STAT3,14
+PD-L1,CKLF-like MARVEL transmembrane domain-containing protein 6,1
+PD-L1,APCs,2
+PD-L1,CMTM4,1
+PD-L1,IFNGR,1
+PD-L1,MAPK,5
+PD-L1,EGFR,10
+PD-L1,JAK1/2,1
+PD-L1,IFNgamma,5
+PD-L1,IRF2,1
+PD-L1,ERK,1
+PD-L1,CD274,1
+PD-L1,Interferon receptor,1
+PD-L1,cyclin-dependent kinase 5,1
+PD-L1,PD-1,4
+PD-L1,BRAF,2
+PD-L1,B7-H1,1
+PD-L1,IRF-1,1
+PD-L1,IRF-2,1
+PD-L1,ROS1,1
+PD-L1,Cdk5,1
+PD-L1,IRF2 binding protein 2,1
+PD-L1,CDK5,3
+PD-L1,KRAS,1
+PD-L1,AKT,5
+PD-L1,STAT1,1
+PD-L1,PD-L2,1
+p35,IFNGR,1
+p35,IFNgamma,1
+p35,cyclin-dependent kinase 5,1
+p35,CDK5,2
+p35,CDK5R1,1
+ALK,signal transducer and activator of transcription 3,1
+ALK,STAT3,3
+ALK,MAPK,1
+ALK,EGFR,9
+ALK,PD-1,1
+ALK,ROS1,1
+ALK,KRAS,1
+ALK,AKT,1
+yes-associated protein 1,signal transducer and activator of transcription 3,1
+yes-associated protein 1,STAT3,2
+yes-associated protein 1,EGFR,1
+yes-associated protein 1,YAP1,3
+yes-associated protein 1,Src,1
+signal transducer and activator of transcription 3,STAT3,3
+signal transducer and activator of transcription 3,MAPK,1
+signal transducer and activator of transcription 3,EGFR,2
+signal transducer and activator of transcription 3,YAP1,1
+signal transducer and activator of transcription 3,AKT,1
+DNA methyltransferase 1,DNMT1,2
+DNA methyltransferase 1,STAT3,1
+DNA methyltransferase 1,B8 and B9,1
+DNA methyltransferase 1,IRF-1,1
+Interferon gamma,IFNgamma,2
+RasGAP,SHP2,1
+DNMT1,STAT3,2
+DNMT1,CDK4,1
+DNMT1,B8 and B9,1
+DNMT1,IRF-1,1
+STAT3,IFNGR,1
+STAT3,CDK4,1
+STAT3,MAPK,3
+STAT3,EGFR,8
+STAT3,JAK1/2,3
+STAT3,IFNgamma,3
+STAT3,CD274,1
+STAT3,YAP1,2
+STAT3,aryl hydrocarbon receptor,1
+STAT3,NF-kappaB,1
+STAT3,B8 and B9,1
+STAT3,BRAF,1
+STAT3,c-Src,1
+STAT3,Src,3
+STAT3,B7-H1,1
+STAT3,PSMB9,1
+STAT3,IRF-1,1
+STAT3,interferon-gamma,1
+STAT3,STAT5,1
+STAT3,AKT,4
+STAT3,STAT1,8
+CKLF-like MARVEL transmembrane domain-containing protein 6,IFNgamma,1
+APCs,PD-1,1
+IL-1ra,interleukin 1 receptor antagonist,1
+IL-1ra,EGFR,1
+IL-1ra,AXL,1
+IFNGR,JAK1/2,1
+IFNGR,CDK5,1
+IFNGR,CDK5R1,1
+IFNGR,STAT1,1
+MAPK,EGFR,1
+MAPK,BRAF,1
+MAPK,Src,1
+MAPK,SHP2,1
+MAPK,AKT,3
+Interferon regulatory factor-1,CD274,1
+Interferon regulatory factor-1,B7-H1,1
+interleukin 1 receptor antagonist,EGFR,1
+interleukin 1 receptor antagonist,AXL,1
+EGFR,YAP1,1
+EGFR,AXL,1
+EGFR,PD-1,1
+EGFR,ROS1,1
+EGFR,Epidermal growth factor receptor,1
+EGFR,KRAS,2
+EGFR,AKT,1
+EGFR,epidermal growth factor receptor,1
+JAK1/2,IFNgamma,1
+JAK1/2,PD-1,1
+JAK1/2,STAT1,2
+IFNgamma,cyclin-dependent kinase 5,1
+IFNgamma,CDK5,1
+IFNgamma,AKT,1
+IFNgamma,STAT1,1
+IRF2,IRF2 binding protein 2,1
+IRF2,CDK5,1
+ERK,AKT,1
+CD274,B7-H1,2
+Interferon receptor,PD-L2,1
+YAP1,Src,1
+mammalian target of rapamycin,mTOR,1
+mammalian target of rapamycin,AKT,1
+MEK2,MEK1,1
+aryl hydrocarbon receptor,STAT5,1
+cyclin-dependent kinase 5,CDK5,1
+B8 and B9,IRF-1,1
+PTPN2,protein tyrosine phosphatase nonreceptor type 2,1
+Src,SHP2,2
+Src,STAT1,2
+mTOR,AKT,1
+IRF-1,STAT1,1
+IRF-2,CDK5,1
+interferon-gamma,STAT1,1
+ROS1,KRAS,1
+ERK1,MEK1/2,1
+ERK1,ERK2,1
+IRF2 binding protein 2,CDK5,1
+CDK5,CDK5R1,1
+MEK1/2,ERK2,1
+KRAS,epidermal growth factor receptor,1

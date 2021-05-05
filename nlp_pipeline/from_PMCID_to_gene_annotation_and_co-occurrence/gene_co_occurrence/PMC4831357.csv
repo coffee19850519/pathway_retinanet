@@ -1,0 +1,40 @@
+gene_name_1,gene_name_2,co_occurrence
+CCL20,MMP-9,1
+CCL20,CXCR4,1
+CCL20,IL-1beta,11
+CCL20,p38,3
+CCL20,GAPDH,1
+CCL20,phosphoinositide-3-kinas,1
+CCL20,muM,3
+CCL20,p130 cas,1
+CCL20,Interleukin-1beta,1
+CCL20,matrix metalloproteinases-9,1
+CCL20,ERK,3
+CCL20,p130cas,1
+CCL20,ERK1/2,6
+CCL20,TNF-alpha,1
+CCL20,CCR6,4
+CCL20,AKT,4
+MMP-9,matrix metalloproteinases-9,1
+IL-1beta,p38,3
+IL-1beta,JNK,4
+IL-1beta,muM,3
+IL-1beta,IL-1,1
+IL-1beta,ERK,2
+IL-1beta,ERK1/2,4
+IL-1beta,TNF-alpha,1
+IL-1beta,AKT,4
+p38,JNK,3
+p38,ERK,1
+p38,ERK1/2,5
+p38,AKT,4
+JNK,ERK1/2,4
+JNK,AKT,4
+ERK-1/2,CCR6,1
+ERK-1/2,Akt,1
+p130 cas,ERK1/2,1
+p130 cas,AKT,1
+p130Cas,CCR6,1
+Interleukin-1beta,ERK,1
+ERK1/2,AKT,11
+CCR6,Akt,1

@@ -1,0 +1,38 @@
+gene_name_1,gene_name_2,co_occurrence
+mTOR,ALK,3
+mTOR,AKT,1
+TFG,ALK,1
+TFG,KIF5B,1
+HSP90,heat shock protein 90,1
+HSP90,ROS1,2
+HSP90,EGFR,3
+HSP90,ALK,3
+HSP90,c-MET,1
+anaplastic lymphoma kinase,EGFR,1
+anaplastic lymphoma kinase,ALK,1
+anaplastic lymphoma kinase,KRAS,1
+anaplastic lymphoma kinase,epidermal growth factor receptor,1
+heat shock protein 90,EGFR,1
+c-ros oncogene 1,ROS1,1
+c-ros oncogene 1,HGFR,1
+c-ros oncogene 1,ALK,1
+c-ros oncogene 1,c-Met,1
+ROS1,HGFR,1
+ROS1,EGFR,3
+ROS1,ALK,3
+ROS1,c-Met,1
+ROS1,c-MET,1
+HGFR,ALK,1
+HGFR,c-Met,1
+EGFR,ALK,7
+EGFR,KRAS,2
+EGFR,c-MET,1
+EGFR,epidermal growth factor receptor,2
+EML4,ALK,2
+ALK,c-Met,1
+ALK,Hsp90,1
+ALK,KIF5B,1
+ALK,KRAS,2
+ALK,AKT,1
+ALK,epidermal growth factor receptor,1
+KRAS,epidermal growth factor receptor,1

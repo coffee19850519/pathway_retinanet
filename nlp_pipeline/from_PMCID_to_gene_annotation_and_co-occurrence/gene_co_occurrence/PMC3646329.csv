@@ -1,0 +1,198 @@
+gene_name_1,gene_name_2,co_occurrence
+VEGFR-2,VEGF-A,2
+VEGFR-2,VEGFR-3,1
+VEGFR-2,PDGFR,1
+VEGFR-2,FMS proto-oncogene-like tyrosine kinase 3,1
+VEGFR-2,HIF1alpha,1
+VEGFR-2,RET,1
+VEGFR-2,platelet-derived growth factor receptor,1
+VEGFR-2,FLT1,2
+VEGFR-2,receptor tyrosine kinase proto-oncogene,1
+VEGFR-2,FLT3,1
+VEGFR-2,FMS-like tyrosine kinase 1,1
+VEGFR-2,C-KIT,1
+VEGFR-2,KDR,2
+VEGFR-2,fetal liver kinase-1,1
+VEGFR-2,VEGF,2
+VEGFR-2,VEGFR-1,2
+VEGFR-2,Flk-1,1
+VEGFR-2,HIF2alpha,1
+VEGFR-2,kinase insert domain protein receptor,1
+pVHL,von Hippel-Lindau,1
+pVHL,VHL,1
+VEGF-A,VEGFR-3,1
+VEGF-A,FLT1,2
+VEGF-A,FMS-like tyrosine kinase 1,1
+VEGF-A,KDR,2
+VEGF-A,fetal liver kinase-1,1
+VEGF-A,VEGF,2
+VEGF-A,VEGFR-1,2
+VEGF-A,Flk-1,1
+VEGF-A,kinase insert domain protein receptor,1
+ANG1,VEGFA,1
+ANG1,IL-8,1
+ANG1,thrombospondin-1,1
+ANG1,placental growth factor,1
+ANG1,PlGF,1
+ANG1,angiopoietin-1,1
+MMP-9,IL-1 RA,1
+MMP-9,HIF-1alpha,1
+MMP-9,VEGF,1
+MMP-9,CA IX,1
+MMP-9,IL-1 receptor antagonist,1
+VEGFR-3,PDGFR,1
+VEGFR-3,FMS proto-oncogene-like tyrosine kinase 3,1
+VEGFR-3,RET,1
+VEGFR-3,platelet-derived growth factor receptor,1
+VEGFR-3,receptor tyrosine kinase proto-oncogene,1
+VEGFR-3,FLT3,1
+VEGFR-3,C-KIT,1
+VEGFR-3,FLT4,2
+VEGFR-3,VEGF-C and D,2
+VEGFR-3,PDGF-B,1
+VEGFA,IL-8,1
+VEGFA,thrombospondin-1,1
+VEGFA,BNIP3,1
+VEGFA,CA9,1
+VEGFA,placental growth factor,1
+VEGFA,GLUT1,1
+VEGFA,PlGF,1
+VEGFA,angiopoietin-1,1
+soluble VEGFR 2,VEGFR,1
+soluble VEGFR 2,sVEGFR-2,1
+soluble VEGFR 2,VEGF,1
+TSC2,LKB1,1
+TSC2,PTEN,1
+TSC2,TSC1,1
+IL-8,thrombospondin-1,1
+IL-8,placental growth factor,1
+IL-8,VEGF,1
+IL-8,PlGF,1
+IL-8,angiopoietin-1,1
+PDGFR,VEGFR,1
+PDGFR,FMS proto-oncogene-like tyrosine kinase 3,1
+PDGFR,RET,1
+PDGFR,platelet-derived growth factor receptor,1
+PDGFR,receptor tyrosine kinase proto-oncogene,1
+PDGFR,FLT3,1
+PDGFR,C-KIT,2
+PDGFR,FLT-3,1
+VEGFR,sVEGFR-2,2
+VEGFR,RET,1
+VEGFR,EGFR,2
+VEGFR,C-KIT,1
+VEGFR,VEGF,4
+VEGFR,FLT-3,1
+VEGFR3,VEGFR1,1
+VEGFR3,VEGFR2,1
+VEGFR3,VEGF,1
+HIF-2alpha,von Hippel-Lindau,1
+HIF-2alpha,vascular endothelial growth factor,1
+HIF-2alpha,VHL,1
+HIF-2alpha,HIF-1alpha,2
+HIF-2alpha,hypoxia-inducible factor 1alpha,1
+HIF-2alpha,VEGF,1
+Akt,hypoxia inducible factor-1alpha,1
+Akt,VEGF,1
+von Hippel-Lindau,vascular endothelial growth factor,1
+von Hippel-Lindau,VHL,2
+hypoxia-inducible factor 1,HIF-1,1
+FMS proto-oncogene-like tyrosine kinase 3,RET,1
+FMS proto-oncogene-like tyrosine kinase 3,platelet-derived growth factor receptor,1
+FMS proto-oncogene-like tyrosine kinase 3,receptor tyrosine kinase proto-oncogene,1
+FMS proto-oncogene-like tyrosine kinase 3,FLT3,1
+FMS proto-oncogene-like tyrosine kinase 3,C-KIT,1
+thrombospondin-1,placental growth factor,1
+thrombospondin-1,PlGF,1
+thrombospondin-1,angiopoietin-1,1
+TSC1/2,LKB1,1
+TSC1/2,PTEN,1
+HIF1alpha,HIF3alpha,1
+HIF1alpha,carbonic anhydrase IX,1
+HIF1alpha,VEGF,1
+HIF1alpha,HIF2alpha,5
+HIF1alpha,CA IX,1
+sVEGFR-2,VEGF,2
+VEGFR1,VEGFR2,1
+VEGFR1,VEGF,1
+RET,EGFR,1
+RET,platelet-derived growth factor receptor,1
+RET,receptor tyrosine kinase proto-oncogene,1
+RET,FLT3,1
+RET,C-KIT,1
+BNIP3,CA9,1
+BNIP3,GLUT1,1
+EGFR,phosphatase and tensin homologue,2
+EGFR,PTEN,2
+EGFR,VEGF,4
+EGFR,KRAS,3
+LKB1,mTOR,2
+LKB1,PTEN,4
+LKB1,VEGF,2
+LKB1,TSC1,1
+CA9,GLUT1,1
+mammalian target of rapamycin,mTOR,2
+mammalian target of rapamycin,hypoxia-inducible factor 1alpha,1
+mammalian target of rapamycin,VEGF,1
+platelet-derived growth factor receptor,receptor tyrosine kinase proto-oncogene,1
+platelet-derived growth factor receptor,FLT3,1
+platelet-derived growth factor receptor,C-KIT,1
+HIF3alpha,HIF2alpha,1
+phosphatase and tensin homologue,PTEN,2
+phosphatase and tensin homologue,VEGF,2
+phosphatase and tensin homologue,KRAS,2
+hypoxia inducible factor-1alpha,BRAF,1
+hypoxia inducible factor-1alpha,VEGF,1
+FLT1,FMS-like tyrosine kinase 1,1
+FLT1,KDR,2
+FLT1,fetal liver kinase-1,1
+FLT1,VEGF,1
+FLT1,VEGFR-1,2
+FLT1,Flk-1,1
+FLT1,kinase insert domain protein receptor,1
+vascular endothelial growth factor,VHL,1
+vascular endothelial growth factor,hypoxia-inducible factor-1alpha,1
+vascular endothelial growth factor,Flt-1,1
+receptor tyrosine kinase proto-oncogene,FLT3,1
+receptor tyrosine kinase proto-oncogene,C-KIT,1
+IL-1 RA,IL-1 receptor antagonist,1
+hypoxia-inducible factor-1alpha,hypoxia-inducible factor-2alpha,1
+placental growth factor,PlGF,1
+placental growth factor,angiopoietin-1,1
+FLT3,C-KIT,1
+FMS-like tyrosine kinase 1,KDR,1
+FMS-like tyrosine kinase 1,fetal liver kinase-1,1
+FMS-like tyrosine kinase 1,VEGFR-1,1
+FMS-like tyrosine kinase 1,Flk-1,1
+FMS-like tyrosine kinase 1,kinase insert domain protein receptor,1
+C-KIT,FLT-3,1
+carbonic anhydrase IX,CA IX,1
+VEGFR2,VEGF,1
+KDR,fetal liver kinase-1,1
+KDR,VEGF,1
+KDR,VEGFR-1,2
+KDR,Flk-1,1
+KDR,kinase insert domain protein receptor,1
+mTOR,PTEN,2
+mTOR,VEGF,5
+mTOR,HIF1,1
+HIF-1alpha,hypoxia-inducible factor 1alpha,1
+HIF-1alpha,VEGF,1
+HIF-1alpha,CA IX,1
+PTEN,VEGF,4
+PTEN,KRAS,2
+PTEN,TSC1,1
+FLT4,VEGF-C and D,2
+fetal liver kinase-1,VEGFR-1,1
+fetal liver kinase-1,Flk-1,1
+fetal liver kinase-1,kinase insert domain protein receptor,1
+VEGF,VEGFR-1,1
+VEGF,HIF2alpha,1
+VEGF,CA IX,1
+VEGF,KRAS,2
+PlGF,angiopoietin-1,1
+VEGFR-1,Flk-1,1
+VEGFR-1,kinase insert domain protein receptor,1
+intracellular cell adhesion molecule-1,ICAM-1,1
+Flk-1,kinase insert domain protein receptor,1
+KRAS,TSC1,1

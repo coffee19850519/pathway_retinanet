@@ -1,0 +1,50 @@
+gene_name_1,gene_name_2,co_occurrence
+Atg7,Beclin-1,1
+Atg7,Atg3,1
+caspase-8,PARP,1
+caspase-8,caspase-9,1
+caspase-8,caspase-7,2
+caspase-8,Bcl-2,2
+PARP,caspase-7,2
+PARP,Bcl-2,1
+PARP,caspase-3,1
+PARP,caspases,1
+ArCH2,C13,2
+NOXA,p21,1
+NOXA,c-FLIP,1
+NOXA,p53,1
+NOXA,waf1,1
+beta-Actin,GAPDH,1
+IL-1p,MMP-9,1
+IL-1p,PKC-zeta,1
+mTOR,LC3A/B,1
+mTOR,Beclin-1,1
+mTOR,caspase 8,1
+mTOR,EIF4E,1
+mTOR,mammalian target of rapamycin,1
+mTOR,p62,1
+mTOR,caspase 7,1
+MMP-9,PKC-zeta,1
+LC3A/B,caspase 8,1
+LC3A/B,caspase 7,1
+Beclin-1,GAPDH,1
+Beclin-1,Vps34,1
+Beclin-1,Atg3,1
+Beclin-1,p62,1
+Beclin-1,Bcl-2,2
+JNK,Akt,1
+GAPDH,beta-actin,1
+p21,c-FLIP,1
+p21,waf1,1
+c-FLIP,waf1,1
+caspase 8,caspase 7,1
+Mcl-1S,Mcl-1,1
+Mcl-1S,Mcl-1L,1
+Mcl-1S,Bcl-2,1
+Mcl-1,Mcl-1L,1
+Mcl-1,Bcl-2,3
+caspase-7,Bcl-2,2
+caspase-7,caspase-3,1
+caspase-7,caspases,1
+Mcl-1L,Bcl-2,1
+caspase-3,caspases,1

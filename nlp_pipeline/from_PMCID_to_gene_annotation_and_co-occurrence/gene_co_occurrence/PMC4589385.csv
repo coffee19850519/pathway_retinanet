@@ -1,0 +1,105 @@
+gene_name_1,gene_name_2,co_occurrence
+FN1,KDR,6
+FN1,kinase insert domain receptor,1
+FN1,VEGF,1
+FN1,VEGFA,3
+FN1,PCNA,5
+FN1,TGFBI,5
+FN1,EGFR,4
+FN1,fibronectin 1,2
+FN1,transforming growth factor beta,1
+FN1,VEGFB,2
+FN1,proliferating cell nuclear antigen,1
+FN1,fibronectin,1
+FN1,epidermal growth factor receptor,1
+PIK3R1,PCNA,1
+PIK3R1,CTNNB1,1
+PIK3R1,EGFR,1
+PIK3R1,VEGFA 1 122 IL6 -1 117 MAPK1,1
+KDR,kinase insert domain receptor,2
+KDR,VEGF,4
+KDR,VEGFA,4
+KDR,PCNA,5
+KDR,TGFBI,5
+KDR,EGFR,4
+KDR,fibronectin 1,2
+KDR,transforming growth factor beta,1
+KDR,VEGFB,2
+KDR,proliferating cell nuclear antigen,1
+KDR,epidermal growth factor receptor,1
+vascular endothelial growth factor,VEGF,4
+vascular endothelial growth factor,EGFR,1
+vascular endothelial growth factor,p53,2
+vascular endothelial growth factor,Bcl2,1
+vascular endothelial growth factor,epidermal growth factor receptor,1
+kinase insert domain receptor,VEGF,1
+kinase insert domain receptor,VEGFA,1
+kinase insert domain receptor,PCNA,1
+kinase insert domain receptor,TGFBI,1
+kinase insert domain receptor,EGFR,1
+kinase insert domain receptor,fibronectin 1,1
+kinase insert domain receptor,transforming growth factor beta,1
+kinase insert domain receptor,VEGFB,1
+kinase insert domain receptor,proliferating cell nuclear antigen,1
+kinase insert domain receptor,epidermal growth factor receptor,1
+cyclin D1,PCNA,1
+cyclin D1,p53,1
+VEGF,VEGFA,4
+VEGF,PCNA,1
+VEGF,TGFBI,1
+VEGF,bFGF,1
+VEGF,Vascular endothelial growth factor,1
+VEGF,EGFR,8
+VEGF,p53,2
+VEGF,VEGFB,3
+VEGF,Bcl2,1
+VEGF,epidermal growth factor receptor,1
+VEGFA,PCNA,6
+VEGFA,TGFBI,4
+VEGFA,EGFR,6
+VEGFA,fibronectin 1,1
+VEGFA,transforming growth factor beta,1
+VEGFA,Transforming growth factor beta,1
+VEGFA,VEGFB,6
+VEGFA,proliferating cell nuclear antigen,2
+VEGFA,epidermal growth factor receptor,2
+TGF-beta,TGFBI,2
+PCNA,TGFBI,6
+PCNA,CTNNB1,1
+PCNA,EGFR,7
+PCNA,fibronectin 1,1
+PCNA,VEGFA 1 122 IL6 -1 117 MAPK1,1
+PCNA,transforming growth factor beta,1
+PCNA,p53,1
+PCNA,Transforming growth factor beta,1
+PCNA,VEGFB,2
+PCNA,proliferating cell nuclear antigen,2
+PCNA,epidermal growth factor receptor,2
+TGFBI,EGFR,5
+TGFBI,fibronectin 1,1
+TGFBI,transforming growth factor beta,1
+TGFBI,Transforming growth factor beta,1
+TGFBI,VEGFB,2
+TGFBI,proliferating cell nuclear antigen,1
+TGFBI,epidermal growth factor receptor,1
+CTNNB1,EGFR,1
+CTNNB1,VEGFA 1 122 IL6 -1 117 MAPK1,1
+EGFR,fibronectin 1,1
+EGFR,VEGFR,3
+EGFR,VEGFA 1 122 IL6 -1 117 MAPK1,1
+EGFR,transforming growth factor beta,1
+EGFR,Transforming growth factor beta,1
+EGFR,VEGFB,3
+EGFR,proliferating cell nuclear antigen,2
+EGFR,epidermal growth factor receptor,3
+fibronectin 1,transforming growth factor beta,1
+fibronectin 1,VEGFB,1
+fibronectin 1,proliferating cell nuclear antigen,1
+fibronectin 1,epidermal growth factor receptor,1
+transforming growth factor beta,VEGFB,1
+transforming growth factor beta,proliferating cell nuclear antigen,1
+transforming growth factor beta,epidermal growth factor receptor,1
+p53,Bcl2,1
+VEGFB,proliferating cell nuclear antigen,1
+VEGFB,epidermal growth factor receptor,1
+proliferating cell nuclear antigen,epidermal growth factor receptor,2

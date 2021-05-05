@@ -1,0 +1,81 @@
+gene_name_1,gene_name_2,co_occurrence
+CD34,vimentin,2
+CD34,VEGF,3
+CD34,E-cadherin,2
+CD34,Vascular endothelial growth factor,1
+vimentin,VEGF,2
+vimentin,E-cadherin,11
+vimentin,HGF,5
+vimentin,miR-206,3
+vimentin,c-Met,1
+vimentin,fibronectin,1
+vimentin,N-cadherin,1
+mTOR,GAPDH,1
+mTOR,miR-206,1
+mTOR,c-Met,3
+mTOR,Akt,4
+vascular endothelial growth factor,VEGF,1
+vascular endothelial growth factor,hepatocyte growth factor,1
+vascular endothelial growth factor,HGF,1
+HIF-1alpha,VEGF,1
+HIF-1alpha,Hypoxia-inducible factor-1alpha,1
+PTEN,MicroRNA-93,1
+PTEN,CDKN1A,2
+PTEN,cyclin-dependent kinase inhibitor 1A,1
+PTEN,miR-93,1
+MicroRNA-93,CDKN1A,1
+microRNA-206,Cdc42,1
+microRNA-206,c-Met,1
+microRNA-206,Bcl2,1
+cyclin D1,miR-206,1
+GAPDH,beta-actin,1
+GAPDH,c-Met,1
+GAPDH,Akt,1
+VEGF,hepatocyte growth factor,1
+VEGF,E-cadherin,2
+VEGF,Vascular endothelial growth factor,1
+VEGF,HGF,1
+VEGF,miR-206,1
+VEGF,Hypoxia-inducible factor-1alpha,1
+VEGF,MiR-206,2
+miRNA-155,VHL,1
+SOX2,miR-638,2
+miR-107,miR-132,1
+miR-107,miR-26a,1
+microRNA-107,HIF-1,1
+programmed cell death 4,MicroRNA-21,1
+programmed cell death 4,PDCD4,1
+hepatocyte growth factor,HGF,2
+hepatocyte growth factor,miR-206,1
+CDKN1A,cyclin-dependent kinase inhibitor 1A,1
+CDKN1A,miR-93,1
+E-cadherin,HGF,5
+E-cadherin,miR-206,3
+E-cadherin,c-Met,1
+E-cadherin,fibronectin,1
+E-cadherin,N-cadherin,1
+FOXM1,miR-134,2
+FOXM1,forkhead box protein M1,1
+MicroRNA-451,proto-oncogene c-Myc,1
+proto-oncogene c-Myc,microRNA-451,1
+HGF,miR-206,19
+HGF,c-Met,8
+miR-206,Cdc42,1
+miR-206,mammalian target of rapamycin,1
+miR-206,c-Met,18
+miR-206,MiR-206,1
+miR-206,Bcl-2,1
+miR-206,Akt,1
+cyclin-dependent kinase inhibitor 1A,miR-93,1
+miR-132,miR-26a,1
+MicroRNA-1/206,c-Met,1
+mammalian target of rapamycin,c-Met,1
+HGF receptor,c-Met,1
+MicroRNA-21,PDCD4,1
+miR-134,forkhead box protein M1,1
+MicroRNA-206,c-Met,1
+c-Met,MiR-206,1
+c-Met,Bcl-2,1
+c-Met,Bcl2,1
+c-Met,Akt,4
+fibronectin,N-cadherin,1

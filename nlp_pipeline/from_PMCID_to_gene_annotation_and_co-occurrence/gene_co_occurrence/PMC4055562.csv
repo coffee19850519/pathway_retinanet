@@ -1,0 +1,33 @@
+gene_name_1,gene_name_2,co_occurrence
+prolactin receptor,IGF-1,1
+prolactin receptor,GH,1
+prolactin receptor,growth hormone,1
+prolactin receptor,insulin-like growth factor-1,1
+prolactin receptor,PRL-R,1
+Prolactin,IGF-1,1
+Prolactin,Growth hormone,1
+IGF-1,Growth hormone,1
+IGF-1,GH,4
+IGF-1,growth hormone,3
+IGF-1,c-fos,1
+IGF-1,c-jun,1
+IGF-1,insulin-like growth factor-1,3
+IGF-1,HGF,3
+IGF-1,prolactin,1
+IGF-1,PRL-R,1
+GH,growth hormone,3
+GH,insulin-like growth factor-1,2
+GH,prolactin,1
+GH,PRL-R,1
+anaplastic lymphoma kinase,ALK,1
+growth hormone,insulin-like growth factor-1,2
+growth hormone,PRL-R,1
+c-fos,c-jun,1
+hepatocyte growth factor,Insulin-like growth factor I,1
+hepatocyte growth factor,HGF,1
+hepatocyte growth factor,c-Met,1
+IGF-I,insulin-like growth factor I,1
+insulin-like growth factor-1,PRL-R,1
+HGF,c-Met,1
+HGF,Hepatocyte growth factor,1
+urokinase plasminogen activator receptor,c-Met,1

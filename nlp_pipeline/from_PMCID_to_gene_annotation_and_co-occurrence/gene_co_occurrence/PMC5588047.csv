@@ -1,0 +1,51 @@
+gene_name_1,gene_name_2,co_occurrence
+protein kinase B,tumor protein 53,1
+protein kinase B,PARP,1
+protein kinase B,Bax,2
+protein kinase B,Bcl-2,2
+protein kinase B,caspase-3,1
+protein kinase B,p53,2
+protein kinase B,poly ADP-ribose polymerase,2
+protein kinase B,Akt,3
+tumor protein 53,PARP,2
+tumor protein 53,Bax,1
+tumor protein 53,Bcl-2,1
+tumor protein 53,p53,2
+tumor protein 53,poly ADP-ribose polymerase,2
+tumor protein 53,Akt,1
+PARP,Bax,6
+PARP,Bcl-2,4
+PARP,caspase-3,3
+PARP,procaspase-3,1
+PARP,GAPDH,2
+PARP,p53,7
+PARP,poly ADP-ribose polymerase,2
+PARP,Akt,3
+cytochrome c,Bax,2
+cytochrome c,caspase-9,1
+cytochrome c,Bcl-2,1
+Bax,caspase-9,1
+Bax,Bcl-2,8
+Bax,caspase-3,3
+Bax,procaspase-3,1
+Bax,GAPDH,2
+Bax,p53,7
+Bax,poly ADP-ribose polymerase,1
+Bax,Akt,4
+Bcl-2,caspase-3,1
+Bcl-2,procaspase-3,1
+Bcl-2,GAPDH,2
+Bcl-2,p53,5
+Bcl-2,poly ADP-ribose polymerase,1
+Bcl-2,Akt,5
+caspase-3,GAPDH,1
+caspase-3,p53,4
+caspase-3,poly ADP-ribose polymerase,1
+caspase-3,caspase-3 and -7,1
+caspase-3,Akt,1
+procaspase-3,p53,1
+GAPDH,p53,2
+GAPDH,Akt,2
+p53,poly ADP-ribose polymerase,3
+p53,Akt,3
+poly ADP-ribose polymerase,Akt,1

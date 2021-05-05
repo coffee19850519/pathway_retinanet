@@ -1,0 +1,118 @@
+gene_name_1,gene_name_2,co_occurrence
+H3F3A,FGFR1,1
+H3F3A,PIK3CA,1
+H3F3A,PTEN,1
+H3F3A,PDGFRA,1
+H3F3A,ROS1,1
+H3F3A,BRAF,1
+H3F3A,histone H3.3,1
+H3F3A,ALK,1
+H3F3A,IDH1,1
+H3F3A,KRAS,1
+H3F3A,GPR87,1
+neu,EGF receptor,1
+ADAM9,HDGF,1
+FGFR1,PIK3CA,1
+FGFR1,PTEN,1
+FGFR1,PDGFRA,3
+FGFR1,ROS1,2
+FGFR1,BRAF,2
+FGFR1,HGFR,1
+FGFR1,fibroblast growth factor receptor 1,2
+FGFR1,PDGFR,1
+FGFR1,ALK,1
+FGFR1,platelet derived growth factor receptor alpha,1
+FGFR1,hepatocyte growth factor receptor,1
+FGFR1,KRAS,2
+FGFR1,DDR2,1
+PIK3CA,PTEN,3
+PIK3CA,PDGFRA,1
+PIK3CA,ROS1,1
+PIK3CA,BRAF,3
+PIK3CA,EGFR,2
+PIK3CA,ALK,1
+PIK3CA,p110alpha,1
+PIK3CA,KRAS,3
+mTOR,PTEN,2
+MEK,BRAF,1
+MEK,ERK,1
+MEK,KRAS,1
+PTEN,PDGFRA,1
+PTEN,ROS1,1
+PTEN,BRAF,2
+PTEN,ALK,1
+PTEN,KRAS,2
+PTEN,Akt,1
+PDGFRA,EGF receptor,1
+PDGFRA,ROS1,2
+PDGFRA,BRAF,1
+PDGFRA,HGFR,1
+PDGFRA,fibroblast growth factor receptor 1,1
+PDGFRA,ALK,2
+PDGFRA,HER2,1
+PDGFRA,platelet derived growth factor receptor alpha,2
+PDGFRA,hepatocyte growth factor receptor,1
+PDGFRA,KRAS,1
+EGF receptor,ROS1,1
+EGF receptor,ALK,1
+EGF receptor,HER2,1
+PD-1,programmed death-1 receptor,1
+PD-1,cytotoxic T lymphocyte antigen-4,1
+PD-1,CTLA-4,2
+cRAF,ARAF,1
+cRAF,BRAF,1
+cRAF,RAF,1
+cRAF,RAF1,1
+programmed death-1 receptor,cytotoxic T lymphocyte antigen-4,1
+programmed death-1 receptor,CTLA-4,1
+discoidin domain receptor tyrosine kinase 2,DDR2,2
+ROS1,CD74,1
+ROS1,BRAF,2
+ROS1,SLC34A2,1
+ROS1,EGFR,1
+ROS1,ALK,12
+ROS1,HER2,1
+ROS1,KRAS,2
+ROS1,DDR2,1
+ROS1,SDC4,1
+ROS1,receptor tyrosine kinase,2
+erb-b2 receptor tyrosine kinase 2,HER2,1
+CD74,SLC34A2,1
+CD74,ALK,1
+CD74,SDC4,1
+ARAF,BRAF,1
+ARAF,RAF,1
+ARAF,RAF1,1
+BRAF,EGFR,3
+BRAF,RAF,1
+BRAF,ERK,1
+BRAF,ALK,1
+BRAF,RAF1,1
+BRAF,KRAS,6
+BRAF,DDR2,1
+Receptor Tyrosine Kinase,DDR2,1
+SLC34A2,ALK,1
+SLC34A2,SDC4,1
+HGFR,fibroblast growth factor receptor 1,1
+HGFR,platelet derived growth factor receptor alpha,1
+HGFR,hepatocyte growth factor receptor,1
+EGFR,ERBB-2,1
+EGFR,ALK,5
+EGFR,HER2,5
+EGFR,KRAS,4
+EGFR,DDR2,3
+EGFR,epidermal growth factor receptor,2
+fibroblast growth factor receptor 1,platelet derived growth factor receptor alpha,1
+fibroblast growth factor receptor 1,hepatocyte growth factor receptor,1
+ERBB-2,HER2,1
+RAF,RAF1,1
+EML4,ALK,2
+ALK,HER2,1
+ALK,KRAS,3
+ALK,SDC4,1
+ALK,receptor tyrosine kinase,2
+ALK,epidermal growth factor receptor,1
+HER2,DDR2,3
+cytotoxic T lymphocyte antigen-4,CTLA-4,1
+platelet derived growth factor receptor alpha,hepatocyte growth factor receptor,1
+KRAS,DDR2,1

@@ -1,0 +1,72 @@
+gene_name_1,gene_name_2,co_occurrence
+MAT2B,AHCYL1,2
+MAT2B,methionine adenosyltransferase II beta,1
+MAT2B,adenosylhomocysteinase-like 1,1
+KEAP1,SHMT2,1
+KEAP1,Nrf2,3
+KEAP1,PSAT1,1
+KEAP1,PHGDH,1
+MTAP,methylthioadenosine phosphorylase,1
+SLC25A22,SLC25A18,1
+AHCYL1,methionine adenosyltransferase II beta,1
+AHCYL1,adenosylhomocysteinase-like 1,1
+CTH,cystathionine gamma-lyase,1
+E-selectin,FUT6,1
+E-selectin,FUT8,1
+glucosamine-phosphate N-acetyltransferase 1,GNPNAT1,1
+glucosamine-phosphate N-acetyltransferase 1,GFPT1,1
+glucosamine-phosphate N-acetyltransferase 1,OGT,1
+glucosamine-phosphate N-acetyltransferase 1,PGM3,1
+glucosamine-phosphate N-acetyltransferase 1,UAP1,1
+UDP-glucose pyrophosphorylase 2,UDP-glucose-6 dehydrogenase,2
+UDP-glucose pyrophosphorylase 2,phosphoglucomutase 1,1
+UDP-glucose pyrophosphorylase 2,glucose-6-phosphate dehydrogenase,2
+PFK1,G6PD,1
+NAPRT,NAMPT,1
+NAPRT,nicotinate phosphoribosyltransferase,1
+NAMPT,nicotinamide phosphoribosyltransferase,1
+NAMPT,nicotinamide N-methyltransferase,1
+NAMPT,NNMT,2
+NAMPT,Nicotinamide phosphoribosyltransferase,1
+NAMPT,PC3,1
+methionine adenosyltransferase II beta,adenosylhomocysteinase-like 1,1
+PKM2,PARP14,1
+PCNA,PARP14,1
+PCNA,PARP10,1
+PCNA,proliferating cell nuclear antigen,1
+SHMT2,Nrf2,1
+SHMT2,PSAT1,1
+SHMT2,PHGDH,1
+Nrf2,PSAT1,1
+Nrf2,PHGDH,1
+DPYD,dihydropyrimidine dehydrogenase,1
+DPYD,UPP1,1
+Thymidylate synthase,dihydropyrimidine dehydrogenase,1
+nicotinamide N-methyltransferase,NNMT,1
+nicotinamide N-methyltransferase,Nicotinamide phosphoribosyltransferase,1
+alpha 1-3,FUT6,1
+alpha 1-3,FUT8,1
+alpha 1-3,alpha 1-6,1
+NNMT,Nicotinamide phosphoribosyltransferase,1
+UDP-glucose-6 dehydrogenase,phosphoglucomutase 1,1
+UDP-glucose-6 dehydrogenase,glucose-6-phosphate dehydrogenase,2
+FUT6,FUT8,2
+FUT6,alpha 1-6,1
+GNPNAT1,GFPT1,1
+GNPNAT1,OGT,1
+GNPNAT1,PGM3,1
+GNPNAT1,UAP1,1
+ornithine decarboxylase,ODC,1
+ornithine decarboxylase,ornithine transcarbamylase,1
+PARP14,PARP10,3
+GFPT1,OGT,1
+GFPT1,PGM3,1
+GFPT1,UAP1,1
+phosphoglucomutase 1,glucose-6-phosphate dehydrogenase,1
+PSAT1,PHGDH,1
+OGT,PGM3,1
+OGT,UAP1,1
+glutamine-fructose-6-phosphate transaminase 1,phosphoglucomutase 3,1
+FUT8,alpha 1-6,1
+PGM3,UAP1,1
+GLS1,KGA,1

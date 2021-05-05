@@ -1,0 +1,54 @@
+gene_name_1,gene_name_2,co_occurrence
+Forkhead box protein O1,FOXO1,1
+mTOR,PCNA,1
+mTOR,c-JUN,13
+mTOR,CCND1,6
+mTOR,p21,5
+mTOR,miR-3188,22
+mTOR,CST,1
+mTOR,FOXO1,9
+mTOR,mammalian target of rapamycin,1
+mTOR,beta-actin,1
+mTOR,AKT,4
+mTOR,p27,5
+PCNA,c-JUN,1
+PCNA,FOXO1,1
+PCNA,proliferating cell nuclear antigen,1
+c-JUN,CCND1,11
+c-JUN,p21,10
+c-JUN,miR-3188,11
+c-JUN,CST,1
+c-JUN,FOXO1,9
+c-JUN,beta-actin,1
+c-JUN,phosphoinositide-3-kinase,1
+c-JUN,AKT,5
+c-JUN,p27,10
+CCND1,p21,10
+CCND1,miR-3188,4
+CCND1,CST,1
+CCND1,FOXO1,5
+CCND1,beta-actin,1
+CCND1,AKT,5
+CCND1,p27,10
+p21,miR-3188,4
+p21,CST,1
+p21,FOXO1,5
+p21,beta-actin,1
+p21,AKT,4
+p21,p27,10
+miR-3188,FOXO1,14
+miR-3188,mammalian target of rapamycin,1
+miR-3188,phosphoinositide-3-kinase,1
+miR-3188,AKT,1
+miR-3188,p27,5
+CST,beta-actin,1
+CST,AKT,1
+CST,p27,1
+FOXK1,C-jun,1
+TOR,Akt,1
+FOXO1,AKT,3
+FOXO1,p27,5
+FOXO3,Cdt1,1
+beta-actin,AKT,1
+beta-actin,p27,1
+AKT,p27,4

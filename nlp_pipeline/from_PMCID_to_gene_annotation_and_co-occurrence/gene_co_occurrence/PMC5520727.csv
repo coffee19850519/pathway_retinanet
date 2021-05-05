@@ -1,0 +1,49 @@
+gene_name_1,gene_name_2,co_occurrence
+TRF2IP,telomeric repeat binding factor-2 interacting protein-1,1
+TRF2IP,RAP1,1
+JNK,gadd45beta,1
+JNK,NF-kappaB,1
+S5a,IkappaBalpha,1
+S5a,RAP1,1
+S5a,NF-kappaB,1
+TNF-related apoptosis-inducing ligand,TRAIL,1
+TNF-related apoptosis-inducing ligand,NF-kappaB,1
+BCL2,RAP1,1
+CD44,IL-1,3
+CD44,IkappaBalpha,1
+CD44,MCP-1,3
+CD44,NF-kappaB,3
+PC9,RAP1,2
+RAP1-overexpressed,RAP1,2
+RAP1-overexpressed,NF-kappaB,1
+TNFalpha,SLUG,1
+IL-1,IkappaBalpha,1
+IL-1,MCP-1,3
+IL-1,NF-kappaB,2
+RIP,NF-kappaB,1
+Annexin-V,BCL-2,1
+Annexin-V,RAP1,2
+gadd45beta,NF-kappaB,1
+p65,BCL-2,2
+p65,IkappaBalpha,3
+p65,RAP1,4
+p65,NF-kappaB,2
+p65,IKKalpha,1
+BCL-2,IkappaBalpha,2
+BCL-2,RAP1,10
+BCL-2,NF-kappaB,12
+BCL-2,IKKalpha,1
+Nuclear factor-kappaB,NF-kappaB,1
+IkappaBalpha,RAP1,4
+IkappaBalpha,MCP-1,1
+IkappaBalpha,NF-kappaB,4
+IkappaBalpha,IKKalpha,1
+telomeric repeat binding factor-2 interacting protein-1,RAP1,1
+RAP1,TNF-alpha,3
+RAP1,NF-kappaB,30
+MCP-1,NF-kappaB,2
+TNF-alpha,NF-kappaB,3
+TRAIL,NF-kappaB,1
+Clusterin,Bcl-2,1
+Clusterin,NF-kappaB,1
+Bcl-2,NF-kappaB,3

@@ -1,0 +1,110 @@
+gene_name_1,gene_name_2,co_occurrence
+PP2A,PP1,1
+PP2A,cofilin-1,1
+EGF,EGFR,1
+EGF,epidermal growth factor,1
+EGF,HER1,1
+PP1,cofilin-1,1
+Rac,ErbB4,1
+Rac,epidermal growth factor,1
+Rac,p21-activated kinase 1,1
+Rac,ROCK1,1
+Rac,PAK1,1
+Rac,CDC42,1
+Cofilin-1,CFL1,1
+Cofilin-1,EGFR,3
+Cofilin-1,LIMK1,1
+NHE1,cortactin,1
+NHE1,EGFR,1
+NHE1,cofilin-1,1
+NHE1,Na+-H+ exchanger 1,1
+EGF receptor,EGFR,1
+EGF receptor,ErbB,1
+EGF receptor,RTK,1
+EGF receptor,receptor tyrosine kinase,1
+chronophin,cofilin-1,1
+chronophin,CIN,1
+cortactin,EGFR,2
+cortactin,SSH1,1
+cortactin,cofilin-1,3
+cortactin,Na+-H+ exchanger 1,1
+cortactin,LIMK,1
+LIMK2,TESK2,1
+LIMK2,TESK1,1
+LIMK2,cofilin-1,1
+LIMK2,TES kinase 1,1
+LIMK2,LIMK1,1
+PCNA,COX-2,1
+PCNA,EGFR,1
+PCNA,iNOS,1
+PCNA,c-Myc,1
+PCNA,DNA-dependent protein kinase,1
+PCNA,DNA-PK,1
+PKCdelta,integrin alpha5,1
+PKCdelta,cofilin,1
+ErbB4,epidermal growth factor,1
+Epidermal Growth Factor Receptor,Anaplastic Lymphoma Kinase,1
+Epidermal Growth Factor Receptor,EGFR,2
+Epidermal Growth Factor Receptor,ALK,1
+Anaplastic Lymphoma Kinase,EGFR,1
+Anaplastic Lymphoma Kinase,ALK,1
+CFL1,cofilin-1,1
+COX-2,EGFR,1
+COX-2,iNOS,1
+COX-2,c-Myc,1
+COX-2,DNA-dependent protein kinase,1
+COX-2,DNA-PK,1
+EGFR,epidermal growth factor,2
+EGFR,SSH1,2
+EGFR,ALK,1
+EGFR,cofilin-1,20
+EGFR,iNOS,1
+EGFR,ErbB,1
+EGFR,HER1,1
+EGFR,c-Myc,1
+EGFR,Na+-H+ exchanger 1,1
+EGFR,RTK,1
+EGFR,DNA-dependent protein kinase,1
+EGFR,KRAS,1
+EGFR,LIMK,1
+EGFR,Rac1,1
+EGFR,receptor tyrosine kinase,1
+EGFR,DNA-PK,2
+MRP,CTR1,1
+MRP,ERCC1,1
+TESK2,TESK1,1
+TESK2,cofilin-1,1
+TESK2,TES kinase 1,1
+TESK2,LIMK1,1
+CTR1,ERCC1,1
+epidermal growth factor,HER1,1
+p21-activated kinase 1,ROCK1,1
+p21-activated kinase 1,PAK1,1
+p21-activated kinase 1,CDC42,1
+SSH1,cofilin-1,2
+SSH1,LIMK,1
+SSH1,Rac1,1
+serum response factor,SRF,1
+TESK1,cofilin-1,1
+TESK1,TES kinase 1,1
+TESK1,LIMK1,1
+cofilin-1,TES kinase 1,1
+cofilin-1,LIMK1,1
+cofilin-1,LIMK,2
+cofilin-1,CIN,1
+iNOS,c-Myc,1
+iNOS,DNA-dependent protein kinase,1
+iNOS,DNA-PK,1
+TES kinase 1,LIMK1,1
+ErbB,RTK,1
+ErbB,receptor tyrosine kinase,1
+c-Myc,DNA-dependent protein kinase,1
+c-Myc,DNA-PK,1
+HMG2,HMG1,1
+ROCK1,PAK1,1
+ROCK1,CDC42,1
+RTK,receptor tyrosine kinase,1
+DNA-dependent protein kinase,DNA-PK,1
+PAK1,CDC42,1
+integrin alpha5,cofilin,1
+cofilin,Rac1,1

@@ -1,0 +1,133 @@
+gene_name_1,gene_name_2,co_occurrence
+NF-KappaB Interacting LncRNA,prostate transmembrane protein androgen induced 1,1
+NF-KappaB Interacting LncRNA,PMEPA1,1
+NF-KappaB Interacting LncRNA,NKILA,1
+NF-KappaB Interacting LncRNA,STAG1,1
+NF-KappaB Interacting LncRNA,NF-kappaB,1
+pLP2,pLP1,1
+pLP2,NKILA,1
+vimentin,GAPDH,1
+vimentin,E-cadherin,5
+vimentin,NKILA,3
+vimentin,CST,1
+vimentin,p65,1
+vimentin,IkappaBalpha,1
+vimentin,snail,3
+vimentin,Snail,2
+vimentin,N-cadherin,5
+enhancer of zeste homolog 2,PVT1,1
+enhancer of zeste homolog 2,EZH2,1
+PBS,IL-1beta,1
+PBS,NKILA,4
+PBS,CST,1
+PBS,TNFalpha,1
+PBS,TNF-alpha,1
+PBS,TGF-beta1,3
+PBS,Smad2/3,1
+PBS,IL1beta,1
+PVT1,EZH2,1
+PVT1,LATS2,1
+prostate transmembrane protein androgen induced 1,PMEPA1,1
+prostate transmembrane protein androgen induced 1,NKILA,1
+prostate transmembrane protein androgen induced 1,STAG1,1
+prostate transmembrane protein androgen induced 1,NF-kappaB,1
+IL-1beta,NKILA,1
+IL-1beta,TNFalpha,1
+IL-1beta,TNF-alpha,1
+pLP1,NKILA,1
+GAPDH,E-cadherin,1
+GAPDH,NKILA,1
+GAPDH,CST,1
+GAPDH,CCT,1
+GAPDH,p65,1
+GAPDH,IkappaBalpha,1
+GAPDH,NEAT1,2
+GAPDH,Snail,1
+GAPDH,N-cadherin,1
+PMEPA1,TGF-beta,4
+PMEPA1,NKILA,5
+PMEPA1,STAG1,1
+PMEPA1,NF-kappaB,1
+TGF-beta,IKK2,1
+TGF-beta,NKILA,20
+TGF-beta,TMEPAI,2
+TGF-beta,TNM,1
+TGF-beta,NIK,1
+TGF-beta,Smad,1
+TGF-beta,Smad7,1
+TGF-beta,TNF-alpha,1
+TGF-beta,TGF-beta1,3
+TGF-beta,Smad2/3,1
+TGF-beta,IL1beta,1
+TGF-beta,Snail,3
+TGF-beta,NF-kappaB,15
+E-cadherin,NKILA,4
+E-cadherin,CST,1
+E-cadherin,p65,1
+E-cadherin,IkappaBalpha,1
+E-cadherin,snail,3
+E-cadherin,Snail,3
+E-cadherin,NF-kappaB,1
+E-cadherin,N-cadherin,6
+E-cadherin,Vimentin,1
+IKK2,NIK,1
+IKK2,Smad7,1
+IKK2,Smad2/3,1
+IKK2,NF-kappaB,1
+NKILA,TNM,3
+NKILA,STAG1,1
+NKILA,TNFalpha,2
+NKILA,CCT,1
+NKILA,p65,2
+NKILA,IkappaBalpha,6
+NKILA,NEAT1,1
+NKILA,TNF-alpha,5
+NKILA,TGF-beta1,14
+NKILA,snail,3
+NKILA,Smad2/3,2
+NKILA,smad2/3,1
+NKILA,IL1beta,3
+NKILA,Snail,5
+NKILA,NF-kappaB,25
+NKILA,N-cadherin,4
+NKILA,Vimentin,1
+NKILA,NF-KappaB,1
+TMEPAI,Smad,1
+TMEPAI,IRS-1,1
+CST,p65,1
+CST,IkappaBalpha,1
+CST,TGF-beta1,1
+CST,Snail,1
+CST,N-cadherin,1
+NIK,Smad7,1
+NIK,Smad2/3,1
+NIK,NF-kappaB,1
+STAG1,NF-kappaB,1
+CCT,NEAT1,1
+p65,IkappaBalpha,2
+p65,TNF-alpha,1
+p65,Snail,1
+p65,NF-kappaB,1
+p65,N-cadherin,1
+IkappaBalpha,Snail,2
+IkappaBalpha,NF-kappaB,3
+IkappaBalpha,N-cadherin,1
+Smad7,Smad2/3,1
+Smad7,NF-kappaB,1
+TNF-alpha,TGF-beta1,1
+TNF-alpha,IL1beta,4
+TNF-alpha,NF-kappaB,4
+TGF-beta1,Smad2/3,2
+TGF-beta1,IL1beta,1
+TGF-beta1,NF-kappaB,2
+MALAT1,Metastasis-associated lung adenocarcinoma transcript 1,1
+snail,NF-kappaB,2
+snail,N-cadherin,3
+Smad2/3,NF-kappaB,1
+IL1beta,NF-kappaB,2
+Snail,NF-kappaB,12
+Snail,N-cadherin,3
+Snail,Vimentin,1
+NF-kappaB,N-cadherin,1
+NF-kappaB,Vimentin,1
+N-cadherin,Vimentin,1

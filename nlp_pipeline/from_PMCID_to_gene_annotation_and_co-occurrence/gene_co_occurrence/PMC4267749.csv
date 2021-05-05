@@ -1,0 +1,260 @@
+gene_name_1,gene_name_2,co_occurrence
+Delta-like 3,Notch 1,1
+Delta-like 3,Jagged-1,1
+Delta-like 3,Jagged-2,1
+Bmi-1,cyclin D1,1
+Bmi-1,E-cadherin,1
+Bmi-1,vimentin,1
+Notch 1,Jagged-1,1
+Notch 1,Jagged-2,1
+EpCAM,TGFbeta,1
+EpCAM,E-Cadherin,1
+Nanog,c-myc,1
+Nanog,p21,1
+Nanog,cyclinD1,1
+Nanog,Oct4,2
+Nanog,NF-kappaB,1
+Nanog,Slug,2
+Nanog,p27,1
+Nanog,nuclear factor-kappa B,1
+NOTCH3,EGFR,1
+NOTCH3,CCND1,1
+CD24,Notch,2
+CD24,Notch3,1
+CD24,ITGB4,2
+TGF-beta,Notch,8
+TGF-beta,Hey-1,1
+TGF-beta,BMP,1
+TGF-beta,bone morphogenetic protein,1
+TGF-beta,jagged-1,1
+TGF-beta,transforming growth factor beta,2
+TGF-beta,TGF-beta1,1
+TGF-beta,TGF-beta3,1
+TGF-beta,Slug,1
+TGF-beta,TGF-beta2,1
+TGF-beta,Snail,2
+Notch,Hey-1,1
+Notch,Jagged-1,1
+Notch,BMP,1
+Notch,Erk1/2,1
+Notch,bone morphogenetic protein,1
+Notch,CBF-1/suppressor of hairless/Lag1,1
+Notch,jagged-1,1
+Notch,ZEB1,1
+Notch,cyclin D1,3
+Notch,Jagged2,1
+Notch,factor inhibiting HIF-1,1
+Notch,E-cadherin,3
+Notch,p21,1
+Notch,COX-2,1
+Notch,CC10,1
+Notch,Notch3,2
+Notch,transforming growth factor beta,1
+Notch,cyclinD1,1
+Notch,Sox9,1
+Notch,NF-kappaB,1
+Notch,ITGB4,2
+Notch,vimentin,1
+Notch,SMA,1
+Notch,slug,1
+Notch,Slug,3
+Notch,Notch-1 and vascular endothelial growth factor-A,1
+Notch,Kras,2
+Notch,Snail,5
+Notch,Smad7,1
+Notch,Notch1,3
+Notch,Sox2,2
+Notch,COX2,1
+Notch,Jagged1,1
+Notch,Cyclin D1,1
+Notch,CD133,2
+Notch,K-Ras,1
+Notch,ERK1,1
+Notch,CSL,1
+Notch,ERK1/2,1
+Notch,snail,1
+Notch,ERK2,1
+Hey-1,jagged-1,1
+Jagged-1,E-cadherin,1
+Jagged-1,Jagged1,1
+Jagged-1,Jagged-2,1
+Snail1,ZEB1,1
+Snail1,E-cadherin,2
+Snail1,CDH1,1
+Snail1,zinc finger E-box-binding homeobox 1,1
+Snail1,Slug,1
+Snail1,Snail2,2
+Snail1,Snail,1
+Snail1,Snail3,1
+Snail1,ZEB2,1
+BMP,bone morphogenetic protein,1
+BMP,transforming growth factor beta,1
+c-myc,p21,1
+c-myc,cyclinD1,1
+c-myc,NF-kappaB,1
+c-myc,Slug,1
+c-myc,p27,1
+c-myc,nuclear factor-kappa B,1
+Notch-3,cyclin D1,1
+ABCB1,ABCG2,1
+ABCB1,CD133,1
+bone morphogenetic protein,transforming growth factor beta,1
+CBF-1/suppressor of hairless/Lag1,CSL,2
+ABCG2,CD133,1
+CBF-1,Hes,1
+cadherin,E-cadherin,1
+SIP1,cyclin D1,2
+DACH1,cyclin D1,1
+TGFbeta,Zeb1,1
+TGFbeta,E-Cadherin,1
+TGFbeta,snail,1
+IGF-1R,Notch-1,1
+ZEB1,zinc finger E-box-binding homeobox 1,1
+ZEB1,vimentin,1
+ZEB1,slug,1
+ZEB1,Slug,2
+ZEB1,Snail,3
+ZEB1,miR-200a,1
+ZEB1,Snail3,1
+ZEB1,Notch1,1
+ZEB1,Lgl2,1
+ZEB1,ZEB2,3
+cyclin D1,E-cadherin,2
+cyclin D1,p21,1
+cyclin D1,vimentin,1
+cyclin D1,beta-catenin,1
+cyclin D1,Notch-1,1
+NF1,RIT1,1
+HES4,NOTCH1,1
+E-cadherin,p21,1
+E-cadherin,cyclinD1,1
+E-cadherin,CDH1,1
+E-cadherin,Sox9,1
+E-cadherin,vimentin,2
+E-cadherin,zeb1,1
+E-cadherin,beta-catenin,2
+E-cadherin,hes-1,1
+E-cadherin,slug,1
+E-cadherin,Slug,1
+E-cadherin,Snail2,2
+E-cadherin,Snail,1
+E-cadherin,Notch1,1
+E-cadherin,Jagged1,1
+E-cadherin,Cyclin D1,1
+E-cadherin,Notch-1,1
+E-cadherin,CSL,1
+E-cadherin,snail,4
+CD44,CD166,1
+CD44,CD133,1
+p21,cyclinD1,3
+p21,NF-kappaB,1
+p21,zeb1,1
+p21,slug,1
+p21,Slug,1
+p21,p27,1
+p21,Notch-1,1
+p21,CSL,1
+p21,nuclear factor-kappa B,1
+p21,snail,1
+COX-2,Notch1,1
+COX-2,COX2,1
+clara cell secretory protein,CCSP,1
+clara cell secretory protein,OCT4,1
+clara cell secretory protein,SPC,1
+EGFR,Notch3,3
+EGFR,HER2,2
+EGFR,CCND1,1
+EGFR,BRAF,1
+EGFR,ERK1/2,1
+EGFR,KRAS,1
+ERK,HES1,1
+ERK,DUSP1,1
+CC10,Sox9,1
+CC10,Sox2,1
+Notch3,ITGB4,1
+Notch3,Kras,1
+Notch3,Notch1,1
+PSENEN,PSEN1,1
+PSENEN,NCSTN,1
+PSENEN,APH1,1
+PSEN1,NCSTN,1
+PSEN1,APH1,1
+cyclinD1,NF-kappaB,1
+cyclinD1,zeb1,1
+cyclinD1,slug,1
+cyclinD1,Slug,1
+cyclinD1,p27,1
+cyclinD1,Notch-1,1
+cyclinD1,CSL,1
+cyclinD1,nuclear factor-kappa B,1
+cyclinD1,snail,1
+CDH1,Slug,1
+CDH1,Snail2,1
+CCSP,OCT4,1
+CCSP,SPC,1
+TGF-beta1,TGF-beta3,1
+TGF-beta1,TGF-beta2,1
+Sox9,Notch1,1
+Sox9,Sox2,1
+NCSTN,APH1,1
+Oct4,Slug,1
+NF-kappaB,Slug,1
+NF-kappaB,p27,1
+NF-kappaB,nuclear factor-kappa B,1
+zinc finger E-box-binding homeobox 1,Snail,1
+zinc finger E-box-binding homeobox 1,Snail3,1
+zinc finger E-box-binding homeobox 1,ZEB2,1
+CD166,CD133,1
+vimentin,hes-1,1
+vimentin,slug,1
+vimentin,Slug,1
+vimentin,Snail,1
+vimentin,Notch-1,1
+vimentin,snail,1
+INT3,NOTCH,1
+INT3,NOTCH4,1
+zeb1,slug,1
+zeb1,CSL,1
+zeb1,snail,1
+Zeb1,snail,1
+TGF-beta3,TGF-beta2,1
+BRAF,KRAS,1
+beta-catenin,Cyclin D1,1
+NOTCH,NOTCH4,1
+hes-1,Notch-1,1
+hes-1,snail,1
+slug,Slug,1
+slug,Snail,1
+slug,CSL,1
+slug,snail,1
+OCT4,SPC,1
+Slug,Snail2,1
+Slug,Snail,3
+Slug,miR-200a,1
+Slug,p27,1
+Slug,Notch1,1
+Slug,ZEB2,1
+Slug,stem cell factor,1
+Slug,nuclear factor-kappa B,1
+p53,Kras,1
+p53,Notch1,2
+Kras,Notch1,1
+MALAT1,metastasis associated lung adenocarcinoma transcript 1,1
+Snail,miR-200a,1
+Snail,Snail3,1
+Snail,Notch1,1
+Snail,ZEB2,2
+miR-200a,Notch1,1
+miR-200a,ZEB2,1
+p27,nuclear factor-kappa B,1
+Snail3,ZEB2,1
+Notch1,COX2,1
+Notch1,IGF1-R,1
+Notch1,Myc,1
+Notch1,ZEB2,1
+cell-adhesion molecule-1,ICAM-1,1
+ERK1,ERK1/2,1
+ERK1,ERK2,1
+Notch-1,snail,1
+CSL,snail,1
+ERK1/2,ERK2,1

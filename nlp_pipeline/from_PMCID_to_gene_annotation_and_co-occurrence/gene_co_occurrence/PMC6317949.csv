@@ -1,0 +1,71 @@
+gene_name_1,gene_name_2,co_occurrence
+MHC,TAP1,1
+MHC,MEK,1
+MHC,CIITA,1
+MHC,tumor necrosis factor-alpha,1
+MHC,beta2-microglobulin,1
+MHC,IFN-gamma,1
+MHC,EGFR,1
+MHC,Epidermal growth factor receptor,1
+MHC,HLA-A,1
+TAP1,MEK,1
+TAP1,CIITA,1
+TAP1,tumor necrosis factor-alpha,1
+TAP1,IFN-gamma,1
+TAP1,EGFR,1
+TAP1,HLA-A,1
+Mix,GAPDH,1
+Mix,glyceraldehyde-3-phosphate dehydrogenase,1
+MEK,CIITA,1
+MEK,tumor necrosis factor-alpha,1
+MEK,IFN-gamma,1
+MEK,EGFR,4
+MEK,PD-L1,1
+MEK,ERK,3
+MEK,HLA-A,1
+CIITA,tumor necrosis factor-alpha,1
+CIITA,IFN-gamma,1
+CIITA,EGFR,1
+CIITA,HLA-A,1
+tyrosine kinase,EGFR,3
+tyrosine kinase,Epidermal growth factor receptor,1
+tyrosine kinase,epidermal growth factor receptor,3
+GAPDH,glyceraldehyde-3-phosphate dehydrogenase,1
+GAPDH,HLA-B,1
+tumor necrosis factor-alpha,IFN-gamma,1
+tumor necrosis factor-alpha,EGFR,1
+tumor necrosis factor-alpha,HLA-A,1
+PD-1,EGFR,4
+PD-1,PD-L1,3
+PD-1,ERK,1
+PD-1,ALK,1
+PD-1,PD-L2,1
+PD-1,epidermal growth factor receptor,1
+CD8,EGFR,3
+CD8,PD-L1,3
+CD8,ERK,2
+interferon-gamma,HLA-A,1
+IFN-gamma,PC9,3
+IFN-gamma,EGFR,3
+IFN-gamma,HLA-A,2
+IFN-gamma,HLA-B,3
+PC9,HLA-A,1
+PC9,HLA-B,3
+HLA-A and -B,IRF,1
+EGFR,PD-L1,8
+EGFR,ERK,9
+EGFR,ALK,1
+EGFR,HLA-A,2
+EGFR,HLA-B,6
+EGFR,beta-actin,1
+EGFR,AKT,1
+EGFR,epidermal growth factor receptor,7
+PD-L1,ERK,3
+PD-L1,PD-L2,1
+ERK,beta-actin,1
+ERK,AKT,3
+ERK,epidermal growth factor receptor,1
+HLA-A,HLA-B,1
+beta-actin,AKT,2
+beta-actin,epidermal growth factor receptor,1
+AKT,epidermal growth factor receptor,1

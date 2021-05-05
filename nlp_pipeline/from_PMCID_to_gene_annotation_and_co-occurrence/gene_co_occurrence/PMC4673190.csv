@@ -1,0 +1,8 @@
+gene_name_1,gene_name_2,co_occurrence
+P53,MDM2,1
+Mdm2,TP53,1
+MDM2,p21,9
+MDM2,TP53,1
+MDM2,p53,24
+p21,p53,12
+p53,P21,1

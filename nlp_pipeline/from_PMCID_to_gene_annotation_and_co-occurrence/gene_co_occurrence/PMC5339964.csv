@@ -1,0 +1,88 @@
+gene_name_1,gene_name_2,co_occurrence
+DR-4/-5,ERK,1
+EGF,ERK,1
+EGF,epidermal growth factor,1
+caspase-8,DR4,1
+caspase-8,FADD,1
+caspase-8,TNFalpha,1
+caspase-8,ERK,2
+caspase-8,FasL,1
+p38 mitogen-activated protein kinase,Akt,1
+p38 mitogen-activated protein kinase,Bcl-2,1
+MEK,p53,1
+MMP-9,cyclooxygenase-2,1
+MMP-9,COX-2,1
+MMP-9,MMP-2,2
+caspase-9,Bak,1
+caspase-9,Bax,1
+p38,JNK,17
+p38,extracellular signal-regulated kinase,1
+p38,muM,1
+p38,matrix metalloproteinase-9,1
+p38,MMP-2/-9,1
+p38,COX-2,1
+p38,AP-1,1
+p38,ERK,12
+p38,p53,1
+p38,beta-actin,1
+p38,p-ERK,1
+p38,Bcl-2,2
+JNK,extracellular signal-regulated kinase,1
+JNK,muM,1
+JNK,COX-2,1
+JNK,ERK,13
+JNK,beta-actin,1
+JNK,p-ERK,1
+extracellular signal-regulated kinase,ERK,2
+XPC,interleukin-6,1
+Bak,Bax,1
+muM,MMPs,1
+muM,ERK,4
+DR4,TNFalpha,1
+DR4,ERK,1
+DR4,FasL,1
+AP-2,Sp3,1
+AP-2,matrix metalloproteinase-2,1
+cyclooxygenase-2,COX-2,1
+cyclooxygenase-2,MMP-2,1
+MMP-2 and -9,COX-2,1
+MMP-2 and -9,MMP-2,1
+matrix metalloproteinase-9,AP-1,1
+caspase 3,ERK,1
+caspase 3,Bcl-2,1
+MMP-9 and -2,COX-2,1
+MIF,COX-2,1
+MIF,D-dopachrome tautomerase,1
+COX-2,ERK,1
+COX-2,Akt,1
+COX-2,ERK1/2,1
+COX-2,beta-actin,1
+COX-2,p-ERK,1
+COX-2,D-dopachrome tautomerase,1
+COX-2,MMP-2,1
+Sp3,matrix metalloproteinase-2,1
+beta-catenin,EGFR,1
+FADD,ERK,1
+TNFalpha,ERK,1
+TNFalpha,FasL,1
+ribonuclease A,RNase A,1
+ERK,epidermal growth factor,1
+ERK,Akt,1
+ERK,Annexin V,1
+ERK,p53,1
+ERK,beta-actin,1
+ERK,c-Met,1
+ERK,p-ERK,1
+ERK,Bcl-2,2
+ERK,FasL,1
+Akt,ERK1/2,1
+Akt,matrix metalloproteinase-2,1
+Akt,Bcl-w,1
+Akt,Bcl-2,1
+cadherin-11,integrin alpha5,2
+DNA methyltransferase 1,ERK1/2,1
+p53,c-Met,1
+p53,Bcl-2,1
+beta-actin,p-ERK,1
+matrix metalloproteinase-2,Bcl-w,1
+c-Met,Bcl-2,3

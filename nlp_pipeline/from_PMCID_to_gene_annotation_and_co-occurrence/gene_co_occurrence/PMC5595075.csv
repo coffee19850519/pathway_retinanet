@@ -1,0 +1,52 @@
+gene_name_1,gene_name_2,co_occurrence
+extracellular regulated protein kinases 1/2,ERK1/2,1
+AIF,cytochrome c,1
+AIF,apoptosis inducing factor,1
+Bak,Bcl-2,1
+muM,SK-1,4
+muM,Bim,3
+muM,Bax,1
+muM,ERK1/2,1
+muM,beta-actin,2
+cytochrome c,Caspase 3,1
+cytochrome c,Bcl-xL,1
+cytochrome c,Mcl-1,1
+cytochrome c,Bim,1
+cytochrome c,Bax,2
+cytochrome c,apoptosis inducing factor,1
+cytochrome c,ERK1/2,1
+cytochrome c,Bcl-2,1
+E-cadherin,ERK1/2,1
+CKII,CaMKII,1
+CKII,DYRK2,1
+CKII,ASK-1,1
+CaMKII,DYRK2,1
+CaMKII,ASK-1,1
+DYRK2,ASK-1,1
+BH3-only protein,Bim,2
+BH3-only protein,Bax,1
+BH3-only protein,Bcl-2,1
+Caspase 3,SK-1,1
+Caspase 3,Bim,7
+Caspase 3,Bax,12
+Caspase 3,ERK1/2,11
+SK-1,Bim,6
+SK-1,Bax,2
+SK-1,ERK1/2,2
+SK-1,beta-actin,2
+ERK,Bim,1
+ERK,cytochrome C,1
+ERK,Bcl-2,1
+BAX,BAK,1
+Bcl-xL,Mcl-1,1
+Bcl-xL,Bim,1
+Mcl-1,Bim,1
+Bim,Bax,16
+Bim,ERK1/2,21
+Bim,beta-actin,2
+Bim,Bcl-2,3
+Bax,ERK1/2,18
+Bax,beta-actin,1
+Bax,Bcl-2,2
+p53,NF-kappaB,1
+ERK1/2,beta-actin,1

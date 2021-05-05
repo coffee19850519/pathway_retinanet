@@ -1,0 +1,12 @@
+gene_name_1,gene_name_2,co_occurrence
+Kv1.3,Kv1.5,1
+tumor necrosis factor,TNF,1
+muM,IC50 and 2,2
+muM,caspase-3,1
+muM,Caspase-3,1
+catalase,superoxide dismutase,1
+catalase,SOD,7
+IC50 and 2,at 1/2 IC50,3
+IC50 and 2,caspase-3,2
+superoxide dismutase,SOD,1
+caspase-3,Caspase-3,1

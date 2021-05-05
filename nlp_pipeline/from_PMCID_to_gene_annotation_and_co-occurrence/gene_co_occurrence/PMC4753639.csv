@@ -1,0 +1,45 @@
+gene_name_1,gene_name_2,co_occurrence
+PARP,EGFR,1
+PARP,poly ADP ribose polymerase,1
+PARP,AKT,1
+PARP,cbl,1
+NOX4,NOX1,1
+NOX4,NOX5,1
+NOX4,NOX3,1
+NOX4,NOX2,1
+superoxide dismutase 1,SOD1,1
+superoxide dismutase 1,NOX3,1
+NAC,muM,1
+NAC,EGFR,2
+NAC,NADPH,1
+VEGF,EGFR,1
+SOD1,Superoxide dismutase 1,1
+SOD1,NOX3,1
+Bcl-xl,Bax,1
+Bcl-xl,Bcl-2,1
+NADPH oxidase isoform 2,EGFR,1
+NADPH oxidase isoform 2,NOX2,3
+EGFR,Epidermal growth factor receptor,2
+EGFR,epidermal growth factor receptor 1,1
+EGFR,HER2,2
+EGFR,NADPH,5
+EGFR,NOX3,11
+EGFR,MsrA,6
+EGFR,NOX2,5
+EGFR,cbl,3
+EGFR,epidermal growth factor receptor,2
+NOX1,NOX5,1
+NOX1,NOX3,1
+NOX1,NOX2,1
+Bax,MsrA,1
+Bax,Bcl-2,2
+epidermal growth factor receptor 1,HER2,1
+poly ADP ribose polymerase,AKT,1
+NOX5,NOX3,1
+NOX5,NOX2,1
+NADPH,NOX3,7
+NADPH,MsrA,6
+NOX3,MsrA,10
+NOX3,NOX2,6
+MsrA,Bcl-2,1
+SRC,epidermal growth factor receptor,1

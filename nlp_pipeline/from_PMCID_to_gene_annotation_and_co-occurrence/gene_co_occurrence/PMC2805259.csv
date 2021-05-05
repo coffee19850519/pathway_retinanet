@@ -1,0 +1,27 @@
+gene_name_1,gene_name_2,co_occurrence
+4E-BP2 and 4E-BP3,4E-BP1,1
+4E-BP2 and 4E-BP3,eIF4E,1
+4E-BP1,eIF4E,3
+4E-BP1,4E-BP2,2
+4E-BP1,4E-BP3,2
+mTOR,eIF4F,1
+eIF4E,eukaryotic initiation factor 4E,1
+eIF4E,eIF4F,2
+eIF4E,4E-BP2,2
+eIF4E,4E-BP3,3
+eIF4E,FGF-2,1
+eIF4E,eukaryotic translation initiation factor 4E,2
+eIF4E,mRNA cap-binding protein,1
+eIF4E,Akt,1
+eIF-4E,VEGF,1
+eIF-4E,mRNA cap-binding protein,1
+CYP2A4,CYP2A5,1
+CYP2A4,Cyp2a5,1
+eIF4F,VEGF,1
+eIF4F,eukaryotic translation initiation factor 4E,1
+4E-BP2,4E-BP3,2
+CYP2A5,VEGFa,1
+CYP2A5,4E-BP1 and 4E-BP2,1
+CYP2A5,Cyp2a5,1
+Eif4ebp1,Eif4ebp2,2
+CD31,caspase-3,1

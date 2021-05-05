@@ -1,0 +1,49 @@
+gene_name_1,gene_name_2,co_occurrence
+ROR2,ROR1,3
+ROR2,ROR,1
+PIK3CA,PTEN,1
+PIK3CA,AKT1,1
+PIK3CA,K-RAS,1
+mTOR,PTEN,3
+mTOR,ROR1,4
+mTOR,PC-9,2
+mTOR,RET,1
+mTOR,p-AKT Ser-473,1
+mTOR,PC9,1
+mTOR,IGFR,1
+mTOR,beta-actin,1
+mTOR,AKT,5
+mTOR,c-MET,1
+PTEN,ROR1,2
+PTEN,PC9,1
+PTEN,AKT1,1
+PTEN,K-RAS,1
+PTEN,beta-actin,1
+PTEN,AKT,3
+ROR1,PC-9,8
+ROR1,ROR,1
+ROR1,p-AKT Ser-473,1
+ROR1,PC9,3
+ROR1,FMOD,1
+ROR1,cell surface antigen,1
+ROR1,EGFR,8
+ROR1,TCL1,1
+ROR1,WT1,1
+ROR1,receptor tyrosine kinase-like orphan receptor 1,1
+ROR1,Src,1
+ROR1,AKT,4
+PC-9,p-AKT Ser-473,1
+PC-9,AKT,3
+RET,IGFR,1
+RET,c-MET,1
+p-AKT Ser-473,AKT,1
+mTORC1,mTORC2,1
+PC9,EGFR,1
+PC9,AKT,1
+IGFR,c-MET,1
+EGFR,HER1,1
+EGFR,epidermal growth factor receptor,1
+mRor2,mRor1,1
+AKT1,K-RAS,1
+HER1,epidermal growth factor receptor,1
+beta-actin,AKT,1

@@ -1,0 +1,225 @@
+gene_name_1,gene_name_2,co_occurrence
+4E-BP1,AMPK,3
+4E-BP1,mTOR,4
+4E-BP1,p38,1
+4E-BP1,cyclin D1,1
+4E-BP1,COX-2,1
+4E-BP1,SIRT1,2
+4E-BP1,mammalian target of rapamycin,1
+4E-BP1,PPARgamma,1
+4E-BP1,ribosomal protein s6,1
+Atg1,Atg17,1
+Atg1,ULK1,1
+Atg1,Atg13,1
+Atg17,ULK1,1
+Atg17,Atg13,1
+peroxisome proliferator-activated receptor gamma,AMPK,1
+peroxisome proliferator-activated receptor gamma,PPARgamma,1
+AMPK,mTOR,21
+AMPK,PTEN,2
+AMPK,p38,4
+AMPK,ERKs,1
+AMPK,cyclin D1,1
+AMPK,XPC,3
+AMPK,VEGF,1
+AMPK,p53-polo like kinase 2,2
+AMPK,ACC2,1
+AMPK,PPAR,1
+AMPK,p21,4
+AMPK,catalase,2
+AMPK,Hsp70,2
+AMPK,cyclooxygenase-2,1
+AMPK,ACC1,1
+AMPK,COX-2,16
+AMPK,PPAR-g,1
+AMPK,EGFR,2
+AMPK,LKB1,10
+AMPK,SIRT1,2
+AMPK,AP-1,1
+AMPK,ERK,4
+AMPK,ULK1,2
+AMPK,Glut-1,1
+AMPK,Akt,3
+AMPK,p53,6
+AMPK,ERK1/2,1
+AMPK,PPARgamma,3
+AMPK,HuR,1
+AMPK,AMP-activated protein kinase,6
+AMPK,liver kinase B1,1
+AMPK,PPAR g,1
+AMPK,Cox-2,2
+AMPK,ULK2,2
+AMPK,AKT,4
+AMPK,ribosomal protein s6,1
+AMPK,PLK-2,2
+AMPK,p27,2
+AMPK,CaMKKbeta,3
+mTOR,p38,2
+mTOR,ERKs,1
+mTOR,cyclin D1,1
+mTOR,UNC-51-like kinase 1,1
+mTOR,p53-polo like kinase 2,1
+mTOR,p21,3
+mTOR,catalase,1
+mTOR,Hsp70,1
+mTOR,COX-2,2
+mTOR,EGFR,1
+mTOR,LKB1,1
+mTOR,SIRT1,2
+mTOR,AP-1,1
+mTOR,ERK,1
+mTOR,ULK1,2
+mTOR,AMPKalpha1,1
+mTOR,Akt,1
+mTOR,p53,4
+mTOR,mammalian target of rapamycin,2
+mTOR,PPARgamma,1
+mTOR,AMP-activated protein kinase,1
+mTOR,ULK2,2
+mTOR,AKT,2
+mTOR,ribosomal protein s6,1
+mTOR,PLK-2,1
+mTOR,p27,2
+vascular endothelial growth factor,VEGF,1
+MEK,JNK,1
+MEK,COX-2,1
+MEK,AP-1,1
+MEK,ERK,1
+MEK,p53,1
+PTEN,catalase,1
+PTEN,ERK,1
+PTEN,AMP-activated protein kinase,1
+PTEN,AKT,1
+p38,COX-2,2
+p38,SIRT1,1
+p38,p53,1
+p38,ERK1/2,1
+p38,PPARgamma,1
+p38,p27,1
+ERKs,p53-polo like kinase 2,1
+ERKs,p21,1
+ERKs,catalase,1
+ERKs,Hsp70,1
+ERKs,COX-2,1
+ERKs,EGFR,1
+ERKs,LKB1,1
+ERKs,AP-1,1
+ERKs,ERK,1
+ERKs,p53,1
+ERKs,AMP-activated protein kinase,1
+ERKs,AKT,1
+ERKs,PLK-2,1
+JNK,COX-2,1
+JNK,AP-1,1
+JNK,ERK,1
+JNK,p53,1
+cyclin D1,ribosomal protein s6,1
+VEGF,Glut-1,1
+TSC,Rheb,1
+UNC-51-like kinase 1,ULK1,1
+UNC-51-like kinase 1,p53,1
+UNC-51-like kinase 1,ULK2,1
+UNC-51-like kinase 1,p27,1
+p53-polo like kinase 2,p21,1
+p53-polo like kinase 2,catalase,1
+p53-polo like kinase 2,Hsp70,1
+p53-polo like kinase 2,COX-2,1
+p53-polo like kinase 2,EGFR,1
+p53-polo like kinase 2,LKB1,1
+p53-polo like kinase 2,AP-1,1
+p53-polo like kinase 2,ERK,1
+p53-polo like kinase 2,p53,1
+p53-polo like kinase 2,AMP-activated protein kinase,2
+p53-polo like kinase 2,AKT,1
+p53-polo like kinase 2,PLK-2,2
+PPAR,COX-2,1
+Liver kinase B1,LKB1,1
+HSP70,EGFR,1
+p21,catalase,1
+p21,Hsp70,1
+p21,COX-2,1
+p21,EGFR,1
+p21,LKB1,1
+p21,AP-1,1
+p21,ERK,1
+p21,p53,1
+p21,AMP-activated protein kinase,1
+p21,AKT,1
+p21,PLK-2,1
+catalase,Hsp70,1
+catalase,COX-2,1
+catalase,EGFR,1
+catalase,LKB1,1
+catalase,AP-1,1
+catalase,ERK,1
+catalase,p53,1
+catalase,AMP-activated protein kinase,1
+catalase,AKT,1
+catalase,PLK-2,1
+Hsp70,COX-2,1
+Hsp70,EGFR,2
+Hsp70,LKB1,1
+Hsp70,AP-1,1
+Hsp70,ERK,1
+Hsp70,p53,2
+Hsp70,AMP-activated protein kinase,1
+Hsp70,AKT,1
+Hsp70,PLK-2,1
+cyclooxygenase-2,COX-2,1
+cyclooxygenase-2,ERK,1
+COX-2,PPAR-g,1
+COX-2,EGFR,1
+COX-2,LKB1,1
+COX-2,SIRT1,1
+COX-2,AP-1,2
+COX-2,ERK,4
+COX-2,p53,2
+COX-2,ERK1/2,1
+COX-2,PPARgamma,1
+COX-2,AMP-activated protein kinase,1
+COX-2,PPAR g,1
+COX-2,AKT,2
+COX-2,PLK-2,1
+EGFR,LKB1,1
+EGFR,AP-1,1
+EGFR,ERK,1
+EGFR,p53,2
+EGFR,AMP-activated protein kinase,1
+EGFR,AKT,1
+EGFR,PLK-2,1
+EGFR,epidermal growth factor receptor,1
+LKB1,AP-1,1
+LKB1,ERK,1
+LKB1,p53,1
+LKB1,AMP-activated protein kinase,3
+LKB1,liver kinase B1,1
+LKB1,Cox-2,1
+LKB1,AKT,3
+LKB1,PLK-2,1
+LKB1,CaMKKbeta,2
+SIRT1,PPARgamma,1
+AP-1,ERK,2
+AP-1,p53,2
+AP-1,AMP-activated protein kinase,1
+AP-1,AKT,1
+AP-1,PLK-2,1
+ERK,p53,2
+ERK,AMP-activated protein kinase,1
+ERK,AKT,2
+ERK,PLK-2,1
+ULK1,p53,1
+ULK1,Atg13,1
+ULK1,ULK2,3
+ULK1,p27,1
+Akt,IGF-1R,1
+p53,AMP-activated protein kinase,1
+p53,ULK2,1
+p53,AKT,1
+p53,PLK-2,1
+p53,p27,3
+HuR,Cox-2,1
+AMP-activated protein kinase,AKT,1
+AMP-activated protein kinase,PLK-2,2
+ULK2,p27,1
+AKT,PLK-2,1
+p27,kip1,1

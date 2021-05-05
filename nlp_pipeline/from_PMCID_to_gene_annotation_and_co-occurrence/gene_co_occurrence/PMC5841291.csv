@@ -1,0 +1,95 @@
+gene_name_1,gene_name_2,co_occurrence
+vimentin,GAPDH,1
+vimentin,VEGF,1
+vimentin,E-cadherin,6
+vimentin,slug,1
+vimentin,TNF-alpha,1
+vimentin,snail,5
+vimentin,NF-kappaB,1
+vimentin,Snail,1
+vimentin,AKT,1
+vimentin,N-cadherin,7
+vimentin,fibronectin,1
+STAT3,NF-kappaB,1
+SNK,LSD,1
+vascular endothelial growth factor,VEGF,1
+vascular endothelial growth factor,angiostatin,1
+HIF-1alpha,MMP-9,1
+HIF-1alpha,VEGF,7
+HIF-1alpha,gel B,1
+HIF-1alpha,MMPs,1
+HIF-1alpha,Hypoxia-inducible factor-1alpha,1
+HIF-1alpha,MMP-13,1
+HIF-1alpha,HIF-1,1
+HIF-1alpha,snail,1
+HIF-1alpha,HIF-2alpha,1
+HIF-1alpha,angiostatin,3
+HIF-1alpha,NF-kappaB,3
+HIF-1alpha,AKT,1
+MMP-9,GAPDH,1
+MMP-9,VEGF,3
+MMP-9,MMPs,2
+MMP-9,MMP-13,8
+MMP-9,TNF-alpha,1
+MMP-9,snail,1
+MMP-9,angiostatin,2
+MMP-9,MMP-2,1
+MMP-9,Akt,1
+ZEB1,CUL4A,1
+GAPDH,VEGF,2
+GAPDH,MMP-13,1
+GAPDH,TNF-alpha,2
+GAPDH,snail,2
+GAPDH,NF-kappaB,1
+GAPDH,AKT,1
+GAPDH,N-cadherin,1
+VEGF,hypoxia-inducible factor-1alpha,1
+VEGF,MMPs,1
+VEGF,MMP-13,3
+VEGF,Angiostatin,1
+VEGF,TNF-alpha,2
+VEGF,nm23,1
+VEGF,snail,2
+VEGF,matrix metalloproteinase-2,1
+VEGF,HIF-2alpha,1
+VEGF,angiostatin,7
+VEGF,NF-kappaB,1
+VEGF,AKT,1
+VEGF,N-cadherin,1
+E-cadherin,Mgat3,1
+E-cadherin,GnT-III,1
+E-cadherin,C42,1
+E-cadherin,slug,1
+E-cadherin,Slug,1
+E-cadherin,snail,4
+E-cadherin,NF-kappaB,1
+E-cadherin,Snail,3
+E-cadherin,AKT,1
+E-cadherin,N-cadherin,5
+E-cadherin,fibronectin,1
+hypoxia-inducible factor-1alpha,matrix metalloproteinase-2,1
+Mgat3,GnT-III,1
+MMPs,MMP-13,2
+MMPs,angiostatin,1
+MMPs,MT1-MMP,1
+Tumor necrosis factor-alpha,TNF-alpha,1
+MMP-13,TNF-alpha,1
+MMP-13,snail,1
+MMP-13,angiostatin,2
+Angiostatin,angiostatin,1
+slug,snail,1
+HIF-1,NF-kappaB,1
+Nuclear factor-kappaB,NF-kappaB,1
+Slug,Snail,1
+TNF-alpha,snail,4
+TNF-alpha,NF-kappaB,9
+TNF-alpha,AKT,1
+TNF-alpha,N-cadherin,1
+snail,NF-kappaB,3
+snail,AKT,1
+snail,N-cadherin,4
+NF-kappaB,AKT,2
+NF-kappaB,N-cadherin,1
+Snail,N-cadherin,1
+AKT,N-cadherin,1
+N-cadherin,fibronectin,1

@@ -1,0 +1,52 @@
+gene_name_1,gene_name_2,co_occurrence
+EGF,IGF1R,1
+EGF,EGFR,1
+EGF,Raf,1
+vimentin,E-cadherin,1
+vimentin,ALK,1
+vimentin,TGFB,1
+PIK3CA,EGFR,2
+ERBB,ErbB3,1
+ERBB,EGFR,1
+ERBB,HER2,1
+MEK,BRAF,2
+MEK,MEK1/2,1
+PTEN,EGFR,2
+PTEN,Akt,1
+IGF-1R,ALK,1
+IGF-1R,KDM5A,1
+AXL,EGFR,1
+DUSP6,ALK,1
+IGF1R,EGFR,1
+ErbB3,EGFR,1
+ErbB3,HER2,1
+NF1,EGFR,2
+NF1,neurofibromin,1
+ROS1,BRAF,2
+ROS1,EGFR,2
+ROS1,ALK,2
+BRAF,NRAS,1
+BRAF,EGFR,5
+BRAF,RAF,4
+BRAF,ALK,3
+BRAF,KRAS,2
+NRAS,EGFR,1
+NRAS,KRAS,1
+HGF,EGFR,1
+EGFR,neurofibromin,1
+EGFR,ErbB-3,1
+EGFR,ATP,1
+EGFR,NFkappaB,1
+EGFR,ALK,5
+EGFR,HER2,2
+EGFR,Raf,1
+EGFR,KRAS,3
+EGFR,Hepatocyte growth factor,1
+EGFR,Akt,1
+Breast cancer resistance protein,BCRP,1
+BCL2L1,YAP,1
+ALK,KRAS,1
+ALK,TGFB,1
+YAP1,KRAS,1
+ABCG2,epidermal growth factor receptor,1
+KRAS,epidermal growth factor receptor,1

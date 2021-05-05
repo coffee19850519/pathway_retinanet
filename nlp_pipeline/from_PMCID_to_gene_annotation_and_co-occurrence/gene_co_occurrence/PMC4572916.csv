@@ -1,0 +1,147 @@
+gene_name_1,gene_name_2,co_occurrence
+MEK,ERK,1
+MEK,Kras,1
+MEK,PIK3CA,1
+MEK,RAF,1
+MMP-9,MMP-2,1
+N-Ras,CaM,1
+N-Ras,K-Ras4B,3
+N-Ras,K-Ras4A,2
+N-Ras,Calmodulin,1
+N-Ras,K-Ras,1
+N-Ras,H-Ras,2
+CaM,IQGAP1,1
+CaM,K-Ras4B,15
+CaM,p110,4
+CaM,PI3Kalpha,7
+CaM,Raf,3
+CaM,MMP-2,2
+CaM,Akt,5
+CaM,calmodulin,2
+CaM,cyclin D1,1
+CaM,p85,3
+CaM,S100P,1
+CaM,phosphatidylinositol 3-kinase,1
+CaM,Calmodulin,2
+CaM,matrix metalloproteinase 2,2
+CaM,cSH2,4
+CaM,p85alpha,1
+CaM,PKB,1
+CaM,K-Ras,4
+CaM,ERK1/2,2
+CaM,H-Ras,1
+IQGAP1,Cdc42,1
+IQGAP1,Akt,1
+IQGAP1,calmodulin,1
+IQGAP1,S100P,2
+K-Ras4B,p110,2
+K-Ras4B,PI3Kalpha,6
+K-Ras4B,Raf,4
+K-Ras4B,MMP-2,1
+K-Ras4B,Akt,5
+K-Ras4B,calmodulin,3
+K-Ras4B,PRISM,1
+K-Ras4B,K-Ras4A,2
+K-Ras4B,p110alpha,1
+K-Ras4B,Calmodulin,1
+K-Ras4B,cSH2,1
+K-Ras4B,p85alpha,1
+K-Ras4B,K-Ras,3
+K-Ras4B,Raf1,1
+K-Ras4B,KRAS,1
+K-Ras4B,H-Ras,2
+p110,PI3Kalpha,1
+p110,Akt,2
+p110,RalGDS,1
+p110,p110delta,1
+p110,p110alpha,2
+p110,p85,3
+p110,p110beta,1
+p110,cSH2,1
+p110,K-Ras,2
+p110,p110gamma,2
+PI3Kalpha,Akt,1
+PI3Kalpha,EGFR,1
+PI3Kalpha,PRISM,1
+PI3Kalpha,p110alpha,1
+PI3Kalpha,p85,1
+PI3Kalpha,cSH2,2
+PI3Kalpha,K-Ras,2
+PI3Kalpha,H-Ras,1
+PI3Kalpha,epidermal growth factor receptor,1
+cip1,p21,1
+cip1,Calmodulin,1
+cip1,ERK2,1
+K-ras,matrix metalloproteinase 2,1
+Cdc42,calmodulin,1
+Rap1A,Raf,1
+Rap1A,H-Ras,1
+Raf,K-Ras,1
+Raf,Raf1,1
+Raf,H-Ras,1
+MMP-2,Akt,2
+MMP-2,phosphatidylinositol 3-kinase,1
+MMP-2,matrix metalloproteinase 2,2
+MMP-2,PKB,1
+Akt,matrix metalloproteinase 2,1
+calmodulin,p85,1
+calmodulin,PI3Kgamma,1
+insulin receptor substrate-1,IRS-1,1
+cyclin D1,Calmodulin,1
+CDK4,Cyclin D1/cyclin-dependent kinase 4,1
+p21,Calmodulin,1
+p21,ERK2,1
+Raf-1,p21ras,1
+EGFR,BRAF,1
+EGFR,K-Ras,1
+EGFR,epidermal growth factor receptor,1
+ERK,p21ras,1
+ERK,p21cip1,1
+ERK,cyclin-dependent kinase inhibitor 1,1
+ERK,RAF,1
+PRISM,p110alpha,2
+PRISM,cSH2,1
+PRISM,p85alpha,1
+p110delta,p110alpha,1
+p110delta,p110beta,1
+p110delta,p110gamma,1
+Ral,Rgl2,1
+KRas,HRas,1
+K-Ras4A,H-Ras,1
+p110alpha,HRas,1
+p110alpha,p85,1
+p110alpha,p110beta,1
+p110alpha,cSH2,2
+p110alpha,p85alpha,3
+p110alpha,K-Ras,1
+p110alpha,p110gamma,3
+p110alpha,MEK1/2,1
+HRas,cSH2,1
+RalB,RalA,2
+p85,cSH2,1
+p85,K-Ras,2
+p85,p110gamma,1
+S100P,S100 calcium binding protein P,2
+C-raf,Rheb,1
+c-Raf,B-Raf,1
+c-Raf,K-Ras,1
+p21cip1,cyclin-dependent kinase inhibitor 1,1
+Pdk1,phosphatidylinositol 3-kinase,1
+Pdk1,K-Ras,1
+phosphatidylinositol 3-kinase,Calmodulin,1
+phosphatidylinositol 3-kinase,matrix metalloproteinase 2,1
+phosphatidylinositol 3-kinase,PKB,1
+phosphatidylinositol 3-kinase,p110 alpha,1
+phosphatidylinositol 3-kinase,K-Ras,1
+p110beta,p110gamma,1
+Calmodulin,K-Ras,1
+Calmodulin,ERK2,1
+matrix metalloproteinase 2,PKB,1
+Kras,PIK3CA,1
+B-Raf,C-Raf,1
+B-Raf,K-Ras,1
+cSH2,p85alpha,2
+cSH2,H-Ras,1
+PIK3CA,p110 alpha,1
+C-Raf,K-Ras,1
+K-Ras,p110gamma,1

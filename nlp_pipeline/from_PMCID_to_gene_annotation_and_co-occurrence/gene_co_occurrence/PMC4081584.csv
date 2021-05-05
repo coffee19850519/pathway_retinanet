@@ -1,0 +1,65 @@
+gene_name_1,gene_name_2,co_occurrence
+PARP,caspase3/9,1
+PARP,NAC,1
+PARP,Bid,3
+PARP,cytochrome c,1
+PARP,p65,1
+PARP,Bax,3
+PARP,Beclin1,3
+PARP,beta-actin,1
+PARP,Bcl-2,3
+PARP,NF-kappaB,1
+PARP,Bcl-XL,3
+caspase3/9,Bid,1
+caspase3/9,cytochrome c,1
+caspase3/9,Bax,1
+caspase3/9,Bcl-2,1
+caspase3/9,Bcl-XL,1
+TORC1,mTOR,1
+TORC1,p70S6K,1
+mTOR,Myr-Akt,2
+mTOR,p70S6K,1
+mTOR,TORC2,1
+mTOR,p65,2
+mTOR,NF-kappaB,11
+mTOR,Akt,11
+caspase-9,caspase-3,1
+JNK,ERK,1
+JNK,p53,1
+NAC,p65,1
+procaspase-3 and -9,caspase-3 and -9,1
+Bid,cytochrome c,1
+Bid,Bax,4
+Bid,beta-actin,1
+Bid,Bcl-2,4
+Bid,NF-kappaB,1
+Bid,Bcl-XL,4
+cytochrome c,Bax,1
+cytochrome c,Bcl-2,1
+cytochrome c,Bcl-XL,1
+mTORC1,p70S6K,1
+Myr-Akt,p65,2
+Myr-Akt,NF-kappaB,2
+Myr-Akt,Akt,3
+caspase9,caspase 3,1
+caspase9,pro-caspase 3,1
+caspase 3,pro-caspase 3,1
+ERK,p53,1
+TORC2,Akt,1
+p65,NF-kappaB,2
+p65,Akt,3
+Bax,beta-actin,1
+Bax,Bcl-2,4
+Bax,NF-kappaB,1
+Bax,Bcl-XL,4
+Beclin1,LC3,7
+LC3,Akt,1
+beta-actin,Bcl-2,1
+beta-actin,NF-kappaB,1
+beta-actin,Bcl-XL,1
+Bcl-2,NF-kappaB,1
+Bcl-2,Bcl-XL,4
+NF-kappaB,Bcl-XL,1
+NF-kappaB,IKKalpha,1
+NF-kappaB,Akt,12
+IKKalpha,Akt,1

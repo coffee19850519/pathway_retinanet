@@ -1,0 +1,33 @@
+gene_name_1,gene_name_2,co_occurrence
+Cdk2,PTEN,2
+Cdk2,MDM2,1
+miR29b,Wnt7a,1
+miR29b,p53,1
+miR29b,PPARgamma,2
+MEK,Wnt7a,1
+MEK,PPARgamma,1
+PTEN,MDM2,3
+PTEN,CDK2,1
+Frizzled9,Wnt7a,1
+Frizzled9,PPARgamma,1
+Frizzled9,Fzd9,1
+murine double mutant 2,MDM2,3
+ERK5,miR-143,1
+ERK5,Wnt7a,2
+ERK5,PPARgamma,10
+ERK5,hsa-miR29c,1
+beta-catenin,Wnt7a,1
+beta-catenin,Wnt,2
+Wnt7a,Wnt,1
+Wnt7a,MEK 1 and 2,1
+Wnt7a,p53,2
+Wnt7a,PPARgamma,5
+Wnt7a,MDM2,1
+Wnt7a,Fzd9,4
+Wnt7a,hsa-miR29c,6
+Wnt,MDM2,1
+p53,Mdm2,1
+p53,MDM2,9
+p53,Fzd9,1
+PPARgamma,Fzd9,1
+MDM2,CDK2,1

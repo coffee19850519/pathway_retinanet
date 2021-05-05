@@ -1,0 +1,41 @@
+gene_name_1,gene_name_2,co_occurrence
+CLDN5,CLDN3,2
+CLDN5,CLDN2,1
+CLDN5,CLDN1,2
+glycogen synthase kinase-3beta,CLDN3,1
+glycogen synthase kinase-3beta,E-cadherin,1
+glycogen synthase kinase-3beta,beta-catenin,1
+ZO-2,CLDN3,2
+ZO-2,ZO-1,2
+CLDN3,GAPDH,1
+CLDN3,E-cadherin,21
+CLDN3,CLDN4,1
+CLDN3,claudin-3,1
+CLDN3,beta-catenin,3
+CLDN3,CLDN2,1
+CLDN3,cyclinD1,1
+CLDN3,c-Myc,1
+CLDN3,CLDN1,2
+CLDN3,ZO-1,2
+CLDN3,beta-actin,1
+CLDN3,ZO-1/ZO-2,1
+CLDN3,Vimentin,14
+CLDN3,epidermal growth factor receptor,1
+claudin-4,claudin-3,2
+Claudin-3,epidermal growth factor receptor,1
+GAPDH,E-cadherin,1
+GAPDH,Vimentin,1
+SOX2,Sex determining region Y-Box 2,1
+RhoA,Cdc42,1
+RhoA,Rac1,1
+E-cadherin,beta-catenin,3
+E-cadherin,beta-actin,1
+E-cadherin,Vimentin,16
+beta-catenin,cyclinD1,3
+beta-catenin,c-Myc,3
+beta-catenin,Vimentin,1
+CLDN2,CLDN1,1
+cyclinD1,c-Myc,3
+sphingosine kinase 1,SPHK1,1
+Cdc42,Rac1,1
+beta-actin,Vimentin,1

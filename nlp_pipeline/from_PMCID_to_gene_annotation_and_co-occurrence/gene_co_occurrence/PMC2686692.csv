@@ -1,0 +1,105 @@
+gene_name_1,gene_name_2,co_occurrence
+apoptosis signal-regulating kinase 1,JNK,1
+apoptosis signal-regulating kinase 1,c-Jun N-terminal kinase,1
+apoptosis signal-regulating kinase 1,Prx-1,1
+apoptosis signal-regulating kinase 1,thioredoxin,1
+apoptosis signal-regulating kinase 1,AP-1,1
+apoptosis signal-regulating kinase 1,Bim,1
+apoptosis signal-regulating kinase 1,activator protein-1,1
+apoptosis signal-regulating kinase 1,ASK1,4
+apoptosis signal-regulating kinase 1,peroxiredoxin 1,1
+Smac,caspase 3,1
+Smac,second mitochondria-derived activator of caspase,1
+Smac,Akt,1
+Glutaredoxin,glutaredoxin,1
+JNK2,JNK1,3
+JNK2,JNK,3
+JNK2,c-Jun,2
+JNK2,AP-1,1
+JNK2,Bim,1
+JNK2,ASK1,3
+JNK1,JNK,3
+JNK1,c-Jun,3
+JNK1,AP-1,1
+JNK1,Bim,1
+JNK1,Akt1/2,1
+JNK1,c-Fos,1
+JNK1,ASK1,3
+p38,JNK,1
+p38,c-Jun N-terminal kinase,1
+p38,MAPKKK,1
+p38,ASK1,1
+JNK,c-Jun N-terminal kinase,3
+JNK,muM,1
+JNK,MKK4/7,2
+JNK,MKK3/6,1
+JNK,c-Jun,7
+JNK,MAPKKK,1
+JNK,AP-1,4
+JNK,Bim,3
+JNK,activator protein-1,2
+JNK,ASK1,14
+c-Jun N-terminal kinase,AP-1,2
+c-Jun N-terminal kinase,Bim,1
+c-Jun N-terminal kinase,activator protein-1,2
+c-Jun N-terminal kinase,ASK1,2
+Prx-1,ASK1,1
+Prx-1,peroxiredoxin 1,1
+JNK1/2,myelin basic protein,1
+JNK1/2,muM,3
+JNK1/2,MBP,1
+JNK1/2,ASK1,3
+myelin basic protein,muM,1
+myelin basic protein,MBP,1
+myelin basic protein,ASK1,1
+muM,MBP,1
+muM,bim,2
+muM,NaF,1
+muM,c-Jun,2
+muM,Bim,2
+muM,ASK1,4
+muM,Akt,1
+Thioredoxin,ASK1,1
+MKK4/7,MKK3/6,1
+MKK4/7,MAPKKK,1
+MKK4/7,ASK1,2
+MBP,ASK1,1
+bim,AP-1,1
+bim,CCT,1
+bim,Bim,1
+bim,Bcl-2,1
+caspase 3,second mitochondria-derived activator of caspase,1
+caspase 3,Akt,2
+MKK3/6,MAPKKK,1
+MKK3/6,ASK1,1
+second mitochondria-derived activator of caspase,Akt,1
+thioredoxin,Grx,1
+thioredoxin,Trx,3
+thioredoxin,glutaredoxin,3
+thioredoxin,ASK1,4
+c-Jun,AP-1,5
+c-Jun,Bim,2
+c-Jun,Akt1/2,1
+c-Jun,c-Fos,4
+c-Jun,ASK1,6
+MAPKKK,ASK1,2
+AP-1,Bim,3
+AP-1,activator protein-1,2
+AP-1,c-Fos,4
+AP-1,ASK1,4
+Bim,activator protein-1,1
+Bim,ASK1,5
+Bim,bcl-2,1
+Bim,Bcl-2,4
+activator protein-1,ASK1,2
+Akt1/2,c-Fos,1
+Grx,Trx,1
+Grx,glutaredoxin,1
+Grx,ASK1,1
+Trx,glutaredoxin,3
+Trx,ASK1,3
+glutaredoxin,ASK1,3
+Apoptosis signal-regulating kinase 1,ASK1,3
+ASK1,peroxiredoxin 1,1
+ASK1,Akt,5
+bcl-2,Bcl-2,1

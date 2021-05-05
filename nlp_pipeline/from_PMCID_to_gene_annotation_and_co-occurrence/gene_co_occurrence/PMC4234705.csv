@@ -1,0 +1,49 @@
+gene_name_1,gene_name_2,co_occurrence
+ephrin-B2,NFATc1,1
+ephrin-B2,Ephrin-B2,1
+ephrin-B2,Fos,1
+FN1,Eph,1
+Beta-catenin,TCF,1
+Eph,ERBB,1
+Eph,E-cadherin,1
+Eph,EGFR,1
+Eph,EphA2,4
+Eph,EphA3,1
+Eph,ERBB2,1
+Eph,receptor tyrosine kinase,2
+mTOR,EphA2,1
+JNK,c-JUN,1
+JNK,mTORC1,1
+JNK,EphA2,1
+VEGF,EphB4,1
+EphB4,EphB3,2
+EphB4,EphA2,1
+EphB4,EphB2,2
+Cyclin D1,Abl,2
+Cyclin D1,EphB2,1
+E-cadherin,EphA2,2
+E-cadherin,receptor tyrosine kinase,1
+Receptor Tyrosine Kinase,EphA3,1
+mTORC1,EphA2,1
+EphA7,ephrin-A2,1
+Abl,EphB2,1
+ErbB2,EphA2,1
+ErbB2,receptor tyrosine kinase,1
+ephrin-A1,EphA2,1
+EGFR,EphA2,1
+EGFR,ERBB2,1
+ERK,EphA2,1
+ERK,EphA3,2
+ERK,AKT,1
+ephrin-A2,PLCgamma2,1
+Akt,EphA2,4
+EphB3,EphB2,3
+Erk,EphA2,1
+Erk,EphA3,1
+EphA2,EphA4,4
+EphA2,EphA3,4
+EphA2,receptor tyrosine kinase,6
+NFATc1,Ephrin-B2,1
+NFATc1,Fos,1
+Ephrin-B2,Fos,1
+Eck,receptor tyrosine kinase,1
