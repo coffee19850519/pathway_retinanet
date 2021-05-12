@@ -2,7 +2,8 @@ MODEL:
   META_ARCHITECTURE: "RetinaNet"
   BACKBONE:
     NAME: "build_retinanet_resnet_fpn_backbone"
-  WEIGHTS: "./output/new_element_model.pth"
+  WEIGHTS: "output/element_model.pth"
+#  WEIGHTS: "tmp_out_aug2/model_0300000.pth"
   RESNETS:
     OUT_FEATURES: ["res3", "res4", "res5"]
   ANCHOR_GENERATOR:

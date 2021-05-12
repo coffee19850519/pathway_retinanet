@@ -10,10 +10,10 @@ rotated_relation_threshold=0.8
 sub_image_folder_for_ocr = r'/home/fei/Desktop/vis_results_old/temp_sub_images/'
 
 #interface configuration
-element_model=r'./output/element/model_0274398.pth'
+element_model=r'output/element_model.pth'
 element_config_file=r'./Base-RetinaNet.yaml'
 
-relation_model=r'./output/relation/model_0017906.pth'
+relation_model=r'./output/body_model.pth'
 relation_config_file=r'./Base-RetinaNet-relation.yaml'
 
 rotated_relation_model=r'rotated_relation/relation_model.pth'
