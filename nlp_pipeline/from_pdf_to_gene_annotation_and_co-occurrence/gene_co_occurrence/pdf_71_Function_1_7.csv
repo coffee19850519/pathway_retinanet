@@ -1,0 +1,390 @@
+gene_name_1,gene_name_2,co_occurrence
+EML4,Akt,1
+EML4,Axl,1
+EML4,insulin like growth factor 1 receptor,1
+EML4,hnRNP A2 B1,1
+EML4,EGFR,1
+EML4,epidermal growth factor receptor,1
+EML4,mTOR,1
+EML4,Gas6,1
+EML4,AXL,1
+Rac1,Ark,1
+Rac1,STAT3,1
+Rac1,MMP 9,1
+Rac1,Rac,1
+Rac1,Axl,1
+Rac1,Brg 1,1
+Rac1,EGFR,1
+Rac1,NF kappaB,1
+Rac1,AKT1,1
+Rac1,p38,1
+Rac1,epidermal growth factor receptor,1
+Rac1,mTOR,1
+Rac1,HER2,1
+Rac1,axl,1
+Rac1,Gas6,1
+Rac1,AXL,1
+Rac1,PI3K,1
+galectin 3,Tyro3,1
+galectin 3,Axl,1
+galectin 3,Tulp 1,1
+galectin 3,Gas6,1
+galectin 3,tubby like protein 1,1
+L C S,Akt,1
+L C S,Rac,1
+L C S,Axl,1
+L C S,e r p,1
+L C S,EMT,1
+L C S,ERK,1
+L C S,CL1,1
+L C S,MMP2,1
+L C S,c r a,1
+L C S,c g n,1
+L C S,Gas6,1
+L C S,AXL,1
+L C S,PI3K,1
+L C S,vimentin,1
+Ark,STAT3,1
+Ark,MMP 9,1
+Ark,Rac,1
+Ark,Axl,1
+Ark,Brg 1,1
+Ark,EGFR,1
+Ark,NF kappaB,1
+Ark,AKT1,1
+Ark,p38,1
+Ark,epidermal growth factor receptor,1
+Ark,mTOR,1
+Ark,HER2,1
+Ark,axl,1
+Ark,Gas6,1
+Ark,AXL,1
+Ark,PI3K,1
+Akt,STAT3,1
+Akt,lck,1
+Akt,TYRO3,1
+Akt,Tyro3,1
+Akt,Galectin 3,1
+Akt,Rac,2
+Akt,Axl,5
+Akt,MerTK,1
+Akt,EMT,2
+Akt,insulin like growth factor 1 receptor,1
+Akt,ERK,2
+Akt,hnRNP A2 B1,1
+Akt,EGFR,3
+Akt,CL1,1
+Akt,MMP2,1
+Akt,epidermal growth factor receptor,2
+Akt,PLC,2
+Akt,c r a,1
+Akt,mTOR,2
+Akt,c g n,1
+Akt,gas6,1
+Akt,VEGF A,1
+Akt,HER2,1
+Akt,axl,1
+Akt,Gas6,4
+Akt,Elmo2,1
+Akt,AXL,4
+Akt,PI3K,4
+Akt,tubby like protein 1,1
+Akt,vimentin,1
+STAT3,lck,1
+STAT3,MMP 9,1
+STAT3,Tyro3,1
+STAT3,Rac,2
+STAT3,Axl,2
+STAT3,Brg 1,1
+STAT3,ERK,1
+STAT3,EGFR,2
+STAT3,NF kappaB,1
+STAT3,AKT1,1
+STAT3,p38,1
+STAT3,epidermal growth factor receptor,1
+STAT3,PLC,1
+STAT3,mTOR,1
+STAT3,HER2,1
+STAT3,axl,1
+STAT3,Gas6,2
+STAT3,Elmo2,1
+STAT3,AXL,2
+STAT3,PI3K,2
+lck,Tyro3,1
+lck,Rac,1
+lck,Axl,1
+lck,ERK,1
+lck,EGFR,1
+lck,PLC,1
+lck,Gas6,1
+lck,Elmo2,1
+lck,AXL,1
+lck,PI3K,1
+c i p,e r p,1
+MMP 9,Rac,1
+MMP 9,Axl,1
+MMP 9,Brg 1,1
+MMP 9,EGFR,1
+MMP 9,NF kappaB,1
+MMP 9,AKT1,1
+MMP 9,p38,1
+MMP 9,epidermal growth factor receptor,1
+MMP 9,mTOR,1
+MMP 9,HER2,1
+MMP 9,axl,1
+MMP 9,Gas6,1
+MMP 9,AXL,1
+MMP 9,PI3K,1
+TYRO3,Galectin 3,1
+TYRO3,Axl,1
+TYRO3,MerTK,1
+TYRO3,gas6,1
+TYRO3,VEGF A,1
+TYRO3,axl,1
+TYRO3,Gas6,1
+TYRO3,AXL,1
+TYRO3,PI3K,1
+TYRO3,tubby like protein 1,1
+Tyro3,Rac,1
+Tyro3,Axl,2
+Tyro3,ERK,1
+Tyro3,EGFR,1
+Tyro3,PLC,1
+Tyro3,Tulp 1,1
+Tyro3,Gas6,2
+Tyro3,Elmo2,1
+Tyro3,AXL,1
+Tyro3,PI3K,1
+Tyro3,tubby like protein 1,1
+Galectin 3,Axl,1
+Galectin 3,MerTK,1
+Galectin 3,gas6,1
+Galectin 3,VEGF A,1
+Galectin 3,axl,1
+Galectin 3,Gas6,1
+Galectin 3,AXL,1
+Galectin 3,PI3K,1
+Galectin 3,tubby like protein 1,1
+Rac,Axl,3
+Rac,Brg 1,1
+Rac,EMT,1
+Rac,ERK,2
+Rac,EGFR,2
+Rac,NF kappaB,1
+Rac,AKT1,1
+Rac,CL1,1
+Rac,p38,1
+Rac,MMP2,1
+Rac,epidermal growth factor receptor,1
+Rac,PLC,1
+Rac,c r a,1
+Rac,mTOR,1
+Rac,c g n,1
+Rac,HER2,1
+Rac,axl,1
+Rac,Gas6,3
+Rac,Elmo2,1
+Rac,AXL,3
+Rac,PI3K,3
+Rac,vimentin,1
+Axl,MerTK,1
+Axl,Brg 1,1
+Axl,EMT,3
+Axl,insulin like growth factor 1 receptor,1
+Axl,ERK,2
+Axl,hnRNP A2 B1,1
+Axl,EGFR,5
+Axl,NF kappaB,1
+Axl,AKT1,1
+Axl,CL1,1
+Axl,p38,1
+Axl,MMP2,1
+Axl,epidermal growth factor receptor,4
+Axl,PLC,2
+Axl,c r a,1
+Axl,Tulp 1,1
+Axl,mTOR,3
+Axl,c g n,1
+Axl,gas6,2
+Axl,VEGF A,1
+Axl,HER2,2
+Axl,Toso,1
+Axl,axl,2
+Axl,Gas6,8
+Axl,Elmo2,1
+Axl,AXL,7
+Axl,PI3K,5
+Axl,tubby like protein 1,2
+Axl,vimentin,1
+MerTK,gas6,1
+MerTK,VEGF A,1
+MerTK,axl,1
+MerTK,Gas6,1
+MerTK,AXL,1
+MerTK,PI3K,1
+MerTK,tubby like protein 1,1
+Brg 1,EGFR,1
+Brg 1,NF kappaB,1
+Brg 1,AKT1,1
+Brg 1,p38,1
+Brg 1,epidermal growth factor receptor,1
+Brg 1,mTOR,1
+Brg 1,HER2,1
+Brg 1,axl,1
+Brg 1,Gas6,1
+Brg 1,AXL,1
+Brg 1,PI3K,1
+e r p,c r a,1
+e r p,c i g,1
+e r p,e d n,1
+EMT,ERK,1
+EMT,EGFR,1
+EMT,CL1,1
+EMT,MMP2,1
+EMT,epidermal growth factor receptor,1
+EMT,PLC,1
+EMT,c r a,1
+EMT,mTOR,1
+EMT,c g n,1
+EMT,gas6,1
+EMT,HER2,1
+EMT,Toso,1
+EMT,Gas6,2
+EMT,AXL,2
+EMT,PI3K,2
+EMT,vimentin,1
+insulin like growth factor 1 receptor,hnRNP A2 B1,1
+insulin like growth factor 1 receptor,EGFR,1
+insulin like growth factor 1 receptor,epidermal growth factor receptor,1
+insulin like growth factor 1 receptor,mTOR,1
+insulin like growth factor 1 receptor,Gas6,1
+insulin like growth factor 1 receptor,AXL,1
+ERK,EGFR,1
+ERK,CL1,1
+ERK,MMP2,1
+ERK,PLC,1
+ERK,c r a,1
+ERK,c g n,1
+ERK,Gas6,2
+ERK,Elmo2,1
+ERK,AXL,2
+ERK,PI3K,2
+ERK,vimentin,1
+hnRNP A2 B1,EGFR,1
+hnRNP A2 B1,epidermal growth factor receptor,1
+hnRNP A2 B1,mTOR,1
+hnRNP A2 B1,Gas6,1
+hnRNP A2 B1,AXL,1
+EGFR,NF kappaB,1
+EGFR,AKT1,1
+EGFR,p38,1
+EGFR,epidermal growth factor receptor,4
+EGFR,PLC,2
+EGFR,mTOR,3
+EGFR,HER2,2
+EGFR,axl,1
+EGFR,Gas6,4
+EGFR,Elmo2,1
+EGFR,AXL,4
+EGFR,PI3K,3
+NF kappaB,AKT1,1
+NF kappaB,p38,1
+NF kappaB,epidermal growth factor receptor,1
+NF kappaB,mTOR,1
+NF kappaB,HER2,1
+NF kappaB,axl,1
+NF kappaB,Gas6,1
+NF kappaB,AXL,1
+NF kappaB,PI3K,1
+AKT1,p38,1
+AKT1,epidermal growth factor receptor,1
+AKT1,mTOR,1
+AKT1,HER2,1
+AKT1,axl,1
+AKT1,Gas6,1
+AKT1,AXL,1
+AKT1,PI3K,1
+CL1,MMP2,1
+CL1,c r a,1
+CL1,c g n,1
+CL1,Gas6,1
+CL1,AXL,1
+CL1,PI3K,1
+CL1,vimentin,1
+p38,epidermal growth factor receptor,1
+p38,mTOR,1
+p38,HER2,1
+p38,axl,1
+p38,Gas6,1
+p38,AXL,1
+p38,PI3K,1
+MMP2,c r a,1
+MMP2,c g n,1
+MMP2,Gas6,1
+MMP2,AXL,1
+MMP2,PI3K,1
+MMP2,vimentin,1
+epidermal growth factor receptor,PLC,1
+epidermal growth factor receptor,mTOR,3
+epidermal growth factor receptor,HER2,2
+epidermal growth factor receptor,axl,1
+epidermal growth factor receptor,Gas6,3
+epidermal growth factor receptor,AXL,3
+epidermal growth factor receptor,PI3K,2
+PLC,mTOR,1
+PLC,HER2,1
+PLC,Gas6,1
+PLC,Elmo2,1
+PLC,AXL,1
+PLC,PI3K,2
+c r a,c g n,1
+c r a,e d n,1
+c r a,Gas6,1
+c r a,AXL,1
+c r a,PI3K,1
+c r a,vimentin,1
+Tulp 1,Gas6,1
+Tulp 1,tubby like protein 1,1
+mTOR,HER2,2
+mTOR,axl,1
+mTOR,Gas6,2
+mTOR,AXL,2
+mTOR,PI3K,2
+c g n,Gas6,1
+c g n,AXL,1
+c g n,PI3K,1
+c g n,vimentin,1
+gas6,VEGF A,1
+gas6,Toso,1
+gas6,axl,1
+gas6,Gas6,2
+gas6,AXL,2
+gas6,PI3K,1
+gas6,tubby like protein 1,1
+VEGF A,axl,1
+VEGF A,Gas6,1
+VEGF A,AXL,1
+VEGF A,PI3K,1
+VEGF A,tubby like protein 1,1
+HER2,axl,1
+HER2,Gas6,1
+HER2,AXL,1
+HER2,PI3K,2
+Toso,Gas6,1
+Toso,AXL,1
+axl,Gas6,2
+axl,AXL,2
+axl,PI3K,2
+axl,tubby like protein 1,1
+Gas6,Elmo2,1
+Gas6,AXL,7
+Gas6,PI3K,4
+Gas6,tubby like protein 1,2
+Gas6,vimentin,1
+Elmo2,AXL,1
+Elmo2,PI3K,1
+AXL,PI3K,4
+AXL,tubby like protein 1,1
+AXL,vimentin,1
+PI3K,tubby like protein 1,1
+PI3K,vimentin,1

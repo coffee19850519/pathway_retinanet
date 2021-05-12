@@ -1,0 +1,432 @@
+gene_name_1,gene_name_2,co_occurrence
+ROS1,hepatocyte growth factor,1
+ROS1,Hepatocyte growth factor,1
+ROS1,Med,1
+ROS1,RET,1
+ROS1,EGFR,2
+ROS1,epidermal growth factor receptor,1
+ROS1,HGF,1
+ROS1,TPR,1
+ROS1,ALK,1
+CBL,hepatocyte growth factor,1
+CBL,STAT3,1
+CBL,SHP2,1
+CBL,EGFR,1
+CBL,GAB1,1
+CBL,HGF,1
+CBL,GRB2,1
+CBL,PI3K,1
+hepatocyte growth factor,miR 1,1
+hepatocyte growth factor,Hepatocyte growth factor,2
+hepatocyte growth factor,STAT3,2
+hepatocyte growth factor,BRAF,1
+hepatocyte growth factor,Gab1,2
+hepatocyte growth factor,Med,3
+hepatocyte growth factor,cMet,1
+hepatocyte growth factor,miR 7515,1
+hepatocyte growth factor,MiR 410,1
+hepatocyte growth factor,ERBB3,1
+hepatocyte growth factor,gef,1
+hepatocyte growth factor,SHP2,1
+hepatocyte growth factor,miR 152,1
+hepatocyte growth factor,Nat,3
+hepatocyte growth factor,RET,2
+hepatocyte growth factor,c Met,4
+hepatocyte growth factor,c MET,1
+hepatocyte growth factor,EGFR,7
+hepatocyte growth factor,SHP 2,1
+hepatocyte growth factor,GAB1,1
+hepatocyte growth factor,microRNA 449,1
+hepatocyte growth factor,miR 34c,1
+hepatocyte growth factor,epidermal growth factor receptor,4
+hepatocyte growth factor,HGF,7
+hepatocyte growth factor,AKT,1
+hepatocyte growth factor,TPR,1
+hepatocyte growth factor,Grb2,1
+hepatocyte growth factor,Her2,1
+hepatocyte growth factor,HER2,2
+hepatocyte growth factor,ALK,3
+hepatocyte growth factor,GRB2,1
+hepatocyte growth factor,Bean,1
+hepatocyte growth factor,Med31,1
+hepatocyte growth factor,miR 137,1
+hepatocyte growth factor,miR 27a,1
+hepatocyte growth factor,Cbl,2
+hepatocyte growth factor,miR 34a,1
+hepatocyte growth factor,FAB,1
+hepatocyte growth factor,p53,1
+hepatocyte growth factor,PI3K,2
+hepatocyte growth factor,Med1,1
+hepatocyte growth factor,Shp2,1
+hepatocyte growth factor,Mark,1
+miR 1,Hepatocyte growth factor,1
+miR 1,cMet,1
+miR 1,MiR 410,1
+miR 1,gef,1
+miR 1,miR 152,1
+miR 1,Nat,1
+miR 1,c Met,1
+miR 1,EGFR,1
+miR 1,microRNA 449,1
+miR 1,miR 34c,1
+miR 1,epidermal growth factor receptor,1
+miR 1,Med31,1
+miR 1,miR 137,1
+miR 1,miR 34a,1
+miR 1,p53,1
+miR 1,Med1,1
+Hepatocyte growth factor,cMet,1
+Hepatocyte growth factor,MiR 410,1
+Hepatocyte growth factor,gef,1
+Hepatocyte growth factor,miR 152,1
+Hepatocyte growth factor,Nat,1
+Hepatocyte growth factor,RET,1
+Hepatocyte growth factor,c Met,1
+Hepatocyte growth factor,EGFR,2
+Hepatocyte growth factor,microRNA 449,1
+Hepatocyte growth factor,miR 34c,1
+Hepatocyte growth factor,epidermal growth factor receptor,2
+Hepatocyte growth factor,HGF,1
+Hepatocyte growth factor,TPR,1
+Hepatocyte growth factor,ALK,1
+Hepatocyte growth factor,Med31,1
+Hepatocyte growth factor,miR 137,1
+Hepatocyte growth factor,miR 34a,1
+Hepatocyte growth factor,p53,1
+Hepatocyte growth factor,Med1,1
+Akt,ERBB3,1
+Akt,EGFR,1
+Akt,HGF,1
+Akt,mir27a,1
+STAT3,Gab1,1
+STAT3,Med,1
+STAT3,miR 7515,1
+STAT3,SHP2,1
+STAT3,Nat,1
+STAT3,RET,1
+STAT3,c Met,1
+STAT3,EGFR,2
+STAT3,SHP 2,1
+STAT3,GAB1,1
+STAT3,epidermal growth factor receptor,1
+STAT3,HGF,2
+STAT3,AKT,1
+STAT3,Grb2,1
+STAT3,HER2,1
+STAT3,GRB2,1
+STAT3,miR 27a,1
+STAT3,Cbl,1
+STAT3,PI3K,2
+STAT3,Shp2,1
+BRAF,EGFR,1
+BRAF,HGF,1
+BRAF,ALK,1
+Gab1,Med,2
+Gab1,miR 7515,1
+Gab1,ERBB3,1
+Gab1,Nat,2
+Gab1,RET,1
+Gab1,c Met,2
+Gab1,c MET,1
+Gab1,EGFR,2
+Gab1,SHP 2,1
+Gab1,epidermal growth factor receptor,1
+Gab1,HGF,2
+Gab1,AKT,1
+Gab1,Grb2,1
+Gab1,HER2,1
+Gab1,Bean,1
+Gab1,miR 27a,1
+Gab1,Cbl,1
+Gab1,PI3K,1
+Gab1,Shp2,1
+Gab1,Mark,1
+Med,miR 7515,1
+Med,ERBB3,1
+Med,Nat,2
+Med,RET,1
+Med,c Met,3
+Med,c MET,1
+Med,EGFR,3
+Med,SHP 2,1
+Med,epidermal growth factor receptor,1
+Med,HGF,3
+Med,AKT,1
+Med,Grb2,1
+Med,HER2,2
+Med,Bean,1
+Med,miR 27a,1
+Med,Cbl,2
+Med,PI3K,1
+Med,Shp2,1
+Med,Mark,1
+cMet,MiR 410,1
+cMet,gef,1
+cMet,miR 152,1
+cMet,Nat,1
+cMet,c Met,1
+cMet,EGFR,1
+cMet,microRNA 449,1
+cMet,miR 34c,1
+cMet,epidermal growth factor receptor,1
+cMet,Med31,1
+cMet,miR 137,1
+cMet,miR 34a,1
+cMet,p53,1
+cMet,Med1,1
+miR 7515,MRX34,1
+miR 7515,Nat,1
+miR 7515,RET,1
+miR 7515,c Met,1
+miR 7515,EGFR,2
+miR 7515,SHP 2,1
+miR 7515,epidermal growth factor receptor,1
+miR 7515,HGF,2
+miR 7515,AKT,1
+miR 7515,Grb2,1
+miR 7515,HER2,1
+miR 7515,miR27a,1
+miR 7515,miR 27a,1
+miR 7515,Cbl,1
+miR 7515,PI3K,1
+miR 7515,mir27a,1
+miR 7515,Shp2,1
+MiR 410,gef,1
+MiR 410,miR 152,1
+MiR 410,Nat,1
+MiR 410,c Met,1
+MiR 410,EGFR,1
+MiR 410,microRNA 449,1
+MiR 410,miR 34c,1
+MiR 410,epidermal growth factor receptor,1
+MiR 410,Med31,1
+MiR 410,miR 137,1
+MiR 410,miR 34a,1
+MiR 410,p53,1
+MiR 410,Med1,1
+ERBB3,Nat,1
+ERBB3,c Met,1
+ERBB3,c MET,1
+ERBB3,EGFR,2
+ERBB3,HGF,2
+ERBB3,Bean,1
+ERBB3,mir27a,1
+ERBB3,Mark,1
+MRX34,EGFR,1
+MRX34,HGF,1
+MRX34,miR27a,1
+MRX34,mir27a,1
+gef,miR 152,1
+gef,Nat,1
+gef,c Met,1
+gef,EGFR,1
+gef,microRNA 449,1
+gef,miR 34c,1
+gef,epidermal growth factor receptor,1
+gef,Med31,1
+gef,miR 137,1
+gef,miR 34a,1
+gef,p53,1
+gef,Med1,1
+SHP2,EGFR,1
+SHP2,GAB1,1
+SHP2,HGF,1
+SHP2,GRB2,1
+SHP2,PI3K,1
+miR 152,Nat,1
+miR 152,c Met,1
+miR 152,EGFR,1
+miR 152,microRNA 449,1
+miR 152,miR 34c,1
+miR 152,epidermal growth factor receptor,1
+miR 152,Med31,1
+miR 152,miR 137,1
+miR 152,miR 34a,1
+miR 152,p53,1
+miR 152,Med1,1
+Nat,RET,1
+Nat,c Met,3
+Nat,c MET,1
+Nat,EGFR,3
+Nat,SHP 2,1
+Nat,microRNA 449,1
+Nat,miR 34c,1
+Nat,epidermal growth factor receptor,2
+Nat,HGF,2
+Nat,AKT,1
+Nat,Grb2,1
+Nat,HER2,1
+Nat,ALK,1
+Nat,Bean,1
+Nat,Med31,1
+Nat,miR 137,1
+Nat,miR 27a,1
+Nat,Cbl,1
+Nat,miR 34a,1
+Nat,p53,1
+Nat,PI3K,1
+Nat,Med1,1
+Nat,Shp2,1
+Nat,Mark,1
+RET,c Met,1
+RET,EGFR,2
+RET,SHP 2,1
+RET,epidermal growth factor receptor,2
+RET,HGF,2
+RET,AKT,1
+RET,TPR,1
+RET,Grb2,1
+RET,HER2,1
+RET,ALK,1
+RET,miR 27a,1
+RET,Cbl,1
+RET,PI3K,1
+RET,Shp2,1
+c Met,c MET,1
+c Met,EGFR,3
+c Met,SHP 2,1
+c Met,microRNA 449,1
+c Met,miR 34c,1
+c Met,epidermal growth factor receptor,2
+c Met,HGF,3
+c Met,AKT,1
+c Met,Grb2,1
+c Met,HER2,2
+c Met,Bean,1
+c Met,Med31,1
+c Met,miR 137,1
+c Met,miR 27a,1
+c Met,Cbl,2
+c Met,miR 34a,1
+c Met,p53,1
+c Met,PI3K,1
+c Met,Med1,1
+c Met,Shp2,1
+c Met,Mark,1
+c MET,EGFR,1
+c MET,HGF,1
+c MET,Bean,1
+c MET,Mark,1
+EGFR,SHP 2,1
+EGFR,GAB1,1
+EGFR,microRNA 449,1
+EGFR,miR 34c,1
+EGFR,epidermal growth factor receptor,4
+EGFR,HGF,8
+EGFR,AKT,1
+EGFR,TPR,1
+EGFR,Grb2,1
+EGFR,Her2,1
+EGFR,HER2,1
+EGFR,ALK,3
+EGFR,GRB2,1
+EGFR,miR27a,1
+EGFR,Bean,1
+EGFR,Med31,1
+EGFR,miR 137,1
+EGFR,miR 27a,1
+EGFR,Cbl,1
+EGFR,miR 34a,1
+EGFR,FAB,1
+EGFR,p53,1
+EGFR,PI3K,2
+EGFR,Med1,1
+EGFR,mir27a,2
+EGFR,Shp2,1
+EGFR,Mark,1
+SHP 2,epidermal growth factor receptor,1
+SHP 2,HGF,1
+SHP 2,AKT,1
+SHP 2,Grb2,1
+SHP 2,HER2,1
+SHP 2,miR 27a,1
+SHP 2,Cbl,1
+SHP 2,PI3K,1
+SHP 2,Shp2,1
+GAB1,HGF,1
+GAB1,GRB2,1
+GAB1,PI3K,1
+microRNA 449,miR 34c,1
+microRNA 449,epidermal growth factor receptor,1
+microRNA 449,Med31,1
+microRNA 449,miR 137,1
+microRNA 449,miR 34a,1
+microRNA 449,p53,1
+microRNA 449,Med1,1
+miR 34c,epidermal growth factor receptor,1
+miR 34c,Med31,1
+miR 34c,miR 137,1
+miR 34c,miR 34a,1
+miR 34c,p53,1
+miR 34c,Med1,1
+epidermal growth factor receptor,HGF,3
+epidermal growth factor receptor,AKT,1
+epidermal growth factor receptor,TPR,1
+epidermal growth factor receptor,Grb2,1
+epidermal growth factor receptor,Her2,1
+epidermal growth factor receptor,HER2,1
+epidermal growth factor receptor,ALK,2
+epidermal growth factor receptor,Med31,1
+epidermal growth factor receptor,miR 137,1
+epidermal growth factor receptor,miR 27a,1
+epidermal growth factor receptor,Cbl,1
+epidermal growth factor receptor,miR 34a,1
+epidermal growth factor receptor,FAB,1
+epidermal growth factor receptor,p53,1
+epidermal growth factor receptor,PI3K,1
+epidermal growth factor receptor,Med1,1
+epidermal growth factor receptor,Shp2,1
+HGF,AKT,1
+HGF,TPR,1
+HGF,Grb2,1
+HGF,Her2,1
+HGF,HER2,2
+HGF,ALK,3
+HGF,GRB2,1
+HGF,miR27a,1
+HGF,Bean,1
+HGF,miR 27a,1
+HGF,Cbl,2
+HGF,FAB,1
+HGF,PI3K,2
+HGF,mir27a,2
+HGF,Shp2,1
+HGF,Mark,1
+AKT,Grb2,1
+AKT,HER2,1
+AKT,miR 27a,1
+AKT,Cbl,1
+AKT,PI3K,1
+AKT,Shp2,1
+TPR,ALK,1
+Grb2,HER2,1
+Grb2,miR 27a,1
+Grb2,Cbl,1
+Grb2,PI3K,1
+Grb2,Shp2,1
+Her2,ALK,1
+Her2,FAB,1
+HER2,miR 27a,1
+HER2,Cbl,2
+HER2,PI3K,1
+HER2,Shp2,1
+ALK,FAB,1
+GRB2,PI3K,1
+miR27a,mir27a,1
+Bean,Mark,1
+Med31,miR 137,1
+Med31,miR 34a,1
+Med31,p53,1
+Med31,Med1,1
+miR 137,miR 34a,1
+miR 137,p53,1
+miR 137,Med1,1
+miR 27a,Cbl,1
+miR 27a,PI3K,1
+miR 27a,Shp2,1
+Cbl,PI3K,1
+Cbl,Shp2,1
+miR 34a,p53,1
+miR 34a,Med1,1
+p53,Med1,1
+PI3K,Shp2,1

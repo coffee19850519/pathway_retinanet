@@ -1,0 +1,216 @@
+gene_name_1,gene_name_2,co_occurrence
+TFRC,IRP1,1
+TFRC,FHC,1
+TFRC,ISCU,1
+TFRC,miR,1
+TFRC,p53,1
+TFRC,Annexin V,1
+IRP1,FTL,1
+IRP1,FHC,2
+IRP1,MDM2,1
+IRP1,miR 98 miR 150 miR 214,1
+IRP1,miR 19b,1
+IRP1,miR 18b,1
+IRP1,ISCU,1
+IRP1,Pang,1
+IRP1,miR,2
+IRP1,p53,2
+IRP1,Annexin V,1
+AIRC,FHC,1
+AIRC,MDM2,1
+AIRC,miR 125a,1
+AIRC,ETS1,1
+AIRC,Ferritin heavy chain,1
+AIRC,CXCL12,1
+AIRC,P53,1
+AIRC,ISCU,1
+AIRC,CXCR4,1
+AIRC,Pang,1
+AIRC,miR,1
+AIRC,p53,1
+FTL,FHC,1
+FTL,MDM2,1
+FTL,miR 98 miR 150 miR 214,1
+FTL,miR 19b,1
+FTL,miR 18b,1
+FTL,Pang,1
+FTL,miR,1
+FTL,p53,1
+FHC,Caspase 9,2
+FHC,caspase 9,2
+FHC,DNA methyltransferase 1,1
+FHC,MDM2,2
+FHC,IgG 1,1
+FHC,miR 98 miR 150 miR 214,1
+FHC,caspase 8,1
+FHC,miR 125a,1
+FHC,ETS1,1
+FHC,Ferritin heavy chain,1
+FHC,CXCL12,2
+FHC,P53,1
+FHC,miR 19b,1
+FHC,Bcl2,2
+FHC,miR 18b,1
+FHC,ISCU,2
+FHC,Caspase 8,1
+FHC,DNMT1,4
+FHC,Bcl 2,3
+FHC,CXCR4,1
+FHC,Pang,2
+FHC,NOS,1
+FHC,BAX,4
+FHC,miR,11
+FHC,caspases,1
+FHC,p53,11
+FHC,Annexin V,3
+FHC,miR 126,1
+Caspase 9,IgG 1,1
+Caspase 9,CXCL12,1
+Caspase 9,Bcl2,1
+Caspase 9,Caspase 8,1
+Caspase 9,Bcl 2,1
+Caspase 9,BAX,2
+Caspase 9,miR,2
+Caspase 9,p53,2
+Caspase 9,Annexin V,1
+caspase 9,caspase 8,1
+caspase 9,Bcl2,1
+caspase 9,DNMT1,2
+caspase 9,Bcl 2,2
+caspase 9,BAX,2
+caspase 9,miR,2
+caspase 9,caspases,1
+caspase 9,p53,2
+caspase 9,Annexin V,1
+caspase 9,miR 126,1
+DNA methyltransferase 1,DNMT1,1
+DNA methyltransferase 1,miR,1
+DNA methyltransferase 1,p53,1
+MDM2,miR 98 miR 150 miR 214,1
+MDM2,miR 125a,1
+MDM2,ETS1,1
+MDM2,Ferritin heavy chain,1
+MDM2,CXCL12,1
+MDM2,P53,1
+MDM2,miR 19b,1
+MDM2,miR 18b,1
+MDM2,ISCU,1
+MDM2,CXCR4,1
+MDM2,Pang,2
+MDM2,miR,2
+MDM2,p53,2
+IgG 1,Caspase 8,1
+IgG 1,Bcl 2,1
+IgG 1,BAX,1
+IgG 1,miR,1
+IgG 1,p53,1
+miR 98 miR 150 miR 214,miR 19b,1
+miR 98 miR 150 miR 214,miR 18b,1
+miR 98 miR 150 miR 214,Pang,1
+miR 98 miR 150 miR 214,miR,1
+miR 98 miR 150 miR 214,p53,1
+caspase 8,DNMT1,1
+caspase 8,Bcl 2,1
+caspase 8,BAX,1
+caspase 8,miR,1
+caspase 8,p53,1
+caspase 8,Annexin V,1
+miR 125a,ETS1,1
+miR 125a,Ferritin heavy chain,1
+miR 125a,CXCL12,1
+miR 125a,P53,1
+miR 125a,ISCU,1
+miR 125a,CXCR4,1
+miR 125a,Pang,1
+miR 125a,miR,1
+miR 125a,p53,1
+ETS1,Ferritin heavy chain,1
+ETS1,CXCL12,1
+ETS1,P53,1
+ETS1,ISCU,1
+ETS1,CXCR4,1
+ETS1,Pang,1
+ETS1,miR,1
+ETS1,p53,1
+Ferritin heavy chain,CXCL12,1
+Ferritin heavy chain,P53,1
+Ferritin heavy chain,ISCU,1
+Ferritin heavy chain,CXCR4,1
+Ferritin heavy chain,Pang,1
+Ferritin heavy chain,miR,1
+Ferritin heavy chain,p53,1
+CXCL12,P53,1
+CXCL12,Bcl2,1
+CXCL12,ISCU,1
+CXCL12,CXCR4,1
+CXCL12,Pang,1
+CXCL12,BAX,1
+CXCL12,miR,2
+CXCL12,p53,2
+CXCL12,Annexin V,1
+P53,ISCU,1
+P53,CXCR4,1
+P53,Pang,1
+P53,miR,1
+P53,p53,1
+miR 19b,miR 18b,1
+miR 19b,Pang,1
+miR 19b,miR,1
+miR 19b,p53,1
+RNase A,miR,1
+RNase A,Annexin V,1
+fre,p53,1
+Bcl2,DNMT1,1
+Bcl2,Bcl 2,1
+Bcl2,BAX,2
+Bcl2,miR,2
+Bcl2,caspases,1
+Bcl2,p53,2
+Bcl2,Annexin V,1
+Bcl2,miR 126,1
+miR 18b,Pang,1
+miR 18b,miR,1
+miR 18b,p53,1
+ISCU,CXCR4,1
+ISCU,Pang,1
+ISCU,miR,2
+ISCU,p53,2
+ISCU,Annexin V,1
+Caspase 8,Bcl 2,1
+Caspase 8,BAX,1
+Caspase 8,miR,1
+Caspase 8,p53,1
+DNMT1,Bcl 2,2
+DNMT1,NOS,1
+DNMT1,BAX,2
+DNMT1,miR,4
+DNMT1,caspases,1
+DNMT1,p53,4
+DNMT1,Annexin V,1
+DNMT1,miR 126,1
+Bcl 2,BAX,3
+Bcl 2,miR,3
+Bcl 2,caspases,1
+Bcl 2,p53,3
+Bcl 2,Annexin V,1
+Bcl 2,miR 126,1
+CXCR4,Pang,1
+CXCR4,miR,1
+CXCR4,p53,1
+Pang,miR,2
+Pang,p53,2
+NOS,miR,1
+NOS,p53,1
+BAX,miR,4
+BAX,caspases,1
+BAX,p53,4
+BAX,Annexin V,2
+BAX,miR 126,1
+miR,caspases,1
+miR,p53,11
+miR,Annexin V,4
+miR,miR 126,1
+caspases,p53,1
+caspases,miR 126,1
+p53,Annexin V,3
+p53,miR 126,1

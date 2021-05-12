@@ -1,0 +1,78 @@
+gene_name_1,gene_name_2,co_occurrence
+notch 1,miR,1
+notch 1,miR 34a,1
+notch 1,Bad,1
+notch 1,p53,1
+notch 1,Akt,1
+notch 1,AKT,1
+notch 1,p300,1
+notch 1,Notch 1,1
+miR,miR 34a,3
+miR,Bad,1
+miR,p53,3
+miR,EMT,1
+miR,NOTCH 1,2
+miR,Akt,1
+miR,AKT,1
+miR,p300,1
+miR,GCG,1
+miR,Notch 1,3
+miR 34a,Bad,2
+miR 34a,Sirt1,1
+miR 34a,p53,10
+miR 34a,EMT,7
+miR 34a,NOTCH 1,6
+miR 34a,Akt,1
+miR 34a,AKT,1
+miR 34a,Jagged 1,1
+miR 34a,cir,3
+miR 34a,p300,2
+miR 34a,GCG,1
+miR 34a,Med 30,1
+miR 34a,Notch 1,15
+Bad,p53,1
+Bad,Akt,1
+Bad,AKT,1
+Bad,p300,1
+Bad,Notch 1,2
+Sirt1,p53,1
+Sirt1,EMT,1
+Sirt1,Jagged 1,1
+Sirt1,PPAR,1
+Sirt1,SIRT1,1
+Sirt1,Notch 1,2
+p53,EMT,4
+p53,NOTCH 1,5
+p53,Akt,1
+p53,AKT,1
+p53,Jagged 1,1
+p53,cir,1
+p53,p300,2
+p53,GCG,1
+p53,Med 30,1
+p53,Notch 1,10
+EMT,NOTCH 1,3
+EMT,cir,1
+EMT,GCG,1
+EMT,Notch 1,7
+NOTCH 1,cir,1
+NOTCH 1,GCG,1
+NOTCH 1,Notch 1,6
+Akt,AKT,1
+Akt,p300,1
+Akt,Notch 1,1
+AKT,p300,1
+AKT,Notch 1,1
+Jagged 1,PPAR,1
+Jagged 1,SIRT1,1
+Jagged 1,p300,1
+Jagged 1,Med 30,1
+Jagged 1,Notch 1,2
+cir,Notch 1,3
+PPAR,SIRT1,1
+PPAR,Notch 1,1
+SIRT1,Notch 1,1
+p300,Med 30,1
+p300,Notch 1,2
+GCG,Notch 1,1
+Med 30,Notch 1,1

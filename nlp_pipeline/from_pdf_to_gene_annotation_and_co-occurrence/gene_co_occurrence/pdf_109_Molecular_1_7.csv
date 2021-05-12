@@ -1,0 +1,271 @@
+gene_name_1,gene_name_2,co_occurrence
+Mok,Epidermal growth factor receptor,1
+Mok,ERBB3,1
+Mok,EGFR,1
+CHK2,ERK1,1
+CHK2,VEGFR 2,1
+CHK2,CDK2,1
+CHK2,Cdc25C,1
+CHK2,VEGF,1
+CHK2,ERK2,1
+CHK2,GSK3,1
+CHK2,EGFR,1
+CHK2,AKT,1
+AIRC,Akt,1
+AIRC,VEGF,1
+AIRC,MDM2,1
+AIRC,PKC,1
+AIRC,Tel,1
+AIRC,EGFR,1
+AIRC,p38,1
+AIRC,MAPK,1
+AIRC,p53,1
+ERK1,VEGFR 2,3
+ERK1,CDK2,3
+ERK1,Cdc25C,1
+ERK1,cdc25C,1
+ERK1,cyclin D1,1
+ERK1,cdc 25C,1
+ERK1,ase,1
+ERK1,VEGF,3
+ERK1,PKC,2
+ERK1,rin,2
+ERK1,ERK2,1
+ERK1,GSK3,6
+ERK1,epidermal growth factor,1
+ERK1,cdc2,1
+ERK1,EGFR,4
+ERK1,PLCG1,1
+ERK1,EphA1,2
+ERK1,EPHA1,1
+ERK1,p38,1
+ERK1,MAPK,1
+ERK1,AKT,6
+ERK1,ALK,1
+ERK1,Cortactin,1
+ERK1,MAPK14,1
+ERK1,RBL2,1
+ERK1,cdc25c,1
+VEGFR 2,CDK2,1
+VEGFR 2,Cdc25C,1
+VEGFR 2,cyclin D1,1
+VEGFR 2,VEGF,5
+VEGFR 2,PKC,2
+VEGFR 2,rin,2
+VEGFR 2,ERK2,1
+VEGFR 2,GSK3,4
+VEGFR 2,epidermal growth factor,1
+VEGFR 2,EGFR,5
+VEGFR 2,EphA1,2
+VEGFR 2,p38,1
+VEGFR 2,MAPK,1
+VEGFR 2,AKT,4
+VEGFR 2,ALK,1
+CDK2,Cdc25C,1
+CDK2,cdc25C,1
+CDK2,cdc 25C,1
+CDK2,ase,1
+CDK2,VEGF,1
+CDK2,PKC,1
+CDK2,rin,1
+CDK2,ERK2,1
+CDK2,GSK3,3
+CDK2,cdc2,1
+CDK2,EGFR,2
+CDK2,PLCG1,1
+CDK2,EPHA1,1
+CDK2,AKT,3
+CDK2,Cortactin,1
+CDK2,MAPK14,1
+CDK2,RBL2,1
+CDK2,cdc25c,1
+Cdc25C,VEGF,1
+Cdc25C,ERK2,1
+Cdc25C,GSK3,1
+Cdc25C,EGFR,1
+Cdc25C,AKT,1
+cdc25C,ase,1
+cdc25C,PKC,1
+cdc25C,rin,1
+cdc25C,GSK3,1
+cdc25C,cdc2,1
+cdc25C,EGFR,1
+cdc25C,PLCG1,1
+cdc25C,EPHA1,1
+cdc25C,AKT,1
+cdc25C,Cortactin,1
+cdc25C,MAPK14,1
+cdc25C,RBL2,1
+cyclin D1,VEGF,1
+cyclin D1,PKC,1
+cyclin D1,rin,1
+cyclin D1,GSK3,1
+cyclin D1,EGFR,1
+cyclin D1,EphA1,1
+cyclin D1,p38,1
+cyclin D1,MAPK,1
+cyclin D1,AKT,1
+cdc 25C,GSK3,1
+cdc 25C,AKT,1
+cdc 25C,cdc25c,1
+ase,PKC,1
+ase,rin,1
+ase,GSK3,1
+ase,cdc2,1
+ase,EGFR,1
+ase,PLCG1,1
+ase,EPHA1,1
+ase,AKT,1
+ase,Cortactin,1
+ase,MAPK14,1
+ase,RBL2,1
+Akt,VEGF,1
+Akt,MDM2,1
+Akt,PKC,1
+Akt,Tel,1
+Akt,Epidermal growth fac tor receptor,1
+Akt,EGFR,1
+Akt,p38,1
+Akt,MAPK,1
+Akt,p53,1
+VEGF,MDM2,1
+VEGF,PKC,4
+VEGF,rin,2
+VEGF,ERK2,1
+VEGF,GSK3,4
+VEGF,Tel,1
+VEGF,epidermal growth factor,2
+VEGF,EGFR,7
+VEGF,EphA1,2
+VEGF,p38,2
+VEGF,MAPK,2
+VEGF,AKT,5
+VEGF,ALK,1
+VEGF,PI3K AKT Glycogen Synthase Kinase 3 GSK3 and ribosomal protein S6,1
+VEGF,PI3K,1
+VEGF,p53,1
+VEGF,cMET,1
+MDM2,PKC,1
+MDM2,Tel,1
+MDM2,EGFR,1
+MDM2,p38,2
+MDM2,MAPK,2
+MDM2,p53,2
+Epidermal growth factor receptor,ERBB3,1
+Epidermal growth factor receptor,EGFR,1
+PKC,rin,2
+PKC,GSK3,3
+PKC,Tel,1
+PKC,epidermal growth factor,1
+PKC,cdc2,1
+PKC,EGFR,5
+PKC,PLCG1,1
+PKC,EphA1,1
+PKC,EPHA1,1
+PKC,p38,2
+PKC,MAPK,2
+PKC,AKT,4
+PKC,PKCdelta,1
+PKC,PI3K AKT Glycogen Synthase Kinase 3 GSK3 and ribosomal protein S6,1
+PKC,Cortactin,1
+PKC,MAPK14,1
+PKC,RBL2,1
+PKC,PI3K,1
+PKC,p53,1
+PKC,cMET,1
+rin,GSK3,2
+rin,cdc2,1
+rin,EGFR,3
+rin,PLCG1,1
+rin,EphA1,2
+rin,EPHA1,1
+rin,p38,1
+rin,MAPK,1
+rin,AKT,2
+rin,Cortactin,1
+rin,MAPK14,1
+rin,RBL2,1
+ERK2,GSK3,1
+ERK2,EGFR,1
+ERK2,AKT,1
+ERBB3,EGFR,1
+GSK3,epidermal growth factor,1
+GSK3,cdc2,1
+GSK3,EGFR,5
+GSK3,PLCG1,1
+GSK3,EphA1,2
+GSK3,EPHA1,1
+GSK3,p38,1
+GSK3,MAPK,1
+GSK3,AKT,7
+GSK3,ALK,1
+GSK3,Cortactin,1
+GSK3,MAPK14,1
+GSK3,RBL2,1
+GSK3,cdc25c,1
+Tel,EGFR,1
+Tel,p38,1
+Tel,MAPK,1
+Tel,p53,1
+Sams,AKT,1
+epidermal growth factor,EGFR,3
+epidermal growth factor,EphA1,1
+epidermal growth factor,AKT,2
+epidermal growth factor,ALK,2
+epidermal growth factor,PI3K AKT Glycogen Synthase Kinase 3 GSK3 and ribosomal protein S6,1
+epidermal growth factor,PI3K,1
+epidermal growth factor,cMET,1
+cdc2,EGFR,1
+cdc2,PLCG1,1
+cdc2,EPHA1,1
+cdc2,AKT,1
+cdc2,Cortactin,1
+cdc2,MAPK14,1
+cdc2,RBL2,1
+EGFR,PLCG1,1
+EGFR,EphA1,2
+EGFR,EPHA1,1
+EGFR,p38,2
+EGFR,MAPK,2
+EGFR,AKT,6
+EGFR,ALK,1
+EGFR,PI3K AKT Glycogen Synthase Kinase 3 GSK3 and ribosomal protein S6,1
+EGFR,Cortactin,1
+EGFR,MAPK14,1
+EGFR,RBL2,1
+EGFR,PI3K,1
+EGFR,p53,1
+EGFR,cMET,1
+PLCG1,EPHA1,1
+PLCG1,AKT,1
+PLCG1,Cortactin,1
+PLCG1,MAPK14,1
+PLCG1,RBL2,1
+EphA1,p38,1
+EphA1,MAPK,1
+EphA1,AKT,2
+EphA1,ALK,1
+EPHA1,AKT,1
+EPHA1,Cortactin,1
+EPHA1,MAPK14,1
+EPHA1,RBL2,1
+p38,MAPK,3
+p38,AKT,1
+p38,p53,2
+Reck,Smit,1
+MAPK,AKT,1
+MAPK,p53,2
+AKT,ALK,1
+AKT,PI3K AKT Glycogen Synthase Kinase 3 GSK3 and ribosomal protein S6,1
+AKT,Cortactin,1
+AKT,MAPK14,1
+AKT,RBL2,1
+AKT,PI3K,1
+AKT,cdc25c,1
+AKT,cMET,1
+PI3K AKT Glycogen Synthase Kinase 3 GSK3 and ribosomal protein S6,PI3K,1
+PI3K AKT Glycogen Synthase Kinase 3 GSK3 and ribosomal protein S6,cMET,1
+Cortactin,MAPK14,1
+Cortactin,RBL2,1
+MAPK14,RBL2,1
+PI3K,cMET,1

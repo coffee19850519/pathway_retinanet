@@ -1,0 +1,1101 @@
+gene_name_1,gene_name_2,co_occurrence
+eomesodermin,bet,2
+eomesodermin,CD8,1
+Gzmb,CD40L,1
+Gzmb,CD3 g,1
+Gzmb,Eomes,1
+Gzmb,IL 2,1
+Gzmb,IFNG,1
+Gzmb,pMel,1
+Gzmb,IL 10,1
+Gzmb,EL4,1
+Gzmb,MYC,1
+Gzmb,COR,1
+Gzmb,bet,1
+Gzmb,CD8,1
+Gzmb,Ifng,1
+Gzmb,cMYC,1
+Gzmb,EOMES,1
+Gzmb,Prdm1,1
+Gzmb,NOTCH1,1
+Gzmb,IL 1,1
+Gzmb,miR 23a,1
+Gzmb,cMyc,1
+Gzmb,Thy1 1 pMel 1,1
+Gzmb,PGK,1
+Gzmb,IL 6,1
+Gzmb,PRDM1,1
+Gzmb,CD28,1
+Gzmb,PD 1,1
+Gzmb,APCs,1
+Gzmb,Myc,1
+Gzmb,Granzyme B,1
+Gzmb,IFN,1
+Gzmb,Tbet,1
+Gzmb,GM CSF,1
+Gzmb,CD3,1
+Gzmb,RPLP0,1
+Gzmb,Mad1,1
+Gzmb,Mad4,1
+Gzmb,IFN B,1
+Gzmb,TNF,1
+Gzmb,RNY3,1
+Gzmb,tor,1
+Gzmb,RPL13A,1
+Gzmb,granzyme B,1
+Gzmb,BLIMP 1,1
+CD40L,CD3 g,1
+CD40L,Eomes,1
+CD40L,IL 2,1
+CD40L,IFNG,1
+CD40L,pMel,1
+CD40L,IL 10,1
+CD40L,EL4,1
+CD40L,MYC,1
+CD40L,COR,1
+CD40L,bet,1
+CD40L,CD8,1
+CD40L,Ifng,1
+CD40L,cMYC,1
+CD40L,EOMES,1
+CD40L,Prdm1,1
+CD40L,NOTCH1,1
+CD40L,IL 1,1
+CD40L,miR 23a,1
+CD40L,cMyc,1
+CD40L,Thy1 1 pMel 1,1
+CD40L,PGK,1
+CD40L,IL 6,1
+CD40L,PRDM1,1
+CD40L,CD28,1
+CD40L,PD 1,1
+CD40L,APCs,1
+CD40L,Myc,1
+CD40L,Granzyme B,1
+CD40L,IFN,1
+CD40L,Tbet,1
+CD40L,GM CSF,1
+CD40L,CD3,1
+CD40L,RPLP0,1
+CD40L,Mad1,1
+CD40L,Mad4,1
+CD40L,IFN B,1
+CD40L,TNF,1
+CD40L,RNY3,1
+CD40L,tor,1
+CD40L,RPL13A,1
+CD40L,granzyme B,1
+CD40L,BLIMP 1,1
+CD4,pRB,1
+CD4,BET,1
+CD4,CD8,1
+CD4,Myc,1
+CD4,myc,1
+CD4,Proc,1
+miR 181a,Nat,1
+miR 181a,tor,1
+CD3 g,Eomes,1
+CD3 g,IL 2,1
+CD3 g,IFNG,1
+CD3 g,pMel,1
+CD3 g,IL 10,1
+CD3 g,EL4,1
+CD3 g,MYC,1
+CD3 g,COR,1
+CD3 g,bet,1
+CD3 g,CD8,1
+CD3 g,Ifng,1
+CD3 g,cMYC,1
+CD3 g,EOMES,1
+CD3 g,Prdm1,1
+CD3 g,NOTCH1,1
+CD3 g,IL 1,1
+CD3 g,miR 23a,1
+CD3 g,cMyc,1
+CD3 g,Thy1 1 pMel 1,1
+CD3 g,PGK,1
+CD3 g,IL 6,1
+CD3 g,PRDM1,1
+CD3 g,CD28,1
+CD3 g,PD 1,1
+CD3 g,APCs,1
+CD3 g,Myc,1
+CD3 g,Granzyme B,1
+CD3 g,IFN,1
+CD3 g,Tbet,1
+CD3 g,GM CSF,1
+CD3 g,CD3,1
+CD3 g,RPLP0,1
+CD3 g,Mad1,1
+CD3 g,Mad4,1
+CD3 g,IFN B,1
+CD3 g,TNF,1
+CD3 g,RNY3,1
+CD3 g,tor,1
+CD3 g,RPL13A,1
+CD3 g,granzyme B,1
+CD3 g,BLIMP 1,1
+Eomes,IL 2,2
+Eomes,IL 21,1
+Eomes,IFNG,1
+Eomes,pMel,2
+Eomes,IL 10,1
+Eomes,EL4,1
+Eomes,MYC,1
+Eomes,COR,1
+Eomes,Gls,1
+Eomes,bet,2
+Eomes,CD8,2
+Eomes,GLS,1
+Eomes,Ifng,1
+Eomes,cMYC,2
+Eomes,EOMES,2
+Eomes,Prdm1,2
+Eomes,NOTCH1,1
+Eomes,IL 1,1
+Eomes,miR 23a,2
+Eomes,cMyc,1
+Eomes,Thy1 1 pMel 1,2
+Eomes,PGK,2
+Eomes,IL 6,1
+Eomes,PRDM1,1
+Eomes,CD28,2
+Eomes,PD 1,1
+Eomes,APCs,1
+Eomes,Myc,1
+Eomes,Granzyme B,1
+Eomes,IFN,2
+Eomes,Tbet,2
+Eomes,GM CSF,1
+Eomes,CD3,2
+Eomes,RPLP0,1
+Eomes,miR,1
+Eomes,Mad1,1
+Eomes,Mad4,1
+Eomes,IL 15,1
+Eomes,IFN B,1
+Eomes,TNF,1
+Eomes,RNY3,1
+Eomes,tor,2
+Eomes,RPL13A,1
+Eomes,miR 23b,1
+Eomes,granzyme B,2
+Eomes,BLIMP 1,2
+pRB,BET,1
+pRB,Myc,1
+pRB,myc,1
+pRB,Proc,1
+B7 H1,Nat,1
+IL 2,IL 21,1
+IL 2,IFNG,1
+IL 2,pMel,2
+IL 2,IL 10,1
+IL 2,EL4,1
+IL 2,MYC,1
+IL 2,COR,1
+IL 2,Gls,1
+IL 2,bet,2
+IL 2,CD8,2
+IL 2,GLS,1
+IL 2,Ifng,1
+IL 2,cMYC,2
+IL 2,EOMES,2
+IL 2,Prdm1,2
+IL 2,NOTCH1,1
+IL 2,IL 1,1
+IL 2,miR 23a,2
+IL 2,cMyc,1
+IL 2,Thy1 1 pMel 1,2
+IL 2,PGK,2
+IL 2,IL 6,1
+IL 2,PRDM1,1
+IL 2,CD28,2
+IL 2,PD 1,1
+IL 2,APCs,1
+IL 2,Myc,1
+IL 2,Granzyme B,1
+IL 2,IFN,2
+IL 2,Tbet,2
+IL 2,GM CSF,1
+IL 2,CD3,2
+IL 2,RPLP0,1
+IL 2,miR,1
+IL 2,Mad1,1
+IL 2,Mad4,1
+IL 2,IL 15,1
+IL 2,IFN B,1
+IL 2,TNF,1
+IL 2,RNY3,1
+IL 2,tor,2
+IL 2,RPL13A,1
+IL 2,miR 23b,1
+IL 2,granzyme B,2
+IL 2,BLIMP 1,2
+IL 21,pMel,1
+IL 21,Gls,1
+IL 21,bet,1
+IL 21,CD8,3
+IL 21,GLS,1
+IL 21,cMYC,1
+IL 21,EOMES,1
+IL 21,Prdm1,1
+IL 21,miR 23a,1
+IL 21,Thy1 1 pMel 1,1
+IL 21,PGK,1
+IL 21,CD28,1
+IL 21,IFN,1
+IL 21,Tbet,1
+IL 21,CD3,1
+IL 21,miR,1
+IL 21,IL 15,2
+IL 21,tor,1
+IL 21,miR 23b,1
+IL 21,granzyme B,1
+IL 21,BLIMP 1,1
+IFNG,pMel,1
+IFNG,IL 10,1
+IFNG,EL4,1
+IFNG,MYC,1
+IFNG,COR,1
+IFNG,bet,1
+IFNG,CD8,1
+IFNG,Ifng,1
+IFNG,cMYC,1
+IFNG,EOMES,1
+IFNG,Prdm1,1
+IFNG,NOTCH1,1
+IFNG,IL 1,1
+IFNG,miR 23a,1
+IFNG,cMyc,1
+IFNG,Thy1 1 pMel 1,1
+IFNG,PGK,1
+IFNG,IL 6,1
+IFNG,PRDM1,1
+IFNG,CD28,1
+IFNG,PD 1,1
+IFNG,APCs,1
+IFNG,Myc,1
+IFNG,Granzyme B,1
+IFNG,IFN,1
+IFNG,Tbet,1
+IFNG,GM CSF,1
+IFNG,CD3,1
+IFNG,RPLP0,1
+IFNG,Mad1,1
+IFNG,Mad4,1
+IFNG,IFN B,1
+IFNG,TNF,1
+IFNG,RNY3,1
+IFNG,tor,1
+IFNG,RPL13A,1
+IFNG,granzyme B,1
+IFNG,BLIMP 1,1
+pMel,IL 10,1
+pMel,EL4,1
+pMel,MYC,1
+pMel,COR,1
+pMel,Gls,1
+pMel,bet,2
+pMel,CD8,2
+pMel,GLS,1
+pMel,Ifng,1
+pMel,cMYC,2
+pMel,EOMES,2
+pMel,Prdm1,2
+pMel,NOTCH1,1
+pMel,IL 1,1
+pMel,miR 23a,2
+pMel,cMyc,1
+pMel,Thy1 1 pMel 1,2
+pMel,PGK,2
+pMel,IL 6,1
+pMel,PRDM1,1
+pMel,CD28,2
+pMel,PD 1,1
+pMel,APCs,1
+pMel,Myc,1
+pMel,Granzyme B,1
+pMel,IFN,2
+pMel,Tbet,2
+pMel,GM CSF,1
+pMel,CD3,2
+pMel,RPLP0,1
+pMel,miR,1
+pMel,Mad1,1
+pMel,Mad4,1
+pMel,IL 15,1
+pMel,IFN B,1
+pMel,TNF,1
+pMel,RNY3,1
+pMel,tor,2
+pMel,RPL13A,1
+pMel,miR 23b,1
+pMel,granzyme B,2
+pMel,BLIMP 1,2
+IL 10,EL4,1
+IL 10,MYC,1
+IL 10,COR,1
+IL 10,bet,1
+IL 10,CD8,1
+IL 10,Ifng,1
+IL 10,cMYC,1
+IL 10,EOMES,1
+IL 10,Prdm1,1
+IL 10,NOTCH1,1
+IL 10,IL 1,1
+IL 10,miR 23a,1
+IL 10,cMyc,1
+IL 10,Thy1 1 pMel 1,1
+IL 10,PGK,1
+IL 10,IL 6,1
+IL 10,PRDM1,1
+IL 10,CD28,1
+IL 10,PD 1,1
+IL 10,APCs,1
+IL 10,Myc,1
+IL 10,Granzyme B,1
+IL 10,IFN,1
+IL 10,Tbet,1
+IL 10,GM CSF,1
+IL 10,CD3,1
+IL 10,RPLP0,1
+IL 10,Mad1,1
+IL 10,Mad4,1
+IL 10,IFN B,1
+IL 10,TNF,1
+IL 10,RNY3,1
+IL 10,tor,1
+IL 10,RPL13A,1
+IL 10,granzyme B,1
+IL 10,BLIMP 1,1
+EL4,MYC,1
+EL4,COR,1
+EL4,bet,1
+EL4,CD8,1
+EL4,Ifng,1
+EL4,cMYC,1
+EL4,EOMES,1
+EL4,Prdm1,1
+EL4,NOTCH1,1
+EL4,IL 1,1
+EL4,miR 23a,1
+EL4,cMyc,1
+EL4,Thy1 1 pMel 1,1
+EL4,PGK,1
+EL4,IL 6,1
+EL4,PRDM1,1
+EL4,CD28,1
+EL4,PD 1,1
+EL4,APCs,1
+EL4,Myc,1
+EL4,Granzyme B,1
+EL4,IFN,1
+EL4,Tbet,1
+EL4,GM CSF,1
+EL4,CD3,1
+EL4,RPLP0,1
+EL4,Mad1,1
+EL4,Mad4,1
+EL4,IFN B,1
+EL4,TNF,1
+EL4,RNY3,1
+EL4,tor,1
+EL4,RPL13A,1
+EL4,granzyme B,1
+EL4,BLIMP 1,1
+MYC,COR,1
+MYC,bet,1
+MYC,CD8,1
+MYC,Ifng,1
+MYC,cMYC,1
+MYC,EOMES,1
+MYC,Prdm1,1
+MYC,NOTCH1,1
+MYC,IL 1,1
+MYC,miR 23a,1
+MYC,cMyc,1
+MYC,Thy1 1 pMel 1,1
+MYC,PGK,1
+MYC,IL 6,1
+MYC,PRDM1,1
+MYC,CD28,1
+MYC,PD 1,1
+MYC,APCs,1
+MYC,Myc,1
+MYC,Granzyme B,1
+MYC,IFN,1
+MYC,Tbet,1
+MYC,GM CSF,1
+MYC,CD3,1
+MYC,RPLP0,1
+MYC,Mad1,1
+MYC,Mad4,1
+MYC,IFN B,1
+MYC,TNF,1
+MYC,RNY3,1
+MYC,tor,1
+MYC,RPL13A,1
+MYC,granzyme B,1
+MYC,BLIMP 1,1
+COR,bet,1
+COR,CD8,1
+COR,Ifng,1
+COR,cMYC,1
+COR,EOMES,1
+COR,Prdm1,1
+COR,NOTCH1,1
+COR,IL 1,1
+COR,miR 23a,1
+COR,cMyc,1
+COR,Thy1 1 pMel 1,1
+COR,PGK,1
+COR,IL 6,1
+COR,PRDM1,1
+COR,CD28,1
+COR,PD 1,1
+COR,APCs,1
+COR,Myc,1
+COR,Granzyme B,1
+COR,IFN,1
+COR,Tbet,1
+COR,GM CSF,1
+COR,CD3,1
+COR,RPLP0,1
+COR,Mad1,1
+COR,Mad4,1
+COR,IFN B,1
+COR,TNF,1
+COR,RNY3,1
+COR,tor,1
+COR,RPL13A,1
+COR,granzyme B,1
+COR,BLIMP 1,1
+BET,Myc,1
+BET,myc,1
+BET,Proc,1
+Gls,bet,1
+Gls,CD8,1
+Gls,GLS,1
+Gls,cMYC,1
+Gls,EOMES,1
+Gls,Prdm1,1
+Gls,miR 23a,1
+Gls,Thy1 1 pMel 1,1
+Gls,PGK,1
+Gls,CD28,1
+Gls,IFN,1
+Gls,Tbet,1
+Gls,CD3,1
+Gls,miR,1
+Gls,IL 15,1
+Gls,tor,1
+Gls,miR 23b,1
+Gls,granzyme B,1
+Gls,BLIMP 1,1
+bet,CD8,4
+bet,GLS,1
+bet,Ifng,1
+bet,cMYC,2
+bet,EOMES,2
+bet,Prdm1,2
+bet,NOTCH1,1
+bet,IL 1,1
+bet,miR 23a,2
+bet,cMyc,1
+bet,Thy1 1 pMel 1,2
+bet,PGK,2
+bet,IL 6,1
+bet,PRDM1,1
+bet,CD28,2
+bet,PD 1,1
+bet,APCs,1
+bet,Myc,1
+bet,Granzyme B,1
+bet,IFN,2
+bet,Tbet,2
+bet,GM CSF,1
+bet,CD3,2
+bet,RPLP0,1
+bet,miR,1
+bet,Mad1,1
+bet,Mad4,1
+bet,Proc,1
+bet,IL 15,1
+bet,IFN B,1
+bet,TNF,1
+bet,RNY3,1
+bet,tor,2
+bet,RPL13A,1
+bet,miR 23b,1
+bet,granzyme B,2
+bet,BLIMP 1,2
+CD8,GLS,1
+CD8,Ifng,1
+CD8,cMYC,2
+CD8,EOMES,2
+CD8,Tim 3,1
+CD8,Prdm1,2
+CD8,NOTCH1,1
+CD8,IL 1,1
+CD8,Blimp 1,2
+CD8,miR 23a,2
+CD8,cMyc,1
+CD8,Thy1 1 pMel 1,2
+CD8,PGK,2
+CD8,IL 6,1
+CD8,PRDM1,1
+CD8,CD28,2
+CD8,PD 1,2
+CD8,APCs,1
+CD8,Myc,1
+CD8,Granzyme B,1
+CD8,IFN,2
+CD8,Tbet,2
+CD8,GM CSF,1
+CD8,CD3,2
+CD8,RPLP0,1
+CD8,miR,1
+CD8,Mad1,1
+CD8,Mad4,1
+CD8,Proc,1
+CD8,IL 15,2
+CD8,IFN B,1
+CD8,TNF,1
+CD8,RNY3,1
+CD8,tor,2
+CD8,RPL13A,1
+CD8,miR 23b,1
+CD8,granzyme B,2
+CD8,BLIMP 1,2
+GLS,cMYC,1
+GLS,EOMES,1
+GLS,Prdm1,1
+GLS,miR 23a,1
+GLS,Thy1 1 pMel 1,1
+GLS,PGK,1
+GLS,CD28,1
+GLS,IFN,1
+GLS,Tbet,1
+GLS,CD3,1
+GLS,miR,1
+GLS,IL 15,1
+GLS,tor,1
+GLS,miR 23b,1
+GLS,granzyme B,1
+GLS,BLIMP 1,1
+Ifng,cMYC,1
+Ifng,EOMES,1
+Ifng,Prdm1,1
+Ifng,NOTCH1,1
+Ifng,IL 1,1
+Ifng,miR 23a,1
+Ifng,cMyc,1
+Ifng,Thy1 1 pMel 1,1
+Ifng,PGK,1
+Ifng,IL 6,1
+Ifng,PRDM1,1
+Ifng,CD28,1
+Ifng,PD 1,1
+Ifng,APCs,1
+Ifng,Myc,1
+Ifng,Granzyme B,1
+Ifng,IFN,1
+Ifng,Tbet,1
+Ifng,GM CSF,1
+Ifng,CD3,1
+Ifng,RPLP0,1
+Ifng,Mad1,1
+Ifng,Mad4,1
+Ifng,IFN B,1
+Ifng,TNF,1
+Ifng,RNY3,1
+Ifng,tor,1
+Ifng,RPL13A,1
+Ifng,granzyme B,1
+Ifng,BLIMP 1,1
+cMYC,EOMES,2
+cMYC,Prdm1,2
+cMYC,NOTCH1,1
+cMYC,IL 1,1
+cMYC,miR 23a,2
+cMYC,cMyc,1
+cMYC,Thy1 1 pMel 1,2
+cMYC,PGK,2
+cMYC,IL 6,1
+cMYC,PRDM1,1
+cMYC,CD28,2
+cMYC,PD 1,1
+cMYC,APCs,1
+cMYC,Myc,1
+cMYC,Granzyme B,1
+cMYC,IFN,2
+cMYC,Tbet,2
+cMYC,GM CSF,1
+cMYC,CD3,2
+cMYC,RPLP0,1
+cMYC,miR,1
+cMYC,Mad1,1
+cMYC,Mad4,1
+cMYC,IL 15,1
+cMYC,IFN B,1
+cMYC,TNF,1
+cMYC,RNY3,1
+cMYC,tor,2
+cMYC,RPL13A,1
+cMYC,miR 23b,1
+cMYC,granzyme B,2
+cMYC,BLIMP 1,2
+EOMES,Prdm1,2
+EOMES,NOTCH1,1
+EOMES,IL 1,1
+EOMES,miR 23a,2
+EOMES,cMyc,1
+EOMES,Thy1 1 pMel 1,2
+EOMES,PGK,2
+EOMES,IL 6,1
+EOMES,PRDM1,1
+EOMES,CD28,2
+EOMES,PD 1,1
+EOMES,APCs,1
+EOMES,Myc,1
+EOMES,Granzyme B,1
+EOMES,IFN,2
+EOMES,Tbet,2
+EOMES,GM CSF,1
+EOMES,CD3,2
+EOMES,RPLP0,1
+EOMES,miR,1
+EOMES,Mad1,1
+EOMES,Mad4,1
+EOMES,IL 15,1
+EOMES,IFN B,1
+EOMES,TNF,1
+EOMES,RNY3,1
+EOMES,tor,2
+EOMES,RPL13A,1
+EOMES,miR 23b,1
+EOMES,granzyme B,2
+EOMES,BLIMP 1,2
+Nat,rel,1
+Nat,miR 17 92,1
+Nat,Rev,3
+Tim 3,PD 1,1
+Prdm1,NOTCH1,1
+Prdm1,IL 1,1
+Prdm1,miR 23a,2
+Prdm1,cMyc,1
+Prdm1,Thy1 1 pMel 1,2
+Prdm1,PGK,2
+Prdm1,IL 6,1
+Prdm1,PRDM1,1
+Prdm1,CD28,2
+Prdm1,PD 1,1
+Prdm1,APCs,1
+Prdm1,Myc,1
+Prdm1,Granzyme B,1
+Prdm1,IFN,2
+Prdm1,Tbet,2
+Prdm1,GM CSF,1
+Prdm1,CD3,2
+Prdm1,RPLP0,1
+Prdm1,miR,1
+Prdm1,Mad1,1
+Prdm1,Mad4,1
+Prdm1,IL 15,1
+Prdm1,IFN B,1
+Prdm1,TNF,1
+Prdm1,RNY3,1
+Prdm1,tor,2
+Prdm1,RPL13A,1
+Prdm1,miR 23b,1
+Prdm1,granzyme B,2
+Prdm1,BLIMP 1,2
+rel,Rev,1
+Th1,miR 17 92,1
+NOTCH1,IL 1,1
+NOTCH1,miR 23a,1
+NOTCH1,cMyc,1
+NOTCH1,Thy1 1 pMel 1,1
+NOTCH1,PGK,1
+NOTCH1,IL 6,1
+NOTCH1,PRDM1,1
+NOTCH1,CD28,1
+NOTCH1,PD 1,1
+NOTCH1,APCs,1
+NOTCH1,Myc,1
+NOTCH1,Granzyme B,1
+NOTCH1,IFN,1
+NOTCH1,Tbet,1
+NOTCH1,GM CSF,1
+NOTCH1,CD3,1
+NOTCH1,RPLP0,1
+NOTCH1,Mad1,1
+NOTCH1,Mad4,1
+NOTCH1,IFN B,1
+NOTCH1,TNF,1
+NOTCH1,RNY3,1
+NOTCH1,tor,1
+NOTCH1,RPL13A,1
+NOTCH1,granzyme B,1
+NOTCH1,BLIMP 1,1
+IL 1,miR 23a,1
+IL 1,cMyc,1
+IL 1,Thy1 1 pMel 1,1
+IL 1,PGK,1
+IL 1,IL 6,1
+IL 1,PRDM1,1
+IL 1,CD28,1
+IL 1,PD 1,1
+IL 1,APCs,1
+IL 1,Myc,1
+IL 1,Granzyme B,1
+IL 1,IFN,1
+IL 1,Tbet,1
+IL 1,GM CSF,1
+IL 1,CD3,1
+IL 1,RPLP0,1
+IL 1,Mad1,1
+IL 1,Mad4,1
+IL 1,IFN B,1
+IL 1,TNF,1
+IL 1,RNY3,1
+IL 1,tor,1
+IL 1,RPL13A,1
+IL 1,granzyme B,1
+IL 1,BLIMP 1,1
+miR 23a,cMyc,1
+miR 23a,Thy1 1 pMel 1,2
+miR 23a,PGK,2
+miR 23a,IL 6,1
+miR 23a,PRDM1,1
+miR 23a,CD28,2
+miR 23a,PD 1,1
+miR 23a,APCs,1
+miR 23a,Myc,2
+miR 23a,Granzyme B,1
+miR 23a,IFN,2
+miR 23a,Tbet,2
+miR 23a,GM CSF,1
+miR 23a,CD3,2
+miR 23a,RPLP0,1
+miR 23a,miR,1
+miR 23a,Mad1,1
+miR 23a,Mad4,1
+miR 23a,IL 15,1
+miR 23a,IFN B,1
+miR 23a,TNF,1
+miR 23a,RNY3,1
+miR 23a,tor,2
+miR 23a,RPL13A,1
+miR 23a,miR 23b,1
+miR 23a,granzyme B,2
+miR 23a,BLIMP 1,2
+cMyc,Thy1 1 pMel 1,1
+cMyc,PGK,1
+cMyc,IL 6,1
+cMyc,PRDM1,1
+cMyc,CD28,1
+cMyc,PD 1,1
+cMyc,APCs,1
+cMyc,Myc,1
+cMyc,Granzyme B,1
+cMyc,IFN,1
+cMyc,Tbet,1
+cMyc,GM CSF,1
+cMyc,CD3,1
+cMyc,RPLP0,1
+cMyc,Mad1,1
+cMyc,Mad4,1
+cMyc,IFN B,1
+cMyc,TNF,1
+cMyc,RNY3,1
+cMyc,tor,1
+cMyc,RPL13A,1
+cMyc,granzyme B,1
+cMyc,BLIMP 1,1
+Thy1 1 pMel 1,PGK,2
+Thy1 1 pMel 1,IL 6,1
+Thy1 1 pMel 1,PRDM1,1
+Thy1 1 pMel 1,CD28,2
+Thy1 1 pMel 1,PD 1,1
+Thy1 1 pMel 1,APCs,1
+Thy1 1 pMel 1,Myc,1
+Thy1 1 pMel 1,Granzyme B,1
+Thy1 1 pMel 1,IFN,2
+Thy1 1 pMel 1,Tbet,2
+Thy1 1 pMel 1,GM CSF,1
+Thy1 1 pMel 1,CD3,2
+Thy1 1 pMel 1,RPLP0,1
+Thy1 1 pMel 1,miR,1
+Thy1 1 pMel 1,Mad1,1
+Thy1 1 pMel 1,Mad4,1
+Thy1 1 pMel 1,IL 15,1
+Thy1 1 pMel 1,IFN B,1
+Thy1 1 pMel 1,TNF,1
+Thy1 1 pMel 1,RNY3,1
+Thy1 1 pMel 1,tor,2
+Thy1 1 pMel 1,RPL13A,1
+Thy1 1 pMel 1,miR 23b,1
+Thy1 1 pMel 1,granzyme B,2
+Thy1 1 pMel 1,BLIMP 1,2
+PGK,IL 6,1
+PGK,PRDM1,1
+PGK,CD28,2
+PGK,PD 1,1
+PGK,APCs,1
+PGK,Myc,1
+PGK,Granzyme B,1
+PGK,IFN,2
+PGK,Tbet,2
+PGK,GM CSF,1
+PGK,CD3,2
+PGK,RPLP0,1
+PGK,miR,1
+PGK,Mad1,1
+PGK,Mad4,1
+PGK,IL 15,1
+PGK,IFN B,1
+PGK,TNF,1
+PGK,RNY3,1
+PGK,tor,2
+PGK,RPL13A,1
+PGK,miR 23b,1
+PGK,granzyme B,2
+PGK,BLIMP 1,2
+IL 6,PRDM1,1
+IL 6,CD28,1
+IL 6,PD 1,1
+IL 6,APCs,1
+IL 6,Myc,1
+IL 6,Granzyme B,1
+IL 6,IFN,1
+IL 6,Tbet,1
+IL 6,GM CSF,1
+IL 6,CD3,1
+IL 6,RPLP0,1
+IL 6,Mad1,1
+IL 6,Mad4,1
+IL 6,IFN B,1
+IL 6,TNF,1
+IL 6,RNY3,1
+IL 6,tor,1
+IL 6,RPL13A,1
+IL 6,granzyme B,1
+IL 6,BLIMP 1,1
+PRDM1,CD28,1
+PRDM1,PD 1,1
+PRDM1,APCs,1
+PRDM1,Myc,1
+PRDM1,Granzyme B,1
+PRDM1,IFN,1
+PRDM1,Tbet,1
+PRDM1,GM CSF,1
+PRDM1,CD3,1
+PRDM1,RPLP0,1
+PRDM1,Mad1,1
+PRDM1,Mad4,1
+PRDM1,IFN B,1
+PRDM1,TNF,1
+PRDM1,RNY3,1
+PRDM1,tor,1
+PRDM1,RPL13A,1
+PRDM1,granzyme B,1
+PRDM1,BLIMP 1,1
+CD28,PD 1,1
+CD28,APCs,1
+CD28,Myc,1
+CD28,Granzyme B,1
+CD28,IFN,2
+CD28,Tbet,2
+CD28,GM CSF,1
+CD28,CD3,2
+CD28,RPLP0,1
+CD28,miR,1
+CD28,Mad1,1
+CD28,Mad4,1
+CD28,IL 15,1
+CD28,IFN B,1
+CD28,TNF,1
+CD28,RNY3,1
+CD28,tor,2
+CD28,RPL13A,1
+CD28,miR 23b,1
+CD28,granzyme B,2
+CD28,BLIMP 1,2
+PD 1,APCs,1
+PD 1,Myc,1
+PD 1,Granzyme B,1
+PD 1,IFN,1
+PD 1,Tbet,1
+PD 1,GM CSF,1
+PD 1,CD3,1
+PD 1,RPLP0,1
+PD 1,Mad1,1
+PD 1,Mad4,1
+PD 1,IFN B,1
+PD 1,TNF,1
+PD 1,RNY3,1
+PD 1,tor,1
+PD 1,RPL13A,1
+PD 1,granzyme B,1
+PD 1,BLIMP 1,1
+APCs,Myc,1
+APCs,Granzyme B,1
+APCs,IFN,1
+APCs,Tbet,1
+APCs,GM CSF,1
+APCs,CD3,1
+APCs,RPLP0,1
+APCs,Mad1,1
+APCs,Mad4,1
+APCs,IFN B,1
+APCs,TNF,1
+APCs,RNY3,1
+APCs,tor,1
+APCs,RPL13A,1
+APCs,granzyme B,1
+APCs,BLIMP 1,1
+Myc,Granzyme B,1
+Myc,IFN,1
+Myc,Tbet,1
+Myc,GM CSF,1
+Myc,CD3,1
+Myc,myc,1
+Myc,RPLP0,1
+Myc,Mad1,1
+Myc,Mad4,1
+Myc,Proc,1
+Myc,IFN B,1
+Myc,TNF,1
+Myc,RNY3,1
+Myc,tor,1
+Myc,RPL13A,1
+Myc,granzyme B,1
+Myc,BLIMP 1,1
+Granzyme B,IFN,1
+Granzyme B,Tbet,1
+Granzyme B,GM CSF,1
+Granzyme B,CD3,1
+Granzyme B,RPLP0,1
+Granzyme B,Mad1,1
+Granzyme B,Mad4,1
+Granzyme B,IFN B,1
+Granzyme B,TNF,1
+Granzyme B,RNY3,1
+Granzyme B,tor,1
+Granzyme B,RPL13A,1
+Granzyme B,granzyme B,1
+Granzyme B,BLIMP 1,1
+IFN,Tbet,2
+IFN,GM CSF,1
+IFN,CD3,2
+IFN,RPLP0,1
+IFN,miR,1
+IFN,Mad1,1
+IFN,Mad4,1
+IFN,IL 15,1
+IFN,IFN B,1
+IFN,TNF,1
+IFN,RNY3,1
+IFN,tor,2
+IFN,RPL13A,1
+IFN,miR 23b,1
+IFN,granzyme B,2
+IFN,BLIMP 1,2
+Tbet,GM CSF,1
+Tbet,CD3,2
+Tbet,RPLP0,1
+Tbet,miR,1
+Tbet,Mad1,1
+Tbet,Mad4,1
+Tbet,IL 15,1
+Tbet,IFN B,1
+Tbet,TNF,1
+Tbet,RNY3,1
+Tbet,tor,2
+Tbet,RPL13A,1
+Tbet,miR 23b,1
+Tbet,granzyme B,2
+Tbet,BLIMP 1,2
+GM CSF,CD3,1
+GM CSF,RPLP0,1
+GM CSF,Mad1,1
+GM CSF,Mad4,1
+GM CSF,IFN B,1
+GM CSF,TNF,1
+GM CSF,RNY3,1
+GM CSF,tor,1
+GM CSF,RPL13A,1
+GM CSF,granzyme B,1
+GM CSF,BLIMP 1,1
+CD3,RPLP0,1
+CD3,miR,1
+CD3,Mad1,1
+CD3,Mad4,1
+CD3,IL 15,1
+CD3,IFN B,1
+CD3,TNF,1
+CD3,RNY3,1
+CD3,tor,2
+CD3,RPL13A,1
+CD3,miR 23b,1
+CD3,granzyme B,2
+CD3,BLIMP 1,2
+myc,Proc,1
+RPLP0,Mad1,1
+RPLP0,Mad4,1
+RPLP0,IFN B,1
+RPLP0,TNF,1
+RPLP0,RNY3,1
+RPLP0,tor,1
+RPLP0,RPL13A,1
+RPLP0,granzyme B,1
+RPLP0,BLIMP 1,1
+miR,IL 15,1
+miR,tor,1
+miR,miR 23b,1
+miR,granzyme B,1
+miR,BLIMP 1,1
+Mad1,Mad4,1
+Mad1,IFN B,1
+Mad1,TNF,1
+Mad1,RNY3,1
+Mad1,tor,1
+Mad1,RPL13A,1
+Mad1,granzyme B,1
+Mad1,BLIMP 1,1
+Mad4,IFN B,1
+Mad4,TNF,1
+Mad4,RNY3,1
+Mad4,tor,1
+Mad4,RPL13A,1
+Mad4,granzyme B,1
+Mad4,BLIMP 1,1
+IL 15,tor,1
+IL 15,miR 23b,1
+IL 15,granzyme B,1
+IL 15,BLIMP 1,1
+IFN B,TNF,1
+IFN B,RNY3,1
+IFN B,tor,1
+IFN B,RPL13A,1
+IFN B,granzyme B,1
+IFN B,BLIMP 1,1
+TNF,RNY3,1
+TNF,tor,1
+TNF,RPL13A,1
+TNF,granzyme B,1
+TNF,BLIMP 1,1
+RNY3,tor,1
+RNY3,RPL13A,1
+RNY3,granzyme B,1
+RNY3,BLIMP 1,1
+tor,RPL13A,1
+tor,miR 23b,1
+tor,granzyme B,2
+tor,BLIMP 1,2
+RPL13A,granzyme B,1
+RPL13A,BLIMP 1,1
+miR 23b,granzyme B,1
+miR 23b,BLIMP 1,1
+granzyme B,BLIMP 1,2

@@ -1,0 +1,576 @@
+gene_name_1,gene_name_2,co_occurrence
+Mok,K ras,1
+Mok,KRAS,1
+Mok,Ding,1
+Mok,Eng,1
+Mok,Epidermal growth factor receptor,1
+Mok,ERBB3,1
+Mok,Med 3,1
+Mok,AMG,1
+Mok,c Met,1
+Mok,EGFR,2
+Mok,epidermal growth factor receptor,1
+Mok,HER2,2
+Mok,Proc,2
+Mok,PRS,1
+EML4,KRAS,3
+EML4,raf,1
+EML4,Akt,1
+EML4,BRAF,2
+EML4,MAP2K1,1
+EML4,Ding,1
+EML4,HER2neu,1
+EML4,TOR,1
+EML4,mammalian target of rapamycin,1
+EML4,Med 5,1
+EML4,EGFR,3
+EML4,AKT1,1
+EML4,Med 24,1
+EML4,epidermal growth factor receptor,1
+EML4,AKT,2
+EML4,mTOR,1
+EML4,HER2,2
+EML4,PIK3CA,1
+EML4,ALK,3
+EML4,Bean,1
+EML4,Proc,1
+EML4,Mark,1
+K ras,KRAS,1
+K ras,cyclin D1,1
+K ras,Ding,1
+K ras,Eng,1
+K ras,Epidermal growth factor receptor,2
+K ras,Med 3,1
+K ras,AMG,1
+K ras,c MET,1
+K ras,EGFR,2
+K ras,epidermal growth factor receptor,2
+K ras,HGF,1
+K ras,MAPK,1
+K ras,AKT,1
+K ras,HER2,1
+K ras,ALK,1
+K ras,aid,1
+K ras,HGFR,1
+K ras,Proc,1
+K ras,PRS,1
+K ras,STAT 3,1
+KRAS,raf,1
+KRAS,Akt,1
+KRAS,PIK3CA mTOR inhibitor PI 103,1
+KRAS,BRAF,5
+KRAS,Erk,1
+KRAS,VEGF,1
+KRAS,MAP2K1,1
+KRAS,Ding,2
+KRAS,Eng,1
+KRAS,B RAF,2
+KRAS,Epidermal growth factor receptor,1
+KRAS,HER2neu,1
+KRAS,TOR,1
+KRAS,ERBB2,1
+KRAS,mammalian target of rapamycin,1
+KRAS,Med 5,1
+KRAS,Med 3,1
+KRAS,vascular endothelial growth factor,1
+KRAS,MEK,2
+KRAS,EGFR,8
+KRAS,Raf,1
+KRAS,AKT1,3
+KRAS,Med 24,1
+KRAS,epidermal growth factor receptor,2
+KRAS,MAPK,1
+KRAS,AKT,5
+KRAS,mTOR,4
+KRAS,HER2,7
+KRAS,PIK3CA,3
+KRAS,ALK,5
+KRAS,aid,1
+KRAS,RAF1,1
+KRAS,Bean,1
+KRAS,MAPK3,1
+KRAS,HGFR,1
+KRAS,Proc,2
+KRAS,PI3K,3
+KRAS,MAPK2,1
+KRAS,HER4,1
+KRAS,RAD,1
+KRAS,PRS,1
+KRAS,Mark,1
+KRAS,Mek,1
+raf,Akt,1
+raf,BRAF,1
+raf,Ding,1
+raf,HER2neu,1
+raf,TOR,1
+raf,mammalian target of rapamycin,1
+raf,Med 5,1
+raf,EGFR,1
+raf,AKT1,1
+raf,Med 24,1
+raf,epidermal growth factor receptor,1
+raf,AKT,1
+raf,mTOR,1
+raf,HER2,1
+raf,ALK,1
+raf,Bean,1
+raf,Proc,1
+raf,Mark,1
+cyclin D1,Epidermal growth factor receptor,1
+cyclin D1,AMG,1
+cyclin D1,c MET,1
+cyclin D1,EGFR,1
+cyclin D1,epidermal growth factor receptor,1
+cyclin D1,HGF,1
+cyclin D1,MAPK,1
+cyclin D1,AKT,1
+cyclin D1,ALK,1
+cyclin D1,aid,1
+cyclin D1,HGFR,1
+cyclin D1,STAT 3,1
+Akt,BRAF,1
+Akt,Ding,1
+Akt,HER2neu,1
+Akt,TOR,1
+Akt,mammalian target of rapamycin,1
+Akt,Med 5,1
+Akt,EGFR,1
+Akt,AKT1,1
+Akt,Med 24,1
+Akt,epidermal growth factor receptor,1
+Akt,AKT,1
+Akt,mTOR,1
+Akt,HER2,1
+Akt,ALK,1
+Akt,Bean,1
+Akt,Proc,1
+Akt,Mark,1
+PIK3CA mTOR inhibitor PI 103,BRAF,1
+PIK3CA mTOR inhibitor PI 103,B RAF,1
+PIK3CA mTOR inhibitor PI 103,MEK,1
+PIK3CA mTOR inhibitor PI 103,EGFR,1
+PIK3CA mTOR inhibitor PI 103,AKT1,1
+PIK3CA mTOR inhibitor PI 103,AKT,1
+PIK3CA mTOR inhibitor PI 103,mTOR,1
+PIK3CA mTOR inhibitor PI 103,HER2,1
+PIK3CA mTOR inhibitor PI 103,PIK3CA,1
+PIK3CA mTOR inhibitor PI 103,ALK,1
+PIK3CA mTOR inhibitor PI 103,MAPK3,1
+PIK3CA mTOR inhibitor PI 103,HGFR,1
+PIK3CA mTOR inhibitor PI 103,PI3K,1
+PIK3CA mTOR inhibitor PI 103,MAPK2,1
+PIK3CA mTOR inhibitor PI 103,RAD,1
+BRAF,Erk,1
+BRAF,VEGF,1
+BRAF,MAP2K1,1
+BRAF,Ding,1
+BRAF,B RAF,2
+BRAF,HER2neu,1
+BRAF,TOR,1
+BRAF,ERBB2,1
+BRAF,mammalian target of rapamycin,1
+BRAF,Med 5,1
+BRAF,vascular endothelial growth factor,1
+BRAF,MEK,2
+BRAF,EGFR,5
+BRAF,Raf,1
+BRAF,AKT1,3
+BRAF,Med 24,1
+BRAF,epidermal growth factor receptor,1
+BRAF,MAPK,1
+BRAF,AKT,5
+BRAF,mTOR,4
+BRAF,HER2,5
+BRAF,PIK3CA,3
+BRAF,ALK,4
+BRAF,aid,1
+BRAF,RAF1,1
+BRAF,Bean,1
+BRAF,MAPK3,1
+BRAF,HGFR,1
+BRAF,Proc,1
+BRAF,PI3K,3
+BRAF,MAPK2,1
+BRAF,RAD,1
+BRAF,Mark,1
+BRAF,Mek,1
+Erk,vascular endothelial growth factor,1
+Erk,MEK,1
+Erk,EGFR,1
+Erk,Raf,1
+Erk,AKT1,1
+Erk,AKT,1
+Erk,mTOR,1
+Erk,HER2,1
+Erk,PIK3CA,1
+Erk,aid,1
+Erk,PI3K,1
+Erk,Mek,1
+VEGF,B RAF,1
+VEGF,ERBB2,1
+VEGF,EGFR,1
+VEGF,MAPK,1
+VEGF,AKT,1
+VEGF,mTOR,1
+VEGF,HER2,1
+VEGF,ALK,1
+VEGF,RAF1,1
+VEGF,PI3K,1
+MAP2K1,EGFR,1
+MAP2K1,AKT,1
+MAP2K1,HER2,1
+MAP2K1,PIK3CA,1
+MAP2K1,ALK,1
+Ding,Eng,1
+Ding,Epidermal growth factor receptor,1
+Ding,HER2neu,1
+Ding,TOR,1
+Ding,mammalian target of rapamycin,1
+Ding,Med 5,1
+Ding,Med 3,1
+Ding,EGFR,2
+Ding,AKT1,1
+Ding,Med 24,1
+Ding,epidermal growth factor receptor,2
+Ding,AKT,1
+Ding,mTOR,1
+Ding,HER2,2
+Ding,ALK,1
+Ding,Bean,1
+Ding,Proc,2
+Ding,PRS,1
+Ding,Mark,1
+Eng,Epidermal growth factor receptor,1
+Eng,Med 3,1
+Eng,EGFR,1
+Eng,epidermal growth factor receptor,1
+Eng,HER2,1
+Eng,Proc,1
+Eng,PRS,1
+B RAF,ERBB2,1
+B RAF,MEK,1
+B RAF,EGFR,2
+B RAF,AKT1,1
+B RAF,MAPK,1
+B RAF,AKT,2
+B RAF,mTOR,2
+B RAF,HER2,2
+B RAF,PIK3CA,1
+B RAF,ALK,2
+B RAF,RAF1,1
+B RAF,MAPK3,1
+B RAF,HGFR,1
+B RAF,PI3K,2
+B RAF,MAPK2,1
+B RAF,RAD,1
+Epidermal growth factor receptor,Med 3,1
+Epidermal growth factor receptor,AMG,1
+Epidermal growth factor receptor,c MET,1
+Epidermal growth factor receptor,EGFR,2
+Epidermal growth factor receptor,epidermal growth factor receptor,2
+Epidermal growth factor receptor,HGF,1
+Epidermal growth factor receptor,MAPK,1
+Epidermal growth factor receptor,AKT,1
+Epidermal growth factor receptor,HER2,1
+Epidermal growth factor receptor,ALK,1
+Epidermal growth factor receptor,aid,1
+Epidermal growth factor receptor,HGFR,1
+Epidermal growth factor receptor,Proc,1
+Epidermal growth factor receptor,PRS,1
+Epidermal growth factor receptor,STAT 3,1
+HER2neu,TOR,1
+HER2neu,mammalian target of rapamycin,1
+HER2neu,Med 5,1
+HER2neu,EGFR,1
+HER2neu,AKT1,1
+HER2neu,Med 24,1
+HER2neu,epidermal growth factor receptor,1
+HER2neu,AKT,1
+HER2neu,mTOR,1
+HER2neu,HER2,1
+HER2neu,ALK,1
+HER2neu,Bean,1
+HER2neu,Proc,1
+HER2neu,Mark,1
+TOR,mammalian target of rapamycin,1
+TOR,Med 5,1
+TOR,EGFR,1
+TOR,AKT1,1
+TOR,Med 24,1
+TOR,epidermal growth factor receptor,1
+TOR,AKT,1
+TOR,mTOR,1
+TOR,HER2,1
+TOR,ALK,1
+TOR,Bean,1
+TOR,Proc,1
+TOR,Mark,1
+ERBB2,EGFR,1
+ERBB2,MAPK,1
+ERBB2,AKT,1
+ERBB2,mTOR,1
+ERBB2,HER2,1
+ERBB2,ALK,1
+ERBB2,RAF1,1
+ERBB2,PI3K,1
+ERBB3,AMG,1
+ERBB3,c Met,1
+ERBB3,EGFR,1
+ERBB3,HER2,1
+ERBB3,Proc,1
+ERK,MEK,1
+ERK,EGFR,1
+ERK,Raf,1
+ERK,AKT,1
+ERK,mTOR,1
+ERK,PI3K,1
+mammalian target of rapamycin,Med 5,1
+mammalian target of rapamycin,EGFR,1
+mammalian target of rapamycin,AKT1,1
+mammalian target of rapamycin,Med 24,1
+mammalian target of rapamycin,epidermal growth factor receptor,1
+mammalian target of rapamycin,AKT,1
+mammalian target of rapamycin,mTOR,1
+mammalian target of rapamycin,HER2,1
+mammalian target of rapamycin,ALK,1
+mammalian target of rapamycin,Bean,1
+mammalian target of rapamycin,Proc,1
+mammalian target of rapamycin,Mark,1
+Med 5,EGFR,1
+Med 5,AKT1,1
+Med 5,Med 24,1
+Med 5,epidermal growth factor receptor,1
+Med 5,AKT,1
+Med 5,mTOR,1
+Med 5,HER2,1
+Med 5,ALK,1
+Med 5,Bean,1
+Med 5,Proc,1
+Med 5,Mark,1
+Med 3,EGFR,1
+Med 3,epidermal growth factor receptor,1
+Med 3,HER2,1
+Med 3,Proc,1
+Med 3,PRS,1
+vascular endothelial growth factor,MEK,1
+vascular endothelial growth factor,EGFR,1
+vascular endothelial growth factor,Raf,1
+vascular endothelial growth factor,AKT1,1
+vascular endothelial growth factor,AKT,1
+vascular endothelial growth factor,mTOR,1
+vascular endothelial growth factor,HER2,1
+vascular endothelial growth factor,PIK3CA,1
+vascular endothelial growth factor,aid,1
+vascular endothelial growth factor,PI3K,1
+vascular endothelial growth factor,Mek,1
+AMG,c MET,1
+AMG,c Met,1
+AMG,EGFR,2
+AMG,epidermal growth factor receptor,1
+AMG,HGF,1
+AMG,MAPK,1
+AMG,AKT,1
+AMG,HER2,1
+AMG,ALK,1
+AMG,aid,1
+AMG,HGFR,1
+AMG,Proc,1
+AMG,STAT 3,1
+MEK,EGFR,3
+MEK,Raf,2
+MEK,AKT1,2
+MEK,AKT,3
+MEK,mTOR,3
+MEK,HER2,2
+MEK,PIK3CA,2
+MEK,ALK,1
+MEK,aid,1
+MEK,MAPK3,1
+MEK,HGFR,1
+MEK,PI3K,3
+MEK,MAPK2,1
+MEK,RAD,1
+MEK,Mek,1
+c MET,EGFR,1
+c MET,epidermal growth factor receptor,1
+c MET,HGF,1
+c MET,MAPK,1
+c MET,AKT,1
+c MET,ALK,1
+c MET,aid,1
+c MET,HGFR,1
+c MET,STAT 3,1
+c Met,EGFR,1
+c Met,HER2,1
+c Met,Proc,1
+EGFR,Raf,2
+EGFR,AKT1,3
+EGFR,Med 24,1
+EGFR,epidermal growth factor receptor,3
+EGFR,HGF,1
+EGFR,MAPK,2
+EGFR,AKT,7
+EGFR,mTOR,5
+EGFR,HER2,8
+EGFR,PIK3CA,3
+EGFR,ALK,6
+EGFR,aid,2
+EGFR,RAF1,1
+EGFR,Bean,1
+EGFR,MAPK3,1
+EGFR,HGFR,2
+EGFR,Proc,3
+EGFR,PI3K,4
+EGFR,MAPK2,1
+EGFR,HER4,1
+EGFR,RAD,1
+EGFR,PRS,1
+EGFR,STAT 3,1
+EGFR,Mark,1
+EGFR,Mek,1
+Raf,AKT1,1
+Raf,AKT,2
+Raf,mTOR,2
+Raf,HER2,1
+Raf,PIK3CA,1
+Raf,aid,1
+Raf,PI3K,2
+Raf,Mek,1
+AKT1,Med 24,1
+AKT1,epidermal growth factor receptor,1
+AKT1,AKT,3
+AKT1,mTOR,3
+AKT1,HER2,3
+AKT1,PIK3CA,2
+AKT1,ALK,2
+AKT1,aid,1
+AKT1,Bean,1
+AKT1,MAPK3,1
+AKT1,HGFR,1
+AKT1,Proc,1
+AKT1,PI3K,2
+AKT1,MAPK2,1
+AKT1,RAD,1
+AKT1,Mark,1
+AKT1,Mek,1
+Med 24,epidermal growth factor receptor,1
+Med 24,AKT,1
+Med 24,mTOR,1
+Med 24,HER2,1
+Med 24,ALK,1
+Med 24,Bean,1
+Med 24,Proc,1
+Med 24,Mark,1
+epidermal growth factor receptor,HGF,1
+epidermal growth factor receptor,MAPK,1
+epidermal growth factor receptor,AKT,2
+epidermal growth factor receptor,mTOR,1
+epidermal growth factor receptor,HER2,2
+epidermal growth factor receptor,ALK,2
+epidermal growth factor receptor,aid,1
+epidermal growth factor receptor,Bean,1
+epidermal growth factor receptor,HGFR,1
+epidermal growth factor receptor,Proc,2
+epidermal growth factor receptor,PRS,1
+epidermal growth factor receptor,STAT 3,1
+epidermal growth factor receptor,Mark,1
+HGF,MAPK,1
+HGF,AKT,1
+HGF,ALK,1
+HGF,aid,1
+HGF,HGFR,1
+HGF,STAT 3,1
+MAPK,AKT,2
+MAPK,mTOR,1
+MAPK,HER2,1
+MAPK,ALK,2
+MAPK,aid,1
+MAPK,RAF1,1
+MAPK,HGFR,1
+MAPK,PI3K,1
+MAPK,STAT 3,1
+AKT,mTOR,5
+AKT,HER2,5
+AKT,PIK3CA,3
+AKT,ALK,5
+AKT,aid,2
+AKT,RAF1,1
+AKT,Bean,1
+AKT,MAPK3,1
+AKT,HGFR,2
+AKT,Proc,1
+AKT,PI3K,4
+AKT,MAPK2,1
+AKT,RAD,1
+AKT,STAT 3,1
+AKT,Mark,1
+AKT,Mek,1
+mTOR,HER2,4
+mTOR,PIK3CA,2
+mTOR,ALK,3
+mTOR,aid,1
+mTOR,RAF1,1
+mTOR,Bean,1
+mTOR,MAPK3,1
+mTOR,HGFR,1
+mTOR,Proc,1
+mTOR,PI3K,4
+mTOR,MAPK2,1
+mTOR,RAD,1
+mTOR,Mark,1
+mTOR,Mek,1
+HER2,PIK3CA,3
+HER2,ALK,4
+HER2,aid,1
+HER2,RAF1,1
+HER2,Bean,1
+HER2,MAPK3,1
+HER2,HGFR,1
+HER2,Proc,3
+HER2,PI3K,3
+HER2,MAPK2,1
+HER2,HER4,1
+HER2,RAD,1
+HER2,PRS,1
+HER2,Mark,1
+HER2,Mek,1
+PIK3CA,ALK,2
+PIK3CA,aid,1
+PIK3CA,MAPK3,1
+PIK3CA,HGFR,1
+PIK3CA,PI3K,2
+PIK3CA,MAPK2,1
+PIK3CA,RAD,1
+PIK3CA,Mek,1
+ALK,aid,1
+ALK,RAF1,1
+ALK,Bean,1
+ALK,MAPK3,1
+ALK,HGFR,2
+ALK,Proc,1
+ALK,PI3K,2
+ALK,MAPK2,1
+ALK,RAD,1
+ALK,STAT 3,1
+ALK,Mark,1
+aid,HGFR,1
+aid,PI3K,1
+aid,STAT 3,1
+aid,Mek,1
+RAF1,PI3K,1
+Bean,Proc,1
+Bean,Mark,1
+MAPK3,HGFR,1
+MAPK3,PI3K,1
+MAPK3,MAPK2,1
+MAPK3,RAD,1
+HGFR,PI3K,1
+HGFR,MAPK2,1
+HGFR,RAD,1
+HGFR,STAT 3,1
+Proc,PRS,1
+Proc,Mark,1
+PI3K,MAPK2,1
+PI3K,RAD,1
+PI3K,Mek,1
+MAPK2,RAD,1

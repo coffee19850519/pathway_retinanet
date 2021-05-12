@@ -1,0 +1,133 @@
+gene_name_1,gene_name_2,co_occurrence
+Mok,NaV1 5,1
+Mok,WIF 1,1
+cytochrome c,Caspase 3,1
+cytochrome c,Endo G,3
+cytochrome c,cyclin D1,3
+cytochrome c,JNK,2
+cytochrome c,ERKs,2
+cytochrome c,caspase 8,2
+cytochrome c,p38,3
+cytochrome c,caspase,3
+cytochrome c,FasL,3
+cytochrome c,AIF,3
+cytochrome c,Jun,1
+cytochrome c,Bcl 2,3
+cytochrome c,Bax,3
+cytochrome c,caspases,1
+cytochrome c,PARP,3
+cytochrome c,caspase 3,2
+Caspase 3,Endo G,1
+Caspase 3,cyclin D1,1
+Caspase 3,JNK,1
+Caspase 3,caspase 8,1
+Caspase 3,p38,1
+Caspase 3,caspase,1
+Caspase 3,FasL,1
+Caspase 3,AIF,1
+Caspase 3,Bcl 2,1
+Caspase 3,Bax,1
+Caspase 3,PARP,1
+Endo G,cyclin D1,3
+Endo G,JNK,2
+Endo G,ERKs,2
+Endo G,caspase 8,2
+Endo G,p38,3
+Endo G,caspase,3
+Endo G,FasL,3
+Endo G,AIF,3
+Endo G,Jun,1
+Endo G,Bcl 2,3
+Endo G,Bax,3
+Endo G,caspases,1
+Endo G,PARP,3
+Endo G,caspase 3,2
+cyclin D1,JNK,2
+cyclin D1,ERKs,2
+cyclin D1,caspase 8,3
+cyclin D1,p38,3
+cyclin D1,caspase,4
+cyclin D1,FasL,3
+cyclin D1,AIF,3
+cyclin D1,Jun,1
+cyclin D1,Bcl 2,3
+cyclin D1,Bax,3
+cyclin D1,caspases,1
+cyclin D1,PARP,3
+cyclin D1,caspase 3,2
+JNK,ERKs,1
+JNK,caspase 8,2
+JNK,p38,2
+JNK,caspase,2
+JNK,FasL,2
+JNK,AIF,2
+JNK,Bcl 2,2
+JNK,Bax,2
+JNK,caspases,1
+JNK,PARP,2
+JNK,caspase 3,1
+ERKs,caspase 8,1
+ERKs,p38,2
+ERKs,caspase,2
+ERKs,FasL,2
+ERKs,AIF,2
+ERKs,Jun,1
+ERKs,Bcl 2,2
+ERKs,Bax,2
+ERKs,caspases,1
+ERKs,PARP,2
+ERKs,caspase 3,2
+caspase 8,p38,2
+caspase 8,caspase,3
+caspase 8,FasL,2
+caspase 8,AIF,2
+caspase 8,Bcl 2,2
+caspase 8,Bax,2
+caspase 8,caspases,1
+caspase 8,PARP,2
+caspase 8,caspase 3,1
+p38,caspase,3
+p38,FasL,3
+p38,AIF,3
+p38,Jun,1
+p38,Bcl 2,3
+p38,Bax,3
+p38,caspases,1
+p38,PARP,3
+p38,caspase 3,2
+caspase,FasL,3
+caspase,AIF,3
+caspase,Jun,1
+caspase,Bcl 2,3
+caspase,Bax,3
+caspase,caspases,1
+caspase,PARP,3
+caspase,caspase 3,2
+FasL,AIF,3
+FasL,Jun,1
+FasL,Bcl 2,3
+FasL,Bax,3
+FasL,caspases,1
+FasL,PARP,3
+FasL,caspase 3,2
+AIF,Jun,1
+AIF,Bcl 2,3
+AIF,Bax,3
+AIF,caspases,1
+AIF,PARP,3
+AIF,caspase 3,2
+Jun,Bcl 2,1
+Jun,Bax,1
+Jun,PARP,1
+Jun,caspase 3,1
+Bcl 2,Bax,3
+Bcl 2,caspases,1
+Bcl 2,PARP,3
+Bcl 2,caspase 3,2
+Bax,caspases,1
+Bax,PARP,3
+Bax,caspase 3,2
+NaV1 5,WIF 1,1
+caspases,PARP,1
+caspases,caspase 3,1
+PARP,caspase 3,2

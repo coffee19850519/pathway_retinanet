@@ -1,0 +1,200 @@
+gene_name_1,gene_name_2,co_occurrence
+src,cMOAT,1
+src,erbB,1
+src,Epidermal growth factor receptor,1
+src,EGFR,1
+src,epidermal growth factor receptor,1
+src,Pak1,1
+src,HER2,1
+src,HER1,1
+src,HER2 neu,1
+src,p53,1
+src,erbB2,1
+src,Cbl b,1
+ERK1,ER1,1
+ERK1,Akt,7
+ERK1,PC 9,1
+ERK1,Epidermal growth factor receptor,2
+ERK1,EGF,7
+ERK1,TGFa,5
+ERK1,HER3,5
+ERK1,EGFR,7
+ERK1,epidermal growth factor receptor,2
+ERK1,MAPK,1
+ERK1,PC9,7
+ERK1,MTS,3
+ERK1,HER2,6
+ERK1,Cbl,3
+ERK1,HER2 neu,2
+ERK1,CO2,1
+ERK1,HER4,5
+ER1,Akt,1
+ER1,EGF,1
+ER1,EGFR,1
+ER1,PC9,1
+Akt,PC 9,1
+Akt,Epidermal growth factor receptor,2
+Akt,EGF,8
+Akt,TGFa,5
+Akt,HER3,5
+Akt,EGFR,7
+Akt,epidermal growth factor receptor,2
+Akt,MAPK,1
+Akt,PC9,7
+Akt,MTS,3
+Akt,HER2,6
+Akt,Cbl,3
+Akt,HER2 neu,2
+Akt,CO2,1
+Akt,HER4,5
+cMOAT,erbB,1
+cMOAT,Epidermal growth factor receptor,1
+cMOAT,EGFR,1
+cMOAT,epidermal growth factor receptor,1
+cMOAT,Pak1,1
+cMOAT,HER2,1
+cMOAT,HER1,1
+cMOAT,HER2 neu,1
+cMOAT,p53,1
+cMOAT,erbB2,1
+cMOAT,Cbl b,1
+PC 9,Epidermal growth factor receptor,1
+PC 9,EGF,1
+PC 9,TGFa,1
+PC 9,HER3,1
+PC 9,EGFR,1
+PC 9,epidermal growth factor receptor,1
+PC 9,PC9,1
+PC 9,MTS,1
+PC 9,HER2,1
+PC 9,HER2 neu,1
+PC 9,HER4,1
+erbB,Epidermal growth factor receptor,1
+erbB,EGFR,1
+erbB,epidermal growth factor receptor,1
+erbB,Pak1,1
+erbB,HER2,1
+erbB,HER1,1
+erbB,HER2 neu,1
+erbB,p53,1
+erbB,erbB2,1
+erbB,Cbl b,1
+Epidermal growth factor receptor,EGF,2
+Epidermal growth factor receptor,TGFa,2
+Epidermal growth factor receptor,HER3,2
+Epidermal growth factor receptor,EGFR,3
+Epidermal growth factor receptor,epidermal growth factor receptor,3
+Epidermal growth factor receptor,MAPK,1
+Epidermal growth factor receptor,PC9,2
+Epidermal growth factor receptor,MTS,1
+Epidermal growth factor receptor,Pak1,1
+Epidermal growth factor receptor,HER2,3
+Epidermal growth factor receptor,HER1,1
+Epidermal growth factor receptor,Cbl,1
+Epidermal growth factor receptor,HER2 neu,3
+Epidermal growth factor receptor,p53,1
+Epidermal growth factor receptor,erbB2,1
+Epidermal growth factor receptor,HER4,2
+Epidermal growth factor receptor,Cbl b,1
+EGF,TGFa,5
+EGF,HER3,5
+EGF,EGFR,7
+EGF,epidermal growth factor receptor,2
+EGF,MAPK,1
+EGF,PC9,7
+EGF,MTS,3
+EGF,HER2,6
+EGF,Cbl,3
+EGF,HER2 neu,2
+EGF,CO2,1
+EGF,HER4,5
+TGFa,HER3,4
+TGFa,EGFR,5
+TGFa,epidermal growth factor receptor,2
+TGFa,MAPK,1
+TGFa,PC9,5
+TGFa,MTS,2
+TGFa,HER2,5
+TGFa,Cbl,3
+TGFa,HER2 neu,2
+TGFa,CO2,1
+TGFa,HER4,4
+HER3,EGFR,5
+HER3,epidermal growth factor receptor,2
+HER3,MAPK,1
+HER3,PC9,5
+HER3,MTS,2
+HER3,HER2,5
+HER3,Cbl,2
+HER3,HER2 neu,2
+HER3,HER4,5
+EGFR,epidermal growth factor receptor,3
+EGFR,MAPK,1
+EGFR,PC9,7
+EGFR,MTS,3
+EGFR,Pak1,1
+EGFR,HER2,7
+EGFR,HER1,1
+EGFR,Cbl,3
+EGFR,HER2 neu,3
+EGFR,CO2,1
+EGFR,p53,1
+EGFR,erbB2,1
+EGFR,HER4,5
+EGFR,Cbl b,1
+epidermal growth factor receptor,MAPK,1
+epidermal growth factor receptor,PC9,2
+epidermal growth factor receptor,MTS,1
+epidermal growth factor receptor,Pak1,1
+epidermal growth factor receptor,HER2,3
+epidermal growth factor receptor,HER1,1
+epidermal growth factor receptor,Cbl,1
+epidermal growth factor receptor,HER2 neu,3
+epidermal growth factor receptor,p53,1
+epidermal growth factor receptor,erbB2,1
+epidermal growth factor receptor,HER4,2
+epidermal growth factor receptor,Cbl b,1
+MAPK,PC9,1
+MAPK,HER2,1
+MAPK,Cbl,1
+MAPK,HER2 neu,1
+MAPK,HER4,1
+PC9,MTS,3
+PC9,HER2,6
+PC9,Cbl,3
+PC9,HER2 neu,2
+PC9,CO2,1
+PC9,HER4,5
+MTS,HER2,3
+MTS,Cbl,1
+MTS,HER2 neu,1
+MTS,CO2,1
+MTS,HER4,2
+Pak1,HER2,1
+Pak1,HER1,1
+Pak1,HER2 neu,1
+Pak1,p53,1
+Pak1,erbB2,1
+Pak1,Cbl b,1
+HER2,HER1,1
+HER2,Cbl,3
+HER2,HER2 neu,3
+HER2,CO2,1
+HER2,p53,1
+HER2,erbB2,1
+HER2,HER4,5
+HER2,Cbl b,1
+HER1,HER2 neu,1
+HER1,p53,1
+HER1,erbB2,1
+HER1,Cbl b,1
+Cbl,HER2 neu,1
+Cbl,CO2,1
+Cbl,HER4,2
+HER2 neu,p53,1
+HER2 neu,erbB2,1
+HER2 neu,HER4,2
+HER2 neu,Cbl b,1
+p53,erbB2,1
+p53,Cbl b,1
+erbB2,Cbl b,1

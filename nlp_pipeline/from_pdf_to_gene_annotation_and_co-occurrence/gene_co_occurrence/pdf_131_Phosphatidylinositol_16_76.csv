@@ -1,0 +1,197 @@
+gene_name_1,gene_name_2,co_occurrence
+calmodulin,Pan,1
+calmodulin,Akt,1
+calmodulin,AMPK,1
+calmodulin,TSC2,1
+calmodulin,Calmodulin,1
+calmodulin,mTOR,1
+calmodulin,GADD45,1
+calmodulin,LKB1,1
+calmodulin,P38,1
+calmodulin,p53,1
+calmodulin,MKK3,1
+Pan,r i p,1
+Pan,Akt,1
+Pan,AMPK,1
+Pan,TSC2,1
+Pan,Calmodulin,1
+Pan,mTOR,1
+Pan,GADD45,1
+Pan,LKB1,1
+Pan,P38,1
+Pan,p53,1
+Pan,MKK3,1
+r i p,Akt,6
+r i p,PIA,9
+r i p,CaMKK,4
+r i p,AMPK,9
+r i p,pan,1
+r i p,TSC2,1
+r i p,S6K,4
+r i p,PC3,5
+r i p,hsp27,2
+r i p,RNase A,1
+r i p,MEF,1
+r i p,p38,6
+r i p,mTOR,5
+r i p,CAMKK,1
+r i p,PTEN,2
+r i p,FBS,2
+r i p,LKB1,9
+r i p,AICAR,2
+r i p,STK11,2
+Akt,PIA,6
+Akt,CaMKK,4
+Akt,AMPK,10
+Akt,pan,1
+Akt,TSC2,2
+Akt,S6K,6
+Akt,PC3,3
+Akt,hsp27,3
+Akt,RNase A,1
+Akt,Calmodulin,1
+Akt,MEF,1
+Akt,p38,6
+Akt,mTOR,7
+Akt,GADD45,1
+Akt,PTEN,2
+Akt,FBS,1
+Akt,LKB1,8
+Akt,AICAR,1
+Akt,P38,1
+Akt,p53,1
+Akt,STK11,1
+Akt,MKK3,1
+PIA,CaMKK,5
+PIA,AMPK,10
+PIA,pan,1
+PIA,TSC2,1
+PIA,S6K,4
+PIA,PC3,5
+PIA,hsp27,2
+PIA,RNase A,1
+PIA,MEF,1
+PIA,p38,7
+PIA,mTOR,5
+PIA,CAMKK,1
+PIA,PTEN,2
+PIA,FBS,2
+PIA,LKB1,10
+PIA,AICAR,2
+PIA,STK11,2
+CaMKK,AMPK,6
+CaMKK,pan,1
+CaMKK,S6K,2
+CaMKK,PC3,2
+CaMKK,hsp27,1
+CaMKK,MEF,1
+CaMKK,p38,4
+CaMKK,mTOR,3
+CaMKK,CAMKK,1
+CaMKK,PTEN,2
+CaMKK,FBS,1
+CaMKK,LKB1,6
+CaMKK,AICAR,2
+CaMKK,STK11,1
+AMPK,TOR,1
+AMPK,pan,1
+AMPK,TSC2,2
+AMPK,S6K,6
+AMPK,PC3,7
+AMPK,hsp27,3
+AMPK,RNase A,1
+AMPK,Calmodulin,1
+AMPK,MEF,1
+AMPK,p38,8
+AMPK,mTOR,8
+AMPK,CAMKK,1
+AMPK,GADD45,1
+AMPK,PTEN,2
+AMPK,FBS,2
+AMPK,LKB1,14
+AMPK,AICAR,3
+AMPK,P38,1
+AMPK,p53,1
+AMPK,STK11,2
+AMPK,MKK3,1
+pan,S6K,1
+pan,PC3,1
+pan,hsp27,1
+pan,p38,1
+pan,FBS,1
+pan,LKB1,1
+TSC2,S6K,1
+TSC2,Calmodulin,1
+TSC2,p38,1
+TSC2,mTOR,2
+TSC2,GADD45,1
+TSC2,LKB1,2
+TSC2,P38,1
+TSC2,p53,1
+TSC2,MKK3,1
+S6K,PC3,2
+S6K,hsp27,3
+S6K,MEF,1
+S6K,p38,5
+S6K,mTOR,4
+S6K,PTEN,1
+S6K,FBS,1
+S6K,LKB1,4
+PC3,hsp27,2
+PC3,RNase A,1
+PC3,p38,4
+PC3,mTOR,1
+PC3,CAMKK,1
+PC3,FBS,2
+PC3,LKB1,7
+PC3,AICAR,1
+hsp27,p38,3
+hsp27,mTOR,2
+hsp27,FBS,1
+hsp27,LKB1,2
+RNase A,p38,1
+RNase A,LKB1,1
+Calmodulin,mTOR,1
+Calmodulin,GADD45,1
+Calmodulin,LKB1,1
+Calmodulin,P38,1
+Calmodulin,p53,1
+Calmodulin,MKK3,1
+MEF,p38,1
+MEF,mTOR,1
+MEF,PTEN,1
+MEF,LKB1,1
+p38,mTOR,4
+p38,CAMKK,1
+p38,PTEN,1
+p38,FBS,1
+p38,LKB1,7
+p38,AICAR,1
+STRAD,LKB1,1
+mTOR,GADD45,1
+mTOR,PTEN,2
+mTOR,LKB1,7
+mTOR,AICAR,2
+mTOR,P38,1
+mTOR,p53,1
+mTOR,STK11,2
+mTOR,MKK3,1
+CAMKK,LKB1,1
+CAMKK,AICAR,1
+GADD45,LKB1,1
+GADD45,P38,1
+GADD45,p53,1
+GADD45,MKK3,1
+PTEN,LKB1,2
+PTEN,STK11,1
+FBS,LKB1,2
+LKB1,AICAR,3
+LKB1,P38,1
+LKB1,p53,1
+LKB1,STK11,2
+LKB1,MKK3,1
+LKB1,MO25,1
+AICAR,STK11,1
+P38,p53,1
+P38,MKK3,1
+p53,MKK3,1

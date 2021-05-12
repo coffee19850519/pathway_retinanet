@@ -1,0 +1,169 @@
+gene_name_1,gene_name_2,co_occurrence
+cytochrome c,Tao2,1
+cytochrome c,Apaf 1,1
+cytochrome c,caspase 9,1
+cytochrome c,IAP,1
+cytochrome c,IAP 1 cIAP1 cIAP2,1
+cytochrome c,TNF,1
+cytochrome c,caspase 3,1
+cytochrome c,Annexin V,1
+Tao2,Apaf 1,1
+Tao2,caspase 9,1
+Tao2,IAP,1
+Tao2,IAP 1 cIAP1 cIAP2,1
+Tao2,TNF,1
+Tao2,caspase 3,1
+Tao2,Annexin V,1
+Li B,IAP,1
+FLICE,IAP,1
+FLICE,XIAP,1
+FLICE,Tel 1,1
+FLICE,FLIP,1
+FLICE,NIK,1
+FLICE,TNF,1
+FLICE,Smac,1
+FLICE,FADD,1
+RIPK3,caspase 8,1
+RIPK3,IAP,1
+RIPK3,TNF R1,1
+RIPK3,caspases,2
+RIPK3,FLIP,1
+RIPK3,TNF,2
+RIPK3,Smac,2
+Apaf 1,caspase 9,1
+Apaf 1,IAP,1
+Apaf 1,IAP 1 cIAP1 cIAP2,1
+Apaf 1,TNF,1
+Apaf 1,caspase 3,1
+Apaf 1,Annexin V,1
+caspase 9,IAP,1
+caspase 9,IAP 1 cIAP1 cIAP2,1
+caspase 9,TNF,1
+caspase 9,caspase 3,1
+caspase 9,Annexin V,1
+caspase 8,RIP1,1
+caspase 8,IAP,1
+caspase 8,XIAP,3
+caspase 8,cIAP1,3
+caspase 8,cIAP2,1
+caspase 8,caspases,2
+caspase 8,FLIP,1
+caspase 8,TNF,4
+caspase 8,caspase 3,3
+caspase 8,Annexin V,1
+caspase 8,Smac,2
+caspase 8,FADD,1
+RIP1,IAP,1
+RIP1,XIAP,1
+RIP1,NF kappaB,1
+RIP1,cIAP1,2
+RIP1,cIAP2,1
+RIP1,TNF,1
+RIP1,caspase 3,1
+RIP1,TNFalpha,1
+RIP1,Smac,1
+RIP1,FADD,1
+IAP,XIAP,3
+IAP,NF kappaB,1
+IAP,TNF R1,1
+IAP,cIAP1,3
+IAP,Myc,1
+IAP,cIAP2,2
+IAP,IAP 1 cIAP1 cIAP2,1
+IAP,Tel 1,1
+IAP,TRAF2,1
+IAP,caspases,3
+IAP,FLIP,1
+IAP,NIK,2
+IAP,TNF,5
+IAP,caspase 3,2
+IAP,Annexin V,2
+IAP,TNFalpha,1
+IAP,Mad1,1
+IAP,Smac,5
+IAP,FADD,1
+XIAP,cIAP1,6
+XIAP,Myc,1
+XIAP,cIAP2,1
+XIAP,Tel 1,1
+XIAP,TRAF2,1
+XIAP,caspases,2
+XIAP,FLIP,1
+XIAP,NIK,2
+XIAP,TNF,7
+XIAP,caspase 3,5
+XIAP,Annexin V,1
+XIAP,Mad1,1
+XIAP,Smac,5
+XIAP,FADD,2
+NF kappaB,cIAP1,1
+NF kappaB,cIAP2,1
+NF kappaB,TNFalpha,1
+NF kappaB,Smac,1
+TNF R1,caspases,1
+TNF R1,TNF,1
+TNF R1,Smac,1
+cIAP1,Myc,1
+cIAP1,cIAP2,2
+cIAP1,TRAF2,1
+cIAP1,caspases,2
+cIAP1,NIK,1
+cIAP1,TNF,6
+cIAP1,caspase 3,5
+cIAP1,Annexin V,1
+cIAP1,TNFalpha,1
+cIAP1,Mad1,1
+cIAP1,Smac,5
+cIAP1,FADD,1
+Myc,TRAF2,1
+Myc,caspases,1
+Myc,NIK,1
+Myc,TNF,1
+Myc,Mad1,1
+Myc,Smac,1
+cIAP2,caspases,1
+cIAP2,TNF,1
+cIAP2,caspase 3,1
+cIAP2,Annexin V,1
+cIAP2,TNFalpha,1
+cIAP2,Smac,2
+IAP 1 cIAP1 cIAP2,TNF,1
+IAP 1 cIAP1 cIAP2,caspase 3,1
+IAP 1 cIAP1 cIAP2,Annexin V,1
+Tel 1,FLIP,1
+Tel 1,NIK,1
+Tel 1,TNF,1
+Tel 1,Smac,1
+Tel 1,FADD,1
+TRAF2,caspases,1
+TRAF2,NIK,1
+TRAF2,TNF,1
+TRAF2,Mad1,1
+TRAF2,Smac,1
+caspases,FLIP,1
+caspases,NIK,1
+caspases,TNF,4
+caspases,caspase 3,1
+caspases,Annexin V,1
+caspases,Mad1,1
+caspases,Smac,4
+FLIP,NIK,1
+FLIP,TNF,2
+FLIP,Smac,2
+FLIP,FADD,1
+NIK,TNF,2
+NIK,Mad1,1
+NIK,Smac,2
+NIK,FADD,1
+TNF,caspase 3,6
+TNF,Annexin V,2
+TNF,Mad1,1
+TNF,Smac,7
+TNF,FADD,2
+caspase 3,Annexin V,2
+caspase 3,Smac,3
+caspase 3,FADD,1
+Annexin V,Smac,1
+TNFalpha,Smac,2
+Mad1,Smac,1
+Smac,FADD,1

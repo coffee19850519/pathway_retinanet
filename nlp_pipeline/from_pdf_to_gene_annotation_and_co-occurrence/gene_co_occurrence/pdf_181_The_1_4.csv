@@ -1,0 +1,451 @@
+gene_name_1,gene_name_2,co_occurrence
+Epidermal growth factor,Akt,1
+Epidermal growth factor,EphA2,1
+Epidermal growth factor,Fibronectin,1
+Epidermal growth factor,mammalian target of rapamycin,1
+Epidermal growth factor,S6K,1
+Epidermal growth factor,hypoxia inducible factor 1alpha,1
+Epidermal growth factor,EGFR,1
+Epidermal growth factor,IL 8,1
+Epidermal growth factor,AKT,1
+Epidermal growth factor,PTEN,1
+Epidermal growth factor,mToR,1
+Epidermal growth factor,PI3,1
+Mammalian target of rapamycin,mTOR,1
+Mammalian target of rapamycin,mToR,1
+IGF 1R,KRAS,1
+IGF 1R,Akt,2
+IGF 1R,Grb10,1
+IGF 1R,Akt1,1
+IGF 1R,mToRC2,1
+IGF 1R,S6K,1
+IGF 1R,EGFR,2
+IGF 1R,mTOR,1
+IGF 1R,IGF 1,1
+IGF 1R,mToR,2
+IGF 1R,mToRC1,2
+IGF 1R,tor,1
+cin,Rheb,1
+cin,Akt,1
+cin,mToRC2,1
+cin,eIF4E,1
+cin,4E BP1,1
+cin,Rapa,1
+cin,mammalian target of rapamycin,1
+cin,eIF 4E,1
+cin,epidermal growth factor,1
+cin,TSC1,1
+cin,mTOR,1
+cin,IGF 1,1
+cin,PTEN,1
+cin,LKB1,1
+cin,mToR,1
+cin,mToRC1,1
+cin,PI3 K,1
+fibronectin,KRAS,1
+fibronectin,Rheb,1
+fibronectin,Akt,1
+fibronectin,HIF 1,1
+fibronectin,EphA2,1
+fibronectin,PLD,1
+fibronectin,EMT,1
+fibronectin,TSC2,1
+fibronectin,epidermal growth factor,1
+fibronectin,EGFR,1
+fibronectin,mTOR,1
+fibronectin,CXCR4,1
+fibronectin,PTEN,1
+fibronectin,LKB1,1
+fibronectin,mToR,1
+fibronectin,PI3 K,1
+KRAS,Rheb,1
+KRAS,Akt,2
+KRAS,HIF 1,1
+KRAS,Grb10,1
+KRAS,Akt1,1
+KRAS,mToRC2,1
+KRAS,EphA2,1
+KRAS,PLD,1
+KRAS,EMT,1
+KRAS,TSC2,1
+KRAS,S6K,1
+KRAS,epidermal growth factor,1
+KRAS,EGFR,2
+KRAS,mTOR,2
+KRAS,CXCR4,1
+KRAS,PTEN,1
+KRAS,LKB1,1
+KRAS,mToR,2
+KRAS,mToRC1,1
+KRAS,PI3 K,1
+KRAS,tor,1
+Rheb,Akt,2
+Rheb,HIF 1,1
+Rheb,mToRC2,1
+Rheb,EphA2,1
+Rheb,eIF4E,1
+Rheb,4E BP1,1
+Rheb,PLD,1
+Rheb,Rapa,1
+Rheb,EMT,1
+Rheb,mammalian target of rapamycin,1
+Rheb,eIF 4E,1
+Rheb,TSC2,2
+Rheb,epidermal growth factor,2
+Rheb,TSC1,1
+Rheb,EGFR,1
+Rheb,mTOR,2
+Rheb,IGF 1,1
+Rheb,CXCR4,1
+Rheb,PTEN,2
+Rheb,LKB1,2
+Rheb,mToR,3
+Rheb,mToRC1,1
+Rheb,PI3 K,2
+Akt,HIF 1,1
+Akt,Grb10,1
+Akt,Erk,1
+Akt,Akt1,1
+Akt,mToRC2,2
+Akt,EphA2,2
+Akt,p27,1
+Akt,eIF4E,1
+Akt,Fibronectin,1
+Akt,4E BP1,3
+Akt,PLD,1
+Akt,Rapa,1
+Akt,EMT,1
+Akt,p21,1
+Akt,mammalian target of rapamycin,3
+Akt,eIF 4E,2
+Akt,TSC2,1
+Akt,gov,1
+Akt,S6K,3
+Akt,epidermal growth factor,3
+Akt,TSC1,2
+Akt,hypoxia inducible factor 1alpha,1
+Akt,EGFR,6
+Akt,IL 8,1
+Akt,AKT,2
+Akt,mTOR,5
+Akt,IGF 1,3
+Akt,CXCR4,1
+Akt,PTEN,5
+Akt,LKB1,3
+Akt,mToR,7
+Akt,mToRC1,3
+Akt,PI3 K,4
+Akt,PI3,1
+Akt,tor,2
+Akt,TSC,1
+HIF 1,EphA2,1
+HIF 1,PLD,1
+HIF 1,EMT,1
+HIF 1,TSC2,1
+HIF 1,epidermal growth factor,1
+HIF 1,EGFR,1
+HIF 1,mTOR,1
+HIF 1,CXCR4,1
+HIF 1,PTEN,1
+HIF 1,LKB1,1
+HIF 1,mToR,1
+HIF 1,PI3 K,1
+Grb10,Akt1,1
+Grb10,mToRC2,1
+Grb10,S6K,1
+Grb10,EGFR,1
+Grb10,mTOR,1
+Grb10,mToR,1
+Grb10,mToRC1,1
+Grb10,tor,1
+Erk,4E BP1,1
+Erk,mammalian target of rapamycin,1
+Erk,eIF 4E,1
+Erk,epidermal growth factor,1
+Erk,TSC1,1
+Erk,EGFR,1
+Erk,mTOR,1
+Erk,IGF 1,1
+Erk,PTEN,1
+Erk,LKB1,1
+Erk,mToR,1
+Erk,PI3 K,1
+Erk,TSC,1
+Akt1,mToRC2,1
+Akt1,S6K,1
+Akt1,EGFR,1
+Akt1,mTOR,1
+Akt1,mToR,1
+Akt1,mToRC1,1
+Akt1,tor,1
+mToRC2,eIF4E,1
+mToRC2,4E BP1,1
+mToRC2,Rapa,1
+mToRC2,mammalian target of rapamycin,1
+mToRC2,eIF 4E,1
+mToRC2,S6K,1
+mToRC2,epidermal growth factor,1
+mToRC2,TSC1,1
+mToRC2,EGFR,1
+mToRC2,mTOR,2
+mToRC2,IGF 1,1
+mToRC2,PTEN,1
+mToRC2,LKB1,1
+mToRC2,mToR,2
+mToRC2,mToRC1,3
+mToRC2,PI3 K,1
+mToRC2,tor,1
+EphA2,Fibronectin,1
+EphA2,PLD,1
+EphA2,EMT,1
+EphA2,mammalian target of rapamycin,1
+EphA2,TSC2,1
+EphA2,S6K,1
+EphA2,epidermal growth factor,1
+EphA2,hypoxia inducible factor 1alpha,1
+EphA2,EGFR,2
+EphA2,IL 8,1
+EphA2,AKT,1
+EphA2,mTOR,1
+EphA2,CXCR4,1
+EphA2,PTEN,2
+EphA2,LKB1,1
+EphA2,mToR,2
+EphA2,PI3 K,1
+EphA2,PI3,1
+p27,4E BP1,1
+p27,p21,1
+p27,gov,1
+p27,S6K,1
+p27,EGFR,1
+p27,AKT,1
+p27,mTOR,1
+p27,PTEN,1
+p27,mToR,1
+p27,PI3 K,1
+p27,tor,1
+eIF4E,4E BP1,1
+eIF4E,Rapa,1
+eIF4E,mammalian target of rapamycin,1
+eIF4E,eIF 4E,1
+eIF4E,epidermal growth factor,1
+eIF4E,TSC1,1
+eIF4E,AKT,1
+eIF4E,mTOR,1
+eIF4E,IGF 1,1
+eIF4E,PTEN,1
+eIF4E,LKB1,1
+eIF4E,mToR,1
+eIF4E,mToRC1,1
+eIF4E,PI3 K,1
+Fibronectin,mammalian target of rapamycin,1
+Fibronectin,S6K,1
+Fibronectin,hypoxia inducible factor 1alpha,1
+Fibronectin,EGFR,1
+Fibronectin,IL 8,1
+Fibronectin,AKT,1
+Fibronectin,PTEN,1
+Fibronectin,mToR,1
+Fibronectin,PI3,1
+4E BP1,Rapa,1
+4E BP1,p21,1
+4E BP1,mammalian target of rapamycin,2
+4E BP1,eIF 4E,2
+4E BP1,gov,1
+4E BP1,S6K,1
+4E BP1,epidermal growth factor,2
+4E BP1,TSC1,2
+4E BP1,EGFR,2
+4E BP1,AKT,1
+4E BP1,mTOR,3
+4E BP1,IGF 1,2
+4E BP1,PTEN,3
+4E BP1,LKB1,2
+4E BP1,mToR,3
+4E BP1,mToRC1,1
+4E BP1,PI3 K,3
+4E BP1,tor,1
+4E BP1,TSC,1
+PLD,EMT,1
+PLD,TSC2,1
+PLD,epidermal growth factor,1
+PLD,EGFR,1
+PLD,mTOR,1
+PLD,CXCR4,1
+PLD,PTEN,1
+PLD,LKB1,1
+PLD,mToR,1
+PLD,PI3 K,1
+Rapa,mammalian target of rapamycin,1
+Rapa,eIF 4E,1
+Rapa,epidermal growth factor,1
+Rapa,TSC1,1
+Rapa,mTOR,1
+Rapa,IGF 1,1
+Rapa,PTEN,1
+Rapa,LKB1,1
+Rapa,mToR,1
+Rapa,mToRC1,1
+Rapa,PI3 K,1
+EMT,TSC2,1
+EMT,epidermal growth factor,1
+EMT,EGFR,1
+EMT,mTOR,1
+EMT,CXCR4,1
+EMT,PTEN,1
+EMT,LKB1,1
+EMT,mToR,1
+EMT,PI3 K,1
+p21,gov,1
+p21,S6K,1
+p21,EGFR,1
+p21,AKT,1
+p21,mTOR,1
+p21,PTEN,1
+p21,mToR,1
+p21,PI3 K,1
+p21,tor,1
+mammalian target of rapamycin,eIF 4E,2
+mammalian target of rapamycin,S6K,1
+mammalian target of rapamycin,epidermal growth factor,2
+mammalian target of rapamycin,TSC1,2
+mammalian target of rapamycin,hypoxia inducible factor 1alpha,1
+mammalian target of rapamycin,EGFR,2
+mammalian target of rapamycin,IL 8,1
+mammalian target of rapamycin,AKT,2
+mammalian target of rapamycin,mTOR,2
+mammalian target of rapamycin,IGF 1,2
+mammalian target of rapamycin,PTEN,4
+mammalian target of rapamycin,LKB1,2
+mammalian target of rapamycin,mToR,4
+mammalian target of rapamycin,mToRC1,1
+mammalian target of rapamycin,PI3 K,2
+mammalian target of rapamycin,PI3,1
+mammalian target of rapamycin,TSC,1
+eIF 4E,epidermal growth factor,2
+eIF 4E,TSC1,2
+eIF 4E,EGFR,1
+eIF 4E,mTOR,2
+eIF 4E,IGF 1,2
+eIF 4E,PTEN,2
+eIF 4E,LKB1,2
+eIF 4E,mToR,2
+eIF 4E,mToRC1,1
+eIF 4E,PI3 K,2
+eIF 4E,TSC,1
+TSC2,epidermal growth factor,1
+TSC2,EGFR,1
+TSC2,mTOR,1
+TSC2,CXCR4,1
+TSC2,PTEN,1
+TSC2,LKB1,1
+TSC2,mToR,2
+TSC2,PI3 K,1
+gov,S6K,1
+gov,epidermal growth factor,1
+gov,EGFR,2
+gov,AKT,1
+gov,mTOR,1
+gov,PTEN,1
+gov,mToR,1
+gov,PI3 K,1
+gov,tor,1
+S6K,hypoxia inducible factor 1alpha,1
+S6K,EGFR,3
+S6K,IL 8,1
+S6K,AKT,2
+S6K,mTOR,2
+S6K,PTEN,2
+S6K,mToR,3
+S6K,mToRC1,1
+S6K,PI3 K,1
+S6K,PI3,1
+S6K,tor,2
+epidermal growth factor,TSC1,2
+epidermal growth factor,EGFR,3
+epidermal growth factor,mTOR,3
+epidermal growth factor,IGF 1,2
+epidermal growth factor,CXCR4,1
+epidermal growth factor,PTEN,3
+epidermal growth factor,LKB1,3
+epidermal growth factor,mToR,3
+epidermal growth factor,mToRC1,1
+epidermal growth factor,PI3 K,3
+epidermal growth factor,TSC,1
+TSC1,EGFR,1
+TSC1,mTOR,2
+TSC1,IGF 1,2
+TSC1,PTEN,2
+TSC1,LKB1,2
+TSC1,mToR,2
+TSC1,mToRC1,1
+TSC1,PI3 K,2
+TSC1,TSC,1
+hypoxia inducible factor 1alpha,EGFR,1
+hypoxia inducible factor 1alpha,IL 8,1
+hypoxia inducible factor 1alpha,AKT,1
+hypoxia inducible factor 1alpha,PTEN,1
+hypoxia inducible factor 1alpha,mToR,1
+hypoxia inducible factor 1alpha,PI3,1
+EGFR,IL 8,1
+EGFR,AKT,2
+EGFR,mTOR,4
+EGFR,IGF 1,2
+EGFR,CXCR4,1
+EGFR,PTEN,4
+EGFR,LKB1,2
+EGFR,mToR,6
+EGFR,mToRC1,2
+EGFR,PI3 K,3
+EGFR,PI3,1
+EGFR,tor,2
+EGFR,TSC,1
+IL 8,AKT,1
+IL 8,PTEN,1
+IL 8,mToR,1
+IL 8,PI3,1
+AKT,mTOR,1
+AKT,PTEN,3
+AKT,mToR,3
+AKT,PI3 K,1
+AKT,PI3,1
+AKT,tor,1
+mTOR,IGF 1,2
+mTOR,CXCR4,1
+mTOR,PTEN,4
+mTOR,LKB1,3
+mTOR,mToR,6
+mTOR,mToRC1,2
+mTOR,PI3 K,4
+mTOR,tor,2
+mTOR,TSC,1
+IGF 1,PTEN,2
+IGF 1,LKB1,2
+IGF 1,mToR,3
+IGF 1,mToRC1,2
+IGF 1,PI3 K,2
+IGF 1,TSC,1
+CXCR4,PTEN,1
+CXCR4,LKB1,1
+CXCR4,mToR,1
+CXCR4,PI3 K,1
+PTEN,LKB1,3
+PTEN,mToR,6
+PTEN,mToRC1,1
+PTEN,PI3 K,4
+PTEN,PI3,1
+PTEN,tor,1
+PTEN,TSC,1
+LKB1,mToR,3
+LKB1,mToRC1,1
+LKB1,PI3 K,3
+LKB1,TSC,1
+mToR,mToRC1,3
+mToR,PI3 K,4
+mToR,PI3,1
+mToR,tor,2
+mToR,TSC,1
+mToRC1,PI3 K,1
+mToRC1,tor,1
+PI3 K,tor,1
+PI3 K,TSC,1

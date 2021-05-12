@@ -1,0 +1,400 @@
+gene_name_1,gene_name_2,co_occurrence
+Insulin like Growth Factor 1,p90rsk,1
+Insulin like Growth Factor 1,PKC,1
+Insulin like Growth Factor 1,Amphiregulin,1
+Insulin like Growth Factor 1,Bax,1
+Insulin like Growth Factor 1,Bad,1
+Insulin like Growth Factor 1,IGF1,1
+Caspase 3,Rsk1,1
+Caspase 3,ERK1,1
+Caspase 3,p90rsk,1
+Caspase 3,MAPK 1,1
+Caspase 3,NaF 1,1
+Caspase 3,HSP70,1
+Caspase 3,Tek,1
+Caspase 3,MAPKAP K1a,1
+Caspase 3,PKC,1
+Caspase 3,Rsk,1
+Caspase 3,Rsk2,1
+Caspase 3,p44,1
+Caspase 3,p42,1
+Caspase 3,Rad,1
+Caspase 3,Bad,1
+Caspase 3,caspase 3,1
+Caspase 3,IGF1,1
+Rsk1,ERK1,1
+Rsk1,p90rsk,1
+Rsk1,MAPK 1,1
+Rsk1,NaF 1,1
+Rsk1,HSP70,1
+Rsk1,Tek,1
+Rsk1,MAPKAP K1a,1
+Rsk1,PKC,1
+Rsk1,Rsk,1
+Rsk1,Rsk2,1
+Rsk1,p44,1
+Rsk1,p42,1
+Rsk1,Rad,1
+Rsk1,Bad,1
+Rsk1,caspase 3,1
+Rsk1,IGF1,1
+ERK1,p90rsk,2
+ERK1,MAPK 1,1
+ERK1,NaF 1,1
+ERK1,HSP70,1
+ERK1,Tek,1
+ERK1,MAPKAP K1a,1
+ERK1,PKC,2
+ERK1,Rsk,1
+ERK1,EGF,1
+ERK1,Rsk2,1
+ERK1,p44,1
+ERK1,p42,1
+ERK1,Raf 1,1
+ERK1,CalC 1,1
+ERK1,Bax,1
+ERK1,Rad,1
+ERK1,Bad,2
+ERK1,PI3K,1
+ERK1,caspase 3,1
+ERK1,IGF1,2
+PKC B,p90rsk,1
+PKC B,HSP70,1
+PKC B,CalC,1
+PKC B,PKC,2
+PKC B,Rsk,1
+PKC B,p44,1
+PKC B,AR 1,1
+PKC B,p42,1
+PKC B,Bax,2
+PKC B,PKC A,1
+PKC B,Bad,1
+PKC B,PI3K,1
+PKC B,IGF1,2
+Akt,p90rsk,1
+Akt,PKC,3
+Akt,BclXL,1
+Akt,Rsk,2
+Akt,EGF,3
+Akt,Rsk2,2
+Akt,ERK,2
+Akt,Tel,1
+Akt,ErbB 2,1
+Akt,Raf,1
+Akt,HER2,1
+Akt,Bax,3
+Akt,Bad,3
+Akt,PI3K,3
+Akt,amphiregulin,1
+Akt,IGF1,3
+p90rsk,MAPK 1,1
+p90rsk,NaF 1,1
+p90rsk,HSP70,1
+p90rsk,Tek,1
+p90rsk,CalC,1
+p90rsk,PKC 2,1
+p90rsk,MAPKAP K1a,1
+p90rsk,PKC,8
+p90rsk,Rsk,4
+p90rsk,Amphiregulin,1
+p90rsk,EGF,2
+p90rsk,Rsk2,3
+p90rsk,p44,2
+p90rsk,p44 MAPK,1
+p90rsk,AR 1,1
+p90rsk,p38,1
+p90rsk,p42,2
+p90rsk,Raf 1,1
+p90rsk,CalC 1,1
+p90rsk,p90,1
+p90rsk,PKC PKC PKC PKC and PKC,1
+p90rsk,Bax,7
+p90rsk,Rad,1
+p90rsk,Bad,7
+p90rsk,PI3K,5
+p90rsk,caspase 3,1
+p90rsk,PKC novel PKC PKC and PKC,1
+p90rsk,IGF1,8
+MAPK 1,NaF 1,1
+MAPK 1,HSP70,1
+MAPK 1,Tek,1
+MAPK 1,MAPKAP K1a,1
+MAPK 1,PKC,1
+MAPK 1,Rsk,1
+MAPK 1,Rsk2,1
+MAPK 1,p44,1
+MAPK 1,p42,1
+MAPK 1,Rad,1
+MAPK 1,Bad,1
+MAPK 1,caspase 3,1
+MAPK 1,IGF1,1
+NaF 1,HSP70,1
+NaF 1,Tek,1
+NaF 1,MAPKAP K1a,1
+NaF 1,PKC,1
+NaF 1,Rsk,1
+NaF 1,Rsk2,1
+NaF 1,p44,1
+NaF 1,p42,1
+NaF 1,Rad,1
+NaF 1,Bad,1
+NaF 1,caspase 3,1
+NaF 1,IGF1,1
+HSP70,Tek,1
+HSP70,CalC,1
+HSP70,MAPKAP K1a,1
+HSP70,PKC,2
+HSP70,Rsk,1
+HSP70,Rsk2,1
+HSP70,p44,2
+HSP70,AR 1,1
+HSP70,p42,2
+HSP70,Bax,1
+HSP70,PKC A,1
+HSP70,Rad,1
+HSP70,Bad,2
+HSP70,caspase 3,1
+HSP70,IGF1,2
+Tek,MAPKAP K1a,1
+Tek,PKC,1
+Tek,Rsk,1
+Tek,Rsk2,1
+Tek,p44,1
+Tek,p42,1
+Tek,Rad,1
+Tek,Bad,1
+Tek,caspase 3,1
+Tek,IGF1,1
+CalC,PKC,3
+CalC,Rsk,1
+CalC,Rsk2,1
+CalC,p44,1
+CalC,AR 1,2
+CalC,p42,2
+CalC,Bax,3
+CalC,PKC A,1
+CalC,Bad,3
+CalC,PI3K,1
+CalC,caspase 3,1
+CalC,IGF1,3
+PKC 2,PKC,1
+PKC 2,p44,1
+PKC 2,p44 MAPK,1
+PKC 2,p38,1
+PKC 2,p42,1
+PKC 2,Bax,1
+PKC 2,Bad,1
+PKC 2,PI3K,1
+PKC 2,PKC novel PKC PKC and PKC,1
+PKC 2,IGF1,1
+MAPKAP K1a,PKC,1
+MAPKAP K1a,Rsk,1
+MAPKAP K1a,Rsk2,1
+MAPKAP K1a,p44,1
+MAPKAP K1a,p42,1
+MAPKAP K1a,Rad,1
+MAPKAP K1a,Bad,1
+MAPKAP K1a,caspase 3,1
+MAPKAP K1a,IGF1,1
+PKC,BclXL,1
+PKC,Rsk,5
+PKC,Amphiregulin,1
+PKC,EGF,4
+PKC,Rsk2,4
+PKC,ERK,2
+PKC,Tel,1
+PKC,p44,3
+PKC,p44 MAPK,1
+PKC,ErbB 2,1
+PKC,Raf,1
+PKC,AR 1,2
+PKC,p38,1
+PKC,p42,4
+PKC,Raf 1,1
+PKC,CalC 1,1
+PKC,p90,1
+PKC,HER2,1
+PKC,PKC PKC PKC PKC and PKC,1
+PKC,Bax,12
+PKC,PKC A,1
+PKC,Cell 3,1
+PKC,Rad,1
+PKC,Bad,12
+PKC,PI3K,8
+PKC,amphiregulin,1
+PKC,caspase 3,2
+PKC,PKC novel PKC PKC and PKC,1
+PKC,IGF1,13
+BclXL,Rsk,1
+BclXL,EGF,1
+BclXL,ERK,1
+BclXL,Tel,1
+BclXL,ErbB 2,1
+BclXL,Raf,1
+BclXL,HER2,1
+BclXL,Bax,1
+BclXL,Bad,1
+BclXL,PI3K,1
+BclXL,amphiregulin,1
+BclXL,IGF1,1
+Rsk,EGF,2
+Rsk,Rsk2,3
+Rsk,ERK,1
+Rsk,Tel,1
+Rsk,p44,1
+Rsk,ErbB 2,1
+Rsk,Raf,1
+Rsk,AR 1,1
+Rsk,p42,1
+Rsk,HER2,1
+Rsk,Bax,4
+Rsk,Rad,1
+Rsk,Bad,4
+Rsk,PI3K,3
+Rsk,amphiregulin,1
+Rsk,caspase 3,1
+Rsk,IGF1,5
+Amphiregulin,Bax,1
+Amphiregulin,Bad,1
+Amphiregulin,IGF1,1
+EGF,Rsk2,2
+EGF,ERK,2
+EGF,Tel,1
+EGF,ErbB 2,1
+EGF,Raf,1
+EGF,Raf 1,1
+EGF,CalC 1,1
+EGF,HER2,1
+EGF,Bax,4
+EGF,Bad,4
+EGF,PI3K,4
+EGF,amphiregulin,1
+EGF,IGF1,4
+Rsk2,ERK,1
+Rsk2,p44,1
+Rsk2,AR 1,1
+Rsk2,p42,1
+Rsk2,Bax,3
+Rsk2,Rad,1
+Rsk2,Bad,4
+Rsk2,PI3K,2
+Rsk2,caspase 3,1
+Rsk2,IGF1,4
+ERK,Tel,1
+ERK,ErbB 2,1
+ERK,Raf,1
+ERK,HER2,1
+ERK,Bax,2
+ERK,Bad,2
+ERK,PI3K,2
+ERK,amphiregulin,1
+ERK,IGF1,2
+Tel,ErbB 2,1
+Tel,Raf,1
+Tel,HER2,1
+Tel,Bax,1
+Tel,Bad,1
+Tel,PI3K,1
+Tel,amphiregulin,1
+Tel,IGF1,1
+p44,p44 MAPK,1
+p44,AR 1,1
+p44,p38,1
+p44,p42,3
+p44,Bax,2
+p44,PKC A,1
+p44,Rad,1
+p44,Bad,3
+p44,PI3K,1
+p44,caspase 3,1
+p44,PKC novel PKC PKC and PKC,1
+p44,IGF1,3
+p44 MAPK,p38,1
+p44 MAPK,p42,1
+p44 MAPK,Bax,1
+p44 MAPK,Bad,1
+p44 MAPK,PI3K,1
+p44 MAPK,PKC novel PKC PKC and PKC,1
+p44 MAPK,IGF1,1
+ErbB 2,Raf,1
+ErbB 2,HER2,1
+ErbB 2,Bax,1
+ErbB 2,Bad,1
+ErbB 2,PI3K,1
+ErbB 2,amphiregulin,1
+ErbB 2,IGF1,1
+Raf,HER2,1
+Raf,Bax,1
+Raf,Bad,1
+Raf,PI3K,1
+Raf,amphiregulin,1
+Raf,IGF1,1
+AR 1,p42,1
+AR 1,Bax,2
+AR 1,PKC A,1
+AR 1,Bad,2
+AR 1,IGF1,2
+p38,p42,1
+p38,Bax,1
+p38,Bad,1
+p38,PI3K,1
+p38,PKC novel PKC PKC and PKC,1
+p38,IGF1,1
+p42,Bax,3
+p42,PKC A,1
+p42,Rad,1
+p42,Bad,4
+p42,PI3K,2
+p42,caspase 3,2
+p42,PKC novel PKC PKC and PKC,1
+p42,IGF1,4
+Raf 1,CalC 1,1
+Raf 1,Bax,1
+Raf 1,Bad,1
+Raf 1,PI3K,1
+Raf 1,IGF1,1
+CalC 1,Bax,1
+CalC 1,Bad,1
+CalC 1,PI3K,1
+CalC 1,IGF1,1
+p90,PKC PKC PKC PKC and PKC,1
+p90,Bax,1
+p90,Bad,1
+p90,PI3K,1
+p90,IGF1,1
+HER2,Bax,1
+HER2,Bad,1
+HER2,PI3K,1
+HER2,amphiregulin,1
+HER2,IGF1,1
+PKC PKC PKC PKC and PKC,Bax,1
+PKC PKC PKC PKC and PKC,Bad,1
+PKC PKC PKC PKC and PKC,PI3K,1
+PKC PKC PKC PKC and PKC,IGF1,1
+Bax,PKC A,1
+Bax,Cell 3,1
+Bax,Bad,11
+Bax,PI3K,8
+Bax,amphiregulin,1
+Bax,caspase 3,1
+Bax,PKC novel PKC PKC and PKC,1
+Bax,IGF1,12
+PKC A,Bad,1
+PKC A,IGF1,1
+Cell 3,Bad,1
+Cell 3,IGF1,1
+Rad,Bad,1
+Rad,caspase 3,1
+Rad,IGF1,1
+Bad,PI3K,7
+Bad,amphiregulin,1
+Bad,caspase 3,2
+Bad,PKC novel PKC PKC and PKC,1
+Bad,IGF1,12
+PI3K,amphiregulin,1
+PI3K,caspase 3,1
+PI3K,PKC novel PKC PKC and PKC,1
+PI3K,IGF1,8
+amphiregulin,IGF1,1
+caspase 3,IGF1,2
+PKC novel PKC PKC and PKC,IGF1,1

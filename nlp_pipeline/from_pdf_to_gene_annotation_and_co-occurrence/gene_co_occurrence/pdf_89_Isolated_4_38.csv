@@ -1,0 +1,212 @@
+gene_name_1,gene_name_2,co_occurrence
+EML4,ROS1,1
+EML4,KRAS,1
+EML4,CCR 11,1
+EML4,eRK,1
+EML4,c met,1
+EML4,CCR 10,1
+EML4,eML4,2
+EML4,har,2
+EML4,c Met,1
+EML4,ALK 5,1
+EML4,anaplastic lymphoma kinase,2
+EML4,TTF 1 Fig 2D,1
+EML4,EGFR,2
+EML4,Anaplastic lymphoma kinase,1
+EML4,AKT,1
+EML4,ALK 3,1
+EML4,Rha,1
+EML4,eGFR,1
+EML4,ALK,2
+EML4,TTF 1,1
+EML4,echinoderm microtubule associated protein like 4,1
+EML4,Vill,1
+EML4,RAF,1
+ROS1,eML4,1
+ROS1,har,1
+ROS1,c Met,1
+ROS1,ALK 5,1
+ROS1,anaplastic lymphoma kinase,1
+ROS1,EGFR,1
+ROS1,ALK 3,1
+ROS1,ALK,1
+ROS1,echinoderm microtubule associated protein like 4,1
+KRAS,CCR 11,1
+KRAS,eRK,1
+KRAS,c met,1
+KRAS,CCR 10,1
+KRAS,eML4,1
+KRAS,har,1
+KRAS,anaplastic lymphoma kinase,1
+KRAS,TTF 1 Fig 2D,1
+KRAS,EGFR,1
+KRAS,Anaplastic lymphoma kinase,1
+KRAS,AKT,1
+KRAS,Rha,1
+KRAS,eGFR,1
+KRAS,ALK,1
+KRAS,TTF 1,1
+KRAS,Vill,1
+KRAS,RAF,1
+CCR 11,eRK,1
+CCR 11,c met,1
+CCR 11,CCR 10,1
+CCR 11,eML4,1
+CCR 11,har,1
+CCR 11,anaplastic lymphoma kinase,1
+CCR 11,TTF 1 Fig 2D,1
+CCR 11,EGFR,1
+CCR 11,Anaplastic lymphoma kinase,1
+CCR 11,AKT,1
+CCR 11,Rha,1
+CCR 11,eGFR,1
+CCR 11,ALK,1
+CCR 11,TTF 1,1
+CCR 11,Vill,1
+CCR 11,RAF,1
+eRK,c met,1
+eRK,CCR 10,1
+eRK,eML4,1
+eRK,har,1
+eRK,anaplastic lymphoma kinase,1
+eRK,TTF 1 Fig 2D,1
+eRK,EGFR,1
+eRK,Anaplastic lymphoma kinase,1
+eRK,AKT,1
+eRK,Rha,1
+eRK,eGFR,1
+eRK,ALK,1
+eRK,TTF 1,1
+eRK,Vill,1
+eRK,RAF,1
+c met,CCR 10,1
+c met,eML4,1
+c met,har,1
+c met,anaplastic lymphoma kinase,1
+c met,TTF 1 Fig 2D,1
+c met,EGFR,1
+c met,Anaplastic lymphoma kinase,1
+c met,AKT,1
+c met,Rha,1
+c met,eGFR,1
+c met,ALK,1
+c met,TTF 1,1
+c met,Vill,1
+c met,RAF,1
+CCR 10,eML4,1
+CCR 10,har,1
+CCR 10,anaplastic lymphoma kinase,1
+CCR 10,TTF 1 Fig 2D,1
+CCR 10,EGFR,1
+CCR 10,Anaplastic lymphoma kinase,1
+CCR 10,AKT,1
+CCR 10,Rha,1
+CCR 10,eGFR,1
+CCR 10,ALK,1
+CCR 10,TTF 1,1
+CCR 10,Vill,1
+CCR 10,RAF,1
+eML4,har,2
+eML4,c Met,1
+eML4,ALK 5,1
+eML4,anaplastic lymphoma kinase,2
+eML4,TTF 1 Fig 2D,1
+eML4,EGFR,2
+eML4,Anaplastic lymphoma kinase,1
+eML4,AKT,1
+eML4,ALK 3,1
+eML4,Rha,1
+eML4,eGFR,1
+eML4,ALK,3
+eML4,TTF 1,1
+eML4,echinoderm microtubule associated protein like 4,1
+eML4,Vill,1
+eML4,RAF,1
+har,c Met,1
+har,ALK 5,1
+har,anaplastic lymphoma kinase,2
+har,TTF 1 Fig 2D,1
+har,EGFR,2
+har,Anaplastic lymphoma kinase,1
+har,AKT,1
+har,ALK 3,1
+har,Rha,1
+har,eGFR,1
+har,ALK,2
+har,TTF 1,1
+har,echinoderm microtubule associated protein like 4,1
+har,Vill,1
+har,RAF,1
+c Met,ALK 5,1
+c Met,anaplastic lymphoma kinase,1
+c Met,EGFR,1
+c Met,ALK 3,1
+c Met,ALK,1
+c Met,echinoderm microtubule associated protein like 4,1
+ALK 5,anaplastic lymphoma kinase,1
+ALK 5,EGFR,1
+ALK 5,ALK 3,1
+ALK 5,ALK,1
+ALK 5,echinoderm microtubule associated protein like 4,1
+anaplastic lymphoma kinase,TTF 1 Fig 2D,1
+anaplastic lymphoma kinase,EGFR,2
+anaplastic lymphoma kinase,Anaplastic lymphoma kinase,1
+anaplastic lymphoma kinase,AKT,1
+anaplastic lymphoma kinase,ALK 3,1
+anaplastic lymphoma kinase,Rha,1
+anaplastic lymphoma kinase,eGFR,1
+anaplastic lymphoma kinase,ALK,2
+anaplastic lymphoma kinase,TTF 1,1
+anaplastic lymphoma kinase,echinoderm microtubule associated protein like 4,1
+anaplastic lymphoma kinase,Vill,1
+anaplastic lymphoma kinase,RAF,1
+TTF 1 Fig 2D,EGFR,1
+TTF 1 Fig 2D,Anaplastic lymphoma kinase,1
+TTF 1 Fig 2D,AKT,1
+TTF 1 Fig 2D,Rha,1
+TTF 1 Fig 2D,eGFR,1
+TTF 1 Fig 2D,ALK,1
+TTF 1 Fig 2D,TTF 1,1
+TTF 1 Fig 2D,Vill,1
+TTF 1 Fig 2D,RAF,1
+EGFR,Anaplastic lymphoma kinase,1
+EGFR,AKT,1
+EGFR,ALK 3,1
+EGFR,Rha,1
+EGFR,eGFR,1
+EGFR,ALK,2
+EGFR,TTF 1,1
+EGFR,echinoderm microtubule associated protein like 4,1
+EGFR,Vill,1
+EGFR,RAF,1
+Anaplastic lymphoma kinase,AKT,1
+Anaplastic lymphoma kinase,Rha,1
+Anaplastic lymphoma kinase,eGFR,1
+Anaplastic lymphoma kinase,ALK,1
+Anaplastic lymphoma kinase,TTF 1,1
+Anaplastic lymphoma kinase,Vill,1
+Anaplastic lymphoma kinase,RAF,1
+AKT,Rha,1
+AKT,eGFR,1
+AKT,ALK,1
+AKT,TTF 1,1
+AKT,Vill,1
+AKT,RAF,1
+ALK 3,ALK,1
+ALK 3,echinoderm microtubule associated protein like 4,1
+Rha,eGFR,1
+Rha,ALK,1
+Rha,TTF 1,1
+Rha,Vill,1
+Rha,RAF,1
+eGFR,ALK,1
+eGFR,TTF 1,1
+eGFR,Vill,1
+eGFR,RAF,1
+ALK,TTF 1,1
+ALK,echinoderm microtubule associated protein like 4,1
+ALK,Vill,1
+ALK,RAF,1
+TTF 1,Vill,1
+TTF 1,RAF,1
+Vill,RAF,1

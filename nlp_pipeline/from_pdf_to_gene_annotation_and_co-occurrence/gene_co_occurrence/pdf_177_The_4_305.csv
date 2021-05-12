@@ -1,0 +1,148 @@
+gene_name_1,gene_name_2,co_occurrence
+Epidermal growth factor,cyclin D1,1
+Epidermal growth factor,HER2 neu,1
+ERK1,raf,1
+ERK1,cyclin D1,1
+ERK1,ERK2,1
+ERK1,Cyclin D1,1
+ERK1,EGFR,1
+ERK1,Epidermal Growth Factor Receptor,1
+ERK1,mitogen activated protein kinase kinases 1 and 2,1
+ERK1,PTEN,1
+ERK1,pp60c src Jak 2,1
+endostatin,EGFR,1
+endostatin,Epidermal Growth Factor Receptor,1
+endostatin,FLT,1
+raf,cyclin D1,1
+raf,ERK2,1
+raf,Cyclin D1,1
+raf,EGFR,1
+raf,Epidermal Growth Factor Receptor,1
+raf,mitogen activated protein kinase kinases 1 and 2,1
+raf,PTEN,1
+raf,pp60c src Jak 2,1
+cyclin D1,ERK2,1
+cyclin D1,Cyclin D1,1
+cyclin D1,EGFR,1
+cyclin D1,Epidermal Growth Factor Receptor,1
+cyclin D1,mitogen activated protein kinase kinases 1 and 2,1
+cyclin D1,PTEN,1
+cyclin D1,pp60c src Jak 2,1
+Akt,STAT3,1
+Akt,STATs,1
+Akt,ERK,1
+Akt,epidermal growth factor,2
+Akt,MEK,1
+Akt,EGFR,1
+Akt,Epidermal Growth Factor Receptor,1
+Akt,MAPK,1
+Akt,PTEN,2
+STAT3,STATs,1
+STAT3,ERK,1
+STAT3,epidermal growth factor,1
+STAT3,MEK,1
+STAT3,EGFR,2
+STAT3,Epidermal Growth Factor Receptor,2
+STAT3,MAPK,1
+STAT3,PTEN,1
+STAT3,lip,1
+STATs,ERK,1
+STATs,epidermal growth factor,1
+STATs,MEK,1
+STATs,EGFR,1
+STATs,Epidermal Growth Factor Receptor,1
+STATs,MAPK,1
+STATs,PTEN,1
+ERB,EGFR,1
+ERB,HER2,1
+ERB,Proc,1
+ERK2,Cyclin D1,1
+ERK2,EGFR,1
+ERK2,Epidermal Growth Factor Receptor,1
+ERK2,mitogen activated protein kinase kinases 1 and 2,1
+ERK2,PTEN,1
+ERK2,pp60c src Jak 2,1
+Cyclin D1,EGFR,1
+Cyclin D1,Epidermal Growth Factor Receptor,1
+Cyclin D1,mitogen activated protein kinase kinases 1 and 2,1
+Cyclin D1,PTEN,1
+Cyclin D1,pp60c src Jak 2,1
+c erbB2,Epidermal Growth Factor Receptor,1
+p21,epidermal growth factor,1
+ERK,epidermal growth factor,1
+ERK,MEK,1
+ERK,EGFR,1
+ERK,Epidermal Growth Factor Receptor,1
+ERK,MAPK,1
+ERK,PTEN,1
+epidermal growth factor,MEK,1
+epidermal growth factor,HER3,1
+epidermal growth factor,ErbB 2,1
+epidermal growth factor,EGFR,6
+epidermal growth factor,Matrix metalloproteinase 9,1
+epidermal growth factor,transforming growth factor alpha,1
+epidermal growth factor,Epidermal Growth Factor Receptor,5
+epidermal growth factor,ErbB,1
+epidermal growth factor,MAPK,1
+epidermal growth factor,HER2,3
+epidermal growth factor,PTEN,1
+epidermal growth factor,HER2 neu,2
+epidermal growth factor,Proc,1
+epidermal growth factor,p53,1
+epidermal growth factor,ErbB1,1
+epidermal growth factor,HER4,1
+epidermal growth factor,amphiregulin,2
+MEK,EGFR,1
+MEK,Epidermal Growth Factor Receptor,1
+MEK,MAPK,1
+MEK,PTEN,1
+HER3,EGFR,1
+HER3,Epidermal Growth Factor Receptor,1
+HER3,HER2 neu,1
+HER3,HER4,1
+ErbB 2,NDF,1
+ErbB 2,Epidermal Growth Factor Receptor,1
+EGFR,Epidermal Growth Factor Receptor,7
+EGFR,ErbB,1
+EGFR,TGF alpha,2
+EGFR,MAPK,1
+EGFR,HER2,4
+EGFR,mitogen activated protein kinase kinases 1 and 2,1
+EGFR,PTEN,2
+EGFR,FLT,1
+EGFR,HER2 neu,2
+EGFR,lip,1
+EGFR,Proc,2
+EGFR,p53,1
+EGFR,ErbB1,1
+EGFR,pp60c src Jak 2,1
+EGFR,HER4,1
+EGFR,amphiregulin,1
+Epidermal Growth Factor Receptor,ErbB,1
+Epidermal Growth Factor Receptor,MAPK,1
+Epidermal Growth Factor Receptor,HER2,2
+Epidermal Growth Factor Receptor,mitogen activated protein kinase kinases 1 and 2,1
+Epidermal Growth Factor Receptor,PTEN,2
+Epidermal Growth Factor Receptor,FLT,1
+Epidermal Growth Factor Receptor,HER2 neu,1
+Epidermal Growth Factor Receptor,lip,1
+Epidermal Growth Factor Receptor,ErbB1,1
+Epidermal Growth Factor Receptor,pp60c src Jak 2,1
+Epidermal Growth Factor Receptor,HER4,1
+Epidermal Growth Factor Receptor,amphiregulin,1
+ErbB,HER2,1
+ErbB,ErbB1,1
+ErbB,amphiregulin,1
+erbB3,erbB1,1
+erbB3,erbB2,1
+MAPK,PTEN,1
+HER2,HER2 neu,1
+HER2,Proc,1
+HER2,ErbB1,1
+HER2,amphiregulin,1
+mitogen activated protein kinase kinases 1 and 2,PTEN,1
+mitogen activated protein kinase kinases 1 and 2,pp60c src Jak 2,1
+PTEN,pp60c src Jak 2,1
+erbB1,erbB2,1
+HER2 neu,HER4,1
+ErbB1,amphiregulin,1

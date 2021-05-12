@@ -1,0 +1,770 @@
+gene_name_1,gene_name_2,co_occurrence
+tran,4E BP1,1
+tran,mTOR,1
+tran,PI3K,1
+tran,Akt,1
+tran,EGFR,1
+tran,SCC,1
+tran,S6K,1
+tran,mTORC1,1
+tran,eIF4,1
+tran,TSC1,1
+Ma L,Erk,1
+Ma L,TSC2,1
+p70s6k,PDK1,1
+Rheb,4E BP1,2
+Rheb,TORC2,1
+Rheb,FK506 binding protein 12,1
+Rheb,mTOR,4
+Rheb,PI3K,2
+Rheb,TSC,2
+Rheb,Raptor,2
+Rheb,Akt,1
+Rheb,LST8,1
+Rheb,IRS,1
+Rheb,LKB1,1
+Rheb,mam,1
+Rheb,insulin,1
+Rheb,rictor,2
+Rheb,PDK1,1
+Rheb,FKBP12,1
+Rheb,eIF4E,2
+Rheb,AMPK,2
+Rheb,TOR,2
+Rheb,mammalian target of rapamycin,2
+Rheb,TSC2,1
+Rheb,S6K,3
+Rheb,mTORC1,3
+Rheb,PTEN,3
+Rheb,REDD1,1
+Rheb,HIF 1,1
+Rheb,PDK2,1
+Rheb,TSC1,1
+Rheb,mTORC2,3
+Rheb,MAPK,1
+Rheb,raptor,2
+Rheb,IGFR,1
+Rheb,REDD2,1
+ERBB 2,4E BP1,1
+ERBB 2,PI3K mTOR PI 103,1
+ERBB 2,mTOR,1
+ERBB 2,PI3K,1
+ERBB 2,ERBB,1
+ERBB 2,Akt,1
+ERBB 2,EGFR,1
+ERBB 2,S6K,1
+ERBB 2,PTEN,1
+ERBB 2,rapa,1
+4E BP1,TORC2,1
+4E BP1,FK506 binding protein 12,1
+4E BP1,PI3K mTOR PI 103,1
+4E BP1,mTOR,16
+4E BP1,Mammalian Target of Rapamycin,1
+4E BP1,PI3K,5
+4E BP1,p S6K,7
+4E BP1,TSC,3
+4E BP1,Raptor,1
+4E BP1,ERBB,1
+4E BP1,Akt,10
+4E BP1,p27,1
+4E BP1,LST8,1
+4E BP1,EGFR,6
+4E BP1,IRS,2
+4E BP1,tor,2
+4E BP1,mam,2
+4E BP1,insulin,2
+4E BP1,rictor,3
+4E BP1,PDK1,2
+4E BP1,FKBP12,2
+4E BP1,eIF4E,5
+4E BP1,AMPK,1
+4E BP1,SCC,8
+4E BP1,TOR,2
+4E BP1,Rictor,1
+4E BP1,PDCD4,1
+4E BP1,mammalian target of rapamycin,4
+4E BP1,TSC2,1
+4E BP1,S6K,14
+4E BP1,mTORC1,7
+4E BP1,PTEN,4
+4E BP1,eIF4,1
+4E BP1,cin,2
+4E BP1,cyclin D1,2
+4E BP1,HIF 1,3
+4E BP1,VEGF,3
+4E BP1,PDK2,1
+4E BP1,Rac,1
+4E BP1,Rho,1
+4E BP1,BAD,1
+4E BP1,TSC1,3
+4E BP1,mTORC2,5
+4E BP1,raptor,6
+4E BP1,rapa,1
+4E BP1,S6K1,3
+4E BP1,Rapa,1
+TORC2,mTOR,1
+TORC2,TSC,1
+TORC2,rictor,1
+TORC2,eIF4E,1
+TORC2,TOR,1
+TORC2,mammalian target of rapamycin,1
+TORC2,S6K,1
+TORC2,mTORC1,1
+TORC2,PTEN,1
+TORC2,mTORC2,1
+TORC2,raptor,1
+Tran,mTOR,1
+Tran,PTEN,1
+S6K1 and 4EBP1,mTOR,1
+S6K1 and 4EBP1,eIF4E,1
+FK506 binding protein 12,mTOR,2
+FK506 binding protein 12,PI3K,1
+FK506 binding protein 12,TSC,2
+FK506 binding protein 12,Raptor,1
+FK506 binding protein 12,Akt,1
+FK506 binding protein 12,LST8,1
+FK506 binding protein 12,mam,1
+FK506 binding protein 12,rictor,1
+FK506 binding protein 12,FKBP12,2
+FK506 binding protein 12,eIF4E,1
+FK506 binding protein 12,AMPK,1
+FK506 binding protein 12,TOR,2
+FK506 binding protein 12,mammalian target of rapamycin,2
+FK506 binding protein 12,S6K,1
+FK506 binding protein 12,mTORC1,1
+FK506 binding protein 12,PTEN,1
+FK506 binding protein 12,Mammalian target of rapamycin,1
+FK506 binding protein 12,mTORC2,1
+FK506 binding protein 12,raptor,1
+FK506 binding protein 12,Rapa,1
+PI3K mTOR PI 103,mTOR,1
+PI3K mTOR PI 103,PI3K,1
+PI3K mTOR PI 103,ERBB,1
+PI3K mTOR PI 103,Akt,1
+PI3K mTOR PI 103,EGFR,1
+PI3K mTOR PI 103,S6K,1
+PI3K mTOR PI 103,PTEN,1
+PI3K mTOR PI 103,rapa,1
+mTOR,Mammalian Target of Rapamycin,1
+mTOR,Lim,1
+mTOR,PI3K,7
+mTOR,p S6K,7
+mTOR,TSC,5
+mTOR,Raptor,2
+mTOR,ERBB,1
+mTOR,Akt,18
+mTOR,p27,1
+mTOR,Cyclin D1,1
+mTOR,p21,1
+mTOR,LST8,1
+mTOR,EGFR,10
+mTOR,IRS,3
+mTOR,LKB1,1
+mTOR,tor,3
+mTOR,mam,4
+mTOR,insulin,3
+mTOR,rictor,4
+mTOR,PDK1,3
+mTOR,FKBP12,3
+mTOR,PKB,1
+mTOR,eIF4E,6
+mTOR,AMPK,2
+mTOR,SCC,8
+mTOR,TOR,7
+mTOR,Rictor,2
+mTOR,PDCD4,1
+mTOR,mammalian target of rapamycin,7
+mTOR,Tel,1
+mTOR,TSC2,3
+mTOR,S6K,17
+mTOR,AKT,1
+mTOR,mTORC1,10
+mTOR,PTEN,6
+mTOR,REDD1,1
+mTOR,eIF4,1
+mTOR,Mammalian target of rapamycin,2
+mTOR,cin,3
+mTOR,cyclin D1,2
+mTOR,HIF 1,4
+mTOR,VEGF,3
+mTOR,PI 3 K,1
+mTOR,PDK2,2
+mTOR,Rac,1
+mTOR,Rho,1
+mTOR,BAD,1
+mTOR,TSC1,4
+mTOR,mTORC2,6
+mTOR,MAPK,1
+mTOR,raptor,7
+mTOR,IGFR,1
+mTOR,REDD2,1
+mTOR,rapa,2
+mTOR,S6K1,3
+mTOR,Rapa,2
+Mammalian Target of Rapamycin,p S6K,1
+Mammalian Target of Rapamycin,Akt,1
+Mammalian Target of Rapamycin,SCC,1
+Mammalian Target of Rapamycin,S6K,1
+Lim,PI3K,1
+Lim,PDCD4,1
+PI3K,TSC,2
+PI3K,Raptor,2
+PI3K,ERBB,1
+PI3K,Akt,6
+PI3K,LST8,1
+PI3K,EGFR,2
+PI3K,IRS,3
+PI3K,LKB1,1
+PI3K,mam,1
+PI3K,insulin,3
+PI3K,rictor,1
+PI3K,PDK1,2
+PI3K,FKBP12,1
+PI3K,eIF4E,3
+PI3K,AMPK,2
+PI3K,SCC,2
+PI3K,TOR,1
+PI3K,mammalian target of rapamycin,1
+PI3K,TSC2,2
+PI3K,S6K,6
+PI3K,mTORC1,5
+PI3K,PTEN,3
+PI3K,REDD1,1
+PI3K,eIF4,1
+PI3K,cin,1
+PI3K,HIF 1,1
+PI3K,VEGF,1
+PI3K,PDK2,1
+PI3K,TSC1,3
+PI3K,mTORC2,3
+PI3K,MAPK,1
+PI3K,raptor,2
+PI3K,IGFR,1
+PI3K,REDD2,1
+PI3K,rapa,1
+PI3K,S6K1,1
+p S6K,Akt,5
+p S6K,EGFR,4
+p S6K,mam,1
+p S6K,SCC,6
+p S6K,mammalian target of rapamycin,2
+p S6K,S6K,6
+p S6K,PTEN,1
+p S6K,cin,1
+p S6K,cyclin D1,1
+p S6K,HIF 1,1
+p S6K,VEGF,1
+p S6K,Rapa,1
+TSC,Raptor,1
+TSC,Akt,2
+TSC,LST8,1
+TSC,IRS,1
+TSC,mam,1
+TSC,insulin,1
+TSC,rictor,2
+TSC,PDK1,1
+TSC,FKBP12,2
+TSC,eIF4E,3
+TSC,AMPK,1
+TSC,TOR,3
+TSC,mammalian target of rapamycin,3
+TSC,TSC2,1
+TSC,S6K,3
+TSC,mTORC1,3
+TSC,PTEN,2
+TSC,Mammalian target of rapamycin,1
+TSC,cin,1
+TSC,TSC1,1
+TSC,mTORC2,3
+TSC,raptor,3
+TSC,S6K1,1
+TSC,Rapa,1
+Raptor,Akt,1
+Raptor,LST8,1
+Raptor,IRS,1
+Raptor,LKB1,1
+Raptor,mam,1
+Raptor,insulin,1
+Raptor,rictor,1
+Raptor,PDK1,1
+Raptor,FKBP12,1
+Raptor,eIF4E,1
+Raptor,AMPK,2
+Raptor,TOR,1
+Raptor,mammalian target of rapamycin,1
+Raptor,TSC2,1
+Raptor,S6K,2
+Raptor,mTORC1,2
+Raptor,PTEN,2
+Raptor,REDD1,1
+Raptor,HIF 1,1
+Raptor,PDK2,1
+Raptor,TSC1,1
+Raptor,mTORC2,2
+Raptor,MAPK,1
+Raptor,raptor,1
+Raptor,IGFR,1
+Raptor,REDD2,1
+ERBB,Akt,1
+ERBB,EGFR,1
+ERBB,S6K,1
+ERBB,PTEN,1
+ERBB,rapa,1
+interferon gamma,mammalian target of rapamycin,1
+Akt,p27,1
+Akt,Cyclin D1,1
+Akt,EGFR,8
+Akt,IRS,3
+Akt,LKB1,1
+Akt,tor,1
+Akt,mam,1
+Akt,insulin,3
+Akt,rictor,2
+Akt,PDK1,3
+Akt,FKBP12,2
+Akt,PKB,1
+Akt,eIF4E,2
+Akt,AMPK,1
+Akt,SCC,6
+Akt,TOR,1
+Akt,Rictor,1
+Akt,mammalian target of rapamycin,6
+Akt,TSC2,2
+Akt,S6K,13
+Akt,mTORC1,5
+Akt,PTEN,2
+Akt,REDD1,1
+Akt,eIF4,1
+Akt,PDK 2,1
+Akt,Mammalian target of rapamycin,1
+Akt,cin,1
+Akt,cyclin D1,1
+Akt,HIF 1,2
+Akt,VEGF,1
+Akt,PDK2,2
+Akt,TSC1,3
+Akt,mTORC2,3
+Akt,MAPK,1
+Akt,raptor,2
+Akt,IGFR,1
+Akt,REDD2,1
+Akt,rapa,1
+Akt,S6K1,1
+Akt,Rapa,1
+Erk,TSC2,1
+p27,tor,1
+p27,rictor,1
+p27,PDK1,1
+p27,FKBP12,1
+p27,Rictor,1
+p27,S6K,1
+p27,mTORC1,1
+p27,cyclin D1,1
+p27,HIF 1,1
+p27,PDK2,1
+p27,mTORC2,1
+p27,raptor,1
+Fre,AKT,1
+Cyclin D1,S6K,1
+LST8,mam,1
+LST8,rictor,1
+LST8,FKBP12,1
+LST8,eIF4E,1
+LST8,AMPK,1
+LST8,TOR,1
+LST8,mammalian target of rapamycin,1
+LST8,S6K,1
+LST8,mTORC1,1
+LST8,PTEN,1
+LST8,mTORC2,1
+LST8,raptor,1
+EGFR,tor,1
+EGFR,mam,1
+EGFR,KRAS,1
+EGFR,SCC,4
+EGFR,TOR,1
+EGFR,mammalian target of rapamycin,3
+EGFR,Tel,1
+EGFR,S6K,7
+EGFR,mTORC1,2
+EGFR,PTEN,1
+EGFR,eIF4,1
+EGFR,TSC1,1
+EGFR,rapa,1
+IRS,LKB1,1
+IRS,insulin,3
+IRS,PDK1,2
+IRS,eIF4E,2
+IRS,AMPK,1
+IRS,SCC,1
+IRS,TSC2,2
+IRS,S6K,3
+IRS,mTORC1,3
+IRS,PTEN,1
+IRS,REDD1,1
+IRS,cin,1
+IRS,HIF 1,1
+IRS,VEGF,1
+IRS,PDK2,1
+IRS,TSC1,2
+IRS,mTORC2,2
+IRS,MAPK,1
+IRS,raptor,1
+IRS,IGFR,1
+IRS,REDD2,1
+IRS,S6K1,1
+LKB1,insulin,1
+LKB1,PDK1,1
+LKB1,AMPK,1
+LKB1,TSC2,1
+LKB1,S6K,1
+LKB1,mTORC1,1
+LKB1,PTEN,1
+LKB1,REDD1,1
+LKB1,HIF 1,1
+LKB1,PDK2,1
+LKB1,TSC1,1
+LKB1,mTORC2,1
+LKB1,MAPK,1
+LKB1,IGFR,1
+LKB1,REDD2,1
+tor,rictor,1
+tor,PDK1,1
+tor,FKBP12,1
+tor,eIF4E,1
+tor,TOR,1
+tor,Rictor,1
+tor,PDCD4,1
+tor,Tel,1
+tor,S6K,2
+tor,mTORC1,3
+tor,cyclin D1,1
+tor,HIF 1,2
+tor,VEGF,1
+tor,PDK2,1
+tor,Rac,1
+tor,Rho,1
+tor,BAD,1
+tor,TSC1,1
+tor,mTORC2,2
+tor,raptor,2
+tor,S6K1,1
+mam,rictor,1
+mam,FKBP12,1
+mam,eIF4E,1
+mam,AMPK,1
+mam,SCC,1
+mam,TOR,2
+mam,mammalian target of rapamycin,1
+mam,S6K,2
+mam,mTORC1,1
+mam,PTEN,2
+mam,mTORC2,1
+mam,raptor,1
+insulin,PDK1,2
+insulin,eIF4E,2
+insulin,AMPK,1
+insulin,SCC,1
+insulin,TSC2,2
+insulin,S6K,3
+insulin,mTORC1,3
+insulin,PTEN,1
+insulin,REDD1,1
+insulin,cin,1
+insulin,HIF 1,1
+insulin,VEGF,1
+insulin,PDK2,1
+insulin,TSC1,2
+insulin,mTORC2,2
+insulin,MAPK,1
+insulin,raptor,1
+insulin,IGFR,1
+insulin,REDD2,1
+insulin,S6K1,2
+rictor,PDK1,1
+rictor,FKBP12,2
+rictor,PKB,1
+rictor,eIF4E,2
+rictor,AMPK,1
+rictor,TOR,2
+rictor,Rictor,1
+rictor,mammalian target of rapamycin,2
+rictor,S6K,3
+rictor,mTORC1,3
+rictor,PTEN,2
+rictor,cyclin D1,1
+rictor,HIF 1,1
+rictor,PDK2,1
+rictor,mTORC2,3
+rictor,raptor,3
+PDK1,FKBP12,1
+PDK1,eIF4E,1
+PDK1,AMPK,1
+PDK1,Rictor,1
+PDK1,TSC2,2
+PDK1,S6K,3
+PDK1,mTORC1,3
+PDK1,PTEN,1
+PDK1,REDD1,1
+PDK1,cin,1
+PDK1,cyclin D1,1
+PDK1,HIF 1,2
+PDK1,PDK2,2
+PDK1,TSC1,2
+PDK1,mTORC2,3
+PDK1,MAPK,1
+PDK1,raptor,2
+PDK1,IGFR,1
+PDK1,REDD2,1
+PDK1,S6K1,1
+FKBP12,eIF4E,1
+FKBP12,AMPK,1
+FKBP12,TOR,2
+FKBP12,Rictor,1
+FKBP12,mammalian target of rapamycin,2
+FKBP12,S6K,2
+FKBP12,mTORC1,2
+FKBP12,PTEN,1
+FKBP12,Mammalian target of rapamycin,1
+FKBP12,cyclin D1,1
+FKBP12,HIF 1,1
+FKBP12,PDK2,1
+FKBP12,mTORC2,2
+FKBP12,raptor,2
+FKBP12,Rapa,1
+eIF4E,AMPK,1
+eIF4E,SCC,1
+eIF4E,TOR,2
+eIF4E,PDCD4,1
+eIF4E,mammalian target of rapamycin,2
+eIF4E,TSC2,1
+eIF4E,S6K,5
+eIF4E,mTORC1,5
+eIF4E,PTEN,2
+eIF4E,cin,1
+eIF4E,HIF 1,1
+eIF4E,VEGF,2
+eIF4E,Rac,1
+eIF4E,Rho,1
+eIF4E,BAD,1
+eIF4E,TSC1,2
+eIF4E,mTORC2,4
+eIF4E,raptor,4
+eIF4E,S6K1,2
+AMPK,TOR,1
+AMPK,mammalian target of rapamycin,1
+AMPK,TSC2,1
+AMPK,S6K,2
+AMPK,mTORC1,2
+AMPK,PTEN,2
+AMPK,REDD1,1
+AMPK,HIF 1,1
+AMPK,PDK2,1
+AMPK,TSC1,1
+AMPK,mTORC2,2
+AMPK,MAPK,1
+AMPK,raptor,1
+AMPK,IGFR,1
+AMPK,REDD2,1
+SCC,mammalian target of rapamycin,1
+SCC,S6K,7
+SCC,mTORC1,2
+SCC,PTEN,1
+SCC,eIF4,1
+SCC,cin,1
+SCC,cyclin D1,1
+SCC,HIF 1,1
+SCC,VEGF,2
+SCC,TSC1,1
+SCC,Rapa,1
+TOR,mammalian target of rapamycin,3
+TOR,Tel,1
+TOR,S6K,2
+TOR,mTORC1,3
+TOR,PTEN,2
+TOR,Mammalian target of rapamycin,1
+TOR,cin,1
+TOR,mTORC2,2
+TOR,raptor,2
+TOR,Rapa,1
+Rictor,S6K,1
+Rictor,mTORC1,1
+Rictor,cyclin D1,1
+Rictor,HIF 1,1
+Rictor,PDK2,1
+Rictor,mTORC2,1
+Rictor,raptor,2
+PDCD4,S6K,1
+PDCD4,mTORC1,1
+PDCD4,HIF 1,1
+PDCD4,VEGF,1
+PDCD4,Rac,1
+PDCD4,Rho,1
+PDCD4,BAD,1
+PDCD4,TSC1,1
+PDCD4,mTORC2,1
+PDCD4,raptor,1
+PDCD4,S6K1,1
+mammalian target of rapamycin,S6K,4
+mammalian target of rapamycin,mTORC1,2
+mammalian target of rapamycin,PTEN,2
+mammalian target of rapamycin,Mammalian target of rapamycin,1
+mammalian target of rapamycin,mTORC2,2
+mammalian target of rapamycin,raptor,2
+mammalian target of rapamycin,peroxisome proliferator activated receptor gamma,1
+mammalian target of rapamycin,Rapa,1
+Tel,mTORC1,1
+TSC2,S6K,2
+TSC2,AKT,1
+TSC2,mTORC1,2
+TSC2,PTEN,1
+TSC2,REDD1,1
+TSC2,cin,1
+TSC2,HIF 1,1
+TSC2,PDK2,1
+TSC2,TSC1,2
+TSC2,mTORC2,2
+TSC2,MAPK,1
+TSC2,raptor,1
+TSC2,IGFR,1
+TSC2,REDD2,1
+TSC2,S6K1,1
+S6K,mTORC1,8
+S6K,PTEN,5
+S6K,REDD1,1
+S6K,eIF4,1
+S6K,cin,2
+S6K,cyclin D1,2
+S6K,HIF 1,4
+S6K,VEGF,3
+S6K,PDK2,2
+S6K,Rac,1
+S6K,Rho,1
+S6K,BAD,1
+S6K,TSC1,4
+S6K,mTORC2,6
+S6K,MAPK,1
+S6K,raptor,5
+S6K,IGFR,1
+S6K,REDD2,1
+S6K,rapa,1
+S6K,S6K1,2
+S6K,Rapa,1
+GM CSF,cin,1
+GM CSF,p27KIP1,1
+mTORC1,PTEN,3
+mTORC1,REDD1,1
+mTORC1,eIF4,1
+mTORC1,cin,1
+mTORC1,cyclin D1,1
+mTORC1,HIF 1,3
+mTORC1,VEGF,2
+mTORC1,PDK2,2
+mTORC1,Rac,1
+mTORC1,Rho,1
+mTORC1,BAD,1
+mTORC1,TSC1,4
+mTORC1,mTORC2,6
+mTORC1,MAPK,1
+mTORC1,raptor,5
+mTORC1,IGFR,1
+mTORC1,REDD2,1
+mTORC1,S6K1,2
+PTEN,REDD1,1
+PTEN,cin,1
+PTEN,cyclin D1,1
+PTEN,HIF 1,2
+PTEN,VEGF,1
+PTEN,PDK2,1
+PTEN,TSC1,1
+PTEN,mTORC2,3
+PTEN,MAPK,1
+PTEN,raptor,2
+PTEN,IGFR,1
+PTEN,REDD2,1
+PTEN,rapa,1
+PTEN,Rapa,1
+REDD1,HIF 1,1
+REDD1,PDK2,1
+REDD1,TSC1,1
+REDD1,mTORC2,1
+REDD1,MAPK,1
+REDD1,IGFR,1
+REDD1,REDD2,1
+beta catenin,Mammalian target of rapamycin,1
+4EBP 1,p27Kip1,1
+eIF4,TSC1,1
+Mammalian target of rapamycin,Rapa,1
+cin,cyclin D1,1
+cin,HIF 1,1
+cin,VEGF,1
+cin,TSC1,1
+cin,mTORC2,1
+cin,raptor,1
+cin,p27KIP1,1
+cin,S6K1,1
+cin,Rapa,1
+cyclin D1,HIF 1,2
+cyclin D1,VEGF,1
+cyclin D1,PDK2,1
+cyclin D1,mTORC2,1
+cyclin D1,raptor,1
+cyclin D1,Rapa,1
+HIF 1,VEGF,2
+HIF 1,PDK2,2
+HIF 1,Rac,1
+HIF 1,Rho,1
+HIF 1,BAD,1
+HIF 1,TSC1,2
+HIF 1,mTORC2,3
+HIF 1,MAPK,1
+HIF 1,raptor,2
+HIF 1,IGFR,1
+HIF 1,REDD2,1
+HIF 1,S6K1,1
+HIF 1,Rapa,1
+VEGF,Rac,1
+VEGF,Rho,1
+VEGF,BAD,1
+VEGF,TSC1,1
+VEGF,mTORC2,1
+VEGF,raptor,1
+VEGF,S6K1,1
+VEGF,Rapa,1
+PDK2,TSC1,1
+PDK2,mTORC2,2
+PDK2,MAPK,1
+PDK2,raptor,1
+PDK2,IGFR,1
+PDK2,REDD2,1
+Tuberin,Rho,1
+Rac,Rho,1
+Rac,BAD,1
+Rac,TSC1,1
+Rac,mTORC2,1
+Rac,raptor,1
+Rac,S6K1,1
+Rho,BAD,1
+Rho,TSC1,1
+Rho,mTORC2,1
+Rho,raptor,1
+Rho,S6K1,1
+BAD,TSC1,1
+BAD,mTORC2,1
+BAD,raptor,1
+BAD,S6K1,1
+TSC1,mTORC2,3
+TSC1,MAPK,1
+TSC1,raptor,2
+TSC1,IGFR,1
+TSC1,REDD2,1
+TSC1,S6K1,2
+mTORC2,MAPK,1
+mTORC2,raptor,5
+mTORC2,IGFR,1
+mTORC2,REDD2,1
+mTORC2,S6K1,2
+MAPK,IGFR,1
+MAPK,REDD2,1
+raptor,S6K1,2
+IGFR,REDD2,1

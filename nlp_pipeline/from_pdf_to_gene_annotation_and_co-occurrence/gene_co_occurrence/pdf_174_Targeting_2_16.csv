@@ -1,0 +1,982 @@
+gene_name_1,gene_name_2,co_occurrence
+GEF,EML4,1
+GEF,KRAS,2
+GEF,CDKN2A,1
+GEF,BRAF,2
+GEF,KEAP1,1
+GEF,CTNNB1,1
+GEF,RCE1,2
+GEF,FGFR1 HER2 PIK3CA,1
+GEF,ERK,1
+GEF,SOS,1
+GEF,ICMT,2
+GEF,MEK,1
+GEF,EGFR,1
+GEF,TTF1,1
+GEF,PD 1,1
+GEF,TP53,1
+GEF,mTOR,1
+GEF,ALK,1
+GEF,mTORC1,1
+GEF,PTEN,2
+GEF,LKB1,1
+GEF,RBM10,1
+GEF,DDR2,1
+GEF,PI3K,1
+GEF,STK11,1
+GEF,HSP90,1
+EML4,p110alpha,1
+EML4,K ras,1
+EML4,KRAS,3
+EML4,CDKN2A,2
+EML4,BRAF,3
+EML4,VEGF,1
+EML4,KEAP1,1
+EML4,epiregulin,1
+EML4,GATA2,1
+EML4,Ding,1
+EML4,FAK,1
+EML4,CTNNB1,1
+EML4,RCE1,1
+EML4,FGFR1 HER2 PIK3CA,1
+EML4,EMT,1
+EML4,SOS,1
+EML4,mammalian target of rapamycin,1
+EML4,ICMT,2
+EML4,MMAC1,1
+EML4,Sos,1
+EML4,mesothelin,1
+EML4,MTOR,1
+EML4,MEK,1
+EML4,WT1,1
+EML4,EGFR,3
+EML4,K Ras,1
+EML4,TTF1,1
+EML4,Raf,1
+EML4,PD 1,2
+EML4,Raf 1,1
+EML4,TP53,2
+EML4,Dan,1
+EML4,mTOR,2
+EML4,HER2,1
+EML4,ALK,3
+EML4,mTORC1,1
+EML4,PTEN,2
+EML4,PDL 1,1
+EML4,Grob,1
+EML4,LKB1,1
+EML4,Proc,1
+EML4,RBM10,1
+EML4,DDR2,1
+EML4,Rce1p,1
+EML4,PI3K,2
+EML4,STK11,1
+EML4,HSP90,2
+Mok,KRAS,1
+Mok,BRAF,1
+Mok,Ding,1
+Mok,Fre,1
+Mok,ERK,1
+Mok,Sos,1
+Mok,MEK,1
+Mok,EGFR,1
+Mok,Raf,1
+Mok,epidermal growth factor receptor,1
+Mok,PD 1,1
+Mok,TP53,1
+Mok,mTOR,1
+Mok,PDL 1,1
+Mok,Proc,1
+Mok,PI3K,1
+p110alpha,K ras,1
+p110alpha,KRAS,1
+p110alpha,BRAF,1
+p110alpha,VEGF,1
+p110alpha,Ding,1
+p110alpha,EMT,1
+p110alpha,SOS,1
+p110alpha,mammalian target of rapamycin,1
+p110alpha,ICMT,1
+p110alpha,MMAC1,1
+p110alpha,Sos,1
+p110alpha,EGFR,1
+p110alpha,K Ras,1
+p110alpha,Raf,1
+p110alpha,Raf 1,1
+p110alpha,Dan,1
+p110alpha,mTOR,1
+p110alpha,ALK,1
+p110alpha,PTEN,1
+p110alpha,Grob,1
+p110alpha,Proc,1
+p110alpha,Rce1p,1
+p110alpha,PI3K,1
+K ras,KRAS,1
+K ras,BRAF,1
+K ras,VEGF,1
+K ras,Ding,1
+K ras,EMT,1
+K ras,SOS,1
+K ras,mammalian target of rapamycin,1
+K ras,ICMT,1
+K ras,MMAC1,1
+K ras,Sos,1
+K ras,EGFR,1
+K ras,K Ras,1
+K ras,Raf,1
+K ras,Raf 1,1
+K ras,Dan,1
+K ras,mTOR,1
+K ras,ALK,1
+K ras,PTEN,1
+K ras,Grob,1
+K ras,Proc,1
+K ras,Rce1p,1
+K ras,PI3K,1
+KRAS,MEK 1,1
+KRAS,CDKN2A,2
+KRAS,BRAF,10
+KRAS,VEGF,1
+KRAS,Hsp90,4
+KRAS,KRAS4b,1
+KRAS,KEAP1,1
+KRAS,epiregulin,2
+KRAS,GATA2,2
+KRAS,Ding,2
+KRAS,FAK,2
+KRAS,CTNNB1,1
+KRAS,RCE1,3
+KRAS,Mut,1
+KRAS,PD L1,1
+KRAS,FGFR1 HER2 PIK3CA,1
+KRAS,Fre,1
+KRAS,EMT,1
+KRAS,ERK,6
+KRAS,SOS,2
+KRAS,mammalian target of rapamycin,2
+KRAS,ICMT,4
+KRAS,MMAC1,1
+KRAS,MEK2,1
+KRAS,Sos,3
+KRAS,PDL1,1
+KRAS,mesothelin,2
+KRAS,MTOR,2
+KRAS,MEK 2,1
+KRAS,MEK,9
+KRAS,WT1,2
+KRAS,EGFR,9
+KRAS,K Ras,1
+KRAS,NF kappaB,1
+KRAS,TTF1,1
+KRAS,Raf,4
+KRAS,epidermal growth factor receptor,4
+KRAS,PD 1,4
+KRAS,Raf 1,1
+KRAS,TP53,5
+KRAS,Dan,1
+KRAS,mTOR,9
+KRAS,HER2,1
+KRAS,ALK,5
+KRAS,PIK3CA,1
+KRAS,mTORC1,1
+KRAS,PD L2,1
+KRAS,PTEN,3
+KRAS,PDL 1,2
+KRAS,MEK PI3K MEK Jak MEK,1
+KRAS,Grob,1
+KRAS,MEK1,1
+KRAS,LKB1,1
+KRAS,Proc,3
+KRAS,RBM10,1
+KRAS,DDR2,1
+KRAS,Rce1p,1
+KRAS,PI3K,9
+KRAS,NRAS,1
+KRAS,STK11,1
+KRAS,HSP90,2
+KRAS,RAF,4
+MEK 1,BRAF,1
+MEK 1,FAK,1
+MEK 1,Mut,1
+MEK 1,ERK,1
+MEK 1,MEK 2,1
+MEK 1,MEK,1
+MEK 1,EGFR,1
+MEK 1,epidermal growth factor receptor,1
+MEK 1,mTOR,1
+MEK 1,MEK PI3K MEK Jak MEK,1
+MEK 1,RAF,1
+CDKN2A,BRAF,2
+CDKN2A,KEAP1,1
+CDKN2A,epiregulin,1
+CDKN2A,GATA2,1
+CDKN2A,FAK,1
+CDKN2A,CTNNB1,1
+CDKN2A,RCE1,1
+CDKN2A,FGFR1 HER2 PIK3CA,1
+CDKN2A,ICMT,1
+CDKN2A,mesothelin,1
+CDKN2A,MTOR,1
+CDKN2A,MEK,1
+CDKN2A,WT1,1
+CDKN2A,EGFR,2
+CDKN2A,TTF1,1
+CDKN2A,PD 1,2
+CDKN2A,TP53,2
+CDKN2A,mTOR,1
+CDKN2A,HER2,1
+CDKN2A,ALK,2
+CDKN2A,mTORC1,1
+CDKN2A,PTEN,1
+CDKN2A,PDL 1,1
+CDKN2A,LKB1,1
+CDKN2A,RBM10,1
+CDKN2A,DDR2,1
+CDKN2A,PI3K,1
+CDKN2A,STK11,1
+CDKN2A,HSP90,2
+BRAF,VEGF,1
+BRAF,Hsp90,3
+BRAF,KRAS4b,1
+BRAF,KEAP1,1
+BRAF,epiregulin,1
+BRAF,GATA2,1
+BRAF,Ding,2
+BRAF,FAK,2
+BRAF,CTNNB1,1
+BRAF,RCE1,3
+BRAF,Mut,1
+BRAF,FGFR1 HER2 PIK3CA,1
+BRAF,Fre,1
+BRAF,EMT,1
+BRAF,ERK,5
+BRAF,SOS,2
+BRAF,mammalian target of rapamycin,2
+BRAF,ICMT,4
+BRAF,MMAC1,1
+BRAF,MEK2,1
+BRAF,Sos,3
+BRAF,mesothelin,1
+BRAF,MTOR,1
+BRAF,MEK 2,1
+BRAF,MEK,8
+BRAF,WT1,1
+BRAF,EGFR,8
+BRAF,K Ras,1
+BRAF,TTF1,1
+BRAF,Raf,4
+BRAF,epidermal growth factor receptor,3
+BRAF,PD 1,3
+BRAF,Raf 1,1
+BRAF,TP53,5
+BRAF,Dan,1
+BRAF,mTOR,9
+BRAF,HER2,1
+BRAF,ALK,4
+BRAF,PIK3CA,1
+BRAF,mTORC1,1
+BRAF,PTEN,3
+BRAF,PDL 1,2
+BRAF,MEK PI3K MEK Jak MEK,1
+BRAF,Grob,1
+BRAF,MEK1,1
+BRAF,LKB1,1
+BRAF,Proc,3
+BRAF,RBM10,1
+BRAF,DDR2,1
+BRAF,Rce1p,1
+BRAF,PI3K,8
+BRAF,NRAS,1
+BRAF,STK11,1
+BRAF,HSP90,2
+BRAF,RAF,3
+VEGF,Ding,1
+VEGF,EMT,1
+VEGF,SOS,1
+VEGF,mammalian target of rapamycin,1
+VEGF,ICMT,1
+VEGF,MMAC1,1
+VEGF,Sos,1
+VEGF,EGFR,1
+VEGF,K Ras,1
+VEGF,Raf,1
+VEGF,Raf 1,1
+VEGF,Dan,1
+VEGF,mTOR,1
+VEGF,ALK,1
+VEGF,PTEN,1
+VEGF,Grob,1
+VEGF,Proc,1
+VEGF,Rce1p,1
+VEGF,PI3K,1
+Hsp90,KRAS4b,1
+Hsp90,epiregulin,1
+Hsp90,GATA2,1
+Hsp90,RCE1,1
+Hsp90,PD L1,1
+Hsp90,ERK,2
+Hsp90,mammalian target of rapamycin,1
+Hsp90,ICMT,1
+Hsp90,MEK2,1
+Hsp90,Sos,1
+Hsp90,PDL1,1
+Hsp90,mesothelin,1
+Hsp90,MTOR,1
+Hsp90,MEK,4
+Hsp90,WT1,1
+Hsp90,EGFR,4
+Hsp90,NF kappaB,1
+Hsp90,Raf,2
+Hsp90,epidermal growth factor receptor,2
+Hsp90,PD 1,1
+Hsp90,TP53,2
+Hsp90,mTOR,3
+Hsp90,ALK,2
+Hsp90,PIK3CA,1
+Hsp90,PD L2,1
+Hsp90,MEK1,1
+Hsp90,Proc,1
+Hsp90,PI3K,4
+Hsp90,NRAS,1
+Hsp90,RAF,3
+KRAS4b,RCE1,1
+KRAS4b,ERK,1
+KRAS4b,mammalian target of rapamycin,1
+KRAS4b,ICMT,1
+KRAS4b,MEK,1
+KRAS4b,EGFR,1
+KRAS4b,Raf,1
+KRAS4b,TP53,1
+KRAS4b,mTOR,1
+KRAS4b,PI3K,1
+KRAS4b,NRAS,1
+KRAS4b,RAF,1
+KEAP1,CTNNB1,1
+KEAP1,RCE1,1
+KEAP1,FGFR1 HER2 PIK3CA,1
+KEAP1,ICMT,1
+KEAP1,EGFR,1
+KEAP1,TTF1,1
+KEAP1,PD 1,1
+KEAP1,TP53,1
+KEAP1,ALK,1
+KEAP1,mTORC1,1
+KEAP1,PTEN,1
+KEAP1,LKB1,1
+KEAP1,RBM10,1
+KEAP1,DDR2,1
+KEAP1,STK11,1
+KEAP1,HSP90,1
+epiregulin,GATA2,2
+epiregulin,FAK,1
+epiregulin,PD L1,1
+epiregulin,ERK,1
+epiregulin,PDL1,1
+epiregulin,mesothelin,2
+epiregulin,MTOR,2
+epiregulin,MEK,2
+epiregulin,WT1,2
+epiregulin,EGFR,2
+epiregulin,NF kappaB,1
+epiregulin,epidermal growth factor receptor,1
+epiregulin,PD 1,2
+epiregulin,TP53,1
+epiregulin,mTOR,1
+epiregulin,HER2,1
+epiregulin,ALK,2
+epiregulin,PD L2,1
+epiregulin,PDL 1,1
+epiregulin,PI3K,2
+epiregulin,HSP90,1
+epiregulin,RAF,1
+GATA2,FAK,1
+GATA2,PD L1,1
+GATA2,ERK,1
+GATA2,PDL1,1
+GATA2,mesothelin,2
+GATA2,MTOR,2
+GATA2,MEK,2
+GATA2,WT1,2
+GATA2,EGFR,2
+GATA2,NF kappaB,1
+GATA2,epidermal growth factor receptor,1
+GATA2,PD 1,2
+GATA2,TP53,1
+GATA2,mTOR,1
+GATA2,HER2,1
+GATA2,ALK,2
+GATA2,PD L2,1
+GATA2,PDL 1,1
+GATA2,PI3K,2
+GATA2,HSP90,1
+GATA2,RAF,1
+Ding,Fre,1
+Ding,EMT,1
+Ding,ERK,1
+Ding,SOS,1
+Ding,mammalian target of rapamycin,1
+Ding,ICMT,1
+Ding,MMAC1,1
+Ding,Sos,2
+Ding,MEK,1
+Ding,EGFR,2
+Ding,K Ras,1
+Ding,Raf,2
+Ding,epidermal growth factor receptor,1
+Ding,PD 1,1
+Ding,Raf 1,1
+Ding,TP53,1
+Ding,Dan,1
+Ding,mTOR,2
+Ding,ALK,1
+Ding,PTEN,1
+Ding,PDL 1,1
+Ding,Grob,1
+Ding,Proc,2
+Ding,Rce1p,1
+Ding,PI3K,2
+FAK,Mut,1
+FAK,ERK,1
+FAK,mesothelin,1
+FAK,MTOR,1
+FAK,MEK 2,1
+FAK,MEK,2
+FAK,WT1,1
+FAK,EGFR,2
+FAK,epidermal growth factor receptor,1
+FAK,PD 1,1
+FAK,TP53,1
+FAK,mTOR,2
+FAK,HER2,1
+FAK,ALK,1
+FAK,PDL 1,1
+FAK,MEK PI3K MEK Jak MEK,1
+FAK,PI3K,1
+FAK,HSP90,1
+FAK,RAF,1
+CTNNB1,RCE1,1
+CTNNB1,FGFR1 HER2 PIK3CA,1
+CTNNB1,ICMT,1
+CTNNB1,EGFR,1
+CTNNB1,TTF1,1
+CTNNB1,PD 1,1
+CTNNB1,TP53,1
+CTNNB1,ALK,1
+CTNNB1,mTORC1,1
+CTNNB1,PTEN,1
+CTNNB1,LKB1,1
+CTNNB1,RBM10,1
+CTNNB1,DDR2,1
+CTNNB1,STK11,1
+CTNNB1,HSP90,1
+RCE1,FGFR1 HER2 PIK3CA,1
+RCE1,ERK,2
+RCE1,SOS,1
+RCE1,mammalian target of rapamycin,1
+RCE1,ICMT,3
+RCE1,MEK,2
+RCE1,EGFR,2
+RCE1,TTF1,1
+RCE1,Raf,1
+RCE1,PD 1,1
+RCE1,TP53,2
+RCE1,mTOR,2
+RCE1,ALK,1
+RCE1,mTORC1,1
+RCE1,PTEN,2
+RCE1,LKB1,1
+RCE1,RBM10,1
+RCE1,DDR2,1
+RCE1,PI3K,2
+RCE1,NRAS,1
+RCE1,STK11,1
+RCE1,HSP90,1
+RCE1,RAF,1
+Mut,ERK,1
+Mut,MEK 2,1
+Mut,MEK,1
+Mut,EGFR,1
+Mut,epidermal growth factor receptor,1
+Mut,mTOR,1
+Mut,MEK PI3K MEK Jak MEK,1
+Mut,RAF,1
+PD L1,ERK,1
+PD L1,PDL1,1
+PD L1,mesothelin,1
+PD L1,MTOR,1
+PD L1,MEK,1
+PD L1,WT1,1
+PD L1,EGFR,1
+PD L1,NF kappaB,1
+PD L1,epidermal growth factor receptor,1
+PD L1,PD 1,1
+PD L1,ALK,1
+PD L1,PD L2,1
+PD L1,PI3K,1
+PD L1,RAF,1
+FGFR1 HER2 PIK3CA,ICMT,1
+FGFR1 HER2 PIK3CA,EGFR,1
+FGFR1 HER2 PIK3CA,TTF1,1
+FGFR1 HER2 PIK3CA,PD 1,1
+FGFR1 HER2 PIK3CA,TP53,1
+FGFR1 HER2 PIK3CA,ALK,1
+FGFR1 HER2 PIK3CA,mTORC1,1
+FGFR1 HER2 PIK3CA,PTEN,1
+FGFR1 HER2 PIK3CA,LKB1,1
+FGFR1 HER2 PIK3CA,RBM10,1
+FGFR1 HER2 PIK3CA,DDR2,1
+FGFR1 HER2 PIK3CA,STK11,1
+FGFR1 HER2 PIK3CA,HSP90,1
+Fre,ERK,1
+Fre,Sos,1
+Fre,MEK,1
+Fre,EGFR,1
+Fre,Raf,1
+Fre,epidermal growth factor receptor,1
+Fre,PD 1,1
+Fre,TP53,1
+Fre,mTOR,1
+Fre,PDL 1,1
+Fre,Proc,1
+Fre,PI3K,1
+EMT,SOS,1
+EMT,mammalian target of rapamycin,1
+EMT,ICMT,1
+EMT,MMAC1,1
+EMT,Sos,1
+EMT,EGFR,1
+EMT,K Ras,1
+EMT,Raf,1
+EMT,Raf 1,1
+EMT,Dan,1
+EMT,mTOR,1
+EMT,ALK,1
+EMT,PTEN,1
+EMT,Grob,1
+EMT,Proc,1
+EMT,Rce1p,1
+EMT,PI3K,1
+ERK,SOS,1
+ERK,mammalian target of rapamycin,1
+ERK,ICMT,2
+ERK,Sos,1
+ERK,PDL1,1
+ERK,mesothelin,1
+ERK,MTOR,1
+ERK,MEK 2,1
+ERK,MEK,6
+ERK,WT1,1
+ERK,EGFR,4
+ERK,NF kappaB,1
+ERK,Raf,2
+ERK,epidermal growth factor receptor,3
+ERK,PD 1,2
+ERK,TP53,2
+ERK,mTOR,5
+ERK,ALK,1
+ERK,PD L2,1
+ERK,PTEN,1
+ERK,PDL 1,1
+ERK,MEK PI3K MEK Jak MEK,1
+ERK,Proc,1
+ERK,PI3K,5
+ERK,NRAS,1
+ERK,RAF,3
+SOS,mammalian target of rapamycin,1
+SOS,ICMT,2
+SOS,MMAC1,1
+SOS,Sos,1
+SOS,MEK,1
+SOS,EGFR,1
+SOS,K Ras,1
+SOS,Raf,1
+SOS,Raf 1,1
+SOS,Dan,1
+SOS,mTOR,2
+SOS,ALK,1
+SOS,PTEN,2
+SOS,Grob,1
+SOS,Proc,1
+SOS,Rce1p,1
+SOS,PI3K,2
+mammalian target of rapamycin,ICMT,2
+mammalian target of rapamycin,MMAC1,1
+mammalian target of rapamycin,Sos,1
+mammalian target of rapamycin,MEK,1
+mammalian target of rapamycin,EGFR,2
+mammalian target of rapamycin,K Ras,1
+mammalian target of rapamycin,Raf,2
+mammalian target of rapamycin,Raf 1,1
+mammalian target of rapamycin,TP53,1
+mammalian target of rapamycin,Dan,1
+mammalian target of rapamycin,mTOR,2
+mammalian target of rapamycin,ALK,1
+mammalian target of rapamycin,PTEN,1
+mammalian target of rapamycin,Grob,1
+mammalian target of rapamycin,Proc,1
+mammalian target of rapamycin,Rce1p,1
+mammalian target of rapamycin,PI3K,2
+mammalian target of rapamycin,NRAS,1
+mammalian target of rapamycin,RAF,1
+ICMT,MMAC1,1
+ICMT,Sos,1
+ICMT,MEK,2
+ICMT,EGFR,3
+ICMT,K Ras,1
+ICMT,TTF1,1
+ICMT,Raf,2
+ICMT,PD 1,1
+ICMT,Raf 1,1
+ICMT,TP53,2
+ICMT,Dan,1
+ICMT,mTOR,3
+ICMT,ALK,2
+ICMT,mTORC1,1
+ICMT,PTEN,3
+ICMT,Grob,1
+ICMT,LKB1,1
+ICMT,Proc,1
+ICMT,RBM10,1
+ICMT,DDR2,1
+ICMT,Rce1p,1
+ICMT,PI3K,3
+ICMT,NRAS,1
+ICMT,STK11,1
+ICMT,HSP90,1
+ICMT,RAF,1
+MMAC1,Sos,1
+MMAC1,EGFR,1
+MMAC1,K Ras,1
+MMAC1,Raf,1
+MMAC1,Raf 1,1
+MMAC1,Dan,1
+MMAC1,mTOR,1
+MMAC1,ALK,1
+MMAC1,PTEN,1
+MMAC1,Grob,1
+MMAC1,Proc,1
+MMAC1,Rce1p,1
+MMAC1,PI3K,1
+MEK2,Sos,1
+MEK2,MEK,1
+MEK2,EGFR,1
+MEK2,Raf,1
+MEK2,mTOR,1
+MEK2,PIK3CA,1
+MEK2,MEK1,1
+MEK2,Proc,1
+MEK2,PI3K,1
+MEK2,RAF,1
+Sos,MEK,2
+Sos,EGFR,3
+Sos,K Ras,1
+Sos,Raf,3
+Sos,epidermal growth factor receptor,1
+Sos,PD 1,1
+Sos,Raf 1,1
+Sos,TP53,1
+Sos,Dan,1
+Sos,mTOR,3
+Sos,ALK,1
+Sos,PIK3CA,1
+Sos,PTEN,1
+Sos,PDL 1,1
+Sos,Grob,1
+Sos,MEK1,1
+Sos,Proc,3
+Sos,Rce1p,1
+Sos,PI3K,3
+Sos,RAF,1
+PDL1,mesothelin,1
+PDL1,MTOR,1
+PDL1,MEK,1
+PDL1,WT1,1
+PDL1,EGFR,1
+PDL1,NF kappaB,1
+PDL1,epidermal growth factor receptor,1
+PDL1,PD 1,1
+PDL1,ALK,1
+PDL1,PD L2,1
+PDL1,PI3K,1
+PDL1,RAF,1
+mesothelin,MTOR,2
+mesothelin,MEK,2
+mesothelin,WT1,2
+mesothelin,EGFR,2
+mesothelin,NF kappaB,1
+mesothelin,epidermal growth factor receptor,1
+mesothelin,PD 1,2
+mesothelin,TP53,1
+mesothelin,mTOR,1
+mesothelin,HER2,1
+mesothelin,ALK,2
+mesothelin,PD L2,1
+mesothelin,PDL 1,1
+mesothelin,PI3K,2
+mesothelin,HSP90,1
+mesothelin,RAF,1
+MTOR,MEK,2
+MTOR,WT1,2
+MTOR,EGFR,2
+MTOR,NF kappaB,1
+MTOR,epidermal growth factor receptor,1
+MTOR,PD 1,2
+MTOR,TP53,1
+MTOR,mTOR,1
+MTOR,HER2,1
+MTOR,ALK,2
+MTOR,PD L2,1
+MTOR,PDL 1,1
+MTOR,PI3K,2
+MTOR,HSP90,1
+MTOR,RAF,1
+MEK 2,MEK,1
+MEK 2,EGFR,1
+MEK 2,epidermal growth factor receptor,1
+MEK 2,mTOR,1
+MEK 2,MEK PI3K MEK Jak MEK,1
+MEK 2,RAF,1
+MEK,WT1,2
+MEK,EGFR,7
+MEK,NF kappaB,1
+MEK,Raf,3
+MEK,epidermal growth factor receptor,4
+MEK,PD 1,3
+MEK,TP53,4
+MEK,mTOR,8
+MEK,HER2,1
+MEK,ALK,3
+MEK,PIK3CA,1
+MEK,PD L2,1
+MEK,PTEN,1
+MEK,PDL 1,2
+MEK,MEK PI3K MEK Jak MEK,1
+MEK,MEK1,1
+MEK,Proc,2
+MEK,PI3K,8
+MEK,NRAS,1
+MEK,HSP90,1
+MEK,RAF,4
+WT1,EGFR,2
+WT1,NF kappaB,1
+WT1,epidermal growth factor receptor,1
+WT1,PD 1,2
+WT1,TP53,1
+WT1,mTOR,1
+WT1,HER2,1
+WT1,ALK,2
+WT1,PD L2,1
+WT1,PDL 1,1
+WT1,PI3K,2
+WT1,HSP90,1
+WT1,RAF,1
+EGFR,K Ras,1
+EGFR,NF kappaB,1
+EGFR,TTF1,1
+EGFR,Raf,4
+EGFR,epidermal growth factor receptor,4
+EGFR,PD 1,4
+EGFR,Raf 1,1
+EGFR,TP53,5
+EGFR,Dan,1
+EGFR,mTOR,7
+EGFR,HER2,1
+EGFR,ALK,5
+EGFR,PIK3CA,1
+EGFR,mTORC1,1
+EGFR,PD L2,1
+EGFR,PTEN,2
+EGFR,PDL 1,2
+EGFR,MEK PI3K MEK Jak MEK,1
+EGFR,Grob,1
+EGFR,MEK1,1
+EGFR,LKB1,1
+EGFR,Proc,3
+EGFR,RBM10,1
+EGFR,DDR2,1
+EGFR,Rce1p,1
+EGFR,PI3K,7
+EGFR,NRAS,1
+EGFR,STK11,1
+EGFR,HSP90,2
+EGFR,RAF,4
+K Ras,Raf,1
+K Ras,Raf 1,1
+K Ras,Dan,1
+K Ras,mTOR,1
+K Ras,ALK,1
+K Ras,PTEN,1
+K Ras,Grob,1
+K Ras,Proc,1
+K Ras,Rce1p,1
+K Ras,PI3K,1
+NF kappaB,epidermal growth factor receptor,1
+NF kappaB,PD 1,1
+NF kappaB,ALK,1
+NF kappaB,PD L2,1
+NF kappaB,PI3K,1
+NF kappaB,RAF,1
+TTF1,PD 1,1
+TTF1,TP53,1
+TTF1,ALK,1
+TTF1,mTORC1,1
+TTF1,PTEN,1
+TTF1,LKB1,1
+TTF1,RBM10,1
+TTF1,DDR2,1
+TTF1,STK11,1
+TTF1,HSP90,1
+Raf,epidermal growth factor receptor,1
+Raf,PD 1,1
+Raf,Raf 1,1
+Raf,TP53,2
+Raf,Dan,1
+Raf,mTOR,4
+Raf,ALK,1
+Raf,PIK3CA,1
+Raf,PTEN,1
+Raf,PDL 1,1
+Raf,Grob,1
+Raf,MEK1,1
+Raf,Proc,3
+Raf,Rce1p,1
+Raf,PI3K,4
+Raf,NRAS,1
+Raf,RAF,2
+epidermal growth factor receptor,PD 1,2
+epidermal growth factor receptor,TP53,2
+epidermal growth factor receptor,mTOR,3
+epidermal growth factor receptor,ALK,2
+epidermal growth factor receptor,PD L2,1
+epidermal growth factor receptor,PDL 1,1
+epidermal growth factor receptor,MEK PI3K MEK Jak MEK,1
+epidermal growth factor receptor,Proc,1
+epidermal growth factor receptor,PI3K,3
+epidermal growth factor receptor,RAF,2
+PD 1,TP53,3
+PD 1,mTOR,2
+PD 1,HER2,1
+PD 1,ALK,3
+PD 1,mTORC1,1
+PD 1,PD L2,1
+PD 1,PTEN,1
+PD 1,PDL 1,2
+PD 1,LKB1,1
+PD 1,Proc,1
+PD 1,RBM10,1
+PD 1,DDR2,1
+PD 1,PI3K,3
+PD 1,STK11,1
+PD 1,HSP90,2
+PD 1,RAF,1
+Raf 1,Dan,1
+Raf 1,mTOR,1
+Raf 1,ALK,1
+Raf 1,PTEN,1
+Raf 1,Grob,1
+Raf 1,Proc,1
+Raf 1,Rce1p,1
+Raf 1,PI3K,1
+TP53,mTOR,4
+TP53,HER2,1
+TP53,ALK,3
+TP53,mTORC1,1
+TP53,PTEN,1
+TP53,PDL 1,2
+TP53,LKB1,1
+TP53,Proc,1
+TP53,RBM10,1
+TP53,DDR2,1
+TP53,PI3K,4
+TP53,NRAS,1
+TP53,STK11,1
+TP53,HSP90,2
+TP53,RAF,1
+Dan,mTOR,1
+Dan,ALK,1
+Dan,PTEN,1
+Dan,Grob,1
+Dan,Proc,1
+Dan,Rce1p,1
+Dan,PI3K,1
+mTOR,HER2,1
+mTOR,ALK,3
+mTOR,PIK3CA,1
+mTOR,PTEN,2
+mTOR,PDL 1,2
+mTOR,MEK PI3K MEK Jak MEK,1
+mTOR,Grob,1
+mTOR,MEK1,1
+mTOR,Proc,3
+mTOR,Rce1p,1
+mTOR,PI3K,8
+mTOR,NRAS,1
+mTOR,HSP90,1
+mTOR,RAF,3
+HER2,ALK,1
+HER2,PDL 1,1
+HER2,PI3K,1
+HER2,HSP90,1
+ALK,mTORC1,1
+ALK,PD L2,1
+ALK,PTEN,2
+ALK,PDL 1,1
+ALK,Grob,1
+ALK,LKB1,1
+ALK,Proc,1
+ALK,RBM10,1
+ALK,DDR2,1
+ALK,Rce1p,1
+ALK,PI3K,4
+ALK,STK11,1
+ALK,HSP90,2
+ALK,RAF,1
+PIK3CA,MEK1,1
+PIK3CA,Proc,1
+PIK3CA,PI3K,1
+PIK3CA,RAF,1
+mTORC1,PTEN,1
+mTORC1,LKB1,1
+mTORC1,RBM10,1
+mTORC1,DDR2,1
+mTORC1,STK11,1
+mTORC1,HSP90,1
+PD L2,PI3K,1
+PD L2,RAF,1
+PTEN,Grob,1
+PTEN,LKB1,1
+PTEN,Proc,1
+PTEN,RBM10,1
+PTEN,DDR2,1
+PTEN,Rce1p,1
+PTEN,PI3K,2
+PTEN,STK11,1
+PTEN,HSP90,1
+PDL 1,Proc,1
+PDL 1,PI3K,2
+PDL 1,HSP90,1
+MEK PI3K MEK Jak MEK,RAF,1
+Grob,Proc,1
+Grob,Rce1p,1
+Grob,PI3K,1
+MEK1,Proc,1
+MEK1,PI3K,1
+MEK1,RAF,1
+LKB1,RBM10,1
+LKB1,DDR2,1
+LKB1,STK11,1
+LKB1,HSP90,1
+Proc,Rce1p,1
+Proc,PI3K,3
+Proc,RAF,1
+RBM10,DDR2,1
+RBM10,STK11,1
+RBM10,HSP90,1
+DDR2,STK11,1
+DDR2,HSP90,1
+Rce1p,PI3K,1
+PI3K,NRAS,1
+PI3K,HSP90,1
+PI3K,RAF,3
+NRAS,RAF,1
+STK11,HSP90,1

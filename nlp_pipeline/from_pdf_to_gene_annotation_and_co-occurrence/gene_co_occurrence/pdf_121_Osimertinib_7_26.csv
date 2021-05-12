@@ -1,0 +1,279 @@
+gene_name_1,gene_name_2,co_occurrence
+Mok,EML4,1
+Mok,CD47,1
+Mok,STAT3,1
+Mok,PD L1,1
+Mok,Fong,1
+Mok,GAPDH,1
+Mok,MYC,1
+Mok,SP8,1
+Mok,BET,1
+Mok,BCATM,1
+Mok,EGFR,1
+Mok,NF kappaB,1
+Mok,IL 6,1
+Mok,PD 1,1
+Mok,AKT,1
+Mok,Interferon regulatory factor 1,1
+Mok,ALK,1
+Mok,LC3B,1
+Mok,Lim,1
+Mok,p65,1
+Mok,PARP,1
+Mok,signal transducer and activator of transcription 3,1
+Mok,CSN5,1
+EML4,CD47,1
+EML4,STAT3,1
+EML4,PD L1,1
+EML4,Fong,1
+EML4,GAPDH,1
+EML4,MYC,1
+EML4,SP8,1
+EML4,BET,1
+EML4,BCATM,1
+EML4,EGFR,1
+EML4,NF kappaB,1
+EML4,IL 6,1
+EML4,PD 1,1
+EML4,AKT,1
+EML4,Interferon regulatory factor 1,1
+EML4,ALK,1
+EML4,LC3B,1
+EML4,Lim,1
+EML4,p65,1
+EML4,PARP,1
+EML4,signal transducer and activator of transcription 3,1
+EML4,CSN5,1
+CD47,STAT3,1
+CD47,PD L1,1
+CD47,Fong,1
+CD47,GAPDH,1
+CD47,MYC,1
+CD47,SP8,1
+CD47,BET,1
+CD47,BCATM,1
+CD47,EGFR,1
+CD47,NF kappaB,1
+CD47,IL 6,1
+CD47,PD 1,1
+CD47,AKT,1
+CD47,Interferon regulatory factor 1,1
+CD47,ALK,1
+CD47,LC3B,1
+CD47,Lim,1
+CD47,p65,1
+CD47,PARP,1
+CD47,signal transducer and activator of transcription 3,1
+CD47,CSN5,1
+STAT3,PD L1,1
+STAT3,Fong,1
+STAT3,GAPDH,1
+STAT3,MYC,1
+STAT3,SP8,1
+STAT3,BET,1
+STAT3,BCATM,1
+STAT3,EGFR,1
+STAT3,NF kappaB,1
+STAT3,IL 6,1
+STAT3,PD 1,1
+STAT3,AKT,1
+STAT3,Interferon regulatory factor 1,1
+STAT3,ALK,1
+STAT3,LC3B,1
+STAT3,Lim,1
+STAT3,p65,1
+STAT3,PARP,1
+STAT3,signal transducer and activator of transcription 3,1
+STAT3,CSN5,1
+PD L1,Fong,1
+PD L1,GAPDH,1
+PD L1,MYC,1
+PD L1,SP8,1
+PD L1,BET,1
+PD L1,BCATM,1
+PD L1,EGFR,2
+PD L1,NF kappaB,1
+PD L1,IL 6,1
+PD L1,epidermal growth factor receptor,1
+PD L1,PD 1,1
+PD L1,AKT,1
+PD L1,Interferon regulatory factor 1,1
+PD L1,ALK,1
+PD L1,LC3B,1
+PD L1,Lim,1
+PD L1,p65,1
+PD L1,PARP,1
+PD L1,signal transducer and activator of transcription 3,1
+PD L1,CSN5,1
+Fong,GAPDH,1
+Fong,MYC,1
+Fong,SP8,1
+Fong,BET,1
+Fong,BCATM,1
+Fong,EGFR,1
+Fong,NF kappaB,1
+Fong,IL 6,1
+Fong,PD 1,1
+Fong,AKT,1
+Fong,Interferon regulatory factor 1,1
+Fong,ALK,1
+Fong,LC3B,1
+Fong,Lim,1
+Fong,p65,1
+Fong,PARP,1
+Fong,signal transducer and activator of transcription 3,1
+Fong,CSN5,1
+GAPDH,MYC,1
+GAPDH,SP8,1
+GAPDH,BET,1
+GAPDH,BCATM,1
+GAPDH,EGFR,1
+GAPDH,NF kappaB,1
+GAPDH,IL 6,1
+GAPDH,PD 1,1
+GAPDH,AKT,1
+GAPDH,Interferon regulatory factor 1,1
+GAPDH,ALK,1
+GAPDH,LC3B,1
+GAPDH,Lim,1
+GAPDH,p65,1
+GAPDH,PARP,1
+GAPDH,signal transducer and activator of transcription 3,1
+GAPDH,CSN5,1
+MYC,SP8,1
+MYC,BET,1
+MYC,BCATM,1
+MYC,EGFR,1
+MYC,NF kappaB,1
+MYC,IL 6,1
+MYC,PD 1,1
+MYC,AKT,1
+MYC,Interferon regulatory factor 1,1
+MYC,ALK,1
+MYC,LC3B,1
+MYC,Lim,1
+MYC,p65,1
+MYC,PARP,1
+MYC,signal transducer and activator of transcription 3,1
+MYC,CSN5,1
+SP8,BET,1
+SP8,BCATM,1
+SP8,EGFR,1
+SP8,NF kappaB,1
+SP8,IL 6,1
+SP8,PD 1,1
+SP8,AKT,1
+SP8,Interferon regulatory factor 1,1
+SP8,ALK,1
+SP8,LC3B,1
+SP8,Lim,1
+SP8,p65,1
+SP8,PARP,1
+SP8,signal transducer and activator of transcription 3,1
+SP8,CSN5,1
+BET,BCATM,1
+BET,EGFR,1
+BET,NF kappaB,1
+BET,IL 6,1
+BET,PD 1,1
+BET,AKT,1
+BET,Interferon regulatory factor 1,1
+BET,ALK,1
+BET,LC3B,1
+BET,Lim,1
+BET,p65,1
+BET,PARP,1
+BET,signal transducer and activator of transcription 3,1
+BET,CSN5,1
+BCATM,EGFR,1
+BCATM,NF kappaB,1
+BCATM,IL 6,1
+BCATM,PD 1,1
+BCATM,AKT,1
+BCATM,Interferon regulatory factor 1,1
+BCATM,ALK,1
+BCATM,LC3B,1
+BCATM,Lim,1
+BCATM,p65,1
+BCATM,PARP,1
+BCATM,signal transducer and activator of transcription 3,1
+BCATM,CSN5,1
+EGFR,NF kappaB,1
+EGFR,IL 6,1
+EGFR,epidermal growth factor receptor,1
+EGFR,PD 1,1
+EGFR,AKT,1
+EGFR,Interferon regulatory factor 1,1
+EGFR,ALK,1
+EGFR,LC3B,1
+EGFR,Lim,1
+EGFR,p65,1
+EGFR,PARP,1
+EGFR,signal transducer and activator of transcription 3,1
+EGFR,CSN5,1
+NF kappaB,IL 6,1
+NF kappaB,PD 1,1
+NF kappaB,AKT,1
+NF kappaB,Interferon regulatory factor 1,1
+NF kappaB,ALK,1
+NF kappaB,LC3B,1
+NF kappaB,Lim,1
+NF kappaB,p65,1
+NF kappaB,PARP,1
+NF kappaB,signal transducer and activator of transcription 3,1
+NF kappaB,CSN5,1
+IL 6,PD 1,1
+IL 6,AKT,1
+IL 6,Interferon regulatory factor 1,1
+IL 6,ALK,1
+IL 6,LC3B,1
+IL 6,Lim,1
+IL 6,p65,1
+IL 6,PARP,1
+IL 6,signal transducer and activator of transcription 3,1
+IL 6,CSN5,1
+PD 1,AKT,1
+PD 1,Interferon regulatory factor 1,1
+PD 1,ALK,1
+PD 1,LC3B,1
+PD 1,Lim,1
+PD 1,p65,1
+PD 1,PARP,1
+PD 1,signal transducer and activator of transcription 3,1
+PD 1,CSN5,1
+AKT,Interferon regulatory factor 1,1
+AKT,ALK,1
+AKT,LC3B,1
+AKT,Lim,1
+AKT,p65,1
+AKT,PARP,1
+AKT,signal transducer and activator of transcription 3,1
+AKT,CSN5,1
+Interferon regulatory factor 1,ALK,1
+Interferon regulatory factor 1,LC3B,1
+Interferon regulatory factor 1,Lim,1
+Interferon regulatory factor 1,p65,1
+Interferon regulatory factor 1,PARP,1
+Interferon regulatory factor 1,signal transducer and activator of transcription 3,1
+Interferon regulatory factor 1,CSN5,1
+ALK,LC3B,1
+ALK,Lim,1
+ALK,p65,1
+ALK,PARP,1
+ALK,signal transducer and activator of transcription 3,1
+ALK,CSN5,1
+LC3B,Lim,1
+LC3B,p65,1
+LC3B,PARP,1
+LC3B,signal transducer and activator of transcription 3,1
+LC3B,CSN5,1
+Lim,p65,1
+Lim,PARP,1
+Lim,signal transducer and activator of transcription 3,1
+Lim,CSN5,1
+p65,PARP,1
+p65,signal transducer and activator of transcription 3,1
+p65,CSN5,1
+PARP,signal transducer and activator of transcription 3,1
+PARP,CSN5,1
+signal transducer and activator of transcription 3,CSN5,1

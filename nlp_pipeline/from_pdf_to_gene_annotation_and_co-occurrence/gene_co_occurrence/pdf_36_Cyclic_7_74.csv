@@ -1,0 +1,1052 @@
+gene_name_1,gene_name_2,co_occurrence
+CREB,c Raf,1
+CREB,ERK1,1
+CREB,Sirt1,1
+CREB,Bak,1
+CREB,EPAC,1
+CREB,cAMP,2
+CREB,Erk,1
+CREB,NaF 1,1
+CREB,Sirt6,1
+CREB,hak,1
+CREB,SIRT6,2
+CREB,ERKs,1
+CREB,MDM2,2
+CREB,AP 1,1
+CREB,Iduna,2
+CREB,GAPDH,1
+CREB,ATM,2
+CREB,ERK2,1
+CREB,ERK,2
+CREB,COX 2,1
+CREB,Tel,1
+CREB,Hif1,1
+CREB,sirt6,1
+CREB,MEK,1
+CREB,BAK,1
+CREB,Raf,2
+CREB,sirtuin 6,1
+CREB,AKT1,1
+CREB,annexin V,1
+CREB,GATA3,2
+CREB,Raf 1,2
+CREB,SIRT1,2
+CREB,MAPK,2
+CREB,HDAC4,2
+CREB,atrogin 1,1
+CREB,SIRT7,1
+CREB,Sirtuin 6,2
+CREB,syn,1
+CREB,Skp2,1
+CREB,NEDD4L,2
+CREB,MEK1,1
+CREB,HDAC6,1
+CREB,SEMA5A,1
+CREB,SirT6,1
+CREB,Proc,1
+CREB,PARP,1
+CREB,SCF,1
+CREB,ITCH,1
+CREB,Mdm2,1
+CREB,caspase 3,1
+CREB,iduna,1
+CREB,Mek,1
+c Raf,ERK1,1
+c Raf,EPAC,1
+c Raf,cAMP,2
+c Raf,NaF 1,1
+c Raf,hak,1
+c Raf,SIRT6,2
+c Raf,ERKs,2
+c Raf,MDM2,1
+c Raf,Iduna,1
+c Raf,GAPDH,1
+c Raf,ATM,1
+c Raf,ERK2,1
+c Raf,ERK,2
+c Raf,Tel,1
+c Raf,MEK,2
+c Raf,Raf,2
+c Raf,sirtuin 6,2
+c Raf,annexin V,1
+c Raf,GATA3,1
+c Raf,Raf 1,1
+c Raf,SIRT1,1
+c Raf,MAPK,1
+c Raf,HDAC4,1
+c Raf,Jun,1
+c Raf,atrogin 1,1
+c Raf,SIRT7,1
+c Raf,Sirtuin 6,2
+c Raf,syn,1
+c Raf,Skp2,1
+c Raf,NEDD4L,1
+c Raf,MEK1,1
+c Raf,HDAC6,1
+c Raf,PARP,1
+c Raf,SCF,1
+c Raf,ITCH,1
+c Raf,Mdm2,1
+c Raf,caspase 3,1
+c Raf,iduna,1
+ERK1,EPAC,1
+ERK1,cAMP,1
+ERK1,NaF 1,1
+ERK1,hak,1
+ERK1,SIRT6,1
+ERK1,ERKs,1
+ERK1,MDM2,1
+ERK1,Iduna,1
+ERK1,GAPDH,1
+ERK1,ATM,1
+ERK1,ERK2,1
+ERK1,ERK,1
+ERK1,Tel,1
+ERK1,MEK,1
+ERK1,Raf,1
+ERK1,sirtuin 6,1
+ERK1,annexin V,1
+ERK1,GATA3,1
+ERK1,Raf 1,1
+ERK1,SIRT1,1
+ERK1,MAPK,1
+ERK1,HDAC4,1
+ERK1,atrogin 1,1
+ERK1,SIRT7,1
+ERK1,Sirtuin 6,1
+ERK1,syn,1
+ERK1,Skp2,1
+ERK1,NEDD4L,1
+ERK1,MEK1,1
+ERK1,HDAC6,1
+ERK1,PARP,1
+ERK1,SCF,1
+ERK1,ITCH,1
+ERK1,Mdm2,1
+ERK1,caspase 3,1
+ERK1,iduna,1
+Sirt1,Bak,1
+Sirt1,cAMP,1
+Sirt1,Erk,1
+Sirt1,Sirt6,1
+Sirt1,SIRT6,1
+Sirt1,MDM2,1
+Sirt1,AP 1,1
+Sirt1,Iduna,1
+Sirt1,ATM,1
+Sirt1,ERK,1
+Sirt1,COX 2,1
+Sirt1,Hif1,1
+Sirt1,sirt6,1
+Sirt1,BAK,1
+Sirt1,Raf,1
+Sirt1,AKT1,1
+Sirt1,GATA3,1
+Sirt1,Raf 1,1
+Sirt1,SIRT1,1
+Sirt1,MAPK,1
+Sirt1,HDAC4,1
+Sirt1,Sirtuin 6,1
+Sirt1,NEDD4L,1
+Sirt1,SEMA5A,1
+Sirt1,SirT6,1
+Sirt1,Proc,1
+Sirt1,Mek,1
+Bak,cAMP,1
+Bak,Erk,1
+Bak,Sirt6,1
+Bak,SIRT6,1
+Bak,MDM2,1
+Bak,AP 1,1
+Bak,Iduna,1
+Bak,ATM,1
+Bak,ERK,1
+Bak,COX 2,1
+Bak,Hif1,1
+Bak,sirt6,1
+Bak,BAK,1
+Bak,Raf,1
+Bak,AKT1,1
+Bak,GATA3,1
+Bak,Raf 1,1
+Bak,SIRT1,1
+Bak,MAPK,1
+Bak,HDAC4,1
+Bak,Sirtuin 6,1
+Bak,NEDD4L,1
+Bak,SEMA5A,1
+Bak,SirT6,1
+Bak,Proc,1
+Bak,Mek,1
+EPAC,cAMP,1
+EPAC,NaF 1,1
+EPAC,hak,1
+EPAC,SIRT6,1
+EPAC,ERKs,1
+EPAC,MDM2,1
+EPAC,Iduna,1
+EPAC,GAPDH,1
+EPAC,ATM,1
+EPAC,ERK2,1
+EPAC,ERK,1
+EPAC,Tel,1
+EPAC,MEK,1
+EPAC,Raf,1
+EPAC,sirtuin 6,1
+EPAC,annexin V,1
+EPAC,GATA3,1
+EPAC,Raf 1,1
+EPAC,SIRT1,1
+EPAC,MAPK,1
+EPAC,HDAC4,1
+EPAC,atrogin 1,1
+EPAC,SIRT7,1
+EPAC,Sirtuin 6,1
+EPAC,syn,1
+EPAC,Skp2,1
+EPAC,NEDD4L,1
+EPAC,MEK1,1
+EPAC,HDAC6,1
+EPAC,PARP,1
+EPAC,SCF,1
+EPAC,ITCH,1
+EPAC,Mdm2,1
+EPAC,caspase 3,1
+EPAC,iduna,1
+cAMP,Erk,1
+cAMP,NaF 1,1
+cAMP,Sirt6,1
+cAMP,hak,1
+cAMP,SIRT6,3
+cAMP,ERKs,2
+cAMP,MDM2,2
+cAMP,AP 1,1
+cAMP,Iduna,2
+cAMP,GAPDH,1
+cAMP,ATM,2
+cAMP,ERK2,1
+cAMP,ERK,3
+cAMP,COX 2,1
+cAMP,Tel,1
+cAMP,Hif1,1
+cAMP,sirt6,1
+cAMP,MEK,2
+cAMP,BAK,1
+cAMP,Raf,3
+cAMP,sirtuin 6,2
+cAMP,AKT1,1
+cAMP,annexin V,1
+cAMP,GATA3,2
+cAMP,Raf 1,2
+cAMP,SIRT1,2
+cAMP,MAPK,2
+cAMP,HDAC4,2
+cAMP,Jun,1
+cAMP,atrogin 1,1
+cAMP,SIRT7,1
+cAMP,Sirtuin 6,3
+cAMP,syn,1
+cAMP,Skp2,1
+cAMP,NEDD4L,2
+cAMP,MEK1,1
+cAMP,HDAC6,1
+cAMP,SEMA5A,1
+cAMP,SirT6,1
+cAMP,Proc,1
+cAMP,PARP,1
+cAMP,SCF,1
+cAMP,ITCH,1
+cAMP,Mdm2,1
+cAMP,caspase 3,1
+cAMP,iduna,1
+cAMP,Mek,1
+Erk,Sirt6,1
+Erk,SIRT6,1
+Erk,MDM2,1
+Erk,AP 1,1
+Erk,Iduna,1
+Erk,ATM,1
+Erk,ERK,1
+Erk,COX 2,1
+Erk,Hif1,1
+Erk,sirt6,1
+Erk,BAK,1
+Erk,Raf,1
+Erk,AKT1,1
+Erk,GATA3,1
+Erk,Raf 1,1
+Erk,SIRT1,1
+Erk,MAPK,1
+Erk,HDAC4,1
+Erk,Sirtuin 6,1
+Erk,NEDD4L,1
+Erk,SEMA5A,1
+Erk,SirT6,1
+Erk,Proc,1
+Erk,Mek,1
+NaF 1,hak,1
+NaF 1,SIRT6,1
+NaF 1,ERKs,1
+NaF 1,MDM2,1
+NaF 1,Iduna,1
+NaF 1,GAPDH,1
+NaF 1,ATM,1
+NaF 1,ERK2,1
+NaF 1,ERK,1
+NaF 1,Tel,1
+NaF 1,MEK,1
+NaF 1,Raf,1
+NaF 1,sirtuin 6,1
+NaF 1,annexin V,1
+NaF 1,GATA3,1
+NaF 1,Raf 1,1
+NaF 1,SIRT1,1
+NaF 1,MAPK,1
+NaF 1,HDAC4,1
+NaF 1,atrogin 1,1
+NaF 1,SIRT7,1
+NaF 1,Sirtuin 6,1
+NaF 1,syn,1
+NaF 1,Skp2,1
+NaF 1,NEDD4L,1
+NaF 1,MEK1,1
+NaF 1,HDAC6,1
+NaF 1,PARP,1
+NaF 1,SCF,1
+NaF 1,ITCH,1
+NaF 1,Mdm2,1
+NaF 1,caspase 3,1
+NaF 1,iduna,1
+Sirt6,SIRT6,1
+Sirt6,MDM2,1
+Sirt6,AP 1,1
+Sirt6,Iduna,1
+Sirt6,ATM,1
+Sirt6,ERK,1
+Sirt6,COX 2,1
+Sirt6,Hif1,1
+Sirt6,sirt6,1
+Sirt6,BAK,1
+Sirt6,Raf,1
+Sirt6,AKT1,1
+Sirt6,GATA3,1
+Sirt6,Raf 1,1
+Sirt6,SIRT1,1
+Sirt6,MAPK,1
+Sirt6,HDAC4,1
+Sirt6,Sirtuin 6,1
+Sirt6,NEDD4L,1
+Sirt6,SEMA5A,1
+Sirt6,SirT6,1
+Sirt6,Proc,1
+Sirt6,Mek,1
+hak,SIRT6,1
+hak,ERKs,1
+hak,MDM2,1
+hak,Iduna,1
+hak,GAPDH,1
+hak,ATM,1
+hak,ERK2,1
+hak,ERK,1
+hak,Tel,1
+hak,MEK,1
+hak,Raf,1
+hak,sirtuin 6,1
+hak,annexin V,1
+hak,GATA3,1
+hak,Raf 1,1
+hak,SIRT1,1
+hak,MAPK,1
+hak,HDAC4,1
+hak,atrogin 1,1
+hak,SIRT7,1
+hak,Sirtuin 6,1
+hak,syn,1
+hak,Skp2,1
+hak,NEDD4L,1
+hak,MEK1,1
+hak,HDAC6,1
+hak,PARP,1
+hak,SCF,1
+hak,ITCH,1
+hak,Mdm2,1
+hak,caspase 3,1
+hak,iduna,1
+SIRT6,ERKs,2
+SIRT6,MDM2,2
+SIRT6,AP 1,1
+SIRT6,Iduna,2
+SIRT6,GAPDH,1
+SIRT6,ATM,2
+SIRT6,ERK2,1
+SIRT6,ERK,3
+SIRT6,COX 2,1
+SIRT6,Tel,1
+SIRT6,Hif1,1
+SIRT6,sirt6,1
+SIRT6,MEK,2
+SIRT6,BAK,1
+SIRT6,Raf,3
+SIRT6,sirtuin 6,2
+SIRT6,AKT1,1
+SIRT6,annexin V,1
+SIRT6,GATA3,2
+SIRT6,Raf 1,2
+SIRT6,SIRT1,2
+SIRT6,MAPK,2
+SIRT6,HDAC4,2
+SIRT6,Jun,1
+SIRT6,atrogin 1,1
+SIRT6,SIRT7,1
+SIRT6,Sirtuin 6,3
+SIRT6,syn,1
+SIRT6,Skp2,1
+SIRT6,NEDD4L,2
+SIRT6,MEK1,1
+SIRT6,HDAC6,1
+SIRT6,SEMA5A,1
+SIRT6,SirT6,1
+SIRT6,Proc,1
+SIRT6,PARP,1
+SIRT6,SCF,1
+SIRT6,ITCH,1
+SIRT6,Mdm2,1
+SIRT6,caspase 3,1
+SIRT6,iduna,1
+SIRT6,Mek,1
+ERKs,MDM2,1
+ERKs,Iduna,1
+ERKs,GAPDH,1
+ERKs,ATM,1
+ERKs,ERK2,1
+ERKs,ERK,2
+ERKs,Tel,1
+ERKs,MEK,2
+ERKs,Raf,2
+ERKs,sirtuin 6,2
+ERKs,annexin V,1
+ERKs,GATA3,1
+ERKs,Raf 1,1
+ERKs,SIRT1,1
+ERKs,MAPK,1
+ERKs,HDAC4,1
+ERKs,Jun,1
+ERKs,atrogin 1,1
+ERKs,SIRT7,1
+ERKs,Sirtuin 6,2
+ERKs,syn,1
+ERKs,Skp2,1
+ERKs,NEDD4L,1
+ERKs,MEK1,1
+ERKs,HDAC6,1
+ERKs,PARP,1
+ERKs,SCF,1
+ERKs,ITCH,1
+ERKs,Mdm2,1
+ERKs,caspase 3,1
+ERKs,iduna,1
+MDM2,AP 1,1
+MDM2,Iduna,2
+MDM2,GAPDH,1
+MDM2,ATM,2
+MDM2,ERK2,1
+MDM2,ERK,2
+MDM2,COX 2,1
+MDM2,Tel,1
+MDM2,Hif1,1
+MDM2,sirt6,1
+MDM2,MEK,1
+MDM2,BAK,1
+MDM2,Raf,2
+MDM2,sirtuin 6,1
+MDM2,AKT1,1
+MDM2,annexin V,1
+MDM2,GATA3,2
+MDM2,Raf 1,2
+MDM2,SIRT1,2
+MDM2,MAPK,2
+MDM2,HDAC4,2
+MDM2,atrogin 1,1
+MDM2,SIRT7,1
+MDM2,Sirtuin 6,2
+MDM2,syn,1
+MDM2,Skp2,1
+MDM2,NEDD4L,2
+MDM2,MEK1,1
+MDM2,HDAC6,1
+MDM2,SEMA5A,1
+MDM2,SirT6,1
+MDM2,Proc,1
+MDM2,PARP,1
+MDM2,SCF,1
+MDM2,ITCH,1
+MDM2,Mdm2,1
+MDM2,caspase 3,1
+MDM2,iduna,1
+MDM2,Mek,1
+AP 1,Iduna,1
+AP 1,ATM,1
+AP 1,ERK,1
+AP 1,COX 2,1
+AP 1,Hif1,1
+AP 1,sirt6,1
+AP 1,BAK,1
+AP 1,Raf,1
+AP 1,AKT1,1
+AP 1,GATA3,1
+AP 1,Raf 1,1
+AP 1,SIRT1,1
+AP 1,MAPK,1
+AP 1,HDAC4,1
+AP 1,Sirtuin 6,1
+AP 1,NEDD4L,1
+AP 1,SEMA5A,1
+AP 1,SirT6,1
+AP 1,Proc,1
+AP 1,Mek,1
+Iduna,GAPDH,1
+Iduna,ATM,2
+Iduna,ERK2,1
+Iduna,ERK,2
+Iduna,COX 2,1
+Iduna,Tel,1
+Iduna,Hif1,1
+Iduna,sirt6,1
+Iduna,MEK,1
+Iduna,BAK,1
+Iduna,Raf,2
+Iduna,sirtuin 6,1
+Iduna,AKT1,1
+Iduna,annexin V,1
+Iduna,GATA3,2
+Iduna,Raf 1,2
+Iduna,SIRT1,2
+Iduna,MAPK,2
+Iduna,HDAC4,2
+Iduna,atrogin 1,1
+Iduna,SIRT7,1
+Iduna,Sirtuin 6,2
+Iduna,syn,1
+Iduna,Skp2,1
+Iduna,NEDD4L,2
+Iduna,MEK1,1
+Iduna,HDAC6,1
+Iduna,SEMA5A,1
+Iduna,SirT6,1
+Iduna,Proc,1
+Iduna,PARP,1
+Iduna,SCF,1
+Iduna,ITCH,1
+Iduna,Mdm2,1
+Iduna,caspase 3,1
+Iduna,iduna,1
+Iduna,Mek,1
+GAPDH,ATM,1
+GAPDH,ERK2,1
+GAPDH,ERK,1
+GAPDH,Tel,1
+GAPDH,MEK,1
+GAPDH,Raf,1
+GAPDH,sirtuin 6,1
+GAPDH,annexin V,1
+GAPDH,GATA3,1
+GAPDH,Raf 1,1
+GAPDH,SIRT1,1
+GAPDH,MAPK,1
+GAPDH,HDAC4,1
+GAPDH,atrogin 1,1
+GAPDH,SIRT7,1
+GAPDH,Sirtuin 6,1
+GAPDH,syn,1
+GAPDH,Skp2,1
+GAPDH,NEDD4L,1
+GAPDH,MEK1,1
+GAPDH,HDAC6,1
+GAPDH,PARP,1
+GAPDH,SCF,1
+GAPDH,ITCH,1
+GAPDH,Mdm2,1
+GAPDH,caspase 3,1
+GAPDH,iduna,1
+ATM,ERK2,1
+ATM,ERK,2
+ATM,COX 2,1
+ATM,Tel,1
+ATM,Hif1,1
+ATM,sirt6,1
+ATM,MEK,1
+ATM,BAK,1
+ATM,Raf,2
+ATM,sirtuin 6,1
+ATM,AKT1,1
+ATM,annexin V,1
+ATM,GATA3,2
+ATM,Raf 1,2
+ATM,SIRT1,2
+ATM,MAPK,2
+ATM,HDAC4,2
+ATM,atrogin 1,1
+ATM,SIRT7,1
+ATM,Sirtuin 6,2
+ATM,syn,1
+ATM,Skp2,1
+ATM,NEDD4L,2
+ATM,MEK1,1
+ATM,HDAC6,1
+ATM,SEMA5A,1
+ATM,SirT6,1
+ATM,Proc,1
+ATM,PARP,1
+ATM,SCF,1
+ATM,ITCH,1
+ATM,Mdm2,1
+ATM,caspase 3,1
+ATM,iduna,1
+ATM,Mek,1
+ERK2,ERK,1
+ERK2,Tel,1
+ERK2,MEK,1
+ERK2,Raf,1
+ERK2,sirtuin 6,1
+ERK2,annexin V,1
+ERK2,GATA3,1
+ERK2,Raf 1,1
+ERK2,SIRT1,1
+ERK2,MAPK,1
+ERK2,HDAC4,1
+ERK2,atrogin 1,1
+ERK2,SIRT7,1
+ERK2,Sirtuin 6,1
+ERK2,syn,1
+ERK2,Skp2,1
+ERK2,NEDD4L,1
+ERK2,MEK1,1
+ERK2,HDAC6,1
+ERK2,PARP,1
+ERK2,SCF,1
+ERK2,ITCH,1
+ERK2,Mdm2,1
+ERK2,caspase 3,1
+ERK2,iduna,1
+ERK,COX 2,1
+ERK,Tel,1
+ERK,Hif1,1
+ERK,sirt6,1
+ERK,MEK,2
+ERK,BAK,1
+ERK,Raf,3
+ERK,sirtuin 6,2
+ERK,AKT1,1
+ERK,annexin V,1
+ERK,GATA3,2
+ERK,Raf 1,2
+ERK,SIRT1,2
+ERK,MAPK,2
+ERK,HDAC4,2
+ERK,Jun,1
+ERK,atrogin 1,1
+ERK,SIRT7,1
+ERK,Sirtuin 6,3
+ERK,syn,1
+ERK,Skp2,1
+ERK,NEDD4L,2
+ERK,MEK1,1
+ERK,HDAC6,1
+ERK,SEMA5A,1
+ERK,SirT6,1
+ERK,Proc,1
+ERK,PARP,1
+ERK,SCF,1
+ERK,ITCH,1
+ERK,Mdm2,1
+ERK,caspase 3,1
+ERK,iduna,1
+ERK,Mek,1
+COX 2,Hif1,1
+COX 2,sirt6,1
+COX 2,BAK,1
+COX 2,Raf,1
+COX 2,AKT1,1
+COX 2,GATA3,1
+COX 2,Raf 1,1
+COX 2,SIRT1,1
+COX 2,MAPK,1
+COX 2,HDAC4,1
+COX 2,Sirtuin 6,1
+COX 2,NEDD4L,1
+COX 2,SEMA5A,1
+COX 2,SirT6,1
+COX 2,Proc,1
+COX 2,Mek,1
+Tel,MEK,1
+Tel,Raf,1
+Tel,sirtuin 6,1
+Tel,annexin V,1
+Tel,GATA3,1
+Tel,Raf 1,1
+Tel,SIRT1,1
+Tel,MAPK,1
+Tel,HDAC4,1
+Tel,atrogin 1,1
+Tel,SIRT7,1
+Tel,Sirtuin 6,1
+Tel,syn,1
+Tel,Skp2,1
+Tel,NEDD4L,1
+Tel,MEK1,1
+Tel,HDAC6,1
+Tel,PARP,1
+Tel,SCF,1
+Tel,ITCH,1
+Tel,Mdm2,1
+Tel,caspase 3,1
+Tel,iduna,1
+Hif1,sirt6,1
+Hif1,BAK,1
+Hif1,Raf,1
+Hif1,AKT1,1
+Hif1,GATA3,1
+Hif1,Raf 1,1
+Hif1,SIRT1,1
+Hif1,MAPK,1
+Hif1,HDAC4,1
+Hif1,Sirtuin 6,1
+Hif1,NEDD4L,1
+Hif1,SEMA5A,1
+Hif1,SirT6,1
+Hif1,Proc,1
+Hif1,Mek,1
+sirt6,BAK,1
+sirt6,Raf,1
+sirt6,AKT1,1
+sirt6,GATA3,1
+sirt6,Raf 1,1
+sirt6,SIRT1,1
+sirt6,MAPK,1
+sirt6,HDAC4,1
+sirt6,Sirtuin 6,1
+sirt6,NEDD4L,1
+sirt6,SEMA5A,1
+sirt6,SirT6,1
+sirt6,Proc,1
+sirt6,Mek,1
+MEK,Raf,2
+MEK,sirtuin 6,2
+MEK,annexin V,1
+MEK,GATA3,1
+MEK,Raf 1,1
+MEK,SIRT1,1
+MEK,MAPK,1
+MEK,HDAC4,1
+MEK,Jun,1
+MEK,atrogin 1,1
+MEK,SIRT7,1
+MEK,Sirtuin 6,2
+MEK,syn,1
+MEK,Skp2,1
+MEK,NEDD4L,1
+MEK,MEK1,1
+MEK,HDAC6,1
+MEK,PARP,1
+MEK,SCF,1
+MEK,ITCH,1
+MEK,Mdm2,1
+MEK,caspase 3,1
+MEK,iduna,1
+BAK,Raf,1
+BAK,AKT1,1
+BAK,GATA3,1
+BAK,Raf 1,1
+BAK,SIRT1,1
+BAK,MAPK,1
+BAK,HDAC4,1
+BAK,Sirtuin 6,1
+BAK,NEDD4L,1
+BAK,SEMA5A,1
+BAK,SirT6,1
+BAK,Proc,1
+BAK,Mek,1
+Raf,sirtuin 6,2
+Raf,AKT1,1
+Raf,annexin V,1
+Raf,GATA3,2
+Raf,Raf 1,2
+Raf,SIRT1,2
+Raf,MAPK,2
+Raf,HDAC4,2
+Raf,Jun,1
+Raf,atrogin 1,1
+Raf,SIRT7,1
+Raf,Sirtuin 6,3
+Raf,syn,1
+Raf,Skp2,1
+Raf,NEDD4L,2
+Raf,MEK1,1
+Raf,HDAC6,1
+Raf,SEMA5A,1
+Raf,SirT6,1
+Raf,Proc,1
+Raf,PARP,1
+Raf,SCF,1
+Raf,ITCH,1
+Raf,Mdm2,1
+Raf,caspase 3,1
+Raf,iduna,1
+Raf,Mek,1
+sirtuin 6,annexin V,1
+sirtuin 6,GATA3,1
+sirtuin 6,Raf 1,1
+sirtuin 6,SIRT1,1
+sirtuin 6,MAPK,1
+sirtuin 6,HDAC4,1
+sirtuin 6,Jun,1
+sirtuin 6,atrogin 1,1
+sirtuin 6,SIRT7,1
+sirtuin 6,Sirtuin 6,2
+sirtuin 6,syn,1
+sirtuin 6,Skp2,1
+sirtuin 6,NEDD4L,1
+sirtuin 6,MEK1,1
+sirtuin 6,HDAC6,1
+sirtuin 6,PARP,1
+sirtuin 6,SCF,1
+sirtuin 6,ITCH,1
+sirtuin 6,Mdm2,1
+sirtuin 6,caspase 3,1
+sirtuin 6,iduna,1
+AKT1,GATA3,1
+AKT1,Raf 1,1
+AKT1,SIRT1,1
+AKT1,MAPK,1
+AKT1,HDAC4,1
+AKT1,Sirtuin 6,1
+AKT1,NEDD4L,1
+AKT1,SEMA5A,1
+AKT1,SirT6,1
+AKT1,Proc,1
+AKT1,Mek,1
+annexin V,GATA3,1
+annexin V,Raf 1,1
+annexin V,SIRT1,1
+annexin V,MAPK,1
+annexin V,HDAC4,1
+annexin V,atrogin 1,1
+annexin V,SIRT7,1
+annexin V,Sirtuin 6,1
+annexin V,syn,1
+annexin V,Skp2,1
+annexin V,NEDD4L,1
+annexin V,MEK1,1
+annexin V,HDAC6,1
+annexin V,PARP,1
+annexin V,SCF,1
+annexin V,ITCH,1
+annexin V,Mdm2,1
+annexin V,caspase 3,1
+annexin V,iduna,1
+GATA3,Raf 1,2
+GATA3,SIRT1,2
+GATA3,MAPK,2
+GATA3,HDAC4,2
+GATA3,atrogin 1,1
+GATA3,SIRT7,1
+GATA3,Sirtuin 6,2
+GATA3,syn,1
+GATA3,Skp2,1
+GATA3,NEDD4L,2
+GATA3,MEK1,1
+GATA3,HDAC6,1
+GATA3,SEMA5A,1
+GATA3,SirT6,1
+GATA3,Proc,1
+GATA3,PARP,1
+GATA3,SCF,1
+GATA3,ITCH,1
+GATA3,Mdm2,1
+GATA3,caspase 3,1
+GATA3,iduna,1
+GATA3,Mek,1
+Raf 1,SIRT1,2
+Raf 1,MAPK,2
+Raf 1,HDAC4,2
+Raf 1,atrogin 1,1
+Raf 1,SIRT7,1
+Raf 1,Sirtuin 6,2
+Raf 1,syn,1
+Raf 1,Skp2,1
+Raf 1,NEDD4L,2
+Raf 1,MEK1,1
+Raf 1,HDAC6,1
+Raf 1,SEMA5A,1
+Raf 1,SirT6,1
+Raf 1,Proc,1
+Raf 1,PARP,1
+Raf 1,SCF,1
+Raf 1,ITCH,1
+Raf 1,Mdm2,1
+Raf 1,caspase 3,1
+Raf 1,iduna,1
+Raf 1,Mek,1
+SIRT1,MAPK,2
+SIRT1,HDAC4,2
+SIRT1,atrogin 1,1
+SIRT1,SIRT7,1
+SIRT1,Sirtuin 6,2
+SIRT1,syn,1
+SIRT1,Skp2,1
+SIRT1,NEDD4L,2
+SIRT1,MEK1,1
+SIRT1,HDAC6,1
+SIRT1,SEMA5A,1
+SIRT1,SirT6,1
+SIRT1,Proc,1
+SIRT1,PARP,1
+SIRT1,SCF,1
+SIRT1,ITCH,1
+SIRT1,Mdm2,1
+SIRT1,caspase 3,1
+SIRT1,iduna,1
+SIRT1,Mek,1
+MAPK,HDAC4,2
+MAPK,atrogin 1,1
+MAPK,SIRT7,1
+MAPK,Sirtuin 6,2
+MAPK,syn,1
+MAPK,Skp2,1
+MAPK,NEDD4L,2
+MAPK,MEK1,1
+MAPK,HDAC6,1
+MAPK,SEMA5A,1
+MAPK,SirT6,1
+MAPK,Proc,1
+MAPK,PARP,1
+MAPK,SCF,1
+MAPK,ITCH,1
+MAPK,Mdm2,1
+MAPK,caspase 3,1
+MAPK,iduna,1
+MAPK,Mek,1
+HDAC4,atrogin 1,1
+HDAC4,SIRT7,1
+HDAC4,Sirtuin 6,2
+HDAC4,syn,1
+HDAC4,Skp2,1
+HDAC4,NEDD4L,2
+HDAC4,MEK1,1
+HDAC4,HDAC6,1
+HDAC4,SEMA5A,1
+HDAC4,SirT6,1
+HDAC4,Proc,1
+HDAC4,PARP,1
+HDAC4,SCF,1
+HDAC4,ITCH,1
+HDAC4,Mdm2,1
+HDAC4,caspase 3,1
+HDAC4,iduna,1
+HDAC4,Mek,1
+Jun,Sirtuin 6,1
+atrogin 1,SIRT7,1
+atrogin 1,Sirtuin 6,1
+atrogin 1,syn,1
+atrogin 1,Skp2,1
+atrogin 1,NEDD4L,1
+atrogin 1,MEK1,1
+atrogin 1,HDAC6,1
+atrogin 1,PARP,1
+atrogin 1,SCF,1
+atrogin 1,ITCH,1
+atrogin 1,Mdm2,1
+atrogin 1,caspase 3,1
+atrogin 1,iduna,1
+SIRT7,Sirtuin 6,1
+SIRT7,syn,1
+SIRT7,Skp2,1
+SIRT7,NEDD4L,1
+SIRT7,MEK1,1
+SIRT7,HDAC6,1
+SIRT7,PARP,1
+SIRT7,SCF,1
+SIRT7,ITCH,1
+SIRT7,Mdm2,1
+SIRT7,caspase 3,1
+SIRT7,iduna,1
+Sirtuin 6,syn,1
+Sirtuin 6,Skp2,1
+Sirtuin 6,NEDD4L,2
+Sirtuin 6,MEK1,1
+Sirtuin 6,HDAC6,1
+Sirtuin 6,SEMA5A,1
+Sirtuin 6,SirT6,1
+Sirtuin 6,Proc,1
+Sirtuin 6,PARP,1
+Sirtuin 6,SCF,1
+Sirtuin 6,ITCH,1
+Sirtuin 6,Mdm2,1
+Sirtuin 6,caspase 3,1
+Sirtuin 6,iduna,1
+Sirtuin 6,Mek,1
+syn,Skp2,1
+syn,NEDD4L,1
+syn,MEK1,1
+syn,HDAC6,1
+syn,PARP,1
+syn,SCF,1
+syn,ITCH,1
+syn,Mdm2,1
+syn,caspase 3,1
+syn,iduna,1
+Skp2,NEDD4L,1
+Skp2,MEK1,1
+Skp2,HDAC6,1
+Skp2,PARP,1
+Skp2,SCF,1
+Skp2,ITCH,1
+Skp2,Mdm2,1
+Skp2,caspase 3,1
+Skp2,iduna,1
+NEDD4L,MEK1,1
+NEDD4L,HDAC6,1
+NEDD4L,SEMA5A,1
+NEDD4L,SirT6,1
+NEDD4L,Proc,1
+NEDD4L,PARP,1
+NEDD4L,SCF,1
+NEDD4L,ITCH,1
+NEDD4L,Mdm2,1
+NEDD4L,caspase 3,1
+NEDD4L,iduna,1
+NEDD4L,Mek,1
+MEK1,HDAC6,1
+MEK1,PARP,1
+MEK1,SCF,1
+MEK1,ITCH,1
+MEK1,Mdm2,1
+MEK1,caspase 3,1
+MEK1,iduna,1
+HDAC6,PARP,1
+HDAC6,SCF,1
+HDAC6,ITCH,1
+HDAC6,Mdm2,1
+HDAC6,caspase 3,1
+HDAC6,iduna,1
+SEMA5A,SirT6,1
+SEMA5A,Proc,1
+SEMA5A,Mek,1
+SirT6,Proc,1
+SirT6,Mek,1
+Proc,Mek,1
+PARP,SCF,1
+PARP,ITCH,1
+PARP,Mdm2,1
+PARP,caspase 3,1
+PARP,iduna,1
+SCF,ITCH,1
+SCF,Mdm2,1
+SCF,caspase 3,1
+SCF,iduna,1
+ITCH,Mdm2,1
+ITCH,caspase 3,1
+ITCH,iduna,1
+Mdm2,caspase 3,1
+Mdm2,iduna,1
+caspase 3,iduna,1

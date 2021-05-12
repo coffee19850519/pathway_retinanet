@@ -1,0 +1,897 @@
+gene_name_1,gene_name_2,co_occurrence
+HO 1,C EBP,1
+HO 1,EP4,1
+HO 1,ERK,2
+HO 1,Bcl 2,1
+HO 1,PCNA,1
+HO 1,E cadherin,1
+HO 1,CREB,2
+HO 1,contactin 1,1
+HO 1,nAChR,1
+HO 1,Bcl XL,1
+HO 1,p27,1
+HO 1,COX2,1
+HO 1,EP2,1
+HO 1,VEGF C,1
+HO 1,COX,1
+HO 1,TxAS,1
+HO 1,GSK3,2
+HO 1,Flt 4,1
+HO 1,Src,2
+HO 1,AKT,2
+HO 1,hnRNP U,2
+HO 1,RhoA,1
+HO 1,IAP2,1
+HO 1,PKC,1
+HO 1,DNMT1,2
+HO 1,Bad,1
+c Jun,IGF I,1
+c Jun,mTOR,1
+c Jun,COX2,1
+STAT3,FAK,2
+STAT3,RAR beta,1
+STAT3,ERK,1
+STAT3,cyclooxygenase 2,1
+STAT3,ALDH1A1,1
+STAT3,CREB,2
+STAT3,nAChR,1
+STAT3,Bcl XL,1
+STAT3,p21,1
+STAT3,CD62L,1
+STAT3,EGFR,1
+STAT3,Mok,1
+STAT3,RAR,1
+STAT3,tumor necrosis factor alpha,1
+STAT3,Src,2
+STAT3,NF kappa B,1
+STAT3,PTEN,1
+STAT3,RhoA,1
+STAT3,bad,1
+STAT3,PKC,2
+STAT3,SIRT1,1
+STAT3,Bad,1
+Tob,P450,1
+Tob,EP4,1
+Tob,mTOR,1
+Tob,NFkappaB,1
+Tob,Akt,1
+Tob,CYP2A6,1
+Tob,EP2,1
+Tob,CYP2A13,1
+Tob,COX,1
+Tob,RAR,1
+Tob,Nat,1
+Tob,AKT,1
+Tob,Rev,1
+Tob,cyclin D1,1
+Tob,JNK,1
+Tob,RhoA,1
+Tob,SIRT1,1
+Tob,p53,1
+DNMT3B,ase 1,1
+DNMT3B,Proc,1
+DNMT3B,cyclooxygenase 2,1
+DNMT3B,Meng,1
+DNMT3B,p27,1
+DNMT3B,a beta,1
+DNMT3B,vascular endothelial growth factor,1
+DNMT3B,Thromboxane A2 receptor,1
+DNMT3B,Mok,1
+DNMT3B,Dnmt1,1
+DNMT3B,thromboxane synthase,1
+DNMT3B,beta catenin,1
+DNMT3B,Thromboxane synthase,1
+DNMT3B,Rev,1
+DNMT3B,VEGF,1
+DNMT3B,CXCL12,1
+DNMT3B,Siva1,1
+DNMT3B,p16INK4a,1
+DNMT3B,DNMT1,1
+DNMT3B,p53,1
+ALDH,IL 6,1
+ALDH,mTOR,1
+ALDH,AKT,1
+ALDH,RhoA,1
+FAK,RAR beta,1
+FAK,ERK,1
+FAK,cyclooxygenase 2,1
+FAK,ALDH1A1,1
+FAK,CREB,2
+FAK,nAChR,1
+FAK,Bcl XL,1
+FAK,p21,1
+FAK,CD62L,1
+FAK,EGFR,1
+FAK,Mok,1
+FAK,RAR,1
+FAK,tumor necrosis factor alpha,1
+FAK,Src,2
+FAK,NF kappa B,1
+FAK,PTEN,1
+FAK,RhoA,1
+FAK,bad,1
+FAK,PKC,2
+FAK,SIRT1,1
+FAK,Bad,1
+C EBP,ERK,2
+C EBP,E cadherin,1
+C EBP,Contactin 1,1
+C EBP,CREB,1
+C EBP,contactin 1,2
+C EBP,nAChR,2
+C EBP,VEGF C,2
+C EBP,GSK3,1
+C EBP,Flt 4,2
+C EBP,Src,1
+C EBP,AKT,2
+C EBP,hnRNP U,1
+C EBP,RhoA,2
+C EBP,DNMT1,1
+P450,EP4,1
+P450,mTOR,1
+P450,NFkappaB,1
+P450,Akt,1
+P450,CYP2A6,1
+P450,EP2,1
+P450,CYP2A13,1
+P450,COX,1
+P450,RAR,1
+P450,Nat,1
+P450,AKT,1
+P450,Rev,1
+P450,cyclin D1,1
+P450,JNK,1
+P450,RhoA,1
+P450,SIRT1,1
+P450,p53,1
+retinoic acid receptor beta,IGF I,1
+retinoic acid receptor beta,miR 206,1
+retinoic acid receptor beta,miR 133b,1
+retinoic acid receptor beta,Cox,1
+RAR beta,cyclooxygenase 2,1
+RAR beta,ALDH1A1,1
+RAR beta,CREB,1
+RAR beta,p21,1
+RAR beta,EGFR,1
+RAR beta,Mok,1
+RAR beta,tumor necrosis factor alpha,1
+RAR beta,Src,1
+RAR beta,NF kappa B,1
+RAR beta,PTEN,1
+RAR beta,RhoA,1
+RAR beta,bad,1
+RAR beta,PKC,1
+RAR beta,SIRT1,1
+EP4,ERK,1
+EP4,mTOR,1
+EP4,Bcl 2,1
+EP4,PCNA,1
+EP4,NFkappaB,1
+EP4,CREB,1
+EP4,Akt,1
+EP4,CYP2A6,1
+EP4,Bcl XL,1
+EP4,p27,1
+EP4,COX2,1
+EP4,EP2,2
+EP4,CYP2A13,1
+EP4,COX,2
+EP4,TxAS,1
+EP4,RAR,1
+EP4,GSK3,1
+EP4,Nat,1
+EP4,Src,1
+EP4,AKT,2
+EP4,hnRNP U,1
+EP4,Rev,1
+EP4,cyclin D1,1
+EP4,JNK,1
+EP4,RhoA,1
+EP4,IAP2,1
+EP4,PKC,1
+EP4,SIRT1,1
+EP4,DNMT1,1
+EP4,Bad,1
+EP4,p53,1
+ERK,Prima 1,1
+ERK,Bcl 2,1
+ERK,PCNA,2
+ERK,E cadherin,2
+ERK,Contactin 1,2
+ERK,CREB,3
+ERK,contactin 1,3
+ERK,nAChR,3
+ERK,NAC,1
+ERK,Bcl XL,2
+ERK,p27,1
+ERK,CD62L,1
+ERK,COX2,1
+ERK,EP2,1
+ERK,CNTN 1,1
+ERK,VEGF C,3
+ERK,COX,1
+ERK,TxAS,1
+ERK,RAR,1
+ERK,GSK3,2
+ERK,Flt 4,3
+ERK,CNTN1,1
+ERK,Src,3
+ERK,AKT,4
+ERK,hnRNP U,2
+ERK,JNK,1
+ERK,RhoA,2
+ERK,IAP2,1
+ERK,PKC,2
+ERK,DNMT1,2
+ERK,alpha 7 nicotinic receptor,1
+ERK,Bad,2
+ERK,p53,2
+ERK,A beta,1
+IL 6,mTOR,1
+IL 6,AKT,1
+IL 6,RhoA,1
+Prima 1,PCNA,1
+Prima 1,NAC,1
+Prima 1,JNK,1
+Prima 1,p53,2
+IGF I,mTOR,1
+IGF I,miR 206,1
+IGF I,miR 133b,1
+IGF I,COX2,1
+IGF I,Cox,1
+mTOR,NFkappaB,1
+mTOR,Akt,1
+mTOR,CYP2A6,1
+mTOR,COX2,1
+mTOR,EP2,1
+mTOR,CYP2A13,1
+mTOR,COX,1
+mTOR,RAR,1
+mTOR,Nat,1
+mTOR,AKT,2
+mTOR,Rev,1
+mTOR,cyclin D1,1
+mTOR,JNK,1
+mTOR,RhoA,2
+mTOR,SIRT1,1
+mTOR,p53,1
+Bcl 2,PCNA,1
+Bcl 2,CREB,1
+Bcl 2,Bcl XL,1
+Bcl 2,p27,1
+Bcl 2,COX2,1
+Bcl 2,EP2,1
+Bcl 2,COX,1
+Bcl 2,TxAS,1
+Bcl 2,GSK3,1
+Bcl 2,Src,1
+Bcl 2,AKT,1
+Bcl 2,hnRNP U,1
+Bcl 2,IAP2,1
+Bcl 2,PKC,1
+Bcl 2,DNMT1,1
+Bcl 2,Bad,1
+PCNA,CREB,1
+PCNA,NAC,1
+PCNA,Bcl XL,1
+PCNA,p27,1
+PCNA,COX2,1
+PCNA,EP2,1
+PCNA,COX,1
+PCNA,TxAS,1
+PCNA,GSK3,1
+PCNA,Src,1
+PCNA,AKT,1
+PCNA,hnRNP U,1
+PCNA,JNK,1
+PCNA,IAP2,1
+PCNA,PKC,1
+PCNA,DNMT1,1
+PCNA,Bad,1
+PCNA,p53,1
+E cadherin,Contactin 1,1
+E cadherin,CREB,1
+E cadherin,contactin 1,2
+E cadherin,nAChR,1
+E cadherin,CNTN 1,1
+E cadherin,VEGF C,2
+E cadherin,GSK3,1
+E cadherin,Flt 4,2
+E cadherin,CNTN1,1
+E cadherin,Src,1
+E cadherin,AKT,2
+E cadherin,hnRNP U,1
+E cadherin,RhoA,1
+E cadherin,DNMT1,1
+E cadherin,alpha 7 nicotinic receptor,1
+E cadherin,p53,1
+E cadherin,A beta,1
+ase 1,Proc,1
+ase 1,cyclooxygenase 2,1
+ase 1,Meng,1
+ase 1,p27,1
+ase 1,a beta,1
+ase 1,vascular endothelial growth factor,1
+ase 1,Thromboxane A2 receptor,1
+ase 1,Mok,1
+ase 1,Dnmt1,1
+ase 1,thromboxane synthase,1
+ase 1,beta catenin,1
+ase 1,Thromboxane synthase,1
+ase 1,Rev,1
+ase 1,VEGF,1
+ase 1,CXCL12,1
+ase 1,Siva1,1
+ase 1,p16INK4a,1
+ase 1,DNMT1,1
+ase 1,p53,1
+Proc,cyclooxygenase 2,1
+Proc,Meng,1
+Proc,p27,1
+Proc,a beta,1
+Proc,vascular endothelial growth factor,1
+Proc,Thromboxane A2 receptor,1
+Proc,Mok,1
+Proc,Dnmt1,1
+Proc,thromboxane synthase,1
+Proc,beta catenin,1
+Proc,Thromboxane synthase,1
+Proc,Rev,1
+Proc,VEGF,1
+Proc,CXCL12,1
+Proc,Siva1,1
+Proc,p16INK4a,1
+Proc,DNMT1,1
+Proc,p53,1
+cyclooxygenase 2,Meng,1
+cyclooxygenase 2,ALDH1A1,1
+cyclooxygenase 2,CREB,1
+cyclooxygenase 2,p27,1
+cyclooxygenase 2,a beta,1
+cyclooxygenase 2,p21,1
+cyclooxygenase 2,vascular endothelial growth factor,1
+cyclooxygenase 2,EGFR,1
+cyclooxygenase 2,Thromboxane A2 receptor,1
+cyclooxygenase 2,Mok,2
+cyclooxygenase 2,tumor necrosis factor alpha,1
+cyclooxygenase 2,Src,1
+cyclooxygenase 2,Dnmt1,1
+cyclooxygenase 2,NF kappa B,1
+cyclooxygenase 2,thromboxane synthase,1
+cyclooxygenase 2,PTEN,1
+cyclooxygenase 2,beta catenin,1
+cyclooxygenase 2,Thromboxane synthase,1
+cyclooxygenase 2,Rev,1
+cyclooxygenase 2,RhoA,1
+cyclooxygenase 2,VEGF,1
+cyclooxygenase 2,bad,1
+cyclooxygenase 2,PKC,1
+cyclooxygenase 2,CXCL12,1
+cyclooxygenase 2,Siva1,1
+cyclooxygenase 2,p16INK4a,1
+cyclooxygenase 2,SIRT1,1
+cyclooxygenase 2,DNMT1,1
+cyclooxygenase 2,p53,1
+miR 206,miR 133b,1
+miR 206,Cox,1
+Meng,p27,1
+Meng,a beta,1
+Meng,vascular endothelial growth factor,1
+Meng,Thromboxane A2 receptor,1
+Meng,Mok,1
+Meng,Dnmt1,1
+Meng,thromboxane synthase,1
+Meng,beta catenin,1
+Meng,Thromboxane synthase,1
+Meng,Rev,1
+Meng,VEGF,1
+Meng,CXCL12,1
+Meng,Siva1,1
+Meng,p16INK4a,1
+Meng,DNMT1,1
+Meng,p53,1
+ALDH1A1,CREB,1
+ALDH1A1,p21,1
+ALDH1A1,EGFR,1
+ALDH1A1,Mok,1
+ALDH1A1,tumor necrosis factor alpha,1
+ALDH1A1,Src,1
+ALDH1A1,NF kappa B,1
+ALDH1A1,PTEN,1
+ALDH1A1,RhoA,1
+ALDH1A1,bad,1
+ALDH1A1,PKC,1
+ALDH1A1,SIRT1,1
+NFkappaB,Akt,1
+NFkappaB,CYP2A6,1
+NFkappaB,EP2,1
+NFkappaB,CYP2A13,1
+NFkappaB,COX,1
+NFkappaB,RAR,1
+NFkappaB,Nat,1
+NFkappaB,AKT,1
+NFkappaB,Rev,1
+NFkappaB,cyclin D1,1
+NFkappaB,JNK,1
+NFkappaB,RhoA,1
+NFkappaB,SIRT1,1
+NFkappaB,p53,1
+Contactin 1,contactin 1,2
+Contactin 1,nAChR,1
+Contactin 1,CNTN 1,1
+Contactin 1,VEGF C,2
+Contactin 1,Flt 4,2
+Contactin 1,CNTN1,1
+Contactin 1,AKT,2
+Contactin 1,RhoA,1
+Contactin 1,alpha 7 nicotinic receptor,1
+Contactin 1,p53,1
+Contactin 1,A beta,1
+CREB,contactin 1,1
+CREB,nAChR,2
+CREB,Bcl XL,2
+CREB,p27,1
+CREB,p21,1
+CREB,CD62L,1
+CREB,COX2,1
+CREB,EGFR,1
+CREB,EP2,1
+CREB,VEGF C,1
+CREB,Mok,1
+CREB,COX,1
+CREB,TxAS,2
+CREB,RAR,1
+CREB,GSK3,2
+CREB,tumor necrosis factor alpha,1
+CREB,Flt 4,1
+CREB,Src,4
+CREB,NF kappa B,1
+CREB,AKT,3
+CREB,thromboxane synthase,1
+CREB,hnRNP U,2
+CREB,PTEN,1
+CREB,RhoA,2
+CREB,VEGF,1
+CREB,IAP2,1
+CREB,bad,1
+CREB,PKC,3
+CREB,SIRT1,1
+CREB,DNMT1,3
+CREB,Bad,2
+contactin 1,nAChR,2
+contactin 1,CNTN 1,1
+contactin 1,VEGF C,3
+contactin 1,GSK3,1
+contactin 1,Flt 4,3
+contactin 1,CNTN1,1
+contactin 1,Src,1
+contactin 1,AKT,3
+contactin 1,hnRNP U,1
+contactin 1,RhoA,2
+contactin 1,DNMT1,1
+contactin 1,alpha 7 nicotinic receptor,1
+contactin 1,p53,1
+contactin 1,A beta,1
+nAChR,Bcl XL,1
+nAChR,CD62L,1
+nAChR,VEGF C,2
+nAChR,RAR,1
+nAChR,GSK3,1
+nAChR,Flt 4,2
+nAChR,Src,2
+nAChR,AKT,2
+nAChR,hnRNP U,1
+nAChR,RhoA,2
+nAChR,PKC,1
+nAChR,DNMT1,1
+nAChR,Bad,1
+Akt,CYP2A6,1
+Akt,EP2,1
+Akt,CYP2A13,1
+Akt,COX,1
+Akt,RAR,1
+Akt,Nat,1
+Akt,AKT,1
+Akt,Rev,1
+Akt,cyclin D1,1
+Akt,JNK,1
+Akt,RhoA,1
+Akt,SIRT1,1
+Akt,p53,1
+NAC,RAR,1
+NAC,JNK,1
+NAC,SIRT1,1
+NAC,p53,2
+CYP2A6,EP2,1
+CYP2A6,CYP2A13,1
+CYP2A6,COX,1
+CYP2A6,RAR,1
+CYP2A6,Nat,1
+CYP2A6,AKT,1
+CYP2A6,Rev,1
+CYP2A6,cyclin D1,1
+CYP2A6,JNK,1
+CYP2A6,RhoA,1
+CYP2A6,SIRT1,1
+CYP2A6,p53,1
+Bcl XL,p27,1
+Bcl XL,CD62L,1
+Bcl XL,COX2,1
+Bcl XL,EP2,1
+Bcl XL,COX,1
+Bcl XL,TxAS,1
+Bcl XL,RAR,1
+Bcl XL,GSK3,1
+Bcl XL,Src,2
+Bcl XL,AKT,1
+Bcl XL,hnRNP U,1
+Bcl XL,IAP2,1
+Bcl XL,PKC,2
+Bcl XL,DNMT1,1
+Bcl XL,Bad,2
+p27,a beta,1
+p27,COX2,1
+p27,vascular endothelial growth factor,1
+p27,EP2,1
+p27,Thromboxane A2 receptor,1
+p27,Mok,1
+p27,COX,1
+p27,TxAS,1
+p27,GSK3,1
+p27,Src,1
+p27,Dnmt1,1
+p27,AKT,1
+p27,thromboxane synthase,1
+p27,hnRNP U,1
+p27,beta catenin,1
+p27,Thromboxane synthase,1
+p27,Rev,1
+p27,VEGF,1
+p27,IAP2,1
+p27,PKC,1
+p27,CXCL12,1
+p27,Siva1,1
+p27,p16INK4a,1
+p27,DNMT1,2
+p27,Bad,1
+p27,p53,1
+a beta,vascular endothelial growth factor,1
+a beta,Thromboxane A2 receptor,1
+a beta,Mok,1
+a beta,Dnmt1,1
+a beta,thromboxane synthase,1
+a beta,beta catenin,1
+a beta,Thromboxane synthase,1
+a beta,Rev,1
+a beta,VEGF,1
+a beta,CXCL12,1
+a beta,Siva1,1
+a beta,p16INK4a,1
+a beta,DNMT1,1
+a beta,p53,1
+p21,EGFR,1
+p21,Mok,1
+p21,tumor necrosis factor alpha,1
+p21,Src,1
+p21,NF kappa B,1
+p21,PTEN,1
+p21,RhoA,1
+p21,bad,1
+p21,PKC,1
+p21,SIRT1,1
+CD62L,RAR,1
+CD62L,Src,1
+CD62L,PKC,1
+CD62L,Bad,1
+miR 133b,Cox,1
+COX2,EP2,1
+COX2,COX,1
+COX2,TxAS,1
+COX2,GSK3,1
+COX2,Src,1
+COX2,AKT,1
+COX2,hnRNP U,1
+COX2,IAP2,1
+COX2,PKC,1
+COX2,DNMT1,1
+COX2,Bad,1
+vascular endothelial growth factor,Thromboxane A2 receptor,1
+vascular endothelial growth factor,Mok,1
+vascular endothelial growth factor,Dnmt1,1
+vascular endothelial growth factor,thromboxane synthase,1
+vascular endothelial growth factor,beta catenin,1
+vascular endothelial growth factor,Thromboxane synthase,1
+vascular endothelial growth factor,Rev,1
+vascular endothelial growth factor,VEGF,1
+vascular endothelial growth factor,CXCL12,1
+vascular endothelial growth factor,Siva1,1
+vascular endothelial growth factor,p16INK4a,1
+vascular endothelial growth factor,DNMT1,1
+vascular endothelial growth factor,p53,1
+EGFR,Mok,1
+EGFR,tumor necrosis factor alpha,1
+EGFR,Src,1
+EGFR,NF kappa B,1
+EGFR,PTEN,1
+EGFR,RhoA,1
+EGFR,bad,1
+EGFR,PKC,1
+EGFR,SIRT1,1
+EP2,CYP2A13,1
+EP2,COX,2
+EP2,TxAS,1
+EP2,RAR,1
+EP2,GSK3,1
+EP2,Nat,1
+EP2,Src,1
+EP2,AKT,2
+EP2,hnRNP U,1
+EP2,Rev,1
+EP2,cyclin D1,1
+EP2,JNK,1
+EP2,RhoA,1
+EP2,IAP2,1
+EP2,PKC,1
+EP2,SIRT1,1
+EP2,DNMT1,1
+EP2,Bad,1
+EP2,p53,1
+CNTN 1,VEGF C,1
+CNTN 1,Flt 4,1
+CNTN 1,CNTN1,1
+CNTN 1,AKT,1
+CNTN 1,alpha 7 nicotinic receptor,1
+CNTN 1,p53,1
+CNTN 1,A beta,1
+VEGF C,GSK3,1
+VEGF C,Flt 4,3
+VEGF C,CNTN1,1
+VEGF C,Src,1
+VEGF C,AKT,3
+VEGF C,hnRNP U,1
+VEGF C,RhoA,2
+VEGF C,DNMT1,1
+VEGF C,alpha 7 nicotinic receptor,1
+VEGF C,p53,1
+VEGF C,A beta,1
+CYP2A13,COX,1
+CYP2A13,RAR,1
+CYP2A13,Nat,1
+CYP2A13,AKT,1
+CYP2A13,Rev,1
+CYP2A13,cyclin D1,1
+CYP2A13,JNK,1
+CYP2A13,RhoA,1
+CYP2A13,SIRT1,1
+CYP2A13,p53,1
+Thromboxane A2 receptor,Mok,1
+Thromboxane A2 receptor,Dnmt1,1
+Thromboxane A2 receptor,thromboxane synthase,1
+Thromboxane A2 receptor,beta catenin,1
+Thromboxane A2 receptor,Thromboxane synthase,1
+Thromboxane A2 receptor,Rev,1
+Thromboxane A2 receptor,VEGF,1
+Thromboxane A2 receptor,CXCL12,1
+Thromboxane A2 receptor,Siva1,1
+Thromboxane A2 receptor,p16INK4a,1
+Thromboxane A2 receptor,DNMT1,1
+Thromboxane A2 receptor,p53,1
+Mok,tumor necrosis factor alpha,1
+Mok,Src,1
+Mok,Dnmt1,1
+Mok,NF kappa B,1
+Mok,thromboxane synthase,1
+Mok,PTEN,1
+Mok,beta catenin,1
+Mok,Thromboxane synthase,1
+Mok,Rev,1
+Mok,RhoA,1
+Mok,VEGF,1
+Mok,bad,1
+Mok,PKC,1
+Mok,CXCL12,1
+Mok,Siva1,1
+Mok,p16INK4a,1
+Mok,SIRT1,1
+Mok,DNMT1,1
+Mok,p53,1
+COX,TxAS,1
+COX,RAR,1
+COX,GSK3,1
+COX,Nat,1
+COX,Src,1
+COX,AKT,2
+COX,hnRNP U,1
+COX,Rev,1
+COX,cyclin D1,1
+COX,JNK,1
+COX,RhoA,1
+COX,IAP2,1
+COX,PKC,1
+COX,SIRT1,1
+COX,DNMT1,1
+COX,Bad,1
+COX,p53,1
+TxAS,GSK3,1
+TxAS,Src,1
+TxAS,AKT,2
+TxAS,thromboxane synthase,1
+TxAS,hnRNP U,1
+TxAS,VEGF,1
+TxAS,IAP2,1
+TxAS,PKC,1
+TxAS,DNMT1,2
+TxAS,Bad,1
+RAR,Nat,1
+RAR,Src,1
+RAR,AKT,1
+RAR,Rev,1
+RAR,cyclin D1,1
+RAR,JNK,1
+RAR,RhoA,1
+RAR,PKC,1
+RAR,SIRT1,2
+RAR,Bad,1
+RAR,p53,2
+GSK3,Flt 4,1
+GSK3,Src,2
+GSK3,AKT,2
+GSK3,hnRNP U,2
+GSK3,RhoA,1
+GSK3,IAP2,1
+GSK3,PKC,1
+GSK3,DNMT1,2
+GSK3,Bad,1
+tumor necrosis factor alpha,Src,1
+tumor necrosis factor alpha,NF kappa B,1
+tumor necrosis factor alpha,PTEN,1
+tumor necrosis factor alpha,RhoA,1
+tumor necrosis factor alpha,bad,1
+tumor necrosis factor alpha,PKC,1
+tumor necrosis factor alpha,SIRT1,1
+Tel,AKT,1
+Tel,PKC,1
+Nat,AKT,1
+Nat,Rev,1
+Nat,cyclin D1,1
+Nat,JNK,1
+Nat,RhoA,1
+Nat,SIRT1,1
+Nat,p53,1
+Flt 4,CNTN1,1
+Flt 4,Src,1
+Flt 4,AKT,3
+Flt 4,hnRNP U,1
+Flt 4,RhoA,2
+Flt 4,DNMT1,1
+Flt 4,alpha 7 nicotinic receptor,1
+Flt 4,p53,1
+Flt 4,A beta,1
+CNTN1,AKT,1
+CNTN1,alpha 7 nicotinic receptor,1
+CNTN1,p53,1
+CNTN1,A beta,1
+Src,NF kappa B,1
+Src,AKT,2
+Src,hnRNP U,2
+Src,PTEN,1
+Src,RhoA,2
+Src,IAP2,1
+Src,bad,1
+Src,PKC,3
+Src,SIRT1,1
+Src,DNMT1,2
+Src,Bad,2
+Dnmt1,thromboxane synthase,1
+Dnmt1,beta catenin,1
+Dnmt1,Thromboxane synthase,1
+Dnmt1,Rev,1
+Dnmt1,VEGF,1
+Dnmt1,CXCL12,1
+Dnmt1,Siva1,1
+Dnmt1,p16INK4a,1
+Dnmt1,DNMT1,1
+Dnmt1,p53,1
+NF kappa B,PTEN,1
+NF kappa B,RhoA,1
+NF kappa B,bad,1
+NF kappa B,PKC,1
+NF kappa B,SIRT1,1
+AKT,thromboxane synthase,1
+AKT,hnRNP U,2
+AKT,Rev,1
+AKT,cyclin D1,1
+AKT,JNK,1
+AKT,RhoA,4
+AKT,VEGF,1
+AKT,IAP2,1
+AKT,PKC,2
+AKT,SIRT1,1
+AKT,DNMT1,3
+AKT,alpha 7 nicotinic receptor,1
+AKT,Bad,1
+AKT,p53,2
+AKT,A beta,1
+thromboxane synthase,beta catenin,1
+thromboxane synthase,Thromboxane synthase,1
+thromboxane synthase,Rev,1
+thromboxane synthase,VEGF,2
+thromboxane synthase,CXCL12,1
+thromboxane synthase,Siva1,1
+thromboxane synthase,p16INK4a,1
+thromboxane synthase,DNMT1,2
+thromboxane synthase,p53,1
+hnRNP U,RhoA,1
+hnRNP U,IAP2,1
+hnRNP U,PKC,1
+hnRNP U,DNMT1,2
+hnRNP U,Bad,1
+PTEN,RhoA,1
+PTEN,bad,1
+PTEN,PKC,1
+PTEN,SIRT1,1
+beta catenin,Thromboxane synthase,1
+beta catenin,Rev,1
+beta catenin,VEGF,1
+beta catenin,CXCL12,1
+beta catenin,Siva1,1
+beta catenin,p16INK4a,1
+beta catenin,DNMT1,1
+beta catenin,p53,1
+Thromboxane synthase,Rev,1
+Thromboxane synthase,VEGF,1
+Thromboxane synthase,CXCL12,1
+Thromboxane synthase,Siva1,1
+Thromboxane synthase,p16INK4a,1
+Thromboxane synthase,DNMT1,1
+Thromboxane synthase,p53,1
+Rev,cyclin D1,1
+Rev,JNK,1
+Rev,RhoA,1
+Rev,VEGF,1
+Rev,CXCL12,1
+Rev,Siva1,1
+Rev,p16INK4a,1
+Rev,SIRT1,1
+Rev,DNMT1,1
+Rev,p53,2
+cyclin D1,JNK,1
+cyclin D1,RhoA,1
+cyclin D1,SIRT1,1
+cyclin D1,p53,1
+JNK,RhoA,1
+JNK,SIRT1,1
+JNK,p53,2
+RhoA,bad,1
+RhoA,PKC,1
+RhoA,SIRT1,2
+RhoA,DNMT1,1
+RhoA,p53,1
+VEGF,CXCL12,1
+VEGF,Siva1,1
+VEGF,p16INK4a,1
+VEGF,DNMT1,2
+VEGF,p53,1
+IAP2,PKC,1
+IAP2,DNMT1,1
+IAP2,Bad,1
+bad,PKC,1
+bad,SIRT1,1
+PKC,SIRT1,1
+PKC,DNMT1,1
+PKC,Bad,2
+CXCL12,Siva1,1
+CXCL12,p16INK4a,1
+CXCL12,DNMT1,1
+CXCL12,p53,1
+Siva1,p16INK4a,1
+Siva1,DNMT1,1
+Siva1,p53,1
+p16INK4a,DNMT1,1
+p16INK4a,p53,1
+SIRT1,p53,2
+DNMT1,Bad,1
+DNMT1,p53,1
+alpha 7 nicotinic receptor,p53,1
+alpha 7 nicotinic receptor,A beta,1
+p53,A beta,1
