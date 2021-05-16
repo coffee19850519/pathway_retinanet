@@ -202,7 +202,6 @@ def run_model(cfg, article_pd, **kwargs):
     img_size['image_size'] = [data_loader.dataset[0]['height'], data_loader.dataset[0]['width']]
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     cpu_device = torch.device("cpu")
-    predictions = []
     fuzz_match_thresh = 90
 
     with inference_context(el_model.to(device)), inference_context(body_model.to(device)), torch.no_grad():
@@ -211,9 +210,6 @@ def run_model(cfg, article_pd, **kwargs):
             # run inference
             el_output = el_model.to(device)(inputs)
             body_output = body_model.to(device)(inputs)
-            # print(el_output)
-            # print(body_output)
-
 
             # reorganize model outputs
             el_instances = el_output[0]["instances"].to(cpu_device)
@@ -479,15 +475,16 @@ def run_model(cfg, article_pd, **kwargs):
                 r_body_instance = processed_el_body_instance[processed_el_body_instances['category_id'] != 1]
                 relation_head = r_body_instance['head'].tolist()
                 relation_tail = r_body_instance['tail'].tolist()
-                # print(gene_element)
-                # print(relation_head)
-                # print(relation_tail)
+                rows_to_remove = []
+                min_j = None
 
                 # TODO:: maybe do different handling for no head detected
                 # get relation body receptor
                 for i in range(0,len(relation_head)):
 
+                    # if no head or tail, then don't want to save this relationship
                     if relation_head[i] == None or relation_head[i] == []:
+                        rows_to_remove.append(r_body_instance.index[i])
                         continue
 
                     dis_head = 1000
@@ -496,6 +493,7 @@ def run_model(cfg, article_pd, **kwargs):
                             dis = compute_dis(relation_head[i],gene_element[j])
                             if dis<dis_head:
                                 dis_head = dis
+                                min_j = j
                                 ocr = processed_el_body_instance['ocr'][gene_e.index[j]]
                     processed_el_body_instance['receptor'][r_body_instance.index[i]] = ocr
 
@@ -503,17 +501,28 @@ def run_model(cfg, article_pd, **kwargs):
                 for i in range(0,len(relation_tail)):
 
                     if relation_tail[i] == None or relation_tail[i] == []:
+                        rows_to_remove.append(r_body_instance.index[i])
                         continue
 
                     dis_tail = 1000
                     for j in range(0,len(gene_element)):
+
+                        # startor can't be the receptor
+                        if j == min_j:
+                            continue
+
                         if gene_element[j]!=None and gene_element[j]!=[]:
                             dis = compute_dis(relation_tail[i],gene_element[j])
                             if dis<dis_tail:
                                 dis_tail = dis
-                                min_j = j
                                 ocr = processed_el_body_instance['ocr'][gene_e.index[j]]
                     processed_el_body_instance['startor'][r_body_instance.index[i]] = ocr
+
+                # remove relationships with None head or tail
+                # there can be duplicate rows if tail and head are both None
+                rows_to_remove = list(set(rows_to_remove))
+                processed_el_body_instance = processed_el_body_instance.drop(labels=rows_to_remove,axis=0)
+
 
                 for i in range(0,len(processed_el_body_instance)):
                     if processed_el_body_instance['category_id'][i]==0:
