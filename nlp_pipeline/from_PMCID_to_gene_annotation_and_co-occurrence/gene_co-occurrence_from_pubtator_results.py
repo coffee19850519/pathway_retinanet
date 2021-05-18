@@ -51,7 +51,8 @@ def extract_gene_annotation_and_full_text(input_file_path, output_txt_file_folde
             if passage.find('annotation') == None:
                 continue
             for annotation in passage.findall('annotation'):
-                gene.add(annotation.find('text').text)
+                if annotation.find('.//infon[@key="type"]').text == 'Gene':
+                    gene.add(annotation.find('text').text)
 
         gene_annotation = gene_annotation + list(gene)
 
