@@ -17,6 +17,7 @@ from upper import upper
 from expand import expand
 from swaps import swaps
 import numpy as np
+import copy
 import requests
 from xml.etree import ElementTree
 
@@ -36,6 +37,8 @@ from nlp_pipeline.extract_text_from_pdf_then_xml_whole_article import convert_pd
 from nlp_pipeline.SubmitText_request import SubmitText_request
 from nlp_pipeline.SubmitText_retrieve import SubmitText
 from nlp_pipeline.get_gene_annotation_from_pubtator_result import extract_gene_annotation
+from nlp_pipeline_v2.from_PMCID_to_gene_annotation_and_cooccurrence.SubmitPMCIDList import SubmitPMCIDList
+from nlp_pipeline_v2.from_PMCID_to_gene_annotation_and_cooccurrence.gene_cooccurrence_from_pubtator_results import extract_gene_annotation_and_full_text,preprocess_sent_list_and_gene_list,gene_co_occurrence_in_sentence
 
 
 from body_interface import instances_to_coco_json,setup,build_data_fold_loader,inference_context
@@ -178,11 +181,14 @@ def compute_iou(box1, box2, wh=True):
     return iou,center
 
 def run_model(cfg, article_pd, **kwargs):
+    
+    # get gene dictionary
     with open(cfg.dictionary_path) as gene_name_list_fp:
         # TODO:: make sure this includes alias
         gene_name_list = json.load(gene_name_list_fp)
     gene_name_list = [x.upper() for x in gene_name_list]
 
+    # load model and data
     configuration = setup(cfg, kwargs)
 
     body_model = RegularTrainer.build_model(configuration)
@@ -234,8 +240,6 @@ def run_model(cfg, article_pd, **kwargs):
             relation_body_instances = body_instances.loc[(body_instances['score'] >= cfg.element_threshold) \
                                                                  & (body_instances['category_id'] != cfg.element_list.index('gene'))]
 
-
-
             # do OCR
             # iteratively append processed ocr to relation_body_instances
             file_list = set(element_instances['file_name'])
@@ -246,18 +250,14 @@ def run_model(cfg, article_pd, **kwargs):
                 # get pubtator result
                 article_gene_list = article_pd.loc[(article_pd['figid'] == image_name+ext)]['gene_list'].values[0]
                 # filter pubtator result with general gene dictionary
-                if article_gene_list:
-                    article_gene_list = [x for x in article_gene_list if x in gene_name_list]
-                print("article gene list")
-                print(article_gene_list)
+                # if article_gene_list:
+                #     article_gene_list = [x for x in article_gene_list if x in gene_name_list]
 
                 img_id = element_instances[element_instances['file_name'] == file_name]['image_id'].values[0]
                 element_instance = element_instances.loc[element_instances['file_name'] == file_name]
 
                 # get ocr result
                 ocr_results, coordinates_list = gcv_ocr(file_name)
-                print(ocr_results)
-                print(coordinates_list)
 
                 # postprocessing on ocr result
                 # nfkc->deburr->upper->expand->swap
@@ -299,8 +299,6 @@ def run_model(cfg, article_pd, **kwargs):
                             postprocessing_ocr_results[idx] = corrections[0][0]
                         else:
                             not_gene_idxs.append(idx)
-
-                # print(postprocessing_ocr_results)
 
                 # save results to json file
                 # TODO:: this only saves the gene results
@@ -371,10 +369,16 @@ def run_model(cfg, article_pd, **kwargs):
             processed_el_body_instances["relation_category"] = None
 
 
+            # TODO:: shorten to one loop
             # find startor and receptor and corresponding relation indicator
             image_file_list = set(processed_el_body_instances['file_name'])
             for current_image_file in image_file_list:
                 image_name, image_ext = os.path.splitext(os.path.basename(current_image_file))
+
+                # get gene coocurrences
+                current_pmcid = article_pd.loc[(article_pd['figid'] == image_name+ext)]['pmcid'].values[0]
+                print(current_pmcid)
+                gene_co_occurrence = pd.read_csv('nlp_pipeline_v2/from_PMCID_to_gene_annotation_and_cooccurrence/gene_co_occurrence/' + str(current_pmcid) + ".csv")
 
                 # the threshold check may be redundant
                 processed_el_body_instance = processed_el_body_instances[
@@ -392,18 +396,12 @@ def run_model(cfg, article_pd, **kwargs):
                     processed_el_body_instance['center'][gene_dic.index[i]] = center
 
                 # get relation head bbox
-                # print(relation_head_instances)
                 relation_head_instance = relation_head_instances[(relation_head_instances['file_name'] == current_image_file)]
                 relation_head_bboxes = relation_head_instance['bbox'].tolist()
-                # print("relationsh head bbxoes len")
-                # print(len(relation_head_bboxes))
 
                 # get relation body bbox
                 relation_body_instance = processed_el_body_instances[(processed_el_body_instances['file_name'] == current_image_file) & (processed_el_body_instances['category_id'] != 1)]
                 relation_body_bboxes = relation_body_instance['bbox'].tolist()
-
-                # print("relationsh body bbxoes len")
-                # print(len(relation_body_bboxes))
 
                 # find relation body's corresponding head via largest IOU
                 # head can be none for a relation body if no indicator is inside of it
@@ -482,7 +480,7 @@ def run_model(cfg, article_pd, **kwargs):
                 # get relation body receptor
                 for i in range(0,len(relation_head)):
 
-                    # if no head or tail, then don't want to save this relationship
+                    # if no head, then don't want to save this relationship
                     if relation_head[i] == None or relation_head[i] == []:
                         rows_to_remove.append(r_body_instance.index[i])
                         continue
@@ -500,6 +498,7 @@ def run_model(cfg, article_pd, **kwargs):
                 # get relation body starter
                 for i in range(0,len(relation_tail)):
 
+                    # if no tail, then don't want to save this relationship
                     if relation_tail[i] == None or relation_tail[i] == []:
                         rows_to_remove.append(r_body_instance.index[i])
                         continue
@@ -523,18 +522,26 @@ def run_model(cfg, article_pd, **kwargs):
                 rows_to_remove = list(set(rows_to_remove))
                 processed_el_body_instance = processed_el_body_instance.drop(labels=rows_to_remove,axis=0)
 
+                # TODO:: make this faster
+                # set coocurrence score and relation category
+                processed_el_body_instance['rank'] = 0
+                r_body_instances = processed_el_body_instance[processed_el_body_instances['category_id'] != 1]
+                for i, r_body_instance in r_body_instances.iterrows():
 
-                for i in range(0,len(processed_el_body_instance)):
-                    if processed_el_body_instance['category_id'][i]==0:
+                    for j, row in gene_co_occurrence.iterrows():
+                        if r_body_instance['startor'] == row['gene_name_1'] and r_body_instance['receptor'] == row['gene_name_2']:
+                            processed_el_body_instance['rank'][i] = row['co_occurrence']
+                            break
+                        elif r_body_instance['receptor'] == row['gene_name_1'] and r_body_instance['startor'] == row['gene_name_2']:
+                            processed_el_body_instance['rank'][i] = row['co_occurrence']
+                            break
+
+                    if r_body_instance['category_id']==0:
                         processed_el_body_instance['relation_category'][i] = 'activate_relation'
-                    if processed_el_body_instance['category_id'][i]==2:
+                    if r_body_instance['category_id']==2:
                         processed_el_body_instance['relation_category'][i] = 'inhibit_relation'
 
-                # print('element_instances_on_sample\n', processed_el_body_instance[
-                #     ['relation_category', 'ocr', 'normalized_bbox', 'center', 'head', 'tail', \
-                #      'startor', 'receptor']])
-
-                # visualize normalized bboxes to confirm detection results
+                # visualize normalized bboxes to confirm detection results and save
                 img_copy = img.copy()
                 for element_idx in range(0, len(processed_el_body_instance)):
                     if processed_el_body_instance.iloc[element_idx]['category_id'] == 0:
@@ -571,7 +578,7 @@ def run_model(cfg, article_pd, **kwargs):
             result = processed_el_body_instance[processed_el_body_instance['category_id'] != 1]
             results = result[
                 ["image_id", "file_name", "category_id", "bbox", "normalized_bbox", "startor", "relation_category",
-                 "receptor"]]
+                 "receptor","rank"]]
 
             with open('{:s}_relation.json'.format(os.path.join(data_folder, image_name)), 'w') as output_fp:
                 results.to_json(output_fp, orient='index')
@@ -638,35 +645,67 @@ if __name__ == "__main__":
     #         continue
 
 
+    # article_pd = pd.read_csv("selective_figures_for_validation_set/selected_meta.csv")
+    # article_pd['gene_list'] = None
+    # for article_idx in range(0, len(article_pd)):
+    #     print(article_pd['figid'][article_idx])
+    
+    #     url = "https://www.ncbi.nlm.nih.gov/research/pubtator-api/publications/export/biocxml"
+    #     current_id = article_pd['pmcid'][article_idx]
+    #     bioconcept = "gene"
+    #     params = {'pmcids': current_id, 'concepts': bioconcept}
+    
+    #     r = requests.get(url=url, params=params)
+    #     tree = ElementTree.fromstring(r.content)
+    
+    #     try:
+    
+    #         text_entities = []
+    #         for passages in tree.find("document"):
+    #             for leaf in passages.findall('annotation'):
+    #                 text_entities.append(leaf.find('text').text.upper())
+    
+    #         article_pd['gene_list'][article_idx] = list(set(text_entities))
+    #         print(list(set(text_entities)))
+    #     except:
+    #         continue
+
+
     article_pd = pd.read_csv("selective_figures_for_validation_set/selected_meta.csv")
     article_pd['gene_list'] = None
-    for article_idx in range(0, len(article_pd)):
-        print(article_pd['figid'][article_idx])
-    
-        url = "https://www.ncbi.nlm.nih.gov/research/pubtator-api/publications/export/biocxml"
-        current_id = article_pd['pmcid'][article_idx]
-        bioconcept = "gene"
-        params = {'pmcids': current_id, 'concepts': bioconcept}
-    
-        r = requests.get(url=url, params=params)
-        tree = ElementTree.fromstring(r.content)
-    
-        try:
-    
-            text_entities = []
-            for passages in tree.find("document"):
-                for leaf in passages.findall('annotation'):
-                    text_entities.append(leaf.find('text').text.upper())
-    
-            article_pd['gene_list'][article_idx] = list(set(text_entities))
-            print(list(set(text_entities)))
-        except:
-            continue
+	# article_pd = article_pd.fillna('')
+    Format = 'biocxml'
+    Bioconcept = 'gene'
+    output_xml_folder = 'nlp_pipeline_v2/from_PMCID_to_gene_annotation_and_cooccurrence/pmcid_pubtator_gene_annotation_retrieval/'
+    output_txt_file_folder = 'nlp_pipeline_v2/from_PMCID_to_gene_annotation_and_cooccurrence/pmcid_full_text_txt_files/'
+    csv_folder_path = 'nlp_pipeline_v2/from_PMCID_to_gene_annotation_and_cooccurrence/gene_co_occurrence/'
+
+    if not os.path.isdir(output_xml_folder):
+        os.mkdir(output_xml_folder)
+
+    for index, row in article_pd.iterrows():
+        if row['pmcid'] != '':
+            current_xml_file = output_xml_folder+row['pmcid']+'.xml'
+            SubmitPMCIDList(row['pmcid'], Format, Bioconcept, current_xml_file)
+
+            gene_annotation, full_text, pmcid = extract_gene_annotation_and_full_text(current_xml_file, output_txt_file_folder)
+            if full_text == '':
+                continue
+            processed_sent_list, processed_gene_list = preprocess_sent_list_and_gene_list(full_text, gene_annotation)
+            if not os.path.isdir(csv_folder_path):
+                os.mkdir(csv_folder_path)
+            gene_co_occurrence_in_sentence(processed_sent_list, processed_gene_list, csv_folder_path, pmcid)
+
+            gene_annotation = list(set(gene_annotation))
+            gene_annotation = [x.upper() for x in gene_annotation]
+            article_pd['gene_list'][index] = copy.deepcopy(gene_annotation)
+
+
 
 
     parser = argparse.ArgumentParser()
     args = parser.parse_args()
-    args.dataset = r'selective_figures_for_validation_set/img/not_processed/group1'
+    args.dataset = r'selective_figures_for_validation_set/img/group1'
     # args.dataset = r'NSCLC_pathway'
 
     file_path = vars(args)['dataset']
