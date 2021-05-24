@@ -180,15 +180,31 @@ def compute_iou(box1, box2, wh=True):
     # print('iou,center',iou,center)
     return iou,center
 
-# reorganize outputs into coco format and split results into dataframes by category id
-def reorganize_outputs(el_output,body_output,inputs,cfg):
+def reorganize_outputs(el_output,body_output,image_ids,file_names,cfg):
+    '''
 
+    Reorganize outputs into coco format and split results into dataframes by category id
+
+    Args:
+        el_output: direct outputs from the element model
+        body_output: direct outputs from the relation model
+        image_ids: image ids for current inputs
+        file_names: filenames of current inputs
+        cfg: configuration dict for model
+    
+    Return:
+        (pd.DataFrame) element_instances: contains all detected element instances (ex. text)
+        (pd.DataFrame) relation_head_instances: contains all detected arrow or t-bar heads
+        (pd.DataFrame) relation_body_instances: contains all detected arrow or t-bar bodies
+
+    '''
+
+    # get results and convert to coco format
     cpu_device = torch.device("cpu")
-
     el_instances = el_output[0]["instances"].to(cpu_device)
-    el_predictions = instances_to_coco_json(el_instances, inputs[0]["image_id"], inputs[0]['file_name'])
+    el_predictions = instances_to_coco_json(el_instances, image_ids, file_names)
     body_instances = body_output[0]["instances"].to(cpu_device)
-    body_predictions = instances_to_coco_json(body_instances, inputs[0]["image_id"], inputs[0]['file_name'])
+    body_predictions = instances_to_coco_json(body_instances, image_ids, file_names)
 
     el_model_instances = pd.DataFrame(el_predictions)
     el_model_instances['ocr'] = None
@@ -211,7 +227,24 @@ def reorganize_outputs(el_output,body_output,inputs,cfg):
 
 def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,image_name,relation_body_instances,img_id):
 
-    fuzz_match_thresh = 90
+    '''
+
+    Detect text from element predictions
+
+    Args:
+        current_image_file: filepath of image being processed
+        article_gene_list: gene list from current image's article from pubtator
+        gene_name_list: list of genes from general gene dictionary
+        data_folder: folder to save results to
+        image_name: name of image being processed
+        relation_body_instances: arrow and t-bar body instances of current image
+        img_id: image id of current image being processed
+        
+    
+    Return:
+        (pd.DataFrame) relation_body_instances: contains all detected element (ex. text) and arrow/t-bar body instances
+
+    '''
 
     ocr_results, coordinates_list = gcv_ocr(current_image_file)
 
@@ -233,9 +266,10 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
 
         postprocessing_ocr_results.append(pp_r)
 
-    # article_gene_list = None
-    not_gene_idxs = []
+    
     # check for perfect match from pubtator results and check for fuzzy match
+    not_gene_idxs = []
+    fuzz_match_thresh = 90
     for idx,candidate_entity in enumerate(postprocessing_ocr_results):
 
         if article_gene_list and candidate_entity in article_gene_list:
@@ -256,6 +290,7 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
             else:
                 not_gene_idxs.append(idx)
 
+
     # save results to json file
     # TODO:: this only saves the gene results
     current_img = cv2.imread(current_image_file)
@@ -265,8 +300,10 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
     img_size['image_size'] = [current_height, current_width]
     json_dicts.append(img_size)
     for i in range(1, len(postprocessing_ocr_results)):
-        # if i in not_gene_idxs:
-        #     continue
+
+        # uncomment for only genes
+        if i in not_gene_idxs:
+            continue
 
         json_dict = {}
         x1 = coordinates_list[i][0][0]
@@ -284,7 +321,6 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
 
     with open(data_folder + '{:s}_elements.json'.format(image_name), 'w+', encoding='utf-8') as file:
         json.dump(json_dicts, file)
-
 
     # reorganize ocr result into coco json format for further use
     ocr_prediction_results = []
@@ -305,17 +341,47 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
 
     # combine ocr gene results and relation head results
     ocr_instances = pd.DataFrame(ocr_prediction_results)
+
+    # uncomment if only want genes
     # remove zero index and subtract one, since ocr_prediction_results does not save first pred
-    # not_gene_idxs.remove(0)
-    # not_gene_idxs = [x-1 for x in not_gene_idxs]
-    # ocr_instances = ocr_instances.drop(labels=not_gene_idxs,axis=0)
+    not_gene_idxs.remove(0)
+    not_gene_idxs = [x-1 for x in not_gene_idxs]
+    ocr_instances = ocr_instances.drop(labels=not_gene_idxs,axis=0)
+
+    # combine gene ocr and relation instances into 1 dataframe
     relation_body_instances = pd.concat([ocr_instances, relation_body_instances], ignore_index=True)
+
+    # prepare df for building relationships
+    relation_body_instances['normalized_bbox'] = None
+    relation_body_instances['center'] = None
+    relation_body_instances['startor'] = None
+    relation_body_instances['receptor'] = None
+    relation_body_instances["relation_category"] = None
 
     return relation_body_instances
 
-def get_relationship_head(relation_body_bboxes,relation_head_bboxes,processed_el_body_instance,relation_body_instance):
+def get_relationship_head(processed_el_body_instances,current_relation_head_instances):
 
-    # find relation body's corresponding head via largest IOU
+    '''
+
+    For each arrow/t-bar body find corresponding head via largest IOU
+
+    Args:
+        processed_el_body_instances: element and arrow/t-bar body instances
+        current_relation_head_instances: arrow/t-bar head instances
+        
+    Return:
+        (pd.DataFrame) processed_el_body_instances: processed_el_body_instances with detected relationship heads
+
+    '''
+
+    # get relation head bbox
+    relation_head_bboxes = current_relation_head_instances['bbox'].tolist()
+
+    # get relation body bbox
+    current_relation_body_instances = processed_el_body_instances[(processed_el_body_instances['category_id'] != 1)]
+    relation_body_bboxes = current_relation_body_instances['bbox'].tolist()
+    
     # head can be none for a relation body if no indicator is inside of it
     for i in range(0,len(relation_body_bboxes)):
         iou=0
@@ -324,14 +390,29 @@ def get_relationship_head(relation_body_bboxes,relation_head_bboxes,processed_el
             if temp_iou>iou:
                 iou = temp_iou
                 # relation_body_instance.index slice maintains the row indexing from processed_el_body_instance: this may throw a warning, but it is working as intended
-                processed_el_body_instance['head'][relation_body_instance.index[i]] = center
+                processed_el_body_instances['head'][current_relation_body_instances.index[i]] = center
 
-    return processed_el_body_instance
+    return processed_el_body_instances
 
-def get_relationship_tail(current_image_file,relation_body_bboxes,processed_el_body_instance,relation_body_instance):
+def get_relationship_tail(current_image_file,processed_el_body_instances):
 
-    # find relation body's corresponding tail
-    # choose detected corner furthest away from head in subimage as tail
+    '''
+
+    Find each relation body's corresponding tail by choosing the detected corner furthest away from head in subimage as tail
+
+    Args:
+        current_image_file: filepath of image being processed
+        processed_el_body_instances: element and arrow/t-bar body instances
+        
+    Return:
+        (pd.DataFrame) processed_el_body_instances: processed_el_body_instances with detected relationship tails
+
+    '''
+
+    # get relation body bbox
+    current_relation_body_instances = processed_el_body_instances[(processed_el_body_instances['category_id'] != 1)]
+    relation_body_bboxes = current_relation_body_instances['bbox'].tolist()
+
     img = cv2.imread(current_image_file)
     for i in range(0, len(relation_body_bboxes)):
         bbox = relation_body_bboxes[i]
@@ -353,9 +434,9 @@ def get_relationship_tail(current_image_file,relation_body_bboxes,processed_el_b
                     raw_x = x + bbox[0]
                     raw_y = y + bbox[1]
                     try:
-                        head_x = processed_el_body_instance['head'][relation_body_instance.index[i]][
+                        head_x = processed_el_body_instances['head'][current_relation_body_instances.index[i]][
                             0]
-                        head_y = processed_el_body_instance['head'][relation_body_instance.index[i]][
+                        head_y = processed_el_body_instances['head'][current_relation_body_instances.index[i]][
                             1]
                     except:
                         continue
@@ -364,69 +445,104 @@ def get_relationship_tail(current_image_file,relation_body_bboxes,processed_el_b
                         dis_max = dis
                         tail = [raw_x, raw_y]
 
-                # relation_body_instance.index slice maintains the row indexing from processed_el_body_instance: this may throw a warning, but it is working as intended
-                processed_el_body_instance['tail'][relation_body_instance.index[i]] = tail
+                # current_relation_body_instances.index slice maintains the row indexing from processed_el_body_instances: this may throw a warning, but it is working as intended
+                processed_el_body_instances['tail'][current_relation_body_instances.index[i]] = tail
                 del tail
             else:
                 # TODO:: handle this case better
                 # if no corners found, set tail to top left corner
-                processed_el_body_instance['tail'][relation_body_instance.index[i]] = [0, 0]
+                processed_el_body_instances['tail'][current_relation_body_instances.index[i]] = [0, 0]
 
-    return processed_el_body_instance
+    return processed_el_body_instances
 
-def get_receptor(relation_head,r_body_instance,gene_element,processed_el_body_instance,gene_e):
+def get_receptor(relation_heads,current_relation_body_instances,gene_centers,processed_el_body_instances,processed_genes):
 
-    rows_to_remove = []
-    min_j = None
+    '''
+
+    Find each relation body's corresponding receptor by finding the closest gene
+
+    Args:
+        relation_heads: relationship head centers
+        current_relation_body_instances: arrow/t-bar body instances
+        gene_centers: center points of detected genes
+        processed_el_body_instances: element and arrow/t-bar body instances
+        processed_genes: element instances
+        
+    Return:
+        (pd.DataFrame) processed_el_body_instances: processed_el_body_instances with detected gene receptors for each relationship
+        (List) min_js: indices of detected receptors for each relationship
+
+    '''
+
+    min_js = []
+
+    print(len(relation_heads))
 
     # TODO:: maybe do different handling for no head detected
     # get relation body receptor
-    for i in range(0,len(relation_head)):
+    for i in range(0,len(relation_heads)):
 
-        # if no head, then don't want to save this relationship
-        if relation_head[i] == None or relation_head[i] == []:
-            rows_to_remove.append(r_body_instance.index[i])
-            continue
+        min_j = None
 
         dis_head = 1000
-        for j in range(0,len(gene_element)):
-            if gene_element[j]!=None and gene_element[j]!=[]:
-                dis = compute_dis(relation_head[i],gene_element[j])
+        for j in range(0,len(gene_centers)):
+            if gene_centers[j]!=None and gene_centers[j]!=[]:
+                dis = compute_dis(relation_heads[i],gene_centers[j])
                 if dis<dis_head:
                     dis_head = dis
                     min_j = j
-                    ocr = processed_el_body_instance['ocr'][gene_e.index[j]]
-        processed_el_body_instance['receptor'][r_body_instance.index[i]] = ocr
+                    ocr = processed_el_body_instances['ocr'][processed_genes.index[j]]
 
-    return processed_el_body_instance, min_j, rows_to_remove
+        min_js.append(min_j)
+        processed_el_body_instances['receptor'][current_relation_body_instances.index[i]] = ocr
 
-def get_startor(relation_tail,rows_to_remove,r_body_instance,gene_element,processed_el_body_instance,gene_e,min_j):
+    return processed_el_body_instances, min_js
+
+def get_startor(relation_tails,current_relation_body_instances,gene_centers,processed_el_body_instances,processed_genes,min_js):
+
+    '''
+
+    Find each relation body's corresponding startor by finding the closest gene (no direct repeats)
+
+    Args:
+        relation_tails: relationship tails centers
+        current_relation_body_instances: arrow/t-bar body instances
+        gene_centers: center points of detected genes
+        processed_el_body_instances: element and arrow/t-bar body instances
+        processed_genes: element instances
+        min_js: indices of detected receptors for each relationship
+        
+    Return:
+        (pd.DataFrame) processed_el_body_instances: processed_el_body_instances with detected gene receptors for each relationship
+        
+    '''
+
+    print(len(relation_tails))
 
     # get relation body starter
-    for i in range(0,len(relation_tail)):
+    for i in range(0,len(relation_tails)):
 
-        # if no tail, then don't want to save this relationship
-        if relation_tail[i] == None or relation_tail[i] == []:
-            rows_to_remove.append(r_body_instance.index[i])
-            continue
+        min_j = min_js[i]
 
         dis_tail = 1000
-        for j in range(0,len(gene_element)):
+        for j in range(0,len(gene_centers)):
 
             # startor can't be the receptor
             if j == min_j:
                 continue
 
-            if gene_element[j]!=None and gene_element[j]!=[]:
-                dis = compute_dis(relation_tail[i],gene_element[j])
+            if gene_centers[j]!=None and gene_centers[j]!=[]:
+                dis = compute_dis(relation_tails[i],gene_centers[j])
                 if dis<dis_tail:
                     dis_tail = dis
-                    ocr = processed_el_body_instance['ocr'][gene_e.index[j]]
-        processed_el_body_instance['startor'][r_body_instance.index[i]] = ocr
+                    ocr = processed_el_body_instances['ocr'][processed_genes.index[j]]
+        processed_el_body_instances['startor'][current_relation_body_instances.index[i]] = ocr
 
-    return processed_el_body_instance, rows_to_remove
+    return processed_el_body_instances
 
-def save_visual(img, processed_el_body_instance,relation_subimage_path, image_name, ext):
+def save_visual(current_image_file, processed_el_body_instance,visuals_folder, image_name, ext):
+
+    img = cv2.imread(current_image_file)
 
     # visualize normalized bboxes to confirm detection results and save
     img_copy = img.copy()
@@ -459,41 +575,127 @@ def save_visual(img, processed_el_body_instance,relation_subimage_path, image_na
             cv2.circle(img_copy, (x_head, y_head), 6, (128, 0, 128), -1)
             cv2.circle(img_copy, (x_tail, y_tail), 6, (0, 255, 255), -1)
 
-    cv2.imwrite(os.path.join(relation_subimage_path, image_name + ext), img_copy)
+    cv2.imwrite(os.path.join(visuals_folder, image_name + ext), img_copy)
     del img_copy
 
-def score_by_cooccurrence(processed_el_body_instance,gene_co_occurrence,processed_el_body_instances):
+def get_startors_and_receptors(current_image_file,processed_el_body_instances):
+
+    '''
+
+    Find each relation body's corresponding receptor and starter
+
+    Args:
+        current_image_file: filepath of image being processed
+        processed_el_body_instances: element and arrow/t-bar body instances
+        
+    Return:
+        (pd.DataFrame) processed_el_body_instances: processed_el_body_instances with detected gene starters and receptors for each relationship
+
+    '''
+
+    # normalize coords for pairing
+    img = cv2.imread(current_image_file)
+    height, width, _ = img.shape
+    normalize_all_boxes(processed_el_body_instances, (height, width))
+
+    # get current genes' center bboxes
+    gene_dic = processed_el_body_instances[(processed_el_body_instances['category_id'] == 1)]
+    gene_list = gene_dic['bbox'].tolist()
+    for i in range(0, len(gene_list)):
+        # gene_list bbox values are XYWH
+        center = [int(gene_list[i][0] + gene_list[i][2] / 2), int(gene_list[i][1] + gene_list[i][3] / 2)]
+        # gene_dic.index slice maintains the row indexing from element_instances: this may throw a warning, but it is working as intended
+        processed_el_body_instances['center'][gene_dic.index[i]] = center
+    processed_genes = processed_el_body_instances[processed_el_body_instances['category_id'] == 1]
+    gene_centers = processed_genes['center'].tolist()
+
+    # get relation body instances and their head & tail bboxes
+    current_relation_body_instances = processed_el_body_instances[processed_el_body_instances['category_id'] != 1]
+    relation_heads = current_relation_body_instances['head'].tolist()
+    relation_tails = current_relation_body_instances['tail'].tolist()
+    
+    # get startors and receptors
+    processed_el_body_instances, min_js = get_receptor(relation_heads,current_relation_body_instances,gene_centers,processed_el_body_instances,processed_genes)
+    processed_el_body_instances = get_startor(relation_tails,current_relation_body_instances,gene_centers,processed_el_body_instances,processed_genes,min_js)
+
+    return processed_el_body_instances
+
+def score_by_cooccurrence(gene_co_occurrence,processed_el_body_instances):
+
+    '''
+
+    rank each relationship by how often their gene's co_occur the figure's article
+
+    Args:
+        gene_co_occurrence: current article's co-occurring genes by sentence
+        processed_el_body_instances: element and arrow/t-bar body instances
+        
+    Return:
+        (pd.DataFrame) processed_el_body_instances: processed_el_body_instances with detected gene starters and receptors for each relationship
+
+    '''
 
     # TODO:: make this faster
     # set coocurrence score and relation category
-    processed_el_body_instance['rank'] = 0
-    r_body_instances = processed_el_body_instance[processed_el_body_instances['category_id'] != 1]
+    processed_el_body_instances['rank'] = 0
+    r_body_instances = processed_el_body_instances[processed_el_body_instances['category_id'] != 1]
     for i, r_body_instance in r_body_instances.iterrows():
 
         for j, row in gene_co_occurrence.iterrows():
             if r_body_instance['startor'] == row['gene_name_1'] and r_body_instance['receptor'] == row['gene_name_2']:
-                processed_el_body_instance['rank'][i] = row['co_occurrence']
+                processed_el_body_instances['rank'][i] = row['co_occurrence']
                 break
             elif r_body_instance['receptor'] == row['gene_name_1'] and r_body_instance['startor'] == row['gene_name_2']:
-                processed_el_body_instance['rank'][i] = row['co_occurrence']
+                processed_el_body_instances['rank'][i] = row['co_occurrence']
                 break
 
         if r_body_instance['category_id']==0:
-            processed_el_body_instance['relation_category'][i] = 'activate_relation'
+            processed_el_body_instances['relation_category'][i] = 'activate_relation'
         if r_body_instance['category_id']==2:
-            processed_el_body_instance['relation_category'][i] = 'inhibit_relation'
+            processed_el_body_instances['relation_category'][i] = 'inhibit_relation'
 
-    return processed_el_body_instance
+    return processed_el_body_instances
+
+def filter_heads_and_tails(processed_el_body_instances):
+
+    '''
+
+    remove relationships that have no head or tail detected
+
+    Args:
+        processed_el_body_instances: element and arrow/t-bar body instances
+        
+    Return:
+        (pd.DataFrame) processed_el_body_instances: processed_el_body_instances with bad relationships removed
+
+    '''
+
+    current_relation_body_instances = processed_el_body_instances[processed_el_body_instances['category_id'] != 1]
+    relation_heads = current_relation_body_instances['head'].tolist()
+    relation_tails = current_relation_body_instances['tail'].tolist()
+    rows_to_remove = []
+
+    # if no head or tail, then don't want to save this relationship
+    for i in range(0,len(relation_heads)):
+        if relation_heads[i] == None or relation_heads[i] == []:
+            rows_to_remove.append(current_relation_body_instances.index[i])
+        elif relation_tails[i] == None or relation_tails[i] == []:
+            rows_to_remove.append(current_relation_body_instances.index[i])
+
+    processed_el_body_instances = processed_el_body_instances.drop(labels=rows_to_remove,axis=0)
+
+    return processed_el_body_instances
+
 
 def run_model(cfg, article_pd, **kwargs):
     
     # get gene dictionary
     with open(cfg.dictionary_path) as gene_name_list_fp:
-        # TODO:: make sure this includes alias
         gene_name_list = json.load(gene_name_list_fp)
     gene_name_list = [x.upper() for x in gene_name_list]
 
-    # load model and data
+
+    # load models
     configuration = setup(cfg, kwargs)
 
     body_model = RegularTrainer.build_model(configuration)
@@ -502,19 +704,25 @@ def run_model(cfg, article_pd, **kwargs):
     el_model = RegularTrainer.build_model(configuration)
     DetectionCheckpointer(model=el_model, save_dir=configuration.OUTPUT_DIR).resume_or_load(cfg.element_model, resume=False)
 
+
+    # create folders for post-processing
     data_folder = os.path.join(kwargs['dataset'], 'img/')
     ocr_sub_img_folder = os.path.join(data_folder, 'ocr_sub_img')
     if not os.path.isdir(ocr_sub_img_folder):
         os.mkdir(ocr_sub_img_folder)
 
-    relation_subimage_path = os.path.join(data_folder, 'relation_subimage')
-    if not os.path.isdir(relation_subimage_path):
-        os.mkdir(relation_subimage_path)
+    visuals_folder = os.path.join(data_folder, 'relation_subimage')
+    if not os.path.isdir(visuals_folder):
+        os.mkdir(visuals_folder)
 
+
+    # get data loader
     data_loader = build_data_fold_loader(configuration, data_folder, mapper=DatasetMapper(configuration, False))
 
+    # set which device to run on
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+    # set both models into eval mode and loop through data
     with inference_context(el_model.to(device)), inference_context(body_model.to(device)), torch.no_grad():
         for idx, inputs in enumerate(data_loader):
 
@@ -522,102 +730,56 @@ def run_model(cfg, article_pd, **kwargs):
             el_output = el_model.to(device)(inputs)
             body_output = body_model.to(device)(inputs)
 
-            # reorganize model outputs
-            element_instances, relation_head_instances, relation_body_instances = reorganize_outputs(el_output,body_output,inputs,cfg)
+            # reorganize model outputs into dataframes by category
+            image_ids = inputs[0]["image_id"]
+            file_names = inputs[0]['file_name']
+            element_instances, relation_head_instances, relation_body_instances = reorganize_outputs(el_output,body_output,image_ids,file_names,cfg)
 
-            # do OCR
-            # iteratively append processed ocr to relation_body_instances
+            # loop through each image in batch
             file_list = set(element_instances['file_name'])
             for current_image_file in file_list:
                 image_name, ext = os.path.splitext(os.path.basename(current_image_file))
                 print('doing ocr to file {:s}'.format(current_image_file))
 
-                # get pubtator result
+                # get current image's model outputs
+                current_element_instances = element_instances[(element_instances['file_name'] == current_image_file)]
+                current_relation_head_instances = relation_head_instances[(relation_head_instances['file_name'] == current_image_file)]
+                current_relation_body_instances = relation_body_instances[(relation_body_instances['file_name'] == current_image_file)]
+
+                # get pubtator genes and coocurrences for corresponding article
                 article_gene_list = article_pd.loc[(article_pd['figid'] == image_name+ext)]['gene_list'].values[0]
-                # filter pubtator result with general gene dictionary
-                # if article_gene_list:
-                #     article_gene_list = [x for x in article_gene_list if x in gene_name_list]
-
-                img_id = element_instances[element_instances['file_name'] == current_image_file]['image_id'].values[0]
-
-                # get ocr result
-                processed_el_body_instances = get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,image_name,relation_body_instances,img_id)
-                
-                # prepare df for building relationships
-                processed_el_body_instances['normalized_bbox'] = None
-                processed_el_body_instances['center'] = None
-                processed_el_body_instances['startor'] = None
-                processed_el_body_instances['receptor'] = None
-                processed_el_body_instances["relation_category"] = None
-
-                # get gene coocurrences
                 current_pmcid = article_pd.loc[(article_pd['figid'] == image_name+ext)]['pmcid'].values[0]
                 gene_co_occurrence = pd.read_csv('nlp_pipeline_v2/from_PMCID_to_gene_annotation_and_cooccurrence/gene_co_occurrence/' + str(current_pmcid) + ".csv")
 
-                # the threshold check may be redundant
-                processed_el_body_instance = processed_el_body_instances[
-                    (processed_el_body_instances['file_name'] == current_image_file) &
-                    (processed_el_body_instances['score'] >= cfg.element_threshold)]
-
-                # find gene center
-                gene_dic = processed_el_body_instances[(processed_el_body_instances['file_name'] == current_image_file) & (processed_el_body_instances['category_id'] == 1)]
-                gene_list = gene_dic['bbox'].tolist()
-                for i in range(0, len(gene_list)):
-
-                    # gene_list bbox values are XYWH
-                    center = [int(gene_list[i][0] + gene_list[i][2] / 2), int(gene_list[i][1] + gene_list[i][3] / 2)]
-                    # gene_dic.index slice maintains the row indexing from element_instances: this may throw a warning, but it is working as intended
-                    processed_el_body_instance['center'][gene_dic.index[i]] = center
-
-                # get relation head bbox
-                relation_head_instance = relation_head_instances[(relation_head_instances['file_name'] == current_image_file)]
-                relation_head_bboxes = relation_head_instance['bbox'].tolist()
-
-                # get relation body bbox
-                relation_body_instance = processed_el_body_instances[(processed_el_body_instances['file_name'] == current_image_file) & (processed_el_body_instances['category_id'] != 1)]
-                relation_body_bboxes = relation_body_instance['bbox'].tolist()
+                # get ocr result
+                img_id = current_element_instances['image_id'].values[0]
+                processed_el_body_instances = get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,image_name,current_relation_body_instances,img_id)
 
                 # get relation head & tail
-                processed_el_body_instance = get_relationship_head(relation_body_bboxes,relation_head_bboxes,processed_el_body_instance,relation_body_instance)
-                processed_el_body_instance = get_relationship_tail(current_image_file,relation_body_bboxes,processed_el_body_instance,relation_body_instance)
+                processed_el_body_instances = get_relationship_head(processed_el_body_instances,current_relation_head_instances)
+                processed_el_body_instances = get_relationship_tail(current_image_file,processed_el_body_instances)
 
-                # normalize coords for pairing
-                img = cv2.imread(current_image_file)
-                height, width, _ = img.shape
-                normalize_all_boxes(processed_el_body_instance, (height, width))
-
-                # pair
-                # get current image genes' center bboxes
-                # processed_el_body_instance is all el and body instances for current image
-                gene_e = processed_el_body_instance[processed_el_body_instances['category_id'] == 1]
-                gene_element = gene_e['center'].tolist()
-
-                # get  relation body instances and their head & tail bboxes
-                r_body_instance = processed_el_body_instance[processed_el_body_instances['category_id'] != 1]
-                relation_head = r_body_instance['head'].tolist()
-                relation_tail = r_body_instance['tail'].tolist()
-                
-                # get startors and receptors
-                processed_el_body_instance, min_j, rows_to_remove = get_receptor(relation_head,r_body_instance,gene_element,processed_el_body_instance,gene_e)
-                processed_el_body_instance, rows_to_remove = get_startor(relation_tail,rows_to_remove,r_body_instance,gene_element,processed_el_body_instance,gene_e,min_j)
-                
                 # remove relationships with None head or tail
-                # there can be duplicate rows if tail and head are both None
-                rows_to_remove = list(set(rows_to_remove))
-                processed_el_body_instance = processed_el_body_instance.drop(labels=rows_to_remove,axis=0)
+                processed_el_body_instances = filter_heads_and_tails(processed_el_body_instances)
 
-                processed_el_body_instance = score_by_cooccurrence(processed_el_body_instance,gene_co_occurrence,processed_el_body_instances)
+                # get gene stators and receptors
+                processed_el_body_instances = get_startors_and_receptors(current_image_file,processed_el_body_instances)
 
-                save_visual(img, processed_el_body_instance,relation_subimage_path, image_name, ext)
+                # score relationships
+                processed_el_body_instances = score_by_cooccurrence(gene_co_occurrence,processed_el_body_instances)
 
-                result = processed_el_body_instance[processed_el_body_instance['category_id'] != 1]
+                # visualize elements and relationships
+                save_visual(current_image_file, processed_el_body_instances,visuals_folder, image_name, ext)
+
+                # save outputs
+                result = processed_el_body_instances[processed_el_body_instances['category_id'] != 1]
                 results = result[
                     ["image_id", "file_name", "category_id", "bbox", "normalized_bbox", "startor", "relation_category",
                     "receptor","rank"]]
-
                 with open('{:s}_relation.json'.format(os.path.join(data_folder, image_name)), 'w') as output_fp:
                     results.to_json(output_fp, orient='index')
-                del element_instances
+
+                del current_element_instances
 
 
 if __name__ == "__main__":
@@ -707,9 +869,6 @@ if __name__ == "__main__":
             gene_annotation = list(set(gene_annotation))
             gene_annotation = [x.upper() for x in gene_annotation]
             article_pd['gene_list'][index] = copy.deepcopy(gene_annotation)
-
-
-
 
     parser = argparse.ArgumentParser()
     args = parser.parse_args()
