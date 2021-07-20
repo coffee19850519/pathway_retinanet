@@ -3,7 +3,7 @@ from __future__ import print_function
 from google.cloud import vision_v1 as vision
 # from google.cloud.vision.vision import types
 import io,os, json
-os.environ['GOOGLE_APPLICATION_CREDENTIALS']=r'/mnt/detectron2/pathway_65k/pathway_retinanet_weiwei/My First Project-244e6803b735.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS']=r'/home/fei/Desktop/pathway_retinanet/Pathway-3f29d8393d4b.json'
 import numpy as np
 
 

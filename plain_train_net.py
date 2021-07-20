@@ -23,20 +23,26 @@ import os,csv,random
 from collections import OrderedDict
 import torch
 from torch.nn.parallel import DistributedDataParallel
+from contextlib import contextmanager
 
 import detectron2.utils.comm as comm
+from detectron2.modeling.meta_arch.retinanet import permute_to_N_HWA_K
 from detectron2.checkpoint import DetectionCheckpointer, PeriodicCheckpointer
 from detectron2.config import get_cfg
 from detectron2.data import (
     build_detection_train_loader,
-    build_detection_test_loader
+    build_detection_test_loader,
+    build_batch_data_loader
 )
+from detectron2.data.samplers import InferenceSampler
 from torch.utils.data.sampler import Sampler
 from detectron2.data.build import DatasetMapper,get_detection_dataset_dicts,DatasetFromList,MapDataset,trivial_batch_collator
 from detectron2.engine import default_argument_parser, default_setup, launch
 from detectron2.evaluation import (
     inference_on_dataset,
     print_csv_format,
+    COCOEvaluator,
+    DatasetEvaluators
     #RotatedCOCOEvaluator,
 )
 from detectron2.modeling import build_model
@@ -70,27 +76,76 @@ def do_test(cfg, model):
         results = list(results.values())[0]
     return results
 
-def do_validation(data_loader, model,loss_weights):
-    val_cls_loss = 0.0
-    val_box_reg_loss = 0.0
-    total = 0
+@contextmanager
+def inference_context(model):
+    """
+    A context where the model is temporarily changed to eval mode,
+    and restored to previous mode afterwards.
 
-    #with inference_context(model), torch.no_grad():
-    with torch.no_grad():
-        for inputs in data_loader:
-            loss_dict = model(inputs)
-            losses = sum(loss for loss in loss_dict.values())
-            assert torch.isfinite(losses).all(), loss_dict
-            val_cls_loss += loss_dict['loss_cls']
-            val_box_reg_loss += loss_dict['loss_box_reg']
-            total += 1
-            del loss_dict, losses
+    Args:
+        model: a torch Module
+    """
+    training_mode = model.training
+    model.eval()
+    yield
+    model.train(training_mode)
 
-    val_cls_loss =  val_cls_loss * loss_weights['loss_cls'] / total
-    val_box_reg_loss = val_box_reg_loss * loss_weights['loss_box_reg'] / total
-    val_loss = val_cls_loss + val_box_reg_loss
+def do_validation(cfg, data_loader, model,loss_weights,val_evaluator):
+
+    #
+    #
+    #
+    # val_cls_loss = 0.0
+    # val_box_reg_loss = 0.0
+    # total = 0
+    #
+    # #with inference_context(model), torch.no_grad():
+    # model.eval()
+    # with torch.no_grad():
+    #     for inputs in data_loader:
+    #
+    #         # images = model.preprocess_image(inputs)
+    #         # features = model.backbone(images.tensor)
+    #         # features = [features[f] for f in model.head_in_features]
+    #         #
+    #         # anchors = model.anchor_generator(features)
+    #         # pred_logits, pred_anchor_deltas = model.head(features)
+    #         # pred_logits = [permute_to_N_HWA_K(x,model.num_classes) for x in pred_logits]
+    #         # pred_anchor_deltas = [permute_to_N_HWA_K(x,4) for x in pred_anchor_deltas]
+    #         #
+    #         # gt_instances = [x["instances"].to(model.device) for x in inputs]
+    #         #
+    #         # gt_labels, gt_boxes = model.label_anchors(anchors, gt_instances)
+    #         # loss_dict = model.losses(anchors, pred_logits, gt_labels, pred_anchor_deltas, gt_boxes)
+    #         #
+    #         loss_dict = model(inputs)
+    #
+    #         # print(loss_dict)
+    #         losses = sum(loss for loss in loss_dict.values())
+    #         assert torch.isfinite(losses).all(), loss_dict
+    #         val_cls_loss += loss_dict['loss_cls']
+    #         val_box_reg_loss += loss_dict['loss_box_reg']
+    #         total += 1
+    #         del loss_dict, losses
+    #
+    # # TODO:: AP metric
+    # # model.train()
+    #
+    # val_cls_loss =  val_cls_loss * loss_weights['loss_cls'] / total
+    # val_box_reg_loss = val_box_reg_loss * loss_weights['loss_box_reg'] / total
+    # val_loss = val_cls_loss + val_box_reg_loss
+    # torch.cuda.empty_cache()
+    # return val_loss, val_cls_loss, val_box_reg_loss
+
+    eval_results = inference_on_dataset(model, data_loader, DatasetEvaluators([val_evaluator]))
+
+    print("*"*20)
+    print(eval_results['bbox']['AP-activate'])
+    print(eval_results['bbox']['AP-gene'])
+    print(eval_results['bbox']['AP-inhibit'])
+
     torch.cuda.empty_cache()
-    return val_loss, val_cls_loss, val_box_reg_loss
+    return eval_results['bbox']['AP-activate'], eval_results['bbox']['AP-gene'], eval_results['bbox']['AP-inhibit']
 
 
 class ValidationSampler(Sampler):
@@ -151,6 +206,7 @@ def build_detection_validation_loader(cfg, dataset_name, mapper=None):
     )
 
     dataset = DatasetFromList(dataset_dicts)
+
     if mapper is None:
         mapper = DatasetMapper(cfg, False)
     dataset = MapDataset(dataset, mapper)
@@ -167,10 +223,13 @@ def build_detection_validation_loader(cfg, dataset_name, mapper=None):
     )
     return data_loader
 
+
 def do_train(cfg, model, resume=False):
     model.train()
     optimizer = build_optimizer(cfg, model)
     scheduler = build_lr_scheduler(cfg, optimizer)
+
+    print(model)
 
     # checkpointer = DetectionCheckpointer(
     #     model, cfg.OUTPUT_DIR,
@@ -207,7 +266,9 @@ def do_train(cfg, model, resume=False):
 
 
     val_data_loader = build_detection_validation_loader(cfg=cfg, dataset_name= cfg.DATASETS.TEST[0],
-                                              mapper=DatasetMapper(cfg, False))
+                                              mapper=DatasetMapper(cfg, True))
+
+    val_evaluator = COCOEvaluator(cfg.DATASETS.TEST[0], output_dir="output/inference")
 
 
 
@@ -222,6 +283,8 @@ def do_train(cfg, model, resume=False):
     #     epoch_num,
     #     max_iter=max_iter
     # )
+
+    print(epoch_num)
 
     logger.info("Starting training from iteration {}".format(start_iter))
     loss_weights = {'loss_cls': 1, 'loss_box_reg': 1}
@@ -272,16 +335,19 @@ def do_train(cfg, model, resume=False):
                 epoch_loss = loss_per_epoch / epoch_num
                 #do validation
                 #epoch_loss, epoch_cls_loss, epoch_box_reg_loss = do_validation(epoch_data_loader, model, loss_weights)
-                #val_loss, val_cls_loss, val_box_reg_loss = do_validation(val_data_loader, model, loss_weights)
+                # val_loss, val_cls_loss, val_box_reg_loss = do_validation(cfg, val_data_loader, model, loss_weights)
+
+                activate_ap, gene_ap, inhibit_ap = do_validation(cfg, val_data_loader, model, loss_weights, val_evaluator)
+
                 checkpointer.save("model_{:07d}".format(iteration), **{"iteration": iteration})
                 # calculate epoch_loss and push to history cache
                 #if comm.is_main_process():
                 storage.put_scalar("epoch_loss", epoch_loss, smoothing_hint=False)
                 # storage.put_scalar("epoch_cls_loss", epoch_cls_loss, smoothing_hint=False)
                 # storage.put_scalar("epoch_box_reg_loss", epoch_box_reg_loss, smoothing_hint=False)
-                # storage.put_scalar("val_loss", val_loss, smoothing_hint=False)
-                # storage.put_scalar("val_cls_loss", val_cls_loss, smoothing_hint=False)
-                # storage.put_scalar("val_box_reg_loss", val_box_reg_loss, smoothing_hint=False)
+                storage.put_scalar("activate_ap", activate_ap, smoothing_hint=False)
+                storage.put_scalar("gene_ap", gene_ap, smoothing_hint=False)
+                storage.put_scalar("inhibit_ap", inhibit_ap, smoothing_hint=False)
 
                 for writer in writers:
                     writer.write()
@@ -382,9 +448,11 @@ if __name__ == "__main__":
     # register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
     #register_pathway_dataset(json_path, img_path, category_list)
 
+    # TODO:: change these for annotation
     category_list = ['activate', 'gene','inhibit']
-    img_path = r'/home/19ljynenu/labelme/img/'
-    json_path = r'/home/19ljynenu/labelme/json/'
+
+    img_path = r'/home/fei/Desktop/pathway_retinanet/dataset6_masked_aug/img/'
+    json_path = r'/home/fei/Desktop/pathway_retinanet/dataset6_masked_aug/json/'
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
 
     parser = default_argument_parser()
@@ -393,7 +461,7 @@ if __name__ == "__main__":
     assert not args.eval_only
     #args.eval_only = True
     #args.num_gpus = 2
-    args.config_file = r'./Base-RetinaNet.yaml'
+    args.config_file = r'/home/fei/Desktop/pathway_retinanet/Base-RetinaNet.yaml'
     print("Command Line Args:", args)
     launch(
         main,
