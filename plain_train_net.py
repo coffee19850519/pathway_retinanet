@@ -53,8 +53,9 @@ from detectron2.utils.events import (
     JSONWriter,
     TensorboardXWriter,
 )
-from tools.relation_data_tool_old import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset
-from  pathway_evaluation import PathwayEvaluator
+
+from relation_data_tool_old import register_pathway_dataset, PathwayDatasetMapper, register_Kfold_pathway_dataset
+from pathway_evaluation import PathwayEvaluator
 
 logger = logging.getLogger("pathway_parser")
 
@@ -138,11 +139,12 @@ def do_validation(cfg, data_loader, model,loss_weights,val_evaluator):
     # return val_loss, val_cls_loss, val_box_reg_loss
 
     eval_results = inference_on_dataset(model, data_loader, DatasetEvaluators([val_evaluator]))
+    print(eval_results)
 
-    print("*"*20)
-    print(eval_results['bbox']['AP-activate'])
-    print(eval_results['bbox']['AP-gene'])
-    print(eval_results['bbox']['AP-inhibit'])
+    # print("*"*20)
+    # print(eval_results['bbox']['AP-activate'])
+    # print(eval_results['bbox']['AP-gene'])
+    # print(eval_results['bbox']['AP-inhibit'])
 
     torch.cuda.empty_cache()
     return eval_results['bbox']['AP-activate'], eval_results['bbox']['AP-gene'], eval_results['bbox']['AP-inhibit']
@@ -225,9 +227,16 @@ def build_detection_validation_loader(cfg, dataset_name, mapper=None):
 
 
 def do_train(cfg, model, resume=False):
+
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # model = torch.nn.DataParallel(model)
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") ## specify the GPU id's, GPU id's start from 0.
+    model.to(device)
+
+    output_dir = "output"
+
     model.train()
-    optimizer = build_optimizer(cfg, model)
-    scheduler = build_lr_scheduler(cfg, optimizer)
+    
 
     print(model)
 
@@ -238,53 +247,52 @@ def do_train(cfg, model, resume=False):
     # )
     #do not load checkpointer's optimizer and scheduler
     checkpointer = DetectionCheckpointer(
-        model, cfg.OUTPUT_DIR)
+        model, output_dir)
     start_iter = (
         checkpointer.resume_or_load(cfg.MODEL.WEIGHTS, resume=resume).get("iteration", -1) + 1
     )
 
     #model.load_state_dict(optimizer)
-
-    max_iter = cfg.SOLVER.MAX_ITER
-
-    writers = (
-        [
-            CommonMetricPrinter(max_iter),
-            JSONWriter(os.path.join(cfg.OUTPUT_DIR, "metrics.json")),
-            TensorboardXWriter(cfg.OUTPUT_DIR),
-        ]
-        if comm.is_main_process()
-        else []
-    )
-
     # compared to "train_net.py", we do not support accurate timing and
     # precise BN here, because they are not trivial to implement
     train_data_loader = build_detection_train_loader(cfg, mapper= DatasetMapper(cfg, True))
 
-    # epoch_data_loader = build_detection_test_loader(cfg=cfg, dataset_name= cfg.DATASETS.TRAIN[0],
-    #                                           mapper=PathwayDatasetMapper(cfg, True))
+    val_evaluator = COCOEvaluator(cfg.DATASETS.TEST[0], output_dir=output_dir+"/inference")
+    val_loader = build_detection_test_loader(cfg, cfg.DATASETS.TEST[0])
 
 
-    val_data_loader = build_detection_validation_loader(cfg=cfg, dataset_name= cfg.DATASETS.TEST[0],
-                                              mapper=DatasetMapper(cfg, True))
-
-    val_evaluator = COCOEvaluator(cfg.DATASETS.TEST[0], output_dir="output/inference")
-
-
-
+    # epoch_num has # of iterations per epoch
     if cfg.DATALOADER.ASPECT_RATIO_GROUPING:
         epoch_num = (train_data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH) + 1
     else:
         epoch_num = train_data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH
 
-    # periodic_checkpointer = PeriodicCheckpointer(
-    #     checkpointer,
-    #     #cfg.SOLVER.CHECKPOINT_PERIOD,
-    #     epoch_num,
-    #     max_iter=max_iter
-    # )
+
+    # max_iter is # of iterations for set # of epochs
+    max_iter = (train_data_loader.dataset.sampler._size // cfg.SOLVER.IMS_PER_BATCH) * 50
+
+    
+    cfg.defrost()
+    cfg.SOLVER.MAX_ITER = max_iter
+    cfg.MODEL.ROI_HEADS.NUM_CLASSES = 4
+    cfg.freeze()
+    
+
+    optimizer = build_optimizer(cfg, model)
+    scheduler = build_lr_scheduler(cfg, optimizer)
+
+    writers = (
+        [
+            CommonMetricPrinter(max_iter),
+            JSONWriter(os.path.join(output_dir, "metrics.json")),
+            TensorboardXWriter(output_dir),
+        ]
+        if comm.is_main_process()
+        else []
+    )
 
     print(epoch_num)
+    print(max_iter)
 
     logger.info("Starting training from iteration {}".format(start_iter))
     loss_weights = {'loss_cls': 1, 'loss_box_reg': 1}
@@ -294,11 +302,12 @@ def do_train(cfg, model, resume=False):
         best_val_loss = 99999.0
         better_train = False
         better_val = False
-        for data, iteration in zip(train_data_loader, range(start_iter, max_iter)):
+        for data, iteration in zip(train_data_loader, range(0, max_iter)):
             iteration = iteration + 1
             storage.step()
 
             loss_dict = model(data)
+
             losses = sum(loss for loss in loss_dict.values())
             assert torch.isfinite(losses).all(), loss_dict
 
@@ -334,41 +343,26 @@ def do_train(cfg, model, resume=False):
                 #one complete epoch
                 epoch_loss = loss_per_epoch / epoch_num
                 #do validation
-                #epoch_loss, epoch_cls_loss, epoch_box_reg_loss = do_validation(epoch_data_loader, model, loss_weights)
-                # val_loss, val_cls_loss, val_box_reg_loss = do_validation(cfg, val_data_loader, model, loss_weights)
-
-                activate_ap, gene_ap, inhibit_ap = do_validation(cfg, val_data_loader, model, loss_weights, val_evaluator)
+                outputs = inference_on_dataset(model, val_loader, val_evaluator)
 
                 checkpointer.save("model_{:07d}".format(iteration), **{"iteration": iteration})
                 # calculate epoch_loss and push to history cache
                 #if comm.is_main_process():
-                storage.put_scalar("epoch_loss", epoch_loss, smoothing_hint=False)
-                # storage.put_scalar("epoch_cls_loss", epoch_cls_loss, smoothing_hint=False)
-                # storage.put_scalar("epoch_box_reg_loss", epoch_box_reg_loss, smoothing_hint=False)
-                storage.put_scalar("activate_ap", activate_ap, smoothing_hint=False)
-                storage.put_scalar("gene_ap", gene_ap, smoothing_hint=False)
-                storage.put_scalar("inhibit_ap", inhibit_ap, smoothing_hint=False)
+                # storage.put_scalar("epoch_loss", epoch_loss, smoothing_hint=False)
+                # # storage.put_scalar("epoch_cls_loss", epoch_cls_loss, smoothing_hint=False)
+                # # storage.put_scalar("epoch_box_reg_loss", epoch_box_reg_loss, smoothing_hint=False)
+                # storage.put_scalar("activate_ap", activate_ap, smoothing_hint=False)
+                # storage.put_scalar("gene_ap", gene_ap, smoothing_hint=False)
+                # storage.put_scalar("inhibit_ap", inhibit_ap, smoothing_hint=False)
 
                 for writer in writers:
                     writer.write()
 
-                # only save improved checkpoints on epoch_loss
-                # if best_loss > epoch_loss:
-                #     best_loss = epoch_loss
-                #     better_train = True
-                # if best_val_loss > val_loss:
-                #     best_val_loss = val_loss
-                #     better_val = True
-                #if better_val:
-                #checkpointer.save("model_{:07d}".format(iteration),  **{"iteration": iteration})
-                #comm.synchronize()
                 #reset loss_per_epoch
                 loss_per_epoch = 0.0
-                # better_train = False
-                # better_val = False
+             
             del loss_dict,losses,losses_reduced,loss_dict_reduced
             torch.cuda.empty_cache()
-            #periodic_checkpointer.step(iteration)
 
 def evaluate_all_checkpoints(args, checkpoint_folder, output_csv_file):
     cfg = setup(args)
@@ -404,6 +398,7 @@ def setup(args):
     Create configs and perform basic setups.
     """
     cfg = get_cfg()
+    
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
     # customize reszied parameters
@@ -449,10 +444,11 @@ if __name__ == "__main__":
     #register_pathway_dataset(json_path, img_path, category_list)
 
     # TODO:: change these for annotation
-    category_list = ['activate', 'gene','inhibit']
+    category_list = ['activate','gene','inhibit']
 
-    img_path = r'/home/fei/Desktop/pathway_retinanet/dataset6_masked_aug/img/'
-    json_path = r'/home/fei/Desktop/pathway_retinanet/dataset6_masked_aug/json/'
+    
+    img_path = r'C:/Users/Joshua/Documents/Work/Pathway/Datasets/train_aug/img/'
+    json_path = r'C:/Users/Joshua/Documents/Work/Pathway/Datasets/train_aug/json/'
     register_Kfold_pathway_dataset(json_path, img_path, category_list, K=1)
 
     parser = default_argument_parser()
@@ -461,7 +457,7 @@ if __name__ == "__main__":
     assert not args.eval_only
     #args.eval_only = True
     #args.num_gpus = 2
-    args.config_file = r'/home/fei/Desktop/pathway_retinanet/Base-RetinaNet.yaml'
+    args.config_file = r'Base-RetinaNet.yaml'
     print("Command Line Args:", args)
     launch(
         main,
