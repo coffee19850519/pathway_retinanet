@@ -357,9 +357,9 @@ class LabelFile(object):
         try:
             if LabelFile.get_shape_category(shape)== 'gene':
                 return 1
-            elif LabelFile.get_shape_category(shape)== 'activate' :
+            elif LabelFile.get_shape_category(shape)== 'activate' or LabelFile.get_shape_category(shape)== 'activate_head':
                 return 0
-            elif LabelFile.get_shape_category(shape)== 'inhibit':
+            elif LabelFile.get_shape_category(shape)== 'inhibit' or LabelFile.get_shape_category(shape)== 'inhibit_head':
                 return 2
 
             else:
