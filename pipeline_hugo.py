@@ -439,10 +439,15 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
     # TODO:: change coordinates to be true mins and maxes
     ocr_prediction_results = []
     for k in range(1, len(postprocessing_ocr_results)):
+        x1 = coordinates_list[i][0][0]
+        y1 = coordinates_list[i][0][1]
+        x2 = coordinates_list[i][2][0]
+        y2 = coordinates_list[i][2][1]
         result = {
             "image_id": img_id,
             "file_name": current_image_file,
             "category_id": 1,
+            "normalized_bbox": [[x1,y1],[x2,y1],[x2,y2],[x1,y2]],
             "bbox":
                 BoxMode.convert(np.array([coordinates_list[k][0], coordinates_list[k][2]]).reshape((-1, 4)),
                                 BoxMode.XYXY_ABS, BoxMode.XYWH_ABS).tolist()[0],
@@ -471,6 +476,8 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
     relation_body_instances['center'] = None
     relation_body_instances['startor'] = None
     relation_body_instances['receptor'] = None
+    relation_body_instances['startor_bbox'] = None
+    relation_body_instances['receptor_bbox'] = None
     relation_body_instances["relation_category"] = None
 
     return relation_body_instances
@@ -644,6 +651,7 @@ def get_receptor(relation_heads,current_relation_body_instances,gene_centers,pro
         try:
             ocr = processed_el_body_instances['ocr'][processed_genes.index[min_j]]
             processed_el_body_instances['receptor'][current_relation_body_instances.index[i]] = ocr
+            processed_el_body_instances['receptor_bbox'][current_relation_body_instances.index[i]] = processed_el_body_instances['normalized_bbox'][processed_genes.index[min_j]]
 
         except:
             print(min_j)
@@ -734,12 +742,15 @@ def get_startor(relation_tails,current_relation_body_instances,gene_centers,proc
             if tail_to_receptor < tail_to_closest_non_receptor:
                 ocr = processed_el_body_instances['ocr'][processed_genes.index[closes_entity]]
                 processed_el_body_instances['receptor'][current_relation_body_instances.index[i]] = ocr
+                processed_el_body_instances['receptor_bbox'][current_relation_body_instances.index[i]] = processed_el_body_instances['normalized_bbox'][processed_genes.index[closes_entity]]
 
                 ocr = processed_el_body_instances['ocr'][processed_genes.index[min_j]]
                 processed_el_body_instances['startor'][current_relation_body_instances.index[i]] = ocr
+                processed_el_body_instances['startor_bbox'][current_relation_body_instances.index[i]] = processed_el_body_instances['normalized_bbox'][processed_genes.index[min_j]]
             else:
                 ocr = processed_el_body_instances['ocr'][processed_genes.index[closes_entity]]
                 processed_el_body_instances['startor'][current_relation_body_instances.index[i]] = ocr
+                processed_el_body_instances['startor_bbox'][current_relation_body_instances.index[i]] = processed_el_body_instances['normalized_bbox'][processed_genes.index[closes_entity]]
 
 
         except:
@@ -1009,8 +1020,8 @@ def run_model(cfg, article_pd, **kwargs):
                 #     ["image_id", "file_name", "category_id", "bbox", "normalized_bbox", "startor", "relation_category",
                 #     "receptor","rank"]]
                 results = result[
-                    ["image_id", "file_name", "category_id", "bbox", "normalized_bbox", "startor", "relation_category",
-                    "receptor"]]
+                    ["image_id", "file_name", "category_id", "bbox", "normalized_bbox", "startor", "startor_bbox", "relation_category",
+                    "receptor","receptor_bbox"]]
                 with open('{:s}_relation.json'.format(os.path.join(data_folder, image_name)), 'w') as output_fp:
                     results.to_json(output_fp, orient='index')
 
