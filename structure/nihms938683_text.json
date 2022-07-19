@@ -1,0 +1,777 @@
+[{
+     "paragraph1": "A phase I study of tivantinib in combination with temsirolimus in  patients with advanced solid tumors "
+},
+{
+     "paragraph2": "Christos E. Kyriakopoulos1, Amy M. Braden1, Jill M. Kolesar1, Jens C. Eickhoff1, Howard H.  Bailey1, Jennifer Heideman1, Glenn Liu1, and Kari B. Wisinski1 "
+},
+{
+     "paragraph3": "1University of Wisconsin Carbone Cancer Center, University of Wisconsin-Madison, Madison, WI "
+},
+{
+          "section:1": "Summary"
+},
+{
+          "paragraph1": "Background—A wide variety of human cancers exhibit dysregulated c-Met activity that has  implications in oncogenesis. Phosphorylation of c-Met results in activation of the PI3K/AKT/ mTOR pathway. Combined blockade of c-Met and mTOR pathways has shown efficacy in  preclinical studies. Tivantinib is a c-Met inhibitor and temsirolimus is a selective mTOR inhibitor.  We aimed to determine the maximum tolerated dose (MTD) and the recommended phase II dose  (RP2D), dose-limiting toxicities (DLT), adverse events (AEs), clinical activity and  pharmacokinetic (PK) parameters of the combination. "
+},
+{
+          "paragraph2": "Methods—This open-label phase I study used a 3 + 3 dose escalation design. Patients (pts) were  treated with escalating doses of tivantinib (120–360 mg tablets orally twice daily) and  temsirolimus (20 mg IV weekly) followed by dose expansion at the MTD. Separate cohorts were  planned for extensive (normal) and poor tivantinib metabolizers based on CYP2C19 genotypes.  Cycles were 28 days besides cycle 1 that was 35 days to allow for PK analysis. "
+},
+{
+          "section:1": "Results"
+},
+{
+          "paragraph1": "Twenty-nine pts [median age 58 (range 28–77)] were enrolled (21 in dose escalation  and 8 in dose expansion). All were extensive CYP2C19 metabolizers. The most common types of  cancer were colorectal, ovarian and non-small cell lung. Sixteen out of 21 and 6 out of 8 pts were  evaluable for DLT evaluation per protocol in the dose escalation and dose expansion phases,  respectively. Pts remained on study for a median of 71 days (range 18–296). The MTD and RP2D  was tivantinib 240 mg twice daily and temsirolimus 20 mg weekly. DLTs included grade (gr) 4  neutropenia (2 pts; 1 with gr 3 febrile neutropenia), gr 3 abdominal pain (1 pt) and gr 2 mucositis  resulting in inadequate drug delivery. The most common treatment related AEs grade ≥ 2 included:  anemia (gr 2 in 9 pts, gr 3 in 3 pts), fatigue (gr 2 in 10 pts), anorexia (gr 2 in 9 pts),  hypoalbuminemia (gr 2 in 6 pts, gr 3 in 2 pts), hypophosphatemia (gr 2 in 2 pts, gr 3 in 5 pts) and  nausea (gr 2 in 6 pts, gr 3 in 1 pt). One pt with ovarian cancer had a confirmed partial response and  remained on study for 10 months, a second patient with ovarian cancer had stable disease and  remained on study for 6 months and a third pt with squamous cell carcinoma of the tongue had  stable disease and remained on study for 7 months. Pharmacokinetic analysis showed that there is  no interaction in the plasma concentrations between tivantinib and temsirolimus. "
+},
+{
+          "paragraph2": "Corresponding author: Christos E. Kyriakopoulos, MD, University of Wisconsin Carbone Cancer Center, 600 Highland Avenue,  Madison, WI 53792, Phone: (608) 263-0786, Fax: (608) 265-0614, ckyriako@medicine.wisc.edu.  Conflict of interest: The authors declare that they have no conflict of interest. "
+},
+{
+          "Figure": "nihms938683_page0_44.jpg"
+},
+{
+          "paragraph3": "HHS Public Access Author manuscript Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph4": "Published in final edited form as: Invest New Drugs. 2017 June ; 35(3): 290–297. doi:10.1007/s10637-016-0418-8. "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph6": "Conclusions—The combination of tivantinib with temsirolimus appears to be well tolerated  with evidence of clinical activity. "
+},
+{
+          "paragraph7": "Keywords "
+},
+{
+          "section:1": "Introduction"
+},
+{
+          "paragraph1": "emsirolimus; Phase I; c-Met; PI3K/AKT/mTOR "
+},
+{
+          "section:1": "Introduction"
+},
+{
+          "paragraph1": "Receptor tyrosine kinases (RTKs) are cell surface receptors for growth factors, hormones  and cytokines that regulate a plethora of signal transduction pathways involved in multiple  normal and pathologic biological processes [1]. In normal cells RTK activity is under tight  control, whereas in cancer cells they can be severely dysregulated, leading to oncogenesis,  invasiveness, metastasis and resistance to treatment [2]. Thus, RTKs have emerged as an  important class of molecular targets for anticancer therapy. "
+},
+{
+          "paragraph2": "Dysregulated c-Met activity is exhibited in a wide variety of human cancers, either through  over-expression of the c-Met kinase, activating mutations in c-Met, or increased autocrine or  paracrine secretion of the c-Met ligand hepatocyte growth factor/scatter factor (HGF/SF) [3,  4]. These alterations have been strongly implicated in tumor progression and metastasis in a  variety of cancers, and a high constitutive activation of the c-Met RTK has been correlated  with poor clinical prognosis [3]. c-Met can be activated in both a ligand-dependent manner,  by the overexpression of c-Met and/or its ligand HGF, or a ligand-independent manner as in  the case of activating mutations of c-Met, such as those described in sporadic and hereditary  papillary renal carcinoma [5]. Activation and autophosphorylation of c-Met results in the  binding and phosphorylation of adaptor proteins such as Gab1, Grb2, Shc and c-Cbl, and  results in the subsequent activation of signaling pathways, including the PI3K/AKT/mTOR,  FAK, STAT and Ras/MEK/ERK pathways that play pivotal roles in cell survival,  proliferation, invasion, and angiogenesis [6, 7]. "
+},
+{
+          "paragraph3": "The presence of c-Met in a wide variety of cancers and its role in controlling multiple signal  transduction pathways involved in tumor growth renders it an attractive therapeutic target for  human cancer. Tivantinib (ARQ 197; ArQule, Inc., Daiichi Sankyo, Co., Ltd; Kyowa Hakko  Kirin, Co., Ltd) is a selective, oral, small molecule tyrosine kinase inhibitor of c-Met RTK  [8]. It is metabolized primarily by CYP2C19 and partially by CYP3A4/5 [9]. Two previous  phase I studies with single agent tivantinib have shown a favorable safety profile with a  recommended phase II (RP2D) dose at 360 mg twice daily as monotherapy [10, 11],  although in CYP2C19 poor metabolizers the RP2D was 240mg twice daily [12]. In phase II  studies, tivantinib as single agent has shown activity in different types of malignancies,  including hepatocellular carcinoma, triple-negative breast cancer and multiple myeloma  [13–16]. Several additional studies have examined the safety, tolerability and efficacy of  tivantinib in combination with erlotinib [12, 17–20], gemcitabine [21], sorafenib [22] and  irinotecan/cetuximab [23]. Two phase III studies of single agent tivantinib in patients with  hepatocellular carcinoma are currently ongoing (NCT01755767, NCT02029157). "
+},
+{
+          "paragraph4": "The mammalian target of rapamycin (mTOR) is a critical downstream component of the  PI3K/AKT pathway. Temsirolimus (Torisel™, Pfizer Pharmaceuticals, Inc; Wyeth  "
+},
+{
+          "paragraph5": "Kyriakopoulos et al. Page 2 "
+},
+{
+          "paragraph6": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph7": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "section:1": "Material and methods"
+},
+{
+          "paragraph1": " is a selective mTOR inhibitor and is approved for the treatment of  renal cell carcinoma at a dose of 25 mg intravenously weekly [24]. It is primarily  metabolized by CYP3A4 and as such drugs that induce or inhibit CYP3A4/5 can affect its  pharmacokinetics [25]. Based on the rationale that combined inhibition of c-Met and mTOR  can lead to overcome of resistance and enhanced antitumor activity, we conducted a phase I  trial of tivantinib in combination with temsirolimus in patients with advanced solid  malignancies, followed by an expansion cohort. The primary objective of the study was to  determine the MTD and the RP2D as well as to seek preliminary evidence of safety,  tolerability and clinical activity of the above combination. Due to potential for  pharmacokinetic (PK) interaction, PK analysis was also conducted. "
+},
+{
+               "section:2": "Patient selection"
+},
+{
+               "paragraph1": "ds "
+},
+{
+               "section:2": "Patient selection"
+},
+{
+               "paragraph1": "Eligible patients were at least 18 years old with histologically confirmed advanced solid  malignancy for which standard curative or palliative systemic therapies did not exist or were  no longer effective. All patients were required to have measurable or evaluable disease,  Eastern Cooperative Oncology Group performance status of 0–2, life expectancy of at least  12 weeks as well as adequate renal, liver and bone marrow reserve [defined as serum  creatinine within institutional normal limit or creatinine clearance ≥ 60 mL/min/1.73 m2;  aspartate transaminase/alanine transaminase < 2.5 × upper limit of normal (ULN)and total  bilirubin < 1.5 × ULN that was later updated as per package insert (version 8/2014) to allow  patients with mild hepatic impairment (bilirubin > 1–1.5 × ULN or aspartate transaminase >  ULN but bilirubin ≤ ULN) to receive temsirolimus at a reduced dose of 15 mg/week;  hemoglobin ≥ 9 g/dL, total white blood count ≥ 3.000/µL, absolute neutrophil count ≥  1.500/µL and platelet count ≥ 100.000/µL]. In addition, patients were required to have  normal phosphorus levels and a metabolic profile within normal limits (defined as fasting  glucose ≤ 150 mg/dL, fasting cholesterol ≤ 350 mg/dL and fasting triglycerides ≤ 300 mg/ dL). Patients with brain metastasis were allowed to enroll as long as their brain disease was  treated and under control. Women of child-bearing potential were required to use adequate  contraception. "
+},
+{
+               "paragraph2": "Key exclusion criteria included recent treatment with chemotherapy, radiotherapy or  endocrine therapy, incompletely resolved adverse events due to agents administered more  than 4 weeks prior to study entry, previous anticancer therapy with mTOR or c-Met  inhibitors, HIV infection, uncontrolled diabetes, clinically symptomatic hypothyroidism as  well as history of allergic reactions attributed to compounds of similar chemical or biologic  composition to tivantinib or temsirolimus. Concurrent use of CYP2C19 sensitive substrates,  inducers or moderate/strong inhibitors as well as CYP3A4/5 inducers or moderate/strong  inhibitors was prohibited. "
+},
+{
+               "paragraph3": "The study was approved by the Institutional Review Board at the University of Wisconsin- Madison and was conducted in accordance to the Declaration of Helsinki for human subject  protection. All patients provided written informed consent prior to enrollment. "
+},
+{
+               "paragraph4": "Kyriakopoulos et al. Page 3 "
+},
+{
+               "paragraph5": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+               "section:2": "Study design and treatment plan"
+},
+{
+               "paragraph1": "ipt Author Manuscript Author Manuscript "
+},
+{
+               "section:2": "Study design and treatment plan"
+},
+{
+               "paragraph1": "This is a single institution, open-label, phase I study. All patients were treated at the  University of Wisconsin Carbone Cancer Center. Prior to enrollment, patients were screened  for CYP2C19*2 and *3 polymorphisms performed by a commercial vendor and were  divided to extensive (cohort A) or poor metabolizers (*2/*2, *2/*3 or *3/*3; cohort B),  respectively. Dose escalation was planned separately for cohort A and cohort B. For cohort  A, dose escalation was scheduled based on a traditional 3 + 3 design, whereas for cohort B  an accelerated dose escalation without intra-patient dose escalation was planned, due to the  low prevalence of poor metabolizers. The primary objective of the study was to determine  the MTD and the RP2D of tivantinib in combination with temsirolimus in patients with  extensive (normal) CYP2C19 polymorphisms (cohort A). After the MTD was established  for cohort A, 6 additional patients were planned to enroll in a dose expansion cohort at MTD  (Figure 1). "
+},
+{
+               "section:2": "Safety and efficacy assessment"
+},
+{
+               "paragraph1": "tivantinib was administered orally twice daily (BID)  continuously and temsirolimus was administered intravenously weekly. Tivantinib was  administered with food. Premedication with diphenhydramine 25–50 mg IV was  administered approximately 30 minutes prior to initiation of temsirolimus infusion to  prevent hypersensitivity reactions. Cycle 1 was 35 days, including a 7-day lead-in period  with tivantinib alone, followed by infusion of the first dose of temsirolimus on day 8.  Subsequent cycles were 28 days. The starting dose of tivantinib and temsirolimus were 120  mg by mouth twice daily and 20 mg intravenously weekly, respectively, and a stepwise dose  escalation proceeded as per Table 1. The only difference in the dose expansion cohort was  that temsirolimus was started on day 1 of cycle 1 followed by the first dose of tivantinib on  day 8. "
+},
+{
+               "section:2": "Safety and efficacy assessment"
+},
+{
+               "paragraph1": "History, physical examination, weight, ECOG performance status and standard laboratory  analysis were obtained at baseline and prior to each cycle of treatment. Tumor assessment by  either physical examination or imaging was performed at baseline and every two cycles of  treatment thereafter. Other studies included EKG and fasting lipids at baseline and prior to  each cycle. Pregnancy test for women of childbearing potential was also obtained at  baseline. "
+},
+{
+               "paragraph2": "Adverse events were assessed according to the National Cancer Institute Common  Terminology Criteria for Adverse Events (CTCAE), version 4.0 (effective May 17, 2010). A  DLT was defined as toxicity considered at least probably related to the study drugs that  occurred between the first dose and the first day of cycle 2 and met the following criteria:  grade ≥ 3 nausea, vomiting, diarrhea, stomatitis, hyperlipidemia or rash uncontrolled despite  maximal medical management; any other grade ≥ 3 non-hematologic toxicity except grade 3  fatigue lasting < 7 days; inability to deliver more than 75% of the protocol specified cycle 1  treatment due to an at least probably treatment-related toxicity; dose delay of more than 7  days starting prior to day 1 of cycle 2 if the delay is due to an at least probably treatment- related toxicity; grade ≥ 3 neutropenia lasting > 7 days; grade 4 neutropenia or neutropenic  fever; grade 3 thrombocytopenia lasting > 7 days or of any duration if associated with a  "
+},
+{
+               "paragraph3": "Kyriakopoulos et al. Page 4 "
+},
+{
+               "paragraph4": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+               "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph6": "clinically significant or life-threatening bleed; grade 4 thrombocytopenia. Patients must have  taken at least 75% of ARQ 197 doses and at least 3 doses of temsirolimus to be considered  evaluable. Any patient who did not complete the first scheduled cycle of therapy, but did not  meet criteria for a DLT, was considered unevaluable and was replaced. "
+},
+{
+               "paragraph7": "The MTD of the combination of tivantinib and temsirolimus was defined as the highest  safely tolerated dose where less than 33% of patients experienced a DLT and two or more  patients experienced a DLT at the next higher dose level. The RP2D was considered the  MTD, unless the investigators determined a lower dose level based on post-cycle 1 observed  adverse events or PK data. "
+},
+{
+               "section:2": "Pharmacokinetic analysis"
+},
+{
+               "paragraph1": "d at least one dose of tivantinib or temsirolimus were evaluable for  toxicity. Patients with measurable disease were evaluable for response if they received at  least one cycle of therapy and had their disease re-evaluated. Response to treatment and  progression were evaluated by the Response Evaluation Criteria in Solid Tumors (RECIST),  version 1.1 [26]. Patients with lesions at baseline that did not meet the definitions of  measurable disease were considered evaluable for non-target disease if they received at least  1 cycle of therapy and had their disease re-evaluated. "
+},
+{
+               "section:2": "Pharmacokinetic analysis"
+},
+{
+               "paragraph1": "Blood samples were collected prior to dosing and 0.5, 1, 2, 4, 8 and 12 hours after dosing for  analysis of tivantinib on day 1 (first dose), 7 (tivantinib alone at steady state) and 8  (tivantinib at steady state and in combination with temsirolimus) of cycle 1 for patients in  the dose escalation cohort. Samples were collected at the same timepoints on day 8 for  analysis of temsirolimus. For patients in Arm 3, blood samples were collected prior to  dosing and 0.5, 1, 2, 4, 8 and 12 hours after dosing for analysis of temsirolimus  (temsirolimus alone first dose) on day 1 and day 8 of cycle 1. Samples were collected at the  same timepoints on day 8 for analysis of tivantinib (first dose). Tivantinib and temsirolimus  plasma concentrations were analyzed by validated LC/MS/MS analyses as previously  described [11, 27]. Pharmacokinetic parameters were analyzed by noncompartmental  methods using WinNonLin 6.4. "
+},
+{
+          "section:1": "Results"
+},
+{
+               "section:2": "Patient characteristics"
+},
+{
+               "paragraph1": "Twenty-nine patients, 17 males and 12 females, with a median age of 58 years (range 28–77)  were enrolled between July 2012 and July 2015. All patients were extensive (normal)  CYP2C19 metabolizers. Baseline patient characteristics are summarized in Table 2. "
+},
+{
+               "section:2": "Dose escalation and toxicity"
+},
+{
+               "paragraph1": "DLTs by dose level are summarized in Table 3. Treatment was started with dose level 1 at  120 mg BID of tivantinib and 20 mg weekly of temsirolimus. Four patients were enrolled  without experiencing DLT; one was unevaluable because she received < 75% of the study  drugs due to progressive disease. Dose level 2 at 240 mg BID of tivantinib and 20 mg  weekly of temsirolimus was then initiated. Of the first three patients, two experienced a  "
+},
+{
+               "paragraph2": "Kyriakopoulos et al. Page 5 "
+},
+{
+               "paragraph3": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "DLT. One subject had grade 4 neutropenia and grade 3 mucositis probably related to therapy.  The 2nd patient was determined to be a DLT due to inability to deliver > 75% of cycle 1  drug therapy due to toxicities related to therapy. However, the highest grade toxicity was  grade 3 hypophosphatemia which resolved rapidly with repletion and grade 3 diarrhea  without optimal medical management due to lack of communication regarding symptoms.  Diarrhea then resolved with medical management. Notably, this patient also had baseline  grade 2 intermittent diarrhea from prior therapies for which atropine/diphenoxylate was  started just prior to study entry. "
+},
+{
+               "paragraph6": "Per protocol, dose level 1 was expanded. Four patients were added, three completed dose  level 1 without DLT and one was unevaluable. After discussion with the sponsor, it was  determined that since the second DLT at dose level two was potentially avoidable with more  restrictive exclusion criteria for baseline diarrhea and more intensive management on study.  Thus, the protocol was amended to expand enrollment at dose level 2. No additional DLTs  were noted, thus, 1 of 6 evaluable patients at dose level 2 experienced a DLT. "
+},
+{
+               "paragraph7": "Dose level 3 enrolled a total of 5 patients at 360 mg BID of tivantinib and 20 mg weekly of  temsirolimus. One patient was unevaluable. Two patients experienced DLTs: one had grade  3 abdominal pain and the other grade 4 neutropenia/grade 3 febrile neutropenia. As such, the  MTD was established at 240 mg twice daily of tivantinib and 20 mg weekly of temsirolimus.  Eight additional patients were treated at dose level 2 in the expansion cohort. Only 1 out of 6  evaluable patients experienced a DLT, due to the inability to deliver > 75% of the protocol  specified cycle 1 treatment due to grade 2 mucositis related to therapy. "
+},
+{
+               "paragraph8": "The most common at least possibly related to treatment grade ≥ 2 adverse events are  summarized in Table 4. The most common were anemia, fatigue, anorexia and  hypoalbuminemia. The most common grade 3 adverse events were hypophosphatemia,  anemia, hypertension and hyponatremia. There were two patients with grade 4 neutropenia.  No grade 5 adverse events were noted. "
+},
+{
+               "section:2": "Antitumor effect"
+},
+{
+               "paragraph1": "Twenty-seven patients were evaluable for response to therapy. Best clinical responses by  dose level are listed in Table 5. Patients remained on study for a median of 71 days (range  18–296). A confirmed partial response (PR) was noted in one patient and stable disease (SD)  in eight. The PR was seen in a heavily pretreated patient with ovarian cancer. Previous  systemic treatments included carboplatin/paclitaxel, liposomal doxorubicin, topotecan,  investigational drug huKS-IL2 and rechallenge with paclitaxel. She remained on study for a  total of 296 days. Two patients had stable disease for prolonged period of time and remained  on study for 206 (squamous cell carcinoma of the tongue) and 182 days (ovarian cancer),  respectively. "
+},
+{
+               "section:2": "Pharmacokinetics"
+},
+{
+               "paragraph1": "To compare the pharmacokinetics of tivantinib after a single dose and at steady state,  sampling was performed on Day 1 and Day 7 in the dose escalation cohort (Table 6). As  expected, the dose adjusted Cmax and AUC after a single dose of tivantinib on Day 1 were  significantly lower than on Day 7 when tivantinib was at steady state with geometric mean  "
+},
+{
+               "paragraph2": "Kyriakopoulos et al. Page 6 "
+},
+{
+               "paragraph3": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "ratios of 0.80 (95% CI: 0.78–0.82) and 0.78 (95% CI: 0.72–0.82) for the Cmax and AUC  respectively. "
+},
+{
+               "paragraph6": "Since both tivantinib and temsirolimus are substrates of CYP3A4 the potential for drug  interactions with the combination was also assessed. To determine the effect of temsirolimus  on tivantinib concentrations, tivantinib concentrations of Day 7, where tivantinib was at  steady state and without temsirolimus and Day 8 when temsirolimus was administered are  compared in the dose escalation cohort, with geometric mean ratios of 1.04 (95% CI: 1.00– 1.05) for the Cmax and 0.98 (95% CI: 0.97–1.00) for the AUC and suggesting that  temsirolimus does not alter tivantinib plasma concentrations. "
+},
+{
+               "paragraph7": "To assess the influence of tivantinib on temsirolimus concentrations, individuals in the dose  expansion cohort had a run-in with temsirolimus, where temsirolimus was administered on  Day 1, and tivantinib was not started until Day 8. Pharmacokinetic parameters of  temsirolimus from Day 1 in the dose expansion cohort were compared to the first dose of  temsirolimus administered on Day 8 in the dose escalation cohort where tivantinib was at  steady state showing a geometric mean ratio of 0.94 (95% CI: 0.78–1.08) and 1.08 (95% CI:  0.86–1.28), respectively for the Cmax and AUC and suggesting that tivantinib does not  influence temsirolimus plasma concentrations. "
+},
+{
+          "section:1": "Discussion"
+},
+{
+          "paragraph1": "Dysregulated c-Met activity results in downstream activation of the PI3K/AKT/mTOR  signaling pathway, with subsequent implications in the progression and spread of several  malignancies [3, 4, 28]. This phase I study was designed to determine the MTD/RP2D of the  combination of the c-Met inhibitor tivantinib with the mTOR inhibitor temsirolimus as well  as to seek preliminary data of safety and efficacy in patients with advanced solid tumors.  The rationale for combining these two agents is that dual inhibition of upstream c-Met and  downstream mTOR may have a synergistic effect with enhanced anti-tumor activity  compared to c-Met inhibition alone [29]. "
+},
+{
+          "paragraph2": "At the doses administered in this trial, the combination of tivantinib with temsirolimus was  overall well tolerated. Most common grade ≥ 2 adverse events were anemia, fatigue,  anorexia, hypoalbuminemia, hypophosphatemia and nausea. The MTD/RP2D was  determined to be 240 mg orally twice daily for tivantinib in combination with 20 mg  intravenously weekly for temsirolimus. These doses were lower compared to the  recommended single agent doses for both drugs; however, are doses at which clinical  activity has been reported for each drug [11, 24]. There was an interesting signal of anti- tumor activity from the combination of tivantinib and temsirolimus in diseases not typically  thought to be responsive to mTOR inhibition. One patient with ovarian cancer was noted to  have a PR and remained on the study for 10 months. In addition, 8 patients developed SD  with 2 of them remaining on study for 6 and 7 months, respectively. "
+},
+{
+          "paragraph3": "Tivantinib is primarily metabolized by CYP2C19 and partially by CYP3A4/5 [9].  Temsirolimus is a both a sensitive CYP3A4 substrate and a weak inhibitor of CYP3A4, with  well-known drug interactions with CYP3A4 inducers and inhibitors and recommendations  "
+},
+{
+          "paragraph4": "Kyriakopoulos et al. Page 7 "
+},
+{
+          "paragraph5": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph6": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph7": "for dose modification with concurrent use [31]. Therefore, tivantinib and temsirolimus may  both compete for metabolism via CYP3A4 and temsirolimus may inhibit the metabolism of  tivantinib, representing a complex drug interaction scenario where pharmacokinetic studies  are warranted. Our analysis demonstrated no interaction between temsirolimus and tivantinib  which suggest these two CYP3A4 substrates can be safely co-administered. Whether this is  generalizable to co-administration of other CYP3A4 substrates is unknown, although of  considerable interest. In addition, it is well known that CYP2C19 is subject to genetic  polymorphism that can alter metabolism of CYP2C19 substrates [30]. The most common  polymorphisms that cause poor substrate metabolism are CYP2C19*2 and *3, whereas  CYP2C19*1 is considered the wild type [32]. Thus, we screened all patients prior to study  entry and we planned for two separate cohorts, one for extensive (normal) and one for poor  metabolizers. Due to the rarity of these poor metabolizer polymorphisms, all patients in our  study were carriers of the wild type gene and as such were considered extensive (normal)  metabolizers. "
+},
+{
+          "paragraph8": "Previous studies have tested tivantinib in hepatocellular carcinoma as single agent [14] as  well as in non-small cell lung cancer in combination with erlotinib [12, 17–20]. Although  some success has been noted, there continue to be significant challenges. In patients with  hepatocellular carcinoma, treatment with tivantinib was associated with a prolonged time to  progression compared to placebo (1.6 vs. 1.4 months; HR 0.64, 90% CI 0.43–0.94; p=0.04),  especially in patients with high expression of c-Met (2.7 vs. 1.4 months; HR 0.43, 95% CI  0.19–0.97; p=0.03) [14]. As such, two phase III studies in that setting are currently ongoing  (NCT01755767, NCT02029157). In non-small cell lung cancer, the initial phase II study  with tivantinib in combination with erlotinib showed promising results [17]; however,  subsequent phase III studies either failed to confirm the superiority of the combination [20],  or terminated before completing accrual due to increased incidence of interstitial lung  disease [19]. One possible factor that could explain the lack of superiority of the  combination is the mechanism of action of tivantinib itself. Even though tivantinib was  initially designed as a c-Met inhibitor [8] with an initial phase I study providing evidence of  pharmacodymanic effect of tivantinib on c-Met [10], subsequent in vitro studies have shown  that tivantinib exerts its cytotoxic effect irrespective of c-Met inhibition [33, 34]. As such,  tivantinib might not have an effect on c-Met amplification that is an established mechanism  of resistance to EGFR TKIs like erlotinib. "
+},
+{
+          "paragraph9": "In conclusion, the combination of tivantinib and temsirolimus was well tolerated and  demonstrated promising anti-tumor activity. Based on our results, we believe that such a  combination warrants further investigation. "
+},
+{
+          "paragraph10": "Acknowledgments "
+},
+{
+          "paragraph11": "The investigators gratefully acknowledge the patients and families who participated in this study. Funding was  provided by the NCI Cancer Center Support Grant P30 CA014520 to University of Wisconsin Carbone Cancer  Center and NCI U01CA062491-19S1 Early Clinical Trials of Anti-Cancer Agents with Phase I Emphasis. "
+},
+{
+          "section:1": "References"
+},
+{
+          "paragraph1": "1. Robinson DR, Wu YM, Lin SF. The protein tyrosine kinase family of the human genome.  Oncogene. 2000; 19(49):5548–5557. [PubMed: 11114734]  "
+},
+{
+          "paragraph2": "Kyriakopoulos et al. Page 8 "
+},
+{
+          "paragraph3": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph5": "2. Zwick E, Bange J, Ullrich A. Receptor tyrosine kinase signalling as a target for cancer intervention  strategies. Endocr Relat Cancer. 2001; 8(3):161–173. [PubMed: 11566607]  "
+},
+{
+          "paragraph6": "3. Birchmeier C, Birchmeier W, Gherardi E, Vande Woude GF. Met, metastasis, motility and more. Nat  Rev Mol Cell Biol. 2003; 4(12):915–925. [PubMed: 14685170]  "
+},
+{
+          "paragraph7": "4. Gherardi E, Birchmeier W, Birchmeier C, Vande Woude G. Targeting MET in cancer: rationale and  progress. Nat Rev Cancer. 2012; 12(2):89–103. [PubMed: 22270953]  "
+},
+{
+          "paragraph8": "5. Schmidt L, Duh FM, Chen F, et al. Germline and somatic mutations in the tyrosine kinase domain of  the MET proto-oncogene in papillary renal carcinomas. Nat Genet. 1997; 16(1):68–73. [PubMed:  9140397]  "
+},
+{
+          "paragraph9": "6. Christensen JG, Schreck R, Burrows J, et al. A selective small molecule inhibitor of c-Met kinase  inhibits c-Met-dependent phenotypes in vitro and exhibits cytoreductive antitumor activity in vivo.  Cancer Res. 2003; 63(21):7345–7355. [PubMed: 14612533]  "
+},
+{
+          "paragraph10": "7. Furge KA, Zhang YW, Vande Woude GF. Met receptor tyrosine kinase: enhanced signaling through  adapter proteins. Oncogene. 2000; 19(49):5582–5589. [PubMed: 11114738]  "
+},
+{
+          "paragraph11": "8. Munshi N, Jeay S, Li Y, et al. ARQ 197, a novel and selective inhibitor of the human c-Met receptor  tyrosine kinase with antitumor activity. Mol Cancer Ther. 2010; 9(6):1544–1553. [PubMed:  20484018]  "
+},
+{
+          "paragraph12": "9. Investigator’s Brochure. ARQ 197 (Version 5.0 O, 2010). Daiichi Sankyo Pharma Development;  Edison, NJ:  "
+},
+{
+          "paragraph13": "10. Yap TA, Olmos D, Brunetto AT, et al. Phase I trial of a selective c-MET inhibitor ARQ 197  incorporating proof of mechanism pharmacodynamic studies. J Clin Oncol. 2011; 29(10):1271– 1279. [PubMed: 21383285]  "
+},
+{
+          "paragraph14": "11. Rosen LS, Senzer N, Mekhail T, et al. A phase I dose-escalation study of Tivantinib (ARQ 197) in  adult patients with metastatic solid tumors. Clin Cancer Res. 2011; 17(24):7754–7764. [PubMed:  21976535]  "
+},
+{
+          "paragraph15": "12. Yamamoto N, Murakami H, Hayashi H, et al. CYP2C19 genotype-based phase I studies of a c-Met  inhibitor tivantinib in combination with erlotinib, in advanced/metastatic non-small cell lung  cancer. Br J Cancer. 2013; 109(11):2803–2809. [PubMed: 24169346]  "
+},
+{
+          "paragraph16": "13. Wagner AJ, Goldberg JM, Dubois SG, et al. Tivantinib (ARQ 197), a selective inhibitor of MET, in  patients with microphthalmia transcription factor-associated tumors: results of a multicenter phase  2 trial. Cancer. 2012; 118(23):5894–5902. [PubMed: 22605650]  "
+},
+{
+          "paragraph17": "14. Santoro A, Rimassa L, Borbath I, et al. Tivantinib for second-line treatment of advanced  hepatocellular carcinoma: a randomised, placebo-controlled phase 2 study. Lancet Oncol. 2013;  14(1):55–63. [PubMed: 23182627]  "
+},
+{
+          "paragraph18": "15. Tolaney SM, Tan S, Guo H, et al. Phase II study of tivantinib (ARQ 197) in patients with metastatic  triple-negative breast cancer. Invest New Drugs. 2015; 33(5):1108–1114. [PubMed: 26123926]  "
+},
+{
+          "paragraph19": "16. Dorkhom, SJ., et al. Phase II study of the c-Met inhibitor ARQ 197 (tivantinib) in patients with  relapsed multiple myeloma. (https://ash.confex.com/ash/2012/webprogram/Paper53995.html) "
+},
+{
+          "paragraph20": "17. Sequist LV, von Pawel J, Garmey EG, et al. Randomized phase II study of erlotinib plus tivantinib  versus erlotinib plus placebo in previously treated non-small-cell lung cancer. J Clin Oncol. 2011;  29(24):3307–3315. [PubMed: 21768463]  "
+},
+{
+          "paragraph21": "18. Goldman JW, Laux I, Chai F, et al. Phase 1 dose-escalation trial evaluating the combination of the  selective MET (mesenchymal-epithelial transition factor) inhibitor tivantinib (ARQ 197) plus  erlotinib. Cancer. 2012; 118(23):5903–5911. [PubMed: 22605616]  "
+},
+{
+          "paragraph22": "19. Yoshioka H, Azuma K, Yamamoto N, et al. A randomized, double-blind, placebo-controlled, phase  III trial of erlotinib with or without a c-Met inhibitor tivantinib (ARQ 197) in Asian patients with  previously treated stage IIIB/IV nonsquamous nonsmall-cell lung cancer harboring wild-type  epidermal growth factor receptor (ATTENTION study). Ann Oncol. 2015; 26(10):2066–2072.  [PubMed: 26153496]  "
+},
+{
+          "paragraph23": "20. Scagliotti G, von Pawel J, Novello S, et al. Phase III Multinational, Randomized, Double-Blind,  Placebo-Controlled Study of Tivantinib (ARQ 197) Plus Erlotinib Versus Erlotinib Alone in  Previously Treated Patients With Locally Advanced or Metastatic Nonsquamous Non-Small-Cell  Lung Cancer. J Clin Oncol. 2015; 33(24):2667–2674. [PubMed: 26169611]  "
+},
+{
+          "paragraph24": "Kyriakopoulos et al. Page 9 "
+},
+{
+          "paragraph25": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph26": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph27": "21. Pant S, Saleh M, Bendell J, et al. A phase I dose escalation study of oral c-MET inhibitor tivantinib  (ARQ 197) in combination with gemcitabine in patients with solid tumors. Ann Oncol. 2014;  25(7):1416–1421. [PubMed: 24737778]  "
+},
+{
+          "paragraph28": "22. Puzanov I, Sosman J, Santoro A, et al. Phase 1 trial of tivantinib in combination with sorafenib in  adult patients with advanced solid tumors. Invest New Drugs. 2015; 33(1):159–168. [PubMed:  25294187]  "
+},
+{
+          "paragraph29": "23. Eng C, Bessudo A, Hart LL, et al. A randomized, placebo-controlled, phase 1/2 study of tivantinib  (ARQ 197) in combination with irinotecan and cetuximab in patients with metastatic colorectal  cancer with wild-type KRAS who have received first-line systemic therapy. Int J Cancer. 2016;  139(1):177–186. [PubMed: 26891420]  "
+},
+{
+          "paragraph30": "24. Hudes G, Carducci M, Tomczak P, et al. Temsirolimus, interferon alfa, or both for advanced renal- cell carcinoma. N Engl J Med. 2007; 356(22):2271–2281. [PubMed: 17538086]  "
+},
+{
+          "paragraph31": "25. Boni JP, Hug B, Leister C, Sonnichsen D. Intravenous temsirolimus in cancer patients: clinical  pharmacology and dosing considerations. Semin Oncol. 2009; 36(Suppl 3):S18–25. [PubMed:  19963096]  "
+},
+{
+          "paragraph32": "26. Eisenhauer EA, Therasse P, Bogaerts J, et al. New response evaluation criteria in solid tumours:  revised RECIST guideline (version 1.1). Eur J Cancer. 2009; 45(2):228–247. [PubMed: 19097774]  "
+},
+{
+          "paragraph33": "27. Raymond E, Alexandre J, Faivre S, et al. Safety and pharmacokinetics of escalated doses of weekly  intravenous infusion of CCI-779, a novel mTOR inhibitor, in patients with cancer. J Clin Oncol.  2004; 22(12):2336–2347. [PubMed: 15136596]  "
+},
+{
+          "paragraph34": "28. Garajová I, Giovannetti E, Biasco G, Peters GJ. c-Met as a Target for Personalized Therapy. Transl  Oncogenomics. 2015; 7(Suppl 1):13–31. [PubMed: 26628860]  "
+},
+{
+          "paragraph35": "29. Ma PC, Schaefer E, Christensen JG, Salgia R. A selective small molecule c-MET Inhibitor,  PHA665752, cooperates with rapamycin. Clin Cancer Res. 2005; 11(6):2312–2319. [PubMed:  15788682]  "
+},
+{
+          "paragraph36": "30. Chang SM, Kuhn J, Wen P, et al. Phase I/pharmacokinetic study of CCI-779 in patients with  recurrent malignant glioma on enzyme-inducing antiepileptic drugs. Invest New Drugs. 2004;  22(4):427–435. [PubMed: 15292713]  "
+},
+{
+          "paragraph37": "31. Rodriguez-Antona C, Ingelman-Sundberg M. Cytochrome P450 pharmacogenetics and cancer.  Oncogene. 2006; 25(11):1679–1691. [PubMed: 16550168]  "
+},
+{
+          "paragraph38": "32. Desta Z, Zhao X, Shin JG, Flockhart DA. Clinical significance of the cytochrome P450 2C19  genetic polymorphism. Clin Pharmacokinet. 2002; 41(12):913–958. [PubMed: 12222994]  "
+},
+{
+          "paragraph39": "33. Basilico C, Pennacchietti S, Vigna E, et al. Tivantinib (ARQ197) displays cytotoxic activity that is  independent of its ability to bind MET. Clin Cancer Res. 2013; 19(9):2381–2392. [PubMed:  23532890]  "
+},
+{
+          "paragraph40": "34. Katayama R, Aoyama A, Yamori T, et al. Cytotoxic activity of tivantinib (ARQ 197) is not due  solely to c-MET inhibition. Cancer Res. 2013; 73(10):3087–3096. [PubMed: 23598276]  "
+},
+{
+          "paragraph41": "Kyriakopoulos et al. Page 10 "
+},
+{
+          "paragraph42": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph43": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms938683_page10_259.jpg"
+},
+{
+          "section:1": "Figure 1"
+},
+{
+          "paragraph1": "  Study design "
+},
+{
+          "paragraph2": "Kyriakopoulos et al. Page 11 "
+},
+{
+          "paragraph3": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph6": "Kyriakopoulos et al. Page 12 "
+},
+{
+          "section:1": "Table 1"
+},
+{
+          "paragraph1": "Dose escalation "
+},
+{
+          "paragraph2": "Dose level "
+},
+{
+          "paragraph3": "Dose "
+},
+{
+          "paragraph4": "Tivantinib "
+},
+{
+          "paragraph5": "(mg orally twice daily) "
+},
+{
+          "paragraph6": "Temsirolimus "
+},
+{
+          "paragraph7": "(mg intravenously weekly) "
+},
+{
+          "paragraph8": "Level −1 120 15 "
+},
+{
+          "paragraph9": "Level 1 120 20 "
+},
+{
+          "paragraph10": "Level 2 240 20 "
+},
+{
+          "paragraph11": "Level 3 360 20 "
+},
+{
+          "paragraph12": "Level 4 360 25 "
+},
+{
+          "paragraph13": "Level 5 480 25 "
+},
+{
+          "paragraph14": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph15": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph16": "Kyriakopoulos et al. Page 13 "
+},
+{
+          "section:1": "Table 2"
+},
+{
+               "section:2": "Patient characteristics"
+},
+{
+               "paragraph1": "Characteristics (N=29) "
+},
+{
+               "paragraph2": "Age in years, median (range) 58 (28–77) "
+},
+{
+               "paragraph3": "Gender, n (%) Male 17 (59) "
+},
+{
+               "paragraph4": "Female 12 (41) "
+},
+{
+               "paragraph5": "ECOG PS, n (%) 0 5 (17) "
+},
+{
+               "paragraph6": "1 21 (73) "
+},
+{
+               "paragraph7": "2 3 (10) "
+},
+{
+               "paragraph8": "Malignancy, n (%) Colorectal 9 (31) "
+},
+{
+               "paragraph9": "Ovarian 6 (21) "
+},
+{
+               "paragraph10": "Non-small cell lung 3 (10) "
+},
+{
+               "paragraph11": "Renal 2 (7) "
+},
+{
+               "paragraph12": "Pancreatic 2 (7) "
+},
+{
+               "paragraph13": "Cholangiocarcinoma, bladder, endometrial, tongue, esophageal, liposarcoma, carcinosarcoma 1 each (24) "
+},
+{
+               "paragraph14": "CYP2C19 status, n (%) Extensive metabolizer 29 (100) "
+},
+{
+               "paragraph15": "Poor metabolizer 0 (0) "
+},
+{
+               "paragraph16": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+               "paragraph17": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph18": "Kyriakopoulos et al. Page 14 "
+},
+{
+          "section:1": "Table 3"
+},
+{
+          "paragraph1": "Dose levels and DLTs "
+},
+{
+          "paragraph2": "Dose Level Enrolled Unevaluable DLT "
+},
+{
+          "paragraph3": "1 8 2 None "
+},
+{
+          "paragraph4": "2 8 2 1* "
+},
+{
+          "paragraph5": "3 5 1 2** "
+},
+{
+          "paragraph6": "Expansion 8 2 1*** "
+},
+{
+          "paragraph7": "*Grade 4 neutropenia and grade 3 mucositis, "
+},
+{
+          "paragraph8": "**One patient with grade 3 abdominal pain, one patient with grade 4 neutropenia/grade 3 febrile neutropenia, "
+},
+{
+          "paragraph9": "***Grade 2 mucositis that resulted to inability to deliver > 75% of the protocol specified cycle 1 treatment "
+},
+{
+          "paragraph10": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph11": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph12": "Kyriakopoulos et al. Page 15 "
+},
+{
+          "section:1": "Table 4"
+},
+{
+          "paragraph1": "At least possibly related to treatment grade ≥ 2 adverse events experienced by at least 3 patients "
+},
+{
+          "paragraph2": "Adverse Event * Patients (N=29) "
+},
+{
+          "paragraph3": "Grade 2 n (%) "
+},
+{
+          "paragraph4": "Grade 3 n (%) "
+},
+{
+          "paragraph5": "Grade 4 n (%) "
+},
+{
+          "paragraph6": "Overall n (%) "
+},
+{
+          "paragraph7": "Anemia 9 (31) 3 (10.3) 0 12 (41.4) "
+},
+{
+          "paragraph8": "Fatigue 10 (34.5) 0 0 10 (34.5) "
+},
+{
+          "paragraph9": "Anorexia 9 (31) 0 0 9 (31) "
+},
+{
+          "paragraph10": "Hypoalbuminemia 6 (20.7) 2 (6.9) 0 8 (27.6) "
+},
+{
+          "paragraph11": "Hypophosphatemia 2 (6.9) 5 (17.2) 0 7 (24.1) "
+},
+{
+          "paragraph12": "Nausea 6 (20.7) 1 (3.4) 0 7 (24.1) "
+},
+{
+          "paragraph13": "Mucositis 5 (17.2) 1 (3.4) 0 6 (20.7) "
+},
+{
+          "paragraph14": "Vomiting 3 (10.3) 2 (6.9) 0 5 (17.2) "
+},
+{
+          "paragraph15": "Diarrhea 4 (13.8) 1 (3.4) 0 5 (17.2) "
+},
+{
+          "paragraph16": "Hypokalemia 4 (13.8) 1 (3.4) 0 5 (17.2) "
+},
+{
+          "paragraph17": "Hypertension 2 (6.9) 3 (10.3) 0 5 (17.2) "
+},
+{
+          "paragraph18": "Dyspnea 2 (6.9) 2 (6.9) 0 4 (13.8) "
+},
+{
+          "paragraph19": "Leukopenia 2 (6.9) 1 (3.4) 1 (3.4) 4 (13.8) "
+},
+{
+          "paragraph20": "Abdominal pain 1 (3.4) 2 (6.9) 0 3 (10.2) "
+},
+{
+          "paragraph21": "Dehydration 2 (6.9) 1 (3.4) 0 3 (10.2) "
+},
+{
+          "paragraph22": "Hyperglycemia 2 (6.9) 1 (3.4) 0 3 (10.2) "
+},
+{
+          "paragraph23": "Hyponatremia 0 3 (10.3) 0 3 (10.2) "
+},
+{
+          "paragraph24": "Neutropenia 1 (3.4) 0 2 (6.9) 3 (10.2) "
+},
+{
+          "paragraph25": "Thrombocytopenia 3 (10.3) 0 0 3 (10.2) "
+},
+{
+          "paragraph26": "*No Grade 5 Adverse Events were noted "
+},
+{
+          "paragraph27": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph28": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph29": "Kyriakopoulos et al. Page 16 "
+},
+{
+          "section:1": "Table 5"
+},
+{
+          "paragraph1": "Best response per dose level "
+},
+{
+          "paragraph2": "Dose Level "
+},
+{
+          "paragraph3": "Evaluable "
+},
+{
+          "paragraph4": "patients, n "
+},
+{
+          "paragraph5": "Tivantinib, "
+},
+{
+          "paragraph6": "oral dose "
+},
+{
+          "paragraph7": "Temsirolimus, "
+},
+{
+          "paragraph8": "IV dose "
+},
+{
+          "paragraph9": "Best Response, n "
+},
+{
+          "paragraph10": "PR SD PD "
+},
+{
+          "paragraph11": "1 7 120 mg BID 20 mg weekly 1 2 4 "
+},
+{
+          "paragraph12": "2 8 240 mg BID 20 mg weekly 0 2 6 "
+},
+{
+          "paragraph13": "3 5 360 mg BID 20 mg weekly 0 2 3 "
+},
+{
+          "paragraph14": "Expansion cohort 7 240 mg BID 20 mg weekly 0 2 5 "
+},
+{
+          "paragraph15": "PR: partial response; SD: stable disease; PD: progressive disease "
+},
+{
+          "paragraph16": "Invest New Drugs. Author manuscript; available in PMC 2018 February 12. "
+},
+{
+          "paragraph17": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph18": "Kyriakopoulos et al. Page 17 "
+},
+{
+          "section:1": "Table 6"
+},
+{
+          "paragraph1": "Pharmacokinetic Analysis of Tivantinib and Temsirolimus "
+},
+{
+          "paragraph2": "Dose Adjusted Tivantinib Pharmacokinetic Parameters "
+},
+{
+          "paragraph3": "Parameter Day N Geometric Mean Ratio (%) "
+},
+{
+          "paragraph4": "geometric "
+},
+{
+          "paragraph5": "means "
+},
+{
+          "paragraph6": "95% CI of "
+},
+{
+          "paragraph7": "ratio "
+},
+{
+          "paragraph8": "Cmax (ng/mL/mg) 1 21 9.27 0.80 0.78–0.82 "
+},
+{
+          "paragraph9": "7 21 11.52 "
+},
+{
+          "paragraph10": "7 21 11.52 1.04 1.00–1.05 "
+},
+{
+          "paragraph11": "8 21 11.03 "
+},
+{
+          "paragraph12": "AUC0–12 1 21 67.78 0.78 0.72–0.82 "
+},
+{
+          "paragraph13": "(hr*ng/mL/mg) 7 21 86.82 "
+},
+{
+          "paragraph14": "7 21 86.82 0.98 0.97 –1.00 "
+},
+{
+          "paragraph15": "8 21 88.04 "
+},
+{
+          "paragraph16": "Temsirolimus Pharmacokinetic Parameters "
+},
+{
+          "paragraph17": "Cmax (ng/mL) 1 8 362.73 0.94 0.78–1.08 "
+},
+{
+          "paragraph18": "8 21 382.18 "
+},
+{
+          "paragraph19": "AUC0–∞ 1 8 1344.72 1.09 0.86–1.28 "
+},
+{
+          "paragraph20": "(hr*ng/mL) 8 21 1228.03 "
+}]

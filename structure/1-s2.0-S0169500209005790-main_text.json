@@ -1,0 +1,327 @@
+[{
+     "paragraph1": "Lung Cancer 69 (2010) 172–179 "
+},
+{
+     "paragraph2": "Contents lists available at ScienceDirect "
+},
+{
+     "paragraph3": "Lung Cancer "
+},
+{
+     "Figure": "1-s2.0-S0169500209005790-main_page0_331.jpg"
+},
+{
+     "paragraph4": "journal homepage: www.elsevier.com/locate/lungcan "
+},
+{
+     "Figure": "1-s2.0-S0169500209005790-main_page0_332.jpg"
+},
+{
+          "section:1": "DNA hypermethylation of tumors from non-small cell lung cancer (NSCLC) patients is associated with gender and histologic type"
+},
+{
+          "paragraph1": "Stephen E. Hawes a,∗, Joshua E. Stern b, Qinghua Feng b, Linda W. Wiens c, Janet S. Rasey d, Hiep Lu b, Nancy B. Kiviat b, Hubert Vesselle c "
+},
+{
+          "paragraph2": "a Department of Epidemiology, School of Public Health, University of Washington, Box 359933, Seattle, WA 98195, United States b Department of Pathology, School of Medicine, University of Washington, Seattle, WA, United States c Department of Radiology, School of Medicine, University of Washington, Seattle, WA, United States d Departments of Radiation Oncology, School of Medicine, University of Washington, Seattle, WA, United States "
+},
+{
+          "paragraph3": "a r t i c l e i n f o "
+},
+{
+          "paragraph4": "Article history: Received 20 May 2009 Received in revised form 25 August 2009 Accepted 3 November 2009 "
+},
+{
+          "paragraph5": "Keywords: Hypermethylation Lung cancer Gender Histology "
+},
+{
+          "paragraph6": "a b s t r a c t "
+},
+{
+          "paragraph7": "Background: We previously identiﬁed a number of genes which were methylated signiﬁcantly more fre- quently in the tumor compared to the non-cancerous lung tissues from non-small cell lung cancer (NSCLC) patients. Detection of methylation proﬁles of genes in NSCLC could provide insight into differential pathways to malignancy and lead to strategies for better treatment of individuals with NSCLC. Methods: We determined the DNA methylation status of 27 genes using quantitative MethyLight assays in lung tumor samples from 117 clinically well-characterized NSCLC patients. Results: Hypermethylation was detected in one of more of the genes in 106 (91%) of 117 cases and was detected at high levels (percentage methylation reference (PMR) ≥ 4%) in 79% of NSCLC cases. Methyla- tion of APC, CCND2, KCNH5 and, RUNX was signiﬁcantly more frequent in adenocarcinomas compared to squamous cell carcinomas (SCC), while methylation of CDKN2A was more common in SCC. Hypermethy- lation of KCNH5, KCNH8, and RARB was more frequent in females compared to males. Hypermethylation of APC and CCND2 was inversely associated with proliferation score assessed by Ki-67 level. Conclusions: Our ﬁndings of differential gene hypermethylation frequencies in tumor tissues from patients with adenocarcinoma or squamous cell cancers and in females compared to males suggests that further investigation is warranted in order to more fully understand the potential disparate pathways and/or risk factors for NSCLC associated with histologic type and gender. © 2009 Elsevier Ireland Ltd. All rights reserved. "
+},
+{
+          "paragraph8": "1. Introduction "
+},
+{
+          "paragraph9": "Primary lung cancer is a major cause of death worldwide [1] "
+},
+{
+          "paragraph10": "and remains the leading cause of cancer death in the United States, with an estimated 215,020 new patients diagnosed and 161,840 deaths expected in 2008 [2]. Non-small cell lung cancer (NSCLC) accounts for 80% of these new cases and includes the following his- tologic types: adenocarcinoma, squamous cell carcinoma, large cell carcinoma and mixed histologies. Approximately 25–33% of NSCLC patients present with stage I or II disease, which permits surgical resection with curative intent. However, despite a complete and presumably curative resection, approximately 40–50% of patients with resected NSCLC die of recurrent disease [3]. "
+},
+{
+          "paragraph11": "� Informed consent was obtained according to procedures approved by the Human Subjects Committee of the University of Washington. ∗ Corresponding author. Tel.: +1 206 616 9744; fax: +1 206 616 9788. E-mail address: hawes@u.washington.edu (S.E. Hawes). "
+},
+{
+          "paragraph12": "In recent years, much attention has focused on whether women and men differ with respect to the epidemiologic and clinicopatho- logic features of NSCLC. Recent trends in the United States show that while incidence in men has declined during the past decades, lung cancer has continued to increase in women [4]. Further, much of the current evidence suggests that women have an increased suscepti- bility to lung cancer, are younger at age of diagnosis, are more likely to have adenocarcinoma compared to squamous cell carcinomas, and have better response to therapy and improved survival [5–9]. Identifying the molecular proﬁles of these patients could provide insight into differential pathways to malignancy in females com- pared to males and could lead to strategies for better treatment of individuals with NSCLC. It has recently become clear that epigenetic alterations play an important role in cancer development and result in changes in gene function that occur without changes in nucleotide sequence [10]. One of the most well studied epigenetic changes is DNA methylation, which adds a methyl group to cytosines preceding guanidines (also called CpG dinucleotides). Methylation of CpG islands in the promoter region of the gene leads to gene silencing "
+},
+{
+          "paragraph13": "0169-5002/$ – see front matter © 2009 Elsevier Ireland Ltd. All rights reserved. doi:10.1016/j.lungcan.2009.11.002 "
+},
+{
+          "paragraph14": "S.E. Hawes et al. / Lung Cancer 69 (2010) 172–179 173 "
+},
+{
+          "paragraph15": "and inactivation, and it has been proposed that DNA methylation of promoter regions of tumor suppressor genes plays an important role in tumor development [11,12]. A number of genes appear to be aberrantly methylated in tumor as opposed to non-tumor tissues from NSCLC patients [13–19]. Multiple studies have attempted to assess the clinical signiﬁcance of one gene, or a small set of genes, in differentiating the clinicopathological features of these tumors [16,18,20–25]. However, most of these studies utilized qualitative methylation-speciﬁc PCR (MSP) in order to detect DNA methyla- tion, a method that can sometimes lead to false positive results and does not distinguish between low and high level methylation [26]. Furthermore, results in these studies have been inconsistent due to varying methylation detection protocols, PCR primers, and study populations, and none have comprehensively studied more than 10 genes. In the present study, we chose to quantify methylation of genes which were potentially important in lung cancer, many of which have been assessed by others but some which have not been previ- ously evaluated (Appendix 1). The selected genes affect apoptosis (DAPK1, RUNX3, TMS1, PTEN, and SOCS3), cell adhesion, inva- sion and/or metastasis (OPCML, CDH13, BVES, APC, CDH1, IGSF4, KCNH5, and PCSK6), cell cycle control (CCND2, RASSF1, APC, FHIT, CDKN2A, CDKN2B, P14, and PTEN), cell proliferation and/or dif- ferentiation (RARB, IGFBP3, KCNH5, KCNH8, SOCS3 and PTGS2), and DNA-repair and/or detoxiﬁcation of DNA adducts (FHIT, MLH1, MGMT, FANCF, and GSTP1). In order to assess more broadly the clinical signiﬁcance of gene hypermethylation in NSCLC, we determined the DNA methylation status of these 27 genes using quantitative MethyLight assays in lung tumor samples from 117 clinically well-characterized NSCLC patients. "
+},
+{
+          "paragraph16": "2. Methods "
+},
+{
+               "section:2": "Introduction"
+},
+{
+               "paragraph1": "pulation "
+},
+{
+               "paragraph2": "The subjects in the present study are a subset of patients included in a larger prospective study of ﬂuorodeoxyglucose (FDG) PET imaging in NSCLC conducted under University of Washing- ton Human Subjects Division approval [27]. Brieﬂy, 208 patients were enrolled into the imaging trial and were followed using the standard NSCLC care algorithm previously described [28]. Results of this imaging trial have been recently reported [27]. In 117 of the 208 subjects, a parafﬁn-embedded tumor block of the primary tumor was available for methylation analysis, the results of which are presented here. "
+},
+{
+               "paragraph3": "2.2. Pathology "
+},
+{
+               "paragraph4": "All biopsy and resection specimens were reviewed by the pathology department of the University of Washington Medical Center or the Veterans Affairs Puget Sound Health Care System to verify non-small cell histology of the lung cancer samples and to determine the histologic subtype. NSCLC histology was clas- siﬁed as adenocarcinoma, squamous, large cell, bronchoalveolar adenocarcinoma (BAC), and NSCLC with NOS/other/mixed histol- ogy. Histologic BAC was deﬁned using the WHO deﬁnition: a variant of adenocarcinoma characterized by surface growth over alveolar septa and without an invasive component. The tumor proliferation rate was assessed by the Ki-67 score as described previously [28]. For each subject, the tissue size and stage had been thoroughly assessed as described previously [29]. "
+},
+{
+               "paragraph5": "2.3. DNA isolation from parafﬁn blocks "
+},
+{
+               "paragraph6": "Six 20 �m sections were cut from each block and deparafﬁned by xylene extraction. The resulting tissue pellets were digested with "
+},
+{
+               "paragraph7": "proteinase K at 48 ◦C overnight. The genomic DNA was isolated by phenol/chloroform extraction and ethanol precipitation. Finally the DNA was puriﬁed using QIAamp DNA mini-column according to the manufacturer’s protocol (Qiagen, Valencia, CA). "
+},
+{
+               "paragraph8": "2.4. Sodium bisulﬁte conversion "
+},
+{
+               "paragraph9": "Unmethylated human sperm DNA (U-DNA) and in-vitro fully methylated DNA (M-DNA) were converted with clinical samples as described before [30]. Brieﬂy, about 1 �g DNA was modiﬁed by 5 M sodium bisulﬁte, desulfonated with NaOH, then puriﬁed and resus- pended in 80 �l elution buffer (10 mM Tris-HCl, pH 8.0, Qiagen). "
+},
+{
+               "section:2": "Methods"
+},
+{
+               "paragraph1": " methylation (MethyLight) analysis "
+},
+{
+               "paragraph2": "For each gene, the primers and probe were designed speciﬁ- cally for bisulﬁte-converted fully methylated DNA (Appendix 2). Ampliﬁcation of bisulﬁte-converted �-actin (ACTB) was used to normalize for input DNA. Samples that were negative for ACTB were excluded in the methylation analysis. A plasmid containing bisulﬁte-converted ACTB gene of known concentration was diluted and used as the standard curve for quantiﬁcation. The assay for a given set of samples was considered valid only if the converted U-DNA was not ampliﬁed, while the converted M-DNA was ampli- ﬁed. The percentage methylated reference (PMR) for each locus was calculated by dividing the GENE: reference ratio of a sample by the GENE: reference ratio of M-DNA and multiplying by 100 [31]. Twenty-seven genes, plus the control gene ACTB, were analyzed in this study. "
+},
+{
+                    "section:3": "Study population"
+},
+{
+                    "paragraph1": "analysis "
+},
+{
+                    "paragraph2": "MethyLight data were dichotomized semi-quantitatively, ini- tially classifying a speciﬁc gene positive for hypermethylation using both a PMR > 0% cutoff as well as a PMR ≥ 4% cutoff, as we have used in our previous study of lung cancer methylation [19]. However, for assessing associations of hypermethylation with behavioral and clinical data, we used a cutoff value of PMR > 4% which has been val- idated in the literature as a standard cutoff and is associated with loss of protein expression [31–34]. When multiple cancerous tissue samples were available, we randomly chose one of the cancerous blocks to be used in this analysis. Factors associated with patient and tumor characteristics were assessed univariately with chi- square tests for trend and logistic regression. In the ﬁnal analysis, multivariable adjustments were made to adjust for the potentially confounding effects of histologic type, gender, and tumor size. Exact logistic regression was utilized to compute risk estimates and conﬁ- dence intervals when the prevalence of gene methylation was low. In the multivariable analyses, p-values and 95% conﬁdence intervals were adjusted to take into account multiple comparisons by setting the false discovery rate (FDR) equal to 0.05, using PROC MULTTEST [35] and subsequently recalculating conﬁdence intervals [36]. A two-sided 0.05 test level determined statistical signiﬁcance for all analyses. All analyses were conducted using SAS version 9.1 (SAS Institute Inc., Cary, NC). "
+},
+{
+                    "paragraph3": "3. Results "
+},
+{
+                    "section:3": "Pathology"
+},
+{
+                    "paragraph1": "raphics "
+},
+{
+                    "paragraph2": "In the present study, we chose genes which were potentially important in lung cancer and determined the DNA methylation status of these 27 genes using quantitative MethyLight assays in lung tumor samples from 117 well-described patients. The mean age of the 117 NSCLC cases at the time of enrollment in the imag- ing trial was 64.8 years (Table 1). Somewhat less than half were "
+},
+{
+                    "paragraph3": "174 S.E. Hawes et al. / Lung Cancer 69 (2010) 172–179 "
+},
+{
+                    "paragraph4": "Table 1 Baseline patient and tumor characteristics of NSCLC cases. "
+},
+{
+                    "paragraph5": "NSCLC cases (n = 117) "
+},
+{
+                    "paragraph6": "Age (mean years ± S.D.) 64.8 ± 8.9 Female gender 45 (38%) Caucasian race 105 (90%) "
+},
+{
+                    "paragraph7": "Smoking history – pack-years 0 5 (4%) 1–39 28 (24%) ≥40 80 (68%) Smoker, amount unknown 4 (3%) "
+},
+{
+                    "paragraph8": "Tumor size (mean cm ± S.D.) 3.0 ± 1.5 <2 30 (26%) 2–3 37 (32%) 3–5 38 (32%) ≥5 12 (10%) "
+},
+{
+                    "paragraph9": "Histologic stage I 65 (56%) II 28 (24%) III 18 (15%) IV 6 (5%) "
+},
+{
+                    "paragraph10": "Histologic type Adenocarcinoma 51 (44%) Bronchoalveolar cell (BAC) 8 (7%) Adenocarcinoma (non-BAC) 43 (37%) Squamous 39 (33%) Large cell 20 (17%) NSCLC, NOS/mixed 7 (6%) "
+},
+{
+                    "paragraph11": "Tumor differentiation Well 9 (8%) Moderate 40 (34%) Poor 68 (58%) "
+},
+{
+                    "paragraph12": "female (38%), and most were Caucasian (90%). All but ﬁve patients reported a history of smoking, with 68% reporting at least 40 life- time pack-years of smoking. The majority of these NSCLC cases had surgical stage I (56%) or II (24%) disease and more than half (57%) had tumors <3 cm. By histology, 44% of the tumors were adenocarci- nomas, including 7% bronchioloalveolar carcinomas (BAC) and 37% non-BAC adenocarcinomas, 33% were squamous cell carcinomas, and 17% were large cell carcinomas. Fifty-eight percent had poorly differentiated tumors. "
+},
+{
+                    "section:3": "DNA isolation from paraffin blocks"
+},
+{
+                    "paragraph1": "umor characteristics "
+},
+{
+                    "paragraph2": "The methylation proﬁles of 27 genes were assessed (Table 2). Hypermethylation at PMR > 0% was detected in at least one NSCLC case for all genes except P14 and SOCS3. Three genes (APC, CCND2, and RARB) were had detectable methylation in at least 50% of cases, and nine other genes (BVES, CDH1, CDH13, CDKN2A, DAPK1, IGSF4, KCNH5, RASSF1 and RUNX) were methylated in 20–49% of cases. Hypermethylation at any level was detected in one or more of the genes in 106 (91%) of 117 cases. The frequency of high lev- els of methylation (PMR ≥ 4%) in NSCLC tissues was at least 20% for seven genes, including APC (38%), RARB (31%), RASSF1 (30%), CCND2 (29%), CDKN2A (26%), BVES (23%), and RUNX (21%). Hyper- methylation at PMR ≥ 4% was detected in 1 or more of the genes in 92 (79%) of 117 cases; 28 (24%) cases were positive for 1 gene, 16 (14%) were positive for 2 genes, 26 (22%) were positive for 3–5 genes, and 22 (19%) were positive for at least 6 and up to 12 genes. Subsequent analyses are presented only for genes (n = 15) with high levels of methylation (PMR ≥ 4%) detected in at least 4% of the NSCLC cases. Methylation patterns varied substantially by histologic type (Table 3), as the percentage of patients with hypermethylation of a number of genes was signiﬁcantly different in tumors from those with squamous cell carcinomas compared to non-BAC adenocar- "
+},
+{
+                    "paragraph3": "cinomas, large cell carcinomas, and bronchioloalveolar cell (BAC) adenocarcinomas. In non-BAC adenocarcinomas (n = 43) compared to squamous cell carcinomas (n = 36), methylation at PMR > 4% was signiﬁcantly more frequent p < 0.05) for APC (45% vs. 17%, respec- tively), CCND2 (45% vs. 3%), KCNH5 (26% vs. 0%), KCNH8 (12% vs 0%), OPCML (16% vs. 0%), and RUNX (33% vs. 3%). However, in squamous cell carcinomas, methylation of CDKN2A (46% vs. 14%) and MGMT (10% vs. 0%) was more common than in non-BAC adenocarcinomas. The methylation patterns in large cell carcinomas (n = 19) and BACs (n = 8) were similar to those of non-BAC adenocarcinomas. In univariate analyses, female gender was associated with increased methylation frequency among the 117 NSCLC cases, as RARB, OPCML, KCNH5, and KCNH8 had signiﬁcantly higher frequencies of methylation among females compared to males (p < 0.05, data not shown). However, as 46% of adenocarcinomas but only 26% of squamous cell carcinomas were in female subjects, the relationships between gender and gene methylation are likely confounded by histologic type. In order to assess the independent associations between gender and methylation after taking histol- ogy into account, we analyzed methylation frequencies stratiﬁed by gender and histology (Table 4). Interestingly, among those with adenocarcinoma, hypermethylation of two (KCNH8 and RARB) of the four genes more frequently hypermethylated overall was sig- niﬁcantly more frequent in females compared to males. Conversely, among those with squamous cell carcinoma, hypermethylation of APC, BVES, and CDKN2A were somewhat more frequent in males compared to females, although none of those comparisons were statistically signiﬁcant. Finally, in the small number (n = 20) of subjects with large cell NSCLC, hypermethylation at PMR ≥ 4% of KCNH5, KCNH8, OPCML, and RUNX was common (>50%) in females (n = 7) but rare (<20%) in males (n = 13). Methylation at PMR ≥ 4% of KCNH8 (OR = 0.4, 95% CI = 0.2–0.9 per 10 years of age) and RARB (OR = 0.6, 95% CI = 0.4–0.9 per 10 years of age) was somewhat less frequent in older as opposed to younger NSCLC patients (Table 5). Since only 5 NSCLC patients were never-smokers, we were unable to assess hypermethylation associ- ated with smoking status. However, among smokers the estimated "
+},
+{
+                    "paragraph4": "Table 2 Promoter hypermethylation in NSCLC tissue (n = 117). "
+},
+{
+                    "paragraph5": "Any methylation PMR > 0% High methylation PMR ≥ 4% "
+},
+{
+                    "paragraph6": "APCa 64 (57%) 43 (38%) BVES 47 (40%) 27 (23%) CCND2a 63 (56%) 33 (29%) CDH1 48 (41%) 7 (6%) CDH13 29 (25%) 13 (11%) CDKN2A 30 (26%) 30 (26%) CDKN2B 5 (4%) 0 (0%) DAPK1 24 (21%) 7 (6%) FANCF 1 (1%) 1 (1%) FHIT 1 (1%) 0 (0%) GSTP1 2 (2%) 2 (2%) IGFBP3 14 (12%) 2 (2%) IGSF4 26 (22%) 3 (3%) KCNH5 39 (33%) 22 (19%) KCNH8 22 (19%) 12 (10%) MGMT 12 (10%) 5 (4%) MLH1 1 (1%) 1 (1%) OPCML 18 (15%) 16 (14%) P14 0 (0%) 0 (0%) PCSK6 11 (9%) 3 (3%) PTEN 1 (1%) 1 (1%) PTGS2 1 (1%) 0 (0%) RARB 58 (50%) 36 (31%) RASSF1 35 (30%) 35 (30%) RUNX 25 (21%) 25 (21%) SOCS3 0 (0%) 0 (0%) TMS1 15 (13%) 9 (8%) "
+},
+{
+                    "paragraph7": "a 112 LC blocks for APC and CCND2. "
+},
+{
+                    "paragraph8": "S.E. Hawes et al. / Lung Cancer 69 (2010) 172–179 175 "
+},
+{
+                    "paragraph9": "Table 3 Promoter hypermethylation in NSCLC tissues, by histologic type. "
+},
+{
+                    "paragraph10": "Histology "
+},
+{
+                    "paragraph11": "All adenocarcinoma Squamous (n = 39) Large cell (n = 20) Mixed, NOS, or other (n = 7) "
+},
+{
+                    "paragraph12": "Non-BAC (n = 43) BAC (n = 8) "
+},
+{
+                    "paragraph13": "APCa 19 (45%) 6 (75%) 6 (17%) 10 (53%) 2 (29%) BVES 8 (19%) 3 (38%) 7 (18%) 6 (30%) 3 (43%) CCND2a 19 (45%) 4 (50%) 1 (3%) 8 (42%) 1 (14%) CDH1 3 (7%) 0 (0%) 2 (5%) 0 (0%) 2 (29%) CDH13 5 (12%) 1 (13%) 4 (10%) 2 (10%) 1 (14%) CDKN2A 6 (14%) 0 (0%) 18 (46%) 5 (25%) 1 (14%) DAPK1 2 (5%) 0 (0%) 5 (13%) 0 (0%) 0 (0%) KCNH5 11 (26%) 3 (38%) 0 (0%) 6 (30%) 2 (29%) KCNH8 5 (12%) 1 (13%) 0 (0%) 6 (30%) 0 (0%) MGMT 0 (0%) 0 (0%) 4 (10%) 1 (5%) 0 (0%) OPCML 7 (16%) 1 (13%) 0 (0%) 5 (25%) 3 (43%) RARB 14 (33%) 2 (25%) 12 (31%) 7 (35%) 1 (14%) RASSF1 14 (33%) 2 (25%) 7 (18%) 9 (45%) 3 (43%) RUNX 14 (33%) 2 (25%) 1 (3%) 6 (30%) 2 (29%) TMS1 7 (16%) 0 (0%) 2 (5%) 0 (0%) 0 (0%) "
+},
+{
+                    "paragraph14": "a Only had 42 non-BAC, 36 squamous, and 19 large cell tissue samples sufﬁcient for methylation analysis. "
+},
+{
+                    "paragraph15": "Table 4 Promoter hypermethylation in NSCLC tissues, by histologic type and gender. "
+},
+{
+                    "paragraph16": "All adenocarcinoma Squamous Large cell "
+},
+{
+                    "paragraph17": "Female (n = 24) Male (n = 27) Female (n = 10) Male (n = 29) Female (n = 7) Male (n = 13) "
+},
+{
+                    "paragraph18": "APCa 13 (54%) 12 (46%) 0 (0%) 6 (22%) 2 (29%) 8 (67%) BVES 7 (29%) 4 (15%) 1 (10%) 6 (21%) 3 (43%) 3 (23%) CCND2a 11 (46%) 12 (46%) 1 (11%) 0 (0%) 4 (57%) 4 (33%) CDH1 1 (4%) 2 (7%) 0 (0%) 2 (7%) 0 (0%) 0 (0%) CDH13 5 (21%) 1 (4%) 1 (10%) 3 (10%) 1 (14%) 1 (8%) CDKN2A 4 (17%) 2 (7%) 3 (30%) 15 (52%) 2 (29%) 3 (23%) DAPK1 1 (4%) 1 (4%) 2 (20%) 3 (10%) 0 (0%) 0 (0%) KCNH5 9 (38%) 5 (19%) 0 (0%) 0 (0%) 4 (57%) 2 (15%) KCNH8 6 (25%) 0 (0%) 0 (0%) 0 (0%) 5 (51%) 1 (8%) MGMT 0 (0%) 0 (0%) 1 (10%) 3 (10%) 1 (14%) 0 (0%) OPCML 4 (17%) 4 (15%) 0 (0%) 0 (0%) 4 (57%) 1 (8%) RARB 13 (54%) 3 (11%) 3 (30%) 9 (31%) 4 (57%) 3 (23%) RASSF1 7 (29%) 9 (33%) 2 (20%) 5 (17%) 4 (57%) 5 (38%) RUNX 6 (25%) 10 (37%) 0 (0%) 1 (3%) 4 (57%) 2 (15%) TMS1 3 (13%) 4 (15%) 0 (0%) 2 (7%) 0 (0%) 0 (0%) "
+},
+{
+                    "paragraph19": "a Only had 26 adenocarcinoma male, 9 squamous female and 27 squamous male, and 12 large cell male tissue samples sufﬁcient for methylation analysis. "
+},
+{
+                    "paragraph20": "pack-years of lifetime cigarette smoking was available. Methyla- tion of CDH1 (OR = 1.2 per 10 pack-years) and CDKN2A (OR = 1.1 per 10 pack-years) was somewhat associated with increased lifetime quantity of cigarette smoking, although these associations did not "
+},
+{
+                    "paragraph21": "reach statistical signiﬁcance. In further univariate analyses, there was a trend (OR’s > 1.0) for most genes to be somewhat more likely to be methylated in larger compared to smaller tumors, although this reached statistical signiﬁcance only for CDKN2A (OR = 1.4, 95% "
+},
+{
+                    "paragraph22": "Table 5 Promoter hypermethylation in NSCLC tissues—univariate associations with age, pack-years of smoking, and tumor size (ORa and 95% CI). "
+},
+{
+                    "paragraph23": "Age (per 10 years) Quantity of smokingb (per 10 pack-years) Tumor size (per cm) "
+},
+{
+                    "paragraph24": "APC 0.9 (0.6–1.4) 1.0 (0.9–1.2) 1.1 (0.9–1.4) BVES 1.2 (0.7–2.0) 1.0 (0.9–1.2) 1.3 (1.0–1.7) CCND2 0.8 (0.5–1.2) 0.9 (0.8–1.1) 0.9 (0.7–1.2) CDH1 1.1 (0.5–2.6) 1.2 (1.0–1.4) 1.2 (0.7–1.9) CDH13 0.7 (0.4–1.4) 0.8 (0.6–1.1) 1.3 (0.9–1.9) CDKN2A 1.1 (0.7–1.8) 1.1 (1.0–1.3) 1.4 (1.0–1.8)* "
+},
+{
+                    "paragraph25": "DAPK1 0.7 (0.3–1.8) 1.0 (0.8–1.3) 1.0 (0.6–1.6) KCNH5 0.9 (0.6–1.6) 0.9 (0.7–1.1) 1.2 (0.9–1.7) KCNH8 0.4 (0.2–0.9)* 0.9 (0.7–1.1) 1.1 (0.7–1.6) MGMT 0.7 (0.3–2.0) 0.9 (0.6–1.3) 1.2 (0.7–2.1) OPCML 1.0 (0.6–1.8) 1.0 (0.9–1.2) 1.3 (0.9–1.8) RARB 0.6 (0.4–0.9)* 1.0 (0.8–1.1) 1.0 (0.8–1.3) RASSF1 0.8 (0.5–1.3) 1.0 (0.8–1.1) 0.9 (0.7–1.2) RUNX 0.8 (0.5–1.4) 0.9 (0.8–1.1) 1.1 (0.8–1.4) TMS1 1.6 (0.7–3.5) 1.0 (0.8–1.2) 1.2 (0.8–1.8) "
+},
+{
+                    "paragraph26": "a OR: odds ratio with 95% conﬁdence interval. b Among 108 subjects who smoked and had known pack-years of smoking * Signiﬁcant at p < 0.05. "
+},
+{
+                    "paragraph27": "176 S.E. Hawes et al. / Lung Cancer 69 (2010) 172–179 "
+},
+{
+                    "Figure": "1-s2.0-S0169500209005790-main_page4_51.jpg"
+},
+{
+                    "Figure_title": "Fig. 1. Proliferation score (Ki-67) distribution in tumors with and without hypermethylation of APC (A), CCND2 (B), RARB (C), and RUNX (D). "
+},
+{
+                    "paragraph28": "CI = 1.0–1.8 per 1 cm increase in tumor size, respectively). Gene hypermethylation was not strongly or systematically associated with tumor stage or nodal tumor involvement (data not shown). In terms of tumor differentiation, APC was more commonly detected in well (56%) or moderately (49%) differentiated tumors compared to poorly differentiated tumors (30%, p = 0.04 test for trend). Sim- ilar patterns were present for CCND2 and RASSF1, although these trends did not reach statistical signiﬁcance. Hypermethylation at PMR ≥ 4% of APC (p = 0.05), CCND2 (p = 0.009), and to a lesser degree RUNX (p = 0.08) was somewhat inversely associated with proliferation score assessed by Ki-67 level (Fig. 1). Conversely, hypermethylation of RARB (p = 0.06) is asso- ciated with increased proliferation score. Speciﬁcally, CCND2 was methylated in 49% of tumors with low Ki-67 (<30%), 23% of tumors with medium Ki-67 (30–70%), and 20% of tumors with high Ki-67 (>70%). Similarly, APC was methylated more frequently in those with low (51%) compared to medium (33%) or high (29%) Ki-67 levels. In order to assess the independent associations between gene hypermethylation and histologic type, tumor size, and gender, we conducted multiple multivariable logistic regressions (Table 6). Since the BAC (n = 8) adenocarcinomas showed similar methylation patterns as the non-BAC adenocarcinomas, these two histologic groups were combined for these analyses. In multivariable anal- yses adjusting for the potential false discovery rate associated with multiple comparisons (15 different models), methylation of a num- ber of genes remained associated with histologic type. Methylation at PMR ≥ 4% of APC (OR = 0.2, 95% CI 0.0–0.6), CCND2 (OR = 0.0, 95% CI 0.0–0.4), KCNH5 (OR = 0.1, 95% CI 0.0–0.5) and RUNX (OR = 0.1, 95% CI = 0.0–0.6) was signiﬁcantly less likely in squamous cell carci- nomas compared to adenocarcinomas. Conversely, methylation of CDKN2A (OR = 5.8, 95% CI = 1.6–20.7) was signiﬁcantly more likely in squamous cell carcinomas compared to adenocarcinomas. "
+},
+{
+                    "paragraph29": "After adjustment for histologic type, trends of increased methy- lation in larger tumors and females compared to males remained. Methylation of APC, BVES, CDH13, CDKN2A, KCNH5 and OPCML was somewhat increased with increasing tumor size, with ORs ranging from 1.2 to 1.5, although none of these differences were not statistically signiﬁcant after adjustment for multiple compar- isons. In multivariable analysis, adjusting for histologic type and tumor size, females remained signiﬁcantly more likely than males to have methylation of KCNH5 (OR = 4.9, 95% CI 1.1–22.1), KCNH8 (OR = 33.4, 95% CI 3.3–∞), and RARB (OR = 3.2, 95% CI 1.1–9.7). These associations were not substantially changed by further adjustments for age or Ki-67 level. "
+},
+{
+                    "paragraph30": "4. Discussion "
+},
+{
+                    "paragraph31": "In this study of 117 well-characterized NSCLC subjects, we assessed the gene methylation status for 27 genes in tumor tissue blocks with a number of patient and tumor characteristics using quantitative MethyLight assays. Methylation at any level in at least one gene was present in 91% of tumor samples, and a high level of methylation (PMR ≥ 4%) in at least one gene was present in 79% of tumor samples. Conversely, we previously showed that only one of the genes (APC) is methylated at high levels in more than 10% of matched noncancerous tissue from NSCLC patients and that only 5 of the other 26 genes in the current study (RARB, CCND2, CDH1, CDKN2A, and OPCML) were ever methylated (in 2–8% of patients) at high levels in noncancerous tissues [19]. In the current study we found that methylation of a number of genes was signiﬁcantly associated with histologic type; adenocarcinoma was associated with increased methylation of APC, CCND2, KCNH5, and RUNX, and squamous cell carcinoma was associated with increased methyla- tion of CDKN2A. There were trends towards larger tumors being associated with increased methylation frequency. Finally, females "
+},
+{
+                    "paragraph32": "S.E. Hawes et al. / Lung Cancer 69 (2010) 172–179 177 "
+},
+{
+                    "paragraph33": "Table 6 Promoter hypermethylation in NSCLC tissues—multivariable models assessing histologic type, tumor size, and gender (ORa and 95% CI). "
+},
+{
+                    "paragraph34": "Squamous vs. adenob Tumor size (per cm) Female vs. male "
+},
+{
+                    "paragraph35": "APC 0.2 (0.0–0.6) 1.2 (0.7–2.1) 0.7 (0.1–4.4) BVES 0.8 (0.1–4.3) 1.3 (0.8–2.2) 1.8 (0.2–13.0) CCND2 0.0 (0.0–0.4) 1.0 (0.6–1.7) 1.6 (0.2–14.3) CDH1c 0.6 (0.0–∞) 1.1 (0.4–3.0) 0.4 (0.0–∞) CDH13 1.0 (0.0–37.8) 1.5 (0.7–2.9) 3.5 (0.5–24.6) CDKN2A 5.8 (1.6–20.7) 1.3 (0.8–2.2) 0.9 (0.0–20.0) DAPK1c 3.6 (0.2–71.6) 1.0 (0.3–2.7) 1.5 (0.0–∞) KCNH5c 0.1 (0.0–0.5) 1.4 (0.8–2.6) 4.9 (1.1–22.1) KCNH8c 0.3 (0.0–5.0) 1.3 (0.3–6.1) 33.4 (3.3–340) MGMTd 7.3 (0.4–121) 1.1 (0.4–2.9) 1.8 (0.0–∞) OPCMLc 0.1 (0.0–1.5) 1.3 (0.7–2.6) 3.1 (0.3–30.9) RARB 1.2 (0.3–5.2) 1.1 (0.6–1.8) 3.2 (1.0–9.7) RASSF1 0.5 (0.1–2.2) 0.9 (0.5–1.6) 1.1 (0.0–82.3) RUNX 0.1 (0.0–0.7) 1.1 (0.6–2.3) 1.3 (0.0–96.8) TMS1c 0.3 (0.0–8.9) 1.3 (0.5–3.4) 0.8 (0.0–∞) "
+},
+{
+                    "paragraph36": "a OR: odds ratio with 95% conﬁdence interval, adjusted for multiple comparisons. b Adenocarcinoma includes BAC and non-BAC. c Exact logistic regression. d MGMT never methylated in adenocarcinoma. "
+},
+{
+                    "paragraph37": "with lung cancer were signiﬁcantly more likely than males to have methylation of a number of genes, including KCNH5, KCNH8, and CDH13. Our ﬁndings of substantial differences in gene methylation pat- terns depending on histologic typing of NSCLCs have been reported to some degree in the literature. Similar to what we observed in the present study, a number of others [13,16,17,21,37] have noted that APC is more frequently methylated in adenocarcinomas com- pared to squamous cell carcinomas, although this has not always been noted [38]. Similarly, methylation of RUNX was detected with higher frequency in adenocarcinomas compared to squamous cell carcinomas in previous studies [16,39,40]. Conversely, methylation of CDKN2A (also known as p16INK4a) has previously been reported to be more common in squamous cell carcinomas compared to ade- nocarcinomas in most [13,16,18,20,24,40] but not all [21,37] prior studies. However, we believe that our ﬁndings that methylation of CCND2 is frequent in adenocarcinomas (46%) but not squamous cell carcinomas (3%) and that methylation of KCNH5 and KCNH8 is less frequent in adenocarcinomas (26% and 12%, respectively) but is speciﬁc to this class of tumors, are new to the literature. Aber- rant methylation of cyclin D2 (CCND2) has been previously noted as potentially contributing to the pathogenesis of NSCLC [41]. How- ever, in that report, potential differences in methylation of CCND2 between squamous and adenocaricomas in NSCLC tumors were not evaluated. Methylation of APC and CCND2, while common in cancer tissues, is also detected frequently in matched non-cancerous lung tissue [19], suggesting that methylation of these two genes may not be a cancer-speciﬁc change, but may be the result of environmental exposure, perhaps due to smoking. We noted a number of important differences in hypermethyla- tion frequency in females compared to males, even after taking into account histologic type. Females with adenocarcinoma were sig- niﬁcantly more likely to have methylated CDH13, KCNH5, KCNH8, and RARB compared to males. Interestingly, these differences were not observed in squamous cell carcinomas, although KCNH5 and KCNH8 were not hypermethylated in any squamous cell cancers, regardless of gender. Conversely, males with squamous cell carci- nomas were more likely to have hypermethylation of APC, BVES, and CDKN2A (p16INK4a). These substantial differences have not been consistently noted in the literature [16,18,20–22,42], per- haps because few studies have stratiﬁed by histologic type when assessing hypermethylation differences by gender. Since females are more likely to have adenocarcinomas compared to males [43], in other studies, differences in hypermethylation frequency due "
+},
+{
+                    "paragraph38": "to gender may have been obscured by differences due to histo- logic type. These substantial differences in hypermethylation by gender suggest the possibility of differential pathways and/or risk factors for NSCLC between genders. Hypermethylation of RARB was similarly common (31%) in males and females with squamous cell carcinoma, but was substantially more common in females with adenocarcinama (54%) or large cell carcinoma (57%) compared to males (11% and 23%, respectively). Gender differences have historically been noted and debated in the literature with respect to susceptibility and risk factors for NSCLC, especially with regards to the effect of cigarette smoking as well as survival and effectiveness of treatment. The relevance of these variations remains unclear [6–9,44–47]. Epidemiologic stud- ies have generally noted that women with NSCLC are more likely to have developed adenocarcinoma, tend to be younger than men, and are more likely never to have smoked [4,5,48,49]. Additionally, for a given stage and treatment regimen, women may have bet- ter outcomes than men [7,45]. Hormonal factors may account for differences between men and women with regards to lung can- cer [50,51] although how hormones relate to gene methylation patterns in NSCLC remains unclear. In one study, estrogen recep- tor (ER) alpha promoter methylation was increased in males with NSCLC compared to females and was associated with poorer prog- nosis [52]. Another proposed explanation is that there is decreased DNA-repair capacity in women compared to men [53], although we did not ﬁnd evidence that methylation of DNA-repair associ- ated genes was differential in males compared to females in the ﬁve DNA-repair genes we studied (FHIT, MLH1, MGMT, FANCF, and GSTP1). To our knowledge, hypermethylation of KCNH5 and KCNH8, two voltage-gated, ether a go-go (Eag 1) family potassium channels, has not been previously studied with regards to human cancers, although KCNH2 has been reported to be downregulated in breast cancer [54]. The role of potassium channels in cancer has gained increasing interest in recent years as a possible target for tumor therapy [55,56]. In the present study, hypermethylation of KCNH8 was observed in tumors from six (25%) of 24 females with adenocar- cinoma, but was not observed in any males with adenocarcinoma (n = 27) or tumors from squamous cell carcinomas from either gen- der (n = 39). Interestingly, hypermethylation of KCNH8 was present in 5 (71%) of 7 female cases but only 1 (8%) of 13 male cases of large cell carcinoma. With regards to hypermethylation of KCNH5, we observed similar but less dramatic differences. Importantly, we previously reported that hypermethylation of KCNH5 and KCNH8 "
+},
+{
+                    "paragraph39": "178 S.E. Hawes et al. / Lung Cancer 69 (2010) 172–179 "
+},
+{
+                    "paragraph40": "is speciﬁc to cancerous tissue, as none of 49 matched noncancer- ous lung tissues from patients with NSCLC were hypermethylated [19]. Our study, and its comparison to other’s work, has a number of important limitations. Detection of methylation of the various genes is dependent on the primers and probes used to indicate speciﬁc sequence regions, and differences in gene-speciﬁc detec- tion rates and as well as associations with clinical features of the tumors may be due to variation in the methodologies used across studies. In the current study, we used quantitative Methy- Light, with a cutoff of 4% PMR, to determine associations with methylation. This method is considered sensitive and speciﬁc for gene-speciﬁc methylation [30,57]. Study ﬁndings were similar when a cutoff of 0% PMR was utilized. However, a number of meth- ods, some quantitative and others less sensitive and/or speciﬁc qualitative procedures, have been utilized in previous reports, so direct comparisons in study ﬁndings across studies may not be entirely possible. In the literature, methylation of FHIT, GSTP1, and MGMT frequently occurs in NSCLC [21,24,37,42,58] but in the cur- rent study, methylation of these genes was rarely detected. The gene-speciﬁc discrepancies we observed are likely due to a num- ber of factors, such as assay-speciﬁc differences including target sites of CpG island loci, primers or probes, assay conditions includ- ing annealing temperatures and the conditions of sodium bisulfaite conversion, differences in tumor characteristics such as type of sample, tumor histology, and level of tumor heterogeneity, and ﬁnally, differences in patient populations with regards to age and gender. Primary tumor blocks were unavailable for many of the subjects in the original imaging study, potentially limiting the gen- eralizability of our ﬁndings, and sample sizes within histologic subtypes and gender were limited. Further, we were unable to assess the effect of smoking status on methylation in those with NSCLC, as only ﬁve subjects (4%) were never-smokers. Our ﬁnd- ings may not be generalizable to populations in which a larger proportion of NSCLC is attributed to cigarette smoking. The dis- tribution of histologic types in the current study was somewhat dissimilar to cases of NSCLC in the United States in general, as squamous and large cell carcinomas were somewhat overrepre- sented [43]. However, the large proportion of non-adenocarcinoma cases and relative heterogeneity of our study tissue samples with respect to histologic subtypes allowed us to identify important differences between adenocarcinomas and squamous cell NSCLCs, comparisons which have rarely been assessed in other studies due to the homogenous nature of their tumor samples. Finally, it is unclear how strongly methylation status is correlated with expression status for the examined genes. Gene expression anal- yses were not conducted in the current study. However, prior studies using MethyLight have shown that promoter methylation (PMR > 4%) of CDKNsA, MLH1, and MGMT was strongly associated with respective loss of protein expression assessed by immuno- histochemistry in colorectal cancers [32]. In a more recent study in diffuse large B-cell lymphoma, there was good correlation between the presence of MGMT protein expression and unmethylated sta- tus using MethyLight [34] and MethyLight performed better than qualitative methylation-speciﬁc PCR (MSP). However, in another study, methylation of DAPK (using MSP) was not related with gene silencing in lung cancer cell lines and a number of CpG dinucleotides were often methylated in expression-negative tis- sues [59]. Clearly there may be mechanisms other than promoter hypermethylation contributing to down-regulation of gene expres- sion. In summary, in the present study of 117 patients with NSCLC, we found that methylation of a number of genes was strongly asso- ciated with histologic type; adenocarcinoma was associated with increased methylation of APC, CCND2, and RUNX, squamous cell carcinoma was associated with increased methylation of CDKN2A "
+},
+{
+                    "paragraph41": "(p16INK4a), and large cell carcinoma was associated with increased methylation of KCNH8. Among patients with adenocarcinoma, females were signiﬁcantly more likely to have methylated CDH13, KCNH5, KCNH8, and RARB compared to males. Conversely, males with squamous cell carcinomas were more likely to have hyperme- thylation of APC, BVES, and CDKN2A (p16INK4a). The dissimilar pattern of gene hypermethylation in adeno- carcinomas compared to other forms of NSCLC implies different pathogenesis of cancer by histologic type. Further, our ﬁndings of differential gene hypermethylation frequencies among those with adenocarcinoma or squamous cell cancers in females compared to males suggests that further investigation is warranted in order to more fully understand the potential disparate pathways and risk factors, especially with regard to smoking and hormones, as well as potential differential treatment modalities for NSCLC associated with histology and gender. "
+},
+{
+                    "paragraph42": "Conﬂict of interest statement "
+},
+{
+                    "paragraph43": "None declared. "
+},
+{
+               "section:2": "Acknowledgements"
+},
+{
+               "paragraph1": "This research was supported by grants from the National Insti- tute of Health/National Cancer Institute (CA115559, CA80907, CA107264). "
+},
+{
+               "paragraph2": "Appendix A. Supplementary data "
+},
+{
+                    "section:3": "Statistical analysis"
+},
+{
+                    "paragraph1": "sociated with this article can be found, in the online version, at doi:10.1016/j.lungcan.2009.11.002. "
+},
+{
+                    "paragraph2": "References "
+},
+{
+                    "paragraph3": "[1] Parkin DM, Bray F, Ferlay J, Pisani P. Global cancer statistics, 2002. CA Cancer J Clin 2005;55(2):74–108. [2] Cancer Facts & Figures. Atlanta, GA: American Cancer Society; 2008. [3] Mountain CF. Revisions in the international system for staging lung cancer. Chest 1997;111(6):1710–7. [4] Fu JB, Kau TY, Severson RK, Kalemkerian GP. Lung cancer in women: analy- sis of the national surveillance, epidemiology, and end results database. Chest 2005;127(3):768–77. [5] Risch HA, Howe GR, Jain M, Burch JD, Holowaty EJ, Miller AB. Are female smok- ers at higher risk for lung cancer than male smokers? A case-control analysis by histologic type. Am J Epidemiol 1993;138(5):281–93. [6] Patel JD, Bach PB, Kris MG. Lung cancer in US women: a contemporary epidemic. J Am Med Assoc 2004;291(14):1763–8. [7] Cerfolio RJ, Bryant AS, Scott E, Sharma M, Robert F, Spencer SA, et al. Women with pathologic stage I, II, and III non-small cell lung cancer have better survival than men. Chest 2006;130(6):1796–802. [8] Caldarella A, Crocetti E, Comin CE, Janni A, Pegna AL, Paci E. Gender differ- ences in non-small cell lung cancer: a population-based study. Eur J Surg Oncol 2007;33(6):763–8. [9] Freedman ND, Leitzmann MF, Hollenbeck AR, Schatzkin A, Abnet CC. Cigarette smoking and subsequent risk of lung cancer in men and women: analysis of a prospective cohort study. Lancet Oncol 2008;9(7):649–56. [10] Kerr KM, Galler JS, Hagen JA, Laird PW, Laird-Offringa IA. The role of DNA methylation in the development and progression of lung adenocarcinoma. Dis Markers 2007;23(1–2):5–30. [11] Jones PA, Laird PW. Cancer epigenetics comes of age. Nat Genet 1999;21(2):163–7. [12] Esteller M, Corn PG, Baylin SB, Herman JG. A gene hypermethylation proﬁle of human cancer. Cancer Res 2001;61(8):3225–9. [13] Toyooka S, Toyooka KO, Maruyama R, Virmani AK, Girard L, Miyajima K, et al. DNA methylation proﬁles of lung tumors. Mol Cancer Ther 2001;1(1):61–7. [14] Tsou JA, Hagen JA, Carpenter CL, Laird-Offringa IA. DNA methylation analysis: a powerful new tool for lung cancer diagnosis. Oncogene 2002;21(35):5450–61. [15] Zochbauer-Muller S, Minna JD, Gazdar AF. Aberrant DNA methylation in lung cancer: biological and clinical implications. Oncologist 2002;7(5):451–7. [16] Yanagawa N, Tamura G, Oizumi H, Takahashi N, Shimazaki Y, Motoyama T. Promoter hypermethylation of tumor suppressor and tumor-related genes in non-small cell lung cancers. Cancer Sci 2003;94(7):589–92. [17] Harden SV, Tokumaru Y, Westra WH, Goodman S, Ahrendt SA, Yang SC, et al. Gene promoter hypermethylation in tumors and lymph nodes of stage I lung cancer patients. Clin Cancer Res 2003;9(4):1370–5. "
+},
+{
+                    "paragraph4": "S.E. Hawes et al. / Lung Cancer 69 (2010) 172–179 179 "
+},
+{
+                    "paragraph5": "[18] Hanabata T, Tsukuda K, Toyooka S, Yano M, Aoe M, Nagahiro I, et al. DNA methy- lation of multiple genes and clinicopathological relationship of non-small cell lung cancers. Oncol Rep 2004;12(1):177–80. [19] Feng Q, Hawes SE, Stern JE, Wiens L, Lu H, Dong ZM, et al. DNA methylation in tumor and matched normal tissues from non-small cell lung cancer patients. Cancer Epidemiol Biomarkers Prev 2008;17(3):645–54. [20] Nakata S, Sugio K, Uramoto H, Oyama T, Hanagiri T, Morita M, et al. The methy- lation status and protein expression of CDH1, p16(INK4A), and fragile histidine triad in nonsmall cell lung carcinoma: epigenetic silencing, clinical features, and prognostic signiﬁcance. Cancer 2006;106(10):2190–9. [21] Gu J, Berman D, Lu C, Wistuba II, Roth JA, Frazier M, et al. Aberrant promoter methylation proﬁle and association with survival in patients with non-small cell lung cancer. Clin Cancer Res 2006;12(24):7329–38. [22] Kim DS, Kim MJ, Lee JY, Kim YZ, Kim EJ, Park JY. Aberrant methylation of E- cadherin and H-cadherin genes in nonsmall cell lung cancer and its relation to clinicopathologic features. Cancer 2007;110(12):2785–92. [23] Tomizawa Y, Iijima H, Nomoto T, Iwasaki Y, Otani Y, Tsuchiya S, et al. Clin- icopathological signiﬁcance of aberrant methylation of RARbeta2 at 3p24, RASSF1A at 3p21.3, and FHIT at 3p14.2 in patients with non-small cell lung cancer. Lung Cancer 2004;46(3):305–12. [24] Zochbauer-Muller S, Fong KM, Virmani AK, Geradts J, Gazdar AF, Minna JD. Aberrant promoter methylation of multiple genes in non-small cell lung can- cers. Cancer Res 2001;61(1):249–55. [25] Shivapurkar N, Stastny V, Suzuki M, Wistuba, II, Li L, Zheng Y, et al. Application of a methylation gene panel by quantitative PCR for lung cancers. Cancer Lett 2007;247(1):56–71. [26] Shames DS, Minna JD, Gazdar AF. Methods for detecting DNA methylation in tumors: from bench to bedside. Cancer Lett 2007;251(2):187–98. [27] Vesselle H, Freeman JD, Wiens L, Stern J, Nguyen HQ, Hawes SE, et al. Flu- orodeoxyglucose uptake of primary non-small cell lung cancer at positron emission tomography: new contrary data on prognostic role. Clin Cancer Res 2007;13(11):3255–63. [28] Vesselle H, Grierson J, Muzi M, Pugsley JM, Schmidt RA, Rabinowitz P, et al. In vivo validation of 3′deoxy-3′-[(18)F]ﬂuorothymidine ([(18)F]FLT) as a prolifer- ation imaging tracer in humans: correlation of [(18)F]FLT uptake by positron emission tomography with Ki-67 immunohistochemistry and ﬂow cytometry in human lung tumors. Clin Cancer Res 2002;8(11):3315–23. [29] Vesselle H, Turcotte E, Wiens L, Schmidt R, Takasugi JE, Lalani T, et al. Relation- ship between non-small cell lung cancer ﬂuorodeoxyglucose uptake at positron emission tomography and surgical stage with relevance to patient prognosis. Clin Cancer Res 2004;10(14):4709–16. [30] Weisenberger DJ, Campan M, Long TI, Kim M, Woods C, Fiala E, et al. Anal- ysis of repetitive element DNA methylation by MethyLight. Nucl Acids Res 2005;33(21):6823–36. [31] Eads CA, Lord RV, Wickramasinghe K, Long TI, Kurumboor SK, Bernstein L, et al. Epigenetic patterns in the progression of esophageal adenocarcinoma. Cancer Res 2001;61(8):3410–8. [32] Ogino S, Kawasaki T, Brahmandam M, Cantor M, Kirkner GJ, Spiegelman D, et al. Precision and performance characteristics of bisulﬁte conversion and real- time PCR (MethyLight) for quantitative DNA methylation analysis. J Mol Diagn 2006;8(2):209–17. [33] Coleman WB, Rivenbark AG. Quantitative DNA methylation analysis: the promise of high-throughput epigenomic diagnostic testing in human neoplas- tic disease. J Mol Diagn 2006;8(2):152–6. [34] Uccella S, Cerutti R, Placidi C, Marchet S, Carnevali I, Bernasconi B, et al. MGMT methylation in diffuse large B-cell lymphoma: validation of quantita- tive methylation-speciﬁc PCR and comparison with MGMT protein expression. J Clin Pathol 2009;62(8):715–23. [35] Storey J. A direct approach to false discovery rates. J R Stat Soc, Ser B: Stat Methodol 2002;64:479–98. [36] Ludbrook J. Multiple inferences using conﬁdence intervals. Clin Exp Pharmacol Physiol 2000;27(3):212–5. [37] Toyooka S, Maruyama R, Toyooka KO, McLerran D, Feng Z, Fukuyama Y, et al. Smoke exposure, histologic type and geography-related differences in the methylation proﬁles of non-small cell lung cancer. Int J Cancer 2003;103(2):153–60. [38] Brabender J, Usadel H, Danenberg KD, Metzger R, Schneider PM, Lord RV, et al. Adenomatous polyposis coli gene promoter hypermethylation in non- "
+},
+{
+                    "paragraph6": "small cell lung cancer is associated with survival. Oncogene 2001;20(27):3528– 32. [39] Sato K, Tomizawa Y, Iijima H, Saito R, Ishizuka T, Nakajima T, et al. Epige- netic inactivation of the RUNX3 gene in lung cancer. Oncol Rep 2006;15(1): 129–35. [40] Yanagawa N, Tamura G, Oizumi H, Kanauchi N, Endoh M, Sadahiro M, et al. Promoter hypermethylation of RASSF1A and RUNX3 genes as an independent prognostic prediction marker in surgically resected non-small cell lung cancers. Lung Cancer 2007;58(1):131–8. [41] Virmani A, Rathi A, Heda S, Sugio K, Lewis C, Tonk V, et al. Aberrant methylation of the cyclin D2 promoter in primary small cell, nonsmall cell lung and breast cancers. Int J Cancer 2003;107(3):341–5. [42] Vaissiere T, Hung RJ, Zaridze D, Moukeria A, Cuenin C, Fasolo V, et al. Quanti- tative analysis of DNA methylation proﬁles in lung cancer identiﬁes aberrant DNA methylation of speciﬁc genes and its association with gender and cancer risk factors. Cancer Res 2009;69(1):243–52. [43] Ries L, Melbert D, Krapcho M, Stinchcomb D, Howlader N, Horner M, et al. SEER cancer statistics review, 1975–2005. Bethesda, MD: National Cancer Institute; 2008 [accessed August 15, 2008]. [44] Blot WJ, McLaughlin JK. Are women more susceptible to lung cancer? J Natl Cancer Inst 2004;96(11):812–3. [45] Wakelee HA, Wang W, Schiller JH, Langer CJ, Sandler AB, Belani CP, et al. Survival differences by sex for patients with advanced non-small cell lung cancer on Eastern Cooperative Oncology Group trial 1594. J Thorac Oncol 2006;1(5):441–6. [46] Foegle J, Hedelin G, Lebitasy MP, Purohit A, Velten M, Quoix E. Speciﬁc features of non-small cell lung cancer in women: a retrospective study of 1738 cases diagnosed in Bas-Rhin between 1982 and 1997. J Thorac Oncol 2007;2(6):466–74. [47] Wakelee HA, Gomez SL, Chang ET. Sex differences in lung-cancer susceptibility: a smoke screen? Lancet Oncol 2008;9(7):609–10. [48] Zang EA, Wynder EL. Differences in lung cancer risk between men and women: examination of the evidence. J Natl Cancer Inst 1996;88(3–4): 183–92. [49] Visbal AL, Williams BA, Nichols III FC, Marks RS, Jett JR, Aubry MC, et al. Gender differences in non-small-cell lung cancer survival: an analysis of 4,618 patients diagnosed between 1997 and 2002. Ann Thorac Surg 2004;78(1):209–15 [dis- cussion 215]. [50] Schabath MB, Wu X, Vassilopoulou-Sellin R, Vaporciyan AA, Spitz MR. Hormone replacement therapy and lung cancer risk: a case-control analysis. Clin Cancer Res 2004;10(1 Pt 1):113–23. [51] Ganti AK, Sahmoun AE, Panwalkar AW, Tendulkar KK, Potti A. Hormone replace- ment therapy is associated with decreased survival in women with lung cancer. J Clin Oncol 2006;24(1):59–63. [52] Lai JC, Cheng YW, Chiou HL, Wu MF, Chen CY, Lee H. Gender difference in estrogen receptor alpha promoter hypermethylation and its prognostic value in non-small cell lung cancer. Int J Cancer 2005;117(6):974–80. [53] Wei Q, Cheng L, Amos CI, Wang LE, Guo Z, Hong WK, et al. Repair of tobacco carcinogen-induced DNA adducts and lung cancer risk: a molecular epidemio- logic study. J Natl Cancer Inst 2000;92(21):1764–72. [54] Kuznetsova EB, Kekeeva TV, Larin SS, Zemliakova VV, Babenko OV, Nemtsova MV, et al. Novel methylation and expression markers associated with breast cancer. Mol Biol (Mosk) 2007;41(4):624–33. [55] Pardo LA, Contreras-Jurado C, Zientkowska M, Alves F, Stuhmer W. Role of voltage-gated potassium channels in cancer. J Membr Biol 2005;205(3):115–24. [56] Hemmerlein B, Weseloh RM, Mello de Queiroz F, Knotgen H, Sanchez A, Rubio ME, et al. Overexpression of Eag1 potassium channels in clinical tumours. Mol Cancer 2006;5:41. [57] Trinh BN, Long TI, Laird PW. DNA methylation analysis by MethyLight technol- ogy. Methods 2001;25(4):456–62. [58] Kim JS, Kim H, Shim YM, Han J, Park J, Kim DH. Aberrant methylation of the FHIT gene in chronic smokers with early stage squamous cell carcinoma of the lung. Carcinogenesis 2004;25(11):2165–71. [59] Toyooka S, Toyooka KO, Miyajima K, Reddy JL, Toyota M, Sathyanarayana UG, et al. Epigenetic down-regulation of death-associated protein kinase in lung cancers. Clin Cancer Res 2003;9(8):3034–41. "
+}]

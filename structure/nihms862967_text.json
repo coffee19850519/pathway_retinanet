@@ -1,0 +1,873 @@
+[{
+     "paragraph1": "Phase I Dose Escalation Study of Taselisib (GDC-0032), an Oral  PI3K Inhibitor, in Patients with Advanced Solid Tumors "
+},
+{
+     "paragraph2": "Dejan Juric1, Ian Krop2, Ramesh K. Ramanathan3, Timothy R. Wilson4, Joseph A. Ware4,  Sandra M. Sanabria Bohorquez4, Heidi M. Savage4, Deepak Sampath4, Laurent Salphati4,  Ray S. Lin4, Huan Jin4, Hema Parmar4, Jerry Y. Hsu4, Daniel D. Von Hoff5, and Jose  Baselga6 "
+},
+{
+     "paragraph3": "1Massachusetts General Hospital Cancer Center, Boston, MA "
+},
+{
+     "paragraph4": "2Dana-Farber Cancer Institute, Boston, MA "
+},
+{
+     "paragraph5": "3Mayo Clinic, Scottsdale, AZ "
+},
+{
+     "paragraph6": "4Genentech, Inc., South San Francisco, CA, USA "
+},
+{
+     "paragraph7": "5Virginia G. Piper Cancer Center Honor Health, Scottsdale, AZ "
+},
+{
+     "paragraph8": "6Memorial Sloan Kettering Cancer Center, New York, NY "
+},
+{
+          "section:1": "Abstract"
+},
+{
+          "paragraph1": "Taselisib is a potent and selective tumor growth inhibitor through PI3K pathway suppression.  Thirty-four patients with locally advanced or metastatic solid tumors were treated (phase I study,  modified 3+3 dose escalation; 5 cohorts; 3-16 mg taselisib once daily capsule). Taselisib  pharmacokinetics were dose-proportional; mean half-life was 40 hours. Frequent dose-dependent,  treatment-related adverse events included diarrhea, hyperglycemia, decreased appetite, nausea,  rash, stomatitis, and vomiting. At 12 and 16 mg dose levels, dose limiting toxicities (DLT) were  observed, with an accumulation of higher-grade adverse events after the cycle 1 DLT assessment  window. Pharmacodynamic findings showed pathway inhibition at ≥3 mg in patient tumor  samples, consistent with preclinical PIK3CA-mutant tumor xenograft models. Confirmed response  rate was 36% for PIK3CA-mutant tumor patients with measurable disease (5/14: 4 breast cancer,  [3 patients at 12 mg]; 1 NSCLC) where responses started at 3 mg, and 0% in patients with tumors  without known PIK3CA hotspot mutations (0/15). "
+},
+{
+          "paragraph2": "Keywords "
+},
+{
+          "paragraph3": "Taselisib; GDC-0032; PIK3CA; PI3K inhibitor; clinical trial; solid tumors "
+},
+{
+          "paragraph4": "Corresponding Author: Jose Baselga, MD. PhD, Memorial Sloan-Kettering Cancer Center, Memorial Hospital, New York, NY, USA,  baselgaj@mskcc.org, Phone: 212-639-8000, Fax: 212-794-3182.  Conflicts of interest: D. Juric and J. Baselga have no conflicts of interest to declare; "
+},
+{
+          "Figure": "nihms862967_page0_59.jpg"
+},
+{
+          "paragraph5": "HHS Public Access Author manuscript Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph6": "Published in final edited form as: Cancer Discov. 2017 July ; 7(7): 704–715. doi:10.1158/2159-8290.CD-16-1080. "
+},
+{
+          "paragraph7": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "section:1": "Introduction"
+},
+{
+          "paragraph1": "In the three decades since the discovery of phosphatidylinositol-3-kinase (PI3K), the  connection between cancer and PI3K has been substantiated (1). PI3K catalyzes the  transformation of phosphatidylinositol-4,5-bisphosphate (PIP2) to  phosphatidylinositol-3,4,5-tripphosphate (PIP3), involved in the phosphorylation of protein  kinase B (AKT) and associated proteins in the AKT-mammalian target of rapamycin  (mTOR) pathway (2-4). Under normal physiological conditions, the PI3K/AKT/mTOR  pathway plays a central role in multiple cellular functions including angiogenesis,  proliferation, survival, and metabolism. However, this same pathway turns tumorigenic  through the accumulation of genetic aberrations in one or more of several key players,  including those in the PI3K family kinase isomers. Among the PI3K family kinase isomers,  the class I PI3K isomers are differentiated by their catalytic subunits: p110α, p110β, p110γ,  or p110δ. Expression of the PI3Kα isoform can become deregulated through activating  mutations or amplifications of the PIK3CA gene that encodes p110α. This has been  established in several solid tumors, and with an especially high prevalence in cervical cancer  (69%), squamous cell lung cancer (53%), head and neck cancer (32%), breast cancer (27%),  and endometrial cancer (24%) (5). "
+},
+{
+          "paragraph2": "Taselisib or GDC-0032 (Genentech, Inc., South San Francisco, CA) is a potent and selective  PI3K inhibitor that displays greater sensitivity for mutant PI3Kα isoforms than wild-type  PI3Kα (6). Taselisib blocks the PI3K pathway by targeting the ATP-binding pocket in the  catalytic subunit of PI3K, leading to inhibition of downstream signaling events, such as  those regulating tumor cell proliferation and apoptosis. Taselisib has demonstrated excellent  bioavailability with low drug-drug interaction potential (7-9). Our objectives for the current  study was to investigate the safety and tolerability of escalating doses of taselisib, as well as  early clinical activity in patients with locally advanced or metastatic solid tumors. "
+},
+{
+          "section:1": "Results"
+},
+{
+               "section:2": "Predicting optimal dose from a PIK3CA mutant breast model"
+},
+{
+               "paragraph1": "Nonclinical studies had demonstrated that taselisib inhibited proliferation of p110α mutant  breast cell lines with an average IC50 of 70 nM, and inhibited tumor growth in human breast  cancer xenograft models harboring PIK3CA mutations (6). We conducted additional studies  on growth inhibition in a PIK3CA mutant breast cancer model to further assist in the  identification of the optimal dose and schedule of taselisib in the phase I study. In nude mice  bearing KPL-4 breast cancer xenografts that harbor a hot-spot mutation (H1047R) in  PIK3CA, daily (QD) oral dosing of taselisib at 0.20, 0.39, 0.78, 1.56, 6.25, and 25 mg/kg  resulted in dose-dependent tumor growth inhibition and regressions (Fig. 1). Tumor volume  traces of individual animals in each cohort confirmed minimum variability in tumor growth  inhibition and response (Supplementary Fig. S1). Taselisib was well tolerated with <10%  body weight loss in tumor-bearing mice (data not shown). Moreover, robust PI3K pathway  suppression in KPL-4 xenografts based on a significant reduction in levels of phosphorylated  Akt (Supplementary Fig. S2A), PRAS40 (Supplementary Fig. S2B), and S6 ribosomal  protein (Supplementary Fig. S2C) was observed following a single dose of taselisib when  compared to vehicle treated animals. Notably, suppression of the PI3K pathway in KPL-4  "
+},
+{
+               "paragraph2": "Juric et al. Page 2 "
+},
+{
+               "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "xenografts for up to 24 hours was observed following a single dose of 25 mg/kg taselisib,  and was required for maximum efficacy (Supplementary Fig. S2A-C). The dose-dependent  tumor growth inhibition observed in the KPL-4 model (Fig. 1) was used to estimate the  taselisib dose expected to lead to efficacy against human tumors. The method utilized was  previously described with the PI3K inhibitors, pictilisib (GDC-0941) and apitolisib  (GDC-0980) (10, 11). The method combines pharmacokinetics/pharmacodynamics (PK/PD)  modeling of the mouse efficacy data with the predicted human PK parameters (12). The  predicted dose in human corresponding to the xenograft target tumor growth inhibition of  60%, as proposed by Wong et al. (13), was predicted to be 6 mg daily. "
+},
+{
+               "section:2": "Phase Ia Clinical Trial Design"
+},
+{
+               "paragraph1": "Dose escalation started at the 3 mg dose level and escalated up to 16 mg before testing of the  final cohort at 12 mg (Fig. 2A-B) via a modified 3+3 design. Additional patients were  evaluated in certain cohorts in order to replace dose limiting toxicity (DLT) non-evaluable  patients (e.g. due to disease progression) and to obtain additional safety data. "
+},
+{
+               "section:2": "Baseline Patient Demographics and Disease Characteristics"
+},
+{
+               "paragraph1": "From March 2011 to August 2012, 34 patients were enrolled at 3 sites in the United States.  The cutoff date for analysis was July 30th, 2014. The median treatment duration was 2  months (range 0.03-15.67). Patients were representative of a heavily pretreated population  with a median number of prior therapies of 4 (range 2-13). Further details on the baseline  demographics and disease characteristics are shown in Supplementary Table S1. "
+},
+{
+               "section:2": "Safety"
+},
+{
+               "paragraph1": "Adverse events (AEs) observed with taselisib treatment were consistent with those observed  with other PI3K inhibitors, including hyperglycemia, diarrhea, rash, and stomatitis (14, 15).  No treatment-related grade ≥3 AEs were observed at the 3, 5, or 8 mg dose levels, so the  next dose level tested was the 16 mg dose level. Two of 11 patients treated at 16 mg QD  experienced AEs that qualified as a DLT. The first DLT was grade 4 hyperglycemia in a 63- year-old female with pancreatic cancer. The patient was admitted to the hospital on study  day 14 and treated with pioglitazone, insulin, and saline hydration, and study drug was  permanently discontinued. The event resolved the following day (study day 15). Although it  is unclear whether the patient's pancreatic cancer may have caused the patient to be more  susceptible to hyperglycemia, this grade 4 hyperglycemia event was deemed a DLT per  investigator. The second DLT was grade 3 fatigue in a 65-year-old female with breast cancer  on study day 18. Dosing with study drug was held; the event resolved on study day 28. "
+},
+{
+               "paragraph2": "Although the patient did have some concurrent diarrhea, the grade 3 fatigue was deemed a  DLT per protocol definition. While the 16 mg dose level did not technically exceed the  maximal tolerated dose (<33% of evaluable patients experiencing DLT), the high frequency  of severe AEs that began after cycle 1 (days 1-35) made the 16 mg dose level not tolerable  (Supplementary Table S2), and the next dose level tested was at a lower dose of 12 mg. One  of 10 patients treated at the 12 mg dose level experienced an AE that qualified as a DLT.  This patient had grade 3 acute renal failure secondary to concurrent grade 3 hyperglycemia.  The acute renal failure resolved upon discontinuation of study drug and supportive care to  "
+},
+{
+               "paragraph3": "Juric et al. Page 3 "
+},
+{
+               "paragraph4": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph6": "treat the hyperglycemia. Of note, greater than 6 patients were evaluated at the 12 mg and 16  mg cohorts in order to replace DLT non-evaluable patients (e.g. due to disease progression  or patients not receiving adequate number of taselisib doses in the DLT window in cycle 1 to  be evaluable) and to obtain additional safety data. "
+},
+{
+               "paragraph7": "AEs related to taselisib, of any grade, were observed in 31 patients (91%), and of grade ≥3  in 14 patients (41%) (Table 1). Grade ≥3 AEs that occurred at a frequency greater than 5%  included hyperglycemia (15%), rash (12%), diarrhea (6%), fatigue (6%), and pruritus (6%).  Other grade ≥3 AEs observed in one patient included colitis (confirmed via colonoscopy),  pneumonitis, lung infection, acute renal failure, skin exfoliation, and stomatitis. The only  treatment-related grade ≥4 AE was hyperglycemia as described above. AEs regardless of  attribution are provided in Supplementary Table S3 and Supplementary Table S4. "
+},
+{
+               "paragraph8": "AEs related to taselisib were monitorable, manageable, and reversible. AEs of rash, colitis,  and pneumonitis resolved upon holding study drug medication and administration of topical  and/or systemic corticosteroids. The grade 3 colitis AE observed had a later onset and  occurred on day 160 of treatment. This colitis event resolved upon holding study drug and  treatment with corticosteroids. The grade 3 pneumonitis event occurred on day 66 of study  treatment; study drug was held and the AE resolved upon treatment with corticosteroids.  Hyperglycemia improved upon holding of study drug and/or addition of anti-hyperglycemic  medication such as metformin. Such management guidelines were provided for investigators  in the protocol. "
+},
+{
+               "paragraph9": "Although the 12 mg dose level also did not exceed the MTD, the high frequency of grade ≥3  AEs that also occurred after cycle 1 (days 1-35) also gave evidence that this dose level  would not be tolerable for future single-agent studies (Supplementary Table S2). For  example, treatment-related grade ≥3 AEs at the 12 mg dose level that occurred after cycle 1  included rash (30%), colitis (10%), and stomatitis (10%). Based upon the safety information  obtained in this dose escalation and the transition of taselisib to 3 mg capsules, the  recommended dose for single-agent taselisib in future studies was 9 mg, daily. A detailed  schematic showing the decision-making process for the final dose selection is included in  Supplementary Figure S3. "
+},
+{
+               "section:2": "Pharmacokinetics"
+},
+{
+               "paragraph1": "The group mean time profiles and the dose proportionality for taselisib following single and  multiple daily oral doses in cycle 1 and summary of PK parameters are presented (Table 2,  Supplementary Fig. S4A-D). After a single dose, the cohort mean half-life (t1/2) ranged from  36.7 to 43.8 hr with mean T1/2 of ∼ 40 hours. The apparent clearance (CL/F) ranged from  4750 to 9170 mL/hr. After 8 daily doses, the apparent clearance at steady state (CLss/F)  ranged from 4320 to 9150 mL/hr. Taselisib exposures, as measured by Cmax and AUC0-24,  were approximately dose proportional with a 2- to 4-fold accumulation and moderate  variability in Cmax and AUC0-24. No apparent time-dependent PK exposure was observed. "
+},
+{
+               "section:2": "Pharmacodynamic modulation of the PI3K pathway"
+},
+{
+               "paragraph1": "Decreased FDG uptake in tumor sites, consistent with pharmacodynamic modulation of  glucose metabolism, has been observed in other trials with PI3K inhibitors and is considered  "
+},
+{
+               "paragraph2": "Juric et al. Page 4 "
+},
+{
+               "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "to be a pharmacodynamic marker of PI3K inhibition given the important role that PI3K  plays in cellular glucose uptake (14, 15). Partial metabolic responses (PMRs) with FDG- PET imaging were observed in 70% of patients (16/23 evaluable patients), including at the  lowest dose tested of 3 mg QD (Fig. 3). There is a trend of a dose-response, but the small  number of patients per dose level does not provide sufficient data to be conclusive. PMRs  were observed across multiple tumor types including lung, breast, head and neck, ovarian,  endometrial, and adnexal cancers. PMRs were observed in patients with both PIK3CA  mutant (82%; 9 out of 11) and without known activating PIK3CA hotspot mutations (66%; 7  out of 11) tumors (Fig. 4A-C). "
+},
+{
+               "paragraph6": "Fresh paired tumor biopsies were obtained from 5 patients enrolled onto study that were  fixed in optimal cutting temperature (OCT) compound. Of the 5 paired biopsies, 2 non-small  cell lung cancer (NSCLC) patients had tumor content in both the pre-treatment and on-study  biopsies, and were evaluated by reverse phase protein array (RPPA) for PI3K pathway  pharmacodynamic markers, including phospho-Akt (Fig. 5A-B). Decreases greater than  60% in pAKT and pS6 (compared with baseline biopsies) were demonstrated in these  patients who were treated with taselisib at doses of 3 mg and 16 mg once daily, respectively. "
+},
+{
+               "paragraph7": "As inhibition of the PI3K alpha isoform is thought to alter glucose metabolism and result in  hyperglycemia, the observation of increased frequency and severity of hyperglycemia at  higher doses of taselisib is also supportive of significant inhibition of the PI3K pathway. "
+},
+{
+               "section:2": "Biomarker Profiling of Patient Tumors"
+},
+{
+               "paragraph1": "Tumor tissue and/or plasma were available from 30 and 33 of the 34 enrolled patients,  respectively, for determination of PIK3CA mutation status. Fifteen of 34 patients were  identified as having PIK3CA-mutant tumors, including 13/15 who were classified as  PIK3CA-mutant based on tissue, with 3 patients also harboring a KRAS mutation. One CRC  patient harbored both an AKT1 and KRAS mutation. Circulating tumor DNA (ctDNA)  analysis from plasma identified the other 2/15 patients with PIK3CA-mutant tumors: for  one, tumor tissue was without known activating PIK3CA hotspot mutations; for the other, no  tissue was available. The tissue wild-type, plasma-positive PIK3CA-mutant patient was a  HER2+ metastatic breast cancer (MBC) patient; tissue and plasma samples were collected  ∼11 months apart. Two patients had complete loss of PTEN, and 3 were classed as PTEN- low (defined in Methods). Two of the PTEN-low tumors also contained a co-existing  PIK3CA mutation. "
+},
+{
+               "section:2": "Tumor Responses observed with taselisib treatment"
+},
+{
+               "paragraph1": "Thirty-two out of 34 enrolled patients had baseline measurable disease. Of the 32 patients,  14 had PIK3CA-mutant tumors, 15 had tumors negative for the PIK3CA mutations, and the  status was unknown for 3 patients. For the 29 patients with known PIK3CA mutation status,  tumor response evaluation by FDG-PET was available for 23 patients (Fig. 4A) and by  radiographic measurements (SLD) for 28 patients (Fig. 4B); the corresponding genetic  profiles of the 28 patients with SLD data are presented (Fig. 4C). "
+},
+{
+               "paragraph2": "The RECIST confirmed response rate was 36% for those with PIK3CA-mutant tumors  (5/14), and 0% in patients without known activating PIK3CA hotspot mutations (0/15). Of  "
+},
+{
+               "paragraph3": "Juric et al. Page 5 "
+},
+{
+               "paragraph4": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph6": "the 5 patients who responded, 4 had breast cancer and 1 had NSCLC with duration of  objective response lasting 5.2 months (range 2.8-13.5). Of the 5 patients with confirmed  partial responses, all had tumors with mutations in the kinase domain (residue H1047) in the  PIK3CA gene (Fig. 4). Confirmed partial responses were observed at doses including 3 mg  [(n=1; NSCLC, H1047(L/Y)], 5 mg (n=1; breast, H1047R), and 12 mg (n=3; all breast  cancer patients with H1047R). While no confirmed partial responses were observed in the 4  patients with helical domain PIK3CA mutations, 1 breast cancer patient had an unconfirmed  response (-30.52% change from baseline), and 2 patients had tumor shrinkage (-11.41% and  -19.98% change from baseline). The fourth patient was a colorectal cancer patient with a  concurrent KRAS mutation who had progressive disease as his/her best response. In total,  we enrolled 6 patients that had a KRAS hotspot mutation detected in either tumor tissue or  ctDNA. For these 6 patients, 2 had a concurrent PIK3CA mutation and 4 had an  undetectable PIK3CA mutation. Four of the 6 patients with KRAS mutant tumors  experienced progressive disease as their best clinical response, and 2 patients with KRAS  mutant tumors experienced stable disease as their best clinical response. Of the 2 patients  whose tumor was PTEN-null, both patients experienced progressive disease as their best  clinical response. "
+},
+{
+               "paragraph7": "Four out of 5 patients with a tumor confirmed partial response demonstrated a PMR via  FDG-PET (Fig. 4). FDG-PET data was not available for the fifth patient. Several patients  had prolonged clinical benefit with the time on study ranging up to 16 months. A detailed  swimlane plot showing the duration of treatment for patients via PIK3CA mutation status  and dose level is also included (Supplementary Figure S5). "
+},
+{
+               "section:2": "Examples of Tumor Responses in PIK3CA-Mutant Breast Cancer Patients"
+},
+{
+               "paragraph1": "Partial metabolic responses via FDG-PET (Fig. 4) and confirmed partial responses via  RECIST (Fig. 4) established promising antitumor activity in patients with PIK3CA-mutant  breast cancer. Two of the breast cancer patients with confirmed partial responses,  highlighted in Supplementary Figure S6A-B, demonstrated shrinkage of lesions in visceral  organs such as the liver. "
+},
+{
+               "paragraph2": "Although longitudinal, on-study ctDNA collections were not mandatory in this study, a total  of 4 collections from a HR+, HER2- metastatic breast cancer patient who was treated at the  12 mg dose level and experienced a confirmed partial response on taselisib were taken. The  data demonstrated the changes in PIK3CA mutant allele frequencies over time for this  specific patient and showed a correlation of a decrease of PIK3CA mutant allele frequency  with the partial response, and subsequent increase upon disease progression at day 466,  albeit in a single patient (Supplementary Figure S7). "
+},
+{
+          "section:1": "Discussion"
+},
+{
+          "paragraph1": "Taselisib was dosed in patients from 3-16 mg, administered once daily. One of 10 patients  treated at 12 mg and 2 of 11 patients treated at 16 mg experienced AEs that qualified as  DLTs. Although 16 mg did not exceed the MTD as defined by DLTs in cycle 1, no higher  dose beyond 16 mg was tested based upon the overall tolerability of taselisib that included  "
+},
+{
+          "paragraph2": "Juric et al. Page 6 "
+},
+{
+          "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph5": "assessment of the frequency/severity of AEs outside of the DLT window. Patients treated at  the higher doses (12-16 mg) experienced increased frequency of fatigue and hyperglycemia. "
+},
+{
+          "paragraph6": "The overall AE profile for taselisib in the current study was largely consistent with other  PI3K inhibitors (14-16). Buparlisib (BKM120), a pan-class inhibitor that targets all 4  isomers of PI3K, had rash, hyperglycemia, diarrhea, and mucositis as frequent treatment- related AEs (14). In-class toxicities for pictilisib, another pan-class PI3K inhibitor, included  diarrhea, hyperglycemia, rash, and pneumonitis (15). Colitis observed with taselisib is  similar to that reported with idelalisib, a PI3K delta isoform-specific inhibitor approved for  the treatment of hematologic malignancies (17), and is associated with a delayed onset  diarrhea that requires systemic corticosteroid treatment. Therefore, taselisib data are  consistent with a possible mechanism of PI3K delta isoform inhibition being involved in  colonic inflammation. With pneumonitis, however, it is unclear as to which PI3K isoform is  responsible for the AE, for pneumonitis has been observed in patients treated with pan-class  I inhibitors and with taselisib (14-16). "
+},
+{
+          "paragraph7": "Taselisib was rapidly absorbed (Tmax 2-4 hours) and demonstrated dose-linear and time- independent PK with moderate PK variability. The single dose half-life was approximately  40 hours, enabling daily dosing with adequate drug exposure to suppress the PI3K signaling  pathway. Evidence of pharmacodynamic target inhibition was observed in paired tumor  biopsies as assessed by RPPA analysis of key signaling markers downstream of PI3K. We  also observed decreased expression of phospho-ERK from paired tumor pharmacodynamics  biopsies. One potential explanation relates to feedback inhibition observed in oncogenic  signaling pathways. Inhibition of PI3K signaling has been shown to activate MAP-kinase  signaling at early time-points through receptor tyrosine kinase activation (18, 19). However,  sustained MAP-kinase activation has also been shown to negatively regulate phospho-ERK  activity through DUSPs in receptor tyrosine kinase activated cells (20). Interestingly, the 2  tumor biopsies analyzed in this study were non-small cell lung cancer tumors, one of which  contained an activating EGFR exon 19 deletion mutation. FDG-PET responses were also  observed in patients, consistent with PI3K-dependent inhibition of glucose metabolism. "
+},
+{
+          "paragraph8": "Pharmacodynamic modulation as shown by FDG-PET responses and paired tumor biopsies  occurred in the first cohort tested at the 3 mg dose level, consistent with robust inhibition of  the PI3K pathway. While preclinical experiments have predicted that an exposure  corresponding to the 6 mg dose level would be the minimal efficacious dose, in this phase Ia  trial, we observed antitumor activity and PI3K pathway knockdown starting at the 3 mg dose  in the first cohort. Four out of 5 patients with tumor partial responses also had FDG-PET  responses; the fifth patient did not have FDG-PET data. "
+},
+{
+          "paragraph9": "Single-agent anti-tumor activity by CT scan was observed in five patients receiving 3-12 mg  taselisib. All responses observed were in PIK3CA-mutant tumors. Based upon preclinical  data, taselisib is expected to be active against tumors with either helical or kinase domain  mutations. Confirmed partial responses were observed in patients with PIK3CA kinase  domain mutations. There were fewer patients enrolled with helical domain mutations (n=4).  One breast cancer patient with a helical domain mutation did have an unconfirmed response  (E545K), 2 patients had tumor shrinkage, and the fourth patient was a colorectal cancer  "
+},
+{
+          "paragraph10": "Juric et al. Page 7 "
+},
+{
+          "paragraph11": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph12": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph13": "patient with a concurrent KRAS mutation which may render tumors relatively resistant to  PI3K inhibitors. Three of the confirmed partial responses were observed at the 12 mg dose  level. "
+},
+{
+          "paragraph14": "The increased antitumor response in PIK3CA-mutant cancer patients in this study as  compared to prior PI3K inhibitors tested in the clinic may be due to several factors. One  possible reason could be an increased therapeutic index for taselisib in patients with  PIK3CA-mutant tumors. Taselisib has increased potency against the mutant version of the  PI3K alpha isoform, as demonstrated in chemical assays as well as in cancer cell lines (6). A  higher therapeutic window due to greater selectivity for PIK3CA mutant isoforms has been  shown in extensive laboratory studies (21) and is also suggested by the fact that partial  responses were only observed in patients with PIK3CA-mutant tumors. The other indirect  evidence for an enhanced therapeutic window is that at the chosen recommended dose,  patients were able to stay on the study agent for prolonged periods of time. On the contrary,  with pan-PI3K inhibitors, the majority of patients had to discontinue the study agent due to  lack of tolerability (22, 23). Of note also, since taselisib inhibits the PI3K beta isoform 30- fold less than the PI3K alpha isoform, the decreased anti-tumor activity against PTEN-null  tumors is consistent with the observation that PTEN signals through PIK3CB (24). Others  reported that acquired resistance to the alpha-selective PI3K inhibitor, alpelisib (BYL-719),  can occur through loss of PTEN expression (25). Recent phase I clinical data with alpelisib  and letrozole showed increased clinical benefit rate in patients with PIK3CA-mutant tumors  (26). We also did not observe any clinical responses in taselisib-treated patients whose tumor  contained a KRAS mutation. This is consistent with the observation that cell lines harboring  somatic alterations in RAS/RAF genes are insensitive to the pan-PI3K inhibitor GDC-0941  (27). "
+},
+{
+          "paragraph15": "Taselisib exhibited a favorable safety profile and early signs of promising activity, especially  in tumors that have activating mutations in PIK3CA. Further studies as a single agent are  ongoing. Given that approximately 40% of estrogen receptor positive (ER+) breast cancers  harbor the PIK3CA mutation and given the extensive crosstalk between the ER and the PI3K  signaling pathways (28), there is a strong rationale to evaluate taselisib in combination with  endocrine therapy. Based upon these promising phase Ia data showing antitumor activity in  the first cohort tested as well as subsequent phase Ib/II data of taselisib in combination with  fulvestrant (29, 30), an ongoing randomized phase III study is testing taselisib plus  fulvestrant in postmenopausal women with ER+ metastatic breast cancer with enrollment  being enriched for patients with PIK3CA-mutant tumors (SANDPIPER; clinicaltrials.gov  NCT02340221). "
+},
+{
+          "section:1": "Methods"
+},
+{
+               "section:2": "In-Vivo Efficacy"
+},
+{
+               "paragraph1": "All in-vivo efficacy and pharmacodynamic studies were approved by Genentech and  Institutional Animal Care and Use Committee (IACUC) and adhered to the NIH Guidelines  for the Care and Use of Laboratory Animals. Human KPL-4 breast cancer cell line was  obtained from J. Kurebayashi (Kawaski Medical School; Kurashiki; Okayama, Japan) in  August, 2006. The cell line was established from the malignant pleural effusion of a breast  "
+},
+{
+               "paragraph2": "Juric et al. Page 8 "
+},
+{
+               "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "cancer patient with an inflammatory skin metastasis. Cells were authenticated by short  tandem repeat (STR) fingerprinting within 6 months of engraftment into mice for efficacy  and pharmcokinetic/pharmacodynamic studies as described. KPL-4 cells, resuspended in  50% phenol red-free Matrigel (Becton Dickinson Bioscience; San Jose, CA) and Hank's  Balanced Salt Solution, were inoculated into 100 SCID beige mice (Charles River  Laboratory, Wilmington, MA) in the number 2/3 mammary fat pad. Each mouse was  injected with 3 × 106 cells. Tumors were monitored until they reached a mean tumor volume  of 150-200 mm3. Tumor volume was measured using Ultra Cal-IV calipers (Model  54-10-111; Fred V.Fowler Co.; Newton, MA). The following formula was used in Excel,  version 11.2 to calculate tumor volume: Tumor Volume (mm3) = (Length × Width2) × 0.5.  Mice were distributed into seven groups of 8 mice based on tumor volume with a mean  tumor volume across all groups of 171 ± 5.1 mm3 (mean ± standard deviation of the mean)  on day 0 of the study. Taselisib was formulated in a vehicle containing 0.5% methycellulose/ 0.2% Tween-80. Mice were administered 0 (Vehicle) or 0.20, 0.39, 0.78, 1.56, 6.25, and 25  mg/kg GDC-0032 orally (PO) by gavage daily for 21 days in a volume of 100 μL. Tumor  sizes were recorded twice weekly over the course of the study. Mouse body weights were  also recorded twice weekly. Mice whose tumor volume exceeded 2000 mm3 or whose body  weight loss was 20% of their starting weight were promptly euthanized. A mixed modeling  approach was used to analyze the repeated measurement of tumor volumes from the same  animals over time (31). This approach addresses both repeated measurements and modest  dropouts due to any non-treatment related death of animals before study end. Cubic  regression splines were used to fit a non-linear profile to the time courses of log2 tumor  volume at each dose level. These non-linear profiles were then related to dose within the  mixed model. Tumor growth inhibition as a percentage of vehicle control (%TGI) was  calculated as the percentage of the area under the fitted curve (AUC) for the respective dose  group per day in relation to the vehicle, using the following formula: %TGI=100 × (1 −  AUCdose/AUCvehicle). "
+},
+{
+               "section:2": "Pharmacodynamic Marker Analysis in KPL-4 Tumor Xenografts"
+},
+{
+               "paragraph1": "Human KPL-4 cells, resuspended in 50% phenol red-free Matrigel (Becton Dickinson  Bioscience®; San Jose, CA) and Hank's Balanced Salt Solution, were inoculated into 80  SCID beige mice in the number 2/3 mammary fat pad. Each mouse was injected with 3 ×  106 cells. Tumors were monitored until they reached a mean tumor volume of 350-400 mm3  "
+},
+{
+               "paragraph2": "after which mice were treated with a single oral dose of vehicle (0.5% methylcellulose/0.2%  Tween-80) or 1, 5 and 25 mg/kg of taselisib for 1, 4, 8, 24 and 48 hours (n=4 tumor-bearing  animals for each dose and time-point). Following drug treatment, tumors were harvested,  snap-frozen in liquid nitrogen and processed for protein extraction using a buffer  (Invitrogen; Camarillo, CA), containing 10 mM Tris pH 7.4,100 mM NaCl, 1 mM EDTA, 1  mM EGTA, 1 mM NaF, 20 mM Na4P2O7, 2 mM Na3VO4, 1% Triton X-100, 10% glycerol,  0.1% SDS, and 0.5% deoxycholate supplemented with a phosphatase and protease inhibitor  cocktail (Sigma, St. Louis, MO). Tumors were dissociated with a small pestle (Konte Glass  Company; Vineland, NJ) in extraction buffer, sonicated briefly on ice, and centrifuged at  maximum RPM for 20 minutes at 4°C. Protein concentrations were determined using the  BCA Protein Assay Kit (Pierce; Rockford, IL). The Meso Scale Discovery Multi-Spot  Biomarker Detection System (Meso Scale Discovery; Gaithersburg, MD) was used to  "
+},
+{
+               "paragraph3": "Juric et al. Page 9 "
+},
+{
+               "paragraph4": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph6": "determine the levels of total Akt, Akt phosphorylated at serine 473 (pAkt), total S6RP, and  S6RP phosphorylated at serine 235/236 (pS6RP). Total PRAS40 and PRAS40  phosphorylated at threonine 246 (pPRAS40) were detected by ELISA (Invitrogen; Carlsbad,  CA). Levels of phosphorylated protein were normalized to total protein levels in taselisib- treated tumors and compared to vehicle-treated controls. "
+},
+{
+               "section:2": "Study Population"
+},
+{
+               "paragraph1": "This was a phase I, multicenter, open-label modified 3+3 dose-escalation study. The protocol  was approved by Institutional Review Boards prior to patient recruitment and conducted in  accordance with International Conference on Harmonization (ICH) E6 Guidelines for Good  Clinical Practice and Declaration of Helsinki. All patients gave written informed consent  and a willingness to provide tumor archival tissue. Patients had histologically documented  locally advanced or metastatic solid malignancies that had progressed or failed standard  therapy. Other key inclusion criteria included evaluable or measurable disease as defined by  RECIST version 1.1 (32), age ≥ 18 years, life expectancy ≥ 12 weeks, ECOG performance  status 0-1, adequate hematologic and organ function, and fasting blood glucose level ≤ 120  mg/dL. Key exclusion criteria included type I or II diabetes mellitus requiring anti- hyperglycemic medication, active small or large intestine inflammation, prior treatment with  a PI3K inhibitor in which the patient experienced a grade ≥ 3 drug-related AE, primary CNS  malignancy or untreated/active CNS metastases, or severe uncontrolled systemic cardiac,  lung, or liver disease. A 3-week washout period from any ongoing cancer therapy was  required prior to start of taselisib dosing. "
+},
+{
+               "section:2": "Study Design"
+},
+{
+               "paragraph1": "Cycle 1 (days 1-35) began with a pharmacokinetic (PK) evaluation; patients received a  single fasting dose of taselisib on day 1 at their assigned dose level followed by a 7-day  washout period in which frequent PK sampling up to 72 hours was performed. Urine  samples were collected up to 24 hours. Continuous daily dosing (fasting) resumed on day 8  for 4 weeks. Subsequent cycles were 28 days in length. A modified 3+3 dose escalation  scheme was implemented to determine the maximum tolerated dose (MTD) and to identify  the recommended dose for future studies. Taselisib administration was discontinued in  patients who experienced disease progression or unacceptable toxicity. "
+},
+{
+               "section:2": "Study Treatment"
+},
+{
+               "paragraph1": "Taselisib (Genentech, Inc.) was taken on an empty stomach as a single dose (powder-in- capsule formulation) at the same time of day +/- 2 hours (33). The dose for each patient was  dependent on the dose level assignment. "
+},
+{
+               "section:2": "Safety"
+},
+{
+               "section:2": "Safety"
+},
+{
+               "paragraph1": "Juric et al. Page 10 "
+},
+{
+               "paragraph2": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph3": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph4": "with exception of grade diarrhea, nausea, or vomiting that responded to standard-of-care  therapy. Hematologic toxicities defined as a DLT included grade ≥ 4 thrombocytopenia or  grade ≥ 4 neutropenia (absolute neutrophil count < 500/μL) lasting > 5 days or accompanied  by fever. Fasting grade ≥ hyperglycemia, fasting grade ≥ 3 hyperglycemia for ≥ 1 week  despite adequate trial of oral anti-hyperglycemic therapy, grade ≥ 4 fasting  hypercholesterolemia or triglyceridemia for ≥ 2 weeks despite intervention with lipid- lowering agent, or grade ≥ 3 serum bilirubin or hepatic transaminase (alanine  aminotransferase or aspartate aminotransferase were considered DLTs. For patients with  bone or liver metastases and baseline levels of ≤ 5× upper limit of normal (ULN) hepatic  transaminase or alkaline phosphatase, levels of > 10× ULN was considered a DLT. The  MTD was defined as the highest dose at which < 33% of patients developed a DLT during  the DLT assessment window. "
+},
+{
+               "section:2": "Pharmacokinetics"
+},
+{
+               "paragraph1": "Taselisib PK was evaluated based on collection of serum samples during cycle 1 at pre-dose,  0.5, 1, 2, 3, 4, 8, 24, 48, and 72 hours post-dose. Additional samples were collected at pre- dose, 2 hours post-dose on day 8 of cycle 1, and pre-dose, 0.5, 1, 2, 3, 4 and 8 hours post- dose on day 15 of cycle 1. Pre-dose and post-dose samples were also collected on days 22  and 29 of cycle 1, then on day 1 of every cycle thereafter. Taselisib concentration was  determined using a validated LC-MS/MS analytical procedure (Covance Laboratories,  Madison, WI) (34). The lower limit of quantification (LLOQ) was 0.87 nM. The PK  assessment from patients was performed for cycle 1 plasma concentration-time data using  standard non-compartmental (NCA) PK methods in WinNonlin (Version 5.2.1, Pharsight  Corp., Mountain View, CA). The relationship of individual day 1 and steady-state Cmax and  AUC values versus taselisib (GDC-0032) dose was evaluated with a power law model (Cmax  or AUC = a (Dose)power) with 95% CI of slope to the pharmacokinetic relationship between  dose and taselisib exposure (Cmax or AUC). "
+},
+{
+               "section:2": "FDG-PET Imaging"
+},
+{
+               "paragraph1": "To assess the effects of taselisib on tumor metabolism or as a marker of response to  therapy, 18F fluorodeoxyglucose (FDG)-positron-emission tomography (PET) scans were  obtained at baseline and during the last week of cycle 1 if at least one PET-assessable lesion  was observed at baseline. Any significant changes in tumor FDG uptake required a repeat  FDG-PET during cycle 2. For PET evaluation, up to 5 target lesions with a target to  background uptake level greater or equal to 2 were selected in the screening scan. Target  lesions were to measure at least 15 mm in longest diameter (LD) on CT or MRI. In the case  there were not 15 mm diameter FDG-avid lesions, lesions of at least 10 mm in LD meeting  RECIST 1.0 criteria were selected. An FDG-PET partial metabolic response (PMR) was  defined as a decrease of > 20% in the average percentage change in the maximum  standardized uptake value (SUVmax) of the target lesions. "
+},
+{
+               "section:2": "Reverse Phase Protein Array Analysis of Tumor Biopsies"
+},
+{
+               "paragraph1": "To assess pharmacodynamic effects on tumor and whether inhibition of PI3K with taselisib  resulted in changes in pathway markers, pre- and post-treatment paired tumor biopsies were  obtained at baseline and during cycle 1 from patients who provided consent for tissue  "
+},
+{
+               "paragraph2": "Juric et al. Page 11 "
+},
+{
+               "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "biopsy. Tumor samples were assessed for decreased phosphorylation on downstream  analytes, such as proline-rich AKT substrate 40 (pPRAS40), phosphorylated extracellular  signal-regulated kinase (pERK), and phosphorylated ribosomal protein S6 (pRPS6), using  reverse phase protein arrays (RPPA) (Theranostics, Rockville, MD) as previously described  (35). "
+},
+{
+               "section:2": "Tumor Assessments"
+},
+{
+               "paragraph1": "Taselisib activity was evaluated by tumor CT assessments every 8 weeks, with confirmation  of objective response ≥ 4 weeks after initial documentation (per RECIST v1.1). "
+},
+{
+               "section:2": "Determination of PIK3CA Mutation Status"
+},
+{
+               "paragraph1": "A patient was determined to harbor a PIK3CA mutant tumor if a positive mutation result  was obtained from either tissue or plasma. "
+},
+{
+                    "section:3": "Assessment of somatic mutations from tissue"
+},
+{
+                    "paragraph1": "PIK3CA mutation hotspot status  was assessed centrally using PCR-based platform from DNA extracted from paraffin  embedded formalin fixed (FFPE) tissue using PCR-based platforms as described previously  (36). PIK3CA hotspot coverage included: C420R, E542K, E545A/G/K, H1047L/R/Y.  Samples were subsequently molecularly profiled using an internally developed 120 somatic  hotspot mutation test (MUT-MAP) that detected somatic mutations in AKT1, BRAF, EGFR,  FGFR3, FLT3, HRAS, KIT, MET, NRAS and PIK3CA, as described previously (37). In  addition to the central assessment of the eight PIK3CA hotspot mutations, the MUT-MAP  somatic mutation test detected an additional nine mutations: R88Q, N345K, E545D,  Q546R/E/K/L, M1043I, and G1049R. "
+},
+{
+                    "section:3": "Assessment of somatic mutations from plasma"
+},
+{
+                    "paragraph1": "Circulating tumor DNA (ctDNA)  analysis of somatic mutations was determined centrally using the Sysmex Inostics  Oncobeam Panel 1 (Hamburg, Germany), which detects hotspot mutations in AKT1, BRAF,  KRAS, NRAS, and PIK3CA. PIK3CA hotspot coverage included: E542K, E545G/K,  Q546K, M1043I, and H1047L/R/Y. "
+},
+{
+                    "section:3": "Determination of PTEN status"
+},
+{
+                    "paragraph1": "PTEN status was centrally determined using the  Ventana Benchmark XT instrument with standard immunohistochemistry techniques and  employing an anti-PTEN antibody (clone 138G6; Cell Signaling Technology). Samples were  scored using a H-score methodology using the following equation: H-score = (% × 0)+(% ×  1+)+(% × 2+)+(% × 3+)+(% × 4+), where 3+ is the staining intensity of surrounding normal  tissue. A PTEN-null tumor was defined as H-score of 0, a PTEN-low tumor was defined a  H-score between 1-100, and a PTEN- normal tumor was defined as H-score greater than  100. "
+},
+{
+               "section:2": "Statistical Methods"
+},
+{
+               "paragraph1": "The sample size for this study was based on the dose escalation rules described in the study  design section and was not based on explicit power or type I error considerations. Safety  analyses included all patients who received any amount of taselisib. All AEs occurring on or  "
+},
+{
+               "paragraph2": "Juric et al. Page 12 "
+},
+{
+               "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "after treatment on day 1 were summarized by mapped term, appropriate thesaurus levels,  and NCI CTCAE v4.0 toxicity grade. "
+},
+{
+               "paragraph6": "Supplementary Material "
+},
+{
+               "paragraph7": "Refer to Web version on PubMed Central for supplementary material. "
+},
+{
+               "paragraph8": "Acknowledgments "
+},
+{
+               "paragraph9": "The authors wish many thanks to all of the patients and the investigators who participated in this study. We thank  M, Negash, M. Grow, and V. Brophy (Roche Molecular Systems, Pleasanton, CA) for development of the PIK3CA  research mutation test. We also thank members of our Clinical Assays and Technologies Group for running the  MUT-MAP mutation test, Y. Yan and M. Wagle for help with the RPPA assay, S. Carroll, J. Aimi, and J. Shine for  sample logistics, and J. Qiu and V. Ng for statistical support. Editing and writing support was provided by A. Daisy  Goodrich (Genentech, South San Francisco, CA, USA) and was funded by Genentech. "
+},
+{
+               "paragraph10": "Financial support: This study was supported by Genentech, Inc., South San Francisco, CA. "
+},
+{
+               "paragraph11": "T.R. Wilson, JA Ware, S. Sanabria Bohorquez, H.M. Savage, D. Sampath, L. Salphati, R.S. Lin, H. Jin, H. Parmar,  and J.Y. Hsu, are employees of Genentech, Inc., South San Francisco, CA, and stock holders of Roche; I. Krop  received research support from Genentech and has been a consultant for Genentech; R.K. Ramanathan received  research support from Genentech; D.D. Von Hoff received research grant from Genentech to his institution for  conduct of trial. "
+},
+{
+          "section:1": "References"
+},
+{
+          "paragraph1": "1. Macara IG, Marinetti GV, Balduzzi PC. Transforming protein of avian sarcoma virus UR2 is  associated with phosphatidylinositol kinase activity: possible role in tumorigenesis. Proc Natl Acad  Sci USA. 1984; 81:2728–32. [PubMed: 6326140]  "
+},
+{
+          "paragraph2": "2. Cantley LC. The phosphoinositide 3-kinase pathway. Science. 2002; 296:1655–7. [PubMed:  12040186]  "
+},
+{
+          "paragraph3": "3. Guertin DA, Sabatini DM. Defining the role of mTOR in cancer. Cancer Cell. 2007; 12:9–22.  [PubMed: 17613433]  "
+},
+{
+          "paragraph4": "4. Samuels Y, Diaz LA Jr, Schmidt-Kittler O, Cummins JM, Delong L, Cheong I, et al. Mutant  PIK3CA promotes cell growth and invasion of human cancer cells. Cancer Cell. 2005; 7:561–73.  [PubMed: 15950905]  "
+},
+{
+          "paragraph5": "5. Liu P, Cheng H, Roberts TM, Zhao JJ. Targeting the phosphoinositide 3-kinase pathway in cancer.  Nat Rev Drug Discov. 2009; 8:627–44. [PubMed: 19644473]  "
+},
+{
+          "paragraph6": "6. Ndubaku CO, Heffron TP, Staben ST, Baumgardner M, Blaquiere N, Bradley E, et al. Discovery of  2-{3-[2-(1-isopropyl-3-methyl-1H-1,2-4-triazol-5-yl)-5,6-dihydrobenzo[f]imidazo[1, 2-d] [1,4]oxazepin-9-yl]-1H-pyrazol-1-yl}-2-methylpropanamide (GDC-0032): a beta-sparing  phosphoinositide 3-kinase inhibitor with high unbound exposure and robust in vivo antitumor  activity. J Med Chem. 2013; 56:4597–610. [PubMed: 23662903]  "
+},
+{
+          "paragraph7": "7. Sahasranaman, S., Ma, S., Hsu, J., Gates, M., Ran, Y., Zhang, K., et al. Clinical Pharmacology &  Therapeutics. Wiley-Blackwell; 2015. Assessment of absolute bioavailability and mass balance of  the PI3K inhibitor taselisib (GDC-0032) in healthy subjects; p. S81-S. "
+},
+{
+          "paragraph8": "8. Sahasranaman, S., Graham, R., Salphati, L., Hsu, J., Lu, X., Gates, M., et al. Clinical Pharmacology  & Therapeutics. Wiley-Blackwell; 2015. Assessment of pharmacokinetic interaction between the  PI3K inhibitor taselisib (GDC-0032) and a strond CYP3A inducer or inhibitor; p. S80-S1. "
+},
+{
+          "paragraph9": "9. Graham RA, Cheeti S, Salphati L, Lu T, Kurkjian C, Von Hoff D, et al. Abstract B218: Drug-drug  interaction assessment of GDC-0032, a beta-sparing inhibitor of phosphoinositide 3-kinase (PI3K),  using midazolam, a sensitive CYP3A4 substrate. Mol Cancer Ther. 2013; 12:B218–B. "
+},
+{
+          "paragraph10": "10. Salphati L, Wong H, Belvin M, Bradford D, Edgar KA, Prior WW, et al. Pharmacokinetic- pharmacodynamic modeling of tumor growth inhibition and biomarker modulation by the novel  phosphatidylinositol 3-kinase inhibitor GDC-0941. Drug Metab Dispos. 2010; 38:1436–42.  [PubMed: 20538720]  "
+},
+{
+          "paragraph11": "Juric et al. Page 13 "
+},
+{
+          "paragraph12": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph13": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph14": "11. Salphati L, Pang J, Plise EG, Lee LB, Olivero AG, Prior WW, et al. Preclinical assessment of the  absorption and disposition of the phosphatidylinositol 3-kinase/mammalian target of rapamycin  inhibitor GDC-0980 and prediction of its pharmacokinetics and efficacy in human. Drug Metab  Dispos. 2012; 40:1785–96. [PubMed: 22696419]  "
+},
+{
+          "paragraph15": "12. Pang J, Baumgardner M, Cheong J, Edgar K, Heffron TP, Le H, et al. Preclinical evaluation of the  B-isoform-sparing PI3K inhibitor GDC-0032 and prediction of its human pharmacokinetics. Drug  Metab Rev. 2014; 45:219. "
+},
+{
+          "paragraph16": "13. Wong H, Choo EF, Alicke B, Ding X, La H, McNamara E, et al. Antitumor activity of targeted and  cytotoxic agents in murine subcutaneous tumor models correlates with clinical response. Clin  Cancer Res. 2012; 18:3846–55. [PubMed: 22648270]  "
+},
+{
+          "paragraph17": "14. Bendell JC, Rodon J, Burris HA, de Jonge M, Verweij J, Birle D, et al. Phase I, dose-escalation  study of BKM120, an oral pan-Class I PI3K inhibitor, in patients with advanced solid tumors. J  Clin Oncol. 2012; 30:282–90. [PubMed: 22162589]  "
+},
+{
+          "paragraph18": "15. Sarker D, Ang JE, Baird R, Kristeleit R, Shah K, Moreno V, et al. First-in-Human Phase I Study of  Pictilisib (GDC-0941), a Potent Pan-Class I Phosphatidylinositol-3-Kinase (PI3K) Inhibitor, in  Patients with Advanced Solid Tumors. Clin Cancer Res. 2015; 21:77–86. [PubMed: 25370471]  "
+},
+{
+          "paragraph19": "16. Ando Y, Inada-Inoue M, Mitsuma A, Yoshino T, Ohtsu A, Suenaga N, et al. Phase I dose- escalation study of buparlisib (BKM120), an oral pan-class I PI3K inhibitor, in Japanese patients  with advanced solid tumors. Cancer Sci. 2014; 105:347–53. [PubMed: 24405565]  "
+},
+{
+          "paragraph20": "17. Gopal AK, Kahl BS, de Vos S, Wagner-Johnston ND, Schuster SJ, Jurczak WJ, et al. PI3Kdelta  inhibition by idelalisib in patients with relapsed indolent lymphoma. N Engl J Med. 2014;  370:1008–18. [PubMed: 24450858]  "
+},
+{
+          "paragraph21": "18. Serra V, Scaltriti M, Prudkin L, Eichhorn PJ, Ibrahim YH, Chandarlapaty S, et al. PI3K inhibition  results in enhanced HER signaling and acquired ERK dependency in HER2-overexpressing breast  cancer. Oncogene. 2011; 30:2547–57. [PubMed: 21278786]  "
+},
+{
+          "paragraph22": "19. Chandarlapaty S, Sawai A, Scaltriti M, Rodrik-Outmezguine V, Grbovic-Huezo O, Serra V, et al.  AKT inhibition relieves feedback suppression of receptor tyrosine kinase expression and activity.  Cancer Cell. 2011; 19:58–71. [PubMed: 21215704]  "
+},
+{
+          "paragraph23": "20. Pratilas CA, Taylor BS, Ye Q, Viale A, Sander C, Solit DB, et al. (V600E)BRAF is associated with  disabled feedback inhibition of RAF-MEK signaling and elevated transcriptional output of the  pathway. Proc Natl Acad Sci USA. 2009; 106:4519–24. [PubMed: 19251651]  "
+},
+{
+          "paragraph24": "21. Friedman, L., Edgar, K., Song, K., Schmidt, S., Kirkpatrick, D., Phu, L., et al. The PI3K inhibitor,  taselisib, has enhanced potency in PIK3CA mutant models through a unique mechanism of action.  San Antonio Breast Cancer Symposium; 2016; San Antonio, TX. p. 1073Abstract S6-04Available  from: https://www.sabcs.org/Portals/SABCS2016/Documents/SABCS-2016-Abstracts.pdf?v=1 "
+},
+{
+          "paragraph25": "22. Baselga, J., Im, SA., Iwata, H., Clemons, M., Ito, Y., Awad, aA, et al. PIK3CA status in circulating  tumor DNA (ctDNA) predicts efficacy of buparlisib (BUP) plus fulvestrant (FULV) in  postmenopausal women with endocrine-resistant HR+/HER2– advanced breast cancer (BC): First  results from the randomized, phase III BELLE-2 trial. San Antonio Breast Cancer Symposium;  2015; San Antonio, TX. p. Abstract S6-01. "
+},
+{
+          "paragraph26": "23. Leo Di, A., Keun, S., Ciruelos, E., Lønning, P., Janni, W., O'Regan, R., et al. BELLE-3: A Phase  III study of buparlisib + fulvestrant in postmenopausal women with HR+, HER2-, aromatase  inhibitor-treated, locally advanced or metastatic breast cancer, who progressed on or after mTOR  inhibitor-based treatment. San Antonio Breast Cancer Symposium; 2016; San Antonio, TX. p.  Abstract S4-07. "
+},
+{
+          "paragraph27": "24. Jia S, Liu Z, Zhang S, Liu P, Zhang L, Lee SH, et al. Essential roles of PI(3)K-p110beta in cell  growth, metabolism and tumorigenesis. Nature. 2008; 454:776–9. [PubMed: 18594509]  "
+},
+{
+          "paragraph28": "25. Juric D, Castel P, Griffith M, Griffith OL, Won HH, Ellis H, et al. Convergent loss of PTEN leads  to clinical resistance to a PI(3)Kalpha inhibitor. Nature. 2015; 518:240–4. [PubMed: 25409150]  "
+},
+{
+          "paragraph29": "26. Mayer IA, Abramson VG, Formisano L, Balko JM, Estrada MV, Sanders ME, et al. A Phase Ib  Study of Alpelisib (BYL719), a PI3Kalpha-Specific Inhibitor, with Letrozole in ER+/HER2-  Metastatic Breast Cancer. Clin Cancer Res. 2017; 23:26–34. [PubMed: 27126994]  "
+},
+{
+          "paragraph30": "27. Spoerke JM, O'Brien C, Huw L, Koeppen H, Fridlyand J, Brachmann RK, et al. Phosphoinositide  3-kinase (PI3K) pathway alterations are associated with histologic subtypes and are predictive of  "
+},
+{
+          "paragraph31": "Juric et al. Page 14 "
+},
+{
+          "paragraph32": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph33": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph34": "sensitivity to PI3K inhibitors in lung cancer preclinical models. Clin Cancer Res. 2012; 18:6771– 83. [PubMed: 23136191]  "
+},
+{
+          "paragraph35": "28. Bosch A, Li Z, Bergamaschi A, Ellis H, Toska E, Prat A, et al. PI3K inhibition results in enhanced  estrogen receptor function and dependence in hormone receptor-positive breast cancer. Sci Transl  Med. 2015; 7:283ra51. "
+},
+{
+          "paragraph36": "29. Juric D, Saura C, Cervantes A, Kurkjian C, Patel M, Sachdev J, et al. Abstract PD1-3: Ph1b study  of the PI3K inhibitor GDC-0032 in combination with fulvestrant in patients with hormone  receptor-positive advanced breast cancer. Cancer Research. 2013; 73:D1–3. "
+},
+{
+          "paragraph37": "30. Dickler MN, Saura C, Richards DA, Krop IE, Cervantes A, Bedard PL, et al. A phase II study of  the PI3K inhibitor taselisib (GDC-0032) combined with fulvestrant (F) in patients (pts) with  HER2-negative (HER2-), hormone receptor-positive (HR+) advanced breast cancer (BC). J Clin  Oncol. 2016; 34(suppl; abstr 520) "
+},
+{
+          "paragraph38": "31. Pinheiro, J., Bates, D., DebRoy, S., Sarkar, D. the R Core Team. [cited 2017 Mar 14] nlme: Linear  and Nonlinear Mixed Effects Models. R package version 3.1-131; c2017. Available from: https:// CRAN.R-project.org/package=nlme "
+},
+{
+          "paragraph39": "32. Eisenhauer EA, Therasse P, Bogaerts J, Schwartz LH, Sargent D, Ford R, et al. New response  evaluation criteria in solid tumours: revised RECIST guideline (version 1.1). Eur J Cancer. 2009;  45:228–47. [PubMed: 19097774]  "
+},
+{
+          "paragraph40": "33. Faber K, Borin M, Cheeti S, Fraczkiewicz G, Nelson E, Ran Y, et al. Impact of formulation and  food on taselisib (GDC-0032) bioavailability: powder-in-capsule formulation represents unique  drug developmen challenge. Clin Pharmacol Ther. 2016; 99:S5–S107. [PubMed: 26803826]  "
+},
+{
+          "paragraph41": "34. Ding X, Faber K, Shi Y, McKnight J, Dorshorst D, Ware JA, et al. Validation and determination of  taselisib, a beta-sparing phosphoinositide 3-kinase (PI3K) inhibitor, in human plasma by LC- MS/MS. J Pharm Biomed Anal. 2016; 126:117–23. [PubMed: 27187764]  "
+},
+{
+          "paragraph42": "35. Yan Y, Serra V, Prudkin L, Scaltriti M, Murli S, Rodriguez O, et al. Evaluation and clinical  analyses of downstream targets of the Akt inhibitor GDC-0068. Clin Cancer Res. 2013; 19:6976– 86. [PubMed: 24141624]  "
+},
+{
+          "paragraph43": "36. Arthur LM, Turnbull AK, Renshaw L, Keys J, Thomas JS, Wilson TR, et al. Changes in PIK3CA  mutation status are not associated with recurrence, metastatic disease or progression in endocrine- treated breast cancer. Breast Cancer Res Treat. 2014; 147:211–9. [PubMed: 25104442]  "
+},
+{
+          "paragraph44": "37. Schleifman EB, Tam R, Patel R, Tsan A, Sumiyoshi T, Fu L, et al. Next generation MUT-MAP, a  high-sensitivity high-throughput microfluidics chip-based mutation analysis panel. PLoS One.  2014; 9:e90761. [PubMed: 24658394]  "
+},
+{
+          "paragraph45": "Juric et al. Page 15 "
+},
+{
+          "paragraph46": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph47": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph48": "Significance "
+},
+{
+          "paragraph49": "Preliminary data consistent with preclinical data indicate increased anti-tumor activity of  taselisib in patients with PIK3CA-mutant tumors (in comparison to patients with tumors  without known activating PIK3CA hotspot mutations) starting at the lowest dose tested of  3 mg, thereby supporting higher potency for taselisib against PIK3CA-mutant tumors. "
+},
+{
+          "paragraph50": "Juric et al. Page 16 "
+},
+{
+          "paragraph51": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph52": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms862967_page16_391.jpg"
+},
+{
+          "section:1": "Figure 1"
+},
+{
+          "paragraph1": "  In vivo efficacy of taselisib in the KPL-4 PIK3CA-mutant breast cancer xenograft model.  Taselisib was dosed orally and daily at the doses indicated for 21 days as indicated by  treatment period (Rx). Control tumor bearing mice were treated with 0.5% methylcellulose/ 0.2% Tween-80 (vehicle). Tumor volumes were measured and calculated as described in  Materials and Methods. "
+},
+{
+          "paragraph2": "Juric et al. Page 17 "
+},
+{
+          "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms862967_page17_406.jpg"
+},
+{
+          "section:1": "Figure 2"
+},
+{
+          "paragraph1": "  Study design. (A) Phase Ia dose escalation with 5 cohort levels tested. (B) Schedule of  assessments while on study. "
+},
+{
+          "paragraph2": "Juric et al. Page 18 "
+},
+{
+          "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms862967_page18_420.jpg"
+},
+{
+          "section:1": "Figure 3"
+},
+{
+          "paragraph1": "  Percentage change from baseline in target lesion by FDG-PET in patients in different dose  cohorts. "
+},
+{
+          "paragraph2": "Juric et al. Page 19 "
+},
+{
+          "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms862967_page19_434.jpg"
+},
+{
+          "section:1": "Figure 4"
+},
+{
+          "paragraph1": "  (A) Best FDG-PET response (mean percentage change in SUVmax). Partial metabolic  response was defined as greater than a 20% decrease in %ΔSUVmax. Patients with N/A (not  applicable) did not have subsequent scan after starting treatment. All patient data arranged in  (A) are in the same patient order as in as panels (B) and (C). (B) Best percent change from  baseline in the sum of longest diameter (SLD) for target lesions via RECIST v1.1 available  for 28 measurable patients with at least one post-baseline tumor assessment for target lesion  (from 29 patients with baseline measureable disease) out of 34 enrolled patients. (C)  Corresponding somatic mutation profiling in both tumor- and plasma-extracted DNA from  enrolled from patients. The patient with PIK3CA mutation type “PIK3CA Other” had an  R88Q mutation. "
+},
+{
+          "paragraph2": "Juric et al. Page 20 "
+},
+{
+          "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms862967_page20_450.jpg"
+},
+{
+          "section:1": "Figure 5"
+},
+{
+          "paragraph1": "  Pharmacodynamic modulation of the PI3K pathway. Needle core tumor biopsies obtained  from patients at baseline and at steady state (cycle 1, between days 15-21) were fixed and  evaluated by reverse phase protein array for PI3K-Akt pathway markers. Decreases of >  60% in pAkt and pS6, and up-phosphorylation of BIM (pro-apoptopic protein) were  demonstrated in comparison to baseline for (A) patient 1 on 3 mg QD taselisib with paired  biopsies from right endobronchial mass and (B) patient 2 on 16 mg QD taselisib with paired  biopsies from right upper anterior thigh mass. "
+},
+{
+          "paragraph2": "Juric et al. Page 21 "
+},
+{
+          "paragraph3": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph6": "Juric et al. Page 22 "
+},
+{
+          "section:1": "Table 1"
+},
+{
+          "paragraph1": "Treatment-Related Adverse Events in ≥ 5% of Patients and Adverse Events of Grade 3 or Higher "
+},
+{
+          "paragraph2": "3 mg (n=6) 5 mg (n=3) 8 mg (n=4) 12 mg (n=10) 16 mg (n=11) All (N=34) "
+},
+{
+          "paragraph3": "Adverse events in ≥ 5% of patients "
+},
+{
+          "paragraph4": " Total no. patients with ≥1 AE 6 (100%) 2 (66.7%) 3 (75%) 10 (100%) 10 (90.9%) 31 (91.2%) "
+},
+{
+          "paragraph5": " Total no. AEs 17 7 7 80 115 226 "
+},
+{
+          "paragraph6": " Diarrhea 1 (16.7%) 1 (33.3%) 1 (25.0%) 5 (50.0%) 7 (63.6%) 15 (44.1%) "
+},
+{
+          "paragraph7": " Fatigue 2 (33.3%) 1 (33.3%) 1 (25.0%) 5 (50.0%) 5 (45.5%) 14 (41.2%) "
+},
+{
+          "paragraph8": " Decreased appetite 1 (16.7%) 1 (33.3%) 1 (25.0%) 5 (50.0%) 5 (45.5%) 13 (38.2%) "
+},
+{
+          "paragraph9": "Hyperglycemia 0 0 2 (50.0%) 3 (30.0%) 8 (72.7%) 13 (38.2%) "
+},
+{
+          "paragraph10": " Nausea 2 (33.3%) 1 (33.3%) 1 (25.0%) 3 (30.0%) 6 (54.5%) 13 (38.2%) "
+},
+{
+          "paragraph11": " Stomatitisa 0 0 0 6 (60.0%) 4 (36.4%) 10 (29.4%) "
+},
+{
+          "paragraph12": " Rashb 0 0 0 3 (30.0%) 3 (27.3%) 6 (17.6%) "
+},
+{
+          "paragraph13": " Vomiting 0 1 (33.3%) 0 0 4 (36.4%) 5 (14.7%) "
+},
+{
+          "paragraph14": " Dry Mouth 0 0 0 2 (20.0%) 1 (9.1%) 3 (8.8%) "
+},
+{
+          "paragraph15": " Pruritis 0 0 0 3 (30.0%) 0 3 (8.8%) "
+},
+{
+          "paragraph16": " Colitis 0 0 0 1 (10.0%) 1 (9.1%) 2 (5.9%) "
+},
+{
+          "paragraph17": " Leukopenia 0 0 0 0 2 (18.2%) 2 (5.9%) "
+},
+{
+          "paragraph18": " Mood altered 2 (33.3%) 0 0 0 0 2 (5.9%) "
+},
+{
+          "paragraph19": " Neuropathy peripheral 1 (16.7%) 0 0 1 (10.0%) 0 2 (5.9%) "
+},
+{
+          "paragraph20": " Pyrexia 0 0 0 0 2 (18.2%) 2 (5.9%) "
+},
+{
+          "paragraph21": "Adverse events of ≥ grade 3 "
+},
+{
+          "paragraph22": " Total no. patients with ≥1 AE 0 0 0 6 (60.0%) 8 (72.7%) 14 (41.2%) "
+},
+{
+          "paragraph23": " Total no. AE 0 0 0 13 16 29 "
+},
+{
+          "paragraph24": " Hyperglycemia 0 0 0 2 (20.0%) 3 (27.3%) 5 (14.7%) "
+},
+{
+          "paragraph25": " Rashb 0 0 0 3 (30.0%) 1 (9.1%) 4 (11.8%) "
+},
+{
+          "paragraph26": " Diarrhea 0 0 0 0 2 (18.2%) 2 (5.9%) "
+},
+{
+          "paragraph27": " Fatigue 0 0 0 0 2 (18.2%) 2 (5.9%) "
+},
+{
+          "paragraph28": " Pruritus 0 0 0 2 (20.0%) 0 2 (5.9%) "
+},
+{
+          "paragraph29": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph30": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph31": "Juric et al. Page 23 "
+},
+{
+          "paragraph32": "3 mg (n=6) 5 mg (n=3) 8 mg (n=4) 12 mg (n=10) 16 mg (n=11) All (N=34) "
+},
+{
+          "paragraph33": " Pneumonitis 0 0 0 0 1 (9.1%) 1 (2.9%) "
+},
+{
+          "paragraph34": " Colitis 0 0 0 1 (10.0%) 0 1 (2.9%) "
+},
+{
+          "paragraph35": " Exfoliative Rash 0 0 0 0 1 (9.1%) 1 (2.9%) "
+},
+{
+          "paragraph36": " Lung infection 0 0 0 0 1 (9.1%) 1 (2.9%) "
+},
+{
+          "paragraph37": " Renal failure acute 0 0 0 1 (10.0%) 0 1 (2.9%) "
+},
+{
+          "paragraph38": " Skin exfoliation 0 0 0 0 1 (9.1%) 1 (2.9%) "
+},
+{
+          "paragraph39": " Stomatitis 0 0 0 1 (10.0%) 0 1 (2.9%) "
+},
+{
+          "paragraph40": "aStomatitis includes the following terms: stomatitis, mucosal inflammation, lip ulceration "
+},
+{
+          "paragraph41": "bRash includes the following terms: rash, rash erythematous, rash maculopapular "
+},
+{
+          "paragraph42": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+},
+{
+          "paragraph43": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph44": "Juric et al. Page 24 "
+},
+{
+          "section:1": "Table 2"
+},
+{
+          "paragraph1": "Pharmacokinetic Parameters of Taselisib (GDC-0032) "
+},
+{
+          "paragraph2": "Cohort (Dose) Single Dose Steady State "
+},
+{
+          "paragraph3": "N Cmax (μM) Tmax (hr) AUC0-24hr (μM•hr) AUCinf (μM•hr) CL/F (mL/hr) t1/2 (hr) Vz/F (L) N Cmax (μM) Tmax (hr) Cmin (μM) AUC0-24hr (μM•hr) CLss/F (mL/hr) "
+},
+{
+          "paragraph4": "Cohort 1 (3  mg) "
+},
+{
+          "paragraph5": "6 0.0256 (37%) 4 (3-8) 0.441 (32%) 1.48 (33%) 4770 (29%) 43.8 (26%) 301 (45%) 6 0.111 (65%) 3 (2-4) 0.046 (48%) 1.79 (55%) 4320 (37%) "
+},
+{
+          "paragraph6": "Cohort 2 (5  mg) "
+},
+{
+          "paragraph7": "3 0.0304 (40%) 8 (3-8) 0.547 (43%) 1.64 (54%) 9170 (77%) 40 (48%) 433 (39%) 3 0.091 (53%) 3 (2-4) 0.042 (55%) 1.49 (49%) 9150 (64%) "
+},
+{
+          "paragraph8": "Cohort 3 (8  mg) "
+},
+{
+          "paragraph9": "4 0.0764 (43%) 4 (2-4) 1.342 (34%) 3.47 (15%) 5070 (13%) 38.2 (32%) 277 (38%) 3 0.188 (63%) 3 (2-4) 0.098 (55%) 3.21 (50%) 6310 (44%) "
+},
+{
+          "paragraph10": "Cohort 5 (12  mg) "
+},
+{
+          "paragraph11": "10 0.127 (42%) 3 (1-8) 1.8 (35%) 4.00 (30.5%) 4750 (77%) 36.7 (20%) 267 (81%) 10 0.302 (31%) 4 (2-24) 0.128 (36%) 5.1 (40%) 4810 (61%) "
+},
+{
+          "paragraph12": "Cohort 4 (16  mg) "
+},
+{
+          "paragraph13": "11 0.134 (39%) 4 (2-24) 2.26 (37%) 6.36 (48%) 6640 (45%) 39.7 (20%) 372 (45%) 9 0.441 (52%) 4 (2-8) 0.241 (76%) 8.1 (57%) 5440 (61%) "
+},
+{
+          "paragraph14": "AUC0-24hr =area under the plasma concentration-time curve from 0 to 24 hours post dose; "
+},
+{
+          "paragraph15": "AUCinf =area under the plasma concentration-time curve from time 0 to infinity; "
+},
+{
+          "paragraph16": "CL/F =apparent clearance; t1/2 =terminal half-life; "
+},
+{
+          "paragraph17": "Cmax =highest observed plasma concentration; "
+},
+{
+          "paragraph18": "Cmin =minimum concentration during the dosing interval; "
+},
+{
+          "paragraph19": "Tmax =time of maximum observed concentration; "
+},
+{
+          "paragraph20": "Vz/F =apparent terminal phase distribution volume. "
+},
+{
+          "paragraph21": "Notes: PK parameters were reported as cohort mean (%CV), except for Tmax, which was reported as cohort median (range). "
+},
+{
+          "paragraph22": "Cancer Discov. Author manuscript; available in PMC 2018 July 01. "
+}]

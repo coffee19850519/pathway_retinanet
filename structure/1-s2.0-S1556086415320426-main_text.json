@@ -1,0 +1,225 @@
+[{
+     "Figure": "1-s2.0-S1556086415320426-main_page0_61.jpg"
+},
+{
+     "paragraph1": "ORIGINAL ARTICLE "
+},
+{
+          "section:1": "Baseline Plasma Proteomic Analysis to Identify Biomarkers that Predict Radiation-Induced Lung Toxicity in Patients Receiving Radiation for Non-small Cell Lung Cancer"
+},
+{
+          "paragraph1": "Xu-Wei Cai, MD,*†‡ Kerby A. Shedden, PhD,§ Shang-Hu Yuan, MD, PhD,‡ Mary A. Davis, PhD,‡ Lu-Ying Xu, MD,‡� Cong-Ying Xie, MD,‡¶ Xiao-Long Fu, MD, PhD,*† Theodore S. Lawrence, MD, PhD,‡ David M. Lubman, PhD,# and Feng-Ming (Spring) Kong, MD, PhD‡** "
+},
+{
+          "paragraph2": "Purpose: To identify new plasma proteomic markers before radio- therapy start to predict later grade �2 radiation-induced lung tox- icity (RILT2). Methods: Fifty-seven patients with non-small cell lung cancer received radiotherapy (RT) were eligible. Forty-eight patients with minimum follow-up of 1 year, nine with RILT2 with tumor stage matched to 39 without RILT2, were enrolled for this analysis. Platelet-poor plasma was obtained within 2 weeks before radiother- apy. The plasma proteomes were compared using a multiplexed quantitative proteomics approach involving ExacTag labeling, re- verse-phase high-performance liquid chromatography, and nano liquid chromatography electrospray ionization tandem mass spec- trometry. Z scores and Bonferroni-adjusted p values for the two- sample mean comparison were used to identify the differential protein expression between patients with and without RILT2. Results: More than 200 proteins were identiﬁed and quantiﬁed. After excluding proteins that were not detected in at least 40% of the 48 patient samples, C4b-binding protein alpha chain and vitronectin had signiﬁcantly higher (p � 0.001 and p � 0.02) expression levels "
+},
+{
+          "paragraph3": "in patients with RILT2 compared with patients without RILT2. These two proteins were validated by Western blot. Ingenuity pathway analysis revealed that they both play important roles in the inﬂammatory response and are associated with the known pathways of radiation-induced lung damage. Conclusions: This proteomic approach demonstrates new plasma protein biomarkers before treatment for future studies on RILT2 prediction. "
+},
+{
+          "paragraph4": "Key Words: Non-small cell lung cancer, Proteomics, Biomarker, Radiation-induced lung toxicity. "
+},
+{
+          "paragraph5": "(J Thorac Oncol. 2011;6: 1073–1078) "
+},
+{
+          "paragraph6": "A pproximately 60 to 70% of patients with lung cancer receive radiation therapy (RT) at least once during the course of their disease.1 Clinical trials showed that patients with non-small cell lung cancer (NSCLC) who received higher radiation doses may have better local control and survival.2–4 Nevertheless, the majority of patients do not receive an adequate radiation dose for tumor control because of concerns about risk estimates for the overall population to limit the incidence of radiation-induced lung toxicity (RILT) to within 5% in 5 years (tolerable dose [TD]5/5). Early prediction of RILT would help physicians to stratify patients according to their risk level for toxicity and determine an individualized treatment regimen rather than to use the aver- age radiation tolerance of the whole population. Unfortunately, there are no good predictive markers available to provide an individualized approach. A few small series of studies have shown that transforming growth factor beta 1 (TGF-�1) is elevated at the end or during the course of radiation, which might be correlated with radiation pneumo- nitis and, therefore, be used as a predictive marker.5–7 Nev- ertheless, the process of radiation damage is a complicated pathophysiological phenomena involving many cells and cy- tokines.7 We hypothesized that a test monitoring more pro- teins together in the blood would estimate the speciﬁc extent of the damage more accurately. Pioneering work has already been performed using proteomics tools in the search for tumor markers, demonstrat- "
+},
+{
+          "paragraph7": "*Department of Radiation Oncology, Fudan University Shanghai Cancer Center; †Department of Oncology, Shanghai Medical College, Fudan University, Shanghai, China; Departments of ‡Radiation Oncology and §Statistics, University of Michigan, Ann Arbor, Michigan; �Department of Radiation Oncology, Fujian Provincial Cancer Hospital, the Teaching Hospital of Fujian Medical University, Fuzhou, Fujian, People’s Repub- lic of China; ¶Radiation Oncology Department of the 1st Afﬁliated Hospital of Wenzhou Medical College, Wenzhou, Zhejiang, China; #Department of Surgery, University of Michigan, Ann Arbor, Michigan; and **Department of Radiation Oncology, Veterans Administration Health Center, Ann Arbor, Michigan. Disclosure: The authors declare no conﬂicts of interest. Address for correspondence: Feng-Ming (Spring) Kong, MD, PhD, Depart- ment of Radiation Oncology, University of Michigan Medical Center, UH-B2C490, Box 0010, 1500 E. Medical Center Drive, Ann Arbor, MI 48109. E-mail: fengkong@umich.edu The investigators performed the human investigations after approval by a local Human Investigations Committee and in accord with an assurance ﬁled with and approved by the Department of Health and Human Services, where appropriate. The investigators obtained informed consent from each participant or each participant’s guardian. Copyright © 2011 by the International Association for the Study of Lung Cancer ISSN: 1556-0864/11/0606-1073 "
+},
+{
+          "paragraph8": "Journal of Thoracic Oncology • Volume 6, Number 6, June 2011 1073 "
+},
+{
+          "Figure": "1-s2.0-S1556086415320426-main_page1_61.jpg"
+},
+{
+          "paragraph9": "ing the promise of such an effort.8,9 These studies were mostly focused on early detection, diagnosis, staging, treat- ment monitoring, and prognosis of lung cancer.8–12 A few studies have reported proteomics analysis of radiation-in- duced changes in lung cells or tissue.13–15 We have previously demonstrated in animal studies that radiation-induced changes in multiple proteins differ between lung ﬁbrosis sensitive and resistant mouse strains by proteomic ap- proaches.16 Using ExacTag labeling, reverse-phase high-per- formance liquid chromatography (RP-HPLC), and nano liq- uid chromatography electrospray ionization tandem mass spectrometry (LC-ESI-MS/MS), we recently assessed differ- ential plasma proteomics in patients with and without grade �2 RILT (grade �2 radiation-induced lung toxicity [RILT2]) in 20 patients throughout the treatment course.17 We demon- strated that C4b-binding protein alpha chain (C4BPA), com- plement C3, and vitronectin (VTN) had signiﬁcantly higher expression levels in patients with RILT2 compared with patients without RILT2, based on both the longitudinal data sets of RT start to 3 months post-RT (p � 0.01) and RT start to the end of RT (p � 0.01). The purpose of this study, using a larger number of patients, was to examine whether there is any potential proteomic biomarkers at baseline (before radio- therapy start) to predict the risk of RILT2. "
+},
+{
+               "section:2": "PATIENTS AND METHODS"
+},
+{
+                    "section:3": "Study Population"
+},
+{
+                    "paragraph1": "This work was part of prospective clinical trials, which were approved by the Institutional Review Board and per- formed at the University of Michigan and the Veterans Affairs Medical Center, Ann Arbor, MI. Written informed consent was obtained from each patient. Eligible subjects included patients with stages I to III NSCLC undergoing radiation alone or combined radiation and chemotherapy. Exclusion criteria included a life expectancy of less than 6 months, malignant pleural or pericardial effusion, or noncon- tiguous involvement of the parietal pleura. All the irradiation was given using the three-dimensional conformal technique, as described previously.18,19 "
+},
+{
+                    "section:3": "Plasma Sample Preparation"
+},
+{
+                    "paragraph1": "Platelet-poor plasma was used for proteomic analyses. Blood samples were collected within 2 weeks before RT start with Vacutainer plus collection tubes containing K2 ethylene- diamine tetraacetic acid as the anticoagulant then placed in ice immediately after collection and centrifuged within 3 hours of collection at 3000 g for 30 minutes at 4°C. The upper one third of the supernatant was collected as platelet-poor plasma and stored at �80°C. Pooled normal human plasma was purchased from Innovative Research Inc. (Plymouth, MN, Cat #: IPLA-5) as a reference control. "
+},
+{
+                    "section:3": "Proteomic Analysis"
+},
+{
+                    "paragraph1": "Multiplex quantitative proteomics approaches, involv- ing ExacTag labeling, RP-HPLC, and LC-ESI-MS/MS, were used in analyzing radiation-induced changes in plasma pro- teins between patients with and without RILT2. The detailed methods have been recently prescribed in our previous "
+},
+{
+                    "paragraph2": "work.17 In brief, the proteomic analysis includes depletion of the 12 most abundant proteins, stable isotope sample labeling, protein separation by RP-HPLC, peptide separation by LC-ESI-MS/MS, protein identiﬁcation by the SEQUEST al- gorithm and Trans-Proteomic Pipeline software, and protein quantiﬁcation by ExacTag analysis software 3.0.17 "
+},
+{
+                    "section:3": "Western Blotting for Validation"
+},
+{
+                    "paragraph1": "Western blotting was used to further validate the measure- ment of proteomic approaches using anti-VTN antibody (ab11591), anti-afamin (AFM) antibody (ab49139; Abcam Inc., Cambridge, MA), and anti-C4BPA antibody (SAB2100305; Sigma-Aldrich, St Louis, MO). As a proof of the principle, we randomly selected eight samples, four with higher expression of VTN and four with lower expression of VTN. AFM was selected to be an internal reference because the expressions of AFM were almost the same in all samples, which were identiﬁed from our proteomic approaches. "
+},
+{
+                    "section:3": "Statistical Considerations"
+},
+{
+                    "paragraph1": "The primary end point in this study was grade �2 RILT (RILT2), as it is clinically signiﬁcant. The details of the diagnosis and grading systems for RILT have been described previously.19 Z scores for the two-sample mean difference between log-transformed protein expression in RILT �2 and RILT less than 2 patients were used to identify univariate protein markers. The 80 proteins that were detected in at least 40% of the 48 patient samples were analyzed, based on the sample size and the number of events with weighted consid- eration on the number of proteins and cost of multiple testing. Bonferroni-adjusted p values for these 80 Z scores were used to identify statistically signiﬁcant associations with RTIL2. Predictive analysis was performed using ridged logistic re- gression to adjust for potential errors from multitesting. Cross-validation was used to produce unbiased sensitivity and speciﬁcity estimates, which were displayed as a receiver operating characteristic curve. The logistic regression was based on selection of k proteins based on univariate Z scores, which were calculated internally to the cross-validation. Pre- dictive models using log-scale protein expression and/or mean lung dose (MLD) were considered. "
+},
+{
+               "section:2": "RESULTS"
+},
+{
+                    "section:3": "Patient Characteristics"
+},
+{
+                    "paragraph1": "Of the 57 patients enrolled, 48 patients with longer than 2-year follow-up were included into this analysis. There were nine more than grade 2, 19 grade 1, and 20 grade 0 RILT. Our analysis focused on the difference between patients with RILT �2 (RILT2) and grouped RILT0 to 1 patients (without RILT2). The patients’ characteristics are listed in Table 1. Lung dosimetric factors such as MLD, V20, and normal tissue complication probability (NTCP) were not signiﬁcantly different between patients with and without RILT2, largely due to the fact that RT dose prescription was individualized to certain ﬁxed limits of MLD, V20, or NTCP in most patients. Of another note, MLD, V20, and NTCP were sig- niﬁcantly correlated with each other (p � 0.001), we elected MLD as the representative dosimetric parameter of the lung. "
+},
+{
+                    "paragraph2": "Cai et al. Journal of Thoracic Oncology • Volume 6, Number 6, June 2011 "
+},
+{
+                    "paragraph3": "Copyright © 2011 by the International Association for the Study of Lung Cancer 1074 "
+},
+{
+                    "Figure": "1-s2.0-S1556086415320426-main_page2_5.jpg"
+},
+{
+                    "section:3": "Reproducibility of the Proteomics System"
+},
+{
+                    "paragraph1": "The reproducibility of the proteomics system, including isotope-labeling reagent, RP-HPLC, and nano LC-MS/MS system, has been conﬁrmed and reported in our recent study.17 "
+},
+{
+                    "section:3": "Plasma Proteomic Analysis between Patients with and without RILT2"
+},
+{
+                    "paragraph1": "More than 200 proteins were identiﬁed and quantiﬁed in plasma samples. A representative MS/MS spectrum of a unique peptide from the protein VTN is shown in Figure 1. There were four proteins with signiﬁcantly different expression between patients with and without RILT2 after Bonferroni correction for multiple testing. The expression of immunoglobulin (Ig) kappa chain V-III region Ti and region HAH in patients with RILT2 was signiﬁcantly lower than in patients without RILT2, whereas the expression of C4BPA and VTN in patients with RILT2 was signiﬁcantly higher than that in patients without RILT2 as shown in Figure 2 (adjusted p � 0.001 and p � 0.009, respectively). "
+},
+{
+                    "section:3": "Validation by Western Blotting"
+},
+{
+                    "paragraph1": "As shown in Figure 3, this monoclonal anti-VTN antibody (Abcam Inc., #ab11591) recognizes both the 75 kDa and 65 kDa bands of human puriﬁed and plasma VTN in an immunoblotting assay.20 VTN and C4BPA were detected at lower levels in samples 1 to 4 than in samples "
+},
+{
+                    "Figure": "1-s2.0-S1556086415320426-main_page2_61.jpg"
+},
+{
+                    "Figure_title": "FIGURE 1. MS/MS sequencing data of a unique peptide from vitronectin identified in fractions. MS/MS, tandem mass spectrometry. "
+},
+{
+                    "paragraph2": "<table :1"
+},
+{
+                    "paragraph3": "Patients with RILT2 Patients without RILT2 p "
+},
+{
+                    "paragraph4": "Gender (male:female) 8:1 34:5 0.42 Age (yr) 69 (53–81)a 68 (44–85)a 0.76 Radiation dose 66 (63–75.6) Gya 67.8 (45–81.4) Gya 0.78 MLD 16.5 (9.1–20.5) Gya 14.6 (3.6–23.4) Gya 0.37 V20 27 (17–34)%a 24 (5–35)%a 0.44 NTCP 9.8 (2.9–18.7)%a 8.9 (0.8–26.2)%a 0.58 Chemotherapy 77.8 % 76.9 % 0.96 "
+},
+{
+                    "paragraph5": "a Data presented are median (range). RILT2, grade �2 radiation-induced lung toxicity; MLD, mean lung dose; NTCP, normal tissue complication probability; V20, volume of both lungs (without including the gross tumor volumes) receiving �20 Gy. "
+},
+{
+                    "paragraph6": "Journal of Thoracic Oncology • Volume 6, Number 6, June 2011 Pre-RT Plasma Proteomics for Biomarkers of RILT "
+},
+{
+                    "paragraph7": "Copyright © 2011 by the International Association for the Study of Lung Cancer 1075 "
+},
+{
+                    "Figure": "1-s2.0-S1556086415320426-main_page3_11.jpg"
+},
+{
+                    "paragraph8": "5 to 8, whereas the reference protein AFM was detected at similar levels of expression, which are consistent with the results from proteomic approaches. This result suggests the reliability of the proteomic approaches used for protein quan- tiﬁcation. VTN in the samples from patients with RILT2 presents smear bands at higher molecular weight and sug- gesting greater glycosylation. "
+},
+{
+                    "section:3": "Predictive Models for Risk of RILT2"
+},
+{
+                    "paragraph1": "Ridged logistic regression was used to perform predic- tive analysis of ﬁve models: C4BPA alone, VTN alone, MLD alone, C4BPA � VTN, and C4BPA � VTN � MLD. Cross-validation of unbiased sensitivity and speciﬁcity esti- mates is displayed as receiver operating characteristic curves with values of area under the curve (AUC), which are 0.40, 0.74, 0.49, 0.70, and 0.71 separately, as shown in Figure 4. Although all these models were not statistically signiﬁcant (p � 0.05), this result showed that three models, VTN alone, C4BPA � VTN, and C4BPA � VTN � MLD, seemed to have better accuracy (AUC �0.7) than MLD and other models (AUC of 0.4–0.47) in predicting the occurrence of RILT2. Model parameters were limited by the number of events in this study. "
+},
+{
+               "section:2": "DISCUSSION"
+},
+{
+               "paragraph1": "In this study of 48 patients, we identiﬁed four plasma proteins that were signiﬁcantly different before the start of treatment in patients with and without RILT2 (Figure 2): Ig kappa chain V-III region Ti and region HAH in patients with RILT2 were signiﬁcantly lower in patients with RILT2, whereas the expression of C4BPA and VTN was higher in patients who later developed RILT2. This is the ﬁrst human plasma proteomics study reporting potential plasma biomark- ers for RILT2 in patients with NSCLC before RT start. These results represent a continuation of our recent study of 20 patients, which showed signiﬁcant differences in angio- tensinogen, complement C3, C4BPA, and VTN between patients with NSCLC with and without RILT2 during and after completion of RT course (from baseline to 3 months after the end of RT).17 This study, in a larger number of "
+},
+{
+               "Figure": "1-s2.0-S1556086415320426-main_page3_13.jpg"
+},
+{
+               "Figure_title": "FIGURE 2. Plasma protein expressions in patients with RILT2 (RILT2) and without RILT2 (RILT1/0). All p values are after Bonferroni correction. RILT2, grade �2 radiation-in- duced lung toxicity. "
+},
+{
+               "Figure": "1-s2.0-S1556086415320426-main_page3_14.jpg"
+},
+{
+               "Figure_title": "FIGURE 3. Validation of the proteomic approaches by Western blotting. Lanes 1 to 4 are from the samples with lower levels of VTN and C4BPA from patients without RILT2, and lanes 5 to 8 are from the samples with higher levels of VTN detected by proteomic approaches. C4BPA, C4b-bind- ing protein alpha chain; RILT2, grade �2 radiation-induced lung toxicity; VTN, vitronectin. "
+},
+{
+               "Figure": "1-s2.0-S1556086415320426-main_page3_61.jpg"
+},
+{
+               "Figure_title": "FIGURE 4. ROC curves with AUC values of five predictive models for grade �2 radiation-induced lung toxicity. ROC, receiver operating characteristic; AUC, area under the curve; C4BPA, C4b-binding protein alpha chain; VTN, vitronectin; MLD, mean lung dose. "
+},
+{
+               "paragraph2": "Cai et al. Journal of Thoracic Oncology • Volume 6, Number 6, June 2011 "
+},
+{
+               "paragraph3": "Copyright © 2011 by the International Association for the Study of Lung Cancer 1076 "
+},
+{
+               "Figure": "1-s2.0-S1556086415320426-main_page4_18.jpg"
+},
+{
+               "paragraph4": "patients, has further demonstrated a statistic signiﬁcant dif- ference in C4BPA and VTN in patients with RILT2 at baseline (before RT start), thus suggesting the possibility for predicting RILT2 before treatment start, which has more important clinical implications. C4BPA21–23 and VTN24–27 are glycoproteins, which play important roles in radiation-induced lung damage. The detailed functions of these proteins are complex and have been summarized previously.17 C4BPA seems to be mainly associated with the inﬂammatory complement pathway, whereas VTN is involved in the ﬁbrotic pathway. The high baseline level of these two proteins may suggest higher sensitivity of an individual to inﬂammatory or ﬁbrotic patho- genesis, thus putting this patient at a higher risk for RILT. Changes in abundance and alternations in glycan com- position of plasma proteins and cell-surface proteins have been shown to correlate with cancer and other disease states. In fact, numerous clinical biomarkers and therapeutic targets are glycosylated proteins, such as CA125 for ovarian cancer and the prostate-speciﬁc antigen for prostate cancer. VTN is a glycoprotein with three N-glycosylation sites identiﬁed.28,29 Sano et al.20 reported that the changes in N-glycosylation of VTN modulate collagen binding during liver regeneration after partial hepatectomy. As shown in Figure 3, patients with RILT2 might have much higher levels of glycosylated VTN than patients without RILT2. Our future work will focus on glycoproteome analysis of human plasma to ﬁnd more de- tailed information on the glycoproteins, which may be poten- tial biomarkers for RILT2. To reveal the association between our identiﬁed pro- teins and the known pathways for radiation-induced lung damage, we used ingenuity pathway analysis, a knowledge- based system derived from the literature containing informa- tion on interactions between genes, proteins, and other bio- logical molecules, to reveal the associated biological pathways and generate global canonical pathways that are shown to be signiﬁcantly associated with these candidates based on their interactions.30,31 Interestingly, these proteins were in the network of TGF-�1 and interlukin-8 (Figure 5), which are known to play important roles in the molecular mechanism of radiation-induced lung damage.5–7,32 The net- work illustrated implies that C4BPA and VTN have interac- tions with TGF-�1.33,34 Human TGF-�1 increases production of hydrogen peroxide,35 and hydrogen peroxide increases expression of human C4BPA mRNA.36 This network is further supported by our previous ﬁndings that patients with RILT2 also had signiﬁcantly higher plasma TGF-�1 during the course of radiation therapy than those without.32,37 Mul- ticenter studies with a larger number of patients are needed to validate these interesting ﬁndings and to study whether com- bining all these markers together would improve the accuracy of RILT2 prediction. It is interesting that increases in Ig kappa chain V-III region Ti and region HAH are associated with reduced risk of RILT. Ig kappa chain is one type of light chain, which is the small polypeptide subunit of an antibody (or Ig). It takes part in any immune system process that functions in the calibrated response of an organism to a potential internal or invasive "
+},
+{
+               "paragraph5": "threat. Nevertheless, there is little literature about chain V-III region Ti38 or region HAH.39 These fragments may have some potential association with RILT protection and are worthy of our further study to identify their mechanism. In summary, this study identiﬁed VTN and C4b-bind- ing protein alpha chain as potential blood biomarkers for RILT2 in patients with NSCLC before RT start. A future independent study with a larger number of patients is needed to validate this result and conﬁrm whether it can improve predictive accuracy from the models (such as MLD) in current use. "
+},
+{
+               "section:2": "ACKNOWLEDGMENTS"
+},
+{
+               "paragraph1": "Supported, in part, by the American Society of Clinical Oncology (ASCO) Career Developmental Award, a grant from Pardee foundation, and TRP Award #118 from Radia- tion Therapy Oncology Group (RTOG). "
+},
+{
+               "section:2": "REFERENCES"
+},
+{
+               "paragraph1": "1. Tyldesley S, Boyd C, Schulze K, et al. Estimating the need for radio- therapy for lung cancer: an evidence-based, epidemiologic approach. Int J Radiat Oncol Biol Phys 2001;49:973–985. 2. Kong FM, Ten Haken RK, Schipper MJ, et al. High-dose radiation improved local tumor control and overall survival in patients with inoperable/unresectable non-small-cell lung cancer: long-term results of "
+},
+{
+               "Figure": "1-s2.0-S1556086415320426-main_page4_61.jpg"
+},
+{
+               "Figure_title": "FIGURE 5. Potential network of the newly identified pro- tein markers. The markers, vitronectin (VTN) and C4b-bind- ing protein alpha chain (C4BPA), were put on the ingenuity pathway analysis (IPA) server with transforming growth fac- tor beta1 (TGF-�1) to generate this network. A solid line in- dicates an interaction, with the arrowhead indicating direc- tionality. The absence of arrowheads refers to a binding interaction. A dotted line indicates an inferred or indirect interaction. This network suggests mostly indirect associa- tions of these newly identified proteins with the function of TGF-�1, Interlukin-8 (IL-8), and pathways of inflammatory response. "
+},
+{
+               "paragraph2": "Journal of Thoracic Oncology • Volume 6, Number 6, June 2011 Pre-RT Plasma Proteomics for Biomarkers of RILT "
+},
+{
+               "paragraph3": "Copyright © 2011 by the International Association for the Study of Lung Cancer 1077 "
+},
+{
+               "Figure": "1-s2.0-S1556086415320426-main_page5_61.jpg"
+},
+{
+               "paragraph4": "a radiation dose escalation study. Int J Radiat Oncol Biol Phys 2005; 63:324–333. 3. Rosenzweig KE, Fox JL, Yorke E, et al. Results of a phase I dose- escalation study using three-dimensional conformal radiotherapy in the treatment of inoperable nonsmall cell lung carcinoma. Cancer 2005;103: 2118–2127. 4. Bradley J, Graham MV, Winter K, et al. Toxicity and outcome results of RTOG 9311: a phase I-II dose-escalation study using three-dimensional conformal radiotherapy in patients with inoperable non-small-cell lung carcinoma. Int J Radiat Oncol Biol Phys 2005;61:318–328. 5. Anscher MS, Kong FM, Marks LB, et al. Changes in plasma transform- ing growth factor beta during radiotherapy and the risk of symptomatic radiation-induced pneumonitis. Int J Radiat Oncol Biol Phys 1997;37: 253–258. 6. Fu XL, Huang H, Bentel G, et al. Predicting the risk of symptomatic radiation-induced lung injury using both the physical and biologic parameters V(30) and transforming growth factor beta. Int J Radiat Oncol Biol Phys 2001;50:899–908. 7. Kong FM, Ten Haken R, Eisbruch A, et al. Non-small cell lung cancer therapy-related pulmonary toxicity: an update on radiation pneumonitis and ﬁbrosis. Semin Oncol 2005;32:S42–S54. 8. Sung HJ, Cho JY. Biomarkers for the lung cancer diagnosis and their advances in proteomics. BMB Rep 2008;41:615–625. 9. Latterich M, Abramovitz M, Leyland-Jones B. Proteomics: new tech- nologies and clinical applications. Eur J Cancer 2008;44:2737–2741. 10. Koomen JM, Haura EB, Bepler G, et al. Proteomic contributions to personalized cancer care. Mol Cell Proteomics 2008;7:1780–1794. 11. Conrad DH, Goyette J, Thomas PS. Proteomics as a method for early detection of cancer: a review of proteomics, exhaled breath condensate, and lung cancer screening. J Gen Inter Med 2008;23:78–84. 12. Patz EF Jr, Campa MJ, Gottlin EB, et al. Panel of serum biomarkers for the diagnosis of lung cancer. J Clin Oncol 2007;25:5578–5583. 13. Malard V, Prat O, Darrouzet E, et al. Proteomic analysis of the response of human lung cells to uranium. Proteomics 2005;5:4568–4580. 14. Me´nard C, Johann D, Lowenthal M, et al. Discovering clinical biomark- ers of ionizing radiation exposure with serum proteomic analysis. Can- cer Res 2006;66:1844–1850. 15. Xu NY, Zhang SP, Nie JH, et al. Radon-induced proteomic proﬁle of lung tissue in rats. J Toxicol Environ Health A 2008;71:361–366. 16. Ao X, Lubman DM, Davis MA, et al. Comparative proteomic analysis of radiation-induced changes in mouse lung: ﬁbrosis-sensitive and -re- sistant strains. Radiat Res 2008;169:417–425. 17. Cai XW, Shedden K, Ao X, et al. Plasma proteomic analysis may identify new markers for radiation-induced lung toxicity in patients with non-small-cell lung cancer. Int J Radiat Oncol Biol Phys 2010;77:867– 876. 18. Chapet O, Kong FM, Quint LE, et al. CT-based deﬁnition of thoracic lymph node stations: an atlas from the University of Michigan. Int J Radiat Oncol Biol Phys 2005;63:170–178. 19. Kong FM, Hayman JA, Grifﬁth KA, et al. Final toxicity results of a radiation-dose escalation study in patients with non-small-cell lung cancer (NSCLC): predictors for radiation pneumonitis and ﬁbrosis. Int J Radiat Oncol Biol Phys 2006;65:1075–1086. 20. Sano K, Asanuma-Date K, Arisaka F, et al. Changes in glycosylation of vitronectin modulate multimerization and collagen binding during liver regeneration. Glycobiology 2007;17:784–794. 21. Chung LP, Bentley DR, Reid KB. Molecular cloning and characteriza- tion of the cDNA coding for C4b-binding protein, a regulatory protein of the classical pathway of the human complement system. Biochem J 1985;230:133–141. "
+},
+{
+               "paragraph5": "22. Blom AM, Villoutreix BO, Dahlba¨ck B. Functions of human comple- ment inhibitor C4b-binding protein in relation to its structure. Arch Immunol Ther Exp (Warsz) 2004;52:83–95. 23. Okroj M, Jenkins HT, Herbert AP, et al. Structural basis and functional effects of the interaction between complement inhibitor C4b-binding protein and DNA. Mol Immunol 2008;46:62–69. 24. Jenne D, Stanley KK. Nucleotide sequence and organization of the human S-protein gene: repeating peptide motifs in the “pexin” family and a model for their evolution. Biochemistry 1987;26:6735–6742. 25. Felding-Habermann B, Cheresh DA. Vitronectin and its receptors. Curr Opin Cell Biol 1993;5:864–868. 26. Kamikubo Y, Okumura Y, Loskutoff DJ. Identiﬁcation of the disulﬁde bonds in the recombinant somatomedin B domain of human vitronectin. J Biol Chem 2002;277:27109–27119. 27. Zhou A, Huntington JA, Pannu NS, et al. How vitronectin binds PAI-1 to modulate ﬁbrinolysis and cell migration. Nat Struct Biol 2003;10: 541–544. 28. Bunkenborg J, Pilch BJ, Podtelejnikov AV, et al. Screening for N- glycosylated proteins by liquid chromatography mass spectrometry. Proteomics 2004;4:454–465. 29. Liu T, Qian WJ, Gritsenko MA, et al. Human plasma N-glycoproteome analysis by immunoafﬁnity subtraction, hydrazide chemistry, and mass spectrometry. J Proteome Res 2005;4:2070–2080. 30. Calvano SE, Xiao W, Richards DR, et al. A network-based analysis of systemic inﬂammation in humans. Nature 2005;437:1032–1037. 31. Uriarte SM, Powell DW, Luerman GC, et al. Comparison of proteins expressed on secretory vesicle membranes and plasma membranes of human neutrophils. J Immunol 2008;180:5575–5581. 32. Zhao L, Wang L, Ji W, et al. Elevation of plasma TGF-beta1 during radiation therapy predicts radiation-induced lung toxicity in patients with non-small-cell lung cancer: a combined analysis from Beijing and Michigan. Int J Radiat Oncol Biol Phys 2009;74:1385–1390. 33. Schoppet M, Chavakis T, Al-Fakhri N, et al. Molecular interactions and functional interference between vitronectin and transforming growth factor-beta. Lab Invest 2002;82:37–46. 34. Parker T, Upton Z, Leavesley D. Vitronectin modulates human mesen- chymal stem cell response to insulin-like growth factor-I and transform- ing growth factor beta 1 in a serum-free environment. Tissue Eng Part A 2009;15:1415–1426. 35. Junn E, Lee KN, Ju HR, et al. Requirement of hydrogen peroxide generation in TGF-beta 1 signal transduction in human lung ﬁbroblast cells: involvement of hydrogen peroxide and Ca2� in TGF-beta 1-in- duced IL-6 expression. J Immunol 2000;165:2190–2197. 36. Kyng KJ, May A, Brosh RM Jr, et al. The transcriptional response after oxidative stress is defective in Cockayne syndrome group B cells. Oncogene 2003;22:1135–1149. 37. Zhao L, Sheldon K, Chen M, et al. The predictive role of plasma TGF-beta1 during radiation therapy for radiation-induced lung toxicity deserves further study in patients with non-small cell lung cancer. Lung Cancer 2008;59:232–239. 38. Suter L, Barnikol HU, Watanabe S, et al. [Rule of antibody structure. The primary structure of a monoclonal immunoglobulin L-chain of kappa-type, subgroup 3 (Bence-Jones protein Ti). IV. The complete amino acid sequence and its signiﬁcance for the mechanism of antibody production]. Hoppe Seylers Z Physiol Chem 1972;353:189–208. 39. Kipps TJ, Tomhave E, Chen PP, et al. Autoantibody-associated kappa light chain variable region gene expressed in chronic lymphocytic leukemia with little or no somatic mutation. Implications for etiology and immunotherapy. J Exp Med 1988;167:840–852. "
+},
+{
+               "paragraph6": "Cai et al. Journal of Thoracic Oncology • Volume 6, Number 6, June 2011 "
+},
+{
+               "paragraph7": "Copyright © 2011 by the International Association for the Study of Lung Cancer 1078 "
+}]

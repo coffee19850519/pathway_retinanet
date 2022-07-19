@@ -1,0 +1,759 @@
+[{
+     "paragraph1": "Randomized Phase II Trial of Erlotinib in Combination with High  Dose-Celecoxib or Placebo in Patients with Advanced Non-small  Cell Lung Cancer "
+},
+{
+     "paragraph2": "Karen L. Reckamp, MD1, Marianna Koczywas, MD1, Mihaela C. Cristea, MD1, Jonathan E.  Dowell, MD2, He-Jing Wang, PhD3, Brian Gardner, PhD3, Ginger L. Milne, PhD4, Robert A.  Figlin, MD5, Michael C. Fishbein, MD3, Robert M. Elashoff, PhD3, and Steven M. Dubinett,  MD3 "
+},
+{
+     "paragraph3": "1City of Hope, Duarte, CA "
+},
+{
+     "paragraph4": "2Veterans Affairs North Texas Healthcare System, University of Texas, Southwestern, Dallas, TX "
+},
+{
+     "paragraph5": "3David Geffen School of Medicine at UCLA, Los Angeles, CA "
+},
+{
+     "paragraph6": "4Vanderbilt University, Nashville, TN "
+},
+{
+     "paragraph7": "5Cedars Sinai Medical Center, Samuel Oschin Comprehensive Cancer Institute, Los Angeles, CA "
+},
+{
+          "section:1": "Abstract"
+},
+{
+          "paragraph1": "Background—Cyclooxygenase-2 (COX-2)-dependent signaling represents a potential  mechanism of resistance to epidermal growth factor receptor (EGFR) tyrosine kinase inhibitor  (TKI) therapy. This is mediated in part through an EGFR-independent activation of MAPK/Erk by  PGE2. PGE2 promotes downregulation of E-cadherin and epithelial to mesenchymal transition.  This study investigated EGFR and COX-2 inhibition in patients with NSCLC and elevated  baseline urinary metabolite of PGE2 (PGEM). "
+},
+{
+          "paragraph2": "Methods—Patients with stage IIIB/IV NSCLC who progressed following at least one line of  therapy or refused standard chemotherapy were randomized to erlotinib/celecoxib versus erlotinib/ placebo. The primary endpoint was PFS with 80% power to detect a 50% improvement with a 0.2  one-sided significance level in the intent-to-treat (IIT) and elevated baseline PGEM populations.  Secondary endpoints included response rate, OS and evaluation of molecular markers to assess  targeting COX-2-related pathways and evaluate EGFR TKI-resistance. "
+},
+{
+          "section:1": "Results"
+},
+{
+          "paragraph1": "107 patients were enrolled with comparable baseline characteristics. Patients with  EGFR wild type had an increased PFS in the celecoxib group (3.2 v 1.8 mos; p=0.03). PFS was  numerically improved in the IIT group who received erlotinib/celecoxib compared to erlotinib/ "
+},
+{
+          "paragraph2": "Corresponding author: Karen L. Reckamp, MD, City of Hope Comprehensive Cancer Center, 1500 E. Duarte Road, Duarte, Ca 91010;  phone: (626) 256-4673 x 68218; fax (626) 301-8233; kreckamp@coh.org.  Presented at the 48th Annual Meeting of the American Society of Clinical Oncology, Chicago, IL June 1-5, 2012, and 15th World  Conference on Lung Cancer, Sydney, Australia October 27-30, 2013. "
+},
+{
+          "paragraph3": "Clinical trial information: NCT00499655 "
+},
+{
+          "paragraph4": "Disclosures: Trial funding from Astellas and Pfizer (KLR); all other authors report no relationships. "
+},
+{
+          "Figure": "nihms781581_page0_64.jpg"
+},
+{
+          "paragraph5": "HHS Public Access Author manuscript Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph6": "Published in final edited form as: Cancer. 2015 September 15; 121(18): 3298–3306. doi:10.1002/cncr.29480. "
+},
+{
+          "paragraph7": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph8": "placebo (5.4 v 3.5 mos; p=0.33) and increased in patients in the celecoxib arm with elevated  baseline PGEM (5.4 v 2.2mos; p=0.15). Adverse events (AEs) were similar in both arms. "
+},
+{
+          "paragraph9": "Conclusions—Combined erlotinib/celecoxib did not improve outcomes in an unselected  population, but selection by elevated baseline PGEM led to an increase in PFS with the celecoxib  combination. Patients with EGFR wild type status may benefit from the combination. "
+},
+{
+          "paragraph10": "Keywords "
+},
+{
+          "section:1": "Introduction"
+},
+{
+          "paragraph1": "e-2; erlotinib; celecoxib; non-small cell lung cancer; epidermal growth factor  receptor; prostaglandin E2 "
+},
+{
+          "section:1": "Introduction"
+},
+{
+          "paragraph1": "Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitor (TKI) therapy provides  significant benefit for patients with advanced non-small cell lung cancer (NSCLC) with  activating EGFR mutations.1-2 Patients with wild type EGFR experience limited  improvement with EGFR TKI therapy.3 "
+},
+{
+          "paragraph2": "Cyclooxygenase (COX) is the rate-limiting enzyme in the conversion of arachidonic acid to  prostaglandins (PGs) and thromboxanes. COX-2 can be up regulated in response to growth  factors, cytokines, tumor promoters, and other stimuli, and is constitutively overexpressed in  a variety of malignancies, including NSCLC.4 Signaling through the cyclooxygenase-2  (COX-2) pathway presents a novel mechanism of resistance to EGFR TKI therapy in  NSCLC. This resistance is mediated through an EGFR-independent activation of MAPK/Erk  by the COX-2 metabolite PGE25, in addition to promotion of epithelial to mesenchymal  transition (EMT) through the downregulation of E-cadherin expression.6 "
+},
+{
+          "paragraph3": "Urinary 11α-hydroxy-9,15-dioxo-2,3,4,5-tetranor-prostane-1,20-dioic acid is a metabolite of  PGE2, and can be used as a surrogate for tumor levels of PGE2.7 Decreases in PGE-M in  urine have been shown to correlate with improvement in time to tumor progression and  overall survival.7-9 "
+},
+{
+          "paragraph4": "Combination EGFR and COX-2 inhibition may potentiate responses in NSCLC. In a phase I  trial, the optimal dose of celecoxib combined with erlotinib was determined to be 600-mg  twice daily with manageable toxicity and tumor responses in patients with both mutated and  wild type EGFR status.10 We hypothesized that interfering with trans-activating and  downstream pathways through the use of combination COX-2 and EGFR inhibition can  enhance the efficacy of clinically tolerable doses of EGFR TKIs. The current study  investigated the combination of high-dose celecoxib and erlotinib in a randomized, placebo- controlled phase II trial in patients with advanced NSCLC. A pre-planned analysis  evaluating the association of baseline urine PGEM and clinical outcome based on treatment  was performed. "
+},
+{
+          "paragraph5": "Reckamp et al. Page 2 "
+},
+{
+          "paragraph6": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "section:1": "Materials and Methods"
+},
+{
+          "paragraph1": "or Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "section:2": "Patients"
+},
+{
+               "paragraph1": " and Methods "
+},
+{
+               "section:2": "Patients"
+},
+{
+               "section:2": "Study Design and Treatment"
+},
+{
+               "paragraph1": " over the age of 18 with confirmed stage IIIB or IV NSCLC and  tumor tissue available for mutation analysis; have an Eastern Cooperative Oncology Group  performance status (ECOG PS) of 0 or 1; have measurable disease according to Response  Evaluation Criteria in Solid Tumors (RECIST); have progressive disease despite ≥1 prior  chemotherapy regimens or subject's refusal or inability to receive standard chemotherapy;  and have adequate hematologic, renal, and liver function. Key exclusion criteria included  prior history of EGFR or COX-2 inhibitor therapy for the treatment of cancer; previous  history of gastrointestinal ulceration, bleeding or perforation; concurrent use of COX-2  inhibitors or other NSAIDS (low dose aspirin was not allowed); active central nervous  system metastasis; or any history of myocardial infarction or cerebral vascular accident or  major medical condition that would interfere with participation. The study was approved by  independent ethics review boards and in accord with an assurance filed with and approved  by the Department of Health and Human Services by each site. The study was conducted  according to the Declaration of Helsinki. All patients provided written informed consent  prior to study participation. "
+},
+{
+               "section:2": "Study Design and Treatment"
+},
+{
+               "section:2": "Assessments"
+},
+{
+               "paragraph1": "I, double-blind, placebo-controlled, randomized trial randomized patients in a  1:1 ratio using a random permuted block design with stratification by smoking status (non- smoker < 100 cigarettes smoked in lifetime vs. current/former smoker) and ECOG PS (0 vs.  1). Patients received erlotinib 150-mg p.o. daily plus placebo in the control arm (Arm A) or  high-dose celecoxib at 600-mg p.o. twice daily plus erlotinib in the combination treatment  arm (Arm B) continuously for a 28-day cycle. The combination of erlotinib and celecoxib or  placebo was given for up to 12 months, after that time, the patient discontinued celecoxib/ placebo and continued on erlotinib alone until disease progression or unacceptable toxicity.  Dose reductions for erlotinib were allowed to 100 mg daily (no dose reduction was  permitted for celecoxib), and dosing for either or both drugs could be interrupted up to 14  days. "
+},
+{
+               "section:2": "Assessments"
+},
+{
+               "section:2": "Biomarker Evaluation"
+},
+{
+               "paragraph1": "nts for tumor measurement were obtained every 8 weeks (2 cycles) to  evaluate PFS, overall survival (OS), objective response rate (ORR) and disease control rate  (DCR). Investigator assessed disease status was performed per RECIST v1.0. Adverse  events (AEs) were assessed per the Common Terminology Criteria for Adverse Events  (CTCAE version 3.0). "
+},
+{
+               "section:2": "Biomarker Evaluation"
+},
+{
+                    "section:3": "Urine PGEM measurement"
+},
+{
+                    "paragraph1": "Reckamp et al. Page 3 "
+},
+{
+                    "paragraph2": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+                    "paragraph3": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+                    "section:3": "EGFR mutation analysis"
+},
+{
+                    "paragraph1": "ormal levels were 10ng/mg Cr in men and 6ng/mg Cr in  women).11-12 "
+},
+{
+                    "section:3": "Immunohistochemistry"
+},
+{
+                    "paragraph1": "s—EGFR mutational analysis was done at the CLIA certified  laboratory at City of Hope through the pathology core. Formalin-fixed, paraffin embedded  archival tumor specimens were submitted. Slides were reviewed by a board-certified  pathologist who demarcated areas of tumor for dissection. Needle microdissection was done  under a microscope, taking two representative areas from the region demarcated by the  pathologist. These areas were digested overnight. Each dissected area was analyzed  independently. Exons 18 to 21 of the EGFR gene were amplified from the digested products  by PCR. Negative controls were included to rule out contamination. The amplified products  were directly sequenced using ABI's automated fluorescent sequencing kit and sequencer.  The chromatogram data were then reviewed for changes and reported. "
+},
+{
+                    "section:3": "Immunohistochemistry"
+},
+{
+               "section:2": "Statistical Analysis"
+},
+{
+               "paragraph1": "ed for the following: (a) % cells positive for each stain (E-cadherin,  COX-2), (b) intensity of stain (0 to +3); (c) pattern of staining (membranous, cytoplasmic,  and nuclear); and (d) in slides that had double staining, the percentage of cells that showed  coexpression of both antigens (E-cadherin and COX-2). Staining intensity of +2 or greater  was considered positive. "
+},
+{
+               "section:2": "Statistical Analysis"
+},
+{
+               "paragraph1": "The primary endpoint was progression-free survival (PFS) in the intent-to-treat population,  and a second primary endpoint was added in May 2010 to evaluate PFS in patients with  elevated baseline urine PGEM. Secondary endpoints included response rate; overall survival;  correlation of PFS with urinary PGEM and EGFR mutation status; and measurement of  COX-2, and E-cadherin expression. PFS was defined as time from randomization to disease  progression by RECIST. The initial sample size was 86 with a total number of events  required of 67, log rank test of equality of survival curves with a 0.2 one-sided significance  level would have 80% power to detect the difference between the combination therapy  associated exponential parameter of 0.22 (median progression-free survival of 3.2 months)  and single agent erlotinib exponential parameter of 0.33 (median PFS 2.1 months),  corresponding to a constant hazard ratio of 0.66. "
+},
+{
+               "paragraph2": "The second primary endpoint increased the sample size by 20 patients (to 106) to account  for the percentage of patients with low urinary PGEM in the analysis. This improved the  power of the analysis, under the hypothesis that celecoxib will add benefit to erlotinib  therapy when patients have elevated baseline urinary PGE-M levels (COX-2 pathway  activation), to 82-85%. "
+},
+{
+               "paragraph3": "Median PFS and OS were estimated from Kaplan-Meier curves. Comparison between  treatment arms was made using log-rank test. Hazard ratios and 95% CI were estimated  using a Cox regression model. Subgroup analyses for EGFR mutation, COX-2 and E- "
+},
+{
+               "paragraph4": "Reckamp et al. Page 4 "
+},
+{
+               "paragraph5": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+               "paragraph6": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph7": "cadherin expression were performed, and a P value < 0.05 was considered significant, but  was not adjusted for multiple testing. "
+},
+{
+          "section:1": "Results"
+},
+{
+               "section:2": "Patients"
+},
+{
+               "paragraph1": "One hundred and nine patients were randomized to erlotinib and placebo (placebo) (n= 54)  or erlotinib and celecoxib (n= 55) from November 2007 through May 2011 at City of Hope  and University of Texas, Southwestern, and one hundred and seven patients received at least  one dose of study drug (Figure 1). One patient in each arm did not receive study drug as  planned and were excluded from analysis. Median follow-up was 12.1 months. "
+},
+{
+               "paragraph2": "Baseline characteristics at baseline were well balanced between treatment arms (Table 1),  including patients with EGFR mutation and baseline urine PGEM levels. Twenty-three  patients (21%) had insufficient tissue for mutation analysis, 12 in the placebo group and 11  in the celecoxib group. Eighteen patients (17%) did not have adequate urine for baseline  urine PGEM assessment 8 and 10 in the placebo and celecoxib groups, respectively. "
+},
+{
+               "section:2": "Efficacy"
+},
+{
+               "paragraph1": "In the IIT population, PFS was numerically higher in the erlotinib plus celecoxib arm  compared to the erlotinib plus placebo arm, although this did not reach statistical  significance (median, 5.4 v 3.5 months; HR, 0.82; p = 0.33; Fig 2A). In patients selected  with elevated baseline PGEM, an improvement in PFS was demonstrated (median, 5.4 v 2.2  months; HR 0.67; p = 0.15; Fig 2C). Those with low baseline PGEM did not benefit from  combination treatment with celecoxib (Fig 2D). Analysis by EGFR mutation status revealed  that patients with wild type tumors had an improvement in PFS (median, 3.2 v 1.8 months;  HR 0.54; p = 0.03; Fig 2B). Those with EGFR mutation or unavailable results did not  experience improved PFS (Table 2). In an exploratory analysis of patients with wild type  EGFR and elevated PGEM at baseline, progression-free survival was longer for those who  received celecoxib (median, 3.8 v 1.8 months; HR 0.42; p = 0.04) and overall survival was  similar in each group (median, 11.1 v 12.3 months; HR 0.58; p = 0.22), data not shown. "
+},
+{
+               "paragraph2": "A trend toward improved OS was seen in the IIT population (Fig 3A) and in those with  elevated baseline PGEM (Fig 3C). Patients with low baseline PGEM did not experience  improved OS (Fig 3D). Survival was similar by treatment group regardless of EGFR  mutation status (Fig 3B). "
+},
+{
+               "section:2": "Safety"
+},
+{
+               "paragraph1": "All patients who received at least one dose of study drug were assessed for safety (n= 107).  The rate of discontinuation due to AEs was similar in the erlotinib plus celecoxib and  erlotinib plus placebo arm (13.0% v 11.3%). The most frequent cause for treatment  discontinuation was disease progression in both groups. "
+},
+{
+               "paragraph2": "The most common AEs (all grades) in both groups were rash, diarrhea, dry skin, fatigue and  elevated AST and did not differ between groups (Table 3). Anemia (33% v 15%), elevated  creatinine (32% v 15%), and paronychia (30% v 13%) occurred more often in the patients  "
+},
+{
+               "paragraph3": "Reckamp et al. Page 5 "
+},
+{
+               "paragraph4": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+               "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph6": "who received erlotinib plus celecoxib. Two patients who received erlotinib plus celecoxib  experienced cerebrovascular ischemia (grade 2 and grade 3) and one patient on the erlotinib  plus placebo arm had cardiac ischemia, grade 2. No deaths were attributable to treatment. "
+},
+{
+               "section:2": "Biomarker Assessment"
+},
+{
+               "paragraph1": "Thirty-six patients (44%) had tissue available for evaluation of COX-2 by IHC, 13 (68.4%)  in the erlotinib plus celecoxib arm and 12 (70.6%) in the erlotinib plus placebo arm  demonstrated high expression. Due to small numbers, this did not correlate with patient  outcome. In addition, 35 had available tissue for E-cadherin assessment with elevated  expression in 15 (83.3%) in the erlotinib plus celecoxib arm and 11 (64.7%) in the erlotinib  plus placebo arm without association to response, PFS or OS. "
+},
+{
+          "section:1": "Discussion"
+},
+{
+          "paragraph1": "First described to be overexpressed in human NSCLC in 1998,13 COX-2 contributes to  multiple aspects of the malignant phenotype, including angiogenesis,14 invasion,15 apoptosis  resistance,16 and immune dysregulation.17-19 Information regarding selection of patients for  COX-2 inhibitor therapy has matured, and it is clear that a method of selection will improve  our ability to determine efficacy with the combination. Two methods for selection for  COX-2 inhibitors are evaluation of COX-2 expression by IHC and PGEM. IHC was initially  shown to potentially predict for those who could benefit from combination COX inhibition  with chemotherapy,20 but the phase III trial did not confirm the results.21 Due to the  variability in COX-2 expression by IHC and limited tissue availability, we chose to evaluate  PGEM as a selective marker. PFS in patients with elevated baseline PGEM levels was higher  in patients on the erlotinib plus celecoxib arm, and met our primary endpoint in this  population. This suggests that baseline PGEM may identify a subgroup of patients with  activation of the COX-2 pathway, and may be responsive to celecoxib therapy. "
+},
+{
+          "paragraph2": "A number of studies have evaluated COX-2 and EGFR inhibition in small, unselected  patient populations with limited benefit.22-25 Gadgeel et al.24 reported a Phase II study of  gefitinib and celecoxib in patients with platinum refractory NSCLC. Patients received  gefitinib 250 mg daily and celecoxib 400 mg twice daily. The response rate to the  combination of celecoxib and gefitinib was similar to that observed with gefitinib alone.  O'Byrne and colleagues25 reported combination therapy with gefitinib and rofecoxib in  patients with platinum-pretreated relapsed NSCLC. Gefitinib combined with rofecoxib was  found to provide disease control equivalent to that expected with single-agent gefitinib and  was generally well tolerated. Fidler et al.23 evaluated erlotinib plus celecoxib in a phase II  trial of patients with advanced NSCLC who had failed one prior chemotherapy regimen and  found that 10 of 26 had disease control and elevated COX-2 expression by IHC was  associated with improved PFS. The current study helps to improve our understanding of  these combinations for the treatment of NSCLC. The prior studies did not dose COX-2  inhibition to adequately block COX-2 activity and induce antitumor effects, while our high- dose celecoxib was based on decline in PGEM levels in our phase I trial.10 Use of adequate  COX-2 inhibition along with patient selection may optimize the use of this therapy. "
+},
+{
+          "paragraph3": "Reckamp et al. Page 6 "
+},
+{
+          "paragraph4": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph6": "A randomized phase II trial with a novel COX-2 inhibitor, apricoxib, in combination with  erlotinib used a run-in period to assess a decline in PGEM as a criteria for eligibility.26 This  was based on dosing from the phase I trial that demonstrated at least a 50% reduction in  PGEM.9 They randomized 120 patients and found a median time to progression of 1.8 in the  apricoxib/erlotinib arm versus 2.1 months in the erlotinib/placebo arm. When subgroups  were evaluated, patients aged 65 and less had a significant improvement in TTP with  apricoxib/erlotinib. This was a unique design that attempted to identify those that could  benefit from COX-2 blockage, although a higher cut-point for decline in PGEM may have  been more beneficial as demonstrated by earlier studies.7, 10 "
+},
+{
+          "paragraph7": "Although clinical benefit has been demonstrated with erlotinib in patients with wild type  EGFR27 responses are limited and patients have better outcomes with chemotherapy when  compared to EGFR-directed treatment.3 Attempts to overcome resistance with pan-human  epidermal growth factor receptor (HER) inhibitors have not resulted in better outcomes for  patients with wild type EGFR.28-29 Patients with wild type EGFR experienced meaningful  clinical benefit from the combination of erlotinib and high-dose celecoxib. This study  enrolled a higher proportion of patients with EGFR mutation than would be expected in the  general population, but both arms were balanced due to stratification by smoking status. The  increased number with EGFR mutation may have led to a longer PFS in both arms for the  IIT population. Ninety-six patient serum samples were retrospectively assessed by VeriStrat  (VS) classification, which showed longer PFS and OS in the overall group for those with VS  good classification.30 Analysis of the VS good group stratified by EGFR mutation status  confirmed an improved PFS in the celecoxib group for those with EGFR wild type tumors. "
+},
+{
+          "paragraph8": "Furthermore, we have learned from the use of COX-2 inhibition in colorectal carcinoma that  has demonstrated improved outcomes associated with aspirin use following diagnosis related  to tumor COX-2 expression by IHC.31 The linkage of PIK3CA mutations to aspirin use  leading increased survival in these patients32 reaffirms the molecular basis and need for  selection when evaluating COX inhibitor therapy. PIK3CA mutations are less common in  NSCLC, and tissue was not sufficient to analyze in the current study. The heterogeneity of  NSCLC is evident and understanding the molecular basis for response and resistance will  enhance our therapies. Overexpression of neutrophil gelatinase associated lipocalin (NGAL)  has also been shown to lead to EGFR TKI resistance, and may be modulated by COX-2  inhibition to improve sensitivity.33 "
+},
+{
+          "paragraph9": "The sample size in this study was too small to expand our knowledge of PIK3CA mutation  status and outcome, but the phosphatidylinositol-3-kinase (PI3K) signaling is altered to  promote cell proliferation, growth, and survival in many NSCLCs,34 and combined EGFR  and COX-2 inhibition may effectively exploit this pathway. The results in the EGFR wild  type and elevated baseline PGEM populations are encouraging, and provide supporting  evidence to further evaluate these pathways in selected patients. Optimal use of biomarkers  and genomic data may provide additional insights for improving eicosanoid modulatory  agents in combination therapies for NSCLC. "
+},
+{
+          "paragraph10": "Reckamp et al. Page 7 "
+},
+{
+          "paragraph11": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph12": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph13": "Acknowledgments "
+},
+{
+          "paragraph14": "Supported by NIH 1P50 CA90388, K12 CA01727, UCLA Claude Pepper Older Americans Independence Center  funded by the National Institute of Aging 5P30AG028748 and Medical Research Funds from the Department of  Veterans Affairs. Astellas Pharmaceuticals supplied erlotinib and patient care costs, and Pfizer provided celecoxib  and placebo. "
+},
+{
+          "paragraph15": "We acknowledge the support of the City of Hope Comprehensive Cancer Center Pathology Core in this work.  Research reported in this publication was supported by the National Cancer Institute of the National Institutes of  Health under grant number P30CA033572. The content is solely the responsibility of the authors and does not  necessarily represent the official views of the National Institutes of Health. We acknowledge Fran Rosen and  Cecelia Arbayo for their contributions to this work. "
+},
+{
+          "section:1": "References"
+},
+{
+          "paragraph1": "1. Mok TS, Wu YL, Thongprasert S, et al. Gefitinib or carboplatin-paclitaxel in pulmonary  adenocarcinoma. N Engl J Med. 2009; 361:947–957. [PubMed: 19692680]  "
+},
+{
+          "paragraph2": "2. Rosell R, Carcereny E, Gervais R, et al. Erlotinib versus standard chemotherapy as first-line  treatment for European patients with advanced EGFR mutation-positive non-small-cell lung cancer  (EURTAC): a multicentre, open-label, randomised phase 3 trial. Lancet Oncol. 2012; 13:239–246.  [PubMed: 22285168]  "
+},
+{
+          "paragraph3": "3. Garassino MC, Martelli O, Broggini M, et al. Erlotinib versus docetaxel as second-line treatment of  patients with advanced non-small-cell lung cancer and wild-type EGFR tumours (TAILOR): a  randomised controlled trial. Lancet Oncol. 2013; 14:981–988. [PubMed: 23883922]  "
+},
+{
+          "paragraph4": "4. Hida T, Yatabe Y, Achiwa H, et al. Increased expression of cyclooxygenase 2 occurs frequently in  human lung cancers, specifically in adenocarcinomas. Cancer Res. 1998; 58:3761–3764. [PubMed:  9731479]  "
+},
+{
+          "paragraph5": "5. Krysan K, Reckamp KL, Dalwadi H, et al. Prostaglandin E2 activates mitogen-activated protein  kinase/Erk pathway signaling and cell proliferation in non-small cell lung cancer cells in an  epidermal growth factor receptor-independent manner. Cancer Res. 2005; 65:6275–6281. [PubMed:  16024629]  "
+},
+{
+          "paragraph6": "6. Dohadwala M, Yang SC, Luo J, et al. Cyclooxygenase-2-dependent regulation of E-cadherin:  prostaglandin E(2) induces transcriptional repressors ZEB1 and snail in non-small cell lung cancer.  Cancer Res. 2006; 66:5338–5345. [PubMed: 16707460]  "
+},
+{
+          "paragraph7": "7. Csiki I, Morrow JD, Sandler A, et al. Targeting cyclooxygenase-2 in recurrent non-small cell lung  cancer: a phase II trial of celecoxib and docetaxel. Clin Cancer Res. 2005; 11:6634–6640. [PubMed:  16166442]  "
+},
+{
+          "paragraph8": "8. Mutter R, Lu B, Carbone DP, et al. A phase II study of celecoxib in combination with paclitaxel,  carboplatin, and radiotherapy for patients with inoperable stage IIIA/B non-small cell lung cancer.  Clin Cancer Res. 2009; 15:2158–2165. [PubMed: 19276291]  "
+},
+{
+          "paragraph9": "9. Reckamp K, Gitlitz B, Chen LC, et al. Biomarker-based phase I dose-escalation, pharmacokinetic,  and pharmacodynamic study of oral apricoxib in combination with erlotinib in advanced nonsmall  cell lung cancer. Cancer. 2011; 117:809–818. [PubMed: 20922800]  "
+},
+{
+          "paragraph10": "10. Reckamp KL, Krysan K, Morrow JD, et al. A phase I trial to determine the optimal biological dose  of celecoxib when combined with erlotinib in advanced non-small cell lung cancer. Clin Cancer  Res. 2006; 12:3381–3388. [PubMed: 16740761]  "
+},
+{
+          "paragraph11": "11. Murphey LJ, Williams MK, Sanchez SC, et al. Quantification of the major urinary metabolite of  PGE2 by a liquid chromatographic/mass spectrometric assay: determination of cyclooxygenase- specific PGE2 synthesis in healthy humans and those with lung cancer. Anal Biochem. 2004;  334:266–275. [PubMed: 15494133]  "
+},
+{
+          "paragraph12": "12. Gross ND, Boyle JO, Morrow JD, et al. Levels of prostaglandin E metabolite, the major urinary  metabolite of prostaglandin E2, are increased in smokers. Clin Cancer Res. 2005; 11:6087–6093.  [PubMed: 16115954]  "
+},
+{
+          "paragraph13": "13. Huang M, Stolina M, Sharma S, et al. Non-small cell lung cancer cyclooxygenase-2-dependent  regulation of cytokine balance in lymphocytes and macrophages: up-regulation of interleukin 10  "
+},
+{
+          "paragraph14": "Reckamp et al. Page 8 "
+},
+{
+          "paragraph15": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph16": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph17": "and down-regulation of interleukin 12 production. Cancer Res. 1998; 58:1208–1216. [PubMed:  9515807]  "
+},
+{
+          "paragraph18": "14. Pold M, Zhu LX, Sharma S, et al. Cyclooxygenase-2-dependent expression of angiogenic CXC  chemokines ENA-78/CXC Ligand (CXCL) 5 and interleukin-8/CXCL8 in human non-small cell  lung cancer. Cancer Res. 2004; 64:1853–1860. [PubMed: 14996749]  "
+},
+{
+          "paragraph19": "15. Dohadwala M, Batra RK, Luo J, et al. Autocrine/paracrine prostaglandin E2 production by non- small cell lung cancer cells regulates matrix metalloproteinase-2 and CD44 in cyclooxygenase-2- dependent invasion. J Biol Chem. 2002; 277:50828–50833. [PubMed: 12393872]  "
+},
+{
+          "paragraph20": "16. Krysan K, Merchant FH, Zhu L, et al. COX-2-dependent stabilization of survivin in non-small cell  lung cancer. FASEB J. 2004; 18:206–208. [PubMed: 14597555]  "
+},
+{
+          "paragraph21": "17. Sharma S, Stolina M, Yang SC, et al. Tumor cyclooxygenase 2-dependent suppression of dendritic  cell function. Clin Cancer Res. 2003; 9:961–968. [PubMed: 12631593]  "
+},
+{
+          "paragraph22": "18. Sharma S, Yang SC, Zhu L, et al. Tumor cyclooxygenase-2/prostaglandin E2-dependent promotion  of FOXP3 expression and CD4+ CD25+ T regulatory cell activities in lung cancer. Cancer Res.  2005; 65:5211–5220. [PubMed: 15958566]  "
+},
+{
+          "paragraph23": "19. Stolina M, Sharma S, Lin Y, et al. Specific inhibition of cyclooxygenase 2 restores antitumor  reactivity by altering the balance of IL-10 and IL-12 synthesis. J Immunol. 2000; 164:361–370.  [PubMed: 10605031]  "
+},
+{
+          "paragraph24": "20. Edelman MJ, Watson D, Wang X, et al. Eicosanoid modulation in advanced lung cancer:  cyclooxygenase-2 expression is a positive predictive factor for celecoxib + chemotherapy--Cancer  and Leukemia Group B Trial 30203. J Clin Oncol. 2008; 26:848–855. [PubMed: 18281656]  "
+},
+{
+          "paragraph25": "21. Edelman MJ, Wang X, Hodgson L, et al. Phase III randomized, placebo controlled trial of COX-2  inhibition in addition to standard chemotherapy for advanced non-small cell lung cancer  (NSCLC):CALGB 30801 (Alliance). Proc Am Assoc Cancer Res. 2014 abstr CT238.  "
+},
+{
+          "paragraph26": "22. Agarwala A, Fisher W, Bruetman D, et al. Gefitinib plus celecoxib in chemotherapy-naive patients  with stage IIIB/IV non-small cell lung cancer: a phase II study from the Hoosier Oncology Group.  J Thorac Oncol. 2008; 3:374–379. [PubMed: 18379355]  "
+},
+{
+          "paragraph27": "23. Fidler MJ, Argiris A, Patel JD, et al. The potential predictive value of cyclooxygenase-2 expression  and increased risk of gastrointestinal hemorrhage in advanced non-small cell lung cancer patients  treated with erlotinib and celecoxib. Clin Cancer Res. 2008; 14:2088–2094. [PubMed: 18381949]  "
+},
+{
+          "paragraph28": "24. Gadgeel SM, Ruckdeschel JC, Heath EI, et al. Phase II study of gefitinib, an epidermal growth  factor receptor tyrosine kinase inhibitor (EGFR-TKI), and celecoxib, a cyclooxygenase-2 (COX-2)  inhibitor, in patients with platinum refractory non-small cell lung cancer (NSCLC). J Thorac  Oncol. 2007; 2:299–305. [PubMed: 17409801]  "
+},
+{
+          "paragraph29": "25. O'Byrne KJ, Danson S, Dunlop D, et al. Combination therapy with gefitinib and rofecoxib in  patients with platinum-pretreated relapsed non small-cell lung cancer. J Clin Oncol. 2007;  25:3266–3273. [PubMed: 17664473]  "
+},
+{
+          "paragraph30": "26. Gitlitz BJ, Bernstein E, Santos ES, et al. A randomized, placebo-controlled, multicenter,  biomarker-selected, phase 2 study of apricoxib in combination with erlotinib in patients with  advanced non-small-cell lung cancer. J Thorac Oncol. 2014; 9:577–582. [PubMed: 24736085]  "
+},
+{
+          "paragraph31": "27. Shepherd FA, Rodrigues Pereira J, Ciuleanu T, et al. Erlotinib in previously treated non-small-cell  lung cancer. N Engl J Med. 2005; 353:123–132. [PubMed: 16014882]  "
+},
+{
+          "paragraph32": "28. Ramalingam SS, Blackhall F, Krzakowski M, et al. Randomized phase II study of dacomitinib  (PF-00299804), an irreversible pan-human epidermal growth factor receptor inhibitor, versus  erlotinib in patients with advanced non-small-cell lung cancer. J Clin Oncol. 2012; 30:3337–44.  [PubMed: 22753918]  "
+},
+{
+          "paragraph33": "29. Reckamp KL, Giaccone G, Camidge DR, et al. A phase 2 trial of dacomitinib (PF-00299804), an  oral, irreversible pan-HER (human epidermal growth factor receptor) inhibitor, in patients with  advanced non-small cell lung cancer after failure of prior chemotherapy and erlotinib. Cancer.  2014; 120:1145–1154. [PubMed: 24501009]  "
+},
+{
+          "paragraph34": "30. Reckamp KL, Koczywas M, Cristea M, Dowell JE, Figlin RA, Dubinett SM, Grigorieva J, Roder  H. Evaluation of VeriStrat in the Randomized, Placebo-Controlled, Phase II Trial of Erlotinib and  High-Dose Celecoxib in Advanced Non-small Cell Lung Cancer. J Thorac Oncol. 2012; 7:S337.  Abstract LBOA1.  "
+},
+{
+          "paragraph35": "Reckamp et al. Page 9 "
+},
+{
+          "paragraph36": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph37": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph38": "31. Chan AT, Ogino S, Fuchs CS. Aspirin use and survival after diagnosis of colorectal cancer. JAMA.  2009; 302:649–658. [PubMed: 19671906]  "
+},
+{
+          "paragraph39": "32. Liao X, Lochhead P, Nishihara R, et al. Aspirin use, tumor PIK3CA mutation, and colorectal- cancer survival. N Engl J Med. 2012; 367:1596–1606. [PubMed: 23094721]  "
+},
+{
+          "paragraph40": "33. Krysan K, Cui X, Gardner BK, et al. Elevated neutrophil gelatinase-associated lipocalin contributes  to erlotinib resistance in non-small cell lung cancer. Am J Transl Res. 2013; 5:481–496. [PubMed:  23977408]  "
+},
+{
+          "paragraph41": "34. Engelman JA, Luo J, Cantley LC. The evolution of phosphatidylinositol 3-kinases as regulators of  growth and metabolism. Nat Rev Genet. 2006; 7:606–619. [PubMed: 16847462]  "
+},
+{
+          "paragraph42": "Reckamp et al. Page 10 "
+},
+{
+          "paragraph43": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph44": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms781581_page10_307.jpg"
+},
+{
+          "section:1": "Figure 1"
+},
+{
+          "paragraph1": "  CONSORT diagram. PGEM, urine prostaglandin E metabolite. "
+},
+{
+          "paragraph2": "Reckamp et al. Page 11 "
+},
+{
+          "paragraph3": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms781581_page11_322.jpg"
+},
+{
+          "section:1": "Figure 2"
+},
+{
+          "paragraph1": "  Kaplan-Meier estimates of progression free survival (PFS) in (A) intent-to-treat, (B) EGFR  wild type, (C) elevated baseline PGEM, (D) low baseline PGEM. HR, hazard ratio; PGEM,  urine prostaglandin E metabolite. "
+},
+{
+          "paragraph2": "Reckamp et al. Page 12 "
+},
+{
+          "paragraph3": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms781581_page12_336.jpg"
+},
+{
+          "section:1": "Figure 3"
+},
+{
+          "paragraph1": "  Kaplan-Meier estimates of overall survival (OS) in (A) intent-to-treat, (B) EGFR wild type,  (C) elevated baseline PGEM, (D) low baseline PGEM. HR, hazard ratio; PGEM, urine  prostaglandin E metabolite. "
+},
+{
+          "paragraph2": "Reckamp et al. Page 13 "
+},
+{
+          "paragraph3": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph6": "Reckamp et al. Page 14 "
+},
+{
+          "section:1": "Table 1"
+},
+{
+          "paragraph1": "Patient Characteristics "
+},
+{
+          "paragraph2": "Erlotinib + celecoxib (n= 54) "
+},
+{
+          "paragraph3": "Erlotinib + placebo (n= 53) "
+},
+{
+          "paragraph4": "Age (range) Median/yr 63.5 (41-80) 65 (30-80) "
+},
+{
+          "paragraph5": "Male/Female 26/28 24/29 "
+},
+{
+          "paragraph6": "Race (%) White 37 (69) 35 (66) "
+},
+{
+          "paragraph7": "Black of African American 3 (6) 2 (4) "
+},
+{
+          "paragraph8": "Asian 12 (22) 14 (26) "
+},
+{
+          "paragraph9": "American Indian 0 1 (2) "
+},
+{
+          "paragraph10": "Not available 2 (4) 1 (2) "
+},
+{
+          "paragraph11": "ECOG PS (%) 0 26 (48) 26 (49) "
+},
+{
+          "paragraph12": "1 28 (52) 27 (51) "
+},
+{
+          "paragraph13": "Histology (%) Adenocarcinoma* 32 (55) 32 (60) "
+},
+{
+          "paragraph14": "Squamous cell 6 (11) 5 (9) "
+},
+{
+          "paragraph15": "NSCLC NOS 15 (28) 16 (30) "
+},
+{
+          "paragraph16": "Not available 1 (2) 0 "
+},
+{
+          "paragraph17": "Smoking status (%) < 100 cigarettes 20 (37) 20(38) "
+},
+{
+          "paragraph18": "Former 30 (56) 31 (59) "
+},
+{
+          "paragraph19": "Current 4 (7) 2 (3) "
+},
+{
+          "paragraph20": "Stage (%) IIIB 6 (11) 4 (8) "
+},
+{
+          "paragraph21": "IV 48 (89) 49 (92) "
+},
+{
+          "paragraph22": "EGFR mutation (%) Positive 12 (22) 14 (26) "
+},
+{
+          "paragraph23": "Negative 31 (57) 27 (51) "
+},
+{
+          "paragraph24": "Not available 11 (21) 12 (23) "
+},
+{
+          "paragraph25": "Number of prior systemic therapies (%) 0 6 (11) 7 (13) "
+},
+{
+          "paragraph26": "1 27 (50) 27 (51) "
+},
+{
+          "paragraph27": "2 15 (28) 11 (21) "
+},
+{
+          "paragraph28": ">2 6 (11) 8 (15) "
+},
+{
+          "paragraph29": "*Includes 1 adenosquamous histology. "
+},
+{
+          "paragraph30": "ECOG PS, Eastern Cooperative Oncology Group performance status. "
+},
+{
+          "paragraph31": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph32": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph33": "Reckamp et al. Page 15 "
+},
+{
+          "section:1": "Table 2"
+},
+{
+          "paragraph1": "Patient Response by intent to treat and EGFR mutation status "
+},
+{
+          "paragraph2": "All patients Erlotinib + celecoxib (n= 54) "
+},
+{
+          "paragraph3": "Erlotinib + placebo (n= 53) "
+},
+{
+          "paragraph4": "CR/PR (%) 12 (22.6) 17 (32.7) "
+},
+{
+          "paragraph5": "SD (%) 22 (41.5) 13 (25) "
+},
+{
+          "paragraph6": "PD (%) 19 (35.8) 22 (42.3) "
+},
+{
+          "paragraph7": "DCR (CR/PR/SD) (%) 34 (64) 30 (57.7) "
+},
+{
+          "paragraph8": "EGFR wild type Erlotinib + celecoxib (n= 30) "
+},
+{
+          "paragraph9": "Erlotinib + placebo (n= 27) "
+},
+{
+          "paragraph10": "CR/PR (%) 3 (10) 0 (0) "
+},
+{
+          "paragraph11": "SD (%) 12 (40) 10 (37) "
+},
+{
+          "paragraph12": "PD (%) 15 (50) 17 (63) "
+},
+{
+          "paragraph13": "DCR (CR/PR/SD) (%) 15 (50) 10 (37) "
+},
+{
+          "paragraph14": "PFS (mo) 3.2 (1.7-6.7) 1.8 (1.7-3.5) "
+},
+{
+          "paragraph15": "HR (95% CI) 0.54 (0.30-0.97), p= 0.03 "
+},
+{
+          "paragraph16": "EGFR mutation positive Erlotinib + celecoxib (n= 12) "
+},
+{
+          "paragraph17": "Erlotinib + placebo (n= 14) "
+},
+{
+          "paragraph18": "CR/PR (%) 5 (41.7) 9 (64.3) "
+},
+{
+          "paragraph19": "SD (%) 6 (50) 4 (29) "
+},
+{
+          "paragraph20": "PD (%) 1 (8) 1 (7) "
+},
+{
+          "paragraph21": "DCR (CR/PR/SD) (%) 11 (91.7) 13 (92.9) "
+},
+{
+          "paragraph22": "PFS (mo) 9.2 (5.4-16.5) 9.2 (4.8-10.8) "
+},
+{
+          "paragraph23": "HR (95% CI) 0.98 (0.41-2.39), p= 0.97 "
+},
+{
+          "paragraph24": "EGFR not available Erlotinib + celecoxib (n= 11) "
+},
+{
+          "paragraph25": "Erlotinib + placebo (n= 12) "
+},
+{
+          "paragraph26": "CR/PR (%) 1 (9) 2 (16.7) "
+},
+{
+          "paragraph27": "SD (%) 5 (45.5) 4 (33.3) "
+},
+{
+          "paragraph28": "PD (%) 5 (45.5) 6 (50) "
+},
+{
+          "paragraph29": "DCR (CR/PR/SD) (%) 6 (54.6) 6 (50) "
+},
+{
+          "paragraph30": "PFS (mo) 2.8 (1.0-8.0) 2.9 (1.8-11.5) "
+},
+{
+          "paragraph31": "HR (95% CI) 1.48 (0.62-3.5), p= 0.36 "
+},
+{
+          "paragraph32": "CR, complete response; PR, partial response; SD, stable disease; PD, progressive disease; DCR (disease control rate); PFS, progression free  survival; HR, hazard ratio. "
+},
+{
+          "paragraph33": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+},
+{
+          "paragraph34": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph35": "Reckamp et al. Page 16 "
+},
+{
+          "section:1": "Table 3"
+},
+{
+          "paragraph1": "Adverse Events (All grades >10%) "
+},
+{
+          "paragraph2": "Adverse Events (all grades >10%) # patients experienced (%) "
+},
+{
+          "paragraph3": "Erlotinib + HD celecoxib Erlotinib + placebo "
+},
+{
+          "paragraph4": "Rash 43 (80) 42 (79) "
+},
+{
+          "paragraph5": "Diarrhea 38 (70) 40 (76) "
+},
+{
+          "paragraph6": "Dry skin 36 (67) 40 (76) "
+},
+{
+          "paragraph7": "Fatigue 28 (52) 31 (59) "
+},
+{
+          "paragraph8": "Elevated AST 25 (46) 27 (51) "
+},
+{
+          "paragraph9": "Anorexia 17 (32) 26 (49) "
+},
+{
+          "paragraph10": "Nausea 14 (26) 17 (32) "
+},
+{
+          "paragraph11": "Hypoalbuminemia 16 (30) 14 (26) "
+},
+{
+          "paragraph12": "Stomatitis 15 (28) 12 (23) "
+},
+{
+          "paragraph13": "Anemia 18 (33) 8 (15) p = 0.028 "
+},
+{
+          "paragraph14": "Elevated creatinine 17 (32) 8 (15) p = 0.045 "
+},
+{
+          "paragraph15": "Elevated AlkPhos 12 (22) 11 (21) "
+},
+{
+          "paragraph16": "Paronychia 16 (30) 7 (13) P = 0.039 "
+},
+{
+          "paragraph17": "Lymphopenia 10 (19) 4 (8) "
+},
+{
+          "paragraph18": "Weight loss 5 (9) 9 (17) "
+},
+{
+          "paragraph19": "Vomiting 4 (7) 7 (13) "
+},
+{
+          "paragraph20": "Elevated bilirubin 4 (7) 6 (11) "
+},
+{
+          "paragraph21": "Cancer. Author manuscript; available in PMC 2016 September 15. "
+}]

@@ -1,0 +1,1023 @@
+[{
+     "paragraph1": "Phase I Dose-Escalation Study of Linsitinib (OSI-906) and  Erlotinib in Patients with Advanced Solid Tumors "
+},
+{
+     "paragraph2": "Valentine M. Macaulay1, Mark R. Middleton1, S. Gail Eckhardt2, Charles M. Rudin3, Rosalyn  A. Juergens4, Richard Gedrich5, Sven Gogov6, Sean McCarthy7, Srinivasu Poondru8,  Andrew W. Stephens9, and Shirish M. Gadgeel10 "
+},
+{
+     "paragraph3": "1University Department of Oncology, Oxford Cancer and Haematology Centre, Headington,  Oxford, United Kingdom 2University of Colorado Cancer Center, Aurora, Colorado 3Memorial  Sloan Kettering Cancer Center, New York, New York 4Juravinski Cancer Centre McMaster  University, Hamilton, Ontario, Canada 5Kolltan Pharmaceuticals, Inc, New Haven, Connecticut  "
+},
+{
+     "paragraph4": "6Novartis Pharma AG, Basel, Switzerland 7Finell Clinical Ltd, London, United Kingdom 8Astellas  Pharma Global Development, Northbrook, Illinois 9Piramal Imaging GmbH, Berlin, Germany  "
+},
+{
+     "paragraph5": "10Karmanos Cancer Institute/Wayne State University, Detroit, Michigan "
+},
+{
+          "section:1": "Abstract"
+},
+{
+          "paragraph1": "Purpose—Cross-talk between type I IGF receptor (IGF1R), insulin receptor (INSR), and  epidermal growth factor receptor (EGFR) mediates resistance to individual receptor blockade. This  study aimed to determine the MTD, safety, pharmacokinetics, pharmacodynamics, and preliminary  antitumor activity of linsitinib, a potent oral IGF1R/INSR inhibitor, with EGFR inhibitor erlotinib. "
+},
+{
+          "paragraph2": "Experimental Design—This open-label, dose-escalation study investigated linsitinib schedules  S1: once daily intermittent (days 1–3 weekly); S2, once daily continuous; S3, twice-daily  continuous; each with erlotinib 100–150 mg once daily; and a non–small cell lung cancer  (NSCLC) expansion cohort. "
+},
+{
+          "paragraph3": "Corresponding Author: Valentine M. Macaulay, Oxford Cancer and Haematology Centre, Churchill Hospital, Oxford OX3 7LJ, United  Kingdom. Phone: 4418-6561-7337; Fax: 4418-6561-7334; valentine.macaulay@oncology.ox.ac.uk.  Disclosure of Potential Conflicts of Interest V.M. Macaulay is a consultant/advisory board member for Boehringer Ingelheim. C.M. Rudin is a consultant/advisory board member  for Boehringer Ingelheim, Celgene and GlaxoSmithKline. R.A. Juergens is a consultant/advisory board member for AstraZeneca,  Boehringer Ingelheim and Roche, and reports receiving commercial research support from Astellas and AstraZeneca. A. Stephens has  ownership interest (including patents) in Piramal Imaging GmbH. S.M. Gadgeel is a consultant/advisory board member for Boehringer  Ingelheim and Genentech/Roche. No potential conflicts of interest were disclosed by the other authors. "
+},
+{
+          "paragraph4": "Authors’ Contributions Conception and design: V.M. Macaulay, M.R. Middleton, S.G. Eckhardt, R.A. Juergens, S. Gogov, S. McCarthy, S. Poondru, A.W.  Stephens Development of methodology: R. Gedrich, S. Gogov, S. Poondru Acquisition of data (provided animals, acquired and managed patients, provided facilities, etc.): V.M. Macaulay, M.R.  Middleton, S.G. Eckhardt, C.M. Rudin, R.A. Juergens, R. Gedrich, S. Gogov, S. Poondru, S.M. Gadgeel Analysis and interpretation of data (e.g., statistical analysis, biostatistics, computational analysis): V.M. Macaulay, M.R.  Middleton, S.G. Eckhardt, C.M. Rudin, R.A. Juergens, R. Gedrich, A.W. Stephens, S.M. Gadgeel Writing, review, and/or revision of the manuscript: V.M. Macaulay, M.R. Middleton, S.G. Eckhardt, C.M. Rudin, R.A. Juergens, R.  Gedrich, S. Gogov, S. McCarthy, S. Poondru, A.W. Stephens, S.M. Gadgeel Administrative, technical, or material support (i.e., reporting or organizing data, constructing databases): R. Gedrich, S.  McCarthy Study supervision: V.M. Macaulay, S.G. Eckhardt, R.A. Juergens, S. McCarthy "
+},
+{
+          "Figure": "nihms864808_page0_65.jpg"
+},
+{
+          "paragraph5": "HHS Public Access Author manuscript Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph6": "Published in final edited form as: Clin Cancer Res. 2016 June 15; 22(12): 2897–2907. doi:10.1158/1078-0432.CCR-15-2218. "
+},
+{
+          "paragraph7": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "section:1": "Results"
+},
+{
+          "paragraph1": "Ninety-five patients were enrolled (S1, 44; S2, 24; S3, 12; expansion cohort, 15) and  91 treated. Seven experienced dose-limiting toxicities: QTc prolongation (3), abnormal liver  function (2), hyperglycemia (1), and anorexia (1). Common adverse events included drug eruption  (84%), diarrhea (73%), fatigue (68%), nausea (58%), vomiting (40%). MTDs for linsitinib/ erlotinib were 450/150 mg (S1), 400/100 mg (S2). On the basis of prior monotherapy data, S3  dosing at 150 mg twice daily/150 mg once daily was the recommended phase II dose for the  expansion cohort. There was no evidence of drug–drug interaction. Pharmacodynamic data  showed IGF-1 elevation and reduced IGF1R/INSR phosphorylation, suggesting pathway  inhibition. Across schedules, 5/75 (7%) evaluable patients experienced partial responses: spinal  chordoma (268+ weeks), rectal cancer (36 weeks), three NSCLCs including 2 adenocarcinomas  (16, 72 weeks), 1 squamous wild-type EGFR NSCLC (36 weeks). Disease control (CR+PR+SD)  occurred in 38 of 75 (51%), and 28 of 91 (31%) patients were on study >12 weeks. "
+},
+{
+          "section:1": "Background"
+},
+{
+          "paragraph1": "—The linsitinib/erlotinib combination was tolerable with preliminary evidence of  activity, including durable responses in cases unlikely to respond to erlotinib monotherapy. "
+},
+{
+          "section:1": "Background"
+},
+{
+          "paragraph1": "Erlotinib is a potent first-generation inhibitor of EGFR, and is an established first-line  therapy for patients with NSCLC positive for exon 19 deletions or exon 21 mutations (1).  Erlotinib blocks EGFR kinase activity, suppressing downstream signaling via multiple  intermediates including the MAPK and PI3K–AKT pathways (2). These signaling pathways  are activated by additional receptors including IGF1R (3). IGF1R is expressed almost  ubiquitously by normal tissues, is activated by ligands IGF-1 and -2, and is required for  embryonic development and postnatal growth (4, 5). IGF1R has become a target for cancer  therapy, because components of the IGF axis are often aberrantly expressed in cancers, and  IGF pathway activation promotes tumorigenesis and metastasis (4, 6). Furthermore, IGF1R  overexpression is associated with adverse survival in several tumor types (7–10). Cancers  also express a variant form of the insulin receptor (INSR-A) that is activated by IGF-2 and  insulin to drive proliferation and cell survival (11). INSR-A signaling can compensate for  IGF1R inhibition (12), and coinhibition of IGF1R and INSR may provide enhanced  antitumor activity (13, 14). "
+},
+{
+          "paragraph2": "Linsitinib (OSI-906) is a potent, orally bioavailable dual IGF1R and INSR tyrosine kinase  inhibitor (TKI) with antiproliferative effects in a variety of tumor cell lines, and antitumor  activity in an IGF1R-driven xenograft model (15, 16). Preliminary antitumor activity has  been reported for single-agent linsitinib in patients with solid tumors including partial  responses (PR) in melanoma and adrenocortical carcinoma (17–19). Combined IGF1R/ INSR and EGFR blockade may enhance inhibition of common downstream signaling  pathways, and suppress resistance to single receptor blockade (6, 14, 20). Preclinical data  indicate that IGF1R mediates acquired resistance to erlotinib in lung cancers with wild-type  EGFR, and combined inhibition of IGF1R/INSR and EGFR results in supra-additive  inhibition of tumor growth in vitro and in vivo in NSCLC, breast, pancreatic, and colorectal  cancer (CRC; refs. 21–25). Furthermore, in a recent CRC xenograft study, erlotinib-resistant  tumors had marked IGF-2 overexpression, and were sensitized to EGFR inhibition by a  small-molecule IGF1R TKI (26). "
+},
+{
+          "paragraph3": "Macaulay et al. Page 2 "
+},
+{
+          "paragraph4": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "section:1": "Patients and Methods"
+},
+{
+          "paragraph1": " linsitinib was combined with erlotinib in patients with advanced solid  tumors. The primary objectives were to determine the maximum tolerated dose (MTD) and  define the recommended phase II dose (RP2D) of linsitinib plus erlotinib. Secondary  objectives were to evaluate safety, preliminary antitumor activity, pharmacokinetic, and  pharmacodynamic profiles. "
+},
+{
+               "section:2": "Patient population"
+},
+{
+               "paragraph1": "s "
+},
+{
+               "section:2": "Patient population"
+},
+{
+               "section:2": "Study design"
+},
+{
+               "paragraph1": "le patients ≥18 years were eligible if they had a histologically or cytologically  confirmed advanced solid tumor and Eastern Cooperative Oncology Group (ECOG)  performance status (PS) of 0–2. Patients were required to be nonsmokers for ≥3 months  prior to study entry, have a negative urine cotinine test, and have adequate cardiac,  hematopoietic, hepatic, and renal function, including corrected QT interval (QTc) ≤450 ms  with no concurrent use of drugs that may prolong QTc, fasting glucose ≤125 mg/dL (7.0  mmol/L), and blood ketones equal to or below the upper limit of normal. Patients were  excluded for a history of diabetes mellitus or significant heart disease, prior EGFR or IGF1R  inhibitor therapy, or use ≤14 days of strong or moderate CYP3A4 or CYP1A2 inhibitors/ inducers, proton pump inhibitors, or drugs with an established risk of causing QTc  prolongation. Prior anticancer therapy was permissible if chemotherapy was discontinued 3  weeks prior to the study (4 weeks for carboplatin or investigational agents, 6 weeks for  nitrosoureas and mitomycin C), hormonal therapy was discontinued prior to trial therapy and  patients had recovered from any acute radiation toxicity and recent surgery. For inclusion in  the advanced NSCLC expansion cohort, patients required measurable disease per Response  Evaluation Criteria in Solid Tumors (RECIST) v1.1 (27), and archival tumor tissue available  for analysis. Study approval was obtained from the Independent Ethics Committee or  Institutional Review Board at each site. This study was conducted according to the  principles of the Declaration of Helsinki, Good Clinical Practice, International Conference  on Harmonization guidelines and applicable laws and regulations. Patients signed written  informed consent prior to initiation of study-specific procedures. "
+},
+{
+               "section:2": "Study design"
+},
+{
+               "paragraph1": "This was a multicenter, phase I, open-label study of linsitinib plus erlotinib in patients with  advanced solid tumors (NCT00739453). The primary objectives were to determine the MTD  and establish the RP2D of linsitinib plus erlotinib. Secondary study objectives included  safety, pharmacokinetic and pharmacodynamic profiles, antitumor activity, and potential  correlation between exploratory biomarkers and clinical outcomes in an expansion cohort of  patients with advanced NSCLC. "
+},
+{
+               "paragraph2": "A standard “3 + 3” dose-escalation design was used in 3 oral linsitinib dose schedules of 21- day treatment cycles. In the S1 intermittent schedule, linsitinib was administered on days 1– 3 every 7 days, starting at 50 mg once daily, escalating to 600 mg once daily. Schedule 2  (S2) continuous dosing of linsitinib started at 50 mg once daily, escalating to 400 mg, and in  schedule 3 (S3) twice daily continuous schedule, linsitinib was administered at 100 or 150  mg twice daily. Oral erlotinib was administered at 100 or 150 mg QD on days 2–21 of the  "
+},
+{
+               "paragraph3": "Macaulay et al. Page 3 "
+},
+{
+               "paragraph4": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+               "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph6": "first cycle and days 1–21 for the remaining cycles. Initiation of schedules S1–S3 occurred  consecutively with the next schedule starting following clinically significant related grade ≥2  toxicity in the previous schedule, or achievement of ≥2 dose levels in the previous schedule  without dose-limiting toxicity (DLT). Following completion of S1–S3, a NSCLC expansion  cohort was initiated, administering linsitinib 150 mg twice daily, the established  monotherapy RP2D (18), starting at day 1, and erlotinib at 150 mg QD starting at day 8 of  cycle 1. "
+},
+{
+               "section:2": "Safety and efficacy"
+},
+{
+               "paragraph1": "using the National Cancer Institute Common Terminology Criteria for  Adverse Events (AEs) v3.0 and DLTs were defined as clinically significant toxicity  considered to be related to study drug and occurring during the initial cycle. DLTs included  standard hematologic (grade 4 neutropenia or thrombocytopenia, grade ≥3 febrile  neutropenia, documented grade ≥3 infection with grade ≥3 neutropenia) and nonhematologic  criteria (any grade ≥3 toxicity excluding fatigue, γ-glutamyl transferase elevation, nausea, or  rash). Additional DLTs included glucose intolerance, defined as grade 3 symptoms of  hyperglycemia accompanied by grade 2 hyperglycemia (fasting glucose >160 mg/dL or 8.9  mmol/L), grade 3 fasting glucose >250 mg/dL (13.9 mmol/L), grade 3 electrolyte  abnormalities due to glucose intolerance, positive ketones (above the upper limit of normal),  or grade 4 hyperglycemia (glucose >500 mg/dL or 27.8 mmol/L). Also included as DLTs  were drug-related toxicity of any severity causing inability to begin a second cycle by day 36  in any schedule, or to complete the first cycle in S1, or requiring interruption of dosing ≥5  continuous days in S2 and S3. DLTs were assessed during the initial 21-day cycle with final  assessment on day 22, along with the need for subsequent dose interruptions, delays, or  occurrence of cumulative toxicity. DLTs were assessed in ≥3 patients per cohort and patients  had to complete a full cycle before the next dose level could be opened. Following a DLT, 3  additional patients were treated at that dose level, up to 6 per cohort. The DLT population  comprised patients in S1 who did not miss >3 days of linsitinib and >5 days of erlotinib  during the initial cycle, and patients in S2 and S3 who did not miss >5 days dosing of either  drug during the initial cycle. The MTD was defined as the highest dose at which no more  than 1 of 6 patients experienced a DLT (i.e., the dose level below that which induced a DLT  in ≥33% of patients). The NSCLC expansion cohort was enrolled using dosing based on the  S3 schedule, and clinical safety and pharmacokinetic data from the twice daily monotherapy  study (18). "
+},
+{
+               "section:2": "Safety"
+},
+{
+               "paragraph1": "and efficacy "
+},
+{
+               "paragraph2": "AEs were recorded from the signing of informed consent to 30 days after the final dose of  study drug. Laboratory data included hematology (full blood count including hemoglobin,  hematocrit, platelets, and reticulocyte counts) and biochemistry data: blood glucose, insulin,  lactate, blood ketones, blood urea nitrogen, creatinine, total bilirubin, alanine  aminotransferase (ALT), aspartate aminotransferase (AST), albumin, alkaline phosphatase,  total protein, electrolytes, γ-glutamyl transferase, lactate dehydrogenase, lipase, total  cholesterol, and triglycerides. During the initial cycle, blood glucose was monitored twice  daily by patients using a home glucometer. Safety was also monitored by physical  examination and electrocardiogram predose on day 1, postdose on days 1, 2, 8, and 15 of the  first cycle, pre- and postdose on day 22, predose on day 1 of every subsequent cycle, and at  "
+},
+{
+               "paragraph3": "Macaulay et al. Page 4 "
+},
+{
+               "paragraph4": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+               "section:2": "Pharmacokinetics"
+},
+{
+               "paragraph1": " Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph2": "last study visit. Measurable disease was required only for enrollment of the expansion  cohort, but disease status, evaluated by RECIST, was assessed in all patients every 6 to 8  weeks by physical and radiologic examination. Patients were evaluable for efficacy if they  had measurable disease according to RECIST, received at least 21 days of therapy, and  underwent disease re-evaluation. "
+},
+{
+               "section:2": "Pharmacokinetics"
+},
+{
+               "paragraph1": "For patients on schedules S1–S3, plasma samples were collected on day 1 predosing of  linsitinib, at intervals between 1 and 24 hours postdose, and at the same timepoints on day 2  pre- and postdosing of linsitinib with the first dose of erlotinib. Further samples were  collected on days 3 and 15 immediately prior to linsitinib and erlotinib dosing, and on day  22 (day 1 of cycle 2) predose and at intervals 1–24 hours postdose. Patients in the NSCLC  expansion cohort were sampled on day 7 pre-linsitinib dosing and 1 to 10 or 12 hours  postdose (the latter immediately prior to the second linsitinib dose of the day), on day 8  predosing with linsitinib, and 1, 2 (immediately before the first erlotinib dose), 3, 4, 6, 8, 10,  or 12 hours postdose, also on days 9 and 15 predose, and days 22–23 (i.e., cycle 2 days 1–2)  as days 8–9. Plasma concentration versus time profiles of linsitinib, erlotinib, and OSI-420  (metabolite of erlotinib) were obtained from the analysis of plasma samples, using a  validated liquid chromatography-tandem mass spectrometry method. The WinNonlin  program (Pharsight Corporation) with standard noncompartmental methods was used to  determine the following pharmacokinetic variables for linsitinib, erlotinib, and OSI-420:  maximum observed plasma concentration (Cmax), time to maximum observed plasma  concentration (Tmax), trough plasma concentration (Ctrough), and area under the plasma  concentration–time curve (AUC) over a dosing interval. Oral clearance (CL/F) of linsitinib  was calculated by dividing the dose by AUC. Descriptive statistics were used to summarize  the pharmacokinetic parameters for each dose cohort. "
+},
+{
+               "section:2": "Pharmacodynamics"
+},
+{
+               "paragraph1": "Exploratory analyses of potential pharmacodynamic and molecular markers for response to  linsitinib and erlotinib were performed where possible on plasma and tumor samples. Blood  samples were collected predose on days 1, 2, 3, 15, 22, and 23, and at 2 and 4 hours  postdose on days 1, 2, and 22. Samples from patients on the NSCLC expansion cohort were  collected prior to linsitinib dosing on days 1, 8, 9, 15, and 22 (only on odd-numbered cycles)  to assess levels of IGF-1 using the Total IGF-1 ELISA Kit (DSL/Beckman Coulter) or  human insulin-like growth factor-1 E20 Total IGF-1 ELISA (Mediagnost GmbH). Peripheral  blood mononuclear cells (PBMC) were isolated from blood samples obtained predose on  days 1, 2, 3, 15, 22, and 23 and postdose 2 and 4 hours on days 1, 2, and 22. NSCLC  expansion cohort samples were collected prior to linsitinib dosing on days 1, 8, 9, 15, and  22. PBMCs were lysed and used to assess phosphorylation of IGF1R and INSR using the  Proteome Profiler Human Phospho-RTK Array Kit (R&D Systems) according to the  manufacturer’s protocol. Mutation status of EGFR, K-RAS, PIK3CA, and BRAF was  determined on available archival tumor samples (10 patients) and plasma (30 patients) from  a total of 34 patients in the dose-escalation or NSCLC expansion phases using standard  PCR, ICE-COLD-PCR, and SURVEYOR and WAVE HS System analysis followed by  Sanger dideoxy sequencing (Transgenomic) as described previously (18). "
+},
+{
+               "paragraph2": "Macaulay et al. Page 5 "
+},
+{
+               "paragraph3": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "section:1": "Results"
+},
+{
+               "section:2": "Dose escalation and MTD"
+},
+{
+               "paragraph1": "e enrolled at four sites in the United States and United Kingdom,  including 44 in S1, 24 in S2, 12 in S3, and 15 in the NSCLC expansion cohort. Patient  demographics and baseline characteristics are shown in Table 1. Patients were ages 20–85  years and 98% had an ECOG PS of 0 or 1. The largest proportion of patients presented with  NSCLC (34%) followed by prostate cancer (5%), pancreatic cancer (4%), and CRC (4%).  Approximately 50% of patients had received at least 3 previous lines of treatment (Table 1).  Of the 95 patients, 91 were treated and included in the safety and pharmacokinetic  populations, 67 in the DLT population, and 75 in the efficacy population. Ninety patients  discontinued the study, 69 (77%) due to disease progression, 13 (14%) due to an AE, and 8  (9%) by patient request. "
+},
+{
+               "section:2": "Dose escalation and MTD"
+},
+{
+               "paragraph1": "In the dose-escalation phase, 7 patients experienced 10 DLTs (4 in S1, 2 in S2, and 1 in S3),  including QTc prolongation, hyperglycemia, elevated liver function tests, and anorexia  (Table 2A). All DLTs were considered related to linsitinib alone or the linsitinib/erlotinib  combination. MTDs were established for the intermittent S1 schedule as 450 mg linsitinib  once daily days 1–3 every 7 days and 150 mg erlotinib once daily, and for the continuous S2  schedule as 400 mg linsitinib once daily and 100 mg erlotinib once daily. The S3 schedule  did not achieve ≥33% of patients with DLTs; dose escalation was not pursued further  because the RP2D for linsitinib as monotherapy was established at 150 mg linsitinib twice  daily in a separate clinical study (18), and erlotinib was already at the approved dose. This  dose combination was chosen as the RP2D for the expansion cohort due to the acceptable  safety profile in the S3 schedule (no AEs of grade >3), and because pharmacokinetic and  pharmacodynamic data from the mono-therapy study indicated that continuous dosing of  150 mg linsitinib twice daily reached adequate exposure predicted for IGF1R inhibition  (18). "
+},
+{
+               "section:2": "Safety"
+},
+{
+               "paragraph1": "Of the 91 treated patients, 89 of 91 (98%) experienced treatment-related AEs, of maximum  severity grade 1 in 15 patients (16%), grade 2 in 47 (52%), grade 3 in 24 (26%), and grade 4  in 3 (3%). The most common treatment-emergent AEs across all cohorts were drug eruption  (84%), diarrhea (73%), fatigue (68%), nausea (58%), and vomiting (40%), with frequencies  similar across the dosing schedules except that vomiting occurred more often in S3 (67%  compared with 32%–40% in other cohorts; Table 2B). Fatigue was more common in S1  (72%) and S2 (75%) compared with S3 (58%) and the expansion cohort (53%), and was the  only treatment-emergent AE to occur at grade ≥3 in ≥5% of patients, observed only in S1  and S2. "
+},
+{
+               "paragraph2": "AE causality was determined by investigator judgment based on known AEs of erlotinib and  linsitinib. AEs related specifically to linsitinib occurred in 43% of patients, including 48% in  S1, 33% in S2, 25% in S3, and 60% in the expansion cohort. The most common were  fatigue (12%), nausea (11%), vomiting (8%), and prolonged QTc interval (8%); all the  linsitinib-related AEs in S1 and S2 occurred in patients receiving ≥300 mg linsitinib.  "
+},
+{
+               "paragraph3": "Macaulay et al. Page 6 "
+},
+{
+               "paragraph4": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+               "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph6": "Erlotinib-related AEs were reported in 84% of patients and the most common were drug  eruption (74%), dry skin (26%), pruritus (26%), and diarrhea (26%). AEs attributed to both  linsitinib and erlotinib were reported in 82% of patients; the most common were fatigue  (45%), diarrhea (43%), nausea (37%), and anorexia (20%). "
+},
+{
+               "paragraph7": "Serious AEs (SAEs) were reported in 42% including 52% of patients in S1, 21% in S2, 42%  in S3, and 47% in the expansion cohort, with nausea (7%) and vomiting (7%) the most  frequent drug-related SAEs. Treatment-related SAEs occurred in 13 patients (14%)  including 10 of 40 (25%) patients in S1 and 3 of 15 (20%) in the expansion cohort. These  included SAEs related to both linsitinib and erlotinib: fatigue (1 patient), malaise (1), nausea  (1), vomiting (3), diarrhea (2), anemia (1), increased ALT (2), increased AST (1), acute renal  failure (1), QTc prolongation (1), and gastrointestinal perforation (1). SAEs attributed to  erlotinib alone were rash (1), pneumonitis (1), gastrointestinal perforation (1),  gastrointestinal hemorrhage (1). One SAE was considered to be related to linsitinib alone:  grade 3 hyperglycemia occurred in 2 patients in S1 and 1 patient in the expansion cohort.  AEs led to study discontinuation for 13 patients, including 6 (15%) in S1, 2 (8%) in S2, 3  (25%) in S3, and 2 (13%) in the expansion cohort. Of those, 3 patients had an event related  to erlotinib only, 1 to linsitinib only (prolonged QTc interval), and 5 to the combination.  Nine patients died within 30 days of the last linsitinib dose, due to underlying disease (7  patients), pneumonia (1), or dehydration following a suicide attempt (1). "
+},
+{
+               "paragraph8": "AEs of special interest to linsitinib include hyperglycemia, hypoglycemia, and prolonged  QTc interval. Linsitinib-related hyperglycemia occurred in 5 patients (5%) including 3 in S1  and 2 in the expansion cohort, at grade 3 (3 cases) and grade 2 (2). All instances of  hyperglycemia responded to temporary (3–5 days) interruption of linsitinib, followed by  reduction of linsitinib to the next lowest dose. Glucometer readings indicated grade 3–4  hypoglycemia in 8 patients, including 2 patients treated on schedule S3 at the RP2D. Only 1  of these low readings, in an S1 patient, was accompanied by simultaneous serum glucose  measurement showing low glucose (grade 2). Prolonged QTc occurred in 9 patients (10%;  see Table 2B): grade 1 in 2 patients (S1: 450/100 mg and S2: 300/150 mg), grade 2 in 5  patients (S1: 400/150 mg, 1 case, and 450/150 mg, 2 cases; S2: 1 case at 400/150 mg;  NSCLC expansion cohort: 1 case at 150/150 mg), and grade 3 in 2 patients (S1: 450/150 mg  and S2: 400/150 mg); 7 of these were attributed to linsitinib. It was unclear whether there  was a relationship between occurrence of QTc prolongation and peak circulating drug  concentrations; however, in another study QTc prolongation was associated with peak  concentrations of linsitinib at the 600 mg dose (unpublished data). "
+},
+{
+               "section:2": "Pharmacokinetic analysis"
+},
+{
+          "section:1": "Figure 1"
+},
+{
+          "paragraph1": " shows median plasma linsitinib levels in patients treated at S1, S2, or S3 MTDs.  Levels peaked at 4 hours, declined over 24 hours in the S1 and S2 cohorts to near or below  the 400 ng/mL (~1μmol/L) level associated with preclinical activity (15, 16), and were  maintained above this threshold in the twice daily S3 cohort. Profiles were similar following  day 1 (linsitinib alone) and day 2 (combination) dosing. Linsitinib Cmax and AUC from time  zero to infinity increased in a dose-proportional manner in a comparison of dose-normalized  parameters in S1 and S2. In the NSCLC expansion cohort, where linsitinib was dosed from  "
+},
+{
+          "paragraph2": "Macaulay et al. Page 7 "
+},
+{
+          "paragraph3": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "section:2": "Efficacy"
+},
+{
+               "paragraph1": " erlotinib from day 8, linsitinib pharmacokinetic parameters were similar after  dosing 150 mg linsitinib twice daily as a single agent (day 7) and in combination with 150  mg erlotinib once daily (days 8 and 22; Table 3, Fig. 1B). These data suggest that there was  no significant drug–drug interaction effect on linsitinib pharmacokinetic parameters.  Furthermore, analysis of erlotinib and OSI-420 pharmacokinetics after dosing the linsitinib/ erlotinib combination (Table 3, Fig. 1) showed parameters similar to previously published  data after erlotinib monotherapy (28, 29), suggesting that linsitinib did not alter the  pharmacokinetics of erlotinib. "
+},
+{
+               "section:2": "Efficacy"
+},
+{
+               "paragraph1": "Of 75 patients evaluable for efficacy, none achieved complete response, 5 (7%) achieved PR,  and 33 (44%) had stable disease (SD) for a minimum of 6 weeks (Table 4A). The 5 patients  achieving PR included 2 on the intermittent S1 schedule (NSCLC, rectal cancer), 1 on S2  (spinal chordoma), and 2 with NSCLC treated at the RP2D in the expansion cohort. Disease  control rate (CR + PR + SD) occurred in 10 patients in S1 (32%), 13 patients in S2 (68%), 6  patients in S3 (55%), and 9 patients in the expansion cohort (64%). Duration on study by  treatment schedule is shown in Fig. 2A. The median (mean ± SE) duration of treatment was  6 (12 ± 3) weeks in S1, 10 (23 ± 9) weeks in S2, 7 (17 ± 7) weeks in S3 and 6 (11 ± 2)  weeks in the expansion cohort. Overall 28 of 91 (31%) patients were on study for >12  weeks, including 9 of 40 (22.5%) patients in S1, 11 of 24 (46%) in S2, 3 of 12 (25%) in S3,  and 5 of 15 (33%) in the NSCLC expansion cohort. The 5 patients achieving PR remained  on study for 16, 36, 36, 72, and 268+ weeks. "
+},
+{
+               "section:2": "Pharmacodynamic analysis"
+},
+{
+               "paragraph1": "ited 31 NSCLC patients including 22 with adenocarcinoma and 9  with nonadenocarcinoma histology (4 squamous, 2 papillary, 1 mixed adenosquamous, 2  unclassified). Of the patients with adenocarcinoma, 2 (9%) achieved PR, 1 in S1 and 1 in the  expansion cohort, 7 (32%) SD, and 13 (59%) PD. Equivalent figures for the  nonadenocarcinoma cases were 1 (11%) PR in a patient treated on the expansion cohort, 5  (56%) SD, 3 (33%) PD. The 15 NSCLC patients treated in the expansion cohort at the RP2D  included 11 with adenocarcinoma (1 with PR, 5 with SD, 5 with PD) and 4 with  nonadenocarcinoma histology (1 PR, 2 SD, 1 PD). Figure 2B shows chest CT images from a  patient with squamous NSCLC who achieved PR during treatment at the RP2D. "
+},
+{
+               "section:2": "Pharmacodynamic analysis"
+},
+{
+               "paragraph1": "PBMCs from 9 patients were analyzed for IGF1R and INSR phosphorylation, including 3  patients in S1 (2 at 150 mg, 1 at 450 mg), 5 in S2 (2 at 300 mg, 3 at 400 mg), and 1 in S3  (150 mg twice daily). Two cases showed no detectable signal; data for the remaining 7 cases  are shown in Fig. 2C. IGF1R/INSR phosphorylation was substantially inhibited 2 to 24  hours after the first dose. Later time points showed fluctuating receptor inhibition in patients  on the intermittent S1 schedule and persisting receptor inhibition in patients treated with  ≥300 mg linsitinib daily in S2 and S3. However, there was considerable variation between  patients, some showing recovery in predose samples taken on days 3, 15, and 23. Circulating  IGF-1 was measured in 72 cases to assess endocrine response to pathway blockade.  Compared with baseline (predose) levels, IGF-1 increased by ≥130% during cycle 1 in 15 of  31 (48%) patients with informative data in S1, 13 of 19 (68%) in S2, 11 of 12 (92%) in S3,  "
+},
+{
+               "paragraph2": "Macaulay et al. Page 8 "
+},
+{
+               "paragraph3": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+               "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph5": "and 10 of 10 expansion cohort patients (Fig. 2D). Although not statistically significant, these  results suggest a trend to greater fold increase in IGF-1 in patients receiving linsitinib twice  daily. Of 10 evaluable patients in the NSCLC expansion cohort, there was a consistent  increase in circulating IGF-1 >130% at all sampled time points in 5 patients, and some  values <130% in 5 cases, suggesting variable IGF1R inhibition. "
+},
+{
+          "section:1": "Discussion"
+},
+{
+          "paragraph1": "alysis was performed on DNA extracted from 10 tumors (8 NSCLC, 1 rectal  cancer, 1 chordoma), circulating tumor DNA (ctDNA) of corresponding plasma samples,  and an additional 24 ctDNAs without matched tumor. Table 4B shows data from informative  cases. Of the 5 PR patients, analysis of ctDNA detected an EGFR exon 19 deletion in 1  patient with NSCLC, and PIK3CA exon 9 mutation in the spinal chordoma, although the  latter was not detected in tumor DNA. Mutations in EGFR, KRAS, PIK3CA, and BRAF  were not detected in plasma or tumor DNA of the other 3 patients achieving PR: 2 with  NSCLC, including the patient shown in Fig. 1B, and 1 with rectal cancer. EGFR exon 19  mutations were detected in ctDNA of 2 further NSCLC patients, both treated at the RP2D in  the NSCLC expansion cohort. Neither responded to trial therapy; both cases had received  prior erlotinib and also harbored the exon 20 T790M mutation associated with erlotinib  resistance (30, 31). A CRC patient with brief SD as best response had ctDNA mutations in  both PIK3CA (E542K) and KRAS (G12V). KRAS codon 12 mutations were also detected  in the plasma and tumor DNA of 2 NSCLC patients, both with SD as best response (duration  6 weeks, 30 weeks). "
+},
+{
+          "section:1": "Discussion"
+},
+{
+          "paragraph1": "This study demonstrates that combination treatment with linsitinib and erlotinib has  acceptable tolerability, with no pharmacokinetic evidence of significant drug–drug  interaction, and detectable but modest antitumor activity in unselected patients. MTDs were  defined as 450 mg linsitinib once daily days 1–3 every 7 days with 150 mg erlotinib once  daily in the S1 schedule, and 400 mg linsitinib once daily with 100 mg erlotinib once daily  for the S2 once daily continuous schedule. This compares with linsitinib MTDs defined in  monotherapy studies of 600 mg linsitinib for intermittent dosing and 400 mg once daily for  continuous once daily dosing (17, 18). On the basis of the data from this trial and the  monotherapy study, and the finding that linsitinib has a short half-life (5 hours; 18), twice  daily dosing is required to achieve continuous inhibition of IGF1R and INSR, with RP2D  for the combination of 150 mg linsitinib twice daily and 150 mg erlotinib once daily. In all,  64 patients in the S1 and S2 cohorts received total linsitinib doses above the RP2D (300 mg/ day), reflecting the fact that recruitment was conducted in parallel with the monotherapy  studies (17, 18), and information on monotherapy RP2D was available only towards the end  of the current trial. "
+},
+{
+          "paragraph2": "The most common linsitinib-related AEs were fatigue, nausea, vomiting, and QTc  prolongation, similar to those reported in monotherapy studies (17–19). The three dosing  schedules had similar toxicities, except that linsitinib treatment-related SAEs occurred in 10  of 40 (25%) patients in S1 but not in S2 or S3, suggesting that continuous linsitinib dosing  may be better tolerated, perhaps reflecting metabolic changes associated with intermittent  IGF1R/INSR blockade. Specific AEs in this study reflected toxicities observed in  "
+},
+{
+          "paragraph3": "Macaulay et al. Page 9 "
+},
+{
+          "paragraph4": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph6": "monotherapy studies of linsitinib and IGF1R antibodies, including hyperglycemia and  abnormal liver function (17–19, 32–36), suggesting that these are class effects of IGF1R  inhibition. In contrast thrombocytopenia and neutropenia were reported in studies of IGF-1R  antibodies (37) but were not observed with linsitinib. QTc prolongation was dose-limiting in  this trial, as with other small-molecule drugs, is not considered to be mechanism based (38),  and was not observed in IGF1R antibody trials (33–37). "
+},
+{
+          "paragraph7": "Recent reviews have discussed the limited clinical activity of single-agent IGF1R inhibition,  and the degree of IGF1R/INSR blockade achieved by IGF axis inhibitors of different classes  (5, 6, 14). IGF1R antibodies downregulate IGF1Rs, whereas IGF1R TKIs suppress receptor  activity without influencing IGF1R expression (6). IGF1R antibodies demonstrated single- agent activity in soft tissue sarcomas, Ewing and thymic tumors, but not in common cancers  (6, 32, 33, 36,39). Linsitinib is the first IGF1R/INSR TKI to report clinically, and as  monotherapy induced partial responses in adrenocortical carcinoma and melanoma (17, 18).  In a randomized phase III trial in adrenocortical carcinoma, 3 of 90 patients on the linsitinib  arm experienced durable PR, with no difference in overall survival between linsitinib and  placebo arms (19). Linsitinib has also been combined with everolimus in metastatic CRC,  with no evidence of clinical activity (40). "
+},
+{
+          "paragraph8": "In light of these concerns about efficacy, pharmacokinetic and pharmacodynamic analyses  tested whether IGF1R and INSR were blocked by linsitinib. Dosing at the RP2D maintained  median plasma linsitinib levels above the predicted concentration required for antitumor  activity (16). IGF1R inhibition induces an increase in circulating IGF-1, attributed to  hypothalamic–pituitary axis activation in response to pituitary IGF1R blockade (4). We  observed a trend to greater IGF-1 increase in patients dosed with linsitinib twice daily,  although differences between cohorts were not significant, and the relative increase in  circulating IGF-1 did not appear to correlate with clinical response. There was evidence of  durable inhibition of PBMC IGF1Rs/INSRs in patients treated with linsitinib twice daily, but  some indications of incomplete receptor blockade even at the RP2D, as judged by variable  elevation of circulating IGF-1, and hypoglycemia, likely due to restoration of INSR  responsiveness in the context of hyperinsulinemia. These data suggest that receptor blockade  may have been intermittent in some patients, highlighting the importance of assessing  IGF1R/INSR axis activity in clinical material (6). Key issues for IGF1R/INSR TKIs include  the extent to which complete IGF1R/INSR-A blockade is achievable clinically, the  consequences of inhibiting the metabolic INSR, and the identification of kinase-independent  functions for IGF1R (41, 42), which may be suppressed by IGF1R antibodies but unaffected  by kinase inhibition. "
+},
+{
+          "paragraph9": "This is the first study to assess combined IGF1R/EGFR inhibition using two small-molecule  inhibitors. Previous trials evaluated erlotinib with IGF1R antibodies cixutumumab or R1507.  In advanced NSCLC, the combination of cixutumumab plus erlotinib was not tolerable and  was ineffective, with SD as best response (43). Also in NSCLC, R1507 was tolerable with  erlotinib; there was no progression-free survival or overall survival advantage over erlotinib  alone in unselected patients, but the 12-week progression-free survival rate in patients with  KRAS-mutant tumors was 36% for R1507 versus 0% on the placebo arm (44). In the current  study, combination treatment with linsitinib and erlotinib showed preliminary evidence of  "
+},
+{
+          "paragraph10": "Macaulay et al. Page 10 "
+},
+{
+          "paragraph11": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph12": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph13": "antitumor activity, and durable objective responses occurred in patients on all three linsitinib  schedules, with 28 of 91 (31%) patients on study for >12 weeks. "
+},
+{
+          "paragraph14": "We did not attempt to quantify IGF1R or EGFR in the tumors of trial subjects, as these  parameters have not been shown to be useful predictive biomarkers (6). In a subset of  patients, we were able to analyze ctDNA and archival tumor DNA, to investigate  correlations between tumor-derived mutations and response. Functionally significant KRAS  mutations were detected in 2 NSCLC patients, both of whom had SD, one durable. There are  conflicting reports of the association of RAS mutation and/or RAS–MEK–ERK pathway  activation with response to IGF1R inhibition, some (including the clinical R1507 study  highlighted above) supporting association with sensitivity to IGF1R inhibition (44–46), and  others with resistance (47, 48). EGFR mutations were detected in ctDNA of 3 of 30 NSCLC  cases, consistent with the published incidence (10%–13%) of NSCLC EGFR mutations (49).  The clinical response in a patient with EGFR exon 19-deleted NSCLC (Table 4B) is  consistent with the association between this mutation and erlotinib sensitivity, and the  additional “gatekeeper” EGFR T790M mutation, detected in 2 nonresponders here, with  erlotinib resistance (30, 31, 50). The presence of only 2 informative cases harboring EGFR  T790M is insufficient to assess activity of the linsitinib/erlotinib combination in this setting.  However, there was evidence of clinical activity in tumors unlikely to respond to single- agent erlotinib, including durable partial responses in EGFR wild-type squamous lung  cancer and spinal chordoma. Further analysis of the latter will be reported separately. "
+},
+{
+          "paragraph15": "In summary, treatment with linsitinib and erlotinib was found to be tolerable in patients with  advanced solid tumors, and induced durable objective responses in a minority of patients.  Effective development of this approach will require clarification of the extent of pathway  blockade and identification of predictive biomarkers for this combination. "
+},
+{
+          "paragraph16": "Acknowledgments "
+},
+{
+          "paragraph17": "The authors acknowledge the support and cooperation of the patients and their families. V.M. Macaulay and M.R.  Middleton are grateful for support from the National Institute for Health Research Oxford Biomedical Research  Centre and Oxford Experimental Cancer Medicine Centre, and for skillful management of the Oxford patients by  Mrs. Martha Woodward, research nurse, Early Phase Clinical Trials Unit, Oxford Cancer Centre. R.A. Juergens and  C.M. Rudin would like to thank Susan Marcus, research nurse, for her work with the Johns Hopkins Hospital  patients treated on this trial. The authors also thank Geoffrey Yuen, PharmD for pharmacokinetic analysis, Tiffany  Logan for biomarker analysis and Melissa Kirk, a professional medical writer from Scientific Connexions, an  Ashfield Company, for assistance in the preparation of the manuscript. "
+},
+{
+          "paragraph18": "Grant Support "
+},
+{
+          "section:1": "References"
+},
+{
+          "paragraph1": "was supported by Astellas Pharma, Inc. Editorial assistance was provided by Melissa Kirk, of Scientific  Connexions, an Ashfield company, part of UDG Healthcare plc, and was funded by the study sponsor. "
+},
+{
+          "section:1": "References"
+},
+{
+          "paragraph1": "1. Melosky B. Review of EGFR TKIs in metastatic NSCLC, including ongoing trials. Front Oncol.  2014; 4:244. [PubMed: 25309870]  "
+},
+{
+          "paragraph2": "2. Hidalgo M. Erlotinib: preclinical investigations. Oncology. 2003; 17:11–6. 3. Chitnis MM, Yuen JS, Protheroe AS, Pollak M, Macaulay VM. The type 1 insulin-like growth factor  receptor pathway. Clin Cancer Res. 2008; 14:6364–70. [PubMed: 18927274]  "
+},
+{
+          "paragraph3": "Macaulay et al. Page 11 "
+},
+{
+          "paragraph4": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph5": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph6": "4. Pollak M. The insulin and insulin-like growth factor receptor family in neoplasia:an update. Nat Rev  Cancer. 2012; 12:159–69. [PubMed: 22337149]  "
+},
+{
+          "paragraph7": "5. Gao J, Chang YS, Jallal B, Viner J. Targeting the insulin-like growth factor axis for the development  of novel therapeutics in oncology. Cancer Res. 2012; 72:3–12. [PubMed: 22215692]  "
+},
+{
+          "paragraph8": "6. King H, Aleksic T, Haluska P, Macaulay VM. Can we unlock the potential of IGF-1R inhibition in  cancer therapy? Cancer Treat Rev. 2014; 40:1096–105. [PubMed: 25123819]  "
+},
+{
+          "paragraph9": "7. Parker AS, Cheville JC, Janney CA, Cerhan JR. High expression levels of insulin-like growth factor- I receptor predict poor survival among women with clear-cell renal cell carcinomas. Hum Pathol.  2002; 33:801–5. [PubMed: 12203212]  "
+},
+{
+          "paragraph10": "8. Spentzos D, Cannistra SA, Grall F, Levine DA, Pillay K, Libermann TA, et al. IGF axis gene  expression patterns are prognostic of survival in epithelial ovarian cancer. Endocr Rel Cancer. 2007;  14:781–90. "
+},
+{
+          "paragraph11": "9. Dale OT, Aleksic T, Shah KA, Han C, Mehanna H, Rapozo DC, et al. IGF-1R expression is  associated with HPV-negative status and adverse survival in head and neck squamous cell cancer.  Carcinogenesis. 2015; 36:648–55. [PubMed: 25896444]  "
+},
+{
+          "paragraph12": "10. Kim JS, Kim ES, Liu D, Lee JJ, Solis L, Behrens C, et al. Prognostic implications of tumoral  expression of insulin like growth factors 1 and 2 in patients with non-small-cell lung cancer. Clin  Lung Cancer. 2014; 15:213–21. [PubMed: 24485233]  "
+},
+{
+          "paragraph13": "11. Belfiore A, Frasca F, Pandini G, Sciacca L, Vigneri R. Insulin receptor isoforms and insulin  receptor/insulin-like growth factor receptor hybrids in physiology and disease. Endocr Rev. 2009;  30:586–623. [PubMed: 19752219]  "
+},
+{
+          "paragraph14": "12. Ulanet DB, Ludwig DL, Kahn CR, Hanahan D. Insulin receptor functionally enhances multistage  tumor progression and conveys intrinsic resistance to IGF-1R targeted therapy. Proc Natl Acad Sci  U S A. 2010; 107:10791–8. [PubMed: 20457905]  "
+},
+{
+          "paragraph15": "13. Buck E, Gokhale PC, Koujak S, Brown E, Eyzaguirre A, Tao N, et al. Compensatory insulin  receptor (IR) activation on inhibition of insulin-like growth factor-1 receptor (IGF-1R): rationale  for cotargeting IGF-1R and IR in cancer. Mol Cancer Ther. 2010; 9:2652–64. [PubMed:  20924128]  "
+},
+{
+          "paragraph16": "14. Janssen JA, Varewijck AJ. IGF-IR targeted therapy: past, present and future. Front Endocrinol.  2014; 5:224. "
+},
+{
+          "paragraph17": "15. Ji QS, Mulvihill MJ, Rosenfeld-Franklin M, Cooke A, Feng L, Mak G, et al. A novel, potent, and  selective insulin-like growth factor-I receptor kinase inhibitor blocks insulin-like growth factor-I  receptor signaling in vitro and inhibits insulin-like growth factor-I receptor dependent tumor  growth in vivo. Mol Cancer Ther. 2007; 6:2158–67. [PubMed: 17671083]  "
+},
+{
+          "paragraph18": "16. Mulvihill MJ, Cooke A, Rosenfeld-Franklin M, Buck E, Foreman K, Landfair D, et al. Discovery  of OSI-906: a selective and orally efficacious dual inhibitor of the IGF-1 receptor and insulin  receptor. Future Med Chem. 2009; 1:1153–71. [PubMed: 21425998]  "
+},
+{
+          "paragraph19": "17. Jones RL, Kim ES, Nava-Parada P, Alam S, Johnson FM, Stephens AW, et al. Phase I study of  intermittent oral dosing of the insulin-like growth factor-1 and insulin receptors inhibitor OSI-906  in patients with advanced solid tumors. Clin Cancer Res. 2015; 21:693–700. [PubMed: 25208878]  "
+},
+{
+          "paragraph20": "18. Puzanov I, Lindsay CR, Goff L, Sosman J, Gilbert J, Berlin J, et al. A phase I study of continuous  oral dosing of OSI-906, a dual inhibitor of insulin-like growth factor-1 and insulin receptors, in  patients with advanced solid tumors. Clin Cancer Res. 2015; 21:701–11. [PubMed: 25212606]  "
+},
+{
+          "paragraph21": "19. Fassnacht M, Berruti A, Baudin E, Demeure MJ, Gilbert J, Haak H, et al. Linsitinib (OSI-906)  versus placebo for patients with locally advanced or metastatic adrenocortical carcinoma: a  double-blind, randomised, phase 3 study. Lancet Oncol. 2015; 16:426–35. [PubMed: 25795408]  "
+},
+{
+          "paragraph22": "20. van der Veeken J, Oliveira S, Schiffelers RM, Storm G, van Bergen en Henegouwen PM, Roovers  RC. Crosstalk between epidermal growth factor receptor- and insulin-like growth factor-1 receptor  signaling: implications for cancer therapy. Current Cancer Drug Targets. 2009; 9:748–60.  [PubMed: 19754359]  "
+},
+{
+          "paragraph23": "21. Qi HW, Shen Z, Fan LH. Combined inhibition of insulin-like growth factor-1 receptor enhances the  effects of gefitinib in a human non-small cell lung cancer resistant cell line. Exp Ther Med. 2011;  2:1091–5. [PubMed: 22977626]  "
+},
+{
+          "paragraph24": "Macaulay et al. Page 12 "
+},
+{
+          "paragraph25": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph26": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph27": "22. Suda K, Mizuuchi H, Sato K, Takemoto T, Iwasaki T, Mitsudomi T. The insulin-like growth factor  1 receptor causes acquired resistance to erlotinib in lung cancer cells with the wild-type epidermal  growth factor receptor. Int J Cancer. 2014; 135:1002–6. [PubMed: 24458568]  "
+},
+{
+          "paragraph28": "23. Camirand A, Zakikhani M, Young F, Pollak M. Inhibition of insulin-like growth factor-1 receptor  signaling enhances growth-inhibitory and proapoptotic effects of gefitinib (Iressa) in human breast  cancer cells. Breast Cancer Res. 2005; 7:R570–9. [PubMed: 15987464]  "
+},
+{
+          "paragraph29": "24. Jones HE, Gee JM, Barrow D, Tonge D, Holloway B, Nicholson RI. Inhibition of insulin receptor  isoform-A signalling restores sensitivity to gefitinib in previously de novo resistant colon cancer  cells. Br J Cancer. 2006; 95:172–80. [PubMed: 16819546]  "
+},
+{
+          "paragraph30": "25. Urtasun N, Vidal-Pla A, Perez-Torras S, Mazo A. Human pancreatic cancer stem cells are sensitive  to dual inhibition of IGF-IR and ErbB receptors. BMC Cancer. 2015; 15:223. [PubMed:  25886138]  "
+},
+{
+          "paragraph31": "26. Zanella ER, Galimi F, Sassi F, Migliardi G, Cottino F, Leto SM, et al. IGF2 is an actionable target  that identifies a distinct subpopulation of colorectal cancer patients with marginal response to anti- EGFR therapies. Sci Transl Med. 2015; 7:272ra12. "
+},
+{
+          "paragraph32": "27. Eisenhauer EA, Therasse P, Bogaerts J, Schwartz LH, Sargent D, Ford R, et al. New response  evaluation criteria in solid tumours: revised RECIST guideline (version 1.1). Eur J Cancer. 2009;  45:228–47. [PubMed: 19097774]  "
+},
+{
+          "paragraph33": "28. Hidalgo M, Siu LL, Nemunaitis J, Rizzo J, Hammond LA, Takimoto C, et al. Phase I and  pharmacologic study of OSI-774, an epidermal growth factor receptor tyrosine kinase inhibitor, in  patients with advanced solid malignancies. J Clin Oncol. 2001; 19:3267–79. [PubMed: 11432895]  "
+},
+{
+          "paragraph34": "29. Lu JF, Eppler SM, Wolf J, Hamilton M, Rakhit A, Bruno R, et al. Clinical pharmacokinetics of  erlotinib in patients with solid tumors and exposure-safety relationship in patients with non-small  cell lung cancer. Clin Pharm Ther. 2006; 80:136–45. "
+},
+{
+          "paragraph35": "30. Kobayashi S, Boggon TJ, Dayaram T, Janne PA, Kocher O, Meyerson M, et al. EGFR mutation  and resistance of non-small-cell lung cancer to gefitinib. N Engl J Med. 2005; 352:786–92.  [PubMed: 15728811]  "
+},
+{
+          "paragraph36": "31. Yu HA, Sima CS, Hellmann MD, Naidoo J, Busby N, Rodriguez K, et al. Differences in the  survival of patients with recurrent versus de novo metastatic KRAS-mutant and EGFR-mutant  lung adenocarcinomas. Cancer. 2015; 121:2078–82. [PubMed: 25781862]  "
+},
+{
+          "paragraph37": "32. Pappo AS, Vassal G, Crowley JJ, Bolejack V, Hogendoorn PC, Chugh R, et al. A phase 2 trial of  R1507, a monoclonal antibody to the insulin-like growth factor-1 receptor (IGF-1R), in patients  with recurrent or refractory rhabdomyosarcoma, osteosarcoma, synovial sarcoma, and other soft  tissue sarcomas: results of a Sarcoma Alliance for Research Through Collaboration study. Cancer.  2014; 120:2448–56. [PubMed: 24797726]  "
+},
+{
+          "paragraph38": "33. Rajan A, Carter CA, Berman A, Cao L, Kelly RJ, Thomas A, et al. Cixutumumab for patients with  recurrent or refractory advanced thymic epithelial tumours: a multicentre, open-label, phase 2 trial.  Lancet Oncol. 2014; 15:191–200. [PubMed: 24439931]  "
+},
+{
+          "paragraph39": "34. Abou-Alfa GK, Capanu M, O’Reilly EM, Ma J, Chou JF, Gansukh B, et al. A phase II study of  cixutumumab (IMC-A12, NSC742460) in advanced hepatocellular carcinoma. J Hepatol. 2014;  60:319–24. [PubMed: 24045151]  "
+},
+{
+          "paragraph40": "35. Strosberg JR, Chan JA, Ryan DP, Meyerhardt JA, Fuchs CS, Abrams T, et al. A multi-institutional,  phase II open-label study of ganitumab (AMG 479) in advanced carcinoid and pancreatic  neuroendocrine tumors. Endocr Rel Cancer. 2013; 20:383–90. "
+},
+{
+          "paragraph41": "36. Juergens H, Daw NC, Geoerger B, Ferrari S, Villarroel M, Aerts I, et al. Preliminary efficacy of the  anti-insulin-like growth factor type 1 receptor antibody figitumumab in patients with refractory  Ewing sarcoma. J Clin Oncol. 2011; 29:4534–40. [PubMed: 22025154]  "
+},
+{
+          "paragraph42": "37. Ma H, Zhang T, Shen H, Cao H, Du J. The adverse events profile of anti-IGF-1R monoclonal  antibodies in cancer therapy. Br J Clin Pharm. 2014; 77:917–28. "
+},
+{
+          "paragraph43": "38. Strevel EL, Ing DJ, Siu LL. Molecularly targeted oncology therapeutics and prolongation of the  QT interval. J Clin Oncol. 2007; 25:3362–71. [PubMed: 17664484]  "
+},
+{
+          "paragraph44": "39. Tap WD, Demetri G, Barnette P, Desai J, Kavan P, Tozer R, et al. Phase II study of ganitumab, a  fully human anti-type-1 insulin-like growth factor receptor antibody, in patients with metastatic  "
+},
+{
+          "paragraph45": "Macaulay et al. Page 13 "
+},
+{
+          "paragraph46": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph47": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph48": "Ewing family tumors or desmoplastic small round cell tumors. J Clin Oncol. 2012; 30:1849–56.  [PubMed: 22508822]  "
+},
+{
+          "paragraph49": "40. Bendell JC, Jones SF, Hart L, Spigel DR, Lane CM, Earwood C, et al. A phase Ib study of  linsitinib (OSI-906), a dual inhibitor of IGF-1R and IR tyrosine kinase, in combination with  everolimus as treatment for patients with refractory metastatic colorectal cancer. Invest New  Drugs. 2015; 33:187–93. [PubMed: 25335932]  "
+},
+{
+          "paragraph50": "41. Boucher J, Macotela Y, Bezy O, Mori MA, Kriauciunas K, Kahn CR. A kinase-independent role  for unoccupied insulin and IGF-1 receptors in the control of apoptosis. Sci Signal. 2010; 3:ra87.  [PubMed: 21139139]  "
+},
+{
+          "paragraph51": "42. Janku F, Huang HJ, Angelo LS, Kurzrock R. A kinase-independent biological activity for insulin  growth factor-1 receptor (IGF-1R): implications for inhibition of the IGF-1R signal. Oncotarget.  2013; 4:463–73. [PubMed: 23531874]  "
+},
+{
+          "paragraph52": "43. Weickhardt A, Doebele R, Oton A, Lettieri J, Maxson D, Reynolds M, et al. A phase I/II study of  erlotinib in combination with the anti-insulin-like growth factor-1 receptor monoclonal antibody  IMC-A12 (cixutumumab) in patients with advanced non-small cell lung cancer. J Thorac Oncol.  2012; 7:419–26. [PubMed: 22237261]  "
+},
+{
+          "paragraph53": "44. Ramalingam SS, Spigel DR, Chen D, Steins MB, Engelman JA, Schneider CP, et al. Randomized  phase II study of erlotinib in combination with placebo or R1507, a monoclonal antibody to  insulin-like growth factor-1 receptor, for advanced-stage non-small-cell lung cancer. J Clin Oncol.  2011; 29:4574–80. [PubMed: 22025157]  "
+},
+{
+          "paragraph54": "45. Molina-Arcas M, Hancock DC, Sheridan C, Kumar MS, Downward J. Coordinate direct input of  both KRAS and IGF1 receptor to activation of PI3 kinase in KRAS-mutant lung cancer. Cancer  Discov. 2013; 3:548–63. [PubMed: 23454899]  "
+},
+{
+          "paragraph55": "46. Gao S, Bajrami I, Verrill C, Kigozi A, Ouaret D, Aleksic T, et al. Dsh homolog DVL3 mediates  resistance to IGFIR inhibition by regulating IGF-RAS signaling. Cancer Res. 2014; 74:5866–77.  [PubMed: 25168481]  "
+},
+{
+          "paragraph56": "47. Kim WY, Prudkin L, Feng L, Kim ES, Hennessy B, Lee JS, et al. Epidermal growth factor receptor  and K-Ras mutations and resistance of lung cancer to insulin-like growth factor 1 receptor tyrosine  kinase inhibitors. Cancer. 2012; 118:3993–4003. [PubMed: 22359227]  "
+},
+{
+          "paragraph57": "48. Zinn RL, Gardner EE, Marchionni L, Murphy SC, Dobromilskaya I, Hann CL, et al. ERK  phosphorylation is predictive of resistance to IGF-1R inhibition in small cell lung cancer. Mol  Cancer Ther. 2013; 12:1131–9. [PubMed: 23515613]  "
+},
+{
+          "paragraph58": "49. Paez JG, Janne PA, Lee JC, Tracy S, Greulich H, Gabriel S, et al. EGFR mutations in lung cancer:  correlation with clinical response to gefitinib therapy. Science. 2004; 304:1497–500. [PubMed:  15118125]  "
+},
+{
+          "paragraph59": "50. Riely GJ, Yu HA. EGFR: the paradigm of an oncogene-driven lung cancer. Clin Cancer Res. 2015;  21:2221–6. [PubMed: 25979928]  "
+},
+{
+          "paragraph60": "Macaulay et al. Page 14 "
+},
+{
+          "paragraph61": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph62": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph63": "Translational Relevance "
+},
+{
+          "paragraph64": "This is the first published study to test the efficacy of combined insulin-like growth factor  receptor (IGF1R)/EGFR inhibition using two small-molecule inhibitors, linsitinib plus  erlotinib. The combination has acceptable tolerability, with no pharmacokinetic evidence  of significant drug–drug interaction, and detectable but modest antitumor activity in  unselected patients. Measurement of circulating IGF-1 and IGF1R/insulin receptor  (INSR) phosphorylation suggests that receptor blockade was induced, but may have been  intermittent. Mutation analysis identified EGFR mutations in 3 non–small cell lung  cancer patients, correlating with response (exon 19 del, 1 case) or resistance (exon 19 del,  T790M, 2 cases) to trial therapy. There was also evidence of clinical activity in tumors  lacking detectable EGFR mutation, unlikely to respond to single-agent erlotinib. These  results highlight two issues for successful application of this approach: the importance of  assessing IGF axis activity in clinical material and the need for predictive biomarkers. "
+},
+{
+          "paragraph65": "Macaulay et al. Page 15 "
+},
+{
+          "paragraph66": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph67": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms864808_page15_368.jpg"
+},
+{
+          "section:1": "Figure 1"
+},
+{
+          "paragraph1": "Macaulay et al. Page 16 "
+},
+{
+          "paragraph2": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph3": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "Figure": "nihms864808_page16_385.jpg"
+},
+{
+          "section:1": "Figure 2"
+},
+{
+          "paragraph1": "  Efficacy and pharmacodynamic data in patients treated with linsitinib and erlotinib. A,  duration on study (weeks) in 90 evaluable patients. White bars, confirmed partial responses.  B, CT scan of chest from male patient with squamous NSCLC without detectable EGFR  mutation, treated in NSCLC expansion cohort with linsitinib 150 mg twice daily and  erlotinib 150 mg once daily. Top, baseline scan showing central mass and right hilar  lymphadenopathy causing right upper lobe collapse. Middle and bottom, response scan at 17  weeks, confirmatory scan at 21 weeks. C, effects of linsitinib on phosphorylation of left:  IGF1R, right: INSR in PBMCs of patients treated on dose-escalation schedules S1–S3. D,  "
+},
+{
+          "paragraph2": "Macaulay et al. Page 17 "
+},
+{
+          "paragraph3": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph4": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph5": "plasma IGF-1 levels expressed as % greatest fold increase over predose value, by dose of  linsitinib/erlotinib. Open circles, patients treated with 100 mg erlotinib once daily; closed  circles, 150 mg erlotinib once daily. "
+},
+{
+          "paragraph6": "Macaulay et al. Page 18 "
+},
+{
+          "paragraph7": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph8": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph9": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph10": "Macaulay et al. Page 19 "
+},
+{
+          "section:1": "Table 1"
+},
+{
+          "paragraph1": "Baseline demographic and patient characteristics "
+},
+{
+          "paragraph2": "S1 (n = 44) S2 (n = 24) S3 (n = 12) NSCLC expansion (n = 15) Total (n = 95) "
+},
+{
+          "paragraph3": "Age, median (range) 63 (34–83) 60 (20–72) 49 (28–85) 62 (45–71) 62 (20–85) "
+},
+{
+          "paragraph4": "Age group, n (%) "
+},
+{
+          "paragraph5": " 18–39 4 (9) 2 (8) 2 (17) 0 (0) 8 (8) "
+},
+{
+          "paragraph6": " 40–64 23 (52) 13 (54) 7 (58) 10 (67) 53 (56) "
+},
+{
+          "paragraph7": " ≥65 17 (39) 9 (38) 3 (25) 5 (33) 34 (36) "
+},
+{
+          "paragraph8": "Sex, n (%) "
+},
+{
+          "paragraph9": " Female 21 (48) 12 (50) 6 (50) 9 (60) 48 (51) "
+},
+{
+          "paragraph10": " Male 23 (52) 12 (50) 6 (50) 6 (40) 47 (49) "
+},
+{
+          "paragraph11": "Race, n (%) "
+},
+{
+          "paragraph12": " White 38 (86) 20 (83) 12 (100) 14 (93) 84 (88) "
+},
+{
+          "paragraph13": " Hispanic 1 (2) 0 (0) 0 (0) 0 (0) 1 (1) "
+},
+{
+          "paragraph14": " Black 5 (11) 4 (17) 0 (0) 1 (7) 10 (11) "
+},
+{
+          "paragraph15": "ECOG PS, n (%) "
+},
+{
+          "paragraph16": " 0 13 (30) 12 (50) 8 (67) 3 (20) 36 (38) "
+},
+{
+          "paragraph17": " 1 30 (68) 12 (50) 3 (25) 12 (80) 57 (60) "
+},
+{
+          "paragraph18": " 2 1 (2) 0 1 (8) 0 2 (2) "
+},
+{
+          "paragraph19": "Cotinine test, n (%) "
+},
+{
+          "paragraph20": " Negative 43 (98) 24 (100) 11 (92) 14 (93) 92 (97) "
+},
+{
+          "paragraph21": " Positive 0 0 0 1 (7) 1 (1) "
+},
+{
+          "paragraph22": " Not done 1 (2) 0 1 (8) 0 2 (2) "
+},
+{
+          "paragraph23": "Tumor type, n (%) "
+},
+{
+          "paragraph24": " NSCLC 8 (18) 6 (25) 3 (25) 15 (100) 32 (34) "
+},
+{
+          "paragraph25": " Pancreatic 4 (9) 0 0 0 4 (4) "
+},
+{
+          "paragraph26": " Colorectal 4 (9) 0 0 0 4 (4) "
+},
+{
+          "paragraph27": " Prostate 3 (7) 2 (8) 0 0 5 (5) "
+},
+{
+          "paragraph28": " Other 25 (57) 16 (67) 9 (75) 0 50 (53) "
+},
+{
+          "paragraph29": "Prior chemotherapy regimens, n (%) "
+},
+{
+          "paragraph30": " 0–2 21 (48) 11 (46) 6 (50) 8 (53) 46 (48) "
+},
+{
+          "paragraph31": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph32": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph33": "Macaulay et al. Page 20 "
+},
+{
+          "paragraph34": "S1 (n = 44) S2 (n = 24) S3 (n = 12) NSCLC expansion (n = 15) Total (n = 95) "
+},
+{
+          "paragraph35": " 3–5 18 (41) 11 (46) 6 (50) 7 (47) 42 (44) "
+},
+{
+          "paragraph36": " 6–8 5 (11) 2 (8) 0 0 7 (7) "
+},
+{
+          "paragraph37": "Prior radiotherapy, n (%) 29 (66) 13 (54) 7 (58) 12 (80) 61 (64) "
+},
+{
+          "paragraph38": "Prior disease-related surgery, n (%) 33 (75) 16 (67) 11 (92) 6 (40) 66 (69) "
+},
+{
+          "paragraph39": "Prior hormonal therapy and immunotherapy, n (%) 10 (23) 3 (12) 0 0 13 (14) "
+},
+{
+          "paragraph40": "NOTE: Patient characteristics are shown for each cohort: S1, intermittent linsitinib once daily (days 1–3 every 7 days); S2, continuous linsitinib once daily; S3, continuous linsitinib twice daily, each with  erlotinib 100 or 150 mg once daily, and NSCLC expansion cohort treated at 150 mg twice daily linsitinib, 150 mg once daily erlotinib. "
+},
+{
+          "paragraph41": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph42": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph43": "Macaulay et al. Page 21 "
+},
+{
+          "section:1": "Table 2"
+},
+{
+          "paragraph1": "Toxicities of linsitinib/erlotinib combination "
+},
+{
+          "paragraph2": "A. DLTs "
+},
+{
+          "paragraph3": "Linsitinib/erlotinib dose (mg) Grade of AEa Relation to treatment "
+},
+{
+          "paragraph4": "S1 "
+},
+{
+          "paragraph5": " 600/100 QD G3 hyperglycemiab Linsitinib "
+},
+{
+          "paragraph6": " 600/100 QD G3 increased AST Linsitinib and erlotinib "
+},
+{
+          "paragraph7": "G3 increased ALP Linsitinib and erlotinib "
+},
+{
+          "paragraph8": "G2 increased ALT Linsitinib and erlotinib "
+},
+{
+          "paragraph9": " 450/100 QD G4 increased ALTc Linsitinib and erlotinib "
+},
+{
+          "paragraph10": "G4 increased ASTc Linsitinib and erlotinib "
+},
+{
+          "paragraph11": " 450/150 QD G3 prolonged QTc interval Linsitinib "
+},
+{
+          "paragraph12": "S2 "
+},
+{
+          "paragraph13": " 400/150 QD G2 prolonged QTc intervald Linsitinib "
+},
+{
+          "paragraph14": " 400/150 QD G3 prolonged QTc interval Linsitinib "
+},
+{
+          "paragraph15": "S3 "
+},
+{
+          "paragraph16": " 150 BID/150 QD G3 anorexia Linsitinib and erlotinib "
+},
+{
+          "paragraph17": "B. Treatment-emergent AEs occurring in at least 5% of patients "
+},
+{
+          "paragraph18": "AE S1 (n = 40) S2 (n = 24) S3 (n = 12) NSCLC expansion (n = 15) Total (n = 91) "
+},
+{
+          "paragraph19": "Fatigue 29 (72) 18 (75) 7 (58) 8 (53) 62 (68) "
+},
+{
+          "paragraph20": "Malaise 2 (5) 2 (8) 1 (8) 1 (7) 6 (7) "
+},
+{
+          "paragraph21": "Nausea 25 (62) 11 (46) 9 (75) 8 (53) 53 (58) "
+},
+{
+          "paragraph22": "Vomiting 13 (32) 9 (38) 8 (67) 6 (40) 36 (40) "
+},
+{
+          "paragraph23": "Diarrhea 28 (70) 16 (67) 9 (75) 13 (87) 66 (73) "
+},
+{
+          "paragraph24": "Rash 32 (80) 20 (83) 11 (92) 13 (87) 76 (84) "
+},
+{
+          "paragraph25": "Pruritis 11 (28) 8 (33) 6 (50) 5 (33) 30 (33) "
+},
+{
+          "paragraph26": "Anorexia 12 (30) 11 (46) 5 (42) 4 (27) 32 (35) "
+},
+{
+          "paragraph27": "Dehydration 9 (22) 2 (8) 4 (33) 1 (7) 16 (18) "
+},
+{
+          "paragraph28": "Hyperglycemia 3 (8) 0 0 2 (13) 5 (5) "
+},
+{
+          "paragraph29": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph30": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph31": "Macaulay et al. Page 22 "
+},
+{
+          "paragraph32": "A. DLTs "
+},
+{
+          "paragraph33": "Linsitinib/erlotinib dose (mg) Grade of AEa Relation to treatment "
+},
+{
+          "paragraph34": "QTc prolongation 5 (12) 3 (12) 0 1 (7) 9 (10) "
+},
+{
+          "paragraph35": "ALT elevation 3 (8) 1 (4) 2 (17) 0 6 (7) "
+},
+{
+          "paragraph36": "AST elevation 3 (8) 1 (4) 2 (17) 0 6 (7) "
+},
+{
+          "paragraph37": "NOTE: Table shows number (%) of patients experiencing each AE. "
+},
+{
+          "paragraph38": "Abbreviations: ALP, alkaline phosphatase; BID, twice daily; G, grade; QD, once daily. "
+},
+{
+          "paragraph39": "aUnless otherwise noted, DLT defined by ≥grade 3 toxicity. "
+},
+{
+          "paragraph40": "bGlucose intolerance: Fasting glucose >250 mg/dL (13.9 mmol/L). "
+},
+{
+          "paragraph41": "cInability to complete designated schedule in first treatment period due to drug-related toxicity. "
+},
+{
+          "paragraph42": "dInterruption of dosing for ≥5 continuous days within first 21 days due to drug-related toxicity. "
+},
+{
+          "paragraph43": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph44": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph45": "Macaulay et al. Page 23 "
+},
+{
+          "section:1": "Table 3"
+},
+{
+          "paragraph1": "Pharmacokinetic parameters for NSCLC expansion cohort "
+},
+{
+          "paragraph2": "Linsitinib (mg twice daily)/erlotinib (mg once daily) "
+},
+{
+          "paragraph3": "150/0 (Day 7) 150/150 (Day 8) 150/150 (Day 22) "
+},
+{
+          "paragraph4": "Evaluable, n 15 15 11 "
+},
+{
+          "paragraph5": "Linsitinib "
+},
+{
+          "paragraph6": " Cmax (ng/mL) 2,580 (1,070–6,420) 2,890 (1,200–8,100) 2,340 (942–5,750) "
+},
+{
+          "paragraph7": " Tmax (h) 3.0 (0.0–6.1) 2.0 (1.0–10.5) 3.0 (1.0–8.0) "
+},
+{
+          "paragraph8": " AUC0–last (h.ng/mL) 17,906 (6,979–52,597) 18,668 (843–64,587) 16,220 (6,483–47,145) "
+},
+{
+          "paragraph9": "Erlotinib "
+},
+{
+          "paragraph10": " Cmax (ng/mL) – 1,285 (628–1,790) 2,390 (1,050–5,530) "
+},
+{
+          "paragraph11": " Tmax (h) – 4.1 (1.9–8.6) 4.1 (1.9–8.4) "
+},
+{
+          "paragraph12": " AUC0–last (h.ng/mL) – 21,061 (10,363–29,919) 42,484 (16,318–105,521) "
+},
+{
+          "paragraph13": "OSI-420 "
+},
+{
+          "paragraph14": " Cmax (ng/mL) – 125 (62.4–331) 342 (163–877) "
+},
+{
+          "paragraph15": " Tmax (h) – 5.2 (1.9–21.9) 6.0 (1.9–8.1) "
+},
+{
+          "paragraph16": " AUC0–last (h.ng/mL) – 2,039 (1,061–5,455) 5,727 (2,706–17,052) "
+},
+{
+          "paragraph17": "NOTE: Table shows pharmacokinetic parameters expressed as median (range). "
+},
+{
+          "paragraph18": "Abbreviations: AUC0-last, area under the concentration–time curve; Cmax, maximum observed concentration; max, maximum; min, minimum;  "
+},
+{
+          "paragraph19": "Tmax, time to maximum concentration. "
+},
+{
+          "paragraph20": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+          "paragraph21": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+          "paragraph22": "Macaulay et al. Page 24 "
+},
+{
+          "section:1": "Table 4"
+},
+{
+               "section:2": "Efficacy"
+},
+{
+               "paragraph1": "A: Best response by cohort S1 (n = 31) S2 (n = 19) S3 (n = 11) NSCLC expansion (n = 14) Total (n = 75) "
+},
+{
+               "paragraph2": "Overall best response, n (%) "
+},
+{
+               "paragraph3": " Complete response (CR) 0 0 0 0 0 "
+},
+{
+               "paragraph4": " Partial response (PR) 2 (6) 1 (5) 0 2 (14) 5 (7) "
+},
+{
+               "paragraph5": " Stable disease (SD) 8 (26) 12 (63) 6 (55) 7 (50) 33 (44) "
+},
+{
+               "paragraph6": " Progressive disease 21 (68) 6 (32) 5 (45) 5 (36) 37 (49) "
+},
+{
+               "paragraph7": "Overall response rate (CR + PR) "
+},
+{
+               "paragraph8": " n (%) 2 (7) 1 (5) 0 2 (14) NA "
+},
+{
+               "paragraph9": " 95% CI 0.8–21.4 0.1–26.0 0.0–28.5 1.8–42.8 NA "
+},
+{
+               "paragraph10": "Disease control rate (CR + PR + SD) "
+},
+{
+               "paragraph11": " n (%) 10 (32) 13 (68) 6 (55) 9 (64) NA "
+},
+{
+               "paragraph12": " 95% CI 16.7–51.4 43.4–87.4 23.4–83.3 35.1–87.2 NA "
+},
+{
+               "paragraph13": "B: Mutation detectiona "
+},
+{
+               "paragraph14": "Diagnosis Linsitinib/erlotinib dose (mg) Response (weeks) ctDNA Tumor DNA "
+},
+{
+               "paragraph15": "S1 "
+},
+{
+               "paragraph16": " CRC 400/150 SD (6) KRAS G12V, PIK3CA E542K NA "
+},
+{
+               "paragraph17": " NSCLC (adenocarcinoma) 450/150 PR (72) EGFR exon 19 del NA "
+},
+{
+               "paragraph18": " Rectal (squamous) 450/150 PR (36) NVD EGFR, KRAS, PIK3CA NVD in EGFR, KRAS, BRAF, PIK3CA "
+},
+{
+               "paragraph19": "S2 "
+},
+{
+               "paragraph20": " Chordoma 50/100 PR (>268) PIK3CA exon 9 E542K NVD EGFR exons 18 – 21b, PIK3CA exon 9, BRAF exon 15 "
+},
+{
+               "paragraph21": "Expansion NSCLC "
+},
+{
+               "paragraph22": " Adenocarcinoma 150 BID/150 SD (6) EGFR exon 19 del and T790M NA "
+},
+{
+               "paragraph23": " Poorly diff adenocarcinoma 150 BID/150 PR (16) NVD EGFR, KRAS NA "
+},
+{
+               "paragraph24": " Adenocarcinoma 150 BID/150 SD (6) KRAS G12D KRAS G12D "
+},
+{
+               "paragraph25": " Adenocarcinoma 150 BID/150 PD EGFR exon 19 del, T790M NA "
+},
+{
+               "paragraph26": " Squamous 150 BID/150 PR (36) NVD EGFR exons 18–21 NVD "
+},
+{
+               "paragraph27": " Adenocarcinoma 150 BID/150 SD (30) KRAS G12D KRAS G12D "
+},
+{
+               "paragraph28": "Clin Cancer Res. Author manuscript; available in PMC 2017 July 07. "
+},
+{
+               "paragraph29": "Author Manuscript Author Manuscript Author Manuscript Author Manuscript "
+},
+{
+               "paragraph30": "Macaulay et al. Page 25 "
+},
+{
+               "paragraph31": "Abbreviations: adeno, adenocarcinoma; BID, twice daily; CI, confidence interval; CRC, colorectal cancer; diff, differentiated; NA, not available; NSCLC, non–small cell lung cancer; NVD, no variant  detected; poorly diff, poorly differentiated; sq, squamous. "
+}]
