@@ -31,23 +31,25 @@ from fuzzywuzzy.process import default_processor
 
 from detectron2.structures import BoxMode,Boxes
 
-from GCV import gcv_ocr
+# from GCV import gcv_ocr
 from detectron2.config import get_cfg
 from detectron2.data.detection_utils import read_image
 from detectron2.utils.logger import setup_logger
 from detectron2.checkpoint import DetectionCheckpointer
 from detectron2.data.build import DatasetMapper
 
-from nlp_pipeline.extract_text_from_pdf_then_xml_whole_article import convert_pdf_as_text_file, convert_txt_as_BioC_xml_file
-from nlp_pipeline.SubmitText_request import SubmitText_request
-from nlp_pipeline.SubmitText_retrieve import SubmitText
-from nlp_pipeline.get_gene_annotation_from_pubtator_result import extract_gene_annotation
-from nlp_pipeline_v2.from_PMCID_to_gene_annotation_and_cooccurrence.SubmitPMCIDList import SubmitPMCIDList
-from nlp_pipeline_v2.from_PMCID_to_gene_annotation_and_cooccurrence.gene_cooccurrence_from_pubtator_results import extract_gene_annotation_and_full_text,preprocess_sent_list_and_gene_list,gene_co_occurrence_in_sentence
+# from nlp_pipeline.extract_text_from_pdf_then_xml_whole_article import convert_pdf_as_text_file, convert_txt_as_BioC_xml_file
+# from nlp_pipeline.SubmitText_request import SubmitText_request
+# from nlp_pipeline.SubmitText_retrieve import SubmitText
+# from nlp_pipeline.get_gene_annotation_from_pubtator_result import extract_gene_annotation
+# from nlp_pipeline_v2.from_PMCID_to_gene_annotation_and_cooccurrence.SubmitPMCIDList import SubmitPMCIDList
+# from nlp_pipeline_v2.from_PMCID_to_gene_annotation_and_cooccurrence.gene_cooccurrence_from_pubtator_results import extract_gene_annotation_and_full_text,preprocess_sent_list_and_gene_list,gene_co_occurrence_in_sentence
 
 
 from body_interface import instances_to_coco_json,setup,build_data_fold_loader,inference_context
 from demo.predictor_jingyi import VisualizationDemo
+
+from new_mmocr import mmocr_f, mmocr_without_det
 
 # constants
 WINDOW_NAME = "COCO detections"
@@ -71,7 +73,7 @@ def get_parser():
     parser.add_argument(
         "--config-file",
         # default="/home/19ljynenu/detectron2-master/pathway_retinanet_weiwei_65k/Base-RetinaNet.yaml",
-        default="/home/fei/Desktop/pathway_retinanet/Base-RetinaNet.yaml",
+        default="/root/lk/pathway_retinanet-pathway_retinanet_pairing/Base-RetinaNet.yaml",
         # default="/mnt/detectron2/pathway/Base-InstanceSegmentation.yaml",
         metavar="FILE",
         help="path to config file",
@@ -80,7 +82,7 @@ def get_parser():
     parser.add_argument("--video-input", help="Path to video file.")
     parser.add_argument(
         "--input",
-        default="debug_pipeline/img/_pmc_articles_instance_1064104_bin_bcr958-9.jpg",
+        default="/root/lk/pathway_retinanet-pathway_retinanet_pairing/img/test.jpg",
         # nargs="+",
         help="A list of space separated input images; "
         "or a single glob pattern such as 'directory/*.jpg'",
@@ -88,6 +90,7 @@ def get_parser():
     parser.add_argument(
         "--output",
         # default="/mnt/data/test/new.png",
+        default="/root/lk/pathway_retinanet-pathway_retinanet_pairing/result/new.png",
         help="A file or directory to save output visualizations. "
         "If not given, will show output in an OpenCV window.",
     )
@@ -338,69 +341,40 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
 
     '''
 
-    postprocessing_ocr_results, coordinates_list = gcv_ocr(current_image_file)
+    # postprocessing_ocr_results, coordinates_list = gcv_ocr(current_image_file)
     # postprocessing_ocr_results, coordinates_list = gcv_ocr(current_image_file,current_element_instances)
 
-    '''
+    # print(current_element_instances)
 
-    # postprocessing on ocr result
-    # nfkc->deburr->upper->expand->swap
-    # TODO:: problem with swapping correctly detected special characters
+    # print('current_image_file:\n', current_image_file)
+
+    # our model:
+    box_res = {}
+    # box_res['box'] = current_element_instances['bbox']#[round(x) for x in current_element_instances['bbox'][:]]  # round() 向上取整
+    # print('box:\n', current_element_instances)
+    current_element_instances = current_element_instances[current_element_instances['score'] > 0.9]
+    box_res['box'] = current_element_instances['bbox']
+    # print('box:\n', current_element_instances)
+    ocr_results, coordinates_list = mmocr_without_det(img=current_image_file, element_bbox=box_res['box'], output='my_visualize_result/' +
+                                                      current_image_file.split('/')[-1])
+    ocr_results = ocr_results[0]
+
+
+    # all mmocr:
+    # ocr_results, coordinates_list = mmocr_f(img=current_image_file, output='mmocr_visualize_result/' +
+    #                                                       current_image_file.split('/')[-1])
+    # ocr_results = ocr_results[0]['text']
+    # coordinates_list = coordinates_list[0]['box']
+
+
     postprocessing_ocr_results = []
-    for r in ocr_results:
-        r = nfkc(r)
-        r = ''.join(r)
-        r = deburr(r)
-        r = ''.join(r)
-        r = upper(r)
-        r = ''.join(r)
-        r = expand(r)
-        r = ''.join(r)
-        pp_r = swaps(r)
-        pp_r = ''.join(pp_r)
-
-        postprocessing_ocr_results.append(pp_r)
-
-    print("list len")
-    print(len(gene_name_list))
-
-    print(postprocessing_ocr_results)
-
-    
-    # check for perfect match from pubtator results and check for fuzzy match
-    not_gene_idxs = []
-    fuzz_match_thresh = 90
-    for idx,candidate_entity in enumerate(postprocessing_ocr_results):
-
-        if article_gene_list and candidate_entity in article_gene_list:
-            continue
-        else:
-            if not candidate_entity:
-                not_gene_idxs.append(idx)
-                continue
-            
-            # change to do fuzzy match w/ article gene list
-            corrections = process.extractBests(candidate_entity, gene_name_list, processor=default_processor, scorer=fuzz.ratio, score_cutoff=cfg.candidate_threshold)
-            # corrections = get_jaccard(candidate_entity,gene_name_list,score_cutoff=cfg.candidate_threshold)
-
-
-            if not corrections:
-                not_gene_idxs.append(idx)
-                continue
-
-            if corrections[0][1] > fuzz_match_thresh:
-                postprocessing_ocr_results[idx] = corrections[0][0]
-            else:
-                not_gene_idxs.append(idx)
-
-    print(postprocessing_ocr_results)
-    '''
-
     f = open('exHUGO_latest.json')
     hugo_dict = json.load(f)
-    for idx, ocr_sample in enumerate(postprocessing_ocr_results):
+    for idx, ocr_sample in enumerate(ocr_results):
         corrected_sample = corrected_processing_by_dict(hugo_dict,ocr_sample)
-        postprocessing_ocr_results[idx] = corrected_sample
+        # postprocessing_ocr_results[idx] = corrected_sample
+        postprocessing_ocr_results.append(corrected_sample)
+    # print('postprocessing_ocr_results:', postprocessing_ocr_results)
 
 
 
@@ -412,44 +386,44 @@ def get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,imag
     img_size = {}
     img_size['image_size'] = [current_height, current_width]
     json_dicts.append(img_size)
-    for i in range(1, len(postprocessing_ocr_results)):
-
-        # uncomment for only genes
-        # if i in not_gene_idxs:
-        #     continue
-
+    for i in range(len(postprocessing_ocr_results)):
         json_dict = {}
         x1 = coordinates_list[i][0][0]
         y1 = coordinates_list[i][0][1]
-        x2 = coordinates_list[i][2][0]
-        y2 = coordinates_list[i][2][1]
-        json_dict['normalized_coordinates'] = [[x1,y1],[x2,y1],[x2,y2],[x1,y2]]
-        json_dict['gene_name'] = postprocessing_ocr_results[i]
+        x2 = coordinates_list[i][1][0]
+        y2 = coordinates_list[i][1][1]
+        # json_dict['normalized_coordinates'] = [[x1,y1],[x2,y1],[x2,y2],[x1,y2]]
+        json_dict['gene_name'] = ocr_results[i]
+        json_dict['post_gene_name'] = postprocessing_ocr_results[i]
         json_dict['coordinates'] = \
-            BoxMode.convert(np.array([coordinates_list[i][0], coordinates_list[i][2]]).reshape((-1, 4)),
+            BoxMode.convert(np.array([coordinates_list[i][0], coordinates_list[i][1]]).reshape((-1, 4)),
                             BoxMode.XYXY_ABS, BoxMode.XYWH_ABS).tolist()[0]
 
         # add ocr results to dataframe of element prediction results
         json_dicts.append(json_dict)
 
-    with open(data_folder + '{:s}_elements.json'.format(image_name), 'w+', encoding='utf-8') as file:
+    gene_path = data_folder + 'gene_name/'
+
+    if not os.path.exists(gene_path):
+        os.makedirs(gene_path)
+    with open(gene_path + '{:s}_elements.json'.format(image_name), 'w+', encoding='utf-8') as file:
         json.dump(json_dicts, file)
 
     # reorganize ocr result into coco json format for further use
     # TODO:: change coordinates to be true mins and maxes
     ocr_prediction_results = []
-    for k in range(1, len(postprocessing_ocr_results)):
-        x1 = coordinates_list[i][0][0]
-        y1 = coordinates_list[i][0][1]
-        x2 = coordinates_list[i][2][0]
-        y2 = coordinates_list[i][2][1]
+    for k in range(0, len(postprocessing_ocr_results)):
+        x1 = coordinates_list[k][0][0]
+        y1 = coordinates_list[k][0][1]
+        x2 = coordinates_list[k][1][0]
+        y2 = coordinates_list[k][1][1]
         result = {
             "image_id": img_id,
             "file_name": current_image_file,
             "category_id": 1,
             "normalized_bbox": [[x1,y1],[x2,y1],[x2,y2],[x1,y2]],
             "bbox":
-                BoxMode.convert(np.array([coordinates_list[k][0], coordinates_list[k][2]]).reshape((-1, 4)),
+                BoxMode.convert(np.array([coordinates_list[k][0], coordinates_list[k][1]]).reshape((-1, 4)),
                                 BoxMode.XYXY_ABS, BoxMode.XYWH_ABS).tolist()[0],
             "score": float(1),
             "ocr": postprocessing_ocr_results[k]
@@ -600,7 +574,7 @@ def get_receptor(relation_heads,current_relation_body_instances,gene_centers,pro
 
     min_js = []
 
-    print(len(relation_heads))
+    # print(len(relation_heads))
 
     # get relation body receptor
     for i in range(0,len(relation_heads)):
@@ -678,7 +652,7 @@ def get_startor(relation_tails,current_relation_body_instances,gene_centers,proc
         
     '''
 
-    print(len(relation_tails))
+    # print(len(relation_tails))
 
     # get relation body starter
     for i in range(0,len(relation_tails)):
@@ -837,12 +811,23 @@ def get_startors_and_receptors(current_image_file,processed_el_body_instances):
     current_relation_body_instances = processed_el_body_instances[processed_el_body_instances['category_id'] != 1]
     relation_heads = current_relation_body_instances['head'].tolist()
     relation_tails = current_relation_body_instances['tail'].tolist()
-    
+
     # get startors and receptors
     # TODO:: for given pair, double check startor and receptor selection minimizes total combo distancez
     processed_el_body_instances, min_js = get_receptor(relation_heads,current_relation_body_instances,gene_centers,processed_el_body_instances,processed_genes)
     processed_el_body_instances = get_startor(relation_tails,current_relation_body_instances,gene_centers,processed_el_body_instances,processed_genes,min_js)
 
+    relation_list = []
+    for index in processed_el_body_instances.index:
+        if processed_el_body_instances.loc[index]['category_id'] == 0:
+            # processed_el_body_instances.loc[index]['relation_category'] = 'activate_relation'
+            relation_list.append('activate_relation')
+        if processed_el_body_instances.loc[index]['category_id'] == 2:
+            relation_list.append('inhibit_relation')
+            # processed_el_body_instances.loc[index]['relation_category'] = 'inhibit_relation'
+        if processed_el_body_instances.loc[index]['category_id'] == 1:
+            relation_list.append('None')
+    processed_el_body_instances['relation_category'] = relation_list
     return processed_el_body_instances
 
 def score_by_cooccurrence(gene_co_occurrence,processed_el_body_instances):
@@ -934,9 +919,10 @@ def run_model(cfg, article_pd, **kwargs):
 
     # create folders for post-processing
     data_folder = os.path.join(kwargs['dataset'], 'img/')
-    ocr_sub_img_folder = os.path.join(data_folder, 'ocr_sub_img')
-    if not os.path.isdir(ocr_sub_img_folder):
-        os.mkdir(ocr_sub_img_folder)
+    # print('data_folder:', data_folder)
+    # ocr_sub_img_folder = os.path.join(data_folder, 'ocr_sub_img')
+    # if not os.path.isdir(ocr_sub_img_folder):
+    #     os.mkdir(ocr_sub_img_folder)
 
     visuals_folder = os.path.join(data_folder, 'relation_subimage')
     if not os.path.isdir(visuals_folder):
@@ -962,6 +948,8 @@ def run_model(cfg, article_pd, **kwargs):
             file_names = inputs[0]['file_name']
             element_instances, relation_head_instances, relation_body_instances = reorganize_outputs(el_output,body_output,image_ids,file_names,cfg)
 
+            # print('element_instances:', element_instances)
+
             # loop through each image in batch
             file_list = set(element_instances['file_name'])
             for current_image_file in file_list:
@@ -970,12 +958,8 @@ def run_model(cfg, article_pd, **kwargs):
 
                 # get current image's model outputs
                 current_element_instances = element_instances[(element_instances['file_name'] == current_image_file)]
-                print(current_element_instances['bbox'][0])
-
-
-
-
-
+                # print(current_element_instances['bbox'][0])
+                # print('current_element_instances:', current_element_instances)
 
                 current_relation_head_instances = relation_head_instances[(relation_head_instances['file_name'] == current_image_file)]
                 current_relation_body_instances = relation_body_instances[(relation_body_instances['file_name'] == current_image_file)]
@@ -993,7 +977,7 @@ def run_model(cfg, article_pd, **kwargs):
 
                 # get ocr result
                 img_id = current_element_instances['image_id'].values[0]
-                processed_el_body_instances = get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,image_name,current_relation_body_instances,img_id,current_element_instances)
+                processed_el_body_instances = get_ocr(current_image_file,article_gene_list,gene_name_list,data_folder,image_name,current_relation_body_instances,img_id, current_element_instances)
 
                 # get relation head & tail
                 processed_el_body_instances = get_relationship_head(processed_el_body_instances,current_relation_head_instances)
@@ -1016,13 +1000,13 @@ def run_model(cfg, article_pd, **kwargs):
 
                 # save outputs
                 result = processed_el_body_instances[processed_el_body_instances['category_id'] != 1]
-                # results = result[
-                #     ["image_id", "file_name", "category_id", "bbox", "normalized_bbox", "startor", "relation_category",
-                #     "receptor","rank"]]
                 results = result[
                     ["image_id", "file_name", "category_id", "bbox", "normalized_bbox", "startor", "startor_bbox", "relation_category",
                     "receptor","receptor_bbox"]]
-                with open('{:s}_relation.json'.format(os.path.join(data_folder, image_name)), 'w') as output_fp:
+                relation_path = data_folder + 'relation/'
+                if not os.path.exists(relation_path):
+                    os.makedirs(relation_path)
+                with open('{:s}_relation.json'.format(os.path.join(relation_path, image_name)), 'w') as output_fp:
                     results.to_json(output_fp, orient='index')
 
                 
@@ -1036,7 +1020,15 @@ if __name__ == "__main__":
     args = parser.parse_args()
     # args.dataset = r'selective_figures_for_validation_set/img/group1'
     # args.dataset = r'NSCLC_pathway'
-    args.dataset = r'val_test'
+
+    # args.dataset = r'filtered_val_images'
+
+    args.dataset = r'my_filtered_val_images'
+    # # test
+    # args.dataset = r'test'
+
+    # # test1
+    # args.dataset = r'test1'
 
     file_path = vars(args)['dataset']
     img_path = os.path.join(file_path, 'img/')
