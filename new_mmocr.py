@@ -300,6 +300,7 @@ class MMOCR:  ###  MMOCR(det=None, recog='CRNN_TPS')
 
     def readtext(self,
                  img,
+                 image_name,
                  output=None,
                  details=False,
                  export=None,
@@ -345,6 +346,12 @@ class MMOCR:  ###  MMOCR(det=None, recog='CRNN_TPS')
                     # print(index, '---',args.arrays[index])
                     if len(args.arrays[index]) < 1:
                         continue
+                    path = 'slices_img_result/' + image_name
+                    if not os.path.exists(path):
+                        os.makedirs(path)
+                    cv2.imwrite(
+                        path + '/' + image_name + '_' + self.args.filenames[index] + '.jpg',
+                        args.arrays[index])
                     # cv2.imwrite(
                     #     r'result1/' + self.args.filenames[index] + '.jpg',
                     #     args.arrays[index])
@@ -707,7 +714,7 @@ def mmocr_without_det(det=None, recog='SEG', img=None, element_bbox=None, output
         img_crops.append(img_crop)
         boxs.append(boxx)
     ocr = MMOCR(det=det, recog=recog)
-    mmocr_results = ocr.readtext(img_crops)
+    mmocr_results = ocr.readtext(img_crops, image_name=img_name)
     box_text_list = []
     # box_text_dit = {}
     # det_recog_result = [{'result': box_text_list}]
