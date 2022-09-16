@@ -1,0 +1,7 @@
+Python3.7, CUDA 11.1, cuDNN 8.0.5, Pytorch 1.8.1, Ubuntu 18.04, VNC, NVCC
+pip install mmcv-full==1.6.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
+python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.8/index.html
+pip install mmdet==2.25.1
+pip install pymupdf==1.20.2
+pip install nltk==3.7
+
